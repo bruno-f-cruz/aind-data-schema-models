@@ -27,9 +27,9 @@ class DataRegex(str, Enum):
         f"^(?P<project_abbreviation>.+?)_(?P<analysis_name>.+?)_(?P<c_date>"
         f"{RegexParts.DATE.value})_(?P<c_time>{RegexParts.TIME.value})$"
     )
-    NO_UNDERSCORES = "^[^_]+$"
-    NO_SPECIAL_CHARS = '^[^<>:;"/|? \\_]+$'
-    NO_SPECIAL_CHARS_EXCEPT_SPACE = '^[^<>:;"/|?\\_]+$'
+    NO_UNDERSCORES = r"^[^_]+$"
+    NO_SPECIAL_CHARS = r'^[^<>:;"/|? \\_]+$'
+    NO_SPECIAL_CHARS_EXCEPT_SPACE = r'^[^<>:;"/|?\\_]+$'
 
 
 class DataLevel(str, Enum):

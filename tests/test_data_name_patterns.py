@@ -64,16 +64,32 @@ class TestDataRegex(unittest.TestCase):
         malformed_derived = "ecephys_123455_2020-10-19_08-30-59_sorted_2020-11-21_09:31:58"
         malformed_analyzed = "project_analysis_3033-12-21_04-22-11_test"
         malformed_no_underscores = "abc_123<something>"
-        malformed_no_special_chars = "abc-123<something>"
-        malformed_no_special_chars_except_space = "abc efg - 123 <something>"
+        special_chars = [
+            "<",
+            ">",
+            ":",
+            ";",
+            '"',
+            "/",
+            "|",
+            "?",
+            " ",
+            "\\",
+            "_",
+        ]
 
         self.assertNotRegex(malformed_data, DataRegex.DATA)
         self.assertNotRegex(malformed_raw, DataRegex.RAW)
         self.assertNotRegex(malformed_derived, DataRegex.DERIVED)
         self.assertNotRegex(malformed_analyzed, DataRegex.ANALYZED)
         self.assertNotRegex(malformed_no_underscores, DataRegex.NO_UNDERSCORES)
-        self.assertNotRegex(malformed_no_special_chars, DataRegex.NO_SPECIAL_CHARS)
-        self.assertNotRegex(malformed_no_special_chars_except_space, DataRegex.NO_SPECIAL_CHARS_EXCEPT_SPACE)
+        for c in special_chars:
+            malformed_no_special_chars = f"abc-123{c}something{c}"
+            self.assertNotRegex(malformed_no_special_chars, DataRegex.NO_SPECIAL_CHARS)
+            if c == " ":
+                continue
+            malformed_no_special_chars_except_space = f"abc efg - 123 {c}something{c}"
+            self.assertNotRegex(malformed_no_special_chars_except_space, DataRegex.NO_SPECIAL_CHARS_EXCEPT_SPACE)
 
 
 class TestDataNamePatternsMethods(unittest.TestCase):
