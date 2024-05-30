@@ -33,6 +33,15 @@ class Abcam(_Organization):
     registry_identifier: Literal["02e1wjw63"] = "02e1wjw63"
 
 
+class Addgene(_Organization):
+    """Addgene"""
+
+    name: Literal["Addgene"] = "Addgene"
+    abbreviation: Literal[None] = Field(None)
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["01nn1pw54"] = "01nn1pw54"
+
+
 class AilipuTechnologyCo(_Organization):
     """AilipuTechnologyCo"""
 
@@ -337,6 +346,15 @@ class JacksonLaboratory(_Organization):
     abbreviation: Literal["JAX"] = "JAX"
     registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
     registry_identifier: Literal["021sy4w91"] = "021sy4w91"
+
+
+class JaneliaResearchCampus(_Organization):
+    """JaneliaResearchCampus"""
+
+    name: Literal["Janelia Research Campus"] = "Janelia Research Campus"
+    abbreviation: Literal["Janelia"] = "Janelia"
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["013sk6x84"] = "013sk6x84"
 
 
 class Julabo(_Organization):
@@ -724,6 +742,7 @@ class Organization:
 
     AA_OPTO = AAOptoElectronic()
     ABCAM = Abcam()
+    ADDGENE = Addgene()
     AILIPU = AilipuTechnologyCo()
     AI = AllenInstitute()
     AIBS = AllenInstituteForBrainScience()
@@ -757,6 +776,7 @@ class Organization:
     INVITROGEN = Invitrogen()
     ISL = ISLProductsInternational()
     JAX = JacksonLaboratory()
+    JANELIA = JaneliaResearchCampus()
     JULABO = Julabo()
     LEE = TheLeeCompany()
     LEICA = Leica()
@@ -897,6 +917,7 @@ class Organization:
             AllenInstituteForNeuralDynamics,
             ColumbiaUniversity,
             HuazhongUniversityOfScienceAndTechnology,
+            JaneliaResearchCampus,
             NewYorkUniversity,
             Other,
         ],
@@ -907,6 +928,7 @@ class Organization:
             AllenInstitute,
             ColumbiaUniversity,
             HuazhongUniversityOfScienceAndTechnology,
+            JaneliaResearchCampus,
             JacksonLaboratory,
             NewYorkUniversity,
             Other,
