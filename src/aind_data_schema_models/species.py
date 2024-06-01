@@ -22,7 +22,7 @@ class CallithrixJacchus(_Species):
     registry: Annotated[
         Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
     ]
-    registry_identifier: Literal["9483"] = "9483"
+    registry_identifier: Literal["NCBI:txid9483"] = "NCBI:txid9483"
 
 
 class HomoSapiens(_Species):
@@ -32,7 +32,7 @@ class HomoSapiens(_Species):
     registry: Annotated[
         Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
     ]
-    registry_identifier: Literal["9606"] = "9606"
+    registry_identifier: Literal["NCBI:txid9606"] = "NCBI:txid9606"
 
 
 class MacacaMulatta(_Species):
@@ -42,7 +42,7 @@ class MacacaMulatta(_Species):
     registry: Annotated[
         Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
     ]
-    registry_identifier: Literal["9544"] = "9544"
+    registry_identifier: Literal["NCBI:txid9544"] = "NCBI:txid9544"
 
 
 class MusMusculus(_Species):
@@ -52,7 +52,7 @@ class MusMusculus(_Species):
     registry: Annotated[
         Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
     ]
-    registry_identifier: Literal["10090"] = "10090"
+    registry_identifier: Literal["NCBI:txid10090"] = "NCBI:txid10090"
 
 
 class RattusNorvegicus(_Species):
@@ -62,7 +62,7 @@ class RattusNorvegicus(_Species):
     registry: Annotated[
         Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
     ]
-    registry_identifier: Literal["10116"] = "10116"
+    registry_identifier: Literal["NCBI:txid10116"] = "NCBI:txid10116"
 
 
 class Species:
