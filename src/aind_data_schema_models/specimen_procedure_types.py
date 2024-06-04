@@ -9,6 +9,7 @@ class SpecimenProcedureType(str, Enum):
     DELIPIDATION = "Delipidation"
     CLEARING = "Clearing"
     EMBEDDING = "Embedding"
+    EXPANSION = "Expansion"
     FIXATION = "Fixation"
     FIXATION_PERMEABILIZATION = "Fixation and permeabilization"
     GELATION = "Gelation"
