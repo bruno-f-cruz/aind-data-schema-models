@@ -150,6 +150,15 @@ class ChampalimaudFoundation(_Organization):
     registry_identifier: Literal["03g001n57"] = "03g001n57"
 
 
+class ChanZuckerbergInitiative(_Organization):
+    """ChanZuckerbergInitiative"""
+
+    name: Literal["Chan Zuckerberg Initiative"] = "Chan Zuckerberg Initiative"
+    abbreviation: Literal["CZI"] = "CZI"
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["02qenvm24"] = "02qenvm24"
+
+
 class Chroma(_Organization):
     """Chroma"""
 
@@ -247,15 +256,6 @@ class Euresys(_Organization):
     abbreviation: Literal[None] = Field(None)
     registry: Literal[None] = Field(None)
     registry_identifier: Literal[None] = Field(None)
-
-
-class TeledyneFLIR(_Organization):
-    """TeledyneFLIR"""
-
-    name: Literal["Teledyne FLIR"] = "Teledyne FLIR"
-    abbreviation: Literal["FLIR"] = "FLIR"
-    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
-    registry_identifier: Literal["01j1gwp17"] = "01j1gwp17"
 
 
 class Fujinon(_Organization):
@@ -420,6 +420,26 @@ class IRRobotCo(_Organization):
     registry_identifier: Literal[None] = Field(None)
 
 
+class MBFBioscience(_Organization):
+    """MBFBioscience"""
+
+    name: Literal["MBF Bioscience"] = "MBF Bioscience"
+    abbreviation: Literal["MBF"] = "MBF"
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["02zynam48"] = "02zynam48"
+
+
+class MichaelJFoxFoundationForParkinsonsResearch(_Organization):
+    """MichaelJFoxFoundationForParkinsonsResearch"""
+
+    name: Literal["Michael J. Fox Foundation for Parkinson's Research"] = (
+        "Michael J. Fox Foundation for Parkinson's Research"
+    )
+    abbreviation: Literal["MJFF"] = "MJFF"
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["03arq3225"] = "03arq3225"
+
+
 class MidwestOpticalSystems(_Organization):
     """MidwestOpticalSystems"""
 
@@ -454,6 +474,17 @@ class Mpi(_Organization):
     abbreviation: Literal["MPI"] = "MPI"
     registry: Literal[None] = Field(None)
     registry_identifier: Literal[None] = Field(None)
+
+
+class NationalCenterForComplementaryAndIntegrativeHealth(_Organization):
+    """NationalCenterForComplementaryAndIntegrativeHealth"""
+
+    name: Literal["National Center for Complementary and Integrative Health"] = (
+        "National Center for Complementary and Integrative Health"
+    )
+    abbreviation: Literal["NCCIH"] = "NCCIH"
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["00190t495"] = "00190t495"
 
 
 class NationalInstituteOfNeurologicalDisordersAndStroke(_Organization):
@@ -665,6 +696,24 @@ class Tamron(_Organization):
     registry_identifier: Literal[None] = Field(None)
 
 
+class TempletonWorldCharityFoundation(_Organization):
+    """TempletonWorldCharityFoundation"""
+
+    name: Literal["Templeton World Charity Foundation"] = "Templeton World Charity Foundation"
+    abbreviation: Literal["TWCF"] = "TWCF"
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["00x0z1472"] = "00x0z1472"
+
+
+class TeledyneFLIR(_Organization):
+    """TeledyneFLIR"""
+
+    name: Literal["Teledyne FLIR"] = "Teledyne FLIR"
+    abbreviation: Literal["FLIR"] = "FLIR"
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["01j1gwp17"] = "01j1gwp17"
+
+
 class Thermofisher(_Organization):
     """Thermofisher"""
 
@@ -754,6 +803,7 @@ class Organization:
     BASLER = Basler()
     CAMBRIDGE_TECHNOLOGY = CambridgeTechnology()
     CHAMPALIMAUD = ChampalimaudFoundation()
+    CZI = ChanZuckerbergInitiative()
     CHROMA = Chroma()
     COHERENT_SCIENTIFIC = CoherentScientific()
     COLUMBIA = ColumbiaUniversity()
@@ -782,14 +832,17 @@ class Organization:
     LEICA = Leica()
     LG = Lg()
     LIFECANVAS = LifeCanvas()
+    MBF = MBFBioscience()
     MEADOWLARK = MeadowlarkOptics()
     MIDOPT = MidwestOpticalSystems()
     MIGHTY_ZAP = IRRobotCo()
     MITUTUYO = Mitutuyo()
+    MICHAEL_J_FOX = MichaelJFoxFoundationForParkinsonsResearch()
     MKS_NEWPORT = MKSNewport()
     MPI = Mpi()
     NATIONAL_INSTRUMENTS = NationalInstruments()
     NAVITAR = Navitar()
+    NCCIH = NationalCenterForComplementaryAndIntegrativeHealth()
     NEW_SCALE_TECHNOLOGIES = NewScaleTechnologies()
     NEUROPHOTOMETRICS = Neurophotometrics()
     NINDS = NationalInstituteOfNeurologicalDisordersAndStroke()
@@ -811,6 +864,7 @@ class Organization:
     SIMONS = SimonsFoundation()
     SPINNAKER = Spinnaker()
     TAMRON = Tamron()
+    TWCF = TempletonWorldCharityFoundation()
     THORLABS = Thorlabs()
     THERMOFISHER = Thermofisher()
     TMC = TMC()
@@ -859,14 +913,7 @@ class Organization:
         Field(discriminator="name"),
     ]
     FILTER_MANUFACTURERS = Annotated[
-        Union[
-            Chroma,
-            EdmundOptics,
-            MidwestOpticalSystems,
-            Semrock,
-            Thorlabs,
-            Other
-        ],
+        Union[Chroma, EdmundOptics, MidwestOpticalSystems, Semrock, Thorlabs, Other],
         Field(discriminator="name"),
     ]
     LENS_MANUFACTURERS = Annotated[
@@ -908,7 +955,16 @@ class Organization:
     MONITOR_MANUFACTURERS = Annotated[Union[Asus, Lg, Other], Field(discriminator="name")]
     SPEAKER_MANUFACTURERS = Annotated[Union[Tymphany, ISLProductsInternational, Other], Field(discriminator="name")]
     FUNDERS = Annotated[
-        Union[AllenInstitute, NationalInstituteOfNeurologicalDisordersAndStroke, SimonsFoundation],
+        Union[
+            AllenInstitute,
+            ChanZuckerbergInitiative,
+            MBFBioscience,
+            MichaelJFoxFoundationForParkinsonsResearch,
+            NationalCenterForComplementaryAndIntegrativeHealth,
+            NationalInstituteOfNeurologicalDisordersAndStroke,
+            SimonsFoundation,
+            TempletonWorldCharityFoundation,
+        ],
         Field(discriminator="name"),
     ]
     RESEARCH_INSTITUTIONS = Annotated[
