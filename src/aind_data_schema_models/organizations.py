@@ -487,6 +487,14 @@ class NationalCenterForComplementaryAndIntegrativeHealth(_Organization):
     registry_identifier: Literal["00190t495"] = "00190t495"
 
 
+class NationalInstituteOfMentalHealth(_Organization):
+    """NationalInstituteofMentalHealth"""
+    name: Literal["National Institute of Mental Health"] = "National Institute of Mental Health"
+    abbreviation: Literal["NIMH"] = "NIMH"
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["04xeg9z08"] = "04xeg9z08"
+
+
 class NationalInstituteOfNeurologicalDisordersAndStroke(_Organization):
     """NationalInstituteOfNeurologicalDisordersAndStroke"""
 
@@ -845,6 +853,7 @@ class Organization:
     NCCIH = NationalCenterForComplementaryAndIntegrativeHealth()
     NEW_SCALE_TECHNOLOGIES = NewScaleTechnologies()
     NEUROPHOTOMETRICS = Neurophotometrics()
+    NIMH = NationalInstituteOfMentalHealth()
     NINDS = NationalInstituteOfNeurologicalDisordersAndStroke()
     NIKON = Nikon()
     NRESEARCH = NResearch()
@@ -961,6 +970,7 @@ class Organization:
             MBFBioscience,
             MichaelJFoxFoundationForParkinsonsResearch,
             NationalCenterForComplementaryAndIntegrativeHealth,
+            NationalInstituteOfMentalHealth,
             NationalInstituteOfNeurologicalDisordersAndStroke,
             SimonsFoundation,
             TempletonWorldCharityFoundation,
