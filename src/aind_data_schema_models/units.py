@@ -106,6 +106,12 @@ class SoundIntensityUnit(str, Enum):
     DB = "decibels"
 
 
+class VoltageUnit(str, Enum):
+    """Voltage units"""
+
+    V = "Volts"
+
+
 class UnitlessUnit(str, Enum):
     """Unitless options"""
 
