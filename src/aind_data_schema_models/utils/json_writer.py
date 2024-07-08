@@ -18,30 +18,8 @@ enum_models = {
      "process_names": "ProcessName"
 }
 
-
 for mod in {**pydantic_models, **enum_models}.keys():
         importlib.import_module(f"aind_data_schema_models.{mod}")
-
-# def get_schemas(model_name, class_name) -> Iterator:
-#     """
-#     Returns Iterator of classes
-#     """
-#     module_object = sys.modules[f"aind_data_schema_models.{model_name}"]
-#     class_object = getattr(module_object, class_name)
-
-#     for schema in class_object._ALL:
-#         yield schema
-
-# def write_to_json(models_map):
-#     for models in models_map:
-#         file_extension = "".join(Path(filename).suffixes)
-#         schema_filename = filename.replace(file_extension, "_schema.json")
-#         schemas_to_write = get_schemas(models, models_map[models])
-#         for schema in schemas_to_write:
-#              print(schema.__name__)
-
-
-# write_to_json(pydantic_models)
 
 class SchemaWriter:
     """Class to write Pydantic schemas to JSON"""
