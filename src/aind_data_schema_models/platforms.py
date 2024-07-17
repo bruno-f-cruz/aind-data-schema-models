@@ -121,6 +121,13 @@ class SmartSpim(_Platform):
     abbreviation: Literal["SmartSPIM"] = "SmartSPIM"
 
 
+class MotorObservatory(_Platform):
+    """MotorObservatory"""
+
+    name: Literal["Motor observatory platform"] = "Motor observatory platform"
+    abbreviation: Literal["motor-observatory"] = "motor-observatory"
+
+
 class Platform:
     """Platform classes"""
 
