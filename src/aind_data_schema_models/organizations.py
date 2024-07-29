@@ -249,6 +249,15 @@ class EdmundOptics(_Organization):
     registry_identifier: Literal["01j1gwp17"] = "01j1gwp17"
 
 
+class EmoryUniversity(_Organization):
+    """EmoryUniversity"""
+
+    name: Literal["Emory University"] = "Emory University"
+    abbreviation: Literal["Emory"] = "Emory"
+    registry: Annotated[Union[ResearchOrganizationRegistry], Field(default=Registry.ROR, discriminator="name")]
+    registry_identifier: Literal["03czfpz43"] = "03czfpz43"
+
+
 class Euresys(_Organization):
     """Euresys"""
 
@@ -832,6 +841,7 @@ class Organization:
     DORIC = Doric()
     EALING = Ealing()
     EDMUND_OPTICS = EdmundOptics()
+    EMORY = EmoryUniversity()
     EURESYS = Euresys()
     FLIR = TeledyneFLIR()
     FUJINON = Fujinon()
