@@ -804,6 +804,15 @@ class CarlZeiss(_Organization):
     registry_identifier: Literal["01xk5xs43"] = "01xk5xs43"
 
 
+class LumenDynamics(_Organization):
+    """Lumen Dynamics"""
+
+    name: Literal["Lumen Dynamics"] = "Lumen Dynamics"
+    abbreviation: Literal[None] = Field(None)
+    registry: Literal[None] = Field(None)
+    registry_identifier: Literal[None] = Field(None)
+
+
 class Other(_Organization):
     """Other"""
 
@@ -861,6 +870,7 @@ class Organization:
     LEICA = Leica()
     LG = Lg()
     LIFECANVAS = LifeCanvas()
+    LUMEN_DYNAMICS = LumenDynamics()
     MBF = MBFBioscience()
     MEADOWLARK = MeadowlarkOptics()
     MIDOPT = MidwestOpticalSystems()
