@@ -12,3 +12,7 @@ class TestSpecimenProcedureTypes(unittest.TestCase):
         """Tests enum can be instantiated via string"""
 
         self.assertEqual(SpecimenProcedureType.DELIPIDATION, SpecimenProcedureType("Delipidation"))
+
+
+if __name__ == "__main__":
+    unittest.main()

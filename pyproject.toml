@@ -17,7 +17,8 @@ readme = "README.md"
 dynamic = ["version"]
 
 dependencies = [
-    "pydantic>=2.0"
+    "pydantic>=2.0",
+    "importlib-resources"
 ]
 
 [project.optional-dependencies]
@@ -37,6 +38,9 @@ where = ["src"]
 
 [tool.setuptools.dynamic]
 version = {attr = "aind_data_schema_models.__version__"}
+
+[tool.setuptools.package-data]
+aind_data_schema_models = ["models/*.csv"]
 
 [tool.black]
 line-length = 120

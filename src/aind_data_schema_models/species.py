@@ -1,77 +1,27 @@
 """Module for species definitions"""
 
-from typing import Literal, Union
+from importlib_resources import files
+from pydantic import BaseModel, ConfigDict, Field
 
-from pydantic import ConfigDict, Field
-from typing_extensions import Annotated
-
-from aind_data_schema_models.pid_names import PIDName
-from aind_data_schema_models.registry import NationalCenterForBiotechnologyInformation, Registry
+from aind_data_schema_models.registries import RegistryModel, map_registry
+from aind_data_schema_models.utils import create_literal_class, read_csv
 
 
-class _Species(PIDName):
-    """Base model config"""
+class SpeciesModel(BaseModel):
+    """base model for species, like Mus musculus"""
 
     model_config = ConfigDict(frozen=True)
 
-
-class CallithrixJacchus(_Species):
-    """Callithrix Jacchus"""
-
-    name: Literal["Callithrix jacchus"] = "Callithrix jacchus"
-    registry: Annotated[
-        Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
-    ]
-    registry_identifier: Literal["NCBI:txid9483"] = "NCBI:txid9483"
+    name: str = Field(..., title="Species name")
+    registry: RegistryModel = Field(..., title="Species registry")
+    registry_identifier: str = Field(..., title="Species registry identifier")
 
 
-class HomoSapiens(_Species):
-    """Homo Sapiens"""
-
-    name: Literal["Homo sapiens"] = "Homo sapiens"
-    registry: Annotated[
-        Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
-    ]
-    registry_identifier: Literal["NCBI:txid9606"] = "NCBI:txid9606"
-
-
-class MacacaMulatta(_Species):
-    """Macaca Mulatta"""
-
-    name: Literal["Macaca mulatta"] = "Macaca mulatta"
-    registry: Annotated[
-        Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
-    ]
-    registry_identifier: Literal["NCBI:txid9544"] = "NCBI:txid9544"
-
-
-class MusMusculus(_Species):
-    """Mus Musculus"""
-
-    name: Literal["Mus musculus"] = "Mus musculus"
-    registry: Annotated[
-        Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
-    ]
-    registry_identifier: Literal["NCBI:txid10090"] = "NCBI:txid10090"
-
-
-class RattusNorvegicus(_Species):
-    """Rattus Norvegicus"""
-
-    name: Literal["Rattus norvegicus"] = "Rattus norvegicus"
-    registry: Annotated[
-        Union[NationalCenterForBiotechnologyInformation], Field(default=Registry.NCBI, discriminator="name")
-    ]
-    registry_identifier: Literal["NCBI:txid10116"] = "NCBI:txid10116"
-
-
-class Species:
-    """Species classes"""
-
-    CALLITHRIX_JACCHUS = CallithrixJacchus()
-    HOMO_SAPIENS = HomoSapiens()
-    MACACA_MULATTA = MacacaMulatta()
-    MUS_MUSCULUS = MusMusculus()
-    RATTUS_NOVEGICUS = RattusNorvegicus()
-    _ALL = tuple(_Species.__subclasses__())
-    ONE_OF = Annotated[Union[_ALL], Field(discriminator="name")]
+Species = create_literal_class(
+    objects=read_csv(str(files("aind_data_schema_models.models").joinpath("species.csv"))),
+    class_name="Species",
+    base_model=SpeciesModel,
+    discriminator="name",
+    field_handlers={"registry_abbreviation": map_registry},
+    class_module=__name__,
+)

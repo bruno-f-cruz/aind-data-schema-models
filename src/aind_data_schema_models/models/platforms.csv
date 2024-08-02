@@ -1,0 +1,17 @@
+name,abbreviation
+Behavior platform,behavior
+Confocal microscopy platform,confocal
+Electrophysiology platform,ecephys
+ExaSPIM platform,exaSPIM
+Frame-projected independent-fiber photometry platform,FIP
+Hybridization chain reaction platform,HCR
+Hyperspectral fiber photometry platform,HSFP
+Intrinsic signal imaging platform,ISI
+MERFISH platform,MERFISH
+Magnetic resonance imaging platform,MRI
+MesoSPIM platform,mesoSPIM
+Motor observatory platform,motor-observatory
+Multiplane optical physiology platform,multiplane-ophys
+SLAP2 platform,SLAP2
+Single-plane optical physiology platform,single-plane-ophys
+SmartSPIM platform,SmartSPIM

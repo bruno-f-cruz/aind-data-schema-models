@@ -1,26 +1,10 @@
 """Script for the SpecimenProcedureType enum class."""
 
-from enum import Enum
+from importlib_resources import files
 
+from aind_data_schema_models.utils import create_string_enum, read_csv
 
-class SpecimenProcedureType(str, Enum):
-    """Names for general specimen procedures"""
-
-    DELIPIDATION = "Delipidation"
-    CLEARING = "Clearing"
-    EMBEDDING = "Embedding"
-    EXPANSION = "Expansion"
-    FIXATION = "Fixation"
-    FIXATION_PERMEABILIZATION = "Fixation and permeabilization"
-    GELATION = "Gelation"
-    HYBRIDIZATION_AMPLIFICATION = "Hybridication and amplification"
-    HCR = "Hybridization Chain Reaction"
-    IMMUNOLABELING = "Immunolabeling"
-    MOUNTING = "Mounting"
-    REFRACTIVE_INDEX_MATCHING = "Refractive index matching"
-    SECTIONING = "Sectioning"
-    SOAK = "Soak"
-    STORAGE = "Storage"
-    STRIPPING = "Stripping"
-    TAMOXIFEN_INDUCTION = "Tamoxifen induction"
-    OTHER = "Other - see notes"
+SpecimenProcedureType = create_string_enum(
+    name="SpecimenProcedureType",
+    objects=read_csv(files("aind_data_schema_models.models").joinpath("specimen_procedure_types.csv")),
+)

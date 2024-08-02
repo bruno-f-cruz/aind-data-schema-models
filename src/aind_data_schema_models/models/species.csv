@@ -1,0 +1,6 @@
+name,registry_abbreviation,registry_identifier
+Callithrix jacchus,NCBI,NCBI:txid9483
+Homo sapiens,NCBI,NCBI:txid9606
+Macaca mulatta,NCBI,NCBI:txid9544
+Mus musculus,NCBI,NCBI:txid10090
+Rattus norvegicus,NCBI,NCBI:txid10116
