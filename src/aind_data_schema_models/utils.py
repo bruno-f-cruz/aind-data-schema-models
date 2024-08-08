@@ -39,7 +39,7 @@ def create_literal_model(
     for k, v in obj.items():
         if k in field_handlers:
             field_handlers[k](v, fields)
-        else:
+        elif k in base_model.__annotations__.keys():
             field_type = base_model.__annotations__[k]
             if v is not None:
                 v = field_type(v)

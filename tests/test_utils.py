@@ -89,6 +89,26 @@ class TestUtils(unittest.TestCase):
         self.assertEqual("Treadmill", HarpDeviceType.TREADMILL.name)
         self.assertEqual(1402, HarpDeviceType.TREADMILL.whoami)
 
+    def test_create_literal_with_missing_columns(self):
+        """Test create_literal_class in a situation where the CSV file has extra columns"""
+
+        class HarpDeviceTypeModel(BaseModel):
+            """Base model config"""
+
+            model_config = ConfigDict(frozen=True)
+            name: str = Field(..., title="Harp device type name")
+
+        harp_types_dict = utils.read_csv(TEST_DIR / "harp_types.csv")
+        HarpDeviceType = utils.create_literal_class(
+            objects=harp_types_dict,
+            class_name="HarpDeviceType",
+            base_model=HarpDeviceTypeModel,
+            class_module=__name__,
+        )
+        self.assertEqual("Behavior", HarpDeviceType.BEHAVIOR.name)
+        self.assertEqual("Cuttlefish", HarpDeviceType.CUTTLEFISH.name)
+        self.assertEqual("Treadmill", HarpDeviceType.TREADMILL.name)
+
     def test_one_of_instances(self):
         """Tests one_of_instance method"""
 
