@@ -33,6 +33,7 @@ class CCFStructureModel(BaseName):
     id: int = Field(title="Atlas ID")
     structure_id_path: List[int] = Field(title="Structure path")
     parent_id: int = Field(title="Parent ID")
+    color_hex_code: str = Field(title="Color HEX")
 
 
 CCFStructure = create_literal_class(
@@ -45,10 +46,10 @@ CCFStructure = create_literal_class(
     class_module=__name__,
 )
 
-# CCFStructure._id_map = {m().id: m() for m in CCFStructure.ALL}
-# CCFStructure._acronym_map = {m().acronym: m() for m in CCFStructure.ALL}
+CCFStructure._id_map = {m().id: m() for m in CCFStructure.ALL}
+CCFStructure._acronym_map = {m().acronym: m() for m in CCFStructure.ALL}
 
-# CCFStructure.from_id = lambda x: CCFStructure._id_map.get(x)
-# CCFStructure.from_acronym = lambda x: CCFStructure._acronym_map.get(x)
-# CCFStructure.id2acronym = lambda x: CCFStructure._id_map.get(x).acronym
-# CCFStructure.acronym2id = lambda x: CCFStructure._acronym_map.get(x).id
+CCFStructure.from_id = lambda x: CCFStructure._id_map.get(x)
+CCFStructure.from_acronym = lambda x: CCFStructure._acronym_map.get(x)
+CCFStructure.id2acronym = lambda x: CCFStructure._id_map.get(x).acronym
+CCFStructure.acronym2id = lambda x: CCFStructure._acronym_map.get(x).id
