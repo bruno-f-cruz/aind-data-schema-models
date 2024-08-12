@@ -181,6 +181,30 @@ def one_of_instance(instances: List[Type[BaseModel]], discriminator="name") -> A
     return Annotated[Union[tuple(type(i) for i in instances)], Field(discriminator=discriminator)]
 
 
+def subset_from_column(model, objects, column: str):
+    """
+    Create a one_of_instances group from a column in the data model CSV file.
+
+    Columns should be defined in SCREAM_CASE
+
+    Parameters
+    ----------
+    model : Literal class
+        Class that you want to add a subset group to
+    objects : List[dict]
+        CSV file loaded with read_csv
+    column : str
+        Column header to generate the instances from. Instances should be marked with a 1 in the column.
+    """
+    instances = []
+
+    for row in objects:
+        if row[column]:
+            instances.append(getattr(model, row['name'].upper()))
+
+    return one_of_instance(instances)
+
+
 def create_string_enum(name: str, objects: List[Dict[str, Any]], value_key: str = "name") -> Type[Enum]:
     """
     Create a string enum from a list of objects.
