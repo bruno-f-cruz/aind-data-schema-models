@@ -1,11 +1,9 @@
 """Module for CCF Area definitions"""
 
-from typing_extensions import Annotated
 from importlib_resources import files
 from pydantic import ConfigDict, Field
 
 from aind_data_schema_models.pid_names import BaseName
-from aind_data_schema_models.registries import RegistryModel, Registry
 from aind_data_schema_models.utils import create_literal_class, read_csv
 
 
@@ -14,10 +12,10 @@ class CCFStructureModel(BaseName):
 
     model_config = ConfigDict(frozen=True)
 
+    atlas: str = Field(default='CCFv3')
     acronym: str = Field(title="Structure acronym")
-    name: str = Field(..., title="Structure name")
-    registry: Annotated[RegistryModel, Field(default=Registry.from_abbreviation('CCFv3'))]
-    registry_identifier: int = Field(title="Atlas ID")
+    name: str = Field(title="Structure name")
+    id: int = Field(title="Atlas ID")
 
 
 CCFStructure = create_literal_class(

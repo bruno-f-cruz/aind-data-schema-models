@@ -1,4 +1,4 @@
-acronym,registry_identifier,name,structure_id_path,parent_structure_id,color_hex_code
+acronym,id,name,structure_id_path,parent_structure_id,color_hex_code
 VI,653,Abducens nucleus,/997/8/343/1065/354/370/653/,370.0,#FFB3D9
 ACVII,576,Accessory facial motor nucleus,/997/8/343/1065/354/370/576/,370.0,#FFB3D9
 AOB,151,Accessory olfactory bulb,/997/8/567/688/695/698/151/,698.0,#9DF0D2
