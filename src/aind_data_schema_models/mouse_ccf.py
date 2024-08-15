@@ -14,9 +14,9 @@ class CCFStructureModel(BaseName):
 
     model_config = ConfigDict(frozen=True)
 
-    acronym: str = Field(title="Acronym")
+    acronym: str = Field(title="Structure acronym")
     name: str = Field(..., title="Structure name")
-    registry: Annotated[RegistryModel, Field(default=Registry.from_abbreviation('CCF'))]
+    registry: Annotated[RegistryModel, Field(default=Registry.from_abbreviation('CCFv3'))]
     registry_identifier: int = Field(title="Atlas ID")
 
 
