@@ -17,7 +17,7 @@ readme = "README.md"
 dynamic = ["version"]
 
 dependencies = [
-    "pydantic>=2.0",
+    "pydantic>=2.7",
     "importlib-resources"
 ]
 
