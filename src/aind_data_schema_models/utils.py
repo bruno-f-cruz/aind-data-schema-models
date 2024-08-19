@@ -200,7 +200,8 @@ def subset_from_column(model, objects, column: str):
 
     for row in objects:
         if row[column]:
-            instances.append(getattr(model, row['name'].upper()))
+            scream_name = row['name'].upper().replace(' ', '_')
+            instances.append(getattr(model, scream_name))
 
     return one_of_instance(instances)
 
