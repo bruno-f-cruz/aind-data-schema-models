@@ -181,11 +181,11 @@ def one_of_instance(instances: List[Type[BaseModel]], discriminator="name") -> A
     return Annotated[Union[tuple(type(i) for i in instances)], Field(discriminator=discriminator)]
 
 
-def subset_from_column(model, objects, column: str):
+def subset_from_column(model, objects, column: str, discriminator: str = "name"):
     """
     Create a one_of_instances group from a column in the data model CSV file.
 
-    Columns should be defined in SCREAM_CASE
+    Instances will be converted to SCREAM_CASE
 
     Parameters
     ----------
@@ -203,7 +203,7 @@ def subset_from_column(model, objects, column: str):
             scream_name = row['name'].upper().replace(' ', '_')
             instances.append(getattr(model, scream_name))
 
-    return one_of_instance(instances)
+    return one_of_instance(instances, discriminator=discriminator)
 
 
 def create_string_enum(name: str, objects: List[Dict[str, Any]], value_key: str = "name") -> Type[Enum]:
