@@ -34,6 +34,10 @@ class TestModality(unittest.TestCase):
 
         self.assertEqual(t, MockModel.model_validate_json(_test_literal))
 
+    def test_ophys_attribute(self):
+        """Tests that ophys attribute is available"""
+
+        self.assertEqual(Modality.OPHYS, Modality.POPHYS)
 
 if __name__ == "__main__":
     unittest.main()

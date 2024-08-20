@@ -35,5 +35,7 @@ Modality = create_literal_class(
     validators=[BeforeValidator(_coerce_ophys_to_pophys)],
 )
 
+Modality.OPHYS = Modality.POPHYS
+
 Modality.abbreviation_map = {m().abbreviation: m() for m in Modality.ALL}
 Modality.from_abbreviation = lambda x: Modality.abbreviation_map.get(x)
