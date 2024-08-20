@@ -34,6 +34,11 @@ class TestModality(unittest.TestCase):
 
         self.assertEqual(t, MockModel.model_validate_json(_test_literal))
 
+    def test_ophys_to_pophys_from_abbreviation(self):
+        """Tests that ophys is coerced to pophys from abbreviation"""
+
+        self.assertEqual(Modality.POPHYS, Modality.from_abbreviation("ophys"))
+
     def test_ophys_attribute(self):
         """Tests that ophys attribute is available"""
 

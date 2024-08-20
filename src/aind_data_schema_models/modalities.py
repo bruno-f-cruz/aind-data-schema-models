@@ -38,4 +38,12 @@ Modality = create_literal_class(
 Modality.OPHYS = Modality.POPHYS
 
 Modality.abbreviation_map = {m().abbreviation: m() for m in Modality.ALL}
-Modality.from_abbreviation = lambda x: Modality.abbreviation_map.get(x)
+
+
+def _from_abbreviation(cls, v: Any):
+    if v == "ophys":
+        v = "pophys"
+    return cls.abbreviation_map.get(v)
+
+
+Modality.from_abbreviation = lambda x: _from_abbreviation(Modality, x)
