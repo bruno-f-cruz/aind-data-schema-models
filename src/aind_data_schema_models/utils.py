@@ -6,7 +6,7 @@ from enum import Enum
 from pathlib import Path
 from typing import Any, Dict, List, Literal, Optional, Type, Union
 
-from pydantic import BaseModel, ConfigDict, Field, create_model
+from pydantic import AfterValidator, BaseModel, BeforeValidator, ConfigDict, Field, WrapValidator, create_model
 from typing_extensions import Annotated
 
 
@@ -88,6 +88,7 @@ def create_literal_class(
     base_model: Type[BaseModel] = BaseModel,
     discriminator: str = "name",
     field_handlers: Optional[dict] = None,
+    validators: Optional[List[Union[WrapValidator, AfterValidator, BeforeValidator]]] = None,
 ):
     """
     Make a dynamic pydantic literal class
@@ -125,7 +126,11 @@ def create_literal_class(
     setattr(cls, "ALL", tuple(all_models))
 
     # Older versions of flake8 raise errors about 'ALL' being undefined
-    setattr(cls, "ONE_OF", Annotated[Union[getattr(cls, "ALL")], Field(discriminator=discriminator)])  # noqa: F821
+    setattr(
+        cls,
+        "ONE_OF",
+        Annotated[Union[getattr(cls, "ALL")], Field(discriminator=discriminator), *(validators if validators else [])],
+    )  # noqa: F821
 
     # add the model instances as class variables
     for m in all_models:
