@@ -28,17 +28,30 @@ MouseAnatomicalStructure = create_literal_class(
     class_module=__name__,
 )
 
-MouseAnatomicalStructure.EMG_MUSCLES = one_of_instance([
-    MouseAnatomicalStructure.DELTOID,
-    MouseAnatomicalStructure.PECTORALIS_MAJOR,
-    MouseAnatomicalStructure.TRICEPS_BRACHII,
-    MouseAnatomicalStructure.BICEPS_BRACHII,
-    MouseAnatomicalStructure.PARS_SCAPULARIS_OF_DELTOID,
-    MouseAnatomicalStructure.EXTENSOR_CARPI_RADIALIS_LONGUS,
-    MouseAnatomicalStructure.EXTENSOR_DIGITORUM_COMMUNIS,
-    MouseAnatomicalStructure.EXTENSOR_DIGITORUM_LATERALIS,
-    MouseAnatomicalStructure.EXTENSOR_CARPI_ULNARIS,
-    MouseAnatomicalStructure.FLEXOR_CARPI_RADIALIS,
-    MouseAnatomicalStructure.FLEXOR_CARPI_ULNARIS,
-    MouseAnatomicalStructure.FLEXOR_DIGITORUM_PROFUNDUS,
-])
+MouseAnatomicalStructure.EMG_MUSCLES = one_of_instance(
+    [
+        MouseAnatomicalStructure.DELTOID,
+        MouseAnatomicalStructure.PECTORALIS_MAJOR,
+        MouseAnatomicalStructure.TRICEPS_BRACHII,
+        MouseAnatomicalStructure.BICEPS_BRACHII,
+        MouseAnatomicalStructure.PARS_SCAPULARIS_OF_DELTOID,
+        MouseAnatomicalStructure.EXTENSOR_CARPI_RADIALIS_LONGUS,
+        MouseAnatomicalStructure.EXTENSOR_DIGITORUM_COMMUNIS,
+        MouseAnatomicalStructure.EXTENSOR_DIGITORUM_LATERALIS,
+        MouseAnatomicalStructure.EXTENSOR_CARPI_ULNARIS,
+        MouseAnatomicalStructure.FLEXOR_CARPI_RADIALIS,
+        MouseAnatomicalStructure.FLEXOR_CARPI_ULNARIS,
+        MouseAnatomicalStructure.FLEXOR_DIGITORUM_PROFUNDUS,
+    ]
+)
+
+MouseAnatomicalStructure.BODY_PARTS = one_of_instance(
+    [
+        MouseAnatomicalStructure.FORELIMB,
+        MouseAnatomicalStructure.HEAD,
+        MouseAnatomicalStructure.HINDLIMB,
+        MouseAnatomicalStructure.NECK,
+        MouseAnatomicalStructure.TAIL,
+        MouseAnatomicalStructure.TRUNK,
+    ]
+)
