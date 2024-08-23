@@ -70,6 +70,15 @@ class _PlatformModel(BaseModel):
     abbreviation: str = Field(..., title="Platform abbreviation")
 
 
+class _RegistryModel(BaseName):
+    """Base model config"""
+
+    model_config = ConfigDict(frozen=True)
+
+    name: str = Field(..., title="Registry name")
+    abbreviation: str = Field(..., title="Registry abbreviation")
+
+
 TModel = TypeVar("TModel", bound=BaseModel)
 from typing import Optional
 
@@ -227,46 +236,47 @@ class ModelGenerator:
 
         string_builder += self._generate_enum_like_class()
 
+        generated_code = "".join(
+            [
+                self._Templates.generated_header.format(
+                    filename_source=self.source_data_path.relative_to(Path(".").resolve()),
+                    datetime=datetime.datetime.now(),
+                ),
+                self._Templates.import_statements.format(),
+                self._Templates.generic_import_statement.format(
+                    module_name=self.parent_model_type.__module__, class_name=self.parent_model_type.__name__
+                ),
+                "".join(
+                    [
+                        self._Templates.generic_import_statement.format(
+                            module_name=import_module.__module__, class_name=import_module.__name__
+                        )
+                        for import_module in self._additional_imports
+                    ]
+                    if self._additional_imports
+                    else []
+                ),
+                self._additional_preamble if self._additional_preamble else "",
+                string_builder,
+            ]
+        )
+
+        generated_code = self._unindent(generated_code)
+        generated_code = self._replace_tabs_with_spaces(generated_code)
+
         if validate_code:
-            is_valid, error = self._is_valid_code(string_builder)
+            is_valid, error = self._is_valid_code(generated_code)
             if not is_valid:
                 raise error if error else ValueError("Generated code is not valid")
 
-        return string_builder
+        generated_code = black.format_str(generated_code, mode=black.FileMode())
+        generated_code = isort.code(generated_code)
+
+        return generated_code
 
     def write(self, output_path: Union[os.PathLike, str], validate_code: bool = True):
         with open(output_path, "w", encoding="utf-8") as f:
-            generated_code = "".join(
-                [
-                    self._Templates.generated_header.format(
-                        filename_source=self.source_data_path.relative_to(Path(".").resolve()),
-                        datetime=datetime.datetime.now(),
-                    ),
-                    self._Templates.import_statements.format(),
-                    self._Templates.generic_import_statement.format(
-                        module_name=self.parent_model_type.__module__, class_name=self.parent_model_type.__name__
-                    ),
-                    "".join(
-                        [
-                            self._Templates.generic_import_statement.format(
-                                module_name=import_module.__module__, class_name=import_module.__name__
-                            )
-                            for import_module in self._additional_imports
-                        ]
-                        if self._additional_imports
-                        else []
-                    ),
-                    self._additional_preamble if self._additional_preamble else "",
-                    self.generate(validate_code=validate_code),
-                ]
-            )
-
-            generated_code = self._unindent(generated_code)
-            generated_code = self._replace_tabs_with_spaces(generated_code)
-            generated_code = black.format_str(generated_code, mode=black.FileMode())
-            generated_code = isort.code(generated_code)
-
-            f.write(generated_code)
+            f.write(self.generate(validate_code=validate_code))
 
     @staticmethod
     def _is_valid_code(literal_code: str) -> Tuple[bool, Optional[SyntaxError]]:
@@ -288,3 +298,34 @@ class ModelGenerator:
     @staticmethod
     def _replace_tabs_with_spaces(text: str) -> str:
         return text.replace("\t", 4 * " ")
+
+
+if __name__ == "__main__":
+    root = Path(__file__).parent / "models"
+    target_folder = Path(r".\src\aind_data_schema_models\_generated")
+    os.makedirs(target_folder, exist_ok=True)
+
+    platforms = ModelGenerator(
+        enum_like_class_name="_Platform",
+        parent_model_type=_PlatformModel,
+        discriminator="name",
+        source_data_path=root / "platforms.csv",
+    )
+    platforms.write(target_folder / "platforms.py")
+
+    modalities = ModelGenerator(
+        enum_like_class_name="_Modality",
+        parent_model_type=_ModalityModel,
+        discriminator="name",
+        source_data_path=root / "modalities.csv",
+    )
+    modalities.write(target_folder / "modalities.py")
+
+    harp_device_types = ModelGenerator(
+        enum_like_class_name="_HarpDeviceType",
+        parent_model_type=_HarpDeviceTypeModel,
+        discriminator="name",
+        source_data_path=root / "harp_types.csv",
+    )
+    harp_device_types.write(target_folder / "harp_types.py")
+
