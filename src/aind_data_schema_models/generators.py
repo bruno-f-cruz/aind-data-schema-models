@@ -108,12 +108,12 @@ class ModelGenerator:
         """
 
         model_one_of = """
-        \t_ALL = tuple({parent_name}.__subclasses__())
-        \tONE_OF = Annotated[Union[_ALL], Field(discriminator="{discriminator}")]
+        \tALL = tuple({parent_name}.__subclasses__())
+        \tONE_OF = Annotated[Union[ALL], Field(discriminator="{discriminator}")]
         """
 
         model_abbreviation_map = """
-        \tabbreviation_map = {m().abbreviation: m() for m in _ALL}
+        \tabbreviation_map = {m().abbreviation: m() for m in ALL}
 
         \t@classmethod
         \tdef from_abbreviation(cls, abbreviation: str):
