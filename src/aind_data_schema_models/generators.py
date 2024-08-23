@@ -247,7 +247,7 @@ class ModelGenerator:
                 self._Templates.import_statements.format(),
                 self._Templates.generic_import_statement.format(
                     module_name=self._normalized_module_name(self.parent_model_type.__module__),
-                    class_name=self.parent_model_type.__name__
+                    class_name=self.parent_model_type.__name__,
                 ),
                 "".join(
                     [
@@ -306,6 +306,7 @@ class ModelGenerator:
     def _normalized_module_name(module_name: str) -> str:
         return "aind_data_schema_models.generators" if module_name == "__main__" else module_name
 
+
 if __name__ == "__main__":
     root = Path(__file__).parent / "models"
     target_folder = Path(r".\src\aind_data_schema_models\_generated")
@@ -332,7 +333,6 @@ if __name__ == "__main__":
         parent_model_type=_HarpDeviceTypeModel,
         discriminator="name",
         source_data_path=root / "harp_types.csv",
-        render_abbreviation_map=False
+        render_abbreviation_map=False,
     )
     harp_device_types.write(target_folder / "harp_types.py")
-

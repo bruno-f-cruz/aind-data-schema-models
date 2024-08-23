@@ -94,9 +94,7 @@ class Slap(_ModalityModel):
 
 class Spim(_ModalityModel):
 
-    name: Literal["Selective plane illumination microscopy"] = (
-        "Selective plane illumination microscopy"
-    )
+    name: Literal["Selective plane illumination microscopy"] = "Selective plane illumination microscopy"
     abbreviation: Literal["SPIM"] = "SPIM"
 
 

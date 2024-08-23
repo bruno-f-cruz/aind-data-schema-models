@@ -44,25 +44,19 @@ class Fip(_PlatformModel):
 
 class Hcr(_PlatformModel):
 
-    name: Literal["Hybridization chain reaction platform"] = (
-        "Hybridization chain reaction platform"
-    )
+    name: Literal["Hybridization chain reaction platform"] = "Hybridization chain reaction platform"
     abbreviation: Literal["HCR"] = "HCR"
 
 
 class Hsfp(_PlatformModel):
 
-    name: Literal["Hyperspectral fiber photometry platform"] = (
-        "Hyperspectral fiber photometry platform"
-    )
+    name: Literal["Hyperspectral fiber photometry platform"] = "Hyperspectral fiber photometry platform"
     abbreviation: Literal["HSFP"] = "HSFP"
 
 
 class Isi(_PlatformModel):
 
-    name: Literal["Intrinsic signal imaging platform"] = (
-        "Intrinsic signal imaging platform"
-    )
+    name: Literal["Intrinsic signal imaging platform"] = "Intrinsic signal imaging platform"
     abbreviation: Literal["ISI"] = "ISI"
 
 
@@ -74,9 +68,7 @@ class Merfish(_PlatformModel):
 
 class Mri(_PlatformModel):
 
-    name: Literal["Magnetic resonance imaging platform"] = (
-        "Magnetic resonance imaging platform"
-    )
+    name: Literal["Magnetic resonance imaging platform"] = "Magnetic resonance imaging platform"
     abbreviation: Literal["MRI"] = "MRI"
 
 
@@ -94,9 +86,7 @@ class MotorObservatory(_PlatformModel):
 
 class MultiplaneOphys(_PlatformModel):
 
-    name: Literal["Multiplane optical physiology platform"] = (
-        "Multiplane optical physiology platform"
-    )
+    name: Literal["Multiplane optical physiology platform"] = "Multiplane optical physiology platform"
     abbreviation: Literal["multiplane-ophys"] = "multiplane-ophys"
 
 
@@ -108,9 +98,7 @@ class Slap2(_PlatformModel):
 
 class SinglePlaneOphys(_PlatformModel):
 
-    name: Literal["Single-plane optical physiology platform"] = (
-        "Single-plane optical physiology platform"
-    )
+    name: Literal["Single-plane optical physiology platform"] = "Single-plane optical physiology platform"
     abbreviation: Literal["single-plane-ophys"] = "single-plane-ophys"
 
 
