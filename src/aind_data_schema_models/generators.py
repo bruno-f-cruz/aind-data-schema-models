@@ -139,6 +139,7 @@ class ModelGenerator:
         literal_class_name_hints: Optional[list[str]] = ["abbreviation", "name"],
         additional_preamble: Optional[str] = None,
         additional_imports: Optional[list[Type]] = None,
+        render_abbreviation_map: bool = True,
         **kwargs,
     ) -> None:
 
@@ -146,6 +147,7 @@ class ModelGenerator:
         self.parent_model_type = parent_model_type
         self.source_data_path = Path(source_data_path)
         self.discriminator = discriminator
+        self.render_abbreviation_map = render_abbreviation_map
         self._parsed_source = self._parse_source(fieldnames=kwargs.pop("fieldnames", None))
         self._literal_class_name_hints = literal_class_name_hints if literal_class_name_hints is not None else []
         self._hint: Optional[str] = None
@@ -234,7 +236,7 @@ class ModelGenerator:
             string_builder += _sub_string + "\n"
             self._created_literal_classes.update(_class_name)
 
-        string_builder += self._generate_enum_like_class()
+        string_builder += self._generate_enum_like_class(render_abbreviation_map=self.render_abbreviation_map)
 
         generated_code = "".join(
             [
@@ -244,7 +246,8 @@ class ModelGenerator:
                 ),
                 self._Templates.import_statements.format(),
                 self._Templates.generic_import_statement.format(
-                    module_name=self.parent_model_type.__module__, class_name=self.parent_model_type.__name__
+                    module_name=self._normalized_module_name(self.parent_model_type.__module__),
+                    class_name=self.parent_model_type.__name__
                 ),
                 "".join(
                     [
@@ -299,6 +302,9 @@ class ModelGenerator:
     def _replace_tabs_with_spaces(text: str) -> str:
         return text.replace("\t", 4 * " ")
 
+    @staticmethod
+    def _normalized_module_name(module_name: str) -> str:
+        return "aind_data_schema_models.generators" if module_name == "__main__" else module_name
 
 if __name__ == "__main__":
     root = Path(__file__).parent / "models"
@@ -326,6 +332,7 @@ if __name__ == "__main__":
         parent_model_type=_HarpDeviceTypeModel,
         discriminator="name",
         source_data_path=root / "harp_types.csv",
+        render_abbreviation_map=False
     )
     harp_device_types.write(target_folder / "harp_types.py")
 
