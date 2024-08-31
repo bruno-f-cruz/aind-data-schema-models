@@ -1,16 +1,18 @@
-import csv
-import os
 import ast
-from typing import Type, TypeVar, Union, Tuple
-import re
-from pydantic import BaseModel, ConfigDict, Field
-from pathlib import Path
+import csv
 import datetime
+import os
+import re
+from pathlib import Path
+from typing import Callable, Dict, List, Optional, Tuple, Type, TypeVar, Union
+
+import black
+import isort
+from pydantic import BaseModel, ConfigDict, Field
+
 from aind_data_schema_models.pid_names import BaseName
 from aind_data_schema_models.registries import Registry, RegistryModel
 from aind_data_schema_models.utils import create_model_class_name as create_enum_key_from_class_name
-import black
-import isort
 
 
 class _HarpDeviceTypeModel(BaseModel):
@@ -46,9 +48,9 @@ class _OrganizationModel(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     name: str
-    abbreviation: str = None
-    registry: RegistryModel = None
-    registry_identifier: str = None
+    abbreviation: str
+    registry: RegistryModel
+    registry_identifier: str
 
 
 class _SpeciesModel(BaseModel):
@@ -80,7 +82,8 @@ class _RegistryModel(BaseName):
 
 
 TModel = TypeVar("TModel", bound=BaseModel)
-from typing import Optional
+AllowedSources = Union[os.PathLike[str], str]
+ParsedSource = List[Dict[str, str]]
 
 
 class ModelGenerator:
@@ -134,7 +137,8 @@ class ModelGenerator:
         self,
         enum_like_class_name: str,
         parent_model_type: Type[TModel],
-        source_data_path: Union[os.PathLike, str],
+        source_data_path: AllowedSources,
+        parser: Callable[..., ParsedSource],
         discriminator: str = "name",
         literal_class_name_hints: Optional[list[str]] = ["abbreviation", "name"],
         additional_preamble: Optional[str] = None,
@@ -143,90 +147,21 @@ class ModelGenerator:
         **kwargs,
     ) -> None:
 
-        self.enum_like_class_name = enum_like_class_name
-        self.parent_model_type = parent_model_type
-        self.source_data_path = Path(source_data_path)
-        self.discriminator = discriminator
-        self.render_abbreviation_map = render_abbreviation_map
-        self._parsed_source = self._parse_source(fieldnames=kwargs.pop("fieldnames", None))
+        self._enum_like_class_name = enum_like_class_name
+        self._parent_model_type = parent_model_type
+        self._source_data_path = source_data_path
+        self._discriminator = discriminator
+        self._render_abbreviation_map = render_abbreviation_map
+        self._parser = parser
         self._literal_class_name_hints = literal_class_name_hints if literal_class_name_hints is not None else []
-        self._hint: Optional[str] = None
-        self._created_literal_classes: dict[str, str] = {}
         self._additional_imports = additional_imports
         self._additional_preamble = additional_preamble
+
+        self._parsed_source: ParsedSource = self.parse()
+        self._hint: Optional[str] = None
+        self._created_literal_classes: dict[str, str] = {}
+
         self._validate()
-
-    def _validate(self):
-        if not issubclass(self.parent_model_type, BaseModel):
-            raise ValueError("model_type must be a subclass of pydantic.BaseModel")
-        if not self.is_pascal_case(self.enum_like_class_name):
-            raise ValueError("model_name must be in PascalCase")
-
-    @staticmethod
-    def is_pascal_case(value: str) -> bool:
-        if value.isidentifier():
-            return value[1].isupper() if value[0] == "_" else value[0].isupper()
-        else:
-            return False
-
-    @staticmethod
-    def to_pascal_case(value: str) -> str:
-        """Converts a string to PascalCase by splitting the word on "_", "-", and " " and capitalizing each sub-word"""
-        return "".join([word.capitalize() for word in re.split(r"[_\- ]", value)])
-
-    def _parse_source(self, fieldnames: Optional[list[str]]) -> list[dict[str, str]]:
-        with open(self.source_data_path, "r", encoding="utf-8") as f:
-            return list(csv.DictReader(f, fieldnames=fieldnames))
-
-    def _generate_literal_model(
-        self, sub: dict[str, str], class_name: Optional[str] = None
-    ) -> Tuple[dict[str, str], str]:
-        _class_name_hints = self._literal_class_name_hints.copy()
-
-        while class_name is None and len(_class_name_hints) > 0:
-            self._hint = _class_name_hints.pop(0)
-            class_name = sub.get(self._hint, None)
-        if class_name is None:
-            raise ValueError("No class name provided and hint was found in the source data")
-
-        sanitized_class_name = self.to_pascal_case(class_name)
-
-        # Since we are sticking with csv, I will assume only primitive types and this should suffice
-        parent_model_fields = {
-            field_name: field_info.annotation.__name__
-            for field_name, field_info in self.parent_model_type.model_fields.items()
-        }
-        for field_name in parent_model_fields.keys():
-            if field_name not in sub.keys():
-                raise ValueError(f"Field {field_name} not found in source data")
-
-        string_builder = ""
-        string_builder += self._Templates.sub_class_header.format(
-            class_name=sanitized_class_name, parent_name=self.parent_model_type.__name__
-        )
-
-        for field_name in parent_model_fields.keys():
-            param = sub[field_name]
-            if parent_model_fields[field_name] == "str":
-                param = f'"{param}"'
-            string_builder += self._Templates.field.format(field_name=field_name, param=param)
-        return ({class_name: sanitized_class_name}, string_builder)
-
-    def _generate_enum_like_class(self, render_abbreviation_map: bool = True) -> str:
-        string_builder = ""
-        string_builder += self._Templates.class_header.format(model_name=self.enum_like_class_name)
-
-        for class_name, sanitized_class_name in self._created_literal_classes.items():
-            string_builder += self._Templates.model_enum_entry.format(
-                key=create_enum_key_from_class_name(class_name), instance=sanitized_class_name
-            )
-
-        string_builder += self._Templates.model_one_of.format(
-            parent_name=self.parent_model_type.__name__, discriminator=self.discriminator
-        )
-        if render_abbreviation_map:
-            string_builder += self._Templates.model_abbreviation_map
-        return string_builder
 
     def generate(self, validate_code: bool = True) -> str:
         string_builder = "\n"
@@ -236,18 +171,18 @@ class ModelGenerator:
             string_builder += _sub_string + "\n"
             self._created_literal_classes.update(_class_name)
 
-        string_builder += self._generate_enum_like_class(render_abbreviation_map=self.render_abbreviation_map)
+        string_builder += self._generate_enum_like_class(render_abbreviation_map=self._render_abbreviation_map)
 
         generated_code = "".join(
             [
                 self._Templates.generated_header.format(
-                    filename_source=self.source_data_path.relative_to(Path(".").resolve()),
+                    filename_source=self._normalize_model_source_provenance(self._source_data_path),
                     datetime=datetime.datetime.now(),
                 ),
                 self._Templates.import_statements.format(),
                 self._Templates.generic_import_statement.format(
-                    module_name=self._normalized_module_name(self.parent_model_type.__module__),
-                    class_name=self.parent_model_type.__name__,
+                    module_name=self._normalized_module_name(self._parent_model_type.__module__),
+                    class_name=self._parent_model_type.__name__,
                 ),
                 "".join(
                     [
@@ -272,6 +207,7 @@ class ModelGenerator:
             if not is_valid:
                 raise error if error else ValueError("Generated code is not valid")
 
+        # TODO This could benefit from reading the pyproject.toml file
         generated_code = black.format_str(generated_code, mode=black.FileMode())
         generated_code = isort.code(generated_code)
 
@@ -280,6 +216,86 @@ class ModelGenerator:
     def write(self, output_path: Union[os.PathLike, str], validate_code: bool = True):
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(self.generate(validate_code=validate_code))
+
+    def _validate(self):
+        if not issubclass(self._parent_model_type, BaseModel):
+            raise ValueError("model_type must be a subclass of pydantic.BaseModel")
+        if not self.is_pascal_case(self._enum_like_class_name):
+            raise ValueError("model_name must be in PascalCase")
+
+    def parse(self) -> ParsedSource:
+        return self._parser()
+
+    def _generate_literal_model(
+        self, sub: dict[str, str], class_name: Optional[str] = None
+    ) -> Tuple[dict[str, str], str]:
+        _class_name_hints = self._literal_class_name_hints.copy()
+
+        while class_name is None and len(_class_name_hints) > 0:
+            self._hint = _class_name_hints.pop(0)
+            class_name = sub.get(self._hint, None)
+        if class_name is None:
+            self._hint = None
+            raise ValueError("No class name provided and hint was found in the source data")
+
+        sanitized_class_name = self.to_pascal_case(class_name)
+
+        # Since we are sticking with csv, I will assume only primitive types and this should suffice
+        parent_model_fields = {
+            field_name: field_info.annotation.__name__
+            for field_name, field_info in self._parent_model_type.model_fields.items()
+            if field_info.annotation is not None  # This should be safe as all types should be annotated by pydantic
+        }
+        for field_name in parent_model_fields.keys():
+            if field_name not in sub.keys():
+                raise ValueError(f"Field {field_name} not found in source data")
+
+        string_builder = ""
+        string_builder += self._Templates.sub_class_header.format(
+            class_name=sanitized_class_name, parent_name=self._parent_model_type.__name__
+        )
+
+        for field_name in parent_model_fields.keys():
+            param = sub[field_name]
+            if parent_model_fields[field_name] == "str":
+                param = f'"{param}"'
+            string_builder += self._Templates.field.format(field_name=field_name, param=param)
+        return ({class_name: sanitized_class_name}, string_builder)
+
+    def _generate_enum_like_class(self, render_abbreviation_map: bool = True) -> str:
+        string_builder = ""
+        string_builder += self._Templates.class_header.format(model_name=self._enum_like_class_name)
+
+        for class_name, sanitized_class_name in self._created_literal_classes.items():
+            string_builder += self._Templates.model_enum_entry.format(
+                key=create_enum_key_from_class_name(class_name), instance=sanitized_class_name
+            )
+
+        string_builder += self._Templates.model_one_of.format(
+            parent_name=self._parent_model_type.__name__, discriminator=self._discriminator
+        )
+        if render_abbreviation_map:
+            string_builder += self._Templates.model_abbreviation_map
+        return string_builder
+
+    @classmethod
+    def _normalize_model_source_provenance(cls, model_source: AllowedSources) -> str:
+        try:
+            return str(model_source)
+        except TypeError as e:
+            raise TypeError("model_source must be a string or os.PathLike[str]") from e
+
+    @staticmethod
+    def is_pascal_case(value: str) -> bool:
+        if value.isidentifier():
+            return value[1].isupper() if value[0] == "_" else value[0].isupper()
+        else:
+            return False
+
+    @staticmethod
+    def to_pascal_case(value: str) -> str:
+        """Converts a string to PascalCase by splitting the word on "_", "-", and " " and capitalizing each sub-word"""
+        return "".join([word.capitalize() for word in re.split(r"[_\- ]", value)])
 
     @staticmethod
     def _is_valid_code(literal_code: str) -> Tuple[bool, Optional[SyntaxError]]:
@@ -312,11 +328,16 @@ if __name__ == "__main__":
     target_folder = Path(r".\src\aind_data_schema_models\_generated")
     os.makedirs(target_folder, exist_ok=True)
 
+    def csv_parser(value: Path, fieldnames: Optional[List[str]] = None) -> ParsedSource:
+        with open(value, "r", encoding="utf-8") as f:
+            return list(csv.DictReader(f, fieldnames=fieldnames))
+
     platforms = ModelGenerator(
         enum_like_class_name="_Platform",
         parent_model_type=_PlatformModel,
         discriminator="name",
-        source_data_path=root / "platforms.csv",
+        source_data_path="platforms.csv",
+        parser=lambda: csv_parser(root / "platforms.csv"),
     )
     platforms.write(target_folder / "platforms.py")
 
@@ -324,7 +345,8 @@ if __name__ == "__main__":
         enum_like_class_name="_Modality",
         parent_model_type=_ModalityModel,
         discriminator="name",
-        source_data_path=root / "modalities.csv",
+        source_data_path="modalities.csv",
+        parser=lambda: csv_parser(root / "modalities.csv"),
     )
     modalities.write(target_folder / "modalities.py")
 
@@ -332,7 +354,8 @@ if __name__ == "__main__":
         enum_like_class_name="_HarpDeviceType",
         parent_model_type=_HarpDeviceTypeModel,
         discriminator="name",
-        source_data_path=root / "harp_types.csv",
+        source_data_path="harp_types.csv",
+        parser=lambda: csv_parser(root / "harp_types.csv"),
         render_abbreviation_map=False,
     )
     harp_device_types.write(target_folder / "harp_types.py")
