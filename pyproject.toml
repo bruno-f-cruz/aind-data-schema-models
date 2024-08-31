@@ -18,7 +18,8 @@ dynamic = ["version"]
 
 dependencies = [
     "pydantic>=2.7",
-    "importlib-resources"
+    "importlib-resources",
+    "pyyaml"
 ]
 
 [project.optional-dependencies]

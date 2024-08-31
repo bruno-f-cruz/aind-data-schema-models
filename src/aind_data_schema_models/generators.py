@@ -8,6 +8,8 @@ from typing import Callable, Dict, List, Optional, Tuple, Type, TypeVar, Union
 
 import black
 import isort
+import requests
+import yaml
 from pydantic import BaseModel, ConfigDict, Field
 
 from aind_data_schema_models.pid_names import BaseName
@@ -137,7 +139,7 @@ class ModelGenerator:
         self,
         enum_like_class_name: str,
         parent_model_type: Type[TModel],
-        source_data_path: AllowedSources,
+        data_source_identifier: AllowedSources,
         parser: Callable[..., ParsedSource],
         discriminator: str = "name",
         literal_class_name_hints: Optional[list[str]] = ["abbreviation", "name"],
@@ -149,7 +151,7 @@ class ModelGenerator:
 
         self._enum_like_class_name = enum_like_class_name
         self._parent_model_type = parent_model_type
-        self._source_data_path = source_data_path
+        self._data_source_identifier = data_source_identifier
         self._discriminator = discriminator
         self._render_abbreviation_map = render_abbreviation_map
         self._parser = parser
@@ -176,7 +178,7 @@ class ModelGenerator:
         generated_code = "".join(
             [
                 self._Templates.generated_header.format(
-                    filename_source=self._normalize_model_source_provenance(self._source_data_path),
+                    filename_source=self._normalize_model_source_provenance(self._data_source_identifier),
                     datetime=datetime.datetime.now(),
                 ),
                 self._Templates.import_statements.format(),
@@ -332,11 +334,20 @@ if __name__ == "__main__":
         with open(value, "r", encoding="utf-8") as f:
             return list(csv.DictReader(f, fieldnames=fieldnames))
 
+    def _get_who_am_i_list(
+        url: str = "https://raw.githubusercontent.com/harp-tech/protocol/main/whoami.yml",
+    ) -> List[Dict[str, str]]:
+        response = requests.get(url, allow_redirects=True, timeout=5)
+        content = response.content.decode("utf-8")
+        content = yaml.safe_load(content)
+        devices = content["devices"]
+        return [{"name": device["name"], "whoami": str(whoami)} for whoami, device in devices.items()]
+
     platforms = ModelGenerator(
         enum_like_class_name="_Platform",
         parent_model_type=_PlatformModel,
         discriminator="name",
-        source_data_path="platforms.csv",
+        data_source_identifier="platforms.csv",
         parser=lambda: csv_parser(root / "platforms.csv"),
     )
     platforms.write(target_folder / "platforms.py")
@@ -345,7 +356,7 @@ if __name__ == "__main__":
         enum_like_class_name="_Modality",
         parent_model_type=_ModalityModel,
         discriminator="name",
-        source_data_path="modalities.csv",
+        data_source_identifier="modalities.csv",
         parser=lambda: csv_parser(root / "modalities.csv"),
     )
     modalities.write(target_folder / "modalities.py")
@@ -354,8 +365,10 @@ if __name__ == "__main__":
         enum_like_class_name="_HarpDeviceType",
         parent_model_type=_HarpDeviceTypeModel,
         discriminator="name",
-        source_data_path="harp_types.csv",
-        parser=lambda: csv_parser(root / "harp_types.csv"),
+        data_source_identifier="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml",
+        parser=lambda: _get_who_am_i_list(
+            url="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml"
+        ),
         render_abbreviation_map=False,
     )
     harp_device_types.write(target_folder / "harp_types.py")
