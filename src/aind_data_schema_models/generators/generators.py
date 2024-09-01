@@ -4,7 +4,8 @@ import ast
 import datetime
 import os
 import re
-from typing import Callable, Dict, List, Optional, Self, Tuple, Type, TypeVar, Union
+from pathlib import Path
+from typing import Callable, Dict, List, NamedTuple, Optional, Self, Tuple, Type, TypeVar, Union
 
 import black
 import isort
@@ -17,6 +18,11 @@ AllowedSources = Union[os.PathLike[str], str]
 ParsedSource = List[Dict[str, str]]
 
 
+class _WrappedModelGenerator(NamedTuple):
+    model_generator: ModelGenerator
+    target_path: Optional[os.PathLike[str]]
+
+
 class GeneratorContext:
     _self = None
 
@@ -26,26 +32,32 @@ class GeneratorContext:
         return cls._self
 
     def __init__(self) -> None:
-        self._generators: List[ModelGenerator] = []
+        self._generators: List[_WrappedModelGenerator] = []
 
     @property
     def generators(self) -> List[ModelGenerator]:
-        return self._generators
+        return [g.model_generator for g in self._generators]
 
-    def add_generator(self, generator: ModelGenerator):
-        self._generators.append(generator)
+    def add_generator(self, generator: ModelGenerator, file_name: Optional[os.PathLike[str]] = None):
+        self._generators.append(_WrappedModelGenerator(model_generator=generator, target_path=file_name))
 
     def remove_generator(self, generator: ModelGenerator):
-        self._generators.remove(generator)
+        self._generators = [g for g in self._generators if g.model_generator != generator]
 
     def generate_all(self, validate_code: bool = True) -> List[str]:
-        return [generator.generate(validate_code=validate_code) for generator in self._generators]
+        return [generator.model_generator.generate(validate_code=validate_code) for generator in self._generators]
 
-    def write_all(self, output_folder: Union[os.PathLike, str], validate_code: bool = True):
-        # TODO need a way to generate unique filenames
-        raise NotImplementedError("This method is not yet implemented")
-        # for generator in self._generators:
-        #    generator.write(output_folder, validate_code=validate_code)
+    def write_all(self, output_folder: os.PathLike = Path("."), validate_code: bool = True, create_dir: bool = True):
+        if create_dir:
+            os.makedirs(output_folder, exist_ok=True)
+
+        for generator in self._generators:
+            target_path = (
+                generator.target_path
+                if generator.target_path
+                else generator.model_generator._enum_like_class_name.lower() + ".py"
+            )
+            generator.model_generator.write(Path(output_folder) / str(target_path), validate_code=validate_code)
 
     def __enter__(self) -> Self:
         return self
