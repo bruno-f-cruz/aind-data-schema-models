@@ -186,6 +186,9 @@ class ModelGenerator:
 
         """
 
+    _SPECIAL_CHARACTERS = r"!@#$%^&*()+=<>?,./;:'\"[]{}|\\`~"
+    _TRANSLATION_TABLE = str.maketrans('', '', _SPECIAL_CHARACTERS)
+
     def __init__(
         self,
         enum_like_class_name: str,
@@ -207,7 +210,7 @@ class ModelGenerator:
         self._discriminator = discriminator
         self._render_abbreviation_map = render_abbreviation_map
         self._parser = parser
-        self._literal_class_name_hints = literal_class_name_hints if literal_class_name_hints is not None else []
+        self._literal_class_name_hints = literal_class_name_hints.copy() if literal_class_name_hints is not None else []
         self._additional_imports = additional_imports
         self._additional_preamble = additional_preamble
         self._mappable_references = mappable_references
@@ -311,7 +314,7 @@ class ModelGenerator:
         if class_name is None:
             self._hint = None
             raise ValueError("No class name provided and hint was found in the source data")
-        sanitized_class_name = self.to_pascal_case(class_name)
+        sanitized_class_name = self._sanitize_class_name(class_name)
 
         # Get all fields that exist in the parent pydantic model
         parent_model_fields = {
@@ -384,7 +387,7 @@ class ModelGenerator:
 
         for class_name, sanitized_class_name in self._created_literal_classes.items():
             string_builder += self._Templates.model_enum_entry.format(
-                key=create_enum_key_from_class_name(class_name), instance=sanitized_class_name
+                key=self._create_enum_key_from_class_name(class_name), instance=sanitized_class_name
             )
 
         string_builder += self._Templates.model_one_of.format(
@@ -411,7 +414,22 @@ class ModelGenerator:
     @staticmethod
     def to_pascal_case(value: str) -> str:
         """Converts a string to PascalCase by splitting the word on "_", "-", and " " and capitalizing each sub-word"""
-        return "".join([word.capitalize() for word in re.split(r"[_\- ]", value)])
+        suffix = value[0] if value[0] == "_" else ""  # Honor the first underscore
+        return suffix + "".join([word.capitalize() for word in re.split(r"[_\- ]", value)])
+
+    @classmethod
+    def _sanitize_class_name(cls, class_name: str) -> str:
+        # If the class name starts with a digit, we prefix it with an underscore
+        class_name = class_name.translate(cls._TRANSLATION_TABLE)
+        if class_name[0].isdigit():
+            class_name = "_" + class_name
+
+        return cls.to_pascal_case(class_name)
+
+    @staticmethod
+    def _create_enum_key_from_class_name(value: str) -> str:
+        suffix = "_" if (value[0] == "_" or value[0].isdigit()) else ""
+        return suffix + create_enum_key_from_class_name(value)
 
     @staticmethod
     def _is_valid_code(literal_code: str) -> Tuple[bool, Optional[SyntaxError]]:
@@ -449,3 +467,4 @@ class ModelGenerator:
     @staticmethod
     def _replace_tabs_with_spaces(text: str) -> str:
         return text.replace("\t", 4 * " ")
+
