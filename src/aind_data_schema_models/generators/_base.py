@@ -1,7 +1,15 @@
 from pydantic import BaseModel, ConfigDict, Field
 
 from aind_data_schema_models.pid_names import BaseName
-from aind_data_schema_models.registries import Registry, RegistryModel
+
+
+class _RegistryModel(BaseName):
+    """Base model config"""
+
+    model_config = ConfigDict(frozen=True)
+
+    name: str = Field(..., title="Registry name")
+    abbreviation: str = Field(..., title="Registry abbreviation")
 
 
 class _HarpDeviceTypeModel(BaseModel):
@@ -27,7 +35,7 @@ class _MouseAnatomyModel(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     name: str = Field(..., title="Structure name")
-    registry: RegistryModel = Field(..., title="Structure registry")
+    registry: _RegistryModel = Field(..., title="Structure registry")
     registry_identifier: str = Field(title="Structure EMAPA ID")
 
 
@@ -38,7 +46,7 @@ class _OrganizationModel(BaseModel):
 
     name: str
     abbreviation: str
-    registry: RegistryModel
+    registry: _RegistryModel
     registry_identifier: str
 
 
@@ -48,7 +56,7 @@ class _SpeciesModel(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     name: str = Field(..., title="Species name")
-    registry: RegistryModel = Field(..., title="Species registry")
+    registry: _RegistryModel = Field(..., title="Species registry")
     registry_identifier: str = Field(..., title="Species registry identifier")
 
 
