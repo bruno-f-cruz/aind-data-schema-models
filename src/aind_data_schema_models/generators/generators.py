@@ -196,7 +196,7 @@ class ModelGenerator:
         additional_preamble: Optional[str] = None,
         additional_imports: Optional[list[Type]] = None,
         render_abbreviation_map: bool = True,
-        mappable_reference: Optional[List[MappableReferenceField]] = None,
+        mappable_references: Optional[List[MappableReferenceField]] = None,
         **kwargs,
     ) -> None:
 
@@ -209,13 +209,23 @@ class ModelGenerator:
         self._literal_class_name_hints = literal_class_name_hints if literal_class_name_hints is not None else []
         self._additional_imports = additional_imports
         self._additional_preamble = additional_preamble
-        self._mappable_reference_field = mappable_reference
+        self._mappable_references = mappable_references
 
         self._parsed_source: ParsedSourceCollection = self.parse()
         self._hint: Optional[str] = None
         self._created_literal_classes: dict[str, str] = {}
 
         self._validate()
+
+    @classmethod
+    def _solve_import(cls, type_of: Type) -> str:
+        module_name = type_of.__module__
+        if module_name == "builtins":
+            return ""
+        if module_name == "__main__":
+            module_name = "aind_data_schema_models.generators"
+        class_name = type_of.__name__
+        return cls._Templates.generic_import_statement.format(module_name=module_name, class_name=class_name)
 
     def generate(self, validate_code: bool = True) -> str:
         string_builder = "\n"
@@ -234,18 +244,10 @@ class ModelGenerator:
                     datetime=datetime.datetime.now(),
                 ),
                 self._Templates.import_statements.format(),
-                self._generate_mapper_references(),
-                self._Templates.generic_import_statement.format(
-                    module_name=self._normalized_module_name(self._parent_model_type.__module__),
-                    class_name=self._parent_model_type.__name__,
-                ),
+                self._generate_mappable_references(),
+                self._solve_import(self._parent_model_type),
                 "".join(
-                    [
-                        self._Templates.generic_import_statement.format(
-                            module_name=import_module.__module__, class_name=import_module.__name__
-                        )
-                        for import_module in self._additional_imports
-                    ]
+                    [self._solve_import(import_module) for import_module in self._additional_imports]
                     if self._additional_imports
                     else []
                 ),
@@ -268,14 +270,12 @@ class ModelGenerator:
 
         return generated_code
 
-    def _generate_mapper_references(self) -> str:
+    def _generate_mappable_references(self) -> str:
         string_builder = ""
-        if self._mappable_reference_field is not None:
-            _refs = set([mappable.typeof for mappable in self._mappable_reference_field])
+        if self._mappable_references is not None:
+            _refs = set([mappable.typeof for mappable in self._mappable_references])
             for r in _refs:
-                string_builder += self._Templates.generic_import_statement.format(
-                    module_name=r.__module__, class_name=r.__name__
-                )
+                string_builder += self._solve_import(r)
         return string_builder
 
     def write(self, output_path: Union[os.PathLike, str], validate_code: bool = True):
