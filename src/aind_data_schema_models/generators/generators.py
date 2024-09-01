@@ -143,8 +143,8 @@ class ModelGenerator:
     class _Templates:
 
         import_statements = """
-        from pydantic import Field
-        from typing import Union, Annotated, Literal
+        from pydantic import Field, RootModel
+        from typing import Union, Annotated, Literal, Type
         """
 
         generic_import_statement = """
@@ -163,9 +163,16 @@ class ModelGenerator:
         field = """\t{field_name}: Literal[{param}] = {param}
         """
 
-        model_one_of = """
+        class_tail = """
         \tALL = tuple({parent_name}.__subclasses__())
-        \tONE_OF = Annotated[Union[ALL], Field(discriminator="{discriminator}")]
+        \tONE_OF: Type
+        """
+
+        model_one_of = """
+        class _ONE_OF(RootModel):
+        \troot: Annotated[Union[{class_name}.ALL], Field(discriminator="{discriminator}")]
+
+        {class_name}.ONE_OF = _ONE_OF
         """
 
         model_abbreviation_map = """
@@ -390,11 +397,13 @@ class ModelGenerator:
                 key=self._create_enum_key_from_class_name(class_name), instance=sanitized_class_name
             )
 
-        string_builder += self._Templates.model_one_of.format(
-            parent_name=self._parent_model_type.__name__, discriminator=self._discriminator
-        )
+        string_builder += self._Templates.class_tail.format(
+            parent_name=self._parent_model_type.__name__)
         if render_abbreviation_map:
             string_builder += self._Templates.model_abbreviation_map
+        string_builder += self._Templates.model_one_of.format(
+            class_name=self._enum_like_class_name, discriminator=self._discriminator
+        )
         return string_builder
 
     @classmethod
