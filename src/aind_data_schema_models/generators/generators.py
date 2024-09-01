@@ -165,14 +165,11 @@ class ModelGenerator:
 
         class_tail = """
         \tALL = tuple({parent_name}.__subclasses__())
-        \tONE_OF: Type
         """
 
         model_one_of = """
-        class _ONE_OF(RootModel):
-        \troot: Annotated[Union[{class_name}.ALL], Field(discriminator="{discriminator}")]
-
-        {class_name}.ONE_OF = _ONE_OF
+        \tclass ONE_OF(RootModel):
+        \t\troot: Annotated[Union[tuple({parent_name}.__subclasses__())], Field(discriminator="{discriminator}")]
         """
 
         model_abbreviation_map = """
@@ -399,11 +396,12 @@ class ModelGenerator:
 
         string_builder += self._Templates.class_tail.format(
             parent_name=self._parent_model_type.__name__)
+        string_builder += self._Templates.model_one_of.format(
+            parent_name=self._parent_model_type.__name__, discriminator=self._discriminator
+        )
         if render_abbreviation_map:
             string_builder += self._Templates.model_abbreviation_map
-        string_builder += self._Templates.model_one_of.format(
-            class_name=self._enum_like_class_name, discriminator=self._discriminator
-        )
+
         return string_builder
 
     @classmethod
