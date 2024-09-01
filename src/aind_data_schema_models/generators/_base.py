@@ -67,12 +67,3 @@ class _PlatformModel(BaseModel):
 
     name: str = Field(..., title="Platform name")
     abbreviation: str = Field(..., title="Platform abbreviation")
-
-
-class _RegistryModel(BaseName):
-    """Base model config"""
-
-    model_config = ConfigDict(frozen=True)
-
-    name: str = Field(..., title="Registry name")
-    abbreviation: str = Field(..., title="Registry abbreviation")
