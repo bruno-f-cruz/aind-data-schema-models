@@ -1,91 +1,58 @@
+from __future__ import annotations
+
 import ast
-import csv
 import datetime
 import os
 import re
-from pathlib import Path
-from typing import Callable, Dict, List, Optional, Tuple, Type, TypeVar, Union
+from typing import Callable, Dict, List, Optional, Self, Tuple, Type, TypeVar, Union
 
 import black
 import isort
-import requests
-import yaml
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel
 
-from aind_data_schema_models.pid_names import BaseName
-from aind_data_schema_models.registries import Registry, RegistryModel
 from aind_data_schema_models.utils import create_model_class_name as create_enum_key_from_class_name
-
-
-class _HarpDeviceTypeModel(BaseModel):
-    """Base model config"""
-
-    model_config = ConfigDict(frozen=True)
-    name: str = Field(..., title="Harp device type name")
-    whoami: int = Field(..., title="Harp whoami value")
-
-
-class _ModalityModel(BaseName):
-    """Base model config"""
-
-    model_config = ConfigDict(frozen=True)
-
-    name: str = Field(..., title="Modality name")
-    abbreviation: str = Field(..., title="Modality abbreviation")
-
-
-class _MouseAnatomyModel(BaseModel):
-    """Base model config"""
-
-    model_config = ConfigDict(frozen=True)
-
-    name: str = Field(..., title="Structure name")
-    registry: RegistryModel = Field(..., title="Structure registry")
-    registry_identifier: str = Field(title="Structure EMAPA ID")
-
-
-class _OrganizationModel(BaseModel):
-    """Base model config"""
-
-    model_config = ConfigDict(frozen=True)
-
-    name: str
-    abbreviation: str
-    registry: RegistryModel
-    registry_identifier: str
-
-
-class _SpeciesModel(BaseModel):
-    """base model for species, like Mus musculus"""
-
-    model_config = ConfigDict(frozen=True)
-
-    name: str = Field(..., title="Species name")
-    registry: RegistryModel = Field(..., title="Species registry")
-    registry_identifier: str = Field(..., title="Species registry identifier")
-
-
-class _PlatformModel(BaseModel):
-    """Base model config"""
-
-    model_config = ConfigDict(frozen=True)
-
-    name: str = Field(..., title="Platform name")
-    abbreviation: str = Field(..., title="Platform abbreviation")
-
-
-class _RegistryModel(BaseName):
-    """Base model config"""
-
-    model_config = ConfigDict(frozen=True)
-
-    name: str = Field(..., title="Registry name")
-    abbreviation: str = Field(..., title="Registry abbreviation")
-
 
 TModel = TypeVar("TModel", bound=BaseModel)
 AllowedSources = Union[os.PathLike[str], str]
 ParsedSource = List[Dict[str, str]]
+
+
+class GeneratorContext:
+    _self = None
+
+    def __new__(cls) -> Self:
+        if cls._self is None:
+            cls._self = super().__new__(cls)
+        return cls._self
+
+    def __init__(self) -> None:
+        self._generators: List[ModelGenerator] = []
+
+    @property
+    def generators(self) -> List[ModelGenerator]:
+        return self._generators
+
+    def add_generator(self, generator: ModelGenerator):
+        self._generators.append(generator)
+
+    def remove_generator(self, generator: ModelGenerator):
+        self._generators.remove(generator)
+
+    def generate_all(self, validate_code: bool = True) -> List[str]:
+        return [generator.generate(validate_code=validate_code) for generator in self._generators]
+
+    def write_all(self, output_folder: Union[os.PathLike, str], validate_code: bool = True):
+        # TODO need a way to generate unique filenames
+        raise NotImplementedError("This method is not yet implemented")
+        # for generator in self._generators:
+        #    generator.write(output_folder, validate_code=validate_code)
+
+    def __enter__(self) -> Self:
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback) -> None:
+        self._generators = []
+        self._self = None
 
 
 class ModelGenerator:
@@ -323,52 +290,3 @@ class ModelGenerator:
     @staticmethod
     def _normalized_module_name(module_name: str) -> str:
         return "aind_data_schema_models.generators" if module_name == "__main__" else module_name
-
-
-if __name__ == "__main__":
-    root = Path(__file__).parent / "models"
-    target_folder = Path(r".\src\aind_data_schema_models\_generated")
-    os.makedirs(target_folder, exist_ok=True)
-
-    def csv_parser(value: Path, fieldnames: Optional[List[str]] = None) -> ParsedSource:
-        with open(value, "r", encoding="utf-8") as f:
-            return list(csv.DictReader(f, fieldnames=fieldnames))
-
-    def _get_who_am_i_list(
-        url: str = "https://raw.githubusercontent.com/harp-tech/protocol/main/whoami.yml",
-    ) -> List[Dict[str, str]]:
-        response = requests.get(url, allow_redirects=True, timeout=5)
-        content = response.content.decode("utf-8")
-        content = yaml.safe_load(content)
-        devices = content["devices"]
-        return [{"name": device["name"], "whoami": str(whoami)} for whoami, device in devices.items()]
-
-    platforms = ModelGenerator(
-        enum_like_class_name="_Platform",
-        parent_model_type=_PlatformModel,
-        discriminator="name",
-        data_source_identifier="platforms.csv",
-        parser=lambda: csv_parser(root / "platforms.csv"),
-    )
-    platforms.write(target_folder / "platforms.py")
-
-    modalities = ModelGenerator(
-        enum_like_class_name="_Modality",
-        parent_model_type=_ModalityModel,
-        discriminator="name",
-        data_source_identifier="modalities.csv",
-        parser=lambda: csv_parser(root / "modalities.csv"),
-    )
-    modalities.write(target_folder / "modalities.py")
-
-    harp_device_types = ModelGenerator(
-        enum_like_class_name="_HarpDeviceType",
-        parent_model_type=_HarpDeviceTypeModel,
-        discriminator="name",
-        data_source_identifier="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml",
-        parser=lambda: _get_who_am_i_list(
-            url="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml"
-        ),
-        render_abbreviation_map=False,
-    )
-    harp_device_types.write(target_folder / "harp_types.py")
