@@ -146,7 +146,8 @@ class ModelGenerator:
         from typing import Union, Annotated, Literal
         """
 
-        generic_import_statement = """from {module_name} import {class_name}\n"""
+        generic_import_statement = """
+        from {module_name} import {class_name}\n"""
 
         sub_class_header = """
         class {class_name}({parent_name}):
