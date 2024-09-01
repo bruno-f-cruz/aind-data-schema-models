@@ -288,8 +288,8 @@ class ModelGenerator:
         if not self.is_pascal_case(self._enum_like_class_name):
             raise ValueError("model_name must be in PascalCase")
 
-        if self._mappable_reference_field is not None:
-            fields_name = [mappable.field_name for mappable in self._mappable_reference_field]
+        if self._mappable_references is not None:
+            fields_name = [mappable.field_name for mappable in self._mappable_references]
             if len(fields_name) != len(set(fields_name)):
                 raise ValueError(
                     f"field_name must be unique across all MappableReferenceField objects. Entries: {fields_name}"
@@ -323,16 +323,15 @@ class ModelGenerator:
         # or in on the the MappableReferenceField objects
         if require_all_fields_mapped:
             for field_name in parent_model_fields.keys():
-                if field_name not in parsed_source.keys():
-                    if self._mappable_reference_field is not None:
-                        mappable_fields = [mappable.parsed_source_keys for mappable in self._mappable_reference_field]
-                        if field_name not in mappable_fields:
-                            raise ValueError(f"Field {field_name} not found in source data")
+                if field_name in parsed_source.keys():
+                    break
+                if self._mappable_references is not None:
+                    mappable_fields = [mappable.parsed_source_keys for mappable in self._mappable_references]
+                    if field_name not in mappable_fields:
+                        raise ValueError(f"Field {field_name} not found in source data")
 
                 # Check if the parent class has the mappable field
-                _mappable_references = (
-                    self._mappable_reference_field if self._mappable_reference_field is not None else []
-                )
+                _mappable_references = self._mappable_references if self._mappable_references is not None else []
                 for mappable in _mappable_references:
                     if not mappable.has_mappable_field(self._parent_model_type):
                         raise ValueError(f"Field {mappable.field_name} not found in parent")
@@ -346,24 +345,34 @@ class ModelGenerator:
         # Populate the value-based fields
         for field_name in parent_model_fields.keys():
             _generated = False
-            # Mappable fields take priority over keys in csv
+
+            # 1) Mappable fields take priority over keys in csv
             _this_mappable = self._try_get_mappable_reference_field(field_name)
             if _this_mappable is not None and not _generated:
                 param = _this_mappable(parsed_source)
-                param = self.indent_block(self.unindent(param), level=self.count_indent_level(self._Templates.field))
+                param = self.unindent(param)
                 _generated = True
+
+            # 2) if 1) fails, we try to get the value from the source data
             if field_name in parsed_source.keys() and not _generated:
                 param = parsed_source[field_name]
                 if parent_model_fields[field_name] == "str":
                     param = f'"{param}"'
+                _generated = True
+
+            # 3) throw if strict and 1) and 2) fail
+            if not _generated and require_all_fields_mapped:
+                raise ValueError(f"Field {field_name} could not be generated")
+
+            if _generated:
                 string_builder += self._Templates.field.format(field_name=field_name, param=param)
 
         return ({class_name: sanitized_class_name}, string_builder)
 
     def _try_get_mappable_reference_field(self, field: str) -> Optional[MappableReferenceField]:
-        if self._mappable_reference_field is None:
+        if self._mappable_references is None:
             return None
-        for mappable in self._mappable_reference_field:
+        for mappable in self._mappable_references:
             if mappable.field_name == field:
                 return mappable
         return None
@@ -439,7 +448,3 @@ class ModelGenerator:
     @staticmethod
     def _replace_tabs_with_spaces(text: str) -> str:
         return text.replace("\t", 4 * " ")
-
-    @staticmethod
-    def _normalized_module_name(module_name: str) -> str:
-        return "aind_data_schema_models.generators" if module_name == "__main__" else module_name
