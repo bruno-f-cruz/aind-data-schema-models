@@ -4,12 +4,12 @@ from aind_data_schema_models.generators._base import (
     _HarpDeviceTypeModel,
     _ModalityModel,
     _PlatformModel,
-    _RegistryModel,
     _SpeciesModel,
+    _MouseAnatomyModel,
+    _RegistryModel,
 )
 from aind_data_schema_models.generators.generators import GeneratorContext, MappableReferenceField, ModelGenerator
 from aind_data_schema_models.generators.parsers import csv_parser, get_who_am_i_list
-from aind_data_schema_models.registries import Registry
 
 if __name__ == "__main__":
 
@@ -60,7 +60,7 @@ if __name__ == "__main__":
         render_abbreviation_map=False,
         mappable_references=[
             MappableReferenceField(
-                typeof=Registry,
+                typeof=_RegistryModel,
                 field_name="registry",
                 parsed_source_keys_handlers=["registry_abbreviation"],
                 pattern="_Registry.{}",
@@ -74,10 +74,34 @@ if __name__ == "__main__":
         ],
     )
 
+    mouse_anatomy = ModelGenerator(
+        enum_like_class_name="_MouseAnatomyType",
+        parent_model_type=_MouseAnatomyModel,
+        discriminator="registry_identifier",
+        data_source_identifier="mouse_dev_anat_ontology.csv",
+        parser=lambda: csv_parser(root / "mouse_dev_anat_ontology.csv"),
+        mappable_references=[
+            MappableReferenceField(
+                typeof=_RegistryModel,
+                field_name="registry",
+                parsed_source_keys_handlers=["registry_identifier"],
+                pattern="_Registry.EMAPA",
+            ),
+            MappableReferenceField(
+                typeof=str,
+                field_name="registry_identifier",
+                parsed_source_keys_handlers=["registry_identifier"],
+                pattern='"{}"',
+            ),
+        ],
+        render_abbreviation_map=False,
+    )
+
     with GeneratorContext() as ctx:
         ctx.add_generator(harp_device_types, "harp_types.py")
         ctx.add_generator(platforms, "platforms.py")
         ctx.add_generator(modalities, "modalities.py")
         ctx.add_generator(registry, "registries.py")
         ctx.add_generator(species, "species.py")
+        ctx.add_generator(mouse_anatomy, "mouse_anatomy.py")
         ctx.write_all(target_folder)
