@@ -19,16 +19,19 @@ AllowedSources = Union[os.PathLike[str], str]
 ParsedSource = Dict[str, str]
 ParsedSourceCollection = List[ParsedSource]
 
+_S = List[str]
+_ST = List[Tuple[str, Optional[Callable[..., str]]]]
+_SST = Union[_S, _ST]
+
 
 class MappableReferenceField(Generic[TMapTo]):
+
     def __init__(
         self,
         typeof: Type[TMapTo],
         pattern: str,
         field_name: str,
-        parsed_source_keys_handlers: Union[
-            None, List[str], List[Union[str, Tuple[str, Optional[Callable[..., str]]]]]
-        ] = None,
+        parsed_source_keys_handlers: Optional[_SST] = None,
     ) -> None:
         self._typeof = typeof
         self._pattern = pattern
@@ -36,10 +39,8 @@ class MappableReferenceField(Generic[TMapTo]):
         self._field_name = field_name
 
     @staticmethod
-    def _normalize_parsed_source_keys(
-        value: Union[None, List[Union[str, Tuple[str, Optional[Callable[..., str]]]]]]
-    ) -> List[Tuple[str, Optional[Callable[..., str]]]]:
-        _normalized: List[Tuple[str, Optional[Callable[..., str]]]] = []
+    def _normalize_parsed_source_keys(value: Optional[_SST]) -> _ST:
+        _normalized: _ST = []
         if value is None:
             return _normalized
         for item in value:
