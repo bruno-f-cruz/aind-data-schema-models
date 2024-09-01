@@ -22,12 +22,42 @@ ParsedSourceCollection = List[ParsedSource]
 
 class MappableReferenceField(Generic[TMapTo]):
     def __init__(
-        self, typeof: Type[TMapTo], pattern: str, field_name: str, parsed_source_keys: Optional[List[str]] = None
+        self,
+        typeof: Type[TMapTo],
+        pattern: str,
+        field_name: str,
+        parsed_source_keys_handlers: Union[
+            None, List[str], List[Union[str, Tuple[str, Optional[Callable[..., str]]]]]
+        ] = None,
     ) -> None:
         self._typeof = typeof
         self._pattern = pattern
-        self._parsed_source_keys = parsed_source_keys if parsed_source_keys is not None else []
+        self._parsed_source_keys_handlers = self._normalize_parsed_source_keys(parsed_source_keys_handlers)
         self._field_name = field_name
+
+    @staticmethod
+    def _normalize_parsed_source_keys(
+        value: Union[None, List[Union[str, Tuple[str, Optional[Callable[..., str]]]]]]
+    ) -> List[Tuple[str, Optional[Callable[..., str]]]]:
+        _normalized: List[Tuple[str, Optional[Callable[..., str]]]] = []
+        if value is None:
+            return _normalized
+        for item in value:
+            if isinstance(item, str):
+                _normalized.append((item, None))
+                break
+            elif isinstance(item, tuple):
+                if len(item) != 2:
+                    raise ValueError(f"Tuple must have 2 elements: {item}")
+                if not isinstance(item[0], str):
+                    raise ValueError(f"First element must be a string: {item}")
+                if not callable(item[1]):
+                    raise ValueError(f"Second element must be callable: {item}")
+                else:
+                    _normalized.append(item)
+            else:
+                raise ValueError(f"Invalid type: {type(item)}")
+        return _normalized
 
     @property
     def field_name(self) -> str:
@@ -35,7 +65,7 @@ class MappableReferenceField(Generic[TMapTo]):
 
     @property
     def parsed_source_keys(self) -> List[str]:
-        return self._parsed_source_keys
+        return [key for key, _ in self._parsed_source_keys_handlers]
 
     @property
     def typeof(self) -> Type[TMapTo]:
@@ -49,7 +79,9 @@ class MappableReferenceField(Generic[TMapTo]):
         for key in self.parsed_source_keys:
             if key not in parsed_source:
                 raise KeyError(f"Key not found in source data: {key}")
-        _args = [parsed_source[key] for key in self.parsed_source_keys]
+        _args: List[str] = []
+        for key, handler in self._parsed_source_keys_handlers:
+            _args.append(handler(parsed_source[key]) if handler is not None else parsed_source[key])
         return self._pattern.format(*_args)
 
     def has_mappable_field(self, obj: Any) -> bool:
