@@ -172,7 +172,7 @@ class ModelGenerator:
 
         \t@classmethod
         \tdef from_abbreviation(cls, abbreviation: str):
-        \t    return cls.abbreviation_map[abbreviation]
+        \t    return cls.abbreviation_map.get(abbreviation, None)
         """
 
         model_enum_entry = """\t{key} = {instance}()
