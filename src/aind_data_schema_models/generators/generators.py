@@ -5,7 +5,7 @@ import datetime
 import os
 import re
 from pathlib import Path
-from typing import Callable, Dict, List, NamedTuple, Optional, Self, Tuple, Type, TypeVar, Union
+from typing import Any, Callable, Dict, Generic, List, NamedTuple, Optional, Self, Tuple, Type, TypeVar, Union
 
 import black
 import isort
@@ -14,8 +14,46 @@ from pydantic import BaseModel
 from aind_data_schema_models.utils import create_model_class_name as create_enum_key_from_class_name
 
 TModel = TypeVar("TModel", bound=BaseModel)
+TMapTo = TypeVar("TMapTo", bound=Any)
 AllowedSources = Union[os.PathLike[str], str]
-ParsedSource = List[Dict[str, str]]
+ParsedSource = Dict[str, str]
+ParsedSourceCollection = List[ParsedSource]
+
+
+class MappableReferenceField(Generic[TMapTo]):
+    def __init__(
+        self, typeof: Type[TMapTo], pattern: str, field_name: str, parsed_source_keys: Optional[List[str]] = None
+    ) -> None:
+        self._typeof = typeof
+        self._pattern = pattern
+        self._parsed_source_keys = parsed_source_keys if parsed_source_keys is not None else []
+        self._field_name = field_name
+
+    @property
+    def field_name(self) -> str:
+        return self._field_name
+
+    @property
+    def parsed_source_keys(self) -> List[str]:
+        return self._parsed_source_keys
+
+    @property
+    def typeof(self) -> Type[TMapTo]:
+        return self._typeof
+
+    @property
+    def pattern(self) -> str:
+        return self._pattern
+
+    def __call__(self, parsed_source: ParsedSource) -> str:
+        for key in self.parsed_source_keys:
+            if key not in parsed_source:
+                raise KeyError(f"Key not found in source data: {key}")
+        _args = [parsed_source[key] for key in self.parsed_source_keys]
+        return self._pattern.format(*_args)
+
+    def has_mappable_field(self, obj: Any) -> bool:
+        return hasattr(obj, self.field_name)
 
 
 class _WrappedModelGenerator(NamedTuple):
@@ -119,12 +157,13 @@ class ModelGenerator:
         enum_like_class_name: str,
         parent_model_type: Type[TModel],
         data_source_identifier: AllowedSources,
-        parser: Callable[..., ParsedSource],
+        parser: Callable[..., ParsedSourceCollection],
         discriminator: str = "name",
         literal_class_name_hints: Optional[list[str]] = ["abbreviation", "name"],
         additional_preamble: Optional[str] = None,
         additional_imports: Optional[list[Type]] = None,
         render_abbreviation_map: bool = True,
+        mappable_reference: Optional[List[MappableReferenceField]] = None,
         **kwargs,
     ) -> None:
 
@@ -137,8 +176,9 @@ class ModelGenerator:
         self._literal_class_name_hints = literal_class_name_hints if literal_class_name_hints is not None else []
         self._additional_imports = additional_imports
         self._additional_preamble = additional_preamble
+        self._mappable_reference_field = mappable_reference
 
-        self._parsed_source: ParsedSource = self.parse()
+        self._parsed_source: ParsedSourceCollection = self.parse()
         self._hint: Optional[str] = None
         self._created_literal_classes: dict[str, str] = {}
 
@@ -161,6 +201,7 @@ class ModelGenerator:
                     datetime=datetime.datetime.now(),
                 ),
                 self._Templates.import_statements.format(),
+                self._generate_mapper_references(),
                 self._Templates.generic_import_statement.format(
                     module_name=self._normalized_module_name(self._parent_model_type.__module__),
                     class_name=self._parent_model_type.__name__,
@@ -180,7 +221,7 @@ class ModelGenerator:
             ]
         )
 
-        generated_code = self._unindent(generated_code)
+        generated_code = self.unindent(generated_code)
         generated_code = self._replace_tabs_with_spaces(generated_code)
 
         if validate_code:
@@ -194,6 +235,16 @@ class ModelGenerator:
 
         return generated_code
 
+    def _generate_mapper_references(self) -> str:
+        string_builder = ""
+        if self._mappable_reference_field is not None:
+            _refs = set([mappable.typeof for mappable in self._mappable_reference_field])
+            for r in _refs:
+                string_builder += self._Templates.generic_import_statement.format(
+                    module_name=r.__module__, class_name=r.__name__
+                )
+        return string_builder
+
     def write(self, output_path: Union[os.PathLike, str], validate_code: bool = True):
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(self.generate(validate_code=validate_code))
@@ -204,44 +255,85 @@ class ModelGenerator:
         if not self.is_pascal_case(self._enum_like_class_name):
             raise ValueError("model_name must be in PascalCase")
 
-    def parse(self) -> ParsedSource:
+        if self._mappable_reference_field is not None:
+            fields_name = [mappable.field_name for mappable in self._mappable_reference_field]
+            if len(fields_name) != len(set(fields_name)):
+                raise ValueError(
+                    f"field_name must be unique across all MappableReferenceField objects. Entries: {fields_name}"
+                )
+
+    def parse(self) -> ParsedSourceCollection:
         return self._parser()
 
     def _generate_literal_model(
-        self, sub: dict[str, str], class_name: Optional[str] = None
+        self, parsed_source: ParsedSource, class_name: Optional[str] = None, require_all_fields_mapped: bool = False
     ) -> Tuple[dict[str, str], str]:
         _class_name_hints = self._literal_class_name_hints.copy()
 
+        # Solve for the class name
         while class_name is None and len(_class_name_hints) > 0:
             self._hint = _class_name_hints.pop(0)
-            class_name = sub.get(self._hint, None)
+            class_name = parsed_source.get(self._hint, None)
         if class_name is None:
             self._hint = None
             raise ValueError("No class name provided and hint was found in the source data")
-
         sanitized_class_name = self.to_pascal_case(class_name)
 
-        # Since we are sticking with csv, I will assume only primitive types and this should suffice
+        # Get all fields that exist in the parent pydantic model
         parent_model_fields = {
             field_name: field_info.annotation.__name__
             for field_name, field_info in self._parent_model_type.model_fields.items()
             if field_info.annotation is not None  # This should be safe as all types should be annotated by pydantic
         }
-        for field_name in parent_model_fields.keys():
-            if field_name not in sub.keys():
-                raise ValueError(f"Field {field_name} not found in source data")
 
+        # If require_all_fields_mapped is True, we will raise an error if a field in the parent model is not found in the source data
+        # or in on the the MappableReferenceField objects
+        if require_all_fields_mapped:
+            for field_name in parent_model_fields.keys():
+                if field_name not in parsed_source.keys():
+                    if self._mappable_reference_field is not None:
+                        mappable_fields = [mappable.parsed_source_keys for mappable in self._mappable_reference_field]
+                        if field_name not in mappable_fields:
+                            raise ValueError(f"Field {field_name} not found in source data")
+
+                # Check if the parent class has the mappable field
+                _mappable_references = (
+                    self._mappable_reference_field if self._mappable_reference_field is not None else []
+                )
+                for mappable in _mappable_references:
+                    if not mappable.has_mappable_field(self._parent_model_type):
+                        raise ValueError(f"Field {mappable.field_name} not found in parent")
+
+        # Generate the class header
         string_builder = ""
         string_builder += self._Templates.sub_class_header.format(
             class_name=sanitized_class_name, parent_name=self._parent_model_type.__name__
         )
 
+        # Populate the value-based fields
         for field_name in parent_model_fields.keys():
-            param = sub[field_name]
-            if parent_model_fields[field_name] == "str":
-                param = f'"{param}"'
-            string_builder += self._Templates.field.format(field_name=field_name, param=param)
+            _generated = False
+            # Mappable fields take priority over keys in csv
+            _this_mappable = self._try_get_mappable_reference_field(field_name)
+            if _this_mappable is not None and not _generated:
+                param = _this_mappable(parsed_source)
+                param = self.indent_block(self.unindent(param), level=self.count_indent_level(self._Templates.field))
+                _generated = True
+            if field_name in parsed_source.keys() and not _generated:
+                param = parsed_source[field_name]
+                if parent_model_fields[field_name] == "str":
+                    param = f'"{param}"'
+                string_builder += self._Templates.field.format(field_name=field_name, param=param)
+
         return ({class_name: sanitized_class_name}, string_builder)
+
+    def _try_get_mappable_reference_field(self, field: str) -> Optional[MappableReferenceField]:
+        if self._mappable_reference_field is None:
+            return None
+        for mappable in self._mappable_reference_field:
+            if mappable.field_name == field:
+                return mappable
+        return None
 
     def _generate_enum_like_class(self, render_abbreviation_map: bool = True) -> str:
         string_builder = ""
@@ -287,13 +379,29 @@ class ModelGenerator:
             return (False, e)
 
     @staticmethod
-    def _unindent(text: str) -> str:
+    def unindent(text: str) -> str:
         first_line = text.split("\n")[0]
         while first_line.strip() == "":
             text = text[1:]
             first_line = text.split("\n")[0]
         indent = len(first_line) - len(first_line.lstrip())
         return "\n".join([line[indent:] for line in text.split("\n")])
+
+    @staticmethod
+    def indent_line(text: str, level: int = 0) -> str:
+        if level == 0:
+            return text
+        if level < 0:
+            raise ValueError("Level must be greater than 0")
+        return "\t" * level + text
+
+    @classmethod
+    def indent_block(cls, text: str, level: int = 0) -> str:
+        return "".join([cls.indent_line(line, level) for line in text.split("\n")])
+
+    @staticmethod
+    def count_indent_level(text: str) -> int:
+        return len(text) - len(text.lstrip("\t"))
 
     @staticmethod
     def _replace_tabs_with_spaces(text: str) -> str:
