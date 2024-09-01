@@ -144,7 +144,7 @@ class ModelGenerator:
 
         import_statements = """
         from pydantic import Field, RootModel
-        from typing import Union, Annotated, Literal, Type
+        from typing import Union, Annotated, Literal
         """
 
         generic_import_statement = """
@@ -191,7 +191,7 @@ class ModelGenerator:
         """
 
     _SPECIAL_CHARACTERS = r"!@#$%^&*()+=<>?,./;:'\"[]{}|\\`~"
-    _TRANSLATION_TABLE = str.maketrans('', '', _SPECIAL_CHARACTERS)
+    _TRANSLATION_TABLE = str.maketrans("", "", _SPECIAL_CHARACTERS)
 
     def __init__(
         self,
@@ -394,8 +394,7 @@ class ModelGenerator:
                 key=self._create_enum_key_from_class_name(class_name), instance=sanitized_class_name
             )
 
-        string_builder += self._Templates.class_tail.format(
-            parent_name=self._parent_model_type.__name__)
+        string_builder += self._Templates.class_tail.format(parent_name=self._parent_model_type.__name__)
         string_builder += self._Templates.model_one_of.format(
             parent_name=self._parent_model_type.__name__, discriminator=self._discriminator
         )
@@ -474,4 +473,3 @@ class ModelGenerator:
     @staticmethod
     def _replace_tabs_with_spaces(text: str) -> str:
         return text.replace("\t", 4 * " ")
-
