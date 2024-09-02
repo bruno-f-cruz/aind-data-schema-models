@@ -8,7 +8,12 @@ from aind_data_schema_models.generators._base import (
     _MouseAnatomyModel,
     _RegistryModel,
 )
-from aind_data_schema_models.generators.generators import GeneratorContext, MappableReferenceField, ModelGenerator
+from aind_data_schema_models.generators.generators import (
+    GeneratorContext,
+    MappableReferenceField,
+    ModelGenerator,
+    ForwardClassReference,
+)
 from aind_data_schema_models.generators.parsers import csv_parser, get_who_am_i_list
 
 if __name__ == "__main__":
@@ -60,7 +65,9 @@ if __name__ == "__main__":
         render_abbreviation_map=False,
         mappable_references=[
             MappableReferenceField(
-                typeof=_RegistryModel,
+                typeof=ForwardClassReference(
+                    module_name="aind_data_schema_models._generated.registries", class_name="_Registry"
+                ),
                 field_name="registry",
                 parsed_source_keys_handlers=["registry_abbreviation"],
                 pattern="_Registry.{}",
@@ -82,7 +89,9 @@ if __name__ == "__main__":
         parser=lambda: csv_parser(root / "mouse_dev_anat_ontology.csv"),
         mappable_references=[
             MappableReferenceField(
-                typeof=_RegistryModel,
+                typeof=ForwardClassReference(
+                    module_name="aind_data_schema_models._generated.registries", class_name="_Registry"
+                ),
                 field_name="registry",
                 parsed_source_keys_handlers=["registry_identifier"],
                 pattern="_Registry.EMAPA",
@@ -98,10 +107,10 @@ if __name__ == "__main__":
     )
 
     with GeneratorContext() as ctx:
+        ctx.add_generator(registry, "registries.py")
         ctx.add_generator(harp_device_types, "harp_types.py")
         ctx.add_generator(platforms, "platforms.py")
         ctx.add_generator(modalities, "modalities.py")
-        ctx.add_generator(registry, "registries.py")
         ctx.add_generator(species, "species.py")
         ctx.add_generator(mouse_anatomy, "mouse_anatomy.py")
         ctx.write_all(target_folder)
