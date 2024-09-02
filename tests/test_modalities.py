@@ -44,5 +44,6 @@ class TestModality(unittest.TestCase):
 
         self.assertEqual(Modality.OPHYS, Modality.POPHYS)
 
+
 if __name__ == "__main__":
     unittest.main()
