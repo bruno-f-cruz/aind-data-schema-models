@@ -41,9 +41,9 @@ if __name__ == "__main__":
         enum_like_class_name="_HarpDeviceType",
         parent_model_type=_HarpDeviceTypeModel,
         discriminator="name",
-        data_source_identifier="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml",
+        data_source_identifier="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml",  # noqa: E501
         parser=lambda: get_who_am_i_list(
-            url="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml"
+            url="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml"  # noqa: E501
         ),
         render_abbreviation_map=False,
     )
