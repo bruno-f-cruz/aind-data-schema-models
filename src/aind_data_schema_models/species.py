@@ -1,3 +1,3 @@
 """Module for species definitions"""
 
-from aind_data_schema_models._generated.species import _Species as Species # noqa: F401
+from aind_data_schema_models._generated.species import _Species as Species  # noqa: F401

@@ -344,7 +344,8 @@ class ModelGenerator:
             if field_info.annotation is not None  # This should be safe as all types should be annotated by pydantic
         }
 
-        # If require_all_fields_mapped is True, we will raise an error if a field in the parent model is not found in the source data
+        # If require_all_fields_mapped is True, we will raise an error if
+        # a field in the parent model is not found in the source data
         # or in on the the MappableReferenceField objects
         if require_all_fields_mapped:
             for field_name in parent_model_fields.keys():

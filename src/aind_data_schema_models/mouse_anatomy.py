@@ -1,7 +1,7 @@
 """Module for Mouse Anatomy"""
-from aind_data_schema_models.utils import one_of_instance
 
 from aind_data_schema_models._generated.mouse_anatomy import _MouseAnatomyType as MouseAnatomicalStructure
+from aind_data_schema_models.utils import one_of_instance
 
 MouseAnatomicalStructure.EMG_MUSCLES = one_of_instance(
     [

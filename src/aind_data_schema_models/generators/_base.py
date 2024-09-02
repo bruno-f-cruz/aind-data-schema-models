@@ -43,7 +43,8 @@ class _MouseAnatomyModel(BaseModel):
     @field_validator("registry", mode="before")
     @classmethod
     def dict_to_model(cls, v: Any):
-        # I dont think we should use classes as enums, but I think this is the lowest footprint solution I could think of ...
+        # I dont think we should use classes as enums,
+        # but I think this is the lowest footprint solution I could think of ...
         if isinstance(v, dict):
             this_literal_class = get_args(cls.model_fields["registry"].annotation)[0].__class__
             return this_literal_class.model_validate(v)
@@ -63,7 +64,6 @@ class _OrganizationModel(BaseModel):
     @field_validator("registry", mode="before")
     @classmethod
     def dict_to_model(cls, v: Any):
-        # I dont think we should use classes as enums, but I think this is the lowest footprint solution I could think of ...
         if isinstance(v, dict):
             this_literal_class = get_args(cls.model_fields["registry"].annotation)[0].__class__
             return this_literal_class.model_validate(v)
@@ -82,7 +82,6 @@ class _SpeciesModel(BaseModel):
     @field_validator("registry", mode="before")
     @classmethod
     def dict_to_model(cls, v: Any):
-        # I dont think we should use classes as enums, but I think this is the lowest footprint solution I could think of ...
         if isinstance(v, dict):
             this_literal_class = get_args(cls.model_fields["registry"].annotation)[0].__class__
             return this_literal_class.model_validate(v)

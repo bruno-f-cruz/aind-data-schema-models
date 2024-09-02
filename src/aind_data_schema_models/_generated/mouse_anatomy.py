@@ -181,9 +181,7 @@ class ReichertsMembrane(_MouseAnatomyModel):
 
 class ExtraembryonicVisceralEndoderm(_MouseAnatomyModel):
 
-    name: Literal["extraembryonic visceral endoderm"] = (
-        "extraembryonic visceral endoderm"
-    )
+    name: Literal["extraembryonic visceral endoderm"] = "extraembryonic visceral endoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16058"] = "EMAPA_16058"
 
@@ -204,9 +202,7 @@ class BodyCavityOrLining(_MouseAnatomyModel):
 
 class ProamnioticCavityEmbryonicPart(_MouseAnatomyModel):
 
-    name: Literal["proamniotic cavity embryonic part"] = (
-        "proamniotic cavity embryonic part"
-    )
+    name: Literal["proamniotic cavity embryonic part"] = "proamniotic cavity embryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16061"] = "EMAPA_16061"
 
@@ -220,9 +216,7 @@ class EmbryoEndoderm(_MouseAnatomyModel):
 
 class ProamnioticCavityExtraembryonicPart(_MouseAnatomyModel):
 
-    name: Literal["proamniotic cavity extraembryonic part"] = (
-        "proamniotic cavity extraembryonic part"
-    )
+    name: Literal["proamniotic cavity extraembryonic part"] = "proamniotic cavity extraembryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16064"] = "EMAPA_16064"
 
@@ -439,9 +433,7 @@ class HeadMesenchyme(_MouseAnatomyModel):
 
 class MesenchymeDerivedFromHeadMesoderm(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme derived from head mesoderm"] = (
-        "mesenchyme derived from head mesoderm"
-    )
+    name: Literal["mesenchyme derived from head mesoderm"] = "mesenchyme derived from head mesoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16099"] = "EMAPA_16099"
 
@@ -553,9 +545,7 @@ class BloodIsland(_MouseAnatomyModel):
 
 class PrimordialGermCellOfYolkSac(_MouseAnatomyModel):
 
-    name: Literal["primordial germ cell of yolk sac"] = (
-        "primordial germ cell of yolk sac"
-    )
+    name: Literal["primordial germ cell of yolk sac"] = "primordial germ cell of yolk sac"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16116"] = "EMAPA_16116"
 
@@ -692,18 +682,14 @@ class PericardioPeritonealComponent(_MouseAnatomyModel):
 
 class PericardioPeritonealComponentCavity(_MouseAnatomyModel):
 
-    name: Literal["pericardio-peritoneal component cavity"] = (
-        "pericardio-peritoneal component cavity"
-    )
+    name: Literal["pericardio-peritoneal component cavity"] = "pericardio-peritoneal component cavity"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16135"] = "EMAPA_16135"
 
 
 class PericardioPeritonealComponentMesothelium(_MouseAnatomyModel):
 
-    name: Literal["pericardio-peritoneal component mesothelium"] = (
-        "pericardio-peritoneal component mesothelium"
-    )
+    name: Literal["pericardio-peritoneal component mesothelium"] = "pericardio-peritoneal component mesothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16136"] = "EMAPA_16136"
 
@@ -766,27 +752,21 @@ class FutureProsencephalon(_MouseAnatomyModel):
 
 class FutureProsencephalonFloorPlate(_MouseAnatomyModel):
 
-    name: Literal["future prosencephalon floor plate"] = (
-        "future prosencephalon floor plate"
-    )
+    name: Literal["future prosencephalon floor plate"] = "future prosencephalon floor plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16145"] = "EMAPA_16145"
 
 
 class FutureProsencephalonNeuralFold(_MouseAnatomyModel):
 
-    name: Literal["future prosencephalon neural fold"] = (
-        "future prosencephalon neural fold"
-    )
+    name: Literal["future prosencephalon neural fold"] = "future prosencephalon neural fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16146"] = "EMAPA_16146"
 
 
 class FutureProsencephalonNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal["future prosencephalon neural crest"] = (
-        "future prosencephalon neural crest"
-    )
+    name: Literal["future prosencephalon neural crest"] = "future prosencephalon neural crest"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16147"] = "EMAPA_16147"
 
@@ -807,36 +787,28 @@ class AnteriorProRhombomere(_MouseAnatomyModel):
 
 class AnteriorProRhombomereFloorPlate(_MouseAnatomyModel):
 
-    name: Literal["anterior pro-rhombomere floor plate"] = (
-        "anterior pro-rhombomere floor plate"
-    )
+    name: Literal["anterior pro-rhombomere floor plate"] = "anterior pro-rhombomere floor plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16150"] = "EMAPA_16150"
 
 
 class AnteriorProRhombomereNeuralFold(_MouseAnatomyModel):
 
-    name: Literal["anterior pro-rhombomere neural fold"] = (
-        "anterior pro-rhombomere neural fold"
-    )
+    name: Literal["anterior pro-rhombomere neural fold"] = "anterior pro-rhombomere neural fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16151"] = "EMAPA_16151"
 
 
 class AnteriorProRhombomereNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal["anterior pro-rhombomere neural crest"] = (
-        "anterior pro-rhombomere neural crest"
-    )
+    name: Literal["anterior pro-rhombomere neural crest"] = "anterior pro-rhombomere neural crest"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16152"] = "EMAPA_16152"
 
 
 class FutureHindbrainNeuralEctoderm(_MouseAnatomyModel):
 
-    name: Literal["future hindbrain neural ectoderm"] = (
-        "future hindbrain neural ectoderm"
-    )
+    name: Literal["future hindbrain neural ectoderm"] = "future hindbrain neural ectoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16153"] = "EMAPA_16153"
 
@@ -871,27 +843,21 @@ class PosteriorProRhombomere(_MouseAnatomyModel):
 
 class PosteriorProRhombomereFloorPlate(_MouseAnatomyModel):
 
-    name: Literal["posterior pro-rhombomere floor plate"] = (
-        "posterior pro-rhombomere floor plate"
-    )
+    name: Literal["posterior pro-rhombomere floor plate"] = "posterior pro-rhombomere floor plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16158"] = "EMAPA_16158"
 
 
 class PosteriorProRhombomereNeuralFold(_MouseAnatomyModel):
 
-    name: Literal["posterior pro-rhombomere neural fold"] = (
-        "posterior pro-rhombomere neural fold"
-    )
+    name: Literal["posterior pro-rhombomere neural fold"] = "posterior pro-rhombomere neural fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16159"] = "EMAPA_16159"
 
 
 class PosteriorProRhombomereNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal["posterior pro-rhombomere neural crest"] = (
-        "posterior pro-rhombomere neural crest"
-    )
+    name: Literal["posterior pro-rhombomere neural crest"] = "posterior pro-rhombomere neural crest"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16160"] = "EMAPA_16160"
 
@@ -954,9 +920,7 @@ class NeuralTubeRoofPlate(_MouseAnatomyModel):
 
 class HeadMesenchymeDerivedFromNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal["head mesenchyme derived from neural crest"] = (
-        "head mesenchyme derived from neural crest"
-    )
+    name: Literal["head mesenchyme derived from neural crest"] = "head mesenchyme derived from neural crest"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16169"] = "EMAPA_16169"
 
@@ -1047,9 +1011,7 @@ class Splanchnopleure(_MouseAnatomyModel):
 
 class TrunkMesenchymeDerivedFromNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal["trunk mesenchyme derived from neural crest"] = (
-        "trunk mesenchyme derived from neural crest"
-    )
+    name: Literal["trunk mesenchyme derived from neural crest"] = "trunk mesenchyme derived from neural crest"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16182"] = "EMAPA_16182"
 
@@ -1105,9 +1067,7 @@ class TrunkUnsegmentedMesenchyme(_MouseAnatomyModel):
 
 class PrimordialGermCellOfTrunkMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["primordial germ cell of trunk mesenchyme"] = (
-        "primordial germ cell of trunk mesenchyme"
-    )
+    name: Literal["primordial germ cell of trunk mesenchyme"] = "primordial germ cell of trunk mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16190"] = "EMAPA_16190"
 
@@ -1219,27 +1179,21 @@ class VitellineArtery(_MouseAnatomyModel):
 
 class PrimitiveHeartTubeCardiacJelly(_MouseAnatomyModel):
 
-    name: Literal["primitive heart tube cardiac jelly"] = (
-        "primitive heart tube cardiac jelly"
-    )
+    name: Literal["primitive heart tube cardiac jelly"] = "primitive heart tube cardiac jelly"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16209"] = "EMAPA_16209"
 
 
 class PrimitiveHeartTubeEndocardialTube(_MouseAnatomyModel):
 
-    name: Literal["primitive heart tube endocardial tube"] = (
-        "primitive heart tube endocardial tube"
-    )
+    name: Literal["primitive heart tube endocardial tube"] = "primitive heart tube endocardial tube"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16210"] = "EMAPA_16210"
 
 
 class PrimitiveHeartTubeCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["primitive heart tube cardiac muscle"] = (
-        "primitive heart tube cardiac muscle"
-    )
+    name: Literal["primitive heart tube cardiac muscle"] = "primitive heart tube cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16211"] = "EMAPA_16211"
 
@@ -1435,18 +1389,14 @@ class BuccopharyngealMembrane(_MouseAnatomyModel):
 
 class BuccopharyngealMembraneEctoderm(_MouseAnatomyModel):
 
-    name: Literal["buccopharyngeal membrane ectoderm"] = (
-        "buccopharyngeal membrane ectoderm"
-    )
+    name: Literal["buccopharyngeal membrane ectoderm"] = "buccopharyngeal membrane ectoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16260"] = "EMAPA_16260"
 
 
 class BuccopharyngealMembraneEndoderm(_MouseAnatomyModel):
 
-    name: Literal["buccopharyngeal membrane endoderm"] = (
-        "buccopharyngeal membrane endoderm"
-    )
+    name: Literal["buccopharyngeal membrane endoderm"] = "buccopharyngeal membrane endoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16261"] = "EMAPA_16261"
 
@@ -1576,18 +1526,14 @@ class PericardioPeritonealCanal(_MouseAnatomyModel):
 
 class PericardioPeritonealCanalCavity(_MouseAnatomyModel):
 
-    name: Literal["pericardio-peritoneal canal cavity"] = (
-        "pericardio-peritoneal canal cavity"
-    )
+    name: Literal["pericardio-peritoneal canal cavity"] = "pericardio-peritoneal canal cavity"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16283"] = "EMAPA_16283"
 
 
 class PericardioPeritonealCanalMesothelium(_MouseAnatomyModel):
 
-    name: Literal["pericardio-peritoneal canal mesothelium"] = (
-        "pericardio-peritoneal canal mesothelium"
-    )
+    name: Literal["pericardio-peritoneal canal mesothelium"] = "pericardio-peritoneal canal mesothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16284"] = "EMAPA_16284"
 
@@ -1601,9 +1547,7 @@ class FutureMidbrainRoofPlate(_MouseAnatomyModel):
 
 class FutureHindbrainPosteriorToRhombomere5(_MouseAnatomyModel):
 
-    name: Literal["future hindbrain posterior to rhombomere 5"] = (
-        "future hindbrain posterior to rhombomere 5"
-    )
+    name: Literal["future hindbrain posterior to rhombomere 5"] = "future hindbrain posterior to rhombomere 5"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16286"] = "EMAPA_16286"
 
@@ -1840,18 +1784,14 @@ class SeptumTransversum(_MouseAnatomyModel):
 
 class SeptumTransversumHepaticComponent(_MouseAnatomyModel):
 
-    name: Literal["septum transversum hepatic component"] = (
-        "septum transversum hepatic component"
-    )
+    name: Literal["septum transversum hepatic component"] = "septum transversum hepatic component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16319"] = "EMAPA_16319"
 
 
 class SeptumTransversumNonHepaticComponent(_MouseAnatomyModel):
 
-    name: Literal["septum transversum non-hepatic component"] = (
-        "septum transversum non-hepatic component"
-    )
+    name: Literal["septum transversum non-hepatic component"] = "septum transversum non-hepatic component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16320"] = "EMAPA_16320"
 
@@ -1942,27 +1882,21 @@ class BulbusCordisCaudalHalf(_MouseAnatomyModel):
 
 class BulbusCordisCaudalHalfCardiacJelly(_MouseAnatomyModel):
 
-    name: Literal["bulbus cordis caudal half cardiac jelly"] = (
-        "bulbus cordis caudal half cardiac jelly"
-    )
+    name: Literal["bulbus cordis caudal half cardiac jelly"] = "bulbus cordis caudal half cardiac jelly"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16335"] = "EMAPA_16335"
 
 
 class BulbusCordisCaudalHalfEndocardialTube(_MouseAnatomyModel):
 
-    name: Literal["bulbus cordis caudal half endocardial tube"] = (
-        "bulbus cordis caudal half endocardial tube"
-    )
+    name: Literal["bulbus cordis caudal half endocardial tube"] = "bulbus cordis caudal half endocardial tube"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16336"] = "EMAPA_16336"
 
 
 class BulbusCordisCaudalHalfCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["bulbus cordis caudal half cardiac muscle"] = (
-        "bulbus cordis caudal half cardiac muscle"
-    )
+    name: Literal["bulbus cordis caudal half cardiac muscle"] = "bulbus cordis caudal half cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16337"] = "EMAPA_16337"
 
@@ -1976,27 +1910,21 @@ class BulbusCordisRostralHalf(_MouseAnatomyModel):
 
 class BulbusCordisRostralHalfCardiacJelly(_MouseAnatomyModel):
 
-    name: Literal["bulbus cordis rostral half cardiac jelly"] = (
-        "bulbus cordis rostral half cardiac jelly"
-    )
+    name: Literal["bulbus cordis rostral half cardiac jelly"] = "bulbus cordis rostral half cardiac jelly"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16339"] = "EMAPA_16339"
 
 
 class BulbusCordisRostralHalfEndocardialTube(_MouseAnatomyModel):
 
-    name: Literal["bulbus cordis rostral half endocardial tube"] = (
-        "bulbus cordis rostral half endocardial tube"
-    )
+    name: Literal["bulbus cordis rostral half endocardial tube"] = "bulbus cordis rostral half endocardial tube"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16340"] = "EMAPA_16340"
 
 
 class BulbusCordisRostralHalfCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["bulbus cordis rostral half cardiac muscle"] = (
-        "bulbus cordis rostral half cardiac muscle"
-    )
+    name: Literal["bulbus cordis rostral half cardiac muscle"] = "bulbus cordis rostral half cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16341"] = "EMAPA_16341"
 
@@ -2010,27 +1938,21 @@ class CommonAtrialChamber(_MouseAnatomyModel):
 
 class CommonAtrialChamberCardiacJelly(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber cardiac jelly"] = (
-        "common atrial chamber cardiac jelly"
-    )
+    name: Literal["common atrial chamber cardiac jelly"] = "common atrial chamber cardiac jelly"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16343"] = "EMAPA_16343"
 
 
 class CommonAtrialChamberEndocardialTube(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber endocardial tube"] = (
-        "common atrial chamber endocardial tube"
-    )
+    name: Literal["common atrial chamber endocardial tube"] = "common atrial chamber endocardial tube"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16344"] = "EMAPA_16344"
 
 
 class CommonAtrialChamberCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber cardiac muscle"] = (
-        "common atrial chamber cardiac muscle"
-    )
+    name: Literal["common atrial chamber cardiac muscle"] = "common atrial chamber cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16345"] = "EMAPA_16345"
 
@@ -2072,27 +1994,21 @@ class PrimitiveVentricle(_MouseAnatomyModel):
 
 class PrimitiveVentricleCardiacJelly(_MouseAnatomyModel):
 
-    name: Literal["primitive ventricle cardiac jelly"] = (
-        "primitive ventricle cardiac jelly"
-    )
+    name: Literal["primitive ventricle cardiac jelly"] = "primitive ventricle cardiac jelly"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16351"] = "EMAPA_16351"
 
 
 class PrimitiveVentricleEndocardialTube(_MouseAnatomyModel):
 
-    name: Literal["primitive ventricle endocardial tube"] = (
-        "primitive ventricle endocardial tube"
-    )
+    name: Literal["primitive ventricle endocardial tube"] = "primitive ventricle endocardial tube"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16352"] = "EMAPA_16352"
 
 
 class PrimitiveVentricleCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["primitive ventricle cardiac muscle"] = (
-        "primitive ventricle cardiac muscle"
-    )
+    name: Literal["primitive ventricle cardiac muscle"] = "primitive ventricle cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16353"] = "EMAPA_16353"
 
@@ -2120,18 +2036,14 @@ class PosteriorCardinalVein(_MouseAnatomyModel):
 
 class LeftUmbilicalVeinEmbryonicPart(_MouseAnatomyModel):
 
-    name: Literal["left umbilical vein embryonic part"] = (
-        "left umbilical vein embryonic part"
-    )
+    name: Literal["left umbilical vein embryonic part"] = "left umbilical vein embryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16358"] = "EMAPA_16358"
 
 
 class RightUmbilicalVeinEmbryonicPart(_MouseAnatomyModel):
 
-    name: Literal["right umbilical vein embryonic part"] = (
-        "right umbilical vein embryonic part"
-    )
+    name: Literal["right umbilical vein embryonic part"] = "right umbilical vein embryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16359"] = "EMAPA_16359"
 
@@ -2159,27 +2071,21 @@ class ForegutMidgutJunction(_MouseAnatomyModel):
 
 class ForegutMidgutJunctionMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction mesenchyme"] = (
-        "foregut-midgut junction mesenchyme"
-    )
+    name: Literal["foregut-midgut junction mesenchyme"] = "foregut-midgut junction mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16364"] = "EMAPA_16364"
 
 
 class ForegutMidgutJunctionMesentery(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction mesentery"] = (
-        "foregut-midgut junction mesentery"
-    )
+    name: Literal["foregut-midgut junction mesentery"] = "foregut-midgut junction mesentery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16365"] = "EMAPA_16365"
 
 
 class ForegutMidgutJunctionDorsalMesentery(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction dorsal mesentery"] = (
-        "foregut-midgut junction dorsal mesentery"
-    )
+    name: Literal["foregut-midgut junction dorsal mesentery"] = "foregut-midgut junction dorsal mesentery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16366"] = "EMAPA_16366"
 
@@ -2221,9 +2127,7 @@ class ExtraembryonicArterialSystem(_MouseAnatomyModel):
 
 class UmbilicalArteryExtraembryonicPart(_MouseAnatomyModel):
 
-    name: Literal["umbilical artery extraembryonic part"] = (
-        "umbilical artery extraembryonic part"
-    )
+    name: Literal["umbilical artery extraembryonic part"] = "umbilical artery extraembryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16372"] = "EMAPA_16372"
 
@@ -2244,9 +2148,7 @@ class ExtraembryonicVenousSystem(_MouseAnatomyModel):
 
 class UmbilicalVeinExtraembryonicPart(_MouseAnatomyModel):
 
-    name: Literal["umbilical vein extraembryonic part"] = (
-        "umbilical vein extraembryonic part"
-    )
+    name: Literal["umbilical vein extraembryonic part"] = "umbilical vein extraembryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16375"] = "EMAPA_16375"
 
@@ -2260,54 +2162,42 @@ class CommonUmbilicalVein(_MouseAnatomyModel):
 
 class LeftUmbilicalVeinExtraembryonicPart(_MouseAnatomyModel):
 
-    name: Literal["left umbilical vein extraembryonic part"] = (
-        "left umbilical vein extraembryonic part"
-    )
+    name: Literal["left umbilical vein extraembryonic part"] = "left umbilical vein extraembryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16377"] = "EMAPA_16377"
 
 
 class RightUmbilicalVeinExtraembryonicPart(_MouseAnatomyModel):
 
-    name: Literal["right umbilical vein extraembryonic part"] = (
-        "right umbilical vein extraembryonic part"
-    )
+    name: Literal["right umbilical vein extraembryonic part"] = "right umbilical vein extraembryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16378"] = "EMAPA_16378"
 
 
 class VitellineVeinExtraembryonicPart(_MouseAnatomyModel):
 
-    name: Literal["vitelline vein extraembryonic part"] = (
-        "vitelline vein extraembryonic part"
-    )
+    name: Literal["vitelline vein extraembryonic part"] = "vitelline vein extraembryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16379"] = "EMAPA_16379"
 
 
 class LeftVitellineVeinExtraembryonicPart(_MouseAnatomyModel):
 
-    name: Literal["left vitelline vein extraembryonic part"] = (
-        "left vitelline vein extraembryonic part"
-    )
+    name: Literal["left vitelline vein extraembryonic part"] = "left vitelline vein extraembryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16380"] = "EMAPA_16380"
 
 
 class RightVitellineVeinExtraembryonicPart(_MouseAnatomyModel):
 
-    name: Literal["right vitelline vein extraembryonic part"] = (
-        "right vitelline vein extraembryonic part"
-    )
+    name: Literal["right vitelline vein extraembryonic part"] = "right vitelline vein extraembryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16381"] = "EMAPA_16381"
 
 
 class _1stBranchialArchMandibularComponent(_MouseAnatomyModel):
 
-    name: Literal["1st branchial arch mandibular component"] = (
-        "1st branchial arch mandibular component"
-    )
+    name: Literal["1st branchial arch mandibular component"] = "1st branchial arch mandibular component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16382"] = "EMAPA_16382"
 
@@ -2339,51 +2229,41 @@ class _1stBranchialArchMandibularComponentMesenchyme(_MouseAnatomyModel):
     registry_identifier: Literal["EMAPA_16385"] = "EMAPA_16385"
 
 
-class _1stBranchialArchMandibularComponentMesenchymeDerivedFromHeadMesoderm(
-    _MouseAnatomyModel
-):
+class _1stBranchialArchMandibularComponentMesenchymeDerivedFromHeadMesoderm(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["1st branchial arch mandibular component mesenchyme derived from head mesoderm"] = (
         "1st branchial arch mandibular component mesenchyme derived from head mesoderm"
-    ] = "1st branchial arch mandibular component mesenchyme derived from head mesoderm"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16386"] = "EMAPA_16386"
 
 
-class _1stBranchialArchMandibularComponentMesenchymeDerivedFromNeuralCrest(
-    _MouseAnatomyModel
-):
+class _1stBranchialArchMandibularComponentMesenchymeDerivedFromNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["1st branchial arch mandibular component mesenchyme derived from neural crest"] = (
         "1st branchial arch mandibular component mesenchyme derived from neural crest"
-    ] = "1st branchial arch mandibular component mesenchyme derived from neural crest"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16387"] = "EMAPA_16387"
 
 
 class _1stBranchialArchMaxillaryComponent(_MouseAnatomyModel):
 
-    name: Literal["1st branchial arch maxillary component"] = (
-        "1st branchial arch maxillary component"
-    )
+    name: Literal["1st branchial arch maxillary component"] = "1st branchial arch maxillary component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16388"] = "EMAPA_16388"
 
 
 class _1stBranchialArchMaxillaryComponentEctoderm(_MouseAnatomyModel):
 
-    name: Literal["1st branchial arch maxillary component ectoderm"] = (
-        "1st branchial arch maxillary component ectoderm"
-    )
+    name: Literal["1st branchial arch maxillary component ectoderm"] = "1st branchial arch maxillary component ectoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16389"] = "EMAPA_16389"
 
 
 class _1stBranchialArchMaxillaryComponentEndoderm(_MouseAnatomyModel):
 
-    name: Literal["1st branchial arch maxillary component endoderm"] = (
-        "1st branchial arch maxillary component endoderm"
-    )
+    name: Literal["1st branchial arch maxillary component endoderm"] = "1st branchial arch maxillary component endoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16390"] = "EMAPA_16390"
 
@@ -2397,33 +2277,27 @@ class _1stBranchialArchMaxillaryComponentMesenchyme(_MouseAnatomyModel):
     registry_identifier: Literal["EMAPA_16391"] = "EMAPA_16391"
 
 
-class _1stBranchialArchMaxillaryComponentMesenchymeDerivedFromHeadMesoderm(
-    _MouseAnatomyModel
-):
+class _1stBranchialArchMaxillaryComponentMesenchymeDerivedFromHeadMesoderm(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["1st branchial arch maxillary component mesenchyme derived from head mesoderm"] = (
         "1st branchial arch maxillary component mesenchyme derived from head mesoderm"
-    ] = "1st branchial arch maxillary component mesenchyme derived from head mesoderm"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16392"] = "EMAPA_16392"
 
 
-class _1stBranchialArchMaxillaryComponentMesenchymeDerivedFromNeuralCrest(
-    _MouseAnatomyModel
-):
+class _1stBranchialArchMaxillaryComponentMesenchymeDerivedFromNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["1st branchial arch maxillary component mesenchyme derived from neural crest"] = (
         "1st branchial arch maxillary component mesenchyme derived from neural crest"
-    ] = "1st branchial arch maxillary component mesenchyme derived from neural crest"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16393"] = "EMAPA_16393"
 
 
 class _1stBranchialArchMaxillaryMandibularGroove(_MouseAnatomyModel):
 
-    name: Literal["1st branchial arch maxillary-mandibular groove"] = (
-        "1st branchial arch maxillary-mandibular groove"
-    )
+    name: Literal["1st branchial arch maxillary-mandibular groove"] = "1st branchial arch maxillary-mandibular groove"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16394"] = "EMAPA_16394"
 
@@ -2534,27 +2408,21 @@ class ForelimbBudMesenchyme(_MouseAnatomyModel):
 
 class MesenchymeDerivedFromLateralPlate(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme derived from lateral plate"] = (
-        "mesenchyme derived from lateral plate"
-    )
+    name: Literal["mesenchyme derived from lateral plate"] = "mesenchyme derived from lateral plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16409"] = "EMAPA_16409"
 
 
 class MesenchymeDerivedFromSomatopleure(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme derived from somatopleure"] = (
-        "mesenchyme derived from somatopleure"
-    )
+    name: Literal["mesenchyme derived from somatopleure"] = "mesenchyme derived from somatopleure"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16410"] = "EMAPA_16410"
 
 
 class MesenchymeDerivedFromSplanchnopleure(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme derived from splanchnopleure"] = (
-        "mesenchyme derived from splanchnopleure"
-    )
+    name: Literal["mesenchyme derived from splanchnopleure"] = "mesenchyme derived from splanchnopleure"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16411"] = "EMAPA_16411"
 
@@ -3149,18 +3017,14 @@ class FutureDiencephalonFloorPlate(_MouseAnatomyModel):
 
 class FutureDiencephalonLateralWall(_MouseAnatomyModel):
 
-    name: Literal["future diencephalon lateral wall"] = (
-        "future diencephalon lateral wall"
-    )
+    name: Literal["future diencephalon lateral wall"] = "future diencephalon lateral wall"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16517"] = "EMAPA_16517"
 
 
 class FutureDiencephalonNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal["future diencephalon neural crest"] = (
-        "future diencephalon neural crest"
-    )
+    name: Literal["future diencephalon neural crest"] = "future diencephalon neural crest"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16518"] = "EMAPA_16518"
 
@@ -3293,9 +3157,9 @@ class AtrioventricularCanal(_MouseAnatomyModel):
 
 class VesselsConnectingInternalCarotidArteryToPrimaryHeadVeins(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["vessels connecting internal carotid artery to primary head veins"] = (
         "vessels connecting internal carotid artery to primary head veins"
-    ] = "vessels connecting internal carotid artery to primary head veins"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16547"] = "EMAPA_16547"
 
@@ -3330,9 +3194,7 @@ class PharyngealRegionEpithelium(_MouseAnatomyModel):
 
 class PharyngealRegionVascularElement(_MouseAnatomyModel):
 
-    name: Literal["pharyngeal region vascular element"] = (
-        "pharyngeal region vascular element"
-    )
+    name: Literal["pharyngeal region vascular element"] = "pharyngeal region vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16552"] = "EMAPA_16552"
 
@@ -3374,18 +3236,14 @@ class BiliaryBudIntrahepaticPart(_MouseAnatomyModel):
 
 class ForegutMidgutJunctionEpithelium(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction epithelium"] = (
-        "foregut-midgut junction epithelium"
-    )
+    name: Literal["foregut-midgut junction epithelium"] = "foregut-midgut junction epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16564"] = "EMAPA_16564"
 
 
 class ForegutMidgutJunctionVascularElement(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction vascular element"] = (
-        "foregut-midgut junction vascular element"
-    )
+    name: Literal["foregut-midgut junction vascular element"] = "foregut-midgut junction vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16566"] = "EMAPA_16566"
 
@@ -3399,9 +3257,7 @@ class HindgutDiverticulumEpithelium(_MouseAnatomyModel):
 
 class HindgutDiverticulumVascularElement(_MouseAnatomyModel):
 
-    name: Literal["hindgut diverticulum vascular element"] = (
-        "hindgut diverticulum vascular element"
-    )
+    name: Literal["hindgut diverticulum vascular element"] = "hindgut diverticulum vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16568"] = "EMAPA_16568"
 
@@ -3578,18 +3434,18 @@ class HindlimbRidgeMesenchyme(_MouseAnatomyModel):
 
 class TrunkMesenchymeDerivedFromNeuralCrestLateralMigrationPathway(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["trunk mesenchyme derived from neural crest lateral migration pathway"] = (
         "trunk mesenchyme derived from neural crest lateral migration pathway"
-    ] = "trunk mesenchyme derived from neural crest lateral migration pathway"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16596"] = "EMAPA_16596"
 
 
 class TrunkMesenchymeDerivedFromNeuralCrestMedialMigrationPathway(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["trunk mesenchyme derived from neural crest medial migration pathway"] = (
         "trunk mesenchyme derived from neural crest medial migration pathway"
-    ] = "trunk mesenchyme derived from neural crest medial migration pathway"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16597"] = "EMAPA_16597"
 
@@ -3932,9 +3788,7 @@ class CranialGanglion(_MouseAnatomyModel):
 
 class FacioAcousticPreganglionComplex(_MouseAnatomyModel):
 
-    name: Literal["facio-acoustic preganglion complex"] = (
-        "facio-acoustic preganglion complex"
-    )
+    name: Literal["facio-acoustic preganglion complex"] = "facio-acoustic preganglion complex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16660"] = "EMAPA_16660"
 
@@ -3948,9 +3802,7 @@ class GlossopharyngealPreganglion(_MouseAnatomyModel):
 
 class GlossopharyngealVagusPreganglionComplex(_MouseAnatomyModel):
 
-    name: Literal["glossopharyngeal-vagus preganglion complex"] = (
-        "glossopharyngeal-vagus preganglion complex"
-    )
+    name: Literal["glossopharyngeal-vagus preganglion complex"] = "glossopharyngeal-vagus preganglion complex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16662"] = "EMAPA_16662"
 
@@ -3978,9 +3830,7 @@ class PeripheralNervousSystem(_MouseAnatomyModel):
 
 class SpinalComponentOfPeripheralNervousSystem(_MouseAnatomyModel):
 
-    name: Literal["spinal component of peripheral nervous system"] = (
-        "spinal component of peripheral nervous system"
-    )
+    name: Literal["spinal component of peripheral nervous system"] = "spinal component of peripheral nervous system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16666"] = "EMAPA_16666"
 
@@ -4141,9 +3991,7 @@ class HeartAtrium(_MouseAnatomyModel):
 
 class CommonAtrialChamberEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber endocardial lining"] = (
-        "common atrial chamber endocardial lining"
-    )
+    name: Literal["common atrial chamber endocardial lining"] = "common atrial chamber endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16691"] = "EMAPA_16691"
 
@@ -4157,18 +4005,14 @@ class BulboventricularGroove(_MouseAnatomyModel):
 
 class BulbusCordisCaudalHalfEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["bulbus cordis caudal half endocardial lining"] = (
-        "bulbus cordis caudal half endocardial lining"
-    )
+    name: Literal["bulbus cordis caudal half endocardial lining"] = "bulbus cordis caudal half endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16694"] = "EMAPA_16694"
 
 
 class BulbusCordisRostralHalfEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["bulbus cordis rostral half endocardial lining"] = (
-        "bulbus cordis rostral half endocardial lining"
-    )
+    name: Literal["bulbus cordis rostral half endocardial lining"] = "bulbus cordis rostral half endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16695"] = "EMAPA_16695"
 
@@ -4182,27 +4026,21 @@ class EndocardialCushion(_MouseAnatomyModel):
 
 class PrimitiveVentricleEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["primitive ventricle endocardial lining"] = (
-        "primitive ventricle endocardial lining"
-    )
+    name: Literal["primitive ventricle endocardial lining"] = "primitive ventricle endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16697"] = "EMAPA_16697"
 
 
 class LeftVitellineVeinEmbryonicPart(_MouseAnatomyModel):
 
-    name: Literal["left vitelline vein embryonic part"] = (
-        "left vitelline vein embryonic part"
-    )
+    name: Literal["left vitelline vein embryonic part"] = "left vitelline vein embryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16698"] = "EMAPA_16698"
 
 
 class RightVitellineVeinEmbryonicPart(_MouseAnatomyModel):
 
-    name: Literal["right vitelline vein embryonic part"] = (
-        "right vitelline vein embryonic part"
-    )
+    name: Literal["right vitelline vein embryonic part"] = "right vitelline vein embryonic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16699"] = "EMAPA_16699"
 
@@ -4244,9 +4082,7 @@ class DorsalMesoEsophagus(_MouseAnatomyModel):
 
 class EsophagealRegionVascularElement(_MouseAnatomyModel):
 
-    name: Literal["esophageal region vascular element"] = (
-        "esophageal region vascular element"
-    )
+    name: Literal["esophageal region vascular element"] = "esophageal region vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16705"] = "EMAPA_16705"
 
@@ -4309,9 +4145,7 @@ class GallbladderPrimordium(_MouseAnatomyModel):
 
 class ForegutMidgutJunctionVentralMesentery(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction ventral mesentery"] = (
-        "foregut-midgut junction ventral mesentery"
-    )
+    name: Literal["foregut-midgut junction ventral mesentery"] = "foregut-midgut junction ventral mesentery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16714"] = "EMAPA_16714"
 
@@ -4437,9 +4271,7 @@ class LeftLungRudimentEpithelium(_MouseAnatomyModel):
 
 class LeftLungRudimentVascularElement(_MouseAnatomyModel):
 
-    name: Literal["left lung rudiment vascular element"] = (
-        "left lung rudiment vascular element"
-    )
+    name: Literal["left lung rudiment vascular element"] = "left lung rudiment vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16732"] = "EMAPA_16732"
 
@@ -4467,9 +4299,7 @@ class RightLungRudimentEpithelium(_MouseAnatomyModel):
 
 class RightLungRudimentVascularElement(_MouseAnatomyModel):
 
-    name: Literal["right lung rudiment vascular element"] = (
-        "right lung rudiment vascular element"
-    )
+    name: Literal["right lung rudiment vascular element"] = "right lung rudiment vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16736"] = "EMAPA_16736"
 
@@ -4504,27 +4334,21 @@ class TrachealDiverticulum(_MouseAnatomyModel):
 
 class TrachealDiverticulumMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["tracheal diverticulum mesenchyme"] = (
-        "tracheal diverticulum mesenchyme"
-    )
+    name: Literal["tracheal diverticulum mesenchyme"] = "tracheal diverticulum mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16741"] = "EMAPA_16741"
 
 
 class TrachealDiverticulumEpithelium(_MouseAnatomyModel):
 
-    name: Literal["tracheal diverticulum epithelium"] = (
-        "tracheal diverticulum epithelium"
-    )
+    name: Literal["tracheal diverticulum epithelium"] = "tracheal diverticulum epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16742"] = "EMAPA_16742"
 
 
 class TrachealDiverticulumVascularElement(_MouseAnatomyModel):
 
-    name: Literal["tracheal diverticulum vascular element"] = (
-        "tracheal diverticulum vascular element"
-    )
+    name: Literal["tracheal diverticulum vascular element"] = "tracheal diverticulum vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16743"] = "EMAPA_16743"
 
@@ -4566,9 +4390,7 @@ class TailMesenchyme(_MouseAnatomyModel):
 
 class TailMesenchymeDerivedFromNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal["tail mesenchyme derived from neural crest"] = (
-        "tail mesenchyme derived from neural crest"
-    )
+    name: Literal["tail mesenchyme derived from neural crest"] = "tail mesenchyme derived from neural crest"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16750"] = "EMAPA_16750"
 
@@ -4624,18 +4446,14 @@ class TailNeuralTube(_MouseAnatomyModel):
 
 class _3rdBranchialPouchDorsalEndoderm(_MouseAnatomyModel):
 
-    name: Literal["3rd branchial pouch dorsal endoderm"] = (
-        "3rd branchial pouch dorsal endoderm"
-    )
+    name: Literal["3rd branchial pouch dorsal endoderm"] = "3rd branchial pouch dorsal endoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16758"] = "EMAPA_16758"
 
 
 class _3rdBranchialPouchVentralEndoderm(_MouseAnatomyModel):
 
-    name: Literal["3rd branchial pouch ventral endoderm"] = (
-        "3rd branchial pouch ventral endoderm"
-    )
+    name: Literal["3rd branchial pouch ventral endoderm"] = "3rd branchial pouch ventral endoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16759"] = "EMAPA_16759"
 
@@ -4772,9 +4590,7 @@ class VisceralPleura(_MouseAnatomyModel):
 
 class ForelimbBudApicalEctodermalRidge(_MouseAnatomyModel):
 
-    name: Literal["forelimb bud apical ectodermal ridge"] = (
-        "forelimb bud apical ectodermal ridge"
-    )
+    name: Literal["forelimb bud apical ectodermal ridge"] = "forelimb bud apical ectodermal ridge"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16778"] = "EMAPA_16778"
 
@@ -4802,9 +4618,7 @@ class HindlimbBudMesenchyme(_MouseAnatomyModel):
 
 class FutureMidbrainVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["future midbrain ventricular layer"] = (
-        "future midbrain ventricular layer"
-    )
+    name: Literal["future midbrain ventricular layer"] = "future midbrain ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16785"] = "EMAPA_16785"
 
@@ -4881,9 +4695,7 @@ class GlossopharyngealGanglion(_MouseAnatomyModel):
 
 class GlossopharyngealVagusGanglionComplex(_MouseAnatomyModel):
 
-    name: Literal["glossopharyngeal-vagus ganglion complex"] = (
-        "glossopharyngeal-vagus ganglion complex"
-    )
+    name: Literal["glossopharyngeal-vagus ganglion complex"] = "glossopharyngeal-vagus ganglion complex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16796"] = "EMAPA_16796"
 
@@ -5009,9 +4821,7 @@ class CommonAtrialChamberLeftPart(_MouseAnatomyModel):
 
 class CommonAtrialChamberLeftPartCardiacJelly(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber left part cardiac jelly"] = (
-        "common atrial chamber left part cardiac jelly"
-    )
+    name: Literal["common atrial chamber left part cardiac jelly"] = "common atrial chamber left part cardiac jelly"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16814"] = "EMAPA_16814"
 
@@ -5034,45 +4844,35 @@ class LeftAuricularRegion(_MouseAnatomyModel):
 
 class LeftAuricularRegionEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["left auricular region endocardial lining"] = (
-        "left auricular region endocardial lining"
-    )
+    name: Literal["left auricular region endocardial lining"] = "left auricular region endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16817"] = "EMAPA_16817"
 
 
 class LeftAuricularRegionCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["left auricular region cardiac muscle"] = (
-        "left auricular region cardiac muscle"
-    )
+    name: Literal["left auricular region cardiac muscle"] = "left auricular region cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16818"] = "EMAPA_16818"
 
 
 class CommonAtrialChamberLeftPartCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber left part cardiac muscle"] = (
-        "common atrial chamber left part cardiac muscle"
-    )
+    name: Literal["common atrial chamber left part cardiac muscle"] = "common atrial chamber left part cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16819"] = "EMAPA_16819"
 
 
 class CommonAtrialChamberRightPart(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber right part"] = (
-        "common atrial chamber right part"
-    )
+    name: Literal["common atrial chamber right part"] = "common atrial chamber right part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16820"] = "EMAPA_16820"
 
 
 class CommonAtrialChamberRightPartCardiacJelly(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber right part cardiac jelly"] = (
-        "common atrial chamber right part cardiac jelly"
-    )
+    name: Literal["common atrial chamber right part cardiac jelly"] = "common atrial chamber right part cardiac jelly"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16821"] = "EMAPA_16821"
 
@@ -5088,9 +4888,7 @@ class CommonAtrialChamberRightPartEndocardialLining(_MouseAnatomyModel):
 
 class CommonAtrialChamberRightPartCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber right part cardiac muscle"] = (
-        "common atrial chamber right part cardiac muscle"
-    )
+    name: Literal["common atrial chamber right part cardiac muscle"] = "common atrial chamber right part cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16823"] = "EMAPA_16823"
 
@@ -5104,18 +4902,14 @@ class RightAuricularRegion(_MouseAnatomyModel):
 
 class RightAuricularRegionEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["right auricular region endocardial lining"] = (
-        "right auricular region endocardial lining"
-    )
+    name: Literal["right auricular region endocardial lining"] = "right auricular region endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16825"] = "EMAPA_16825"
 
 
 class RightAuricularRegionCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["right auricular region cardiac muscle"] = (
-        "right auricular region cardiac muscle"
-    )
+    name: Literal["right auricular region cardiac muscle"] = "right auricular region cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16826"] = "EMAPA_16826"
 
@@ -5129,9 +4923,7 @@ class AorticoPulmonarySpiralSeptum(_MouseAnatomyModel):
 
 class InterSubcardinalVenousAnastomosis(_MouseAnatomyModel):
 
-    name: Literal["inter-subcardinal venous anastomosis"] = (
-        "inter-subcardinal venous anastomosis"
-    )
+    name: Literal["inter-subcardinal venous anastomosis"] = "inter-subcardinal venous anastomosis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16828"] = "EMAPA_16828"
 
@@ -5530,9 +5322,7 @@ class GreaterSacMesothelium(_MouseAnatomyModel):
 
 class GreaterSacParietalMesothelium(_MouseAnatomyModel):
 
-    name: Literal["greater sac parietal mesothelium"] = (
-        "greater sac parietal mesothelium"
-    )
+    name: Literal["greater sac parietal mesothelium"] = "greater sac parietal mesothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16888"] = "EMAPA_16888"
 
@@ -5553,18 +5343,14 @@ class OmentalBursaMesothelium(_MouseAnatomyModel):
 
 class OmentalBursaParietalMesothelium(_MouseAnatomyModel):
 
-    name: Literal["omental bursa parietal mesothelium"] = (
-        "omental bursa parietal mesothelium"
-    )
+    name: Literal["omental bursa parietal mesothelium"] = "omental bursa parietal mesothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16891"] = "EMAPA_16891"
 
 
 class HindlimbBudApicalEctodermalRidge(_MouseAnatomyModel):
 
-    name: Literal["hindlimb bud apical ectodermal ridge"] = (
-        "hindlimb bud apical ectodermal ridge"
-    )
+    name: Literal["hindlimb bud apical ectodermal ridge"] = "hindlimb bud apical ectodermal ridge"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16892"] = "EMAPA_16892"
 
@@ -5606,9 +5392,7 @@ class DiencephalonGland(_MouseAnatomyModel):
 
 class InfundibularRecessOf3rdVentricle(_MouseAnatomyModel):
 
-    name: Literal["infundibular recess of 3rd ventricle"] = (
-        "infundibular recess of 3rd ventricle"
-    )
+    name: Literal["infundibular recess of 3rd ventricle"] = "infundibular recess of 3rd ventricle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16899"] = "EMAPA_16899"
 
@@ -5622,9 +5406,7 @@ class _3rdVentricle(_MouseAnatomyModel):
 
 class DiencephalicPartOfInterventricularForamen(_MouseAnatomyModel):
 
-    name: Literal["diencephalic part of interventricular foramen"] = (
-        "diencephalic part of interventricular foramen"
-    )
+    name: Literal["diencephalic part of interventricular foramen"] = "diencephalic part of interventricular foramen"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16901"] = "EMAPA_16901"
 
@@ -5659,27 +5441,21 @@ class DiencephalonLateralWall(_MouseAnatomyModel):
 
 class DiencephalonLateralWallMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["diencephalon lateral wall mantle layer"] = (
-        "diencephalon lateral wall mantle layer"
-    )
+    name: Literal["diencephalon lateral wall mantle layer"] = "diencephalon lateral wall mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16906"] = "EMAPA_16906"
 
 
 class DiencephalonLateralWallMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["diencephalon lateral wall marginal layer"] = (
-        "diencephalon lateral wall marginal layer"
-    )
+    name: Literal["diencephalon lateral wall marginal layer"] = "diencephalon lateral wall marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16907"] = "EMAPA_16907"
 
 
 class DiencephalonLateralWallVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["diencephalon lateral wall ventricular layer"] = (
-        "diencephalon lateral wall ventricular layer"
-    )
+    name: Literal["diencephalon lateral wall ventricular layer"] = "diencephalon lateral wall ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16908"] = "EMAPA_16908"
 
@@ -5728,9 +5504,7 @@ class LateralVentricle(_MouseAnatomyModel):
 
 class TelencephalicPartOfInterventricularForamen(_MouseAnatomyModel):
 
-    name: Literal["telencephalic part of interventricular foramen"] = (
-        "telencephalic part of interventricular foramen"
-    )
+    name: Literal["telencephalic part of interventricular foramen"] = "telencephalic part of interventricular foramen"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16915"] = "EMAPA_16915"
 
@@ -6003,18 +5777,14 @@ class EndolymphaticAppendage(_MouseAnatomyModel):
 
 class EndolymphaticAppendageMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["endolymphatic appendage mesenchyme"] = (
-        "endolymphatic appendage mesenchyme"
-    )
+    name: Literal["endolymphatic appendage mesenchyme"] = "endolymphatic appendage mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16995"] = "EMAPA_16995"
 
 
 class EndolymphaticAppendageEpithelium(_MouseAnatomyModel):
 
-    name: Literal["endolymphatic appendage epithelium"] = (
-        "endolymphatic appendage epithelium"
-    )
+    name: Literal["endolymphatic appendage epithelium"] = "endolymphatic appendage epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_16996"] = "EMAPA_16996"
 
@@ -6105,18 +5875,14 @@ class PulmonaryArtery(_MouseAnatomyModel):
 
 class CommonAtrialChamberRightPartValve(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber right part valve"] = (
-        "common atrial chamber right part valve"
-    )
+    name: Literal["common atrial chamber right part valve"] = "common atrial chamber right part valve"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17009"] = "EMAPA_17009"
 
 
 class CommonAtrialChamberRightPartVenousValve(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber right part venous valve"] = (
-        "common atrial chamber right part venous valve"
-    )
+    name: Literal["common atrial chamber right part venous valve"] = "common atrial chamber right part venous valve"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17010"] = "EMAPA_17010"
 
@@ -6242,9 +6008,7 @@ class StomachVascularElement(_MouseAnatomyModel):
 
 class HindgutDiverticulumPostanalComponent(_MouseAnatomyModel):
 
-    name: Literal["hindgut diverticulum postanal component"] = (
-        "hindgut diverticulum postanal component"
-    )
+    name: Literal["hindgut diverticulum postanal component"] = "hindgut diverticulum postanal component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17028"] = "EMAPA_17028"
 
@@ -6278,9 +6042,7 @@ class HindgutDiverticulumPostanalComponentVascularElement(_MouseAnatomyModel):
 
 class HindgutDiverticulumPreanalComponent(_MouseAnatomyModel):
 
-    name: Literal["hindgut diverticulum preanal component"] = (
-        "hindgut diverticulum preanal component"
-    )
+    name: Literal["hindgut diverticulum preanal component"] = "hindgut diverticulum preanal component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17032"] = "EMAPA_17032"
 
@@ -6538,27 +6300,21 @@ class CerebellumPrimordium(_MouseAnatomyModel):
 
 class MetencephalonAlarPlateMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["metencephalon alar plate mantle layer"] = (
-        "metencephalon alar plate mantle layer"
-    )
+    name: Literal["metencephalon alar plate mantle layer"] = "metencephalon alar plate mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17075"] = "EMAPA_17075"
 
 
 class MetencephalonAlarPlateMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["metencephalon alar plate marginal layer"] = (
-        "metencephalon alar plate marginal layer"
-    )
+    name: Literal["metencephalon alar plate marginal layer"] = "metencephalon alar plate marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17076"] = "EMAPA_17076"
 
 
 class MetencephalonAlarPlateVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["metencephalon alar plate ventricular layer"] = (
-        "metencephalon alar plate ventricular layer"
-    )
+    name: Literal["metencephalon alar plate ventricular layer"] = "metencephalon alar plate ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17077"] = "EMAPA_17077"
 
@@ -6572,27 +6328,21 @@ class MetencephalonBasalPlate(_MouseAnatomyModel):
 
 class MetencephalonBasalPlateMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["metencephalon basal plate mantle layer"] = (
-        "metencephalon basal plate mantle layer"
-    )
+    name: Literal["metencephalon basal plate mantle layer"] = "metencephalon basal plate mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17079"] = "EMAPA_17079"
 
 
 class MetencephalonBasalPlateMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["metencephalon basal plate marginal layer"] = (
-        "metencephalon basal plate marginal layer"
-    )
+    name: Literal["metencephalon basal plate marginal layer"] = "metencephalon basal plate marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17080"] = "EMAPA_17080"
 
 
 class MetencephalonBasalPlateVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["metencephalon basal plate ventricular layer"] = (
-        "metencephalon basal plate ventricular layer"
-    )
+    name: Literal["metencephalon basal plate ventricular layer"] = "metencephalon basal plate ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17081"] = "EMAPA_17081"
 
@@ -6620,27 +6370,21 @@ class MyelencephalonAlarPlate(_MouseAnatomyModel):
 
 class MyelencephalonAlarPlateMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["myelencephalon alar plate mantle layer"] = (
-        "myelencephalon alar plate mantle layer"
-    )
+    name: Literal["myelencephalon alar plate mantle layer"] = "myelencephalon alar plate mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17085"] = "EMAPA_17085"
 
 
 class MyelencephalonAlarPlateMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["myelencephalon alar plate marginal layer"] = (
-        "myelencephalon alar plate marginal layer"
-    )
+    name: Literal["myelencephalon alar plate marginal layer"] = "myelencephalon alar plate marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17086"] = "EMAPA_17086"
 
 
 class MyelencephalonAlarPlateVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["myelencephalon alar plate ventricular layer"] = (
-        "myelencephalon alar plate ventricular layer"
-    )
+    name: Literal["myelencephalon alar plate ventricular layer"] = "myelencephalon alar plate ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17087"] = "EMAPA_17087"
 
@@ -6654,27 +6398,21 @@ class MyelencephalonBasalPlate(_MouseAnatomyModel):
 
 class MyelencephalonBasalPlateMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["myelencephalon basal plate mantle layer"] = (
-        "myelencephalon basal plate mantle layer"
-    )
+    name: Literal["myelencephalon basal plate mantle layer"] = "myelencephalon basal plate mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17089"] = "EMAPA_17089"
 
 
 class MyelencephalonBasalPlateMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["myelencephalon basal plate marginal layer"] = (
-        "myelencephalon basal plate marginal layer"
-    )
+    name: Literal["myelencephalon basal plate marginal layer"] = "myelencephalon basal plate marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17090"] = "EMAPA_17090"
 
 
 class MyelencephalonBasalPlateVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["myelencephalon basal plate ventricular layer"] = (
-        "myelencephalon basal plate ventricular layer"
-    )
+    name: Literal["myelencephalon basal plate ventricular layer"] = "myelencephalon basal plate ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17091"] = "EMAPA_17091"
 
@@ -6716,18 +6454,14 @@ class NeuralTubeVentricularLayer(_MouseAnatomyModel):
 
 class InferiorGlossopharyngealGanglion(_MouseAnatomyModel):
 
-    name: Literal["inferior glossopharyngeal ganglion"] = (
-        "inferior glossopharyngeal ganglion"
-    )
+    name: Literal["inferior glossopharyngeal ganglion"] = "inferior glossopharyngeal ganglion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17153"] = "EMAPA_17153"
 
 
 class SuperiorGlossopharyngealGanglion(_MouseAnatomyModel):
 
-    name: Literal["superior glossopharyngeal ganglion"] = (
-        "superior glossopharyngeal ganglion"
-    )
+    name: Literal["superior glossopharyngeal ganglion"] = "superior glossopharyngeal ganglion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17154"] = "EMAPA_17154"
 
@@ -6846,9 +6580,7 @@ class PigmentedRetinalEpithelium(_MouseAnatomyModel):
 
 class EndodermComponentOfAnalMembrane(_MouseAnatomyModel):
 
-    name: Literal["endoderm component of anal membrane"] = (
-        "endoderm component of anal membrane"
-    )
+    name: Literal["endoderm component of anal membrane"] = "endoderm component of anal membrane"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17177"] = "EMAPA_17177"
 
@@ -6869,18 +6601,14 @@ class DuodenumRostralPart(_MouseAnatomyModel):
 
 class DuodenumRostralPartMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["duodenum rostral part mesenchyme"] = (
-        "duodenum rostral part mesenchyme"
-    )
+    name: Literal["duodenum rostral part mesenchyme"] = "duodenum rostral part mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17180"] = "EMAPA_17180"
 
 
 class DuodenumRostralPartEpithelium(_MouseAnatomyModel):
 
-    name: Literal["duodenum rostral part epithelium"] = (
-        "duodenum rostral part epithelium"
-    )
+    name: Literal["duodenum rostral part epithelium"] = "duodenum rostral part epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17181"] = "EMAPA_17181"
 
@@ -6894,18 +6622,14 @@ class DuodenumRostralPartMesentery(_MouseAnatomyModel):
 
 class DuodenumRostralPartMesoduodenum(_MouseAnatomyModel):
 
-    name: Literal["duodenum rostral part mesoduodenum"] = (
-        "duodenum rostral part mesoduodenum"
-    )
+    name: Literal["duodenum rostral part mesoduodenum"] = "duodenum rostral part mesoduodenum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17183"] = "EMAPA_17183"
 
 
 class DuodenumRostralPartVascularElement(_MouseAnatomyModel):
 
-    name: Literal["duodenum rostral part vascular element"] = (
-        "duodenum rostral part vascular element"
-    )
+    name: Literal["duodenum rostral part vascular element"] = "duodenum rostral part vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17184"] = "EMAPA_17184"
 
@@ -6933,9 +6657,7 @@ class MedianLingualSwelling(_MouseAnatomyModel):
 
 class MedianLingualSwellingEpithelium(_MouseAnatomyModel):
 
-    name: Literal["median lingual swelling epithelium"] = (
-        "median lingual swelling epithelium"
-    )
+    name: Literal["median lingual swelling epithelium"] = "median lingual swelling epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17188"] = "EMAPA_17188"
 
@@ -6949,27 +6671,21 @@ class LateralLingualSwelling(_MouseAnatomyModel):
 
 class LateralLingualSwellingEpithelium(_MouseAnatomyModel):
 
-    name: Literal["lateral lingual swelling epithelium"] = (
-        "lateral lingual swelling epithelium"
-    )
+    name: Literal["lateral lingual swelling epithelium"] = "lateral lingual swelling epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17190"] = "EMAPA_17190"
 
 
 class LateralLingualSwellingMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["lateral lingual swelling mesenchyme"] = (
-        "lateral lingual swelling mesenchyme"
-    )
+    name: Literal["lateral lingual swelling mesenchyme"] = "lateral lingual swelling mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17191"] = "EMAPA_17191"
 
 
 class MedianLingualSwellingMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["median lingual swelling mesenchyme"] = (
-        "median lingual swelling mesenchyme"
-    )
+    name: Literal["median lingual swelling mesenchyme"] = "median lingual swelling mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17192"] = "EMAPA_17192"
 
@@ -7011,18 +6727,14 @@ class DuodenumCaudalPartMesentery(_MouseAnatomyModel):
 
 class DuodenumCaudalPartMesoduodenum(_MouseAnatomyModel):
 
-    name: Literal["duodenum caudal part mesoduodenum"] = (
-        "duodenum caudal part mesoduodenum"
-    )
+    name: Literal["duodenum caudal part mesoduodenum"] = "duodenum caudal part mesoduodenum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17198"] = "EMAPA_17198"
 
 
 class DuodenumCaudalPartVascularElement(_MouseAnatomyModel):
 
-    name: Literal["duodenum caudal part vascular element"] = (
-        "duodenum caudal part vascular element"
-    )
+    name: Literal["duodenum caudal part vascular element"] = "duodenum caudal part vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17199"] = "EMAPA_17199"
 
@@ -7057,9 +6769,7 @@ class LiverParenchyma(_MouseAnatomyModel):
 
 class StomachPyloricRegionMuscularis(_MouseAnatomyModel):
 
-    name: Literal["stomach pyloric region muscularis"] = (
-        "stomach pyloric region muscularis"
-    )
+    name: Literal["stomach pyloric region muscularis"] = "stomach pyloric region muscularis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17205"] = "EMAPA_17205"
 
@@ -7101,9 +6811,7 @@ class AxialSkeletonCervicalRegion(_MouseAnatomyModel):
 
 class CervicalVertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["cervical vertebral pre-cartilage condensation"] = (
-        "cervical vertebral pre-cartilage condensation"
-    )
+    name: Literal["cervical vertebral pre-cartilage condensation"] = "cervical vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17216"] = "EMAPA_17216"
 
@@ -7320,9 +7028,7 @@ class HandplateEctoderm(_MouseAnatomyModel):
 
 class HandplateApicalEctodermalRidge(_MouseAnatomyModel):
 
-    name: Literal["handplate apical ectodermal ridge"] = (
-        "handplate apical ectodermal ridge"
-    )
+    name: Literal["handplate apical ectodermal ridge"] = "handplate apical ectodermal ridge"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17247"] = "EMAPA_17247"
 
@@ -7350,9 +7056,7 @@ class FootplateEctoderm(_MouseAnatomyModel):
 
 class FootplateApicalEctodermalRidge(_MouseAnatomyModel):
 
-    name: Literal["footplate apical ectodermal ridge"] = (
-        "footplate apical ectodermal ridge"
-    )
+    name: Literal["footplate apical ectodermal ridge"] = "footplate apical ectodermal ridge"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17251"] = "EMAPA_17251"
 
@@ -7450,18 +7154,14 @@ class AccessoryNerve(_MouseAnatomyModel):
 
 class AccessoryNerveCranialComponent(_MouseAnatomyModel):
 
-    name: Literal["accessory nerve cranial component"] = (
-        "accessory nerve cranial component"
-    )
+    name: Literal["accessory nerve cranial component"] = "accessory nerve cranial component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17266"] = "EMAPA_17266"
 
 
 class AccessoryNerveSpinalComponent(_MouseAnatomyModel):
 
-    name: Literal["accessory nerve spinal component"] = (
-        "accessory nerve spinal component"
-    )
+    name: Literal["accessory nerve spinal component"] = "accessory nerve spinal component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17267"] = "EMAPA_17267"
 
@@ -7503,9 +7203,7 @@ class VagalNerveTrunk(_MouseAnatomyModel):
 
 class VagusNerveRightRecurrentLaryngealBranch(_MouseAnatomyModel):
 
-    name: Literal["vagus nerve right recurrent laryngeal branch"] = (
-        "vagus nerve right recurrent laryngeal branch"
-    )
+    name: Literal["vagus nerve right recurrent laryngeal branch"] = "vagus nerve right recurrent laryngeal branch"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17275"] = "EMAPA_17275"
 
@@ -7547,9 +7245,7 @@ class FutureTympanicMembrane(_MouseAnatomyModel):
 
 class FutureTympanicMembraneEpithelium(_MouseAnatomyModel):
 
-    name: Literal["future tympanic membrane epithelium"] = (
-        "future tympanic membrane epithelium"
-    )
+    name: Literal["future tympanic membrane epithelium"] = "future tympanic membrane epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17282"] = "EMAPA_17282"
 
@@ -7633,18 +7329,14 @@ class PosteriorSemicircularCanal(_MouseAnatomyModel):
 
 class PosteriorSemicircularCanalMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["posterior semicircular canal mesenchyme"] = (
-        "posterior semicircular canal mesenchyme"
-    )
+    name: Literal["posterior semicircular canal mesenchyme"] = "posterior semicircular canal mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17297"] = "EMAPA_17297"
 
 
 class PosteriorSemicircularCanalEpithelium(_MouseAnatomyModel):
 
-    name: Literal["posterior semicircular canal epithelium"] = (
-        "posterior semicircular canal epithelium"
-    )
+    name: Literal["posterior semicircular canal epithelium"] = "posterior semicircular canal epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17298"] = "EMAPA_17298"
 
@@ -7658,18 +7350,14 @@ class SuperiorSemicircularCanal(_MouseAnatomyModel):
 
 class SuperiorSemicircularCanalMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["superior semicircular canal mesenchyme"] = (
-        "superior semicircular canal mesenchyme"
-    )
+    name: Literal["superior semicircular canal mesenchyme"] = "superior semicircular canal mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17300"] = "EMAPA_17300"
 
 
 class SuperiorSemicircularCanalEpithelium(_MouseAnatomyModel):
 
-    name: Literal["superior semicircular canal epithelium"] = (
-        "superior semicircular canal epithelium"
-    )
+    name: Literal["superior semicircular canal epithelium"] = "superior semicircular canal epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17301"] = "EMAPA_17301"
 
@@ -7690,27 +7378,21 @@ class HyaloidVascularPlexus(_MouseAnatomyModel):
 
 class LensVesicleAnteriorEpithelium(_MouseAnatomyModel):
 
-    name: Literal["lens vesicle anterior epithelium"] = (
-        "lens vesicle anterior epithelium"
-    )
+    name: Literal["lens vesicle anterior epithelium"] = "lens vesicle anterior epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17304"] = "EMAPA_17304"
 
 
 class LensVesicleEquatorialEpithelium(_MouseAnatomyModel):
 
-    name: Literal["lens vesicle equatorial epithelium"] = (
-        "lens vesicle equatorial epithelium"
-    )
+    name: Literal["lens vesicle equatorial epithelium"] = "lens vesicle equatorial epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17305"] = "EMAPA_17305"
 
 
 class LensVesiclePosteriorEpithelium(_MouseAnatomyModel):
 
-    name: Literal["lens vesicle posterior epithelium"] = (
-        "lens vesicle posterior epithelium"
-    )
+    name: Literal["lens vesicle posterior epithelium"] = "lens vesicle posterior epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17306"] = "EMAPA_17306"
 
@@ -7787,18 +7469,14 @@ class LeftAtriumAuricularRegion(_MouseAnatomyModel):
 
 class LeftAtriumAuricularRegionEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["left atrium auricular region endocardial lining"] = (
-        "left atrium auricular region endocardial lining"
-    )
+    name: Literal["left atrium auricular region endocardial lining"] = "left atrium auricular region endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17317"] = "EMAPA_17317"
 
 
 class LeftAtriumAuricularRegionCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["left atrium auricular region cardiac muscle"] = (
-        "left atrium auricular region cardiac muscle"
-    )
+    name: Literal["left atrium auricular region cardiac muscle"] = "left atrium auricular region cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17318"] = "EMAPA_17318"
 
@@ -7842,9 +7520,7 @@ class RightAtriumAuricularRegionEndocardialLining(_MouseAnatomyModel):
 
 class RightAtriumAuricularRegionCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["right atrium auricular region cardiac muscle"] = (
-        "right atrium auricular region cardiac muscle"
-    )
+    name: Literal["right atrium auricular region cardiac muscle"] = "right atrium auricular region cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17324"] = "EMAPA_17324"
 
@@ -7886,9 +7562,7 @@ class OutflowTractAorticComponent(_MouseAnatomyModel):
 
 class OutflowTractPulmonaryComponent(_MouseAnatomyModel):
 
-    name: Literal["outflow tract pulmonary component"] = (
-        "outflow tract pulmonary component"
-    )
+    name: Literal["outflow tract pulmonary component"] = "outflow tract pulmonary component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17330"] = "EMAPA_17330"
 
@@ -7916,18 +7590,14 @@ class InterventricularSeptum(_MouseAnatomyModel):
 
 class InterventricularSeptumEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["interventricular septum endocardial lining"] = (
-        "interventricular septum endocardial lining"
-    )
+    name: Literal["interventricular septum endocardial lining"] = "interventricular septum endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17334"] = "EMAPA_17334"
 
 
 class InterventricularSeptumCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["interventricular septum cardiac muscle"] = (
-        "interventricular septum cardiac muscle"
-    )
+    name: Literal["interventricular septum cardiac muscle"] = "interventricular septum cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17335"] = "EMAPA_17335"
 
@@ -7948,9 +7618,7 @@ class HeartLeftVentricle(_MouseAnatomyModel):
 
 class LeftVentricleEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["left ventricle endocardial lining"] = (
-        "left ventricle endocardial lining"
-    )
+    name: Literal["left ventricle endocardial lining"] = "left ventricle endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17338"] = "EMAPA_17338"
 
@@ -7971,9 +7639,7 @@ class HeartRightVentricle(_MouseAnatomyModel):
 
 class RightVentricleEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["right ventricle endocardial lining"] = (
-        "right ventricle endocardial lining"
-    )
+    name: Literal["right ventricle endocardial lining"] = "right ventricle endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17341"] = "EMAPA_17341"
 
@@ -8008,18 +7674,14 @@ class PortalVein(_MouseAnatomyModel):
 
 class RostralTwoThirdsOfAnalCanal(_MouseAnatomyModel):
 
-    name: Literal["rostral two-thirds of anal canal"] = (
-        "rostral two-thirds of anal canal"
-    )
+    name: Literal["rostral two-thirds of anal canal"] = "rostral two-thirds of anal canal"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17350"] = "EMAPA_17350"
 
 
 class HyoidPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hyoid pre-cartilage condensation"] = (
-        "hyoid pre-cartilage condensation"
-    )
+    name: Literal["hyoid pre-cartilage condensation"] = "hyoid pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17351"] = "EMAPA_17351"
 
@@ -8068,9 +7730,7 @@ class MandibularProcessMesenchyme(_MouseAnatomyModel):
 
 class MeckelsCartilagePreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Meckel's cartilage pre-cartilage condensation"] = (
-        "Meckel's cartilage pre-cartilage condensation"
-    )
+    name: Literal["Meckel's cartilage pre-cartilage condensation"] = "Meckel's cartilage pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17358"] = "EMAPA_17358"
 
@@ -8210,36 +7870,28 @@ class GonadalMesenchyme(_MouseAnatomyModel):
 
 class ArytenoidSwellingPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["arytenoid swelling pre-cartilage condensation"] = (
-        "arytenoid swelling pre-cartilage condensation"
-    )
+    name: Literal["arytenoid swelling pre-cartilage condensation"] = "arytenoid swelling pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17387"] = "EMAPA_17387"
 
 
 class LeftLungRudimentLobarBronchus(_MouseAnatomyModel):
 
-    name: Literal["left lung rudiment lobar bronchus"] = (
-        "left lung rudiment lobar bronchus"
-    )
+    name: Literal["left lung rudiment lobar bronchus"] = "left lung rudiment lobar bronchus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17388"] = "EMAPA_17388"
 
 
 class LeftLungRudimentLobarBronchusMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["left lung rudiment lobar bronchus mesenchyme"] = (
-        "left lung rudiment lobar bronchus mesenchyme"
-    )
+    name: Literal["left lung rudiment lobar bronchus mesenchyme"] = "left lung rudiment lobar bronchus mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17389"] = "EMAPA_17389"
 
 
 class LeftLungRudimentLobarBronchusEpithelium(_MouseAnatomyModel):
 
-    name: Literal["left lung rudiment lobar bronchus epithelium"] = (
-        "left lung rudiment lobar bronchus epithelium"
-    )
+    name: Literal["left lung rudiment lobar bronchus epithelium"] = "left lung rudiment lobar bronchus epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17390"] = "EMAPA_17390"
 
@@ -8255,9 +7907,7 @@ class LeftLungRudimentLobarBronchusVascularElement(_MouseAnatomyModel):
 
 class CervicalVertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["cervical vertebral cartilage condensation"] = (
-        "cervical vertebral cartilage condensation"
-    )
+    name: Literal["cervical vertebral cartilage condensation"] = "cervical vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17392"] = "EMAPA_17392"
 
@@ -8271,9 +7921,7 @@ class AxialSkeletonLumbarRegion(_MouseAnatomyModel):
 
 class LumbarVertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["lumbar vertebral pre-cartilage condensation"] = (
-        "lumbar vertebral pre-cartilage condensation"
-    )
+    name: Literal["lumbar vertebral pre-cartilage condensation"] = "lumbar vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17394"] = "EMAPA_17394"
 
@@ -8301,9 +7949,7 @@ class RibPreCartilageCondensation(_MouseAnatomyModel):
 
 class ThoracicVertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["thoracic vertebral pre-cartilage condensation"] = (
-        "thoracic vertebral pre-cartilage condensation"
-    )
+    name: Literal["thoracic vertebral pre-cartilage condensation"] = "thoracic vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17398"] = "EMAPA_17398"
 
@@ -8457,9 +8103,7 @@ class ForearmMesenchyme(_MouseAnatomyModel):
 
 class RadiusUlnaPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["radius-ulna pre-cartilage condensation"] = (
-        "radius-ulna pre-cartilage condensation"
-    )
+    name: Literal["radius-ulna pre-cartilage condensation"] = "radius-ulna pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17420"] = "EMAPA_17420"
 
@@ -8508,9 +8152,7 @@ class UpperArmMesenchyme(_MouseAnatomyModel):
 
 class HumerusPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["humerus pre-cartilage condensation"] = (
-        "humerus pre-cartilage condensation"
-    )
+    name: Literal["humerus pre-cartilage condensation"] = "humerus pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17427"] = "EMAPA_17427"
 
@@ -9083,9 +8725,7 @@ class UpperLegMesenchyme(_MouseAnatomyModel):
 
 class FemurPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["femur pre-cartilage condensation"] = (
-        "femur pre-cartilage condensation"
-    )
+    name: Literal["femur pre-cartilage condensation"] = "femur pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17502"] = "EMAPA_17502"
 
@@ -9106,9 +8746,7 @@ class BodyOfPancreas(_MouseAnatomyModel):
 
 class DorsalPancreaticDuctOfPancreasBody(_MouseAnatomyModel):
 
-    name: Literal["dorsal pancreatic duct of pancreas body"] = (
-        "dorsal pancreatic duct of pancreas body"
-    )
+    name: Literal["dorsal pancreatic duct of pancreas body"] = "dorsal pancreatic duct of pancreas body"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17505"] = "EMAPA_17505"
 
@@ -9157,9 +8795,7 @@ class TailOfPancreas(_MouseAnatomyModel):
 
 class DorsalPancreaticDuctOfPancreasTail(_MouseAnatomyModel):
 
-    name: Literal["dorsal pancreatic duct of pancreas tail"] = (
-        "dorsal pancreatic duct of pancreas tail"
-    )
+    name: Literal["dorsal pancreatic duct of pancreas tail"] = "dorsal pancreatic duct of pancreas tail"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17512"] = "EMAPA_17512"
 
@@ -9390,9 +9026,7 @@ class CerebralCortexMarginalLayer(_MouseAnatomyModel):
 
 class CerebralCortexVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["cerebral cortex ventricular layer"] = (
-        "cerebral cortex ventricular layer"
-    )
+    name: Literal["cerebral cortex ventricular layer"] = "cerebral cortex ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17547"] = "EMAPA_17547"
 
@@ -9441,27 +9075,21 @@ class MedullaOblongataAlarPlate(_MouseAnatomyModel):
 
 class MedullaOblongataAlarPlateMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata alar plate mantle layer"] = (
-        "medulla oblongata alar plate mantle layer"
-    )
+    name: Literal["medulla oblongata alar plate mantle layer"] = "medulla oblongata alar plate mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17554"] = "EMAPA_17554"
 
 
 class MedullaOblongataAlarPlateMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata alar plate marginal layer"] = (
-        "medulla oblongata alar plate marginal layer"
-    )
+    name: Literal["medulla oblongata alar plate marginal layer"] = "medulla oblongata alar plate marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17555"] = "EMAPA_17555"
 
 
 class MedullaOblongataAlarPlateVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata alar plate ventricular layer"] = (
-        "medulla oblongata alar plate ventricular layer"
-    )
+    name: Literal["medulla oblongata alar plate ventricular layer"] = "medulla oblongata alar plate ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17556"] = "EMAPA_17556"
 
@@ -9475,36 +9103,28 @@ class MedullaOblongataBasalPlate(_MouseAnatomyModel):
 
 class MedullaOblongataBasalPlateMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata basal plate mantle layer"] = (
-        "medulla oblongata basal plate mantle layer"
-    )
+    name: Literal["medulla oblongata basal plate mantle layer"] = "medulla oblongata basal plate mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17558"] = "EMAPA_17558"
 
 
 class MedullaOblongataBasalPlateMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata basal plate marginal layer"] = (
-        "medulla oblongata basal plate marginal layer"
-    )
+    name: Literal["medulla oblongata basal plate marginal layer"] = "medulla oblongata basal plate marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17559"] = "EMAPA_17559"
 
 
 class MedullaOblongataBasalPlateVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata basal plate ventricular layer"] = (
-        "medulla oblongata basal plate ventricular layer"
-    )
+    name: Literal["medulla oblongata basal plate ventricular layer"] = "medulla oblongata basal plate ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17560"] = "EMAPA_17560"
 
 
 class MedullaOblongataSulcusLimitans(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata sulcus limitans"] = (
-        "medulla oblongata sulcus limitans"
-    )
+    name: Literal["medulla oblongata sulcus limitans"] = "medulla oblongata sulcus limitans"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17561"] = "EMAPA_17561"
 
@@ -9569,9 +9189,7 @@ class FacialGanglion(_MouseAnatomyModel):
 
 class VestibuloCochlearGanglionComplex(_MouseAnatomyModel):
 
-    name: Literal["vestibulo-cochlear ganglion complex"] = (
-        "vestibulo-cochlear ganglion complex"
-    )
+    name: Literal["vestibulo-cochlear ganglion complex"] = "vestibulo-cochlear ganglion complex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17570"] = "EMAPA_17570"
 
@@ -9823,9 +9441,7 @@ class OlfactoryEpithelium(_MouseAnatomyModel):
 
 class NasalCavityRespiratoryEpithelium(_MouseAnatomyModel):
 
-    name: Literal["nasal cavity respiratory epithelium"] = (
-        "nasal cavity respiratory epithelium"
-    )
+    name: Literal["nasal cavity respiratory epithelium"] = "nasal cavity respiratory epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17607"] = "EMAPA_17607"
 
@@ -9902,18 +9518,14 @@ class SubclavianArtery(_MouseAnatomyModel):
 
 class AtrioventricularEndocardialCushion(_MouseAnatomyModel):
 
-    name: Literal["atrioventricular endocardial cushion"] = (
-        "atrioventricular endocardial cushion"
-    )
+    name: Literal["atrioventricular endocardial cushion"] = "atrioventricular endocardial cushion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17618"] = "EMAPA_17618"
 
 
 class OutflowTractPulmonaryComponentProximalPart(_MouseAnatomyModel):
 
-    name: Literal["outflow tract pulmonary component proximal part"] = (
-        "outflow tract pulmonary component proximal part"
-    )
+    name: Literal["outflow tract pulmonary component proximal part"] = "outflow tract pulmonary component proximal part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17619"] = "EMAPA_17619"
 
@@ -9948,27 +9560,21 @@ class StomachGlandularRegion(_MouseAnatomyModel):
 
 class StomachGlandularRegionMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["stomach glandular region mesenchyme"] = (
-        "stomach glandular region mesenchyme"
-    )
+    name: Literal["stomach glandular region mesenchyme"] = "stomach glandular region mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17624"] = "EMAPA_17624"
 
 
 class StomachGlandularRegionEpithelium(_MouseAnatomyModel):
 
-    name: Literal["stomach glandular region epithelium"] = (
-        "stomach glandular region epithelium"
-    )
+    name: Literal["stomach glandular region epithelium"] = "stomach glandular region epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17625"] = "EMAPA_17625"
 
 
 class StomachGlandularRegionVascularElement(_MouseAnatomyModel):
 
-    name: Literal["stomach glandular region vascular element"] = (
-        "stomach glandular region vascular element"
-    )
+    name: Literal["stomach glandular region vascular element"] = "stomach glandular region vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17626"] = "EMAPA_17626"
 
@@ -9982,27 +9588,21 @@ class StomachProventricularRegion(_MouseAnatomyModel):
 
 class StomachProventricularRegionMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region mesenchyme"] = (
-        "stomach proventricular region mesenchyme"
-    )
+    name: Literal["stomach proventricular region mesenchyme"] = "stomach proventricular region mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17628"] = "EMAPA_17628"
 
 
 class StomachProventricularRegionEpithelium(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region epithelium"] = (
-        "stomach proventricular region epithelium"
-    )
+    name: Literal["stomach proventricular region epithelium"] = "stomach proventricular region epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17629"] = "EMAPA_17629"
 
 
 class StomachProventricularRegionVascularElement(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region vascular element"] = (
-        "stomach proventricular region vascular element"
-    )
+    name: Literal["stomach proventricular region vascular element"] = "stomach proventricular region vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17630"] = "EMAPA_17630"
 
@@ -10016,27 +9616,21 @@ class StomachPyloricRegion(_MouseAnatomyModel):
 
 class StomachPyloricRegionMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["stomach pyloric region mesenchyme"] = (
-        "stomach pyloric region mesenchyme"
-    )
+    name: Literal["stomach pyloric region mesenchyme"] = "stomach pyloric region mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17632"] = "EMAPA_17632"
 
 
 class StomachPyloricRegionEpithelium(_MouseAnatomyModel):
 
-    name: Literal["stomach pyloric region epithelium"] = (
-        "stomach pyloric region epithelium"
-    )
+    name: Literal["stomach pyloric region epithelium"] = "stomach pyloric region epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17633"] = "EMAPA_17633"
 
 
 class StomachPyloricRegionVascularElement(_MouseAnatomyModel):
 
-    name: Literal["stomach pyloric region vascular element"] = (
-        "stomach pyloric region vascular element"
-    )
+    name: Literal["stomach pyloric region vascular element"] = "stomach pyloric region vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17634"] = "EMAPA_17634"
 
@@ -10050,9 +9644,7 @@ class MeckelsCartilage(_MouseAnatomyModel):
 
 class MandiblePrimordiumAlveolarSulcus(_MouseAnatomyModel):
 
-    name: Literal["mandible primordium alveolar sulcus"] = (
-        "mandible primordium alveolar sulcus"
-    )
+    name: Literal["mandible primordium alveolar sulcus"] = "mandible primordium alveolar sulcus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17636"] = "EMAPA_17636"
 
@@ -10080,9 +9672,7 @@ class Maxilla(_MouseAnatomyModel):
 
 class MaxillaryProcessAlveolarSulcus(_MouseAnatomyModel):
 
-    name: Literal["maxillary process alveolar sulcus"] = (
-        "maxillary process alveolar sulcus"
-    )
+    name: Literal["maxillary process alveolar sulcus"] = "maxillary process alveolar sulcus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17640"] = "EMAPA_17640"
 
@@ -10124,9 +9714,7 @@ class PrimitiveCollectingDuct(_MouseAnatomyModel):
 
 class ArytenoidSwellingCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["arytenoid swelling cartilage condensation"] = (
-        "arytenoid swelling cartilage condensation"
-    )
+    name: Literal["arytenoid swelling cartilage condensation"] = "arytenoid swelling cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17652"] = "EMAPA_17652"
 
@@ -10161,27 +9749,21 @@ class LeftLungLobarBronchus(_MouseAnatomyModel):
 
 class LeftLungLobarBronchusMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["left lung lobar bronchus mesenchyme"] = (
-        "left lung lobar bronchus mesenchyme"
-    )
+    name: Literal["left lung lobar bronchus mesenchyme"] = "left lung lobar bronchus mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17657"] = "EMAPA_17657"
 
 
 class LeftLungLobarBronchusEpithelium(_MouseAnatomyModel):
 
-    name: Literal["left lung lobar bronchus epithelium"] = (
-        "left lung lobar bronchus epithelium"
-    )
+    name: Literal["left lung lobar bronchus epithelium"] = "left lung lobar bronchus epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17658"] = "EMAPA_17658"
 
 
 class LeftLungLobarBronchusVascularElement(_MouseAnatomyModel):
 
-    name: Literal["left lung lobar bronchus vascular element"] = (
-        "left lung lobar bronchus vascular element"
-    )
+    name: Literal["left lung lobar bronchus vascular element"] = "left lung lobar bronchus vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17659"] = "EMAPA_17659"
 
@@ -10223,27 +9805,21 @@ class RightLungLobarBronchus(_MouseAnatomyModel):
 
 class RightLungLobarBronchusMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["right lung lobar bronchus mesenchyme"] = (
-        "right lung lobar bronchus mesenchyme"
-    )
+    name: Literal["right lung lobar bronchus mesenchyme"] = "right lung lobar bronchus mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17665"] = "EMAPA_17665"
 
 
 class RightLungLobarBronchusEpithelium(_MouseAnatomyModel):
 
-    name: Literal["right lung lobar bronchus epithelium"] = (
-        "right lung lobar bronchus epithelium"
-    )
+    name: Literal["right lung lobar bronchus epithelium"] = "right lung lobar bronchus epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17666"] = "EMAPA_17666"
 
 
 class RightLungLobarBronchusVascularElement(_MouseAnatomyModel):
 
-    name: Literal["right lung lobar bronchus vascular element"] = (
-        "right lung lobar bronchus vascular element"
-    )
+    name: Literal["right lung lobar bronchus vascular element"] = "right lung lobar bronchus vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17667"] = "EMAPA_17667"
 
@@ -10299,9 +9875,7 @@ class CervicalVertebra(_MouseAnatomyModel):
 
 class LumbarVertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["lumbar vertebral cartilage condensation"] = (
-        "lumbar vertebral cartilage condensation"
-    )
+    name: Literal["lumbar vertebral cartilage condensation"] = "lumbar vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17675"] = "EMAPA_17675"
 
@@ -10315,9 +9889,7 @@ class AxialSkeletonSacralRegion(_MouseAnatomyModel):
 
 class SacralVertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["sacral vertebral pre-cartilage condensation"] = (
-        "sacral vertebral pre-cartilage condensation"
-    )
+    name: Literal["sacral vertebral pre-cartilage condensation"] = "sacral vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17677"] = "EMAPA_17677"
 
@@ -10331,9 +9903,7 @@ class RibCartilageCondensation(_MouseAnatomyModel):
 
 class ThoracicVertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["thoracic vertebral cartilage condensation"] = (
-        "thoracic vertebral cartilage condensation"
-    )
+    name: Literal["thoracic vertebral cartilage condensation"] = "thoracic vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17679"] = "EMAPA_17679"
 
@@ -10515,9 +10085,7 @@ class PleuroPericardialCanal(_MouseAnatomyModel):
 
 class PleuroPericardialCanalMesothelialLining(_MouseAnatomyModel):
 
-    name: Literal["pleuro-pericardial canal mesothelial lining"] = (
-        "pleuro-pericardial canal mesothelial lining"
-    )
+    name: Literal["pleuro-pericardial canal mesothelial lining"] = "pleuro-pericardial canal mesothelial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17705"] = "EMAPA_17705"
 
@@ -10538,9 +10106,7 @@ class PleuroPeritonealCanal(_MouseAnatomyModel):
 
 class PleuroPeritonealCanalMesothelialLining(_MouseAnatomyModel):
 
-    name: Literal["pleuro-peritoneal canal mesothelial lining"] = (
-        "pleuro-peritoneal canal mesothelial lining"
-    )
+    name: Literal["pleuro-peritoneal canal mesothelial lining"] = "pleuro-peritoneal canal mesothelial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17708"] = "EMAPA_17708"
 
@@ -10561,9 +10127,7 @@ class ElbowJointPrimordium(_MouseAnatomyModel):
 
 class RadiusUlnaCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["radius-ulna cartilage condensation"] = (
-        "radius-ulna cartilage condensation"
-    )
+    name: Literal["radius-ulna cartilage condensation"] = "radius-ulna cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17711"] = "EMAPA_17711"
 
@@ -10674,9 +10238,7 @@ class ForelimbDigit5PhalanxPreCartilageCondensation(_MouseAnatomyModel):
 
 class CarpusPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["carpus pre-cartilage condensation"] = (
-        "carpus pre-cartilage condensation"
-    )
+    name: Literal["carpus pre-cartilage condensation"] = "carpus pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17724"] = "EMAPA_17724"
 
@@ -10780,27 +10342,21 @@ class FutureTarsus(_MouseAnatomyModel):
 
 class CalcaneumPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["calcaneum pre-cartilage condensation"] = (
-        "calcaneum pre-cartilage condensation"
-    )
+    name: Literal["calcaneum pre-cartilage condensation"] = "calcaneum pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17736"] = "EMAPA_17736"
 
 
 class FutureTarsusRestOfMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["future tarsus rest of mesenchyme"] = (
-        "future tarsus rest of mesenchyme"
-    )
+    name: Literal["future tarsus rest of mesenchyme"] = "future tarsus rest of mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17737"] = "EMAPA_17737"
 
 
 class TalusPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["talus pre-cartilage condensation"] = (
-        "talus pre-cartilage condensation"
-    )
+    name: Literal["talus pre-cartilage condensation"] = "talus pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17738"] = "EMAPA_17738"
 
@@ -10821,9 +10377,7 @@ class KneeJointPrimordium(_MouseAnatomyModel):
 
 class TibiaFibulaPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["tibia-fibula pre-cartilage condensation"] = (
-        "tibia-fibula pre-cartilage condensation"
-    )
+    name: Literal["tibia-fibula pre-cartilage condensation"] = "tibia-fibula pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17741"] = "EMAPA_17741"
 
@@ -10844,9 +10398,7 @@ class VertebralAxisMusculature(_MouseAnatomyModel):
 
 class AnteriorAbdominalWallMusculature(_MouseAnatomyModel):
 
-    name: Literal["anterior abdominal wall musculature"] = (
-        "anterior abdominal wall musculature"
-    )
+    name: Literal["anterior abdominal wall musculature"] = "anterior abdominal wall musculature"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17744"] = "EMAPA_17744"
 
@@ -10878,9 +10430,7 @@ class PectoralGirdleAndThoracicBodyWallMusculature(_MouseAnatomyModel):
 
 class PectoralGirdleAndThoracicBodyWallMuscle(_MouseAnatomyModel):
 
-    name: Literal["pectoral girdle and thoracic body wall muscle"] = (
-        "pectoral girdle and thoracic body wall muscle"
-    )
+    name: Literal["pectoral girdle and thoracic body wall muscle"] = "pectoral girdle and thoracic body wall muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17748"] = "EMAPA_17748"
 
@@ -10915,18 +10465,14 @@ class SublingualGlandPrimordium(_MouseAnatomyModel):
 
 class SublingualGlandPrimordiumEpithelium(_MouseAnatomyModel):
 
-    name: Literal["sublingual gland primordium epithelium"] = (
-        "sublingual gland primordium epithelium"
-    )
+    name: Literal["sublingual gland primordium epithelium"] = "sublingual gland primordium epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17753"] = "EMAPA_17753"
 
 
 class SublingualGlandPrimordiumMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["sublingual gland primordium mesenchyme"] = (
-        "sublingual gland primordium mesenchyme"
-    )
+    name: Literal["sublingual gland primordium mesenchyme"] = "sublingual gland primordium mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17754"] = "EMAPA_17754"
 
@@ -10940,18 +10486,14 @@ class SubmandibularGlandPrimordium(_MouseAnatomyModel):
 
 class SubmandibularGlandPrimordiumEpithelium(_MouseAnatomyModel):
 
-    name: Literal["submandibular gland primordium epithelium"] = (
-        "submandibular gland primordium epithelium"
-    )
+    name: Literal["submandibular gland primordium epithelium"] = "submandibular gland primordium epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17756"] = "EMAPA_17756"
 
 
 class SubmandibularGlandPrimordiumMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["submandibular gland primordium mesenchyme"] = (
-        "submandibular gland primordium mesenchyme"
-    )
+    name: Literal["submandibular gland primordium mesenchyme"] = "submandibular gland primordium mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17757"] = "EMAPA_17757"
 
@@ -11035,45 +10577,35 @@ class ChoroidFissure(_MouseAnatomyModel):
 
 class LateralVentricleChoroidPlexus(_MouseAnatomyModel):
 
-    name: Literal["lateral ventricle choroid plexus"] = (
-        "lateral ventricle choroid plexus"
-    )
+    name: Literal["lateral ventricle choroid plexus"] = "lateral ventricle choroid plexus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17769"] = "EMAPA_17769"
 
 
 class AnteriorHornOfLateralVentricle(_MouseAnatomyModel):
 
-    name: Literal["anterior horn of lateral ventricle"] = (
-        "anterior horn of lateral ventricle"
-    )
+    name: Literal["anterior horn of lateral ventricle"] = "anterior horn of lateral ventricle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17770"] = "EMAPA_17770"
 
 
 class InferiorHornOfLateralVentricle(_MouseAnatomyModel):
 
-    name: Literal["inferior horn of lateral ventricle"] = (
-        "inferior horn of lateral ventricle"
-    )
+    name: Literal["inferior horn of lateral ventricle"] = "inferior horn of lateral ventricle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17771"] = "EMAPA_17771"
 
 
 class PosteriorHornOfLateralVentricle(_MouseAnatomyModel):
 
-    name: Literal["posterior horn of lateral ventricle"] = (
-        "posterior horn of lateral ventricle"
-    )
+    name: Literal["posterior horn of lateral ventricle"] = "posterior horn of lateral ventricle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17772"] = "EMAPA_17772"
 
 
 class SuperiorHornOfLateralVentricle(_MouseAnatomyModel):
 
-    name: Literal["superior horn of lateral ventricle"] = (
-        "superior horn of lateral ventricle"
-    )
+    name: Literal["superior horn of lateral ventricle"] = "superior horn of lateral ventricle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17773"] = "EMAPA_17773"
 
@@ -11136,9 +10668,7 @@ class OlfactoryCortexMarginalLayer(_MouseAnatomyModel):
 
 class OlfactoryCortexVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["olfactory cortex ventricular layer"] = (
-        "olfactory cortex ventricular layer"
-    )
+    name: Literal["olfactory cortex ventricular layer"] = "olfactory cortex ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17782"] = "EMAPA_17782"
 
@@ -11250,27 +10780,21 @@ class OlfactoryNerve(_MouseAnatomyModel):
 
 class TrigeminalNerveMandibularDivision(_MouseAnatomyModel):
 
-    name: Literal["trigeminal nerve mandibular division"] = (
-        "trigeminal nerve mandibular division"
-    )
+    name: Literal["trigeminal nerve mandibular division"] = "trigeminal nerve mandibular division"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17798"] = "EMAPA_17798"
 
 
 class TrigeminalNerveMaxillaryDivision(_MouseAnatomyModel):
 
-    name: Literal["trigeminal nerve maxillary division"] = (
-        "trigeminal nerve maxillary division"
-    )
+    name: Literal["trigeminal nerve maxillary division"] = "trigeminal nerve maxillary division"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17799"] = "EMAPA_17799"
 
 
 class TrigeminalNerveOphthalmicDivision(_MouseAnatomyModel):
 
-    name: Literal["trigeminal nerve ophthalmic division"] = (
-        "trigeminal nerve ophthalmic division"
-    )
+    name: Literal["trigeminal nerve ophthalmic division"] = "trigeminal nerve ophthalmic division"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17800"] = "EMAPA_17800"
 
@@ -11284,18 +10808,14 @@ class VestibulocochlearNerve(_MouseAnatomyModel):
 
 class VestibulocochlearNerveCochlearComponent(_MouseAnatomyModel):
 
-    name: Literal["vestibulocochlear nerve cochlear component"] = (
-        "vestibulocochlear nerve cochlear component"
-    )
+    name: Literal["vestibulocochlear nerve cochlear component"] = "vestibulocochlear nerve cochlear component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17802"] = "EMAPA_17802"
 
 
 class VestibulocochlearNerveVestibularComponent(_MouseAnatomyModel):
 
-    name: Literal["vestibulocochlear nerve vestibular component"] = (
-        "vestibulocochlear nerve vestibular component"
-    )
+    name: Literal["vestibulocochlear nerve vestibular component"] = "vestibulocochlear nerve vestibular component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17803"] = "EMAPA_17803"
 
@@ -11386,18 +10906,14 @@ class LateralSemicircularCanal(_MouseAnatomyModel):
 
 class LateralSemicircularCanalMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["lateral semicircular canal mesenchyme"] = (
-        "lateral semicircular canal mesenchyme"
-    )
+    name: Literal["lateral semicircular canal mesenchyme"] = "lateral semicircular canal mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17822"] = "EMAPA_17822"
 
 
 class LateralSemicircularCanalEpithelium(_MouseAnatomyModel):
 
-    name: Literal["lateral semicircular canal epithelium"] = (
-        "lateral semicircular canal epithelium"
-    )
+    name: Literal["lateral semicircular canal epithelium"] = "lateral semicircular canal epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17823"] = "EMAPA_17823"
 
@@ -11411,27 +10927,21 @@ class Ossicle(_MouseAnatomyModel):
 
 class IncusPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["incus pre-cartilage condensation"] = (
-        "incus pre-cartilage condensation"
-    )
+    name: Literal["incus pre-cartilage condensation"] = "incus pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17825"] = "EMAPA_17825"
 
 
 class MalleusPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["malleus pre-cartilage condensation"] = (
-        "malleus pre-cartilage condensation"
-    )
+    name: Literal["malleus pre-cartilage condensation"] = "malleus pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17826"] = "EMAPA_17826"
 
 
 class StapesPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["stapes pre-cartilage condensation"] = (
-        "stapes pre-cartilage condensation"
-    )
+    name: Literal["stapes pre-cartilage condensation"] = "stapes pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17827"] = "EMAPA_17827"
 
@@ -11557,9 +11067,7 @@ class EyeSkeletalMuscle(_MouseAnatomyModel):
 
 class ExtrinsicOcularPreMuscleMass(_MouseAnatomyModel):
 
-    name: Literal["extrinsic ocular pre-muscle mass"] = (
-        "extrinsic ocular pre-muscle mass"
-    )
+    name: Literal["extrinsic ocular pre-muscle mass"] = "extrinsic ocular pre-muscle mass"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17845"] = "EMAPA_17845"
 
@@ -11636,9 +11144,7 @@ class AbdominalAorta(_MouseAnatomyModel):
 
 class PostDuctalPartOfThoracicAorta(_MouseAnatomyModel):
 
-    name: Literal["post-ductal part of thoracic aorta"] = (
-        "post-ductal part of thoracic aorta"
-    )
+    name: Literal["post-ductal part of thoracic aorta"] = "post-ductal part of thoracic aorta"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17857"] = "EMAPA_17857"
 
@@ -11785,9 +11291,7 @@ class TongueMuscle(_MouseAnatomyModel):
 
 class TongueExtrinsicPreMuscleMass(_MouseAnatomyModel):
 
-    name: Literal["tongue extrinsic pre-muscle mass"] = (
-        "tongue extrinsic pre-muscle mass"
-    )
+    name: Literal["tongue extrinsic pre-muscle mass"] = "tongue extrinsic pre-muscle mass"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17884"] = "EMAPA_17884"
 
@@ -12172,9 +11676,7 @@ class GenitalTubercleOfMale(_MouseAnatomyModel):
 
 class NephricDuctOfMaleMesonephricPortion(_MouseAnatomyModel):
 
-    name: Literal["nephric duct of male, mesonephric portion"] = (
-        "nephric duct of male, mesonephric portion"
-    )
+    name: Literal["nephric duct of male, mesonephric portion"] = "nephric duct of male, mesonephric portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17970"] = "EMAPA_17970"
 
@@ -12223,9 +11725,7 @@ class RightLungAccessoryLobe(_MouseAnatomyModel):
 
 class RightLungAccessoryLobeLobarBronchus(_MouseAnatomyModel):
 
-    name: Literal["right lung accessory lobe lobar bronchus"] = (
-        "right lung accessory lobe lobar bronchus"
-    )
+    name: Literal["right lung accessory lobe lobar bronchus"] = "right lung accessory lobe lobar bronchus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17982"] = "EMAPA_17982"
 
@@ -12266,9 +11766,7 @@ class RightLungCaudalLobe(_MouseAnatomyModel):
 
 class RightLungCaudalLobeLobarBronchus(_MouseAnatomyModel):
 
-    name: Literal["right lung caudal lobe lobar bronchus"] = (
-        "right lung caudal lobe lobar bronchus"
-    )
+    name: Literal["right lung caudal lobe lobar bronchus"] = "right lung caudal lobe lobar bronchus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17987"] = "EMAPA_17987"
 
@@ -12309,9 +11807,7 @@ class RightLungCranialLobe(_MouseAnatomyModel):
 
 class RightLungCranialLobeLobarBronchus(_MouseAnatomyModel):
 
-    name: Literal["right lung cranial lobe lobar bronchus"] = (
-        "right lung cranial lobe lobar bronchus"
-    )
+    name: Literal["right lung cranial lobe lobar bronchus"] = "right lung cranial lobe lobar bronchus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17992"] = "EMAPA_17992"
 
@@ -12359,9 +11855,7 @@ class RightLungMiddleLobe(_MouseAnatomyModel):
 
 class RightLungMiddleLobeLobarBronchus(_MouseAnatomyModel):
 
-    name: Literal["right lung middle lobe lobar bronchus"] = (
-        "right lung middle lobe lobar bronchus"
-    )
+    name: Literal["right lung middle lobe lobar bronchus"] = "right lung middle lobe lobar bronchus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_17998"] = "EMAPA_17998"
 
@@ -12409,9 +11903,7 @@ class NucleusPulposus(_MouseAnatomyModel):
 
 class SacralVertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["sacral vertebral cartilage condensation"] = (
-        "sacral vertebral cartilage condensation"
-    )
+    name: Literal["sacral vertebral cartilage condensation"] = "sacral vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18009"] = "EMAPA_18009"
 
@@ -12432,36 +11924,28 @@ class ThoracicVertebra(_MouseAnatomyModel):
 
 class BasioccipitalPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["basioccipital pre-cartilage condensation"] = (
-        "basioccipital pre-cartilage condensation"
-    )
+    name: Literal["basioccipital pre-cartilage condensation"] = "basioccipital pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18012"] = "EMAPA_18012"
 
 
 class BasisphenoidPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["basisphenoid pre-cartilage condensation"] = (
-        "basisphenoid pre-cartilage condensation"
-    )
+    name: Literal["basisphenoid pre-cartilage condensation"] = "basisphenoid pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18013"] = "EMAPA_18013"
 
 
 class ExoccipitalPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["exoccipital pre-cartilage condensation"] = (
-        "exoccipital pre-cartilage condensation"
-    )
+    name: Literal["exoccipital pre-cartilage condensation"] = "exoccipital pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18014"] = "EMAPA_18014"
 
 
 class SphenoidBonePreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["sphenoid bone pre-cartilage condensation"] = (
-        "sphenoid bone pre-cartilage condensation"
-    )
+    name: Literal["sphenoid bone pre-cartilage condensation"] = "sphenoid bone pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18015"] = "EMAPA_18015"
 
@@ -12531,18 +12015,14 @@ class ThoracicSegmentSkeleton(_MouseAnatomyModel):
 
 class ClaviclePreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["clavicle pre-cartilage condensation"] = (
-        "clavicle pre-cartilage condensation"
-    )
+    name: Literal["clavicle pre-cartilage condensation"] = "clavicle pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18026"] = "EMAPA_18026"
 
 
 class ScapulaPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["scapula pre-cartilage condensation"] = (
-        "scapula pre-cartilage condensation"
-    )
+    name: Literal["scapula pre-cartilage condensation"] = "scapula pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18027"] = "EMAPA_18027"
 
@@ -12556,9 +12036,7 @@ class PelvicGirdleSkeleton(_MouseAnatomyModel):
 
 class IliumPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["ilium pre-cartilage condensation"] = (
-        "ilium pre-cartilage condensation"
-    )
+    name: Literal["ilium pre-cartilage condensation"] = "ilium pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18029"] = "EMAPA_18029"
 
@@ -12663,18 +12141,14 @@ class AxialSkeletonTailRegion(_MouseAnatomyModel):
 
 class TailVertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["tail vertebral cartilage condensation"] = (
-        "tail vertebral cartilage condensation"
-    )
+    name: Literal["tail vertebral cartilage condensation"] = "tail vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18044"] = "EMAPA_18044"
 
 
 class TailVertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["tail vertebral pre-cartilage condensation"] = (
-        "tail vertebral pre-cartilage condensation"
-    )
+    name: Literal["tail vertebral pre-cartilage condensation"] = "tail vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18045"] = "EMAPA_18045"
 
@@ -12823,9 +12297,7 @@ class ForelimbDigit1MetacarpusCartilageCondensation(_MouseAnatomyModel):
 
 class ForelimbDigit1PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 1 phalanx cartilage condensation"] = (
-        "forelimb digit 1 phalanx cartilage condensation"
-    )
+    name: Literal["forelimb digit 1 phalanx cartilage condensation"] = "forelimb digit 1 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18066"] = "EMAPA_18066"
 
@@ -12862,9 +12334,7 @@ class ForelimbDigit2MetacarpusCartilageCondensation(_MouseAnatomyModel):
 
 class ForelimbDigit2PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 2 phalanx cartilage condensation"] = (
-        "forelimb digit 2 phalanx cartilage condensation"
-    )
+    name: Literal["forelimb digit 2 phalanx cartilage condensation"] = "forelimb digit 2 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18071"] = "EMAPA_18071"
 
@@ -12901,9 +12371,7 @@ class ForelimbDigit3MetacarpusCartilageCondensation(_MouseAnatomyModel):
 
 class ForelimbDigit3PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 3 phalanx cartilage condensation"] = (
-        "forelimb digit 3 phalanx cartilage condensation"
-    )
+    name: Literal["forelimb digit 3 phalanx cartilage condensation"] = "forelimb digit 3 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18076"] = "EMAPA_18076"
 
@@ -12940,9 +12408,7 @@ class ForelimbDigit4MetacarpusCartilageCondensation(_MouseAnatomyModel):
 
 class ForelimbDigit4PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 4 phalanx cartilage condensation"] = (
-        "forelimb digit 4 phalanx cartilage condensation"
-    )
+    name: Literal["forelimb digit 4 phalanx cartilage condensation"] = "forelimb digit 4 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18081"] = "EMAPA_18081"
 
@@ -12979,9 +12445,7 @@ class ForelimbDigit5MetacarpusCartilageCondensation(_MouseAnatomyModel):
 
 class ForelimbDigit5PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 5 phalanx cartilage condensation"] = (
-        "forelimb digit 5 phalanx cartilage condensation"
-    )
+    name: Literal["forelimb digit 5 phalanx cartilage condensation"] = "forelimb digit 5 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18086"] = "EMAPA_18086"
 
@@ -13154,9 +12618,7 @@ class HindlimbDigit1MetatarsusCartilageCondensation(_MouseAnatomyModel):
 
 class HindlimbDigit1PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 1 phalanx cartilage condensation"] = (
-        "hindlimb digit 1 phalanx cartilage condensation"
-    )
+    name: Literal["hindlimb digit 1 phalanx cartilage condensation"] = "hindlimb digit 1 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18107"] = "EMAPA_18107"
 
@@ -13193,9 +12655,7 @@ class HindlimbDigit2MetatarsusCartilageCondensation(_MouseAnatomyModel):
 
 class HindlimbDigit2PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 2 phalanx cartilage condensation"] = (
-        "hindlimb digit 2 phalanx cartilage condensation"
-    )
+    name: Literal["hindlimb digit 2 phalanx cartilage condensation"] = "hindlimb digit 2 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18112"] = "EMAPA_18112"
 
@@ -13232,9 +12692,7 @@ class HindlimbDigit3MetatarsusCartilageCondensation(_MouseAnatomyModel):
 
 class HindlimbDigit3PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 3 phalanx cartilage condensation"] = (
-        "hindlimb digit 3 phalanx cartilage condensation"
-    )
+    name: Literal["hindlimb digit 3 phalanx cartilage condensation"] = "hindlimb digit 3 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18117"] = "EMAPA_18117"
 
@@ -13271,9 +12729,7 @@ class HindlimbDigit4MetatarsusCartilageCondensation(_MouseAnatomyModel):
 
 class HindlimbDigit4PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 4 phalanx cartilage condensation"] = (
-        "hindlimb digit 4 phalanx cartilage condensation"
-    )
+    name: Literal["hindlimb digit 4 phalanx cartilage condensation"] = "hindlimb digit 4 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18122"] = "EMAPA_18122"
 
@@ -13310,9 +12766,7 @@ class HindlimbDigit5MetatarsusCartilageCondensation(_MouseAnatomyModel):
 
 class HindlimbDigit5PhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 5 phalanx cartilage condensation"] = (
-        "hindlimb digit 5 phalanx cartilage condensation"
-    )
+    name: Literal["hindlimb digit 5 phalanx cartilage condensation"] = "hindlimb digit 5 phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18127"] = "EMAPA_18127"
 
@@ -13448,9 +12902,7 @@ class InterdigitalRegionBetweenHindlimbDigits4And5Epidermis(_MouseAnatomyModel):
 
 class CalcaneumCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["calcaneum cartilage condensation"] = (
-        "calcaneum cartilage condensation"
-    )
+    name: Literal["calcaneum cartilage condensation"] = "calcaneum cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18143"] = "EMAPA_18143"
 
@@ -13737,9 +13189,7 @@ class IntegumentalSystemMuscle(_MouseAnatomyModel):
 
 class IntegumentalSystemSuperficialMuscle(_MouseAnatomyModel):
 
-    name: Literal["integumental system superficial muscle"] = (
-        "integumental system superficial muscle"
-    )
+    name: Literal["integumental system superficial muscle"] = "integumental system superficial muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18188"] = "EMAPA_18188"
 
@@ -13844,9 +13294,7 @@ class AbducensNerve(_MouseAnatomyModel):
 
 class FacialNerveChordaTympaniBranch(_MouseAnatomyModel):
 
-    name: Literal["facial nerve chorda tympani branch"] = (
-        "facial nerve chorda tympani branch"
-    )
+    name: Literal["facial nerve chorda tympani branch"] = "facial nerve chorda tympani branch"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18217"] = "EMAPA_18217"
 
@@ -14028,27 +13476,21 @@ class PosteriorSpinalArtery(_MouseAnatomyModel):
 
 class ForamenOvaleOfInteratrialSeptum(_MouseAnatomyModel):
 
-    name: Literal["foramen ovale of interatrial septum"] = (
-        "foramen ovale of interatrial septum"
-    )
+    name: Literal["foramen ovale of interatrial septum"] = "foramen ovale of interatrial septum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18244"] = "EMAPA_18244"
 
 
 class InterventricularSeptumMembranousPart(_MouseAnatomyModel):
 
-    name: Literal["interventricular septum membranous part"] = (
-        "interventricular septum membranous part"
-    )
+    name: Literal["interventricular septum membranous part"] = "interventricular septum membranous part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18246"] = "EMAPA_18246"
 
 
 class InterventricularSeptumMuscularPart(_MouseAnatomyModel):
 
-    name: Literal["interventricular septum muscular part"] = (
-        "interventricular septum muscular part"
-    )
+    name: Literal["interventricular septum muscular part"] = "interventricular septum muscular part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18247"] = "EMAPA_18247"
 
@@ -14125,27 +13567,21 @@ class AnalCanalRostralPart(_MouseAnatomyModel):
 
 class AnalCanalRostralPartMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["anal canal rostral part mesenchyme"] = (
-        "anal canal rostral part mesenchyme"
-    )
+    name: Literal["anal canal rostral part mesenchyme"] = "anal canal rostral part mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18258"] = "EMAPA_18258"
 
 
 class AnalCanalRostralPartEpithelium(_MouseAnatomyModel):
 
-    name: Literal["anal canal rostral part epithelium"] = (
-        "anal canal rostral part epithelium"
-    )
+    name: Literal["anal canal rostral part epithelium"] = "anal canal rostral part epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18259"] = "EMAPA_18259"
 
 
 class AnalCanalRostralPartVascularElement(_MouseAnatomyModel):
 
-    name: Literal["anal canal rostral part vascular element"] = (
-        "anal canal rostral part vascular element"
-    )
+    name: Literal["anal canal rostral part vascular element"] = "anal canal rostral part vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18260"] = "EMAPA_18260"
 
@@ -14159,27 +13595,21 @@ class AnalCanalCaudalPart(_MouseAnatomyModel):
 
 class AnalCanalCaudalPartMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["anal canal caudal part mesenchyme"] = (
-        "anal canal caudal part mesenchyme"
-    )
+    name: Literal["anal canal caudal part mesenchyme"] = "anal canal caudal part mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18262"] = "EMAPA_18262"
 
 
 class AnalCanalCaudalPartEpithelium(_MouseAnatomyModel):
 
-    name: Literal["anal canal caudal part epithelium"] = (
-        "anal canal caudal part epithelium"
-    )
+    name: Literal["anal canal caudal part epithelium"] = "anal canal caudal part epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18263"] = "EMAPA_18263"
 
 
 class AnalCanalCaudalPartVascularElement(_MouseAnatomyModel):
 
-    name: Literal["anal canal caudal part vascular element"] = (
-        "anal canal caudal part vascular element"
-    )
+    name: Literal["anal canal caudal part vascular element"] = "anal canal caudal part vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18264"] = "EMAPA_18264"
 
@@ -14207,27 +13637,21 @@ class GastroEsophagealJunction(_MouseAnatomyModel):
 
 class GastroEsophagealJunctionMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction mesenchyme"] = (
-        "gastro-esophageal junction mesenchyme"
-    )
+    name: Literal["gastro-esophageal junction mesenchyme"] = "gastro-esophageal junction mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18268"] = "EMAPA_18268"
 
 
 class GastroEsophagealJunctionEpithelium(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction epithelium"] = (
-        "gastro-esophageal junction epithelium"
-    )
+    name: Literal["gastro-esophageal junction epithelium"] = "gastro-esophageal junction epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18269"] = "EMAPA_18269"
 
 
 class GastroEsophagealJunctionVascularElement(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction vascular element"] = (
-        "gastro-esophageal junction vascular element"
-    )
+    name: Literal["gastro-esophageal junction vascular element"] = "gastro-esophageal junction vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18270"] = "EMAPA_18270"
 
@@ -14304,27 +13728,21 @@ class TongueIntrinsicMuscle(_MouseAnatomyModel):
 
 class TongueIntrinsicMuscleTransverseComponent(_MouseAnatomyModel):
 
-    name: Literal["tongue intrinsic muscle transverse component"] = (
-        "tongue intrinsic muscle transverse component"
-    )
+    name: Literal["tongue intrinsic muscle transverse component"] = "tongue intrinsic muscle transverse component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18281"] = "EMAPA_18281"
 
 
 class TongueIntrinsicMuscleVerticalComponent(_MouseAnatomyModel):
 
-    name: Literal["tongue intrinsic muscle vertical component"] = (
-        "tongue intrinsic muscle vertical component"
-    )
+    name: Literal["tongue intrinsic muscle vertical component"] = "tongue intrinsic muscle vertical component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18282"] = "EMAPA_18282"
 
 
 class StomachFundusGlandularMucousMembrane(_MouseAnatomyModel):
 
-    name: Literal["stomach fundus glandular mucous membrane"] = (
-        "stomach fundus glandular mucous membrane"
-    )
+    name: Literal["stomach fundus glandular mucous membrane"] = "stomach fundus glandular mucous membrane"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18284"] = "EMAPA_18284"
 
@@ -14387,9 +13805,7 @@ class LowerJawIncisorEnamelOrgan(_MouseAnatomyModel):
 
 class LowerJawIncisorDentalPapilla(_MouseAnatomyModel):
 
-    name: Literal["lower jaw incisor dental papilla"] = (
-        "lower jaw incisor dental papilla"
-    )
+    name: Literal["lower jaw incisor dental papilla"] = "lower jaw incisor dental papilla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18294"] = "EMAPA_18294"
 
@@ -14431,9 +13847,7 @@ class UpperJawIncisorEnamelOrgan(_MouseAnatomyModel):
 
 class UpperJawIncisorDentalPapilla(_MouseAnatomyModel):
 
-    name: Literal["upper jaw incisor dental papilla"] = (
-        "upper jaw incisor dental papilla"
-    )
+    name: Literal["upper jaw incisor dental papilla"] = "upper jaw incisor dental papilla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18300"] = "EMAPA_18300"
 
@@ -14461,18 +13875,14 @@ class UpperJawMolarDentalPapilla(_MouseAnatomyModel):
 
 class LeftHepaticDuctIntrahepaticPart(_MouseAnatomyModel):
 
-    name: Literal["left hepatic duct intrahepatic part"] = (
-        "left hepatic duct intrahepatic part"
-    )
+    name: Literal["left hepatic duct intrahepatic part"] = "left hepatic duct intrahepatic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18304"] = "EMAPA_18304"
 
 
 class RightHepaticDuctIntrahepaticPart(_MouseAnatomyModel):
 
-    name: Literal["right hepatic duct intrahepatic part"] = (
-        "right hepatic duct intrahepatic part"
-    )
+    name: Literal["right hepatic duct intrahepatic part"] = "right hepatic duct intrahepatic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18305"] = "EMAPA_18305"
 
@@ -14500,9 +13910,7 @@ class LiverLeftLobeBareArea(_MouseAnatomyModel):
 
 class LiverLeftLobeHepaticSinusoid(_MouseAnatomyModel):
 
-    name: Literal["liver left lobe hepatic sinusoid"] = (
-        "liver left lobe hepatic sinusoid"
-    )
+    name: Literal["liver left lobe hepatic sinusoid"] = "liver left lobe hepatic sinusoid"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18309"] = "EMAPA_18309"
 
@@ -14537,9 +13945,7 @@ class LiverCaudateLobe(_MouseAnatomyModel):
 
 class LiverCaudateLobeHepaticSinusoid(_MouseAnatomyModel):
 
-    name: Literal["liver caudate lobe hepatic sinusoid"] = (
-        "liver caudate lobe hepatic sinusoid"
-    )
+    name: Literal["liver caudate lobe hepatic sinusoid"] = "liver caudate lobe hepatic sinusoid"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18314"] = "EMAPA_18314"
 
@@ -14553,9 +13959,7 @@ class LiverCaudateLobeParenchyma(_MouseAnatomyModel):
 
 class LiverRightLobeHepaticSinusoid(_MouseAnatomyModel):
 
-    name: Literal["liver right lobe hepatic sinusoid"] = (
-        "liver right lobe hepatic sinusoid"
-    )
+    name: Literal["liver right lobe hepatic sinusoid"] = "liver right lobe hepatic sinusoid"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18316"] = "EMAPA_18316"
 
@@ -14576,9 +13980,7 @@ class LiverQuadrateLobe(_MouseAnatomyModel):
 
 class LiverQuadrateLobeHepaticSinusoid(_MouseAnatomyModel):
 
-    name: Literal["liver quadrate lobe hepatic sinusoid"] = (
-        "liver quadrate lobe hepatic sinusoid"
-    )
+    name: Literal["liver quadrate lobe hepatic sinusoid"] = "liver quadrate lobe hepatic sinusoid"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18319"] = "EMAPA_18319"
 
@@ -14662,27 +14064,21 @@ class SacralVertebra(_MouseAnatomyModel):
 
 class BasioccipitalCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["basioccipital cartilage condensation"] = (
-        "basioccipital cartilage condensation"
-    )
+    name: Literal["basioccipital cartilage condensation"] = "basioccipital cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18337"] = "EMAPA_18337"
 
 
 class BasisphenoidCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["basisphenoid cartilage condensation"] = (
-        "basisphenoid cartilage condensation"
-    )
+    name: Literal["basisphenoid cartilage condensation"] = "basisphenoid cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18338"] = "EMAPA_18338"
 
 
 class ExoccipitalCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["exoccipital cartilage condensation"] = (
-        "exoccipital cartilage condensation"
-    )
+    name: Literal["exoccipital cartilage condensation"] = "exoccipital cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18339"] = "EMAPA_18339"
 
@@ -14696,9 +14092,7 @@ class SphenoidBone(_MouseAnatomyModel):
 
 class SupraoccipitalCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["supraoccipital cartilage condensation"] = (
-        "supraoccipital cartilage condensation"
-    )
+    name: Literal["supraoccipital cartilage condensation"] = "supraoccipital cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18341"] = "EMAPA_18341"
 
@@ -14726,9 +14120,7 @@ class Sternum(_MouseAnatomyModel):
 
 class SternebraPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["sternebra pre-cartilage condensation"] = (
-        "sternebra pre-cartilage condensation"
-    )
+    name: Literal["sternebra pre-cartilage condensation"] = "sternebra pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18345"] = "EMAPA_18345"
 
@@ -14749,18 +14141,14 @@ class IliumCartilageCondensation(_MouseAnatomyModel):
 
 class IschiumPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["ischium pre-cartilage condensation"] = (
-        "ischium pre-cartilage condensation"
-    )
+    name: Literal["ischium pre-cartilage condensation"] = "ischium pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18348"] = "EMAPA_18348"
 
 
 class PubisPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["pubis pre-cartilage condensation"] = (
-        "pubis pre-cartilage condensation"
-    )
+    name: Literal["pubis pre-cartilage condensation"] = "pubis pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18349"] = "EMAPA_18349"
 
@@ -14963,9 +14351,7 @@ class DuodenumRostralPartLumen(_MouseAnatomyModel):
 
 class GastroEsophagealJunctionLumen(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction lumen"] = (
-        "gastro-esophageal junction lumen"
-    )
+    name: Literal["gastro-esophageal junction lumen"] = "gastro-esophageal junction lumen"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18379"] = "EMAPA_18379"
 
@@ -15000,9 +14386,7 @@ class StomachGlandularRegionLumen(_MouseAnatomyModel):
 
 class StomachProventricularRegionLumen(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region lumen"] = (
-        "stomach proventricular region lumen"
-    )
+    name: Literal["stomach proventricular region lumen"] = "stomach proventricular region lumen"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18384"] = "EMAPA_18384"
 
@@ -15079,18 +14463,14 @@ class HindgutLumen(_MouseAnatomyModel):
 
 class HindgutDiverticulumPostanalComponentLumen(_MouseAnatomyModel):
 
-    name: Literal["hindgut diverticulum postanal component lumen"] = (
-        "hindgut diverticulum postanal component lumen"
-    )
+    name: Literal["hindgut diverticulum postanal component lumen"] = "hindgut diverticulum postanal component lumen"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18397"] = "EMAPA_18397"
 
 
 class HindgutDiverticulumPreanalComponentLumen(_MouseAnatomyModel):
 
-    name: Literal["hindgut diverticulum preanal component lumen"] = (
-        "hindgut diverticulum preanal component lumen"
-    )
+    name: Literal["hindgut diverticulum preanal component lumen"] = "hindgut diverticulum preanal component lumen"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18398"] = "EMAPA_18398"
 
@@ -15125,9 +14505,7 @@ class PharyngealRegionLumen(_MouseAnatomyModel):
 
 class ForegutMidgutJunctionEndoderm(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction endoderm"] = (
-        "foregut-midgut junction endoderm"
-    )
+    name: Literal["foregut-midgut junction endoderm"] = "foregut-midgut junction endoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18403"] = "EMAPA_18403"
 
@@ -15141,18 +14519,14 @@ class PhysiologicalUmbilicalHernia(_MouseAnatomyModel):
 
 class PhysiologicalUmbilicalHerniaDermis(_MouseAnatomyModel):
 
-    name: Literal["physiological umbilical hernia dermis"] = (
-        "physiological umbilical hernia dermis"
-    )
+    name: Literal["physiological umbilical hernia dermis"] = "physiological umbilical hernia dermis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18405"] = "EMAPA_18405"
 
 
 class PhysiologicalUmbilicalHerniaEpidermis(_MouseAnatomyModel):
 
-    name: Literal["physiological umbilical hernia epidermis"] = (
-        "physiological umbilical hernia epidermis"
-    )
+    name: Literal["physiological umbilical hernia epidermis"] = "physiological umbilical hernia epidermis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18406"] = "EMAPA_18406"
 
@@ -15187,9 +14561,7 @@ class CarinaTracheaVascularElement(_MouseAnatomyModel):
 
 class GreaterSacVisceralMesothelium(_MouseAnatomyModel):
 
-    name: Literal["greater sac visceral mesothelium"] = (
-        "greater sac visceral mesothelium"
-    )
+    name: Literal["greater sac visceral mesothelium"] = "greater sac visceral mesothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18414"] = "EMAPA_18414"
 
@@ -15231,36 +14603,28 @@ class RightSuperiorVenaCava(_MouseAnatomyModel):
 
 class InferiorVenaCavaPostHepaticPart(_MouseAnatomyModel):
 
-    name: Literal["inferior vena cava post-hepatic part"] = (
-        "inferior vena cava post-hepatic part"
-    )
+    name: Literal["inferior vena cava post-hepatic part"] = "inferior vena cava post-hepatic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18420"] = "EMAPA_18420"
 
 
 class InferiorVenaCavaPreHepaticPart(_MouseAnatomyModel):
 
-    name: Literal["inferior vena cava pre-hepatic part"] = (
-        "inferior vena cava pre-hepatic part"
-    )
+    name: Literal["inferior vena cava pre-hepatic part"] = "inferior vena cava pre-hepatic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18422"] = "EMAPA_18422"
 
 
 class InferiorVenaCavaLeftPostHepaticPart(_MouseAnatomyModel):
 
-    name: Literal["inferior vena cava left post-hepatic part"] = (
-        "inferior vena cava left post-hepatic part"
-    )
+    name: Literal["inferior vena cava left post-hepatic part"] = "inferior vena cava left post-hepatic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18423"] = "EMAPA_18423"
 
 
 class InferiorVenaCavaRightPostHepaticPart(_MouseAnatomyModel):
 
-    name: Literal["inferior vena cava right post-hepatic part"] = (
-        "inferior vena cava right post-hepatic part"
-    )
+    name: Literal["inferior vena cava right post-hepatic part"] = "inferior vena cava right post-hepatic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18424"] = "EMAPA_18424"
 
@@ -15491,9 +14855,7 @@ class PlantarPad(_MouseAnatomyModel):
 
 class FabellaPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["fabella pre-cartilage condensation"] = (
-        "fabella pre-cartilage condensation"
-    )
+    name: Literal["fabella pre-cartilage condensation"] = "fabella pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18508"] = "EMAPA_18508"
 
@@ -15507,9 +14869,7 @@ class PatellarLigament(_MouseAnatomyModel):
 
 class PatellaPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["patella pre-cartilage condensation"] = (
-        "patella pre-cartilage condensation"
-    )
+    name: Literal["patella pre-cartilage condensation"] = "patella pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18510"] = "EMAPA_18510"
 
@@ -15530,18 +14890,14 @@ class IntercostalMuscle(_MouseAnatomyModel):
 
 class IntercostalMuscleExternalLayer(_MouseAnatomyModel):
 
-    name: Literal["intercostal muscle external layer"] = (
-        "intercostal muscle external layer"
-    )
+    name: Literal["intercostal muscle external layer"] = "intercostal muscle external layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18522"] = "EMAPA_18522"
 
 
 class IntercostalMuscleInternalLayer(_MouseAnatomyModel):
 
-    name: Literal["intercostal muscle internal layer"] = (
-        "intercostal muscle internal layer"
-    )
+    name: Literal["intercostal muscle internal layer"] = "intercostal muscle internal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18523"] = "EMAPA_18523"
 
@@ -15688,9 +15044,7 @@ class MedullaryRaphe(_MouseAnatomyModel):
 
 class CerebellumIntraventricularPortion(_MouseAnatomyModel):
 
-    name: Literal["cerebellum intraventricular portion"] = (
-        "cerebellum intraventricular portion"
-    )
+    name: Literal["cerebellum intraventricular portion"] = "cerebellum intraventricular portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18555"] = "EMAPA_18555"
 
@@ -15738,45 +15092,35 @@ class RestOfCerebellumMantleLayer(_MouseAnatomyModel):
 
 class RestOfCerebellumMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["rest of cerebellum marginal layer"] = (
-        "rest of cerebellum marginal layer"
-    )
+    name: Literal["rest of cerebellum marginal layer"] = "rest of cerebellum marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18561"] = "EMAPA_18561"
 
 
 class RestOfCerebellumVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["rest of cerebellum ventricular layer"] = (
-        "rest of cerebellum ventricular layer"
-    )
+    name: Literal["rest of cerebellum ventricular layer"] = "rest of cerebellum ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18562"] = "EMAPA_18562"
 
 
 class MetencephalonRestOfAlarPlate(_MouseAnatomyModel):
 
-    name: Literal["metencephalon rest of alar plate"] = (
-        "metencephalon rest of alar plate"
-    )
+    name: Literal["metencephalon rest of alar plate"] = "metencephalon rest of alar plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18563"] = "EMAPA_18563"
 
 
 class MetencephalonRestOfAlarPlateMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["metencephalon rest of alar plate mantle layer"] = (
-        "metencephalon rest of alar plate mantle layer"
-    )
+    name: Literal["metencephalon rest of alar plate mantle layer"] = "metencephalon rest of alar plate mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18564"] = "EMAPA_18564"
 
 
 class MetencephalonRestOfAlarPlateMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["metencephalon rest of alar plate marginal layer"] = (
-        "metencephalon rest of alar plate marginal layer"
-    )
+    name: Literal["metencephalon rest of alar plate marginal layer"] = "metencephalon rest of alar plate marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18565"] = "EMAPA_18565"
 
@@ -15820,9 +15164,7 @@ class SciaticNerve(_MouseAnatomyModel):
 
 class FutureTympanicMembraneEndothelium(_MouseAnatomyModel):
 
-    name: Literal["future tympanic membrane endothelium"] = (
-        "future tympanic membrane endothelium"
-    )
+    name: Literal["future tympanic membrane endothelium"] = "future tympanic membrane endothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18578"] = "EMAPA_18578"
 
@@ -16284,9 +15626,7 @@ class GreaterOmentum(_MouseAnatomyModel):
 
 class ForegutMidgutJunctionDuodenum(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction duodenum"] = (
-        "foregut-midgut junction duodenum"
-    )
+    name: Literal["foregut-midgut junction duodenum"] = "foregut-midgut junction duodenum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18661"] = "EMAPA_18661"
 
@@ -16531,9 +15871,7 @@ class JugularForamen(_MouseAnatomyModel):
 
 class TemporoMandibularJointPrimordium(_MouseAnatomyModel):
 
-    name: Literal["temporo-mandibular joint primordium"] = (
-        "temporo-mandibular joint primordium"
-    )
+    name: Literal["temporo-mandibular joint primordium"] = "temporo-mandibular joint primordium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18714"] = "EMAPA_18714"
 
@@ -16871,9 +16209,7 @@ class AnteriorHornOfLateralVentricleChoroidPlexus(_MouseAnatomyModel):
 
 class LateralVentricleInferiorHornChoroidPlexus(_MouseAnatomyModel):
 
-    name: Literal["lateral ventricle inferior horn choroid plexus"] = (
-        "lateral ventricle inferior horn choroid plexus"
-    )
+    name: Literal["lateral ventricle inferior horn choroid plexus"] = "lateral ventricle inferior horn choroid plexus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18780"] = "EMAPA_18780"
 
@@ -16898,27 +16234,21 @@ class SuperiorHornOfLateralVentricleChoroidPlexus(_MouseAnatomyModel):
 
 class HeadOfLateralVentricleChoroidPlexus(_MouseAnatomyModel):
 
-    name: Literal["head of lateral ventricle choroid plexus"] = (
-        "head of lateral ventricle choroid plexus"
-    )
+    name: Literal["head of lateral ventricle choroid plexus"] = "head of lateral ventricle choroid plexus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18784"] = "EMAPA_18784"
 
 
 class TailOfLateralVentricleChoroidPlexus(_MouseAnatomyModel):
 
-    name: Literal["tail of lateral ventricle choroid plexus"] = (
-        "tail of lateral ventricle choroid plexus"
-    )
+    name: Literal["tail of lateral ventricle choroid plexus"] = "tail of lateral ventricle choroid plexus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18785"] = "EMAPA_18785"
 
 
 class MedullaOblongataRestOfBasalPlate(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata rest of basal plate"] = (
-        "medulla oblongata rest of basal plate"
-    )
+    name: Literal["medulla oblongata rest of basal plate"] = "medulla oblongata rest of basal plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18786"] = "EMAPA_18786"
 
@@ -16966,9 +16296,7 @@ class MedullaryRapheMarginalLayer(_MouseAnatomyModel):
 
 class MedullaryRapheVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["medullary raphe ventricular layer"] = (
-        "medullary raphe ventricular layer"
-    )
+    name: Literal["medullary raphe ventricular layer"] = "medullary raphe ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18792"] = "EMAPA_18792"
 
@@ -17248,18 +16576,14 @@ class PharyngealConstrictorMuscle(_MouseAnatomyModel):
 
 class InferiorPharyngealConstrictorMuscle(_MouseAnatomyModel):
 
-    name: Literal["inferior pharyngeal constrictor muscle"] = (
-        "inferior pharyngeal constrictor muscle"
-    )
+    name: Literal["inferior pharyngeal constrictor muscle"] = "inferior pharyngeal constrictor muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18965"] = "EMAPA_18965"
 
 
 class SuperiorPharyngealConstrictorMuscle(_MouseAnatomyModel):
 
-    name: Literal["superior pharyngeal constrictor muscle"] = (
-        "superior pharyngeal constrictor muscle"
-    )
+    name: Literal["superior pharyngeal constrictor muscle"] = "superior pharyngeal constrictor muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18966"] = "EMAPA_18966"
 
@@ -17315,9 +16639,7 @@ class CorticalRenalTubule(_MouseAnatomyModel):
 
 class FemaleCysticVesicularAppendage(_MouseAnatomyModel):
 
-    name: Literal["female cystic vesicular appendage"] = (
-        "female cystic vesicular appendage"
-    )
+    name: Literal["female cystic vesicular appendage"] = "female cystic vesicular appendage"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18978"] = "EMAPA_18978"
 
@@ -17366,9 +16688,7 @@ class PrepuceOfMale(_MouseAnatomyModel):
 
 class EfferentDuctOfSeminalVesicle(_MouseAnatomyModel):
 
-    name: Literal["efferent duct of seminal vesicle"] = (
-        "efferent duct of seminal vesicle"
-    )
+    name: Literal["efferent duct of seminal vesicle"] = "efferent duct of seminal vesicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_18993"] = "EMAPA_18993"
 
@@ -17403,72 +16723,56 @@ class LeftLungAlveolarSystem(_MouseAnatomyModel):
 
 class RightLungAccessoryLobeBronchiole(_MouseAnatomyModel):
 
-    name: Literal["right lung accessory lobe bronchiole"] = (
-        "right lung accessory lobe bronchiole"
-    )
+    name: Literal["right lung accessory lobe bronchiole"] = "right lung accessory lobe bronchiole"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19002"] = "EMAPA_19002"
 
 
 class RightLungAccessoryLobeAlveolarSystem(_MouseAnatomyModel):
 
-    name: Literal["right lung accessory lobe alveolar system"] = (
-        "right lung accessory lobe alveolar system"
-    )
+    name: Literal["right lung accessory lobe alveolar system"] = "right lung accessory lobe alveolar system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19003"] = "EMAPA_19003"
 
 
 class RightLungCaudalLobeBronchiole(_MouseAnatomyModel):
 
-    name: Literal["right lung caudal lobe bronchiole"] = (
-        "right lung caudal lobe bronchiole"
-    )
+    name: Literal["right lung caudal lobe bronchiole"] = "right lung caudal lobe bronchiole"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19004"] = "EMAPA_19004"
 
 
 class RightLungCaudalLobeAlveolarSystem(_MouseAnatomyModel):
 
-    name: Literal["right lung caudal lobe alveolar system"] = (
-        "right lung caudal lobe alveolar system"
-    )
+    name: Literal["right lung caudal lobe alveolar system"] = "right lung caudal lobe alveolar system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19005"] = "EMAPA_19005"
 
 
 class RightLungCranialLobeBronchiole(_MouseAnatomyModel):
 
-    name: Literal["right lung cranial lobe bronchiole"] = (
-        "right lung cranial lobe bronchiole"
-    )
+    name: Literal["right lung cranial lobe bronchiole"] = "right lung cranial lobe bronchiole"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19006"] = "EMAPA_19006"
 
 
 class RightLungCranialLobeAlveolarSystem(_MouseAnatomyModel):
 
-    name: Literal["right lung cranial lobe alveolar system"] = (
-        "right lung cranial lobe alveolar system"
-    )
+    name: Literal["right lung cranial lobe alveolar system"] = "right lung cranial lobe alveolar system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19007"] = "EMAPA_19007"
 
 
 class RightLungMiddleLobeBronchiole(_MouseAnatomyModel):
 
-    name: Literal["right lung middle lobe bronchiole"] = (
-        "right lung middle lobe bronchiole"
-    )
+    name: Literal["right lung middle lobe bronchiole"] = "right lung middle lobe bronchiole"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19008"] = "EMAPA_19008"
 
 
 class RightLungMiddleLobeAlveolarSystem(_MouseAnatomyModel):
 
-    name: Literal["right lung middle lobe alveolar system"] = (
-        "right lung middle lobe alveolar system"
-    )
+    name: Literal["right lung middle lobe alveolar system"] = "right lung middle lobe alveolar system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19009"] = "EMAPA_19009"
 
@@ -17685,27 +16989,21 @@ class CerebellumDorsalPart(_MouseAnatomyModel):
 
 class CerebellumDorsalPartMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["cerebellum dorsal part mantle layer"] = (
-        "cerebellum dorsal part mantle layer"
-    )
+    name: Literal["cerebellum dorsal part mantle layer"] = "cerebellum dorsal part mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19048"] = "EMAPA_19048"
 
 
 class CerebellumDorsalPartMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["cerebellum dorsal part marginal layer"] = (
-        "cerebellum dorsal part marginal layer"
-    )
+    name: Literal["cerebellum dorsal part marginal layer"] = "cerebellum dorsal part marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19049"] = "EMAPA_19049"
 
 
 class CerebellumDorsalPartVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["cerebellum dorsal part ventricular layer"] = (
-        "cerebellum dorsal part ventricular layer"
-    )
+    name: Literal["cerebellum dorsal part ventricular layer"] = "cerebellum dorsal part ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19050"] = "EMAPA_19050"
 
@@ -17733,9 +17031,7 @@ class DiencephalonSubarachnoidSpace(_MouseAnatomyModel):
 
 class TelencephalonSubarachnoidSpace(_MouseAnatomyModel):
 
-    name: Literal["telencephalon subarachnoid space"] = (
-        "telencephalon subarachnoid space"
-    )
+    name: Literal["telencephalon subarachnoid space"] = "telencephalon subarachnoid space"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19054"] = "EMAPA_19054"
 
@@ -17863,9 +17159,7 @@ class DuodenumVascularElement(_MouseAnatomyModel):
 
 class GastroEsophagealJunctionMesentery(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction mesentery"] = (
-        "gastro-esophageal junction mesentery"
-    )
+    name: Literal["gastro-esophageal junction mesentery"] = "gastro-esophageal junction mesentery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19084"] = "EMAPA_19084"
 
@@ -17949,18 +17243,14 @@ class RestOfUpperLip(_MouseAnatomyModel):
 
 class LeftHepaticDuctExtrahepaticPart(_MouseAnatomyModel):
 
-    name: Literal["left hepatic duct extrahepatic part"] = (
-        "left hepatic duct extrahepatic part"
-    )
+    name: Literal["left hepatic duct extrahepatic part"] = "left hepatic duct extrahepatic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19099"] = "EMAPA_19099"
 
 
 class RightHepaticDuctExtrahepaticPart(_MouseAnatomyModel):
 
-    name: Literal["right hepatic duct extrahepatic part"] = (
-        "right hepatic duct extrahepatic part"
-    )
+    name: Literal["right hepatic duct extrahepatic part"] = "right hepatic duct extrahepatic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19100"] = "EMAPA_19100"
 
@@ -18317,9 +17607,7 @@ class RetinaInnerNuclearLayer(_MouseAnatomyModel):
 
 class NeuralRetinaIntermediateAnuclearLayer(_MouseAnatomyModel):
 
-    name: Literal["neural retina intermediate anuclear layer"] = (
-        "neural retina intermediate anuclear layer"
-    )
+    name: Literal["neural retina intermediate anuclear layer"] = "neural retina intermediate anuclear layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19156"] = "EMAPA_19156"
 
@@ -18389,9 +17677,7 @@ class TrigeminalNerveLingualBranch(_MouseAnatomyModel):
 
 class GlansOfFemaleGenitalTubercle(_MouseAnatomyModel):
 
-    name: Literal["glans of female genital tubercle"] = (
-        "glans of female genital tubercle"
-    )
+    name: Literal["glans of female genital tubercle"] = "glans of female genital tubercle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19170"] = "EMAPA_19170"
 
@@ -18426,9 +17712,7 @@ class FemaleExternalInguinalRing(_MouseAnatomyModel):
 
 class RestOfInterstitiumOfTheTestis(_MouseAnatomyModel):
 
-    name: Literal["rest of interstitium of the testis"] = (
-        "rest of interstitium of the testis"
-    )
+    name: Literal["rest of interstitium of the testis"] = "rest of interstitium of the testis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19176"] = "EMAPA_19176"
 
@@ -18477,27 +17761,21 @@ class RightLungMiddleLobeAlveolus(_MouseAnatomyModel):
 
 class RightLungMiddleLobeAlveolarDuct(_MouseAnatomyModel):
 
-    name: Literal["right lung middle lobe alveolar duct"] = (
-        "right lung middle lobe alveolar duct"
-    )
+    name: Literal["right lung middle lobe alveolar duct"] = "right lung middle lobe alveolar duct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19185"] = "EMAPA_19185"
 
 
 class RightLungCranialLobeAlveolus(_MouseAnatomyModel):
 
-    name: Literal["right lung cranial lobe alveolus"] = (
-        "right lung cranial lobe alveolus"
-    )
+    name: Literal["right lung cranial lobe alveolus"] = "right lung cranial lobe alveolus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19186"] = "EMAPA_19186"
 
 
 class RightLungCranialLobeAlveolarDuct(_MouseAnatomyModel):
 
-    name: Literal["right lung cranial lobe alveolar duct"] = (
-        "right lung cranial lobe alveolar duct"
-    )
+    name: Literal["right lung cranial lobe alveolar duct"] = "right lung cranial lobe alveolar duct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19187"] = "EMAPA_19187"
 
@@ -18511,27 +17789,21 @@ class RightLungCaudalLobeAlveolus(_MouseAnatomyModel):
 
 class RightLungCaudalLobeAlveolarDuct(_MouseAnatomyModel):
 
-    name: Literal["right lung caudal lobe alveolar duct"] = (
-        "right lung caudal lobe alveolar duct"
-    )
+    name: Literal["right lung caudal lobe alveolar duct"] = "right lung caudal lobe alveolar duct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19189"] = "EMAPA_19189"
 
 
 class RightLungAccessoryLobeAlveolus(_MouseAnatomyModel):
 
-    name: Literal["right lung accessory lobe alveolus"] = (
-        "right lung accessory lobe alveolus"
-    )
+    name: Literal["right lung accessory lobe alveolus"] = "right lung accessory lobe alveolus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19190"] = "EMAPA_19190"
 
 
 class RightLungAccessoryLobeAlveolarDuct(_MouseAnatomyModel):
 
-    name: Literal["right lung accessory lobe alveolar duct"] = (
-        "right lung accessory lobe alveolar duct"
-    )
+    name: Literal["right lung accessory lobe alveolar duct"] = "right lung accessory lobe alveolar duct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19191"] = "EMAPA_19191"
 
@@ -18874,27 +18146,21 @@ class LacrimalDrainageSystem(_MouseAnatomyModel):
 
 class PancreasBodyIsletsOfLangerhans(_MouseAnatomyModel):
 
-    name: Literal["pancreas body islets of Langerhans"] = (
-        "pancreas body islets of Langerhans"
-    )
+    name: Literal["pancreas body islets of Langerhans"] = "pancreas body islets of Langerhans"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19246"] = "EMAPA_19246"
 
 
 class PancreasHeadIsletsOfLangerhans(_MouseAnatomyModel):
 
-    name: Literal["pancreas head islets of Langerhans"] = (
-        "pancreas head islets of Langerhans"
-    )
+    name: Literal["pancreas head islets of Langerhans"] = "pancreas head islets of Langerhans"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19247"] = "EMAPA_19247"
 
 
 class PancreasTailIsletsOfLangerhans(_MouseAnatomyModel):
 
-    name: Literal["pancreas tail islets of Langerhans"] = (
-        "pancreas tail islets of Langerhans"
-    )
+    name: Literal["pancreas tail islets of Langerhans"] = "pancreas tail islets of Langerhans"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19248"] = "EMAPA_19248"
 
@@ -18943,90 +18209,70 @@ class HindgutDerivedLargeIntestine(_MouseAnatomyModel):
 
 class MidgutDerivedLargeIntestineMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["midgut derived large intestine mesenchyme"] = (
-        "midgut derived large intestine mesenchyme"
-    )
+    name: Literal["midgut derived large intestine mesenchyme"] = "midgut derived large intestine mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19255"] = "EMAPA_19255"
 
 
 class HindgutDerivedLargeIntestineMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["hindgut derived large intestine mesenchyme"] = (
-        "hindgut derived large intestine mesenchyme"
-    )
+    name: Literal["hindgut derived large intestine mesenchyme"] = "hindgut derived large intestine mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19256"] = "EMAPA_19256"
 
 
 class MidgutDerivedLargeIntestineEpithelium(_MouseAnatomyModel):
 
-    name: Literal["midgut derived large intestine epithelium"] = (
-        "midgut derived large intestine epithelium"
-    )
+    name: Literal["midgut derived large intestine epithelium"] = "midgut derived large intestine epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19257"] = "EMAPA_19257"
 
 
 class MidgutDerivedLargeIntestineLumen(_MouseAnatomyModel):
 
-    name: Literal["midgut derived large intestine lumen"] = (
-        "midgut derived large intestine lumen"
-    )
+    name: Literal["midgut derived large intestine lumen"] = "midgut derived large intestine lumen"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19258"] = "EMAPA_19258"
 
 
 class MidgutDerivedLargeIntestineMesentery(_MouseAnatomyModel):
 
-    name: Literal["midgut derived large intestine mesentery"] = (
-        "midgut derived large intestine mesentery"
-    )
+    name: Literal["midgut derived large intestine mesentery"] = "midgut derived large intestine mesentery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19259"] = "EMAPA_19259"
 
 
 class MidgutDerivedLargeIntestineDorsalMesentery(_MouseAnatomyModel):
 
-    name: Literal["midgut derived large intestine dorsal mesentery"] = (
-        "midgut derived large intestine dorsal mesentery"
-    )
+    name: Literal["midgut derived large intestine dorsal mesentery"] = "midgut derived large intestine dorsal mesentery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19260"] = "EMAPA_19260"
 
 
 class MidgutDerivedLargeIntestineVascularElement(_MouseAnatomyModel):
 
-    name: Literal["midgut derived large intestine vascular element"] = (
-        "midgut derived large intestine vascular element"
-    )
+    name: Literal["midgut derived large intestine vascular element"] = "midgut derived large intestine vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19261"] = "EMAPA_19261"
 
 
 class HindgutDerivedLargeIntestineEpithelium(_MouseAnatomyModel):
 
-    name: Literal["hindgut derived large intestine epithelium"] = (
-        "hindgut derived large intestine epithelium"
-    )
+    name: Literal["hindgut derived large intestine epithelium"] = "hindgut derived large intestine epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19262"] = "EMAPA_19262"
 
 
 class HindgutDerivedLargeIntestineLumen(_MouseAnatomyModel):
 
-    name: Literal["hindgut derived large intestine lumen"] = (
-        "hindgut derived large intestine lumen"
-    )
+    name: Literal["hindgut derived large intestine lumen"] = "hindgut derived large intestine lumen"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19263"] = "EMAPA_19263"
 
 
 class HindgutDerivedLargeIntestineMesentery(_MouseAnatomyModel):
 
-    name: Literal["hindgut derived large intestine mesentery"] = (
-        "hindgut derived large intestine mesentery"
-    )
+    name: Literal["hindgut derived large intestine mesentery"] = "hindgut derived large intestine mesentery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19264"] = "EMAPA_19264"
 
@@ -19370,783 +18616,609 @@ class AnnularLigament(_MouseAnatomyModel):
 
 class C1VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C1 vertebral pre-cartilage condensation"] = (
-        "C1 vertebral pre-cartilage condensation"
-    )
+    name: Literal["C1 vertebral pre-cartilage condensation"] = "C1 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19323"] = "EMAPA_19323"
 
 
 class C2VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C2 vertebral pre-cartilage condensation"] = (
-        "C2 vertebral pre-cartilage condensation"
-    )
+    name: Literal["C2 vertebral pre-cartilage condensation"] = "C2 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19324"] = "EMAPA_19324"
 
 
 class C3VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C3 vertebral pre-cartilage condensation"] = (
-        "C3 vertebral pre-cartilage condensation"
-    )
+    name: Literal["C3 vertebral pre-cartilage condensation"] = "C3 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19325"] = "EMAPA_19325"
 
 
 class C4VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C4 vertebral pre-cartilage condensation"] = (
-        "C4 vertebral pre-cartilage condensation"
-    )
+    name: Literal["C4 vertebral pre-cartilage condensation"] = "C4 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19326"] = "EMAPA_19326"
 
 
 class C5VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C5 vertebral pre-cartilage condensation"] = (
-        "C5 vertebral pre-cartilage condensation"
-    )
+    name: Literal["C5 vertebral pre-cartilage condensation"] = "C5 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19327"] = "EMAPA_19327"
 
 
 class C6VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C6 vertebral pre-cartilage condensation"] = (
-        "C6 vertebral pre-cartilage condensation"
-    )
+    name: Literal["C6 vertebral pre-cartilage condensation"] = "C6 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19328"] = "EMAPA_19328"
 
 
 class C7VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C7 vertebral pre-cartilage condensation"] = (
-        "C7 vertebral pre-cartilage condensation"
-    )
+    name: Literal["C7 vertebral pre-cartilage condensation"] = "C7 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19329"] = "EMAPA_19329"
 
 
 class T1VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T1 vertebral pre-cartilage condensation"] = (
-        "T1 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T1 vertebral pre-cartilage condensation"] = "T1 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19330"] = "EMAPA_19330"
 
 
 class T2VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T2 vertebral pre-cartilage condensation"] = (
-        "T2 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T2 vertebral pre-cartilage condensation"] = "T2 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19331"] = "EMAPA_19331"
 
 
 class T3VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T3 vertebral pre-cartilage condensation"] = (
-        "T3 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T3 vertebral pre-cartilage condensation"] = "T3 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19332"] = "EMAPA_19332"
 
 
 class T4VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T4 vertebral pre-cartilage condensation"] = (
-        "T4 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T4 vertebral pre-cartilage condensation"] = "T4 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19333"] = "EMAPA_19333"
 
 
 class T5VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T5 vertebral pre-cartilage condensation"] = (
-        "T5 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T5 vertebral pre-cartilage condensation"] = "T5 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19334"] = "EMAPA_19334"
 
 
 class C1VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C1 vertebral cartilage condensation"] = (
-        "C1 vertebral cartilage condensation"
-    )
+    name: Literal["C1 vertebral cartilage condensation"] = "C1 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19335"] = "EMAPA_19335"
 
 
 class C2VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C2 vertebral cartilage condensation"] = (
-        "C2 vertebral cartilage condensation"
-    )
+    name: Literal["C2 vertebral cartilage condensation"] = "C2 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19336"] = "EMAPA_19336"
 
 
 class C3VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C3 vertebral cartilage condensation"] = (
-        "C3 vertebral cartilage condensation"
-    )
+    name: Literal["C3 vertebral cartilage condensation"] = "C3 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19337"] = "EMAPA_19337"
 
 
 class C4VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C4 vertebral cartilage condensation"] = (
-        "C4 vertebral cartilage condensation"
-    )
+    name: Literal["C4 vertebral cartilage condensation"] = "C4 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19338"] = "EMAPA_19338"
 
 
 class C5VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C5 vertebral cartilage condensation"] = (
-        "C5 vertebral cartilage condensation"
-    )
+    name: Literal["C5 vertebral cartilage condensation"] = "C5 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19339"] = "EMAPA_19339"
 
 
 class L1VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L1 vertebral pre-cartilage condensation"] = (
-        "L1 vertebral pre-cartilage condensation"
-    )
+    name: Literal["L1 vertebral pre-cartilage condensation"] = "L1 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19340"] = "EMAPA_19340"
 
 
 class T6VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T6 vertebral pre-cartilage condensation"] = (
-        "T6 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T6 vertebral pre-cartilage condensation"] = "T6 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19341"] = "EMAPA_19341"
 
 
 class T7VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T7 vertebral pre-cartilage condensation"] = (
-        "T7 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T7 vertebral pre-cartilage condensation"] = "T7 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19342"] = "EMAPA_19342"
 
 
 class T8VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T8 vertebral pre-cartilage condensation"] = (
-        "T8 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T8 vertebral pre-cartilage condensation"] = "T8 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19343"] = "EMAPA_19343"
 
 
 class T9VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T9 vertebral pre-cartilage condensation"] = (
-        "T9 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T9 vertebral pre-cartilage condensation"] = "T9 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19344"] = "EMAPA_19344"
 
 
 class T10VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T10 vertebral pre-cartilage condensation"] = (
-        "T10 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T10 vertebral pre-cartilage condensation"] = "T10 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19345"] = "EMAPA_19345"
 
 
 class T11VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T11 vertebral pre-cartilage condensation"] = (
-        "T11 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T11 vertebral pre-cartilage condensation"] = "T11 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19346"] = "EMAPA_19346"
 
 
 class T12VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T12 vertebral pre-cartilage condensation"] = (
-        "T12 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T12 vertebral pre-cartilage condensation"] = "T12 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19347"] = "EMAPA_19347"
 
 
 class T13VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T13 vertebral pre-cartilage condensation"] = (
-        "T13 vertebral pre-cartilage condensation"
-    )
+    name: Literal["T13 vertebral pre-cartilage condensation"] = "T13 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19348"] = "EMAPA_19348"
 
 
 class C6VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C6 vertebral cartilage condensation"] = (
-        "C6 vertebral cartilage condensation"
-    )
+    name: Literal["C6 vertebral cartilage condensation"] = "C6 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19349"] = "EMAPA_19349"
 
 
 class C7VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["C7 vertebral cartilage condensation"] = (
-        "C7 vertebral cartilage condensation"
-    )
+    name: Literal["C7 vertebral cartilage condensation"] = "C7 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19350"] = "EMAPA_19350"
 
 
 class L2VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L2 vertebral pre-cartilage condensation"] = (
-        "L2 vertebral pre-cartilage condensation"
-    )
+    name: Literal["L2 vertebral pre-cartilage condensation"] = "L2 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19351"] = "EMAPA_19351"
 
 
 class L3VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L3 vertebral pre-cartilage condensation"] = (
-        "L3 vertebral pre-cartilage condensation"
-    )
+    name: Literal["L3 vertebral pre-cartilage condensation"] = "L3 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19352"] = "EMAPA_19352"
 
 
 class L4VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L4 vertebral pre-cartilage condensation"] = (
-        "L4 vertebral pre-cartilage condensation"
-    )
+    name: Literal["L4 vertebral pre-cartilage condensation"] = "L4 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19353"] = "EMAPA_19353"
 
 
 class L5VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L5 vertebral pre-cartilage condensation"] = (
-        "L5 vertebral pre-cartilage condensation"
-    )
+    name: Literal["L5 vertebral pre-cartilage condensation"] = "L5 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19354"] = "EMAPA_19354"
 
 
 class L6VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L6 vertebral pre-cartilage condensation"] = (
-        "L6 vertebral pre-cartilage condensation"
-    )
+    name: Literal["L6 vertebral pre-cartilage condensation"] = "L6 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19355"] = "EMAPA_19355"
 
 
 class S1VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["S1 vertebral pre-cartilage condensation"] = (
-        "S1 vertebral pre-cartilage condensation"
-    )
+    name: Literal["S1 vertebral pre-cartilage condensation"] = "S1 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19356"] = "EMAPA_19356"
 
 
 class S2VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["S2 vertebral pre-cartilage condensation"] = (
-        "S2 vertebral pre-cartilage condensation"
-    )
+    name: Literal["S2 vertebral pre-cartilage condensation"] = "S2 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19357"] = "EMAPA_19357"
 
 
 class T1VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T1 vertebral cartilage condensation"] = (
-        "T1 vertebral cartilage condensation"
-    )
+    name: Literal["T1 vertebral cartilage condensation"] = "T1 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19358"] = "EMAPA_19358"
 
 
 class T2VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T2 vertebral cartilage condensation"] = (
-        "T2 vertebral cartilage condensation"
-    )
+    name: Literal["T2 vertebral cartilage condensation"] = "T2 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19359"] = "EMAPA_19359"
 
 
 class T3VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T3 vertebral cartilage condensation"] = (
-        "T3 vertebral cartilage condensation"
-    )
+    name: Literal["T3 vertebral cartilage condensation"] = "T3 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19360"] = "EMAPA_19360"
 
 
 class T4VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T4 vertebral cartilage condensation"] = (
-        "T4 vertebral cartilage condensation"
-    )
+    name: Literal["T4 vertebral cartilage condensation"] = "T4 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19361"] = "EMAPA_19361"
 
 
 class T5VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T5 vertebral cartilage condensation"] = (
-        "T5 vertebral cartilage condensation"
-    )
+    name: Literal["T5 vertebral cartilage condensation"] = "T5 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19362"] = "EMAPA_19362"
 
 
 class L1VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L1 vertebral cartilage condensation"] = (
-        "L1 vertebral cartilage condensation"
-    )
+    name: Literal["L1 vertebral cartilage condensation"] = "L1 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19363"] = "EMAPA_19363"
 
 
 class S3VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["S3 vertebral pre-cartilage condensation"] = (
-        "S3 vertebral pre-cartilage condensation"
-    )
+    name: Literal["S3 vertebral pre-cartilage condensation"] = "S3 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19364"] = "EMAPA_19364"
 
 
 class S4VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["S4 vertebral pre-cartilage condensation"] = (
-        "S4 vertebral pre-cartilage condensation"
-    )
+    name: Literal["S4 vertebral pre-cartilage condensation"] = "S4 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19365"] = "EMAPA_19365"
 
 
 class Tl1VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl1 vertebral pre-cartilage condensation"] = (
-        "Tl1 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl1 vertebral pre-cartilage condensation"] = "Tl1 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19366"] = "EMAPA_19366"
 
 
 class Tl2VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl2 vertebral pre-cartilage condensation"] = (
-        "Tl2 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl2 vertebral pre-cartilage condensation"] = "Tl2 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19367"] = "EMAPA_19367"
 
 
 class Tl3VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl3 vertebral pre-cartilage condensation"] = (
-        "Tl3 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl3 vertebral pre-cartilage condensation"] = "Tl3 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19368"] = "EMAPA_19368"
 
 
 class T1RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T1 rib pre-cartilage condensation"] = (
-        "T1 rib pre-cartilage condensation"
-    )
+    name: Literal["T1 rib pre-cartilage condensation"] = "T1 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19369"] = "EMAPA_19369"
 
 
 class T2RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T2 rib pre-cartilage condensation"] = (
-        "T2 rib pre-cartilage condensation"
-    )
+    name: Literal["T2 rib pre-cartilage condensation"] = "T2 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19370"] = "EMAPA_19370"
 
 
 class T3RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T3 rib pre-cartilage condensation"] = (
-        "T3 rib pre-cartilage condensation"
-    )
+    name: Literal["T3 rib pre-cartilage condensation"] = "T3 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19371"] = "EMAPA_19371"
 
 
 class T4RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T4 rib pre-cartilage condensation"] = (
-        "T4 rib pre-cartilage condensation"
-    )
+    name: Literal["T4 rib pre-cartilage condensation"] = "T4 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19372"] = "EMAPA_19372"
 
 
 class T5RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T5 rib pre-cartilage condensation"] = (
-        "T5 rib pre-cartilage condensation"
-    )
+    name: Literal["T5 rib pre-cartilage condensation"] = "T5 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19373"] = "EMAPA_19373"
 
 
 class T6VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T6 vertebral cartilage condensation"] = (
-        "T6 vertebral cartilage condensation"
-    )
+    name: Literal["T6 vertebral cartilage condensation"] = "T6 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19374"] = "EMAPA_19374"
 
 
 class T7VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T7 vertebral cartilage condensation"] = (
-        "T7 vertebral cartilage condensation"
-    )
+    name: Literal["T7 vertebral cartilage condensation"] = "T7 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19375"] = "EMAPA_19375"
 
 
 class T8VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T8 vertebral cartilage condensation"] = (
-        "T8 vertebral cartilage condensation"
-    )
+    name: Literal["T8 vertebral cartilage condensation"] = "T8 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19376"] = "EMAPA_19376"
 
 
 class T9VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T9 vertebral cartilage condensation"] = (
-        "T9 vertebral cartilage condensation"
-    )
+    name: Literal["T9 vertebral cartilage condensation"] = "T9 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19377"] = "EMAPA_19377"
 
 
 class T10VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T10 vertebral cartilage condensation"] = (
-        "T10 vertebral cartilage condensation"
-    )
+    name: Literal["T10 vertebral cartilage condensation"] = "T10 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19378"] = "EMAPA_19378"
 
 
 class T11VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T11 vertebral cartilage condensation"] = (
-        "T11 vertebral cartilage condensation"
-    )
+    name: Literal["T11 vertebral cartilage condensation"] = "T11 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19379"] = "EMAPA_19379"
 
 
 class T12VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T12 vertebral cartilage condensation"] = (
-        "T12 vertebral cartilage condensation"
-    )
+    name: Literal["T12 vertebral cartilage condensation"] = "T12 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19380"] = "EMAPA_19380"
 
 
 class T13VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T13 vertebral cartilage condensation"] = (
-        "T13 vertebral cartilage condensation"
-    )
+    name: Literal["T13 vertebral cartilage condensation"] = "T13 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19381"] = "EMAPA_19381"
 
 
 class L2VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L2 vertebral cartilage condensation"] = (
-        "L2 vertebral cartilage condensation"
-    )
+    name: Literal["L2 vertebral cartilage condensation"] = "L2 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19382"] = "EMAPA_19382"
 
 
 class L3VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L3 vertebral cartilage condensation"] = (
-        "L3 vertebral cartilage condensation"
-    )
+    name: Literal["L3 vertebral cartilage condensation"] = "L3 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19383"] = "EMAPA_19383"
 
 
 class L4VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L4 vertebral cartilage condensation"] = (
-        "L4 vertebral cartilage condensation"
-    )
+    name: Literal["L4 vertebral cartilage condensation"] = "L4 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19384"] = "EMAPA_19384"
 
 
 class L5VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L5 vertebral cartilage condensation"] = (
-        "L5 vertebral cartilage condensation"
-    )
+    name: Literal["L5 vertebral cartilage condensation"] = "L5 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19385"] = "EMAPA_19385"
 
 
 class L6VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["L6 vertebral cartilage condensation"] = (
-        "L6 vertebral cartilage condensation"
-    )
+    name: Literal["L6 vertebral cartilage condensation"] = "L6 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19386"] = "EMAPA_19386"
 
 
 class S1VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["S1 vertebral cartilage condensation"] = (
-        "S1 vertebral cartilage condensation"
-    )
+    name: Literal["S1 vertebral cartilage condensation"] = "S1 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19387"] = "EMAPA_19387"
 
 
 class S2VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["S2 vertebral cartilage condensation"] = (
-        "S2 vertebral cartilage condensation"
-    )
+    name: Literal["S2 vertebral cartilage condensation"] = "S2 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19388"] = "EMAPA_19388"
 
 
 class Tl4VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl4 vertebral pre-cartilage condensation"] = (
-        "Tl4 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl4 vertebral pre-cartilage condensation"] = "Tl4 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19389"] = "EMAPA_19389"
 
 
 class Tl5VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl5 vertebral pre-cartilage condensation"] = (
-        "Tl5 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl5 vertebral pre-cartilage condensation"] = "Tl5 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19390"] = "EMAPA_19390"
 
 
 class Tl6VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl6 vertebral pre-cartilage condensation"] = (
-        "Tl6 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl6 vertebral pre-cartilage condensation"] = "Tl6 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19391"] = "EMAPA_19391"
 
 
 class Tl7VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl7 vertebral pre-cartilage condensation"] = (
-        "Tl7 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl7 vertebral pre-cartilage condensation"] = "Tl7 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19392"] = "EMAPA_19392"
 
 
 class Tl8VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl8 vertebral pre-cartilage condensation"] = (
-        "Tl8 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl8 vertebral pre-cartilage condensation"] = "Tl8 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19393"] = "EMAPA_19393"
 
 
 class T6RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T6 rib pre-cartilage condensation"] = (
-        "T6 rib pre-cartilage condensation"
-    )
+    name: Literal["T6 rib pre-cartilage condensation"] = "T6 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19394"] = "EMAPA_19394"
 
 
 class T7RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T7 rib pre-cartilage condensation"] = (
-        "T7 rib pre-cartilage condensation"
-    )
+    name: Literal["T7 rib pre-cartilage condensation"] = "T7 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19395"] = "EMAPA_19395"
 
 
 class T8RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T8 rib pre-cartilage condensation"] = (
-        "T8 rib pre-cartilage condensation"
-    )
+    name: Literal["T8 rib pre-cartilage condensation"] = "T8 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19396"] = "EMAPA_19396"
 
 
 class T9RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T9 rib pre-cartilage condensation"] = (
-        "T9 rib pre-cartilage condensation"
-    )
+    name: Literal["T9 rib pre-cartilage condensation"] = "T9 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19397"] = "EMAPA_19397"
 
 
 class T10RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T10 rib pre-cartilage condensation"] = (
-        "T10 rib pre-cartilage condensation"
-    )
+    name: Literal["T10 rib pre-cartilage condensation"] = "T10 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19398"] = "EMAPA_19398"
 
 
 class T11RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T11 rib pre-cartilage condensation"] = (
-        "T11 rib pre-cartilage condensation"
-    )
+    name: Literal["T11 rib pre-cartilage condensation"] = "T11 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19399"] = "EMAPA_19399"
 
 
 class T12RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T12 rib pre-cartilage condensation"] = (
-        "T12 rib pre-cartilage condensation"
-    )
+    name: Literal["T12 rib pre-cartilage condensation"] = "T12 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19400"] = "EMAPA_19400"
 
 
 class T13RibPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["T13 rib pre-cartilage condensation"] = (
-        "T13 rib pre-cartilage condensation"
-    )
+    name: Literal["T13 rib pre-cartilage condensation"] = "T13 rib pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19401"] = "EMAPA_19401"
 
 
 class S3VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["S3 vertebral cartilage condensation"] = (
-        "S3 vertebral cartilage condensation"
-    )
+    name: Literal["S3 vertebral cartilage condensation"] = "S3 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19402"] = "EMAPA_19402"
 
 
 class S4VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["S4 vertebral cartilage condensation"] = (
-        "S4 vertebral cartilage condensation"
-    )
+    name: Literal["S4 vertebral cartilage condensation"] = "S4 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19403"] = "EMAPA_19403"
 
 
 class Tl1VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl1 vertebral cartilage condensation"] = (
-        "Tl1 vertebral cartilage condensation"
-    )
+    name: Literal["Tl1 vertebral cartilage condensation"] = "Tl1 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19404"] = "EMAPA_19404"
 
 
 class Tl2VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl2 vertebral cartilage condensation"] = (
-        "Tl2 vertebral cartilage condensation"
-    )
+    name: Literal["Tl2 vertebral cartilage condensation"] = "Tl2 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19405"] = "EMAPA_19405"
 
 
 class Tl3VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl3 vertebral cartilage condensation"] = (
-        "Tl3 vertebral cartilage condensation"
-    )
+    name: Literal["Tl3 vertebral cartilage condensation"] = "Tl3 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19406"] = "EMAPA_19406"
 
 
 class Tl9VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl9 vertebral pre-cartilage condensation"] = (
-        "Tl9 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl9 vertebral pre-cartilage condensation"] = "Tl9 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19407"] = "EMAPA_19407"
 
 
 class Tl10VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl10 vertebral pre-cartilage condensation"] = (
-        "Tl10 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl10 vertebral pre-cartilage condensation"] = "Tl10 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19408"] = "EMAPA_19408"
 
 
 class Tl11VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl11 vertebral pre-cartilage condensation"] = (
-        "Tl11 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl11 vertebral pre-cartilage condensation"] = "Tl11 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19409"] = "EMAPA_19409"
 
@@ -20335,144 +19407,112 @@ class C5Vertebra(_MouseAnatomyModel):
 
 class Tl4VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl4 vertebral cartilage condensation"] = (
-        "Tl4 vertebral cartilage condensation"
-    )
+    name: Literal["Tl4 vertebral cartilage condensation"] = "Tl4 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19436"] = "EMAPA_19436"
 
 
 class Tl5VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl5 vertebral cartilage condensation"] = (
-        "Tl5 vertebral cartilage condensation"
-    )
+    name: Literal["Tl5 vertebral cartilage condensation"] = "Tl5 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19437"] = "EMAPA_19437"
 
 
 class Tl6VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl6 vertebral cartilage condensation"] = (
-        "Tl6 vertebral cartilage condensation"
-    )
+    name: Literal["Tl6 vertebral cartilage condensation"] = "Tl6 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19438"] = "EMAPA_19438"
 
 
 class Tl7VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl7 vertebral cartilage condensation"] = (
-        "Tl7 vertebral cartilage condensation"
-    )
+    name: Literal["Tl7 vertebral cartilage condensation"] = "Tl7 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19439"] = "EMAPA_19439"
 
 
 class Tl8VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl8 vertebral cartilage condensation"] = (
-        "Tl8 vertebral cartilage condensation"
-    )
+    name: Literal["Tl8 vertebral cartilage condensation"] = "Tl8 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19440"] = "EMAPA_19440"
 
 
 class Tl9VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl9 vertebral cartilage condensation"] = (
-        "Tl9 vertebral cartilage condensation"
-    )
+    name: Literal["Tl9 vertebral cartilage condensation"] = "Tl9 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19441"] = "EMAPA_19441"
 
 
 class Tl10VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl10 vertebral cartilage condensation"] = (
-        "Tl10 vertebral cartilage condensation"
-    )
+    name: Literal["Tl10 vertebral cartilage condensation"] = "Tl10 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19442"] = "EMAPA_19442"
 
 
 class Tl11VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl11 vertebral cartilage condensation"] = (
-        "Tl11 vertebral cartilage condensation"
-    )
+    name: Literal["Tl11 vertebral cartilage condensation"] = "Tl11 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19443"] = "EMAPA_19443"
 
 
 class Tl12VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl12 vertebral pre-cartilage condensation"] = (
-        "Tl12 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl12 vertebral pre-cartilage condensation"] = "Tl12 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19444"] = "EMAPA_19444"
 
 
 class Tl13VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl13 vertebral pre-cartilage condensation"] = (
-        "Tl13 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl13 vertebral pre-cartilage condensation"] = "Tl13 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19445"] = "EMAPA_19445"
 
 
 class Tl14VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl14 vertebral pre-cartilage condensation"] = (
-        "Tl14 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl14 vertebral pre-cartilage condensation"] = "Tl14 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19446"] = "EMAPA_19446"
 
 
 class Tl15VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl15 vertebral pre-cartilage condensation"] = (
-        "Tl15 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl15 vertebral pre-cartilage condensation"] = "Tl15 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19447"] = "EMAPA_19447"
 
 
 class Tl16VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl16 vertebral pre-cartilage condensation"] = (
-        "Tl16 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl16 vertebral pre-cartilage condensation"] = "Tl16 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19448"] = "EMAPA_19448"
 
 
 class Tl17VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl17 vertebral pre-cartilage condensation"] = (
-        "Tl17 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl17 vertebral pre-cartilage condensation"] = "Tl17 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19449"] = "EMAPA_19449"
 
 
 class Tl18VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl18 vertebral pre-cartilage condensation"] = (
-        "Tl18 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl18 vertebral pre-cartilage condensation"] = "Tl18 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19450"] = "EMAPA_19450"
 
 
 class Tl19VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl19 vertebral pre-cartilage condensation"] = (
-        "Tl19 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl19 vertebral pre-cartilage condensation"] = "Tl19 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19451"] = "EMAPA_19451"
 
@@ -20626,144 +19666,112 @@ class L1Vertebra(_MouseAnatomyModel):
 
 class Tl12VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl12 vertebral cartilage condensation"] = (
-        "Tl12 vertebral cartilage condensation"
-    )
+    name: Literal["Tl12 vertebral cartilage condensation"] = "Tl12 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19473"] = "EMAPA_19473"
 
 
 class Tl13VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl13 vertebral cartilage condensation"] = (
-        "Tl13 vertebral cartilage condensation"
-    )
+    name: Literal["Tl13 vertebral cartilage condensation"] = "Tl13 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19474"] = "EMAPA_19474"
 
 
 class Tl14VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl14 vertebral cartilage condensation"] = (
-        "Tl14 vertebral cartilage condensation"
-    )
+    name: Literal["Tl14 vertebral cartilage condensation"] = "Tl14 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19475"] = "EMAPA_19475"
 
 
 class Tl15VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl15 vertebral cartilage condensation"] = (
-        "Tl15 vertebral cartilage condensation"
-    )
+    name: Literal["Tl15 vertebral cartilage condensation"] = "Tl15 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19476"] = "EMAPA_19476"
 
 
 class Tl16VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl16 vertebral cartilage condensation"] = (
-        "Tl16 vertebral cartilage condensation"
-    )
+    name: Literal["Tl16 vertebral cartilage condensation"] = "Tl16 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19477"] = "EMAPA_19477"
 
 
 class Tl17VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl17 vertebral cartilage condensation"] = (
-        "Tl17 vertebral cartilage condensation"
-    )
+    name: Literal["Tl17 vertebral cartilage condensation"] = "Tl17 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19478"] = "EMAPA_19478"
 
 
 class Tl18VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl18 vertebral cartilage condensation"] = (
-        "Tl18 vertebral cartilage condensation"
-    )
+    name: Literal["Tl18 vertebral cartilage condensation"] = "Tl18 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19479"] = "EMAPA_19479"
 
 
 class Tl19VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl19 vertebral cartilage condensation"] = (
-        "Tl19 vertebral cartilage condensation"
-    )
+    name: Literal["Tl19 vertebral cartilage condensation"] = "Tl19 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19480"] = "EMAPA_19480"
 
 
 class Tl20VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl20 vertebral pre-cartilage condensation"] = (
-        "Tl20 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl20 vertebral pre-cartilage condensation"] = "Tl20 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19481"] = "EMAPA_19481"
 
 
 class Tl21VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl21 vertebral pre-cartilage condensation"] = (
-        "Tl21 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl21 vertebral pre-cartilage condensation"] = "Tl21 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19482"] = "EMAPA_19482"
 
 
 class Tl22VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl22 vertebral pre-cartilage condensation"] = (
-        "Tl22 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl22 vertebral pre-cartilage condensation"] = "Tl22 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19483"] = "EMAPA_19483"
 
 
 class Tl23VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl23 vertebral pre-cartilage condensation"] = (
-        "Tl23 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl23 vertebral pre-cartilage condensation"] = "Tl23 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19484"] = "EMAPA_19484"
 
 
 class Tl24VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl24 vertebral pre-cartilage condensation"] = (
-        "Tl24 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl24 vertebral pre-cartilage condensation"] = "Tl24 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19485"] = "EMAPA_19485"
 
 
 class Tl25VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl25 vertebral pre-cartilage condensation"] = (
-        "Tl25 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl25 vertebral pre-cartilage condensation"] = "Tl25 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19486"] = "EMAPA_19486"
 
 
 class Tl26VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl26 vertebral pre-cartilage condensation"] = (
-        "Tl26 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl26 vertebral pre-cartilage condensation"] = "Tl26 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19487"] = "EMAPA_19487"
 
 
 class Tl27VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl27 vertebral pre-cartilage condensation"] = (
-        "Tl27 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl27 vertebral pre-cartilage condensation"] = "Tl27 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19488"] = "EMAPA_19488"
 
@@ -21582,108 +20590,84 @@ class Tl3Vertebra(_MouseAnatomyModel):
 
 class Tl20VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl20 vertebral cartilage condensation"] = (
-        "Tl20 vertebral cartilage condensation"
-    )
+    name: Literal["Tl20 vertebral cartilage condensation"] = "Tl20 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19605"] = "EMAPA_19605"
 
 
 class Tl21VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl21 vertebral cartilage condensation"] = (
-        "Tl21 vertebral cartilage condensation"
-    )
+    name: Literal["Tl21 vertebral cartilage condensation"] = "Tl21 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19606"] = "EMAPA_19606"
 
 
 class Tl22VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl22 vertebral cartilage condensation"] = (
-        "Tl22 vertebral cartilage condensation"
-    )
+    name: Literal["Tl22 vertebral cartilage condensation"] = "Tl22 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19607"] = "EMAPA_19607"
 
 
 class Tl23VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl23 vertebral cartilage condensation"] = (
-        "Tl23 vertebral cartilage condensation"
-    )
+    name: Literal["Tl23 vertebral cartilage condensation"] = "Tl23 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19608"] = "EMAPA_19608"
 
 
 class Tl24VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl24 vertebral cartilage condensation"] = (
-        "Tl24 vertebral cartilage condensation"
-    )
+    name: Literal["Tl24 vertebral cartilage condensation"] = "Tl24 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19609"] = "EMAPA_19609"
 
 
 class Tl25VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl25 vertebral cartilage condensation"] = (
-        "Tl25 vertebral cartilage condensation"
-    )
+    name: Literal["Tl25 vertebral cartilage condensation"] = "Tl25 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19610"] = "EMAPA_19610"
 
 
 class Tl26VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl26 vertebral cartilage condensation"] = (
-        "Tl26 vertebral cartilage condensation"
-    )
+    name: Literal["Tl26 vertebral cartilage condensation"] = "Tl26 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19611"] = "EMAPA_19611"
 
 
 class Tl27VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl27 vertebral cartilage condensation"] = (
-        "Tl27 vertebral cartilage condensation"
-    )
+    name: Literal["Tl27 vertebral cartilage condensation"] = "Tl27 vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19612"] = "EMAPA_19612"
 
 
 class Tl28VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl28 vertebral pre-cartilage condensation"] = (
-        "Tl28 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl28 vertebral pre-cartilage condensation"] = "Tl28 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19613"] = "EMAPA_19613"
 
 
 class Tl29VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl29 vertebral pre-cartilage condensation"] = (
-        "Tl29 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl29 vertebral pre-cartilage condensation"] = "Tl29 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19614"] = "EMAPA_19614"
 
 
 class Tl30VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl30 vertebral pre-cartilage condensation"] = (
-        "Tl30 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl30 vertebral pre-cartilage condensation"] = "Tl30 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19615"] = "EMAPA_19615"
 
 
 class Tl31VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Tl31 vertebral pre-cartilage condensation"] = (
-        "Tl31 vertebral pre-cartilage condensation"
-    )
+    name: Literal["Tl31 vertebral pre-cartilage condensation"] = "Tl31 vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_19616"] = "EMAPA_19616"
 
@@ -22138,18 +21122,14 @@ class Tl19Vertebra(_MouseAnatomyModel):
 
 class PleuroPeritonealCanalMesothelium(_MouseAnatomyModel):
 
-    name: Literal["pleuro-peritoneal canal mesothelium"] = (
-        "pleuro-peritoneal canal mesothelium"
-    )
+    name: Literal["pleuro-peritoneal canal mesothelium"] = "pleuro-peritoneal canal mesothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25032"] = "EMAPA_25032"
 
 
 class PleuroPeritonealCanalParietalMesothelium(_MouseAnatomyModel):
 
-    name: Literal["pleuro-peritoneal canal parietal mesothelium"] = (
-        "pleuro-peritoneal canal parietal mesothelium"
-    )
+    name: Literal["pleuro-peritoneal canal parietal mesothelium"] = "pleuro-peritoneal canal parietal mesothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25033"] = "EMAPA_25033"
 
@@ -22198,9 +21178,7 @@ class CaudalOneThirdOfAnalCanal(_MouseAnatomyModel):
 
 class EctodermComponentOfAnalMembrane(_MouseAnatomyModel):
 
-    name: Literal["ectoderm component of anal membrane"] = (
-        "ectoderm component of anal membrane"
-    )
+    name: Literal["ectoderm component of anal membrane"] = "ectoderm component of anal membrane"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25040"] = "EMAPA_25040"
 
@@ -22291,135 +21269,105 @@ class CarpalBone(_MouseAnatomyModel):
 
 class ForelimbDigit1MetacarpalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 1 metacarpal-phalangeal joint"] = (
-        "forelimb digit 1 metacarpal-phalangeal joint"
-    )
+    name: Literal["forelimb digit 1 metacarpal-phalangeal joint"] = "forelimb digit 1 metacarpal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25057"] = "EMAPA_25057"
 
 
 class ForelimbDigit1InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 1 interphalangeal joint"] = (
-        "forelimb digit 1 interphalangeal joint"
-    )
+    name: Literal["forelimb digit 1 interphalangeal joint"] = "forelimb digit 1 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25058"] = "EMAPA_25058"
 
 
 class ForelimbDigit1EpiphysealPlate(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 1 epiphyseal plate"] = (
-        "forelimb digit 1 epiphyseal plate"
-    )
+    name: Literal["forelimb digit 1 epiphyseal plate"] = "forelimb digit 1 epiphyseal plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25059"] = "EMAPA_25059"
 
 
 class ForelimbDigit2MetacarpalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 2 metacarpal-phalangeal joint"] = (
-        "forelimb digit 2 metacarpal-phalangeal joint"
-    )
+    name: Literal["forelimb digit 2 metacarpal-phalangeal joint"] = "forelimb digit 2 metacarpal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25060"] = "EMAPA_25060"
 
 
 class ForelimbDigit2InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 2 interphalangeal joint"] = (
-        "forelimb digit 2 interphalangeal joint"
-    )
+    name: Literal["forelimb digit 2 interphalangeal joint"] = "forelimb digit 2 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25061"] = "EMAPA_25061"
 
 
 class ForelimbDigit2EpiphysealPlate(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 2 epiphyseal plate"] = (
-        "forelimb digit 2 epiphyseal plate"
-    )
+    name: Literal["forelimb digit 2 epiphyseal plate"] = "forelimb digit 2 epiphyseal plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25062"] = "EMAPA_25062"
 
 
 class ForelimbDigit3MetacarpalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 3 metacarpal-phalangeal joint"] = (
-        "forelimb digit 3 metacarpal-phalangeal joint"
-    )
+    name: Literal["forelimb digit 3 metacarpal-phalangeal joint"] = "forelimb digit 3 metacarpal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25063"] = "EMAPA_25063"
 
 
 class ForelimbDigit3InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 3 interphalangeal joint"] = (
-        "forelimb digit 3 interphalangeal joint"
-    )
+    name: Literal["forelimb digit 3 interphalangeal joint"] = "forelimb digit 3 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25064"] = "EMAPA_25064"
 
 
 class ForelimbDigit3EpiphysealPlate(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 3 epiphyseal plate"] = (
-        "forelimb digit 3 epiphyseal plate"
-    )
+    name: Literal["forelimb digit 3 epiphyseal plate"] = "forelimb digit 3 epiphyseal plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25065"] = "EMAPA_25065"
 
 
 class ForelimbDigit4MetacarpalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 4 metacarpal-phalangeal joint"] = (
-        "forelimb digit 4 metacarpal-phalangeal joint"
-    )
+    name: Literal["forelimb digit 4 metacarpal-phalangeal joint"] = "forelimb digit 4 metacarpal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25066"] = "EMAPA_25066"
 
 
 class ForelimbDigit4InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 4 interphalangeal joint"] = (
-        "forelimb digit 4 interphalangeal joint"
-    )
+    name: Literal["forelimb digit 4 interphalangeal joint"] = "forelimb digit 4 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25067"] = "EMAPA_25067"
 
 
 class ForelimbDigit4EpiphysealPlate(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 4 epiphyseal plate"] = (
-        "forelimb digit 4 epiphyseal plate"
-    )
+    name: Literal["forelimb digit 4 epiphyseal plate"] = "forelimb digit 4 epiphyseal plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25068"] = "EMAPA_25068"
 
 
 class ForelimbDigit5MetacarpalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 5 metacarpal-phalangeal joint"] = (
-        "forelimb digit 5 metacarpal-phalangeal joint"
-    )
+    name: Literal["forelimb digit 5 metacarpal-phalangeal joint"] = "forelimb digit 5 metacarpal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25069"] = "EMAPA_25069"
 
 
 class ForelimbDigit5InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 5 interphalangeal joint"] = (
-        "forelimb digit 5 interphalangeal joint"
-    )
+    name: Literal["forelimb digit 5 interphalangeal joint"] = "forelimb digit 5 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25070"] = "EMAPA_25070"
 
 
 class ForelimbDigit5EpiphysealPlate(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit 5 epiphyseal plate"] = (
-        "forelimb digit 5 epiphyseal plate"
-    )
+    name: Literal["forelimb digit 5 epiphyseal plate"] = "forelimb digit 5 epiphyseal plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25071"] = "EMAPA_25071"
 
@@ -22447,27 +21395,21 @@ class CerebellumLateralPart(_MouseAnatomyModel):
 
 class CerebellumLateralPartMantleLayer(_MouseAnatomyModel):
 
-    name: Literal["cerebellum lateral part mantle layer"] = (
-        "cerebellum lateral part mantle layer"
-    )
+    name: Literal["cerebellum lateral part mantle layer"] = "cerebellum lateral part mantle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25084"] = "EMAPA_25084"
 
 
 class CerebellumLateralPartMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["cerebellum lateral part marginal layer"] = (
-        "cerebellum lateral part marginal layer"
-    )
+    name: Literal["cerebellum lateral part marginal layer"] = "cerebellum lateral part marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25085"] = "EMAPA_25085"
 
 
 class CerebellumLateralPartVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["cerebellum lateral part ventricular layer"] = (
-        "cerebellum lateral part ventricular layer"
-    )
+    name: Literal["cerebellum lateral part ventricular layer"] = "cerebellum lateral part ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25086"] = "EMAPA_25086"
 
@@ -22481,9 +21423,7 @@ class ChoroidLayer(_MouseAnatomyModel):
 
 class SerousGlandEpithelialComponent(_MouseAnatomyModel):
 
-    name: Literal["serous gland epithelial component"] = (
-        "serous gland epithelial component"
-    )
+    name: Literal["serous gland epithelial component"] = "serous gland epithelial component"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25090"] = "EMAPA_25090"
 
@@ -22588,9 +21528,7 @@ class L1NeuralArchPedicle(_MouseAnatomyModel):
 
 class L1NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["L1 neural arch transverse process"] = (
-        "L1 neural arch transverse process"
-    )
+    name: Literal["L1 neural arch transverse process"] = "L1 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25106"] = "EMAPA_25106"
 
@@ -22627,9 +21565,7 @@ class OccipitalBoneSquamousPart(_MouseAnatomyModel):
 
 class EthmoidBonePerpendicularPlate(_MouseAnatomyModel):
 
-    name: Literal["ethmoid bone perpendicular plate"] = (
-        "ethmoid bone perpendicular plate"
-    )
+    name: Literal["ethmoid bone perpendicular plate"] = "ethmoid bone perpendicular plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25114"] = "EMAPA_25114"
 
@@ -24204,9 +23140,7 @@ class Tl9VentralRoot(_MouseAnatomyModel):
 
 class VagusNerveLeftRecurrentLaryngealBranch(_MouseAnatomyModel):
 
-    name: Literal["vagus nerve left recurrent laryngeal branch"] = (
-        "vagus nerve left recurrent laryngeal branch"
-    )
+    name: Literal["vagus nerve left recurrent laryngeal branch"] = "vagus nerve left recurrent laryngeal branch"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25350"] = "EMAPA_25350"
 
@@ -24250,9 +23184,7 @@ class TrunkMesenchymeDerivedFromNeuralCrestNonMigratingCells(_MouseAnatomyModel)
 
 class MesenchymeDerivedFromSomites0104(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme derived from somites 01-04"] = (
-        "mesenchyme derived from somites 01-04"
-    )
+    name: Literal["mesenchyme derived from somites 01-04"] = "mesenchyme derived from somites 01-04"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25356"] = "EMAPA_25356"
 
@@ -24266,45 +23198,35 @@ class ThyroidPrimordiumEndoderm(_MouseAnatomyModel):
 
 class Rhombomere1RestOfNeuralFold(_MouseAnatomyModel):
 
-    name: Literal["rhombomere 1 rest of neural fold"] = (
-        "rhombomere 1 rest of neural fold"
-    )
+    name: Literal["rhombomere 1 rest of neural fold"] = "rhombomere 1 rest of neural fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25358"] = "EMAPA_25358"
 
 
 class Rhombomere2RestOfNeuralFold(_MouseAnatomyModel):
 
-    name: Literal["rhombomere 2 rest of neural fold"] = (
-        "rhombomere 2 rest of neural fold"
-    )
+    name: Literal["rhombomere 2 rest of neural fold"] = "rhombomere 2 rest of neural fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25359"] = "EMAPA_25359"
 
 
 class Rhombomere3RestOfNeuralFold(_MouseAnatomyModel):
 
-    name: Literal["rhombomere 3 rest of neural fold"] = (
-        "rhombomere 3 rest of neural fold"
-    )
+    name: Literal["rhombomere 3 rest of neural fold"] = "rhombomere 3 rest of neural fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25360"] = "EMAPA_25360"
 
 
 class Rhombomere4RestOfNeuralFold(_MouseAnatomyModel):
 
-    name: Literal["rhombomere 4 rest of neural fold"] = (
-        "rhombomere 4 rest of neural fold"
-    )
+    name: Literal["rhombomere 4 rest of neural fold"] = "rhombomere 4 rest of neural fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25361"] = "EMAPA_25361"
 
 
 class Rhombomere5RestOfNeuralFold(_MouseAnatomyModel):
 
-    name: Literal["rhombomere 5 rest of neural fold"] = (
-        "rhombomere 5 rest of neural fold"
-    )
+    name: Literal["rhombomere 5 rest of neural fold"] = "rhombomere 5 rest of neural fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25362"] = "EMAPA_25362"
 
@@ -24362,9 +23284,7 @@ class CartilagePrimordiumOfFutureL2SpinousProcess(_MouseAnatomyModel):
 
 class L2NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["L2 neural arch transverse process"] = (
-        "L2 neural arch transverse process"
-    )
+    name: Literal["L2 neural arch transverse process"] = "L2 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25373"] = "EMAPA_25373"
 
@@ -24415,9 +23335,7 @@ class CartilagePrimordiumOfFutureL3SpinousProcess(_MouseAnatomyModel):
 
 class L3NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["L3 neural arch transverse process"] = (
-        "L3 neural arch transverse process"
-    )
+    name: Literal["L3 neural arch transverse process"] = "L3 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25381"] = "EMAPA_25381"
 
@@ -24468,9 +23386,7 @@ class CartilagePrimordiumOfFutureL4SpinousProcess(_MouseAnatomyModel):
 
 class L4NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["L4 neural arch transverse process"] = (
-        "L4 neural arch transverse process"
-    )
+    name: Literal["L4 neural arch transverse process"] = "L4 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25389"] = "EMAPA_25389"
 
@@ -24521,9 +23437,7 @@ class CartilagePrimordiumOfFutureL5SpinousProcess(_MouseAnatomyModel):
 
 class L5NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["L5 neural arch transverse process"] = (
-        "L5 neural arch transverse process"
-    )
+    name: Literal["L5 neural arch transverse process"] = "L5 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25397"] = "EMAPA_25397"
 
@@ -24574,9 +23488,7 @@ class CartilagePrimordiumOfFutureL6SpinousProcess(_MouseAnatomyModel):
 
 class L6NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["L6 neural arch transverse process"] = (
-        "L6 neural arch transverse process"
-    )
+    name: Literal["L6 neural arch transverse process"] = "L6 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25405"] = "EMAPA_25405"
 
@@ -24627,9 +23539,7 @@ class CartilagePrimordiumOfFutureS1SpinousProcess(_MouseAnatomyModel):
 
 class S1NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["S1 neural arch transverse process"] = (
-        "S1 neural arch transverse process"
-    )
+    name: Literal["S1 neural arch transverse process"] = "S1 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25413"] = "EMAPA_25413"
 
@@ -24680,9 +23590,7 @@ class CartilagePrimordiumOfFutureS2SpinousProcess(_MouseAnatomyModel):
 
 class S2NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["S2 neural arch transverse process"] = (
-        "S2 neural arch transverse process"
-    )
+    name: Literal["S2 neural arch transverse process"] = "S2 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25421"] = "EMAPA_25421"
 
@@ -24733,9 +23641,7 @@ class CartilagePrimordiumOfFutureS3SpinousProcess(_MouseAnatomyModel):
 
 class S3NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["S3 neural arch transverse process"] = (
-        "S3 neural arch transverse process"
-    )
+    name: Literal["S3 neural arch transverse process"] = "S3 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25429"] = "EMAPA_25429"
 
@@ -24786,9 +23692,7 @@ class CartilagePrimordiumOfFutureS4SpinousProcess(_MouseAnatomyModel):
 
 class S4NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["S4 neural arch transverse process"] = (
-        "S4 neural arch transverse process"
-    )
+    name: Literal["S4 neural arch transverse process"] = "S4 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25437"] = "EMAPA_25437"
 
@@ -24839,9 +23743,7 @@ class CartilagePrimordiumOfFutureT1SpinousProcess(_MouseAnatomyModel):
 
 class T1NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T1 neural arch transverse process"] = (
-        "T1 neural arch transverse process"
-    )
+    name: Literal["T1 neural arch transverse process"] = "T1 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25445"] = "EMAPA_25445"
 
@@ -24892,9 +23794,7 @@ class CartilagePrimordiumOfFutureT10SpinousProcess(_MouseAnatomyModel):
 
 class T10NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T10 neural arch transverse process"] = (
-        "T10 neural arch transverse process"
-    )
+    name: Literal["T10 neural arch transverse process"] = "T10 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25453"] = "EMAPA_25453"
 
@@ -24945,9 +23845,7 @@ class CartilagePrimordiumOfFutureT11SpinousProcess(_MouseAnatomyModel):
 
 class T11NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T11 neural arch transverse process"] = (
-        "T11 neural arch transverse process"
-    )
+    name: Literal["T11 neural arch transverse process"] = "T11 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25461"] = "EMAPA_25461"
 
@@ -24998,9 +23896,7 @@ class CartilagePrimordiumOfFutureT12SpinousProcess(_MouseAnatomyModel):
 
 class T12NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T12 neural arch transverse process"] = (
-        "T12 neural arch transverse process"
-    )
+    name: Literal["T12 neural arch transverse process"] = "T12 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25469"] = "EMAPA_25469"
 
@@ -25051,9 +23947,7 @@ class CartilagePrimordiumOfFutureT13SpinousProcess(_MouseAnatomyModel):
 
 class T13NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T13 neural arch transverse process"] = (
-        "T13 neural arch transverse process"
-    )
+    name: Literal["T13 neural arch transverse process"] = "T13 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25477"] = "EMAPA_25477"
 
@@ -25104,9 +23998,7 @@ class CartilagePrimordiumOfFutureT2SpinousProcess(_MouseAnatomyModel):
 
 class T2NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T2 neural arch transverse process"] = (
-        "T2 neural arch transverse process"
-    )
+    name: Literal["T2 neural arch transverse process"] = "T2 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25485"] = "EMAPA_25485"
 
@@ -25157,9 +24049,7 @@ class CartilagePrimordiumOfFutureT3SpinousProcess(_MouseAnatomyModel):
 
 class T3NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T3 neural arch transverse process"] = (
-        "T3 neural arch transverse process"
-    )
+    name: Literal["T3 neural arch transverse process"] = "T3 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25493"] = "EMAPA_25493"
 
@@ -25210,9 +24100,7 @@ class CartilagePrimordiumOfFutureT4SpinousProcess(_MouseAnatomyModel):
 
 class T4NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T4 neural arch transverse process"] = (
-        "T4 neural arch transverse process"
-    )
+    name: Literal["T4 neural arch transverse process"] = "T4 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25501"] = "EMAPA_25501"
 
@@ -25263,9 +24151,7 @@ class CartilagePrimordiumOfFutureT5SpinousProcess(_MouseAnatomyModel):
 
 class T5NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T5 neural arch transverse process"] = (
-        "T5 neural arch transverse process"
-    )
+    name: Literal["T5 neural arch transverse process"] = "T5 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25509"] = "EMAPA_25509"
 
@@ -25316,9 +24202,7 @@ class CartilagePrimordiumOfFutureT6SpinousProcess(_MouseAnatomyModel):
 
 class T6NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T6 neural arch transverse process"] = (
-        "T6 neural arch transverse process"
-    )
+    name: Literal["T6 neural arch transverse process"] = "T6 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25517"] = "EMAPA_25517"
 
@@ -25369,9 +24253,7 @@ class CartilagePrimordiumOfFutureT7SpinousProcess(_MouseAnatomyModel):
 
 class T7NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T7 neural arch transverse process"] = (
-        "T7 neural arch transverse process"
-    )
+    name: Literal["T7 neural arch transverse process"] = "T7 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25525"] = "EMAPA_25525"
 
@@ -25422,9 +24304,7 @@ class CartilagePrimordiumOfFutureT8SpinousProcess(_MouseAnatomyModel):
 
 class T8NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T8 neural arch transverse process"] = (
-        "T8 neural arch transverse process"
-    )
+    name: Literal["T8 neural arch transverse process"] = "T8 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25533"] = "EMAPA_25533"
 
@@ -25475,9 +24355,7 @@ class CartilagePrimordiumOfFutureT9SpinousProcess(_MouseAnatomyModel):
 
 class T9NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["T9 neural arch transverse process"] = (
-        "T9 neural arch transverse process"
-    )
+    name: Literal["T9 neural arch transverse process"] = "T9 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25541"] = "EMAPA_25541"
 
@@ -25528,9 +24406,7 @@ class CartilagePrimordiumOfFutureTl1SpinousProcess(_MouseAnatomyModel):
 
 class Tl1NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl1 neural arch transverse process"] = (
-        "Tl1 neural arch transverse process"
-    )
+    name: Literal["Tl1 neural arch transverse process"] = "Tl1 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25549"] = "EMAPA_25549"
 
@@ -25581,9 +24457,7 @@ class CartilagePrimordiumOfFutureTl10SpinousProcess(_MouseAnatomyModel):
 
 class Tl10NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl10 neural arch transverse process"] = (
-        "Tl10 neural arch transverse process"
-    )
+    name: Literal["Tl10 neural arch transverse process"] = "Tl10 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25557"] = "EMAPA_25557"
 
@@ -25634,9 +24508,7 @@ class CartilagePrimordiumOfFutureTl11SpinousProcess(_MouseAnatomyModel):
 
 class Tl11NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl11 neural arch transverse process"] = (
-        "Tl11 neural arch transverse process"
-    )
+    name: Literal["Tl11 neural arch transverse process"] = "Tl11 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25565"] = "EMAPA_25565"
 
@@ -25687,9 +24559,7 @@ class CartilagePrimordiumOfFutureTl12SpinousProcess(_MouseAnatomyModel):
 
 class Tl12NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl12 neural arch transverse process"] = (
-        "Tl12 neural arch transverse process"
-    )
+    name: Literal["Tl12 neural arch transverse process"] = "Tl12 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25573"] = "EMAPA_25573"
 
@@ -25740,9 +24610,7 @@ class CartilagePrimordiumOfFutureTl13SpinousProcess(_MouseAnatomyModel):
 
 class Tl13NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl13 neural arch transverse process"] = (
-        "Tl13 neural arch transverse process"
-    )
+    name: Literal["Tl13 neural arch transverse process"] = "Tl13 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25581"] = "EMAPA_25581"
 
@@ -25793,9 +24661,7 @@ class CartilagePrimordiumOfFutureTl14SpinousProcess(_MouseAnatomyModel):
 
 class Tl14NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl14 neural arch transverse process"] = (
-        "Tl14 neural arch transverse process"
-    )
+    name: Literal["Tl14 neural arch transverse process"] = "Tl14 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25589"] = "EMAPA_25589"
 
@@ -25846,9 +24712,7 @@ class CartilagePrimordiumOfFutureTl15SpinousProcess(_MouseAnatomyModel):
 
 class Tl15NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl15 neural arch transverse process"] = (
-        "Tl15 neural arch transverse process"
-    )
+    name: Literal["Tl15 neural arch transverse process"] = "Tl15 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25597"] = "EMAPA_25597"
 
@@ -25899,9 +24763,7 @@ class CartilagePrimordiumOfFutureTl16SpinousProcess(_MouseAnatomyModel):
 
 class Tl16NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl16 neural arch transverse process"] = (
-        "Tl16 neural arch transverse process"
-    )
+    name: Literal["Tl16 neural arch transverse process"] = "Tl16 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25605"] = "EMAPA_25605"
 
@@ -25952,9 +24814,7 @@ class CartilagePrimordiumOfFutureTl17SpinousProcess(_MouseAnatomyModel):
 
 class Tl17NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl17 neural arch transverse process"] = (
-        "Tl17 neural arch transverse process"
-    )
+    name: Literal["Tl17 neural arch transverse process"] = "Tl17 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25613"] = "EMAPA_25613"
 
@@ -26005,9 +24865,7 @@ class CartilagePrimordiumOfFutureTl18SpinousProcess(_MouseAnatomyModel):
 
 class Tl18NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl18 neural arch transverse process"] = (
-        "Tl18 neural arch transverse process"
-    )
+    name: Literal["Tl18 neural arch transverse process"] = "Tl18 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25621"] = "EMAPA_25621"
 
@@ -26058,9 +24916,7 @@ class CartilagePrimordiumOfFutureTl19SpinousProcess(_MouseAnatomyModel):
 
 class Tl19NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl19 neural arch transverse process"] = (
-        "Tl19 neural arch transverse process"
-    )
+    name: Literal["Tl19 neural arch transverse process"] = "Tl19 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25629"] = "EMAPA_25629"
 
@@ -26111,9 +24967,7 @@ class CartilagePrimordiumOfFutureTl2SpinousProcess(_MouseAnatomyModel):
 
 class Tl2NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl2 neural arch transverse process"] = (
-        "Tl2 neural arch transverse process"
-    )
+    name: Literal["Tl2 neural arch transverse process"] = "Tl2 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25637"] = "EMAPA_25637"
 
@@ -26164,9 +25018,7 @@ class CartilagePrimordiumOfFutureTl3SpinousProcess(_MouseAnatomyModel):
 
 class Tl3NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl3 neural arch transverse process"] = (
-        "Tl3 neural arch transverse process"
-    )
+    name: Literal["Tl3 neural arch transverse process"] = "Tl3 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25645"] = "EMAPA_25645"
 
@@ -26217,9 +25069,7 @@ class CartilagePrimordiumOfFutureTl4SpinousProcess(_MouseAnatomyModel):
 
 class Tl4NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl4 neural arch transverse process"] = (
-        "Tl4 neural arch transverse process"
-    )
+    name: Literal["Tl4 neural arch transverse process"] = "Tl4 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25653"] = "EMAPA_25653"
 
@@ -26270,9 +25120,7 @@ class CartilagePrimordiumOfFutureTl5SpinousProcess(_MouseAnatomyModel):
 
 class Tl5NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl5 neural arch transverse process"] = (
-        "Tl5 neural arch transverse process"
-    )
+    name: Literal["Tl5 neural arch transverse process"] = "Tl5 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25661"] = "EMAPA_25661"
 
@@ -26323,9 +25171,7 @@ class CartilagePrimordiumOfFutureTl6SpinousProcess(_MouseAnatomyModel):
 
 class Tl6NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl6 neural arch transverse process"] = (
-        "Tl6 neural arch transverse process"
-    )
+    name: Literal["Tl6 neural arch transverse process"] = "Tl6 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25669"] = "EMAPA_25669"
 
@@ -26376,9 +25222,7 @@ class CartilagePrimordiumOfFutureTl7SpinousProcess(_MouseAnatomyModel):
 
 class Tl7NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl7 neural arch transverse process"] = (
-        "Tl7 neural arch transverse process"
-    )
+    name: Literal["Tl7 neural arch transverse process"] = "Tl7 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25677"] = "EMAPA_25677"
 
@@ -26429,9 +25273,7 @@ class CartilagePrimordiumOfFutureTl8SpinousProcess(_MouseAnatomyModel):
 
 class Tl8NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl8 neural arch transverse process"] = (
-        "Tl8 neural arch transverse process"
-    )
+    name: Literal["Tl8 neural arch transverse process"] = "Tl8 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25685"] = "EMAPA_25685"
 
@@ -26482,9 +25324,7 @@ class CartilagePrimordiumOfFutureTl9SpinousProcess(_MouseAnatomyModel):
 
 class Tl9NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["Tl9 neural arch transverse process"] = (
-        "Tl9 neural arch transverse process"
-    )
+    name: Literal["Tl9 neural arch transverse process"] = "Tl9 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25693"] = "EMAPA_25693"
 
@@ -26787,9 +25627,7 @@ class CartilagePrimordiumOfFutureC3SpinousProcess(_MouseAnatomyModel):
 
 class C3NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["C3 neural arch transverse process"] = (
-        "C3 neural arch transverse process"
-    )
+    name: Literal["C3 neural arch transverse process"] = "C3 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25736"] = "EMAPA_25736"
 
@@ -26840,9 +25678,7 @@ class CartilagePrimordiumOfFutureC4SpinousProcess(_MouseAnatomyModel):
 
 class C4NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["C4 neural arch transverse process"] = (
-        "C4 neural arch transverse process"
-    )
+    name: Literal["C4 neural arch transverse process"] = "C4 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25743"] = "EMAPA_25743"
 
@@ -26893,9 +25729,7 @@ class CartilagePrimordiumOfFutureC5SpinousProcess(_MouseAnatomyModel):
 
 class C5NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["C5 neural arch transverse process"] = (
-        "C5 neural arch transverse process"
-    )
+    name: Literal["C5 neural arch transverse process"] = "C5 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25750"] = "EMAPA_25750"
 
@@ -26946,9 +25780,7 @@ class CartilagePrimordiumOfFutureC6SpinousProcess(_MouseAnatomyModel):
 
 class C6NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["C6 neural arch transverse process"] = (
-        "C6 neural arch transverse process"
-    )
+    name: Literal["C6 neural arch transverse process"] = "C6 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25757"] = "EMAPA_25757"
 
@@ -26999,9 +25831,7 @@ class CartilagePrimordiumOfFutureC7SpinousProcess(_MouseAnatomyModel):
 
 class C7NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["C7 neural arch transverse process"] = (
-        "C7 neural arch transverse process"
-    )
+    name: Literal["C7 neural arch transverse process"] = "C7 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_25764"] = "EMAPA_25764"
 
@@ -27064,36 +25894,28 @@ class MedianSacralVein(_MouseAnatomyModel):
 
 class InferiorVenaCavaIntrahepaticPart(_MouseAnatomyModel):
 
-    name: Literal["inferior vena cava intrahepatic part"] = (
-        "inferior vena cava intrahepatic part"
-    )
+    name: Literal["inferior vena cava intrahepatic part"] = "inferior vena cava intrahepatic part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26072"] = "EMAPA_26072"
 
 
 class CommunicationDuctusVenosusToPortalVein(_MouseAnatomyModel):
 
-    name: Literal["communication ductus venosus to portal vein"] = (
-        "communication ductus venosus to portal vein"
-    )
+    name: Literal["communication ductus venosus to portal vein"] = "communication ductus venosus to portal vein"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26081"] = "EMAPA_26081"
 
 
 class PhysiologicalUmbilicalHerniaMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["physiological umbilical hernia mesenchyme"] = (
-        "physiological umbilical hernia mesenchyme"
-    )
+    name: Literal["physiological umbilical hernia mesenchyme"] = "physiological umbilical hernia mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26089"] = "EMAPA_26089"
 
 
 class PhysiologicalUmbilicalHerniaMesothelium(_MouseAnatomyModel):
 
-    name: Literal["physiological umbilical hernia mesothelium"] = (
-        "physiological umbilical hernia mesothelium"
-    )
+    name: Literal["physiological umbilical hernia mesothelium"] = "physiological umbilical hernia mesothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26097"] = "EMAPA_26097"
 
@@ -27121,18 +25943,14 @@ class VitellineDuct(_MouseAnatomyModel):
 
 class VitellineVeinVitellineDuctPart(_MouseAnatomyModel):
 
-    name: Literal["vitelline vein vitelline duct part"] = (
-        "vitelline vein vitelline duct part"
-    )
+    name: Literal["vitelline vein vitelline duct part"] = "vitelline vein vitelline duct part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26151"] = "EMAPA_26151"
 
 
 class CavityOfPhysiologicalUmbilicalHernia(_MouseAnatomyModel):
 
-    name: Literal["cavity of physiological umbilical hernia"] = (
-        "cavity of physiological umbilical hernia"
-    )
+    name: Literal["cavity of physiological umbilical hernia"] = "cavity of physiological umbilical hernia"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26164"] = "EMAPA_26164"
 
@@ -27155,90 +25973,70 @@ class PancreasMesenchyme(_MouseAnatomyModel):
 
 class HindlimbDigit1InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 1 interphalangeal joint"] = (
-        "hindlimb digit 1 interphalangeal joint"
-    )
+    name: Literal["hindlimb digit 1 interphalangeal joint"] = "hindlimb digit 1 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26430"] = "EMAPA_26430"
 
 
 class HindlimbDigit1MetatarsalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 1 metatarsal-phalangeal joint"] = (
-        "hindlimb digit 1 metatarsal-phalangeal joint"
-    )
+    name: Literal["hindlimb digit 1 metatarsal-phalangeal joint"] = "hindlimb digit 1 metatarsal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26436"] = "EMAPA_26436"
 
 
 class HindlimbDigit2MetatarsalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 2 metatarsal-phalangeal joint"] = (
-        "hindlimb digit 2 metatarsal-phalangeal joint"
-    )
+    name: Literal["hindlimb digit 2 metatarsal-phalangeal joint"] = "hindlimb digit 2 metatarsal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26442"] = "EMAPA_26442"
 
 
 class HindlimbDigit2InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 2 interphalangeal joint"] = (
-        "hindlimb digit 2 interphalangeal joint"
-    )
+    name: Literal["hindlimb digit 2 interphalangeal joint"] = "hindlimb digit 2 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26448"] = "EMAPA_26448"
 
 
 class HindlimbDigit3InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 3 interphalangeal joint"] = (
-        "hindlimb digit 3 interphalangeal joint"
-    )
+    name: Literal["hindlimb digit 3 interphalangeal joint"] = "hindlimb digit 3 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26454"] = "EMAPA_26454"
 
 
 class HindlimbDigit3MetatarsalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 3 metatarsal-phalangeal joint"] = (
-        "hindlimb digit 3 metatarsal-phalangeal joint"
-    )
+    name: Literal["hindlimb digit 3 metatarsal-phalangeal joint"] = "hindlimb digit 3 metatarsal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26460"] = "EMAPA_26460"
 
 
 class HindlimbDigit4InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 4 interphalangeal joint"] = (
-        "hindlimb digit 4 interphalangeal joint"
-    )
+    name: Literal["hindlimb digit 4 interphalangeal joint"] = "hindlimb digit 4 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26466"] = "EMAPA_26466"
 
 
 class HindlimbDigit4MetatarsalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 4 metatarsal-phalangeal joint"] = (
-        "hindlimb digit 4 metatarsal-phalangeal joint"
-    )
+    name: Literal["hindlimb digit 4 metatarsal-phalangeal joint"] = "hindlimb digit 4 metatarsal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26472"] = "EMAPA_26472"
 
 
 class HindlimbDigit5InterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 5 interphalangeal joint"] = (
-        "hindlimb digit 5 interphalangeal joint"
-    )
+    name: Literal["hindlimb digit 5 interphalangeal joint"] = "hindlimb digit 5 interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26478"] = "EMAPA_26478"
 
 
 class HindlimbDigit5MetatarsalPhalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit 5 metatarsal-phalangeal joint"] = (
-        "hindlimb digit 5 metatarsal-phalangeal joint"
-    )
+    name: Literal["hindlimb digit 5 metatarsal-phalangeal joint"] = "hindlimb digit 5 metatarsal-phalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26484"] = "EMAPA_26484"
 
@@ -27585,9 +26383,7 @@ class T1RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T1RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T1 rib shaft non-ossified region"] = (
-        "T1 rib shaft non-ossified region"
-    )
+    name: Literal["T1 rib shaft non-ossified region"] = "T1 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26621"] = "EMAPA_26621"
 
@@ -27601,9 +26397,7 @@ class T2RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T2RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T2 rib shaft non-ossified region"] = (
-        "T2 rib shaft non-ossified region"
-    )
+    name: Literal["T2 rib shaft non-ossified region"] = "T2 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26625"] = "EMAPA_26625"
 
@@ -27617,9 +26411,7 @@ class T3RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T3RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T3 rib shaft non-ossified region"] = (
-        "T3 rib shaft non-ossified region"
-    )
+    name: Literal["T3 rib shaft non-ossified region"] = "T3 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26629"] = "EMAPA_26629"
 
@@ -27633,9 +26425,7 @@ class T4RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T4RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T4 rib shaft non-ossified region"] = (
-        "T4 rib shaft non-ossified region"
-    )
+    name: Literal["T4 rib shaft non-ossified region"] = "T4 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26633"] = "EMAPA_26633"
 
@@ -27649,9 +26439,7 @@ class T5RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T5RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T5 rib shaft non-ossified region"] = (
-        "T5 rib shaft non-ossified region"
-    )
+    name: Literal["T5 rib shaft non-ossified region"] = "T5 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26637"] = "EMAPA_26637"
 
@@ -27665,9 +26453,7 @@ class T6RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T6RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T6 rib shaft non-ossified region"] = (
-        "T6 rib shaft non-ossified region"
-    )
+    name: Literal["T6 rib shaft non-ossified region"] = "T6 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26641"] = "EMAPA_26641"
 
@@ -27681,9 +26467,7 @@ class T7RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T7RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T7 rib shaft non-ossified region"] = (
-        "T7 rib shaft non-ossified region"
-    )
+    name: Literal["T7 rib shaft non-ossified region"] = "T7 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26645"] = "EMAPA_26645"
 
@@ -27697,9 +26481,7 @@ class T8RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T8RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T8 rib shaft non-ossified region"] = (
-        "T8 rib shaft non-ossified region"
-    )
+    name: Literal["T8 rib shaft non-ossified region"] = "T8 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26649"] = "EMAPA_26649"
 
@@ -27713,9 +26495,7 @@ class T9RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T9RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T9 rib shaft non-ossified region"] = (
-        "T9 rib shaft non-ossified region"
-    )
+    name: Literal["T9 rib shaft non-ossified region"] = "T9 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26653"] = "EMAPA_26653"
 
@@ -27729,9 +26509,7 @@ class T10RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T10RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T10 rib shaft non-ossified region"] = (
-        "T10 rib shaft non-ossified region"
-    )
+    name: Literal["T10 rib shaft non-ossified region"] = "T10 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26657"] = "EMAPA_26657"
 
@@ -27745,18 +26523,14 @@ class T11RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T11RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T11 rib shaft non-ossified region"] = (
-        "T11 rib shaft non-ossified region"
-    )
+    name: Literal["T11 rib shaft non-ossified region"] = "T11 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26661"] = "EMAPA_26661"
 
 
 class T12RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T12 rib shaft non-ossified region"] = (
-        "T12 rib shaft non-ossified region"
-    )
+    name: Literal["T12 rib shaft non-ossified region"] = "T12 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26663"] = "EMAPA_26663"
 
@@ -27777,18 +26551,14 @@ class T13RibShaftOssifiedRegion(_MouseAnatomyModel):
 
 class T13RibShaftNonOssifiedRegion(_MouseAnatomyModel):
 
-    name: Literal["T13 rib shaft non-ossified region"] = (
-        "T13 rib shaft non-ossified region"
-    )
+    name: Literal["T13 rib shaft non-ossified region"] = "T13 rib shaft non-ossified region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26669"] = "EMAPA_26669"
 
 
 class C1NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["C1 neural arch transverse process"] = (
-        "C1 neural arch transverse process"
-    )
+    name: Literal["C1 neural arch transverse process"] = "C1 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26671"] = "EMAPA_26671"
 
@@ -27802,9 +26572,7 @@ class C1ForamenTransversarium(_MouseAnatomyModel):
 
 class C2NeuralArchTransverseProcess(_MouseAnatomyModel):
 
-    name: Literal["C2 neural arch transverse process"] = (
-        "C2 neural arch transverse process"
-    )
+    name: Literal["C2 neural arch transverse process"] = "C2 neural arch transverse process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_26675"] = "EMAPA_26675"
 
@@ -27972,18 +26740,14 @@ class ForegutMidgutJunctionMucosa(_MouseAnatomyModel):
 
 class ForegutMidgutJunctionSubmucosa(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction submucosa"] = (
-        "foregut-midgut junction submucosa"
-    )
+    name: Literal["foregut-midgut junction submucosa"] = "foregut-midgut junction submucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27013"] = "EMAPA_27013"
 
 
 class ForegutMidgutJunctionMuscularis(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction muscularis"] = (
-        "foregut-midgut junction muscularis"
-    )
+    name: Literal["foregut-midgut junction muscularis"] = "foregut-midgut junction muscularis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27015"] = "EMAPA_27015"
 
@@ -27997,18 +26761,14 @@ class ForegutMidgutJunctionSerosa(_MouseAnatomyModel):
 
 class ForegutMidgutJunctionLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction lamina propria"] = (
-        "foregut-midgut junction lamina propria"
-    )
+    name: Literal["foregut-midgut junction lamina propria"] = "foregut-midgut junction lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27021"] = "EMAPA_27021"
 
 
 class ForegutMidgutJunctionMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["foregut-midgut junction muscularis mucosa"] = (
-        "foregut-midgut junction muscularis mucosa"
-    )
+    name: Literal["foregut-midgut junction muscularis mucosa"] = "foregut-midgut junction muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27023"] = "EMAPA_27023"
 
@@ -28029,9 +26789,7 @@ class DuodenumRostralPartSubmucosa(_MouseAnatomyModel):
 
 class DuodenumRostralPartMuscularis(_MouseAnatomyModel):
 
-    name: Literal["duodenum rostral part muscularis"] = (
-        "duodenum rostral part muscularis"
-    )
+    name: Literal["duodenum rostral part muscularis"] = "duodenum rostral part muscularis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27029"] = "EMAPA_27029"
 
@@ -28045,72 +26803,56 @@ class DuodenumRostralPartSerosa(_MouseAnatomyModel):
 
 class DuodenumRostralPartLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["duodenum rostral part lamina propria"] = (
-        "duodenum rostral part lamina propria"
-    )
+    name: Literal["duodenum rostral part lamina propria"] = "duodenum rostral part lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27035"] = "EMAPA_27035"
 
 
 class DuodenumRostralPartMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["duodenum rostral part muscularis mucosa"] = (
-        "duodenum rostral part muscularis mucosa"
-    )
+    name: Literal["duodenum rostral part muscularis mucosa"] = "duodenum rostral part muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27037"] = "EMAPA_27037"
 
 
 class GastroEsophagealJunctionMucosa(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction mucosa"] = (
-        "gastro-esophageal junction mucosa"
-    )
+    name: Literal["gastro-esophageal junction mucosa"] = "gastro-esophageal junction mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27039"] = "EMAPA_27039"
 
 
 class GastroEsophagealJunctionSubmucosa(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction submucosa"] = (
-        "gastro-esophageal junction submucosa"
-    )
+    name: Literal["gastro-esophageal junction submucosa"] = "gastro-esophageal junction submucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27041"] = "EMAPA_27041"
 
 
 class GastroEsophagealJunctionMuscularis(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction muscularis"] = (
-        "gastro-esophageal junction muscularis"
-    )
+    name: Literal["gastro-esophageal junction muscularis"] = "gastro-esophageal junction muscularis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27043"] = "EMAPA_27043"
 
 
 class GastroEsophagealJunctionSerosa(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction serosa"] = (
-        "gastro-esophageal junction serosa"
-    )
+    name: Literal["gastro-esophageal junction serosa"] = "gastro-esophageal junction serosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27045"] = "EMAPA_27045"
 
 
 class GastroEsophagealJunctionLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction lamina propria"] = (
-        "gastro-esophageal junction lamina propria"
-    )
+    name: Literal["gastro-esophageal junction lamina propria"] = "gastro-esophageal junction lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27049"] = "EMAPA_27049"
 
 
 class GastroEsophagealJunctionMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["gastro-esophageal junction muscularis mucosa"] = (
-        "gastro-esophageal junction muscularis mucosa"
-    )
+    name: Literal["gastro-esophageal junction muscularis mucosa"] = "gastro-esophageal junction muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27051"] = "EMAPA_27051"
 
@@ -28271,18 +27013,14 @@ class DuodenumCaudalPartSerosa(_MouseAnatomyModel):
 
 class DuodenumCaudalPartLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["duodenum caudal part lamina propria"] = (
-        "duodenum caudal part lamina propria"
-    )
+    name: Literal["duodenum caudal part lamina propria"] = "duodenum caudal part lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27105"] = "EMAPA_27105"
 
 
 class DuodenumCaudalPartMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["duodenum caudal part muscularis mucosa"] = (
-        "duodenum caudal part muscularis mucosa"
-    )
+    name: Literal["duodenum caudal part muscularis mucosa"] = "duodenum caudal part muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27107"] = "EMAPA_27107"
 
@@ -28457,9 +27195,7 @@ class StomachFundusLaminaPropria(_MouseAnatomyModel):
 
 class StomachFundusMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["stomach fundus muscularis mucosa"] = (
-        "stomach fundus muscularis mucosa"
-    )
+    name: Literal["stomach fundus muscularis mucosa"] = "stomach fundus muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27165"] = "EMAPA_27165"
 
@@ -28473,18 +27209,14 @@ class StomachGlandularRegionMucosa(_MouseAnatomyModel):
 
 class StomachGlandularRegionSubmucosa(_MouseAnatomyModel):
 
-    name: Literal["stomach glandular region submucosa"] = (
-        "stomach glandular region submucosa"
-    )
+    name: Literal["stomach glandular region submucosa"] = "stomach glandular region submucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27169"] = "EMAPA_27169"
 
 
 class StomachGlandularRegionMuscularis(_MouseAnatomyModel):
 
-    name: Literal["stomach glandular region muscularis"] = (
-        "stomach glandular region muscularis"
-    )
+    name: Literal["stomach glandular region muscularis"] = "stomach glandular region muscularis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27171"] = "EMAPA_27171"
 
@@ -28498,90 +27230,70 @@ class StomachGlandularRegionSerosa(_MouseAnatomyModel):
 
 class StomachGlandularRegionLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["stomach glandular region lamina propria"] = (
-        "stomach glandular region lamina propria"
-    )
+    name: Literal["stomach glandular region lamina propria"] = "stomach glandular region lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27177"] = "EMAPA_27177"
 
 
 class StomachGlandularRegionMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["stomach glandular region muscularis mucosa"] = (
-        "stomach glandular region muscularis mucosa"
-    )
+    name: Literal["stomach glandular region muscularis mucosa"] = "stomach glandular region muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27179"] = "EMAPA_27179"
 
 
 class StomachGlandularRegionGastricGland(_MouseAnatomyModel):
 
-    name: Literal["stomach glandular region gastric gland"] = (
-        "stomach glandular region gastric gland"
-    )
+    name: Literal["stomach glandular region gastric gland"] = "stomach glandular region gastric gland"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27181"] = "EMAPA_27181"
 
 
 class StomachProventricularRegionMucosa(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region mucosa"] = (
-        "stomach proventricular region mucosa"
-    )
+    name: Literal["stomach proventricular region mucosa"] = "stomach proventricular region mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27183"] = "EMAPA_27183"
 
 
 class StomachProventricularRegionSubmucosa(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region submucosa"] = (
-        "stomach proventricular region submucosa"
-    )
+    name: Literal["stomach proventricular region submucosa"] = "stomach proventricular region submucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27185"] = "EMAPA_27185"
 
 
 class StomachProventricularRegionMuscularis(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region muscularis"] = (
-        "stomach proventricular region muscularis"
-    )
+    name: Literal["stomach proventricular region muscularis"] = "stomach proventricular region muscularis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27187"] = "EMAPA_27187"
 
 
 class StomachProventricularRegionSerosa(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region serosa"] = (
-        "stomach proventricular region serosa"
-    )
+    name: Literal["stomach proventricular region serosa"] = "stomach proventricular region serosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27189"] = "EMAPA_27189"
 
 
 class StomachProventricularRegionLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region lamina propria"] = (
-        "stomach proventricular region lamina propria"
-    )
+    name: Literal["stomach proventricular region lamina propria"] = "stomach proventricular region lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27193"] = "EMAPA_27193"
 
 
 class StomachProventricularRegionGastricGland(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region gastric gland"] = (
-        "stomach proventricular region gastric gland"
-    )
+    name: Literal["stomach proventricular region gastric gland"] = "stomach proventricular region gastric gland"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27195"] = "EMAPA_27195"
 
 
 class StomachProventricularRegionMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["stomach proventricular region muscularis mucosa"] = (
-        "stomach proventricular region muscularis mucosa"
-    )
+    name: Literal["stomach proventricular region muscularis mucosa"] = "stomach proventricular region muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27197"] = "EMAPA_27197"
 
@@ -28595,9 +27307,7 @@ class StomachPyloricRegionMucosa(_MouseAnatomyModel):
 
 class StomachPyloricRegionSubmucosa(_MouseAnatomyModel):
 
-    name: Literal["stomach pyloric region submucosa"] = (
-        "stomach pyloric region submucosa"
-    )
+    name: Literal["stomach pyloric region submucosa"] = "stomach pyloric region submucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27201"] = "EMAPA_27201"
 
@@ -28611,27 +27321,21 @@ class StomachPyloricRegionSerosa(_MouseAnatomyModel):
 
 class StomachPyloricRegionLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["stomach pyloric region lamina propria"] = (
-        "stomach pyloric region lamina propria"
-    )
+    name: Literal["stomach pyloric region lamina propria"] = "stomach pyloric region lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27209"] = "EMAPA_27209"
 
 
 class StomachPyloricRegionGastricGland(_MouseAnatomyModel):
 
-    name: Literal["stomach pyloric region gastric gland"] = (
-        "stomach pyloric region gastric gland"
-    )
+    name: Literal["stomach pyloric region gastric gland"] = "stomach pyloric region gastric gland"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27211"] = "EMAPA_27211"
 
 
 class StomachPyloricRegionMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["stomach pyloric region muscularis mucosa"] = (
-        "stomach pyloric region muscularis mucosa"
-    )
+    name: Literal["stomach pyloric region muscularis mucosa"] = "stomach pyloric region muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27213"] = "EMAPA_27213"
 
@@ -28645,9 +27349,7 @@ class AnalCanalCaudalPartMucosa(_MouseAnatomyModel):
 
 class AnalCanalCaudalPartSubmucosa(_MouseAnatomyModel):
 
-    name: Literal["anal canal caudal part submucosa"] = (
-        "anal canal caudal part submucosa"
-    )
+    name: Literal["anal canal caudal part submucosa"] = "anal canal caudal part submucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27217"] = "EMAPA_27217"
 
@@ -28661,9 +27363,7 @@ class AnalCanalCaudalPartGland(_MouseAnatomyModel):
 
 class AnalCanalCaudalPartLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["anal canal caudal part lamina propria"] = (
-        "anal canal caudal part lamina propria"
-    )
+    name: Literal["anal canal caudal part lamina propria"] = "anal canal caudal part lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27223"] = "EMAPA_27223"
 
@@ -28677,18 +27377,14 @@ class AnalCanalRostralPartMucosa(_MouseAnatomyModel):
 
 class AnalCanalRostralPartSubmucosa(_MouseAnatomyModel):
 
-    name: Literal["anal canal rostral part submucosa"] = (
-        "anal canal rostral part submucosa"
-    )
+    name: Literal["anal canal rostral part submucosa"] = "anal canal rostral part submucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27227"] = "EMAPA_27227"
 
 
 class AnalCanalRostralPartLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["anal canal rostral part lamina propria"] = (
-        "anal canal rostral part lamina propria"
-    )
+    name: Literal["anal canal rostral part lamina propria"] = "anal canal rostral part lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27231"] = "EMAPA_27231"
 
@@ -28814,36 +27510,28 @@ class AnalCanalLaminaPropria(_MouseAnatomyModel):
 
 class CoelomicEpitheliumOfGonadPrimordium(_MouseAnatomyModel):
 
-    name: Literal["coelomic epithelium of gonad primordium"] = (
-        "coelomic epithelium of gonad primordium"
-    )
+    name: Literal["coelomic epithelium of gonad primordium"] = "coelomic epithelium of gonad primordium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27564"] = "EMAPA_27564"
 
 
 class AnteriorGonadPrimordiumMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["anterior gonad primordium mesenchyme"] = (
-        "anterior gonad primordium mesenchyme"
-    )
+    name: Literal["anterior gonad primordium mesenchyme"] = "anterior gonad primordium mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27566"] = "EMAPA_27566"
 
 
 class CentralGonadPrimordiumMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["central gonad primordium mesenchyme"] = (
-        "central gonad primordium mesenchyme"
-    )
+    name: Literal["central gonad primordium mesenchyme"] = "central gonad primordium mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27568"] = "EMAPA_27568"
 
 
 class PosteriorGonadPrimordiumMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["posterior gonad primordium mesenchyme"] = (
-        "posterior gonad primordium mesenchyme"
-    )
+    name: Literal["posterior gonad primordium mesenchyme"] = "posterior gonad primordium mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27570"] = "EMAPA_27570"
 
@@ -28871,27 +27559,21 @@ class CloacaAssociatedMesenchyme(_MouseAnatomyModel):
 
 class NephricDuctMesonephricPortion(_MouseAnatomyModel):
 
-    name: Literal["nephric duct, mesonephric portion"] = (
-        "nephric duct, mesonephric portion"
-    )
+    name: Literal["nephric duct, mesonephric portion"] = "nephric duct, mesonephric portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27591"] = "EMAPA_27591"
 
 
 class NephricDuctMetanephricPortion(_MouseAnatomyModel):
 
-    name: Literal["nephric duct, metanephric portion"] = (
-        "nephric duct, metanephric portion"
-    )
+    name: Literal["nephric duct, metanephric portion"] = "nephric duct, metanephric portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27599"] = "EMAPA_27599"
 
 
 class NephricDuctPronephricPortion(_MouseAnatomyModel):
 
-    name: Literal["nephric duct, pronephric portion"] = (
-        "nephric duct, pronephric portion"
-    )
+    name: Literal["nephric duct, pronephric portion"] = "nephric duct, pronephric portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27602"] = "EMAPA_27602"
 
@@ -28919,18 +27601,14 @@ class ParametanephricMesenchyme(_MouseAnatomyModel):
 
 class RostralParametanephricMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["rostral parametanephric mesenchyme"] = (
-        "rostral parametanephric mesenchyme"
-    )
+    name: Literal["rostral parametanephric mesenchyme"] = "rostral parametanephric mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27617"] = "EMAPA_27617"
 
 
 class CaudalParamesonephricMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["caudal paramesonephric mesenchyme"] = (
-        "caudal paramesonephric mesenchyme"
-    )
+    name: Literal["caudal paramesonephric mesenchyme"] = "caudal paramesonephric mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27619"] = "EMAPA_27619"
 
@@ -29042,9 +27720,7 @@ class SShapedBody(_MouseAnatomyModel):
 
 class RenalConnectingTubuleOfSShapedBody(_MouseAnatomyModel):
 
-    name: Literal["renal connecting tubule of s-shaped body"] = (
-        "renal connecting tubule of s-shaped body"
-    )
+    name: Literal["renal connecting tubule of s-shaped body"] = "renal connecting tubule of s-shaped body"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27758"] = "EMAPA_27758"
 
@@ -29065,27 +27741,21 @@ class MedialSegmentOfSShapedBody(_MouseAnatomyModel):
 
 class ProximalSegmentOfSShapedBody(_MouseAnatomyModel):
 
-    name: Literal["proximal segment of s-shaped body"] = (
-        "proximal segment of s-shaped body"
-    )
+    name: Literal["proximal segment of s-shaped body"] = "proximal segment of s-shaped body"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27764"] = "EMAPA_27764"
 
 
 class VisceralEpitheliumOfSShapedBody(_MouseAnatomyModel):
 
-    name: Literal["visceral epithelium of s-shaped body"] = (
-        "visceral epithelium of s-shaped body"
-    )
+    name: Literal["visceral epithelium of s-shaped body"] = "visceral epithelium of s-shaped body"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27766"] = "EMAPA_27766"
 
 
 class ParietalEpitheliumOfSShapedBody(_MouseAnatomyModel):
 
-    name: Literal["parietal epithelium of s-shaped body"] = (
-        "parietal epithelium of s-shaped body"
-    )
+    name: Literal["parietal epithelium of s-shaped body"] = "parietal epithelium of s-shaped body"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27768"] = "EMAPA_27768"
 
@@ -29181,9 +27851,7 @@ class RenalConnectingTubuleOfCapillaryLoopNephron(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfMetanephros(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of metanephros"] = (
-        "developing vasculature of metanephros"
-    )
+    name: Literal["developing vasculature of metanephros"] = "developing vasculature of metanephros"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27794"] = "EMAPA_27794"
 
@@ -29229,36 +27897,28 @@ class GlomerularMesangiumOfMaturingGlomerularTuft(_MouseAnatomyModel):
 
 class VisceralEpitheliumOfMaturingRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["visceral epithelium of maturing renal corpuscle"] = (
-        "visceral epithelium of maturing renal corpuscle"
-    )
+    name: Literal["visceral epithelium of maturing renal corpuscle"] = "visceral epithelium of maturing renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27967"] = "EMAPA_27967"
 
 
 class BowmansCapsuleOfMaturingRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["Bowman's capsule of maturing renal corpuscle"] = (
-        "Bowman's capsule of maturing renal corpuscle"
-    )
+    name: Literal["Bowman's capsule of maturing renal corpuscle"] = "Bowman's capsule of maturing renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27973"] = "EMAPA_27973"
 
 
 class ParietalEpitheliumOfMaturingRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["parietal epithelium of maturing renal corpuscle"] = (
-        "parietal epithelium of maturing renal corpuscle"
-    )
+    name: Literal["parietal epithelium of maturing renal corpuscle"] = "parietal epithelium of maturing renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27979"] = "EMAPA_27979"
 
 
 class UrinarySpaceOfMaturingRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["urinary space of maturing renal corpuscle"] = (
-        "urinary space of maturing renal corpuscle"
-    )
+    name: Literal["urinary space of maturing renal corpuscle"] = "urinary space of maturing renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_27985"] = "EMAPA_27985"
 
@@ -29293,36 +27953,28 @@ class RenalConnectingTubule(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfRenalCortex(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of renal cortex"] = (
-        "developing vasculature of renal cortex"
-    )
+    name: Literal["developing vasculature of renal cortex"] = "developing vasculature of renal cortex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28029"] = "EMAPA_28029"
 
 
 class DevelopingArterialVasculatureOfRenalCortex(_MouseAnatomyModel):
 
-    name: Literal["developing arterial vasculature of renal cortex"] = (
-        "developing arterial vasculature of renal cortex"
-    )
+    name: Literal["developing arterial vasculature of renal cortex"] = "developing arterial vasculature of renal cortex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28035"] = "EMAPA_28035"
 
 
 class DevelopingVenousVasculatureOfRenalCortex(_MouseAnatomyModel):
 
-    name: Literal["developing venous vasculature of renal cortex"] = (
-        "developing venous vasculature of renal cortex"
-    )
+    name: Literal["developing venous vasculature of renal cortex"] = "developing venous vasculature of renal cortex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28037"] = "EMAPA_28037"
 
 
 class DevelopingCapillaryOfRenalCortex(_MouseAnatomyModel):
 
-    name: Literal["developing capillary of renal cortex"] = (
-        "developing capillary of renal cortex"
-    )
+    name: Literal["developing capillary of renal cortex"] = "developing capillary of renal cortex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28039"] = "EMAPA_28039"
 
@@ -29343,9 +27995,7 @@ class MedullaryCollectingDuct(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfRenalMedulla(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of renal medulla"] = (
-        "developing vasculature of renal medulla"
-    )
+    name: Literal["developing vasculature of renal medulla"] = "developing vasculature of renal medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28069"] = "EMAPA_28069"
 
@@ -29361,18 +28011,14 @@ class DevelopingArterialVasculatureOfRenalMedulla(_MouseAnatomyModel):
 
 class DevelopingVenousVasculatureOfRenalMedulla(_MouseAnatomyModel):
 
-    name: Literal["developing venous vasculature of renal medulla"] = (
-        "developing venous vasculature of renal medulla"
-    )
+    name: Literal["developing venous vasculature of renal medulla"] = "developing venous vasculature of renal medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28073"] = "EMAPA_28073"
 
 
 class DevelopingCapillaryOfRenalMedulla(_MouseAnatomyModel):
 
-    name: Literal["developing capillary of renal medulla"] = (
-        "developing capillary of renal medulla"
-    )
+    name: Literal["developing capillary of renal medulla"] = "developing capillary of renal medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28075"] = "EMAPA_28075"
 
@@ -29498,18 +28144,14 @@ class ArcuateVein(_MouseAnatomyModel):
 
 class AfferentArterioleOfMaturingRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["afferent arteriole of maturing renal corpuscle"] = (
-        "afferent arteriole of maturing renal corpuscle"
-    )
+    name: Literal["afferent arteriole of maturing renal corpuscle"] = "afferent arteriole of maturing renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28230"] = "EMAPA_28230"
 
 
 class EfferentArterioleOfMaturingRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["efferent arteriole of maturing renal corpuscle"] = (
-        "efferent arteriole of maturing renal corpuscle"
-    )
+    name: Literal["efferent arteriole of maturing renal corpuscle"] = "efferent arteriole of maturing renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28233"] = "EMAPA_28233"
 
@@ -29537,9 +28179,7 @@ class GlomerularCapillarySystem(_MouseAnatomyModel):
 
 class GlomerularMesangiumOfGlomerularTuft(_MouseAnatomyModel):
 
-    name: Literal["glomerular mesangium of glomerular tuft"] = (
-        "glomerular mesangium of glomerular tuft"
-    )
+    name: Literal["glomerular mesangium of glomerular tuft"] = "glomerular mesangium of glomerular tuft"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28248"] = "EMAPA_28248"
 
@@ -29555,45 +28195,35 @@ class GlomerularBasementMembraneOfMatureRenalCorpuscle(_MouseAnatomyModel):
 
 class VisceralEpitheliumOfMatureRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["visceral epithelium of mature renal corpuscle"] = (
-        "visceral epithelium of mature renal corpuscle"
-    )
+    name: Literal["visceral epithelium of mature renal corpuscle"] = "visceral epithelium of mature renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28254"] = "EMAPA_28254"
 
 
 class BowmansCapsuleOfMatureRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["Bowman's capsule of mature renal corpuscle"] = (
-        "Bowman's capsule of mature renal corpuscle"
-    )
+    name: Literal["Bowman's capsule of mature renal corpuscle"] = "Bowman's capsule of mature renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28257"] = "EMAPA_28257"
 
 
 class ParietalEpitheliumOfMatureRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["parietal epithelium of mature renal corpuscle"] = (
-        "parietal epithelium of mature renal corpuscle"
-    )
+    name: Literal["parietal epithelium of mature renal corpuscle"] = "parietal epithelium of mature renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28260"] = "EMAPA_28260"
 
 
 class UrinarySpaceOfMatureRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["urinary space of mature renal corpuscle"] = (
-        "urinary space of mature renal corpuscle"
-    )
+    name: Literal["urinary space of mature renal corpuscle"] = "urinary space of mature renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28263"] = "EMAPA_28263"
 
 
 class AfferentArterioleOfMatureRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["afferent arteriole of mature renal corpuscle"] = (
-        "afferent arteriole of mature renal corpuscle"
-    )
+    name: Literal["afferent arteriole of mature renal corpuscle"] = "afferent arteriole of mature renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28266"] = "EMAPA_28266"
 
@@ -29616,9 +28246,7 @@ class RestOfAfferentArteriole(_MouseAnatomyModel):
 
 class EfferentArterioleOfMatureRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["efferent arteriole of mature renal corpuscle"] = (
-        "efferent arteriole of mature renal corpuscle"
-    )
+    name: Literal["efferent arteriole of mature renal corpuscle"] = "efferent arteriole of mature renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28275"] = "EMAPA_28275"
 
@@ -29639,9 +28267,7 @@ class RenalProximalTubule(_MouseAnatomyModel):
 
 class RenalProximalConvolutedTubule(_MouseAnatomyModel):
 
-    name: Literal["renal proximal convoluted tubule"] = (
-        "renal proximal convoluted tubule"
-    )
+    name: Literal["renal proximal convoluted tubule"] = "renal proximal convoluted tubule"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28287"] = "EMAPA_28287"
 
@@ -29655,27 +28281,21 @@ class OuterRenalMedulla(_MouseAnatomyModel):
 
 class LoopOfHenleOuterMedullaryPortion(_MouseAnatomyModel):
 
-    name: Literal["loop of Henle, outer medullary portion"] = (
-        "loop of Henle, outer medullary portion"
-    )
+    name: Literal["loop of Henle, outer medullary portion"] = "loop of Henle, outer medullary portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28322"] = "EMAPA_28322"
 
 
 class ThinDescendingLimbOfOuterMedulla(_MouseAnatomyModel):
 
-    name: Literal["thin descending limb of outer medulla"] = (
-        "thin descending limb of outer medulla"
-    )
+    name: Literal["thin descending limb of outer medulla"] = "thin descending limb of outer medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28325"] = "EMAPA_28325"
 
 
 class ThinAscendingLimbOfOuterMedulla(_MouseAnatomyModel):
 
-    name: Literal["thin ascending limb of outer medulla"] = (
-        "thin ascending limb of outer medulla"
-    )
+    name: Literal["thin ascending limb of outer medulla"] = "thin ascending limb of outer medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28328"] = "EMAPA_28328"
 
@@ -29712,36 +28332,28 @@ class InnerRenalMedulla(_MouseAnatomyModel):
 
 class LoopOfHenleInnerMedullaryPortion(_MouseAnatomyModel):
 
-    name: Literal["loop of Henle, inner medullary portion"] = (
-        "loop of Henle, inner medullary portion"
-    )
+    name: Literal["loop of Henle, inner medullary portion"] = "loop of Henle, inner medullary portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28352"] = "EMAPA_28352"
 
 
 class ThinDescendingLimbOfInnerMedulla(_MouseAnatomyModel):
 
-    name: Literal["thin descending limb of inner medulla"] = (
-        "thin descending limb of inner medulla"
-    )
+    name: Literal["thin descending limb of inner medulla"] = "thin descending limb of inner medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28355"] = "EMAPA_28355"
 
 
 class BendOfLoopOfHenleInnerMedullaryPortion(_MouseAnatomyModel):
 
-    name: Literal["bend of loop of Henle inner medullary portion"] = (
-        "bend of loop of Henle inner medullary portion"
-    )
+    name: Literal["bend of loop of Henle inner medullary portion"] = "bend of loop of Henle inner medullary portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28358"] = "EMAPA_28358"
 
 
 class ThinAscendingLimbOfInnerMedulla(_MouseAnatomyModel):
 
-    name: Literal["thin ascending limb of inner medulla"] = (
-        "thin ascending limb of inner medulla"
-    )
+    name: Literal["thin ascending limb of inner medulla"] = "thin ascending limb of inner medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28361"] = "EMAPA_28361"
 
@@ -29790,9 +28402,7 @@ class DistalConvolutedTubule(_MouseAnatomyModel):
 
 class DistalStraightTubuleOfRenalCortex(_MouseAnatomyModel):
 
-    name: Literal["distal straight tubule of renal cortex"] = (
-        "distal straight tubule of renal cortex"
-    )
+    name: Literal["distal straight tubule of renal cortex"] = "distal straight tubule of renal cortex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28396"] = "EMAPA_28396"
 
@@ -29806,9 +28416,7 @@ class MaculaDensa(_MouseAnatomyModel):
 
 class PostmaculaSegmentOfDistalStraightTubule(_MouseAnatomyModel):
 
-    name: Literal["postmacula segment of distal straight tubule"] = (
-        "postmacula segment of distal straight tubule"
-    )
+    name: Literal["postmacula segment of distal straight tubule"] = "postmacula segment of distal straight tubule"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28402"] = "EMAPA_28402"
 
@@ -29857,9 +28465,7 @@ class EarlyTubule(_MouseAnatomyModel):
 
 class DevelopingCapillaryLoopStageNephronGroup(_MouseAnatomyModel):
 
-    name: Literal["developing capillary loop stage nephron group"] = (
-        "developing capillary loop stage nephron group"
-    )
+    name: Literal["developing capillary loop stage nephron group"] = "developing capillary loop stage nephron group"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28506"] = "EMAPA_28506"
 
@@ -29880,27 +28486,21 @@ class LateTubule(_MouseAnatomyModel):
 
 class MaleAssociatedReproductiveStructure(_MouseAnatomyModel):
 
-    name: Literal["male associated reproductive structure"] = (
-        "male associated reproductive structure"
-    )
+    name: Literal["male associated reproductive structure"] = "male associated reproductive structure"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28533"] = "EMAPA_28533"
 
 
 class FemaleAssociatedReproductiveStructure(_MouseAnatomyModel):
 
-    name: Literal["female associated reproductive structure"] = (
-        "female associated reproductive structure"
-    )
+    name: Literal["female associated reproductive structure"] = "female associated reproductive structure"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28540"] = "EMAPA_28540"
 
 
 class AllantoisOfEmbryonicUrinarySystem(_MouseAnatomyModel):
 
-    name: Literal["allantois of embryonic urinary system"] = (
-        "allantois of embryonic urinary system"
-    )
+    name: Literal["allantois of embryonic urinary system"] = "allantois of embryonic urinary system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28547"] = "EMAPA_28547"
 
@@ -29914,18 +28514,14 @@ class UrethralPlate(_MouseAnatomyModel):
 
 class UreteralMesenchymeSubepithelialLayer(_MouseAnatomyModel):
 
-    name: Literal["ureteral mesenchyme subepithelial layer"] = (
-        "ureteral mesenchyme subepithelial layer"
-    )
+    name: Literal["ureteral mesenchyme subepithelial layer"] = "ureteral mesenchyme subepithelial layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28561"] = "EMAPA_28561"
 
 
 class UreteralMesenchymeMiddleLayer(_MouseAnatomyModel):
 
-    name: Literal["ureteral mesenchyme middle layer"] = (
-        "ureteral mesenchyme middle layer"
-    )
+    name: Literal["ureteral mesenchyme middle layer"] = "ureteral mesenchyme middle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28567"] = "EMAPA_28567"
 
@@ -29939,9 +28535,7 @@ class UreteralMesenchymeOuterLayer(_MouseAnatomyModel):
 
 class SuperficialCellLayerOfUreter(_MouseAnatomyModel):
 
-    name: Literal["superficial cell layer of ureter"] = (
-        "superficial cell layer of ureter"
-    )
+    name: Literal["superficial cell layer of ureter"] = "superficial cell layer of ureter"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28588"] = "EMAPA_28588"
 
@@ -29997,18 +28591,14 @@ class DetrusorMuscleOfBladder(_MouseAnatomyModel):
 
 class DetrusorMuscleOfBladderFundus(_MouseAnatomyModel):
 
-    name: Literal["detrusor muscle of bladder fundus"] = (
-        "detrusor muscle of bladder fundus"
-    )
+    name: Literal["detrusor muscle of bladder fundus"] = "detrusor muscle of bladder fundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28643"] = "EMAPA_28643"
 
 
 class DetrusorMuscleOfBladderTrigone(_MouseAnatomyModel):
 
-    name: Literal["detrusor muscle of bladder trigone"] = (
-        "detrusor muscle of bladder trigone"
-    )
+    name: Literal["detrusor muscle of bladder trigone"] = "detrusor muscle of bladder trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28649"] = "EMAPA_28649"
 
@@ -30043,27 +28633,21 @@ class VasculatureOfBladder(_MouseAnatomyModel):
 
 class EpitheliumOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of pelvic urethra of male"] = (
-        "epithelium of pelvic urethra of male"
-    )
+    name: Literal["epithelium of pelvic urethra of male"] = "epithelium of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28697"] = "EMAPA_28697"
 
 
 class MesenchymalLayerOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of pelvic urethra of male"] = (
-        "mesenchymal layer of pelvic urethra of male"
-    )
+    name: Literal["mesenchymal layer of pelvic urethra of male"] = "mesenchymal layer of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28703"] = "EMAPA_28703"
 
 
 class MuscleLayerOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of pelvic urethra of male"] = (
-        "muscle layer of pelvic urethra of male"
-    )
+    name: Literal["muscle layer of pelvic urethra of male"] = "muscle layer of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28709"] = "EMAPA_28709"
 
@@ -30084,36 +28668,28 @@ class PelvicUrethraOfFemale(_MouseAnatomyModel):
 
 class EpitheliumOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of pelvic urethra of female"] = (
-        "epithelium of pelvic urethra of female"
-    )
+    name: Literal["epithelium of pelvic urethra of female"] = "epithelium of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28759"] = "EMAPA_28759"
 
 
 class MesenchymalLayerOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of pelvic urethra of female"] = (
-        "mesenchymal layer of pelvic urethra of female"
-    )
+    name: Literal["mesenchymal layer of pelvic urethra of female"] = "mesenchymal layer of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28765"] = "EMAPA_28765"
 
 
 class MuscleLayerOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of pelvic urethra of female"] = (
-        "muscle layer of pelvic urethra of female"
-    )
+    name: Literal["muscle layer of pelvic urethra of female"] = "muscle layer of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28771"] = "EMAPA_28771"
 
 
 class IntermediateCellLayerOfUreter(_MouseAnatomyModel):
 
-    name: Literal["intermediate cell layer of ureter"] = (
-        "intermediate cell layer of ureter"
-    )
+    name: Literal["intermediate cell layer of ureter"] = "intermediate cell layer of ureter"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28801"] = "EMAPA_28801"
 
@@ -30171,18 +28747,14 @@ class LaminaPropriaOfUreter(_MouseAnatomyModel):
 
 class MesenchymalLayerOfPhallicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of phallic urethra of male"] = (
-        "mesenchymal layer of phallic urethra of male"
-    )
+    name: Literal["mesenchymal layer of phallic urethra of male"] = "mesenchymal layer of phallic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28856"] = "EMAPA_28856"
 
 
 class MuscleLayerOfPhallicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of phallic urethra of male"] = (
-        "muscle layer of phallic urethra of male"
-    )
+    name: Literal["muscle layer of phallic urethra of male"] = "muscle layer of phallic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28859"] = "EMAPA_28859"
 
@@ -30219,9 +28791,7 @@ class MesonephrosOfFemale(_MouseAnatomyModel):
 
 class MesonephricMesenchymeOfFemale(_MouseAnatomyModel):
 
-    name: Literal["mesonephric mesenchyme of female"] = (
-        "mesonephric mesenchyme of female"
-    )
+    name: Literal["mesonephric mesenchyme of female"] = "mesonephric mesenchyme of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28914"] = "EMAPA_28914"
 
@@ -30235,9 +28805,7 @@ class MesonephricTubuleOfFemale(_MouseAnatomyModel):
 
 class NephricDuctOfFemaleMesonephricPortion(_MouseAnatomyModel):
 
-    name: Literal["nephric duct of female, mesonephric portion"] = (
-        "nephric duct of female, mesonephric portion"
-    )
+    name: Literal["nephric duct of female, mesonephric portion"] = "nephric duct of female, mesonephric portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28924"] = "EMAPA_28924"
 
@@ -30251,9 +28819,7 @@ class ReteOvariiOfMesonephros(_MouseAnatomyModel):
 
 class CoelomicEpitheliumOfFemaleMesonephros(_MouseAnatomyModel):
 
-    name: Literal["coelomic epithelium of female mesonephros"] = (
-        "coelomic epithelium of female mesonephros"
-    )
+    name: Literal["coelomic epithelium of female mesonephros"] = "coelomic epithelium of female mesonephros"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28934"] = "EMAPA_28934"
 
@@ -30269,9 +28835,7 @@ class ParamesonephricDuctOfFemaleMesonephricPortion(_MouseAnatomyModel):
 
 class ParamesonephricDuctOfFemaleRestOf(_MouseAnatomyModel):
 
-    name: Literal["paramesonephric duct of female, rest of"] = (
-        "paramesonephric duct of female, rest of"
-    )
+    name: Literal["paramesonephric duct of female, rest of"] = "paramesonephric duct of female, rest of"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28940"] = "EMAPA_28940"
 
@@ -30285,18 +28849,14 @@ class NephricDuctOfFemaleRestOf(_MouseAnatomyModel):
 
 class EpitheliumOfNephricDuctOfFemale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of nephric duct of female"] = (
-        "epithelium of nephric duct of female"
-    )
+    name: Literal["epithelium of nephric duct of female"] = "epithelium of nephric duct of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28949"] = "EMAPA_28949"
 
 
 class MesenchymeOfNephricDuctOfFemale(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of nephric duct of female"] = (
-        "mesenchyme of nephric duct of female"
-    )
+    name: Literal["mesenchyme of nephric duct of female"] = "mesenchyme of nephric duct of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28953"] = "EMAPA_28953"
 
@@ -30335,9 +28895,7 @@ class PremeioticGermCellOfOvary(_MouseAnatomyModel):
 
 class DegeneratingMesonephricTubuleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["degenerating mesonephric tubule of female"] = (
-        "degenerating mesonephric tubule of female"
-    )
+    name: Literal["degenerating mesonephric tubule of female"] = "degenerating mesonephric tubule of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_28978"] = "EMAPA_28978"
 
@@ -30353,18 +28911,14 @@ class DegeneratingMesonephricPortionOfNephricDuctOfFemale(_MouseAnatomyModel):
 
 class CorticalComponentOfMesenchymalStroma(_MouseAnatomyModel):
 
-    name: Literal["cortical component of mesenchymal stroma"] = (
-        "cortical component of mesenchymal stroma"
-    )
+    name: Literal["cortical component of mesenchymal stroma"] = "cortical component of mesenchymal stroma"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29009"] = "EMAPA_29009"
 
 
 class MedullaryComponentOfMesenchymalStroma(_MouseAnatomyModel):
 
-    name: Literal["medullary component of mesenchymal stroma"] = (
-        "medullary component of mesenchymal stroma"
-    )
+    name: Literal["medullary component of mesenchymal stroma"] = "medullary component of mesenchymal stroma"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29014"] = "EMAPA_29014"
 
@@ -30441,9 +28995,7 @@ class OocyteOfPrimaryFollicle(_MouseAnatomyModel):
 
 class FollicleCellOfPrimaryFollicle(_MouseAnatomyModel):
 
-    name: Literal["follicle cell of primary follicle"] = (
-        "follicle cell of primary follicle"
-    )
+    name: Literal["follicle cell of primary follicle"] = "follicle cell of primary follicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29067"] = "EMAPA_29067"
 
@@ -30471,9 +29023,7 @@ class PeritubularMyoidCell(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfTestis(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of testis"] = (
-        "developing vasculature of testis"
-    )
+    name: Literal["developing vasculature of testis"] = "developing vasculature of testis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29114"] = "EMAPA_29114"
 
@@ -30533,9 +29083,7 @@ class DegeneratingMesonephricPortionOfMaleParamesonephricDuct(_MouseAnatomyModel
 
 class GenitalTubercleMesenchymeOfMale(_MouseAnatomyModel):
 
-    name: Literal["genital tubercle mesenchyme of male"] = (
-        "genital tubercle mesenchyme of male"
-    )
+    name: Literal["genital tubercle mesenchyme of male"] = "genital tubercle mesenchyme of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29167"] = "EMAPA_29167"
 
@@ -30556,27 +29104,21 @@ class NephricDuctOfMaleRestOf(_MouseAnatomyModel):
 
 class MesenchymeOfNephricDuctOfMale(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of nephric duct of male"] = (
-        "mesenchyme of nephric duct of male"
-    )
+    name: Literal["mesenchyme of nephric duct of male"] = "mesenchyme of nephric duct of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29177"] = "EMAPA_29177"
 
 
 class EpitheliumOfNephricDuctOfMale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of nephric duct of male"] = (
-        "epithelium of nephric duct of male"
-    )
+    name: Literal["epithelium of nephric duct of male"] = "epithelium of nephric duct of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29181"] = "EMAPA_29181"
 
 
 class ParamesonephricDuctOfMaleRestOf(_MouseAnatomyModel):
 
-    name: Literal["paramesonephric duct of male, rest of"] = (
-        "paramesonephric duct of male, rest of"
-    )
+    name: Literal["paramesonephric duct of male, rest of"] = "paramesonephric duct of male, rest of"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29185"] = "EMAPA_29185"
 
@@ -30635,18 +29177,14 @@ class DistalGenitalTubercleOfMale(_MouseAnatomyModel):
 
 class MesenchymeOfDistalGenitalTubercleOfMale(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of distal genital tubercle of male"] = (
-        "mesenchyme of distal genital tubercle of male"
-    )
+    name: Literal["mesenchyme of distal genital tubercle of male"] = "mesenchyme of distal genital tubercle of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29207"] = "EMAPA_29207"
 
 
 class SkinOfDistalGenitalTubercleOfMale(_MouseAnatomyModel):
 
-    name: Literal["skin of distal genital tubercle of male"] = (
-        "skin of distal genital tubercle of male"
-    )
+    name: Literal["skin of distal genital tubercle of male"] = "skin of distal genital tubercle of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29209"] = "EMAPA_29209"
 
@@ -30667,9 +29205,7 @@ class SkinOfMalePreputialSwelling(_MouseAnatomyModel):
 
 class MesenchymeOfMalePreputialSwelling(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of male preputial swelling"] = (
-        "mesenchyme of male preputial swelling"
-    )
+    name: Literal["mesenchyme of male preputial swelling"] = "mesenchyme of male preputial swelling"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29226"] = "EMAPA_29226"
 
@@ -30683,18 +29219,14 @@ class GlansOfMaleGenitalTubercle(_MouseAnatomyModel):
 
 class MesenchymeOfGlansOfMaleGenitalTubercle(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of glans of male genital tubercle"] = (
-        "mesenchyme of glans of male genital tubercle"
-    )
+    name: Literal["mesenchyme of glans of male genital tubercle"] = "mesenchyme of glans of male genital tubercle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29254"] = "EMAPA_29254"
 
 
 class SkinOfGlansOfMaleGenitalTubercle(_MouseAnatomyModel):
 
-    name: Literal["skin of glans of male genital tubercle"] = (
-        "skin of glans of male genital tubercle"
-    )
+    name: Literal["skin of glans of male genital tubercle"] = "skin of glans of male genital tubercle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29256"] = "EMAPA_29256"
 
@@ -30764,9 +29296,7 @@ class RestOfMesentery(_MouseAnatomyModel):
 
 class GenitalTubercleMesenchymeOfFemale(_MouseAnatomyModel):
 
-    name: Literal["genital tubercle mesenchyme of female"] = (
-        "genital tubercle mesenchyme of female"
-    )
+    name: Literal["genital tubercle mesenchyme of female"] = "genital tubercle mesenchyme of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29621"] = "EMAPA_29621"
 
@@ -30854,9 +29384,7 @@ class Segment2OfProximalTubule(_MouseAnatomyModel):
 
 class ProximalStraightTubuleCorticalPortion(_MouseAnatomyModel):
 
-    name: Literal["proximal straight tubule, cortical portion"] = (
-        "proximal straight tubule, cortical portion"
-    )
+    name: Literal["proximal straight tubule, cortical portion"] = "proximal straight tubule, cortical portion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29661"] = "EMAPA_29661"
 
@@ -30870,9 +29398,7 @@ class OuterStripeOfOuterMedulla(_MouseAnatomyModel):
 
 class LoopOfHenleOfOuterStripeOfOuterMedulla(_MouseAnatomyModel):
 
-    name: Literal["loop of Henle of outer stripe of outer medulla"] = (
-        "loop of Henle of outer stripe of outer medulla"
-    )
+    name: Literal["loop of Henle of outer stripe of outer medulla"] = "loop of Henle of outer stripe of outer medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29665"] = "EMAPA_29665"
 
@@ -30904,9 +29430,7 @@ class InnerStripeOfOuterMedulla(_MouseAnatomyModel):
 
 class LoopOfHenleOfInnerStripeOfOuterMedulla(_MouseAnatomyModel):
 
-    name: Literal["loop of Henle of inner stripe of outer medulla"] = (
-        "loop of Henle of inner stripe of outer medulla"
-    )
+    name: Literal["loop of Henle of inner stripe of outer medulla"] = "loop of Henle of inner stripe of outer medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29679"] = "EMAPA_29679"
 
@@ -30920,13 +29444,11 @@ class ThinDescendingLimbOfInnerStripeOfOuterMedulla(_MouseAnatomyModel):
     registry_identifier: Literal["EMAPA_29681"] = "EMAPA_29681"
 
 
-class PremaculaSegmentOfDistalStraightTubuleOfInnerStripeOfInnerMedulla(
-    _MouseAnatomyModel
-):
+class PremaculaSegmentOfDistalStraightTubuleOfInnerStripeOfInnerMedulla(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["premacula segment of distal straight tubule of inner stripe of inner medulla"] = (
         "premacula segment of distal straight tubule of inner stripe of inner medulla"
-    ] = "premacula segment of distal straight tubule of inner stripe of inner medulla"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29683"] = "EMAPA_29683"
 
@@ -30940,9 +29462,7 @@ class RenalNerve(_MouseAnatomyModel):
 
 class EpitheliumOfCaudaOfEpididymis(_MouseAnatomyModel):
 
-    name: Literal["epithelium of cauda of epididymis"] = (
-        "epithelium of cauda of epididymis"
-    )
+    name: Literal["epithelium of cauda of epididymis"] = "epithelium of cauda of epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29693"] = "EMAPA_29693"
 
@@ -30963,9 +29483,7 @@ class TailDermomyotome(_MouseAnatomyModel):
 
 class TesticularBranchOfGenitalNerve(_MouseAnatomyModel):
 
-    name: Literal["testicular branch of genital nerve"] = (
-        "testicular branch of genital nerve"
-    )
+    name: Literal["testicular branch of genital nerve"] = "testicular branch of genital nerve"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29731"] = "EMAPA_29731"
 
@@ -30979,18 +29497,14 @@ class EpidermalLayerOfScrotum(_MouseAnatomyModel):
 
 class BasalEpidermalLayerOfScrotum(_MouseAnatomyModel):
 
-    name: Literal["basal epidermal layer of scrotum"] = (
-        "basal epidermal layer of scrotum"
-    )
+    name: Literal["basal epidermal layer of scrotum"] = "basal epidermal layer of scrotum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29735"] = "EMAPA_29735"
 
 
 class StratifiedEpidermalLayerOfScrotum(_MouseAnatomyModel):
 
-    name: Literal["stratified epidermal layer of scrotum"] = (
-        "stratified epidermal layer of scrotum"
-    )
+    name: Literal["stratified epidermal layer of scrotum"] = "stratified epidermal layer of scrotum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29737"] = "EMAPA_29737"
 
@@ -31004,18 +29518,14 @@ class DermalLayerOfScrotum(_MouseAnatomyModel):
 
 class HairFollicleOfScrotumDermalLayer(_MouseAnatomyModel):
 
-    name: Literal["hair follicle of scrotum dermal layer"] = (
-        "hair follicle of scrotum dermal layer"
-    )
+    name: Literal["hair follicle of scrotum dermal layer"] = "hair follicle of scrotum dermal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29741"] = "EMAPA_29741"
 
 
 class SweatGlandOfScrotumDermalLayer(_MouseAnatomyModel):
 
-    name: Literal["sweat gland of scrotum dermal layer"] = (
-        "sweat gland of scrotum dermal layer"
-    )
+    name: Literal["sweat gland of scrotum dermal layer"] = "sweat gland of scrotum dermal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29743"] = "EMAPA_29743"
 
@@ -31029,9 +29539,7 @@ class SeptumOfScrotum(_MouseAnatomyModel):
 
 class EpithelialLayerOfEfferentDuct(_MouseAnatomyModel):
 
-    name: Literal["epithelial layer of efferent duct"] = (
-        "epithelial layer of efferent duct"
-    )
+    name: Literal["epithelial layer of efferent duct"] = "epithelial layer of efferent duct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29747"] = "EMAPA_29747"
 
@@ -31045,18 +29553,14 @@ class RestOfEfferentDuct(_MouseAnatomyModel):
 
 class MuscleLayerOfCaudaOfEpididymis(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of cauda of epididymis"] = (
-        "muscle layer of cauda of epididymis"
-    )
+    name: Literal["muscle layer of cauda of epididymis"] = "muscle layer of cauda of epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29751"] = "EMAPA_29751"
 
 
 class AdventitiaOfCaudaOfEpididymis(_MouseAnatomyModel):
 
-    name: Literal["adventitia of cauda of epididymis"] = (
-        "adventitia of cauda of epididymis"
-    )
+    name: Literal["adventitia of cauda of epididymis"] = "adventitia of cauda of epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29753"] = "EMAPA_29753"
 
@@ -31070,45 +29574,35 @@ class EpitheliumOfCorpusEpididymis(_MouseAnatomyModel):
 
 class MuscleLayerOfCorpusOfEpididymis(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of corpus of epididymis"] = (
-        "muscle layer of corpus of epididymis"
-    )
+    name: Literal["muscle layer of corpus of epididymis"] = "muscle layer of corpus of epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29757"] = "EMAPA_29757"
 
 
 class AdventitiaOfCorpusOfEpididymis(_MouseAnatomyModel):
 
-    name: Literal["adventitia of corpus of epididymis"] = (
-        "adventitia of corpus of epididymis"
-    )
+    name: Literal["adventitia of corpus of epididymis"] = "adventitia of corpus of epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29759"] = "EMAPA_29759"
 
 
 class EpitheliumOfCaputOfEpididymis(_MouseAnatomyModel):
 
-    name: Literal["epithelium of caput of epididymis"] = (
-        "epithelium of caput of epididymis"
-    )
+    name: Literal["epithelium of caput of epididymis"] = "epithelium of caput of epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29761"] = "EMAPA_29761"
 
 
 class MuscleLayerOfCaputOfEpididymis(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of caput of epididymis"] = (
-        "muscle layer of caput of epididymis"
-    )
+    name: Literal["muscle layer of caput of epididymis"] = "muscle layer of caput of epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29763"] = "EMAPA_29763"
 
 
 class AdventitiaOfCaputOfEpididymis(_MouseAnatomyModel):
 
-    name: Literal["adventitia of caput of epididymis"] = (
-        "adventitia of caput of epididymis"
-    )
+    name: Literal["adventitia of caput of epididymis"] = "adventitia of caput of epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29765"] = "EMAPA_29765"
 
@@ -31157,18 +29651,14 @@ class EpitheliumOfEjaculatoryDuct(_MouseAnatomyModel):
 
 class EpitheliumOfBulbourethralGlandOfMale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of bulbourethral gland of male"] = (
-        "epithelium of bulbourethral gland of male"
-    )
+    name: Literal["epithelium of bulbourethral gland of male"] = "epithelium of bulbourethral gland of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29790"] = "EMAPA_29790"
 
 
 class LaminaPropriaOfBulbourethralGlandOfMale(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of bulbourethral gland of male"] = (
-        "lamina propria of bulbourethral gland of male"
-    )
+    name: Literal["lamina propria of bulbourethral gland of male"] = "lamina propria of bulbourethral gland of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29792"] = "EMAPA_29792"
 
@@ -31189,18 +29679,14 @@ class AnteriorProstaticEpithelium(_MouseAnatomyModel):
 
 class GlandularEpitheliumOfAnteriorProstate(_MouseAnatomyModel):
 
-    name: Literal["glandular epithelium of anterior prostate"] = (
-        "glandular epithelium of anterior prostate"
-    )
+    name: Literal["glandular epithelium of anterior prostate"] = "glandular epithelium of anterior prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29798"] = "EMAPA_29798"
 
 
 class BasalEpitheliumOfAnteriorProstate(_MouseAnatomyModel):
 
-    name: Literal["basal epithelium of anterior prostate"] = (
-        "basal epithelium of anterior prostate"
-    )
+    name: Literal["basal epithelium of anterior prostate"] = "basal epithelium of anterior prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29800"] = "EMAPA_29800"
 
@@ -31214,18 +29700,14 @@ class AnteriorProstaticInterstitium(_MouseAnatomyModel):
 
 class SmoothMuscleOfAnteriorProstate(_MouseAnatomyModel):
 
-    name: Literal["smooth muscle of anterior prostate"] = (
-        "smooth muscle of anterior prostate"
-    )
+    name: Literal["smooth muscle of anterior prostate"] = "smooth muscle of anterior prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29804"] = "EMAPA_29804"
 
 
 class RestOfInterstitiumOfAnteriorProstate(_MouseAnatomyModel):
 
-    name: Literal["rest of interstitium of anterior prostate"] = (
-        "rest of interstitium of anterior prostate"
-    )
+    name: Literal["rest of interstitium of anterior prostate"] = "rest of interstitium of anterior prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29806"] = "EMAPA_29806"
 
@@ -31246,18 +29728,14 @@ class DorsalProstaticEpithelium(_MouseAnatomyModel):
 
 class GlandularEpitheliumOfDorsalProstate(_MouseAnatomyModel):
 
-    name: Literal["glandular epithelium of dorsal prostate"] = (
-        "glandular epithelium of dorsal prostate"
-    )
+    name: Literal["glandular epithelium of dorsal prostate"] = "glandular epithelium of dorsal prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29812"] = "EMAPA_29812"
 
 
 class BasalEpitheliumOfDorsalProstate(_MouseAnatomyModel):
 
-    name: Literal["basal epithelium of dorsal prostate"] = (
-        "basal epithelium of dorsal prostate"
-    )
+    name: Literal["basal epithelium of dorsal prostate"] = "basal epithelium of dorsal prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29814"] = "EMAPA_29814"
 
@@ -31271,18 +29749,14 @@ class DorsalProstaticInterstitium(_MouseAnatomyModel):
 
 class SmoothMuscleOfDorsalProstate(_MouseAnatomyModel):
 
-    name: Literal["smooth muscle of dorsal prostate"] = (
-        "smooth muscle of dorsal prostate"
-    )
+    name: Literal["smooth muscle of dorsal prostate"] = "smooth muscle of dorsal prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29818"] = "EMAPA_29818"
 
 
 class RestOfInterstitiumOfDorsalProstate(_MouseAnatomyModel):
 
-    name: Literal["rest of interstitium of dorsal prostate"] = (
-        "rest of interstitium of dorsal prostate"
-    )
+    name: Literal["rest of interstitium of dorsal prostate"] = "rest of interstitium of dorsal prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29820"] = "EMAPA_29820"
 
@@ -31303,18 +29777,14 @@ class LateralProstaticEpithelium(_MouseAnatomyModel):
 
 class GlandularEpitheliumOfLateralProstate(_MouseAnatomyModel):
 
-    name: Literal["glandular epithelium of lateral prostate"] = (
-        "glandular epithelium of lateral prostate"
-    )
+    name: Literal["glandular epithelium of lateral prostate"] = "glandular epithelium of lateral prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29826"] = "EMAPA_29826"
 
 
 class BasalEpitheliumOfLateralProstate(_MouseAnatomyModel):
 
-    name: Literal["basal epithelium of lateral prostate"] = (
-        "basal epithelium of lateral prostate"
-    )
+    name: Literal["basal epithelium of lateral prostate"] = "basal epithelium of lateral prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29828"] = "EMAPA_29828"
 
@@ -31328,18 +29798,14 @@ class LateralProstaticInterstitium(_MouseAnatomyModel):
 
 class SmoothMuscleOfLateralProstate(_MouseAnatomyModel):
 
-    name: Literal["smooth muscle of lateral prostate"] = (
-        "smooth muscle of lateral prostate"
-    )
+    name: Literal["smooth muscle of lateral prostate"] = "smooth muscle of lateral prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29832"] = "EMAPA_29832"
 
 
 class RestOfInterstitiumOfLateralProstate(_MouseAnatomyModel):
 
-    name: Literal["rest of interstitium of lateral prostate"] = (
-        "rest of interstitium of lateral prostate"
-    )
+    name: Literal["rest of interstitium of lateral prostate"] = "rest of interstitium of lateral prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29834"] = "EMAPA_29834"
 
@@ -31360,18 +29826,14 @@ class VentralProstaticEpithelium(_MouseAnatomyModel):
 
 class GlandularEpitheliumOfVentralProstate(_MouseAnatomyModel):
 
-    name: Literal["glandular epithelium of ventral prostate"] = (
-        "glandular epithelium of ventral prostate"
-    )
+    name: Literal["glandular epithelium of ventral prostate"] = "glandular epithelium of ventral prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29840"] = "EMAPA_29840"
 
 
 class BasalEpitheliumOfVentralProstate(_MouseAnatomyModel):
 
-    name: Literal["basal epithelium of ventral prostate"] = (
-        "basal epithelium of ventral prostate"
-    )
+    name: Literal["basal epithelium of ventral prostate"] = "basal epithelium of ventral prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29842"] = "EMAPA_29842"
 
@@ -31385,27 +29847,21 @@ class VentralProstaticInterstitium(_MouseAnatomyModel):
 
 class SmoothMuscleOfVentralProstate(_MouseAnatomyModel):
 
-    name: Literal["smooth muscle of ventral prostate"] = (
-        "smooth muscle of ventral prostate"
-    )
+    name: Literal["smooth muscle of ventral prostate"] = "smooth muscle of ventral prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29846"] = "EMAPA_29846"
 
 
 class RestOfInterstitiumOfVentralProstate(_MouseAnatomyModel):
 
-    name: Literal["rest of interstitium of ventral prostate"] = (
-        "rest of interstitium of ventral prostate"
-    )
+    name: Literal["rest of interstitium of ventral prostate"] = "rest of interstitium of ventral prostate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29848"] = "EMAPA_29848"
 
 
 class CorpusCavernosumOfPenileBody(_MouseAnatomyModel):
 
-    name: Literal["corpus cavernosum of penile body"] = (
-        "corpus cavernosum of penile body"
-    )
+    name: Literal["corpus cavernosum of penile body"] = "corpus cavernosum of penile body"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29850"] = "EMAPA_29850"
 
@@ -31419,9 +29875,7 @@ class LaminaPropriaOfPenileBody(_MouseAnatomyModel):
 
 class CorpusCavernosumOfGlansPenis(_MouseAnatomyModel):
 
-    name: Literal["corpus cavernosum of glans penis"] = (
-        "corpus cavernosum of glans penis"
-    )
+    name: Literal["corpus cavernosum of glans penis"] = "corpus cavernosum of glans penis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29856"] = "EMAPA_29856"
 
@@ -31442,9 +29896,7 @@ class OocyteOfSecondaryFollicle(_MouseAnatomyModel):
 
 class FollicleCellOfSecondaryFollicle(_MouseAnatomyModel):
 
-    name: Literal["follicle cell of secondary follicle"] = (
-        "follicle cell of secondary follicle"
-    )
+    name: Literal["follicle cell of secondary follicle"] = "follicle cell of secondary follicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29866"] = "EMAPA_29866"
 
@@ -31507,9 +29959,7 @@ class ThecaOfRupturedFollicle(_MouseAnatomyModel):
 
 class GerminalCellOfRupturedFollicle(_MouseAnatomyModel):
 
-    name: Literal["germinal cell of ruptured follicle"] = (
-        "germinal cell of ruptured follicle"
-    )
+    name: Literal["germinal cell of ruptured follicle"] = "germinal cell of ruptured follicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29884"] = "EMAPA_29884"
 
@@ -31537,9 +29987,7 @@ class OviductInfundibulum(_MouseAnatomyModel):
 
 class EpithelialLayerOfInfundibulum(_MouseAnatomyModel):
 
-    name: Literal["epithelial layer of infundibulum"] = (
-        "epithelial layer of infundibulum"
-    )
+    name: Literal["epithelial layer of infundibulum"] = "epithelial layer of infundibulum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29899"] = "EMAPA_29899"
 
@@ -31560,9 +30008,7 @@ class RestOfOviduct(_MouseAnatomyModel):
 
 class EpithelialLayerOfRestOfOviduct(_MouseAnatomyModel):
 
-    name: Literal["epithelial layer of rest of oviduct"] = (
-        "epithelial layer of rest of oviduct"
-    )
+    name: Literal["epithelial layer of rest of oviduct"] = "epithelial layer of rest of oviduct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29907"] = "EMAPA_29907"
 
@@ -31625,9 +30071,7 @@ class CervixUteri(_MouseAnatomyModel):
 
 class EpithelialLayerOfCervixUteri(_MouseAnatomyModel):
 
-    name: Literal["epithelial layer of cervix uteri"] = (
-        "epithelial layer of cervix uteri"
-    )
+    name: Literal["epithelial layer of cervix uteri"] = "epithelial layer of cervix uteri"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29929"] = "EMAPA_29929"
 
@@ -31648,18 +30092,14 @@ class AdventitiaOfCervixUteri(_MouseAnatomyModel):
 
 class GlandOfLowerVaginalEpithelium(_MouseAnatomyModel):
 
-    name: Literal["gland of lower vaginal epithelium"] = (
-        "gland of lower vaginal epithelium"
-    )
+    name: Literal["gland of lower vaginal epithelium"] = "gland of lower vaginal epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29935"] = "EMAPA_29935"
 
 
 class RestOfEpithelialLayerOfLowerVagina(_MouseAnatomyModel):
 
-    name: Literal["rest of epithelial layer of lower vagina"] = (
-        "rest of epithelial layer of lower vagina"
-    )
+    name: Literal["rest of epithelial layer of lower vagina"] = "rest of epithelial layer of lower vagina"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29937"] = "EMAPA_29937"
 
@@ -31673,18 +30113,14 @@ class AdventitiaOfSinovaginalBulb(_MouseAnatomyModel):
 
 class GlandOfUpperVaginalEpithelium(_MouseAnatomyModel):
 
-    name: Literal["gland of upper vaginal epithelium"] = (
-        "gland of upper vaginal epithelium"
-    )
+    name: Literal["gland of upper vaginal epithelium"] = "gland of upper vaginal epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29941"] = "EMAPA_29941"
 
 
 class RestOfEpitheliumOfUpperVagina(_MouseAnatomyModel):
 
-    name: Literal["rest of epithelium of upper vagina"] = (
-        "rest of epithelium of upper vagina"
-    )
+    name: Literal["rest of epithelium of upper vagina"] = "rest of epithelium of upper vagina"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_29943"] = "EMAPA_29943"
 
@@ -31712,9 +30148,7 @@ class EndotheliumOfRenalArtery(_MouseAnatomyModel):
 
 class SmoothMuscleLayerOfRenalArtery(_MouseAnatomyModel):
 
-    name: Literal["smooth muscle layer of renal artery"] = (
-        "smooth muscle layer of renal artery"
-    )
+    name: Literal["smooth muscle layer of renal artery"] = "smooth muscle layer of renal artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30003"] = "EMAPA_30003"
 
@@ -31728,9 +30162,7 @@ class EndotheliumOfRenalVein(_MouseAnatomyModel):
 
 class SmoothMuscleLayerOfRenalVein(_MouseAnatomyModel):
 
-    name: Literal["smooth muscle layer of renal vein"] = (
-        "smooth muscle layer of renal vein"
-    )
+    name: Literal["smooth muscle layer of renal vein"] = "smooth muscle layer of renal vein"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30019"] = "EMAPA_30019"
 
@@ -31767,36 +30199,28 @@ class MuscleLayerOfRestOfOviduct(_MouseAnatomyModel):
 
 class CircularMuscleLayerOfRestOfOviduct(_MouseAnatomyModel):
 
-    name: Literal["circular muscle layer of rest of oviduct"] = (
-        "circular muscle layer of rest of oviduct"
-    )
+    name: Literal["circular muscle layer of rest of oviduct"] = "circular muscle layer of rest of oviduct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30051"] = "EMAPA_30051"
 
 
 class LongitudinalMuscleLayerOfRestOfOviduct(_MouseAnatomyModel):
 
-    name: Literal["longitudinal muscle layer of rest of oviduct"] = (
-        "longitudinal muscle layer of rest of oviduct"
-    )
+    name: Literal["longitudinal muscle layer of rest of oviduct"] = "longitudinal muscle layer of rest of oviduct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30053"] = "EMAPA_30053"
 
 
 class CircularMuscleOfDuctusDeferens(_MouseAnatomyModel):
 
-    name: Literal["circular muscle of ductus deferens"] = (
-        "circular muscle of ductus deferens"
-    )
+    name: Literal["circular muscle of ductus deferens"] = "circular muscle of ductus deferens"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30055"] = "EMAPA_30055"
 
 
 class LongitudinalMuscleOfDuctusDeferens(_MouseAnatomyModel):
 
-    name: Literal["longitudinal muscle of ductus deferens"] = (
-        "longitudinal muscle of ductus deferens"
-    )
+    name: Literal["longitudinal muscle of ductus deferens"] = "longitudinal muscle of ductus deferens"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30057"] = "EMAPA_30057"
 
@@ -31810,18 +30234,18 @@ class CranialSuspensoryLigament(_MouseAnatomyModel):
 
 class EpitheliumOfParamesonephricDuctOfFemaleMesonephricPortion(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["epithelium of paramesonephric duct of female, mesonephric portion"] = (
         "epithelium of paramesonephric duct of female, mesonephric portion"
-    ] = "epithelium of paramesonephric duct of female, mesonephric portion"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30070"] = "EMAPA_30070"
 
 
 class MesenchymeOfParamesonephricDuctOfFemaleMesonephricPortion(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["mesenchyme of paramesonephric duct of female, mesonephric portion"] = (
         "mesenchyme of paramesonephric duct of female, mesonephric portion"
-    ] = "mesenchyme of paramesonephric duct of female, mesonephric portion"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30072"] = "EMAPA_30072"
 
@@ -31849,9 +30273,7 @@ class VentrolateralGenitalSwelling(_MouseAnatomyModel):
 
 class UrotheliumOfVentralBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["urothelium of ventral bladder neck"] = (
-        "urothelium of ventral bladder neck"
-    )
+    name: Literal["urothelium of ventral bladder neck"] = "urothelium of ventral bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30081"] = "EMAPA_30081"
 
@@ -31865,36 +30287,28 @@ class LaminaPropriaOfBladder(_MouseAnatomyModel):
 
 class LaminaPropriaOfBladderFundus(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of bladder fundus"] = (
-        "lamina propria of bladder fundus"
-    )
+    name: Literal["lamina propria of bladder fundus"] = "lamina propria of bladder fundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30102"] = "EMAPA_30102"
 
 
 class LaminaPropriaOfBladderTrigone(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of bladder trigone"] = (
-        "lamina propria of bladder trigone"
-    )
+    name: Literal["lamina propria of bladder trigone"] = "lamina propria of bladder trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30109"] = "EMAPA_30109"
 
 
 class LaminaPropriaOfVentralBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of ventral bladder neck"] = (
-        "lamina propria of ventral bladder neck"
-    )
+    name: Literal["lamina propria of ventral bladder neck"] = "lamina propria of ventral bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30116"] = "EMAPA_30116"
 
 
 class DetrusorMuscleOfVentralBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["detrusor muscle of ventral bladder neck"] = (
-        "detrusor muscle of ventral bladder neck"
-    )
+    name: Literal["detrusor muscle of ventral bladder neck"] = "detrusor muscle of ventral bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30123"] = "EMAPA_30123"
 
@@ -31915,18 +30329,14 @@ class MuscularisMucosaOfNeck(_MouseAnatomyModel):
 
 class AdventitiaOfVentralBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["adventitia of ventral bladder neck"] = (
-        "adventitia of ventral bladder neck"
-    )
+    name: Literal["adventitia of ventral bladder neck"] = "adventitia of ventral bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30144"] = "EMAPA_30144"
 
 
 class UreteralSmoothMuscleLayerInterstitium(_MouseAnatomyModel):
 
-    name: Literal["ureteral smooth muscle layer interstitium"] = (
-        "ureteral smooth muscle layer interstitium"
-    )
+    name: Literal["ureteral smooth muscle layer interstitium"] = "ureteral smooth muscle layer interstitium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30150"] = "EMAPA_30150"
 
@@ -31989,27 +30399,21 @@ class JuxtaglomerularComplex(_MouseAnatomyModel):
 
 class CoelomicEpitheliumOfMaleMesonephros(_MouseAnatomyModel):
 
-    name: Literal["coelomic epithelium of male mesonephros"] = (
-        "coelomic epithelium of male mesonephros"
-    )
+    name: Literal["coelomic epithelium of male mesonephros"] = "coelomic epithelium of male mesonephros"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30460"] = "EMAPA_30460"
 
 
 class EpitheliumOfPhallicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of phallic urethra of male"] = (
-        "epithelium of phallic urethra of male"
-    )
+    name: Literal["epithelium of phallic urethra of male"] = "epithelium of phallic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30467"] = "EMAPA_30467"
 
 
 class EpitheliumOfPhallicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of phallic urethra of female"] = (
-        "epithelium of phallic urethra of female"
-    )
+    name: Literal["epithelium of phallic urethra of female"] = "epithelium of phallic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30470"] = "EMAPA_30470"
 
@@ -32023,45 +30427,35 @@ class PreputialSwellingOfFemale(_MouseAnatomyModel):
 
 class DistalGenitalTubercleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["distal genital tubercle of female"] = (
-        "distal genital tubercle of female"
-    )
+    name: Literal["distal genital tubercle of female"] = "distal genital tubercle of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30484"] = "EMAPA_30484"
 
 
 class MesenchymeOfDistalGenitalTubercleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of distal genital tubercle of female"] = (
-        "mesenchyme of distal genital tubercle of female"
-    )
+    name: Literal["mesenchyme of distal genital tubercle of female"] = "mesenchyme of distal genital tubercle of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30487"] = "EMAPA_30487"
 
 
 class SkinOfDistalGenitalTubercleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["skin of distal genital tubercle of female"] = (
-        "skin of distal genital tubercle of female"
-    )
+    name: Literal["skin of distal genital tubercle of female"] = "skin of distal genital tubercle of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30490"] = "EMAPA_30490"
 
 
 class MesenchymeOfFemalePreputialSwelling(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of female preputial swelling"] = (
-        "mesenchyme of female preputial swelling"
-    )
+    name: Literal["mesenchyme of female preputial swelling"] = "mesenchyme of female preputial swelling"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30493"] = "EMAPA_30493"
 
 
 class SkinOfFemalePreputialSwelling(_MouseAnatomyModel):
 
-    name: Literal["skin of female preputial swelling"] = (
-        "skin of female preputial swelling"
-    )
+    name: Literal["skin of female preputial swelling"] = "skin of female preputial swelling"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30496"] = "EMAPA_30496"
 
@@ -32096,9 +30490,7 @@ class TunicaAlbugineaOfOvary(_MouseAnatomyModel):
 
 class CranialMesonephricTubuleOfMale(_MouseAnatomyModel):
 
-    name: Literal["cranial mesonephric tubule of male"] = (
-        "cranial mesonephric tubule of male"
-    )
+    name: Literal["cranial mesonephric tubule of male"] = "cranial mesonephric tubule of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30528"] = "EMAPA_30528"
 
@@ -32112,54 +30504,42 @@ class MesonephricGlomerulusOfMale(_MouseAnatomyModel):
 
 class RestOfCranialMesonephricTubuleOfMale(_MouseAnatomyModel):
 
-    name: Literal["rest of cranial mesonephric tubule of male"] = (
-        "rest of cranial mesonephric tubule of male"
-    )
+    name: Literal["rest of cranial mesonephric tubule of male"] = "rest of cranial mesonephric tubule of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30536"] = "EMAPA_30536"
 
 
 class CaudalMesonephricTubuleOfMale(_MouseAnatomyModel):
 
-    name: Literal["caudal mesonephric tubule of male"] = (
-        "caudal mesonephric tubule of male"
-    )
+    name: Literal["caudal mesonephric tubule of male"] = "caudal mesonephric tubule of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30540"] = "EMAPA_30540"
 
 
 class CranialMesonephricTubuleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["cranial mesonephric tubule of female"] = (
-        "cranial mesonephric tubule of female"
-    )
+    name: Literal["cranial mesonephric tubule of female"] = "cranial mesonephric tubule of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30544"] = "EMAPA_30544"
 
 
 class MesonephricGlomerulusOfFemale(_MouseAnatomyModel):
 
-    name: Literal["mesonephric glomerulus of female"] = (
-        "mesonephric glomerulus of female"
-    )
+    name: Literal["mesonephric glomerulus of female"] = "mesonephric glomerulus of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30547"] = "EMAPA_30547"
 
 
 class RestOfCranialMesonephricTubuleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["rest of cranial mesonephric tubule of female"] = (
-        "rest of cranial mesonephric tubule of female"
-    )
+    name: Literal["rest of cranial mesonephric tubule of female"] = "rest of cranial mesonephric tubule of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30550"] = "EMAPA_30550"
 
 
 class CaudalMesonephricTubuleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["caudal mesonephric tubule of female"] = (
-        "caudal mesonephric tubule of female"
-    )
+    name: Literal["caudal mesonephric tubule of female"] = "caudal mesonephric tubule of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30553"] = "EMAPA_30553"
 
@@ -32173,9 +30553,7 @@ class CranialMesonephricTubule(_MouseAnatomyModel):
 
 class RestOfCranialMesonephricTubule(_MouseAnatomyModel):
 
-    name: Literal["rest of cranial mesonephric tubule"] = (
-        "rest of cranial mesonephric tubule"
-    )
+    name: Literal["rest of cranial mesonephric tubule"] = "rest of cranial mesonephric tubule"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30565"] = "EMAPA_30565"
 
@@ -32301,9 +30679,7 @@ class MesenchymeOfGlansClitoris(_MouseAnatomyModel):
 
 class SkinOfGlansOfFemaleGenitalTubercle(_MouseAnatomyModel):
 
-    name: Literal["skin of glans of female genital tubercle"] = (
-        "skin of glans of female genital tubercle"
-    )
+    name: Literal["skin of glans of female genital tubercle"] = "skin of glans of female genital tubercle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30720"] = "EMAPA_30720"
 
@@ -32345,9 +30721,7 @@ class OocyteOfTertiaryFollicle(_MouseAnatomyModel):
 
 class FollicleCellOfTertiaryFollicle(_MouseAnatomyModel):
 
-    name: Literal["follicle cell of tertiary follicle"] = (
-        "follicle cell of tertiary follicle"
-    )
+    name: Literal["follicle cell of tertiary follicle"] = "follicle cell of tertiary follicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30767"] = "EMAPA_30767"
 
@@ -32396,9 +30770,7 @@ class OocyteOfMatureFollicle(_MouseAnatomyModel):
 
 class GerminalCellOfMatureFollicle(_MouseAnatomyModel):
 
-    name: Literal["germinal cell of mature follicle"] = (
-        "germinal cell of mature follicle"
-    )
+    name: Literal["germinal cell of mature follicle"] = "germinal cell of mature follicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30781"] = "EMAPA_30781"
 
@@ -32468,9 +30840,7 @@ class VasculatureOfEjaculatoryDuct(_MouseAnatomyModel):
 
 class VasculatureOfBulbourethralGlandOfMale(_MouseAnatomyModel):
 
-    name: Literal["vasculature of bulbourethral gland of male"] = (
-        "vasculature of bulbourethral gland of male"
-    )
+    name: Literal["vasculature of bulbourethral gland of male"] = "vasculature of bulbourethral gland of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30801"] = "EMAPA_30801"
 
@@ -32540,9 +30910,7 @@ class EpitheliumOfBodyOfClitoris(_MouseAnatomyModel):
 
 class LaminaPropriaOfBodyOfClitoris(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of body of clitoris"] = (
-        "lamina propria of body of clitoris"
-    )
+    name: Literal["lamina propria of body of clitoris"] = "lamina propria of body of clitoris"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30827"] = "EMAPA_30827"
 
@@ -32563,9 +30931,7 @@ class EpitheliumOfGlansClitoris(_MouseAnatomyModel):
 
 class LaminaPropriaOfGlansClitoris(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of glans clitoris"] = (
-        "lamina propria of glans clitoris"
-    )
+    name: Literal["lamina propria of glans clitoris"] = "lamina propria of glans clitoris"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30833"] = "EMAPA_30833"
 
@@ -32635,9 +31001,7 @@ class UrotheliumOfPrimitiveBladder(_MouseAnatomyModel):
 
 class MesenchymalLayerOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of primitive bladder"] = (
-        "mesenchymal layer of primitive bladder"
-    )
+    name: Literal["mesenchymal layer of primitive bladder"] = "mesenchymal layer of primitive bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30876"] = "EMAPA_30876"
 
@@ -32651,18 +31015,14 @@ class CaudalUrogenitalSinus(_MouseAnatomyModel):
 
 class CaudalUrogenitalSinusEpithelium(_MouseAnatomyModel):
 
-    name: Literal["caudal urogenital sinus epithelium"] = (
-        "caudal urogenital sinus epithelium"
-    )
+    name: Literal["caudal urogenital sinus epithelium"] = "caudal urogenital sinus epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30882"] = "EMAPA_30882"
 
 
 class CaudalUrogenitalSinusMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["caudal urogenital sinus mesenchyme"] = (
-        "caudal urogenital sinus mesenchyme"
-    )
+    name: Literal["caudal urogenital sinus mesenchyme"] = "caudal urogenital sinus mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30885"] = "EMAPA_30885"
 
@@ -32697,9 +31057,7 @@ class EpitheliumOfPelvicUrethra(_MouseAnatomyModel):
 
 class MesenchymalLayerOfPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of pelvic urethra"] = (
-        "mesenchymal layer of pelvic urethra"
-    )
+    name: Literal["mesenchymal layer of pelvic urethra"] = "mesenchymal layer of pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30907"] = "EMAPA_30907"
 
@@ -32720,9 +31078,7 @@ class PhallicUrethra(_MouseAnatomyModel):
 
 class UrethralPlateOfPhallicUrethra(_MouseAnatomyModel):
 
-    name: Literal["urethral plate of phallic urethra"] = (
-        "urethral plate of phallic urethra"
-    )
+    name: Literal["urethral plate of phallic urethra"] = "urethral plate of phallic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30913"] = "EMAPA_30913"
 
@@ -32736,9 +31092,7 @@ class ClitoralUrethra(_MouseAnatomyModel):
 
 class UrethralPlateEpitheliumOfClitoralUrethra(_MouseAnatomyModel):
 
-    name: Literal["urethral plate epithelium of clitoral urethra"] = (
-        "urethral plate epithelium of clitoral urethra"
-    )
+    name: Literal["urethral plate epithelium of clitoral urethra"] = "urethral plate epithelium of clitoral urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30924"] = "EMAPA_30924"
 
@@ -32759,18 +31113,14 @@ class EpitheliumOfClitoralUrethra(_MouseAnatomyModel):
 
 class MesenchymalLayerOfPhallicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of phallic urethra of female"] = (
-        "mesenchymal layer of phallic urethra of female"
-    )
+    name: Literal["mesenchymal layer of phallic urethra of female"] = "mesenchymal layer of phallic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30934"] = "EMAPA_30934"
 
 
 class MuscleLayerOfPhallicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of phallic urethra of female"] = (
-        "muscle layer of phallic urethra of female"
-    )
+    name: Literal["muscle layer of phallic urethra of female"] = "muscle layer of phallic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30938"] = "EMAPA_30938"
 
@@ -32798,9 +31148,7 @@ class EpitheliumOfPenileUrethra(_MouseAnatomyModel):
 
 class MesenchymalLayerOfPenileUrethra(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of penile urethra"] = (
-        "mesenchymal layer of penile urethra"
-    )
+    name: Literal["mesenchymal layer of penile urethra"] = "mesenchymal layer of penile urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30948"] = "EMAPA_30948"
 
@@ -32821,18 +31169,14 @@ class EpitheliumOfProstaticUrethra(_MouseAnatomyModel):
 
 class MesenchymalLayerOfProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of prostatic urethra"] = (
-        "mesenchymal layer of prostatic urethra"
-    )
+    name: Literal["mesenchymal layer of prostatic urethra"] = "mesenchymal layer of prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30954"] = "EMAPA_30954"
 
 
 class MuscleLayerOfProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of prostatic urethra"] = (
-        "muscle layer of prostatic urethra"
-    )
+    name: Literal["muscle layer of prostatic urethra"] = "muscle layer of prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_30956"] = "EMAPA_30956"
 
@@ -32883,9 +31227,7 @@ class AdventitiaOfVagina(_MouseAnatomyModel):
 
 class StraightLimbOfImmatureLoopOfHenle(_MouseAnatomyModel):
 
-    name: Literal["straight limb of immature loop of Henle"] = (
-        "straight limb of immature loop of Henle"
-    )
+    name: Literal["straight limb of immature loop of Henle"] = "straight limb of immature loop of Henle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31017"] = "EMAPA_31017"
 
@@ -32994,45 +31336,35 @@ class Somite(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfCaudaEpididymis(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of cauda epididymis"] = (
-        "developing vasculature of cauda epididymis"
-    )
+    name: Literal["developing vasculature of cauda epididymis"] = "developing vasculature of cauda epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31194"] = "EMAPA_31194"
 
 
 class DevelopingVasculatureOfCorpusEpididymis(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of corpus epididymis"] = (
-        "developing vasculature of corpus epididymis"
-    )
+    name: Literal["developing vasculature of corpus epididymis"] = "developing vasculature of corpus epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31199"] = "EMAPA_31199"
 
 
 class DevelopingVasculatureOfCaputEpididymis(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of caput epididymis"] = (
-        "developing vasculature of caput epididymis"
-    )
+    name: Literal["developing vasculature of caput epididymis"] = "developing vasculature of caput epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31204"] = "EMAPA_31204"
 
 
 class DevelopingVasculatureOfUterineHorn(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of uterine horn"] = (
-        "developing vasculature of uterine horn"
-    )
+    name: Literal["developing vasculature of uterine horn"] = "developing vasculature of uterine horn"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31209"] = "EMAPA_31209"
 
 
 class DevelopingVasculatureOfOviduct(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of oviduct"] = (
-        "developing vasculature of oviduct"
-    )
+    name: Literal["developing vasculature of oviduct"] = "developing vasculature of oviduct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31214"] = "EMAPA_31214"
 
@@ -33053,18 +31385,14 @@ class VasculatureOfSinovaginalBulb(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfVagina(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of vagina"] = (
-        "developing vasculature of vagina"
-    )
+    name: Literal["developing vasculature of vagina"] = "developing vasculature of vagina"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31229"] = "EMAPA_31229"
 
 
 class DevelopingVasculatureSystemOfEpididymis(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature system of epididymis"] = (
-        "developing vasculature system of epididymis"
-    )
+    name: Literal["developing vasculature system of epididymis"] = "developing vasculature system of epididymis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31235"] = "EMAPA_31235"
 
@@ -33078,9 +31406,7 @@ class SurfaceEpitheliumOfTestis(_MouseAnatomyModel):
 
 class FollicleCellOfPrimordialFollicle(_MouseAnatomyModel):
 
-    name: Literal["follicle cell of primordial follicle"] = (
-        "follicle cell of primordial follicle"
-    )
+    name: Literal["follicle cell of primordial follicle"] = "follicle cell of primordial follicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31247"] = "EMAPA_31247"
 
@@ -33115,18 +31441,14 @@ class MuscleLayerOfInfundibulum(_MouseAnatomyModel):
 
 class LongitudinalMuscleLayerOfInfundibulum(_MouseAnatomyModel):
 
-    name: Literal["longitudinal muscle layer of infundibulum"] = (
-        "longitudinal muscle layer of infundibulum"
-    )
+    name: Literal["longitudinal muscle layer of infundibulum"] = "longitudinal muscle layer of infundibulum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31266"] = "EMAPA_31266"
 
 
 class CircularMuscleLayerOfInfundibulum(_MouseAnatomyModel):
 
-    name: Literal["circular muscle layer of infundibulum"] = (
-        "circular muscle layer of infundibulum"
-    )
+    name: Literal["circular muscle layer of infundibulum"] = "circular muscle layer of infundibulum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31268"] = "EMAPA_31268"
 
@@ -33170,18 +31492,14 @@ class RenalCorticalFibroblasts(_MouseAnatomyModel):
 
 class ResidentMacrophageOfTheCortex(_MouseAnatomyModel):
 
-    name: Literal["resident macrophage of the cortex"] = (
-        "resident macrophage of the cortex"
-    )
+    name: Literal["resident macrophage of the cortex"] = "resident macrophage of the cortex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31296"] = "EMAPA_31296"
 
 
 class RestOfRenalCorticalInterstitium(_MouseAnatomyModel):
 
-    name: Literal["rest of renal cortical interstitium"] = (
-        "rest of renal cortical interstitium"
-    )
+    name: Literal["rest of renal cortical interstitium"] = "rest of renal cortical interstitium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31304"] = "EMAPA_31304"
 
@@ -33209,18 +31527,14 @@ class RenalMedullaryFibroblasts(_MouseAnatomyModel):
 
 class ResidentMacrophageOfTheMedulla(_MouseAnatomyModel):
 
-    name: Literal["resident macrophage of the medulla"] = (
-        "resident macrophage of the medulla"
-    )
+    name: Literal["resident macrophage of the medulla"] = "resident macrophage of the medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31333"] = "EMAPA_31333"
 
 
 class RestOfRenalMedullaryInterstitium(_MouseAnatomyModel):
 
-    name: Literal["rest of renal medullary interstitium"] = (
-        "rest of renal medullary interstitium"
-    )
+    name: Literal["rest of renal medullary interstitium"] = "rest of renal medullary interstitium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31340"] = "EMAPA_31340"
 
@@ -33280,18 +31594,14 @@ class OuterMedullaryFibroblast(_MouseAnatomyModel):
 
 class ResidentMacrophageOfTheOuterMedulla(_MouseAnatomyModel):
 
-    name: Literal["resident macrophage of the outer medulla"] = (
-        "resident macrophage of the outer medulla"
-    )
+    name: Literal["resident macrophage of the outer medulla"] = "resident macrophage of the outer medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31389"] = "EMAPA_31389"
 
 
 class RestOfOuterMedullaryInterstitium(_MouseAnatomyModel):
 
-    name: Literal["rest of outer medullary interstitium"] = (
-        "rest of outer medullary interstitium"
-    )
+    name: Literal["rest of outer medullary interstitium"] = "rest of outer medullary interstitium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31394"] = "EMAPA_31394"
 
@@ -33305,18 +31615,14 @@ class InnerMedullaryFibroblast(_MouseAnatomyModel):
 
 class ResidentMacrophageOfTheInnerMedulla(_MouseAnatomyModel):
 
-    name: Literal["resident macrophage of the inner medulla"] = (
-        "resident macrophage of the inner medulla"
-    )
+    name: Literal["resident macrophage of the inner medulla"] = "resident macrophage of the inner medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31404"] = "EMAPA_31404"
 
 
 class RestOfInnerMedullaryInterstitium(_MouseAnatomyModel):
 
-    name: Literal["rest of inner medullary interstitium"] = (
-        "rest of inner medullary interstitium"
-    )
+    name: Literal["rest of inner medullary interstitium"] = "rest of inner medullary interstitium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31409"] = "EMAPA_31409"
 
@@ -33337,54 +31643,42 @@ class RestOfMedullaryRenalTubule(_MouseAnatomyModel):
 
 class PeritubularFibroblastsOfCortex(_MouseAnatomyModel):
 
-    name: Literal["peritubular fibroblasts of cortex"] = (
-        "peritubular fibroblasts of cortex"
-    )
+    name: Literal["peritubular fibroblasts of cortex"] = "peritubular fibroblasts of cortex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31424"] = "EMAPA_31424"
 
 
 class PeriarterialFibroblastsOfCortex(_MouseAnatomyModel):
 
-    name: Literal["periarterial fibroblasts of cortex"] = (
-        "periarterial fibroblasts of cortex"
-    )
+    name: Literal["periarterial fibroblasts of cortex"] = "periarterial fibroblasts of cortex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31426"] = "EMAPA_31426"
 
 
 class PeritubularFibroblastsOfOuterMedulla(_MouseAnatomyModel):
 
-    name: Literal["peritubular fibroblasts of outer medulla"] = (
-        "peritubular fibroblasts of outer medulla"
-    )
+    name: Literal["peritubular fibroblasts of outer medulla"] = "peritubular fibroblasts of outer medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31428"] = "EMAPA_31428"
 
 
 class PeriarterialFibroblastsOfOuterMedulla(_MouseAnatomyModel):
 
-    name: Literal["periarterial fibroblasts of outer medulla"] = (
-        "periarterial fibroblasts of outer medulla"
-    )
+    name: Literal["periarterial fibroblasts of outer medulla"] = "periarterial fibroblasts of outer medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31430"] = "EMAPA_31430"
 
 
 class PeritubularFibroblastsOfInnerMedulla(_MouseAnatomyModel):
 
-    name: Literal["peritubular fibroblasts of inner medulla"] = (
-        "peritubular fibroblasts of inner medulla"
-    )
+    name: Literal["peritubular fibroblasts of inner medulla"] = "peritubular fibroblasts of inner medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31432"] = "EMAPA_31432"
 
 
 class PeriarterialFibroblastsOfInnerMedulla(_MouseAnatomyModel):
 
-    name: Literal["periarterial fibroblasts of inner medulla"] = (
-        "periarterial fibroblasts of inner medulla"
-    )
+    name: Literal["periarterial fibroblasts of inner medulla"] = "periarterial fibroblasts of inner medulla"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31434"] = "EMAPA_31434"
 
@@ -33468,18 +31762,14 @@ class MesenchymeOfUrogenitalSinus(_MouseAnatomyModel):
 
 class MesenchymeOfProximalGenitalTubercleOfMale(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of proximal genital tubercle of male"] = (
-        "mesenchyme of proximal genital tubercle of male"
-    )
+    name: Literal["mesenchyme of proximal genital tubercle of male"] = "mesenchyme of proximal genital tubercle of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31501"] = "EMAPA_31501"
 
 
 class SkinOfProximalGenitalTubercleOfMale(_MouseAnatomyModel):
 
-    name: Literal["skin of proximal genital tubercle of male"] = (
-        "skin of proximal genital tubercle of male"
-    )
+    name: Literal["skin of proximal genital tubercle of male"] = "skin of proximal genital tubercle of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31502"] = "EMAPA_31502"
 
@@ -33495,45 +31785,35 @@ class DevelopingVasculatureOfFemaleGenitalTubercle(_MouseAnatomyModel):
 
 class ProximalGenitalTubercleOfMale(_MouseAnatomyModel):
 
-    name: Literal["proximal genital tubercle of male"] = (
-        "proximal genital tubercle of male"
-    )
+    name: Literal["proximal genital tubercle of male"] = "proximal genital tubercle of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31504"] = "EMAPA_31504"
 
 
 class ProximalUrethralMeatusOfMale(_MouseAnatomyModel):
 
-    name: Literal["proximal urethral meatus of male"] = (
-        "proximal urethral meatus of male"
-    )
+    name: Literal["proximal urethral meatus of male"] = "proximal urethral meatus of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31505"] = "EMAPA_31505"
 
 
 class ProximalGenitalTubercleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["proximal genital tubercle of female"] = (
-        "proximal genital tubercle of female"
-    )
+    name: Literal["proximal genital tubercle of female"] = "proximal genital tubercle of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31506"] = "EMAPA_31506"
 
 
 class UrethralPlateEpitheliumOfMale(_MouseAnatomyModel):
 
-    name: Literal["urethral plate epithelium of male"] = (
-        "urethral plate epithelium of male"
-    )
+    name: Literal["urethral plate epithelium of male"] = "urethral plate epithelium of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31507"] = "EMAPA_31507"
 
 
 class UrethralTubeEpitheliumOfMale(_MouseAnatomyModel):
 
-    name: Literal["urethral tube epithelium of male"] = (
-        "urethral tube epithelium of male"
-    )
+    name: Literal["urethral tube epithelium of male"] = "urethral tube epithelium of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31508"] = "EMAPA_31508"
 
@@ -33547,45 +31827,35 @@ class EpitheliumOfUrogenitalSinus(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfMaleGenitalTubercle(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of male genital tubercle"] = (
-        "developing vasculature of male genital tubercle"
-    )
+    name: Literal["developing vasculature of male genital tubercle"] = "developing vasculature of male genital tubercle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31510"] = "EMAPA_31510"
 
 
 class EarlyDistalTubuleOfCapillaryLoopNephron(_MouseAnatomyModel):
 
-    name: Literal["early distal tubule of capillary loop nephron"] = (
-        "early distal tubule of capillary loop nephron"
-    )
+    name: Literal["early distal tubule of capillary loop nephron"] = "early distal tubule of capillary loop nephron"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31511"] = "EMAPA_31511"
 
 
 class EarlyDistalTubuleOfMaturingNephron(_MouseAnatomyModel):
 
-    name: Literal["early distal tubule of maturing nephron"] = (
-        "early distal tubule of maturing nephron"
-    )
+    name: Literal["early distal tubule of maturing nephron"] = "early distal tubule of maturing nephron"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31513"] = "EMAPA_31513"
 
 
 class RenalConnectingTubuleOfMaturingNephron(_MouseAnatomyModel):
 
-    name: Literal["renal connecting tubule of maturing nephron"] = (
-        "renal connecting tubule of maturing nephron"
-    )
+    name: Literal["renal connecting tubule of maturing nephron"] = "renal connecting tubule of maturing nephron"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31516"] = "EMAPA_31516"
 
 
 class RenalConnectingTubuleOfMatureNephron(_MouseAnatomyModel):
 
-    name: Literal["renal connecting tubule of mature nephron"] = (
-        "renal connecting tubule of mature nephron"
-    )
+    name: Literal["renal connecting tubule of mature nephron"] = "renal connecting tubule of mature nephron"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31517"] = "EMAPA_31517"
 
@@ -33613,9 +31883,7 @@ class NerveOfPhallicUrethra(_MouseAnatomyModel):
 
 class MesenchymalLayerOfVentralPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of ventral primitive bladder"] = (
-        "mesenchymal layer of ventral primitive bladder"
-    )
+    name: Literal["mesenchymal layer of ventral primitive bladder"] = "mesenchymal layer of ventral primitive bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31525"] = "EMAPA_31525"
 
@@ -33643,36 +31911,28 @@ class NerveOfUrogenitalSinus(_MouseAnatomyModel):
 
 class MesenchymalLayerOfDorsalPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of dorsal primitive bladder"] = (
-        "mesenchymal layer of dorsal primitive bladder"
-    )
+    name: Literal["mesenchymal layer of dorsal primitive bladder"] = "mesenchymal layer of dorsal primitive bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31529"] = "EMAPA_31529"
 
 
 class UrethralTubeEpitheliumOfFemale(_MouseAnatomyModel):
 
-    name: Literal["urethral tube epithelium of female"] = (
-        "urethral tube epithelium of female"
-    )
+    name: Literal["urethral tube epithelium of female"] = "urethral tube epithelium of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31530"] = "EMAPA_31530"
 
 
 class ProximalUrethralMeatusOfFemale(_MouseAnatomyModel):
 
-    name: Literal["proximal urethral meatus of female"] = (
-        "proximal urethral meatus of female"
-    )
+    name: Literal["proximal urethral meatus of female"] = "proximal urethral meatus of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31531"] = "EMAPA_31531"
 
 
 class DevelopingVasculatureOfUrogenitalSinus(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of urogenital sinus"] = (
-        "developing vasculature of urogenital sinus"
-    )
+    name: Literal["developing vasculature of urogenital sinus"] = "developing vasculature of urogenital sinus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31532"] = "EMAPA_31532"
 
@@ -33695,81 +31955,63 @@ class MesenchymeOfProximalGenitalTubercleOfFemale(_MouseAnatomyModel):
 
 class SkinOfProximalGenitalTubercleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["skin of proximal genital tubercle of female"] = (
-        "skin of proximal genital tubercle of female"
-    )
+    name: Literal["skin of proximal genital tubercle of female"] = "skin of proximal genital tubercle of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31535"] = "EMAPA_31535"
 
 
 class UrethralPlateEpitheliumOfFemale(_MouseAnatomyModel):
 
-    name: Literal["urethral plate epithelium of female"] = (
-        "urethral plate epithelium of female"
-    )
+    name: Literal["urethral plate epithelium of female"] = "urethral plate epithelium of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31536"] = "EMAPA_31536"
 
 
 class DevelopingVasculatureOfMaleMesonephros(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of male mesonephros"] = (
-        "developing vasculature of male mesonephros"
-    )
+    name: Literal["developing vasculature of male mesonephros"] = "developing vasculature of male mesonephros"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31537"] = "EMAPA_31537"
 
 
 class DevelopingVasculatureOfFemaleMesonephros(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of female mesonephros"] = (
-        "developing vasculature of female mesonephros"
-    )
+    name: Literal["developing vasculature of female mesonephros"] = "developing vasculature of female mesonephros"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31538"] = "EMAPA_31538"
 
 
 class DevelopingVasculatureOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of primitive bladder"] = (
-        "developing vasculature of primitive bladder"
-    )
+    name: Literal["developing vasculature of primitive bladder"] = "developing vasculature of primitive bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31539"] = "EMAPA_31539"
 
 
 class RenalConnectingSegmentOfRenalVesicle(_MouseAnatomyModel):
 
-    name: Literal["renal connecting segment of renal vesicle"] = (
-        "renal connecting segment of renal vesicle"
-    )
+    name: Literal["renal connecting segment of renal vesicle"] = "renal connecting segment of renal vesicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31541"] = "EMAPA_31541"
 
 
 class EarlyProximalTubuleOfMaturingNephron(_MouseAnatomyModel):
 
-    name: Literal["early proximal tubule of maturing nephron"] = (
-        "early proximal tubule of maturing nephron"
-    )
+    name: Literal["early proximal tubule of maturing nephron"] = "early proximal tubule of maturing nephron"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31542"] = "EMAPA_31542"
 
 
 class EarlyProximalTubuleOfCapillaryLoopNephron(_MouseAnatomyModel):
 
-    name: Literal["early proximal tubule of capillary loop nephron"] = (
-        "early proximal tubule of capillary loop nephron"
-    )
+    name: Literal["early proximal tubule of capillary loop nephron"] = "early proximal tubule of capillary loop nephron"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31544"] = "EMAPA_31544"
 
 
 class RenalConnectingSegmentOfCommaShapedBody(_MouseAnatomyModel):
 
-    name: Literal["renal connecting segment of comma-shaped body"] = (
-        "renal connecting segment of comma-shaped body"
-    )
+    name: Literal["renal connecting segment of comma-shaped body"] = "renal connecting segment of comma-shaped body"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31546"] = "EMAPA_31546"
 
@@ -33819,18 +32061,14 @@ class MesenchymalLayerOfDorsalPelvicUrethraOfFemale(_MouseAnatomyModel):
 
 class MuscleLayerOfVentralPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of ventral pelvic urethra of male"] = (
-        "muscle layer of ventral pelvic urethra of male"
-    )
+    name: Literal["muscle layer of ventral pelvic urethra of male"] = "muscle layer of ventral pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31555"] = "EMAPA_31555"
 
 
 class MuscleLayerOfDorsalPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of dorsal pelvic urethra of male"] = (
-        "muscle layer of dorsal pelvic urethra of male"
-    )
+    name: Literal["muscle layer of dorsal pelvic urethra of male"] = "muscle layer of dorsal pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31556"] = "EMAPA_31556"
 
@@ -33846,9 +32084,7 @@ class MuscleLayerOfVentralPelvicUrethraOfFemale(_MouseAnatomyModel):
 
 class MuscleLayerOfDorsalPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of dorsal pelvic urethra of female"] = (
-        "muscle layer of dorsal pelvic urethra of female"
-    )
+    name: Literal["muscle layer of dorsal pelvic urethra of female"] = "muscle layer of dorsal pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31560"] = "EMAPA_31560"
 
@@ -33862,18 +32098,14 @@ class NerveOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class CorticalRenalTubuleOfMatureNephronGroup(_MouseAnatomyModel):
 
-    name: Literal["cortical renal tubule of mature nephron group"] = (
-        "cortical renal tubule of mature nephron group"
-    )
+    name: Literal["cortical renal tubule of mature nephron group"] = "cortical renal tubule of mature nephron group"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31566"] = "EMAPA_31566"
 
 
 class NerveOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["nerve of pelvic urethra of female"] = (
-        "nerve of pelvic urethra of female"
-    )
+    name: Literal["nerve of pelvic urethra of female"] = "nerve of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31567"] = "EMAPA_31567"
 
@@ -33887,9 +32119,7 @@ class NerveOfUrethra(_MouseAnatomyModel):
 
 class CorticalRenalTubuleOfMaturingNephronGroup(_MouseAnatomyModel):
 
-    name: Literal["cortical renal tubule of maturing nephron group"] = (
-        "cortical renal tubule of maturing nephron group"
-    )
+    name: Literal["cortical renal tubule of maturing nephron group"] = "cortical renal tubule of maturing nephron group"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31570"] = "EMAPA_31570"
 
@@ -33905,63 +32135,49 @@ class CorticalRenalTubuleOfCapillaryLoopNephronGroup(_MouseAnatomyModel):
 
 class MesenchymalLayerOfVentralPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of ventral pelvic urethra"] = (
-        "mesenchymal layer of ventral pelvic urethra"
-    )
+    name: Literal["mesenchymal layer of ventral pelvic urethra"] = "mesenchymal layer of ventral pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31574"] = "EMAPA_31574"
 
 
 class MesenchymalLayerOfDorsalPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal layer of dorsal pelvic urethra"] = (
-        "mesenchymal layer of dorsal pelvic urethra"
-    )
+    name: Literal["mesenchymal layer of dorsal pelvic urethra"] = "mesenchymal layer of dorsal pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31575"] = "EMAPA_31575"
 
 
 class MuscleLayerOfVentralPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of ventral pelvic urethra"] = (
-        "muscle layer of ventral pelvic urethra"
-    )
+    name: Literal["muscle layer of ventral pelvic urethra"] = "muscle layer of ventral pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31576"] = "EMAPA_31576"
 
 
 class MuscleLayerOfDorsalPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of dorsal pelvic urethra"] = (
-        "muscle layer of dorsal pelvic urethra"
-    )
+    name: Literal["muscle layer of dorsal pelvic urethra"] = "muscle layer of dorsal pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31577"] = "EMAPA_31577"
 
 
 class DevelopingVasculatureOfGenitourinarySystem(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of genitourinary system"] = (
-        "developing vasculature of genitourinary system"
-    )
+    name: Literal["developing vasculature of genitourinary system"] = "developing vasculature of genitourinary system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31578"] = "EMAPA_31578"
 
 
 class DevelopingVasculatureOfUrinarySystem(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of urinary system"] = (
-        "developing vasculature of urinary system"
-    )
+    name: Literal["developing vasculature of urinary system"] = "developing vasculature of urinary system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31579"] = "EMAPA_31579"
 
 
 class DevelopingVasculatureOfReproductiveSystem(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of reproductive system"] = (
-        "developing vasculature of reproductive system"
-    )
+    name: Literal["developing vasculature of reproductive system"] = "developing vasculature of reproductive system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31580"] = "EMAPA_31580"
 
@@ -34087,9 +32303,7 @@ class ChorioallantoicPlacenta(_MouseAnatomyModel):
 
 class SecondaryTrophoblastGiantCell(_MouseAnatomyModel):
 
-    name: Literal["secondary trophoblast giant cell"] = (
-        "secondary trophoblast giant cell"
-    )
+    name: Literal["secondary trophoblast giant cell"] = "secondary trophoblast giant cell"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_31875"] = "EMAPA_31875"
 
@@ -34117,18 +32331,14 @@ class LabyrinthineZone(_MouseAnatomyModel):
 
 class EpitheliumOfVentralPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of ventral pelvic urethra of male"] = (
-        "epithelium of ventral pelvic urethra of male"
-    )
+    name: Literal["epithelium of ventral pelvic urethra of male"] = "epithelium of ventral pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32258"] = "EMAPA_32258"
 
 
 class LaminaPropriaOfSinovaginalBulb(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of sinovaginal bulb"] = (
-        "lamina propria of sinovaginal bulb"
-    )
+    name: Literal["lamina propria of sinovaginal bulb"] = "lamina propria of sinovaginal bulb"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32259"] = "EMAPA_32259"
 
@@ -34153,9 +32363,7 @@ class BasalCellLayerOfVentralPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class VasculatureOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["vasculature of pelvic urethra of male"] = (
-        "vasculature of pelvic urethra of male"
-    )
+    name: Literal["vasculature of pelvic urethra of male"] = "vasculature of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32262"] = "EMAPA_32262"
 
@@ -34171,18 +32379,14 @@ class SuperficialCellLayerOfDorsalPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class EpitheliumOfDorsalPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of dorsal pelvic urethra of female"] = (
-        "epithelium of dorsal pelvic urethra of female"
-    )
+    name: Literal["epithelium of dorsal pelvic urethra of female"] = "epithelium of dorsal pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32264"] = "EMAPA_32264"
 
 
 class VasculatureOfProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["vasculature of prostatic urethra"] = (
-        "vasculature of prostatic urethra"
-    )
+    name: Literal["vasculature of prostatic urethra"] = "vasculature of prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32265"] = "EMAPA_32265"
 
@@ -34207,9 +32411,7 @@ class BasalCellLayerOfDorsalPelvicUrethraOfFemale(_MouseAnatomyModel):
 
 class SuperficialCellLayerOfProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["superficial cell layer of prostatic urethra"] = (
-        "superficial cell layer of prostatic urethra"
-    )
+    name: Literal["superficial cell layer of prostatic urethra"] = "superficial cell layer of prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32268"] = "EMAPA_32268"
 
@@ -34223,18 +32425,14 @@ class RhabdosphincterOfMale(_MouseAnatomyModel):
 
 class LaminaPropriaOfEjaculatoryDuct(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of ejaculatory duct"] = (
-        "lamina propria of ejaculatory duct"
-    )
+    name: Literal["lamina propria of ejaculatory duct"] = "lamina propria of ejaculatory duct"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32270"] = "EMAPA_32270"
 
 
 class BasalCellLayerOfProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["basal cell layer of prostatic urethra"] = (
-        "basal cell layer of prostatic urethra"
-    )
+    name: Literal["basal cell layer of prostatic urethra"] = "basal cell layer of prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32271"] = "EMAPA_32271"
 
@@ -34248,18 +32446,14 @@ class LaminaPropriaOfUpperVagina(_MouseAnatomyModel):
 
 class SuperficialCellLayerOfBladderUrothelium(_MouseAnatomyModel):
 
-    name: Literal["superficial cell layer of bladder urothelium"] = (
-        "superficial cell layer of bladder urothelium"
-    )
+    name: Literal["superficial cell layer of bladder urothelium"] = "superficial cell layer of bladder urothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32273"] = "EMAPA_32273"
 
 
 class BasalCellLayerOfBladderUrothelium(_MouseAnatomyModel):
 
-    name: Literal["basal cell layer of bladder urothelium"] = (
-        "basal cell layer of bladder urothelium"
-    )
+    name: Literal["basal cell layer of bladder urothelium"] = "basal cell layer of bladder urothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32274"] = "EMAPA_32274"
 
@@ -34287,9 +32481,7 @@ class SubmucosaOfFundus(_MouseAnatomyModel):
 
 class SmoothMuscleLayerOfProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["smooth muscle layer of prostatic urethra"] = (
-        "smooth muscle layer of prostatic urethra"
-    )
+    name: Literal["smooth muscle layer of prostatic urethra"] = "smooth muscle layer of prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32278"] = "EMAPA_32278"
 
@@ -34303,9 +32495,7 @@ class NerveOfProstaticUrethra(_MouseAnatomyModel):
 
 class MesenchymalPadOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal pad of pelvic urethra of male"] = (
-        "mesenchymal pad of pelvic urethra of male"
-    )
+    name: Literal["mesenchymal pad of pelvic urethra of male"] = "mesenchymal pad of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32280"] = "EMAPA_32280"
 
@@ -34319,18 +32509,14 @@ class PeriProstaticMesenchyme(_MouseAnatomyModel):
 
 class EpitheliumOfVentralPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of ventral pelvic urethra of female"] = (
-        "epithelium of ventral pelvic urethra of female"
-    )
+    name: Literal["epithelium of ventral pelvic urethra of female"] = "epithelium of ventral pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32282"] = "EMAPA_32282"
 
 
 class VasculatureOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["vasculature of pelvic urethra of female"] = (
-        "vasculature of pelvic urethra of female"
-    )
+    name: Literal["vasculature of pelvic urethra of female"] = "vasculature of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32283"] = "EMAPA_32283"
 
@@ -34362,9 +32548,7 @@ class PresumptiveNeuralCrestDerivativeOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class MesenchymalPadOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["mesenchymal pad of pelvic urethra of female"] = (
-        "mesenchymal pad of pelvic urethra of female"
-    )
+    name: Literal["mesenchymal pad of pelvic urethra of female"] = "mesenchymal pad of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32287"] = "EMAPA_32287"
 
@@ -34405,9 +32589,7 @@ class BasalCellLayerOfVentralPelvicUrethraOfFemale(_MouseAnatomyModel):
 
 class SubmucosaOfDorsalPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["submucosa of dorsal pelvic urethra of male"] = (
-        "submucosa of dorsal pelvic urethra of male"
-    )
+    name: Literal["submucosa of dorsal pelvic urethra of male"] = "submucosa of dorsal pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32293"] = "EMAPA_32293"
 
@@ -34450,27 +32632,21 @@ class MuscularisMucosaOfVentralPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class SubmucosaOfVentralPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["submucosa of ventral pelvic urethra of male"] = (
-        "submucosa of ventral pelvic urethra of male"
-    )
+    name: Literal["submucosa of ventral pelvic urethra of male"] = "submucosa of ventral pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32298"] = "EMAPA_32298"
 
 
 class IntermediateCellLayerOfProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["intermediate cell layer of prostatic urethra"] = (
-        "intermediate cell layer of prostatic urethra"
-    )
+    name: Literal["intermediate cell layer of prostatic urethra"] = "intermediate cell layer of prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32299"] = "EMAPA_32299"
 
 
 class EpitheliumOfDorsalPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of dorsal pelvic urethra of male"] = (
-        "epithelium of dorsal pelvic urethra of male"
-    )
+    name: Literal["epithelium of dorsal pelvic urethra of male"] = "epithelium of dorsal pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32300"] = "EMAPA_32300"
 
@@ -34484,18 +32660,14 @@ class SubmucosaOfProstaticUrethra(_MouseAnatomyModel):
 
 class MuscularisMucosaOfProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["muscularis mucosa of prostatic urethra"] = (
-        "muscularis mucosa of prostatic urethra"
-    )
+    name: Literal["muscularis mucosa of prostatic urethra"] = "muscularis mucosa of prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32302"] = "EMAPA_32302"
 
 
 class LaminaPropriaOfProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of prostatic urethra"] = (
-        "lamina propria of prostatic urethra"
-    )
+    name: Literal["lamina propria of prostatic urethra"] = "lamina propria of prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32303"] = "EMAPA_32303"
 
@@ -34536,9 +32708,7 @@ class IntermediateCellLayerOfDorsalPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class SubmucosaOfVentralPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["submucosa of ventral pelvic urethra of female"] = (
-        "submucosa of ventral pelvic urethra of female"
-    )
+    name: Literal["submucosa of ventral pelvic urethra of female"] = "submucosa of ventral pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32308"] = "EMAPA_32308"
 
@@ -34563,9 +32733,7 @@ class LaminaPropriaOfVentralPelvicUrethraOfFemale(_MouseAnatomyModel):
 
 class LaminaPropriaOfDorsalPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of dorsal pelvic urethra of male"] = (
-        "lamina propria of dorsal pelvic urethra of male"
-    )
+    name: Literal["lamina propria of dorsal pelvic urethra of male"] = "lamina propria of dorsal pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32311"] = "EMAPA_32311"
 
@@ -34581,9 +32749,7 @@ class MuscularisMucosaOfDorsalPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class SubmucosaOfDorsalPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["submucosa of dorsal pelvic urethra of female"] = (
-        "submucosa of dorsal pelvic urethra of female"
-    )
+    name: Literal["submucosa of dorsal pelvic urethra of female"] = "submucosa of dorsal pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32313"] = "EMAPA_32313"
 
@@ -34599,9 +32765,7 @@ class IntermediateCellLayerOfVentralPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class LimbInterdigitalRegionMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["limb interdigital region mesenchyme"] = (
-        "limb interdigital region mesenchyme"
-    )
+    name: Literal["limb interdigital region mesenchyme"] = "limb interdigital region mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32609"] = "EMAPA_32609"
 
@@ -34713,9 +32877,7 @@ class ForelimbMusculature(_MouseAnatomyModel):
 
 class ForelimbPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb pre-cartilage condensation"] = (
-        "forelimb pre-cartilage condensation"
-    )
+    name: Literal["forelimb pre-cartilage condensation"] = "forelimb pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32625"] = "EMAPA_32625"
 
@@ -34806,27 +32968,21 @@ class HindlimbMesenchyme(_MouseAnatomyModel):
 
 class HindlimbPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb pre-cartilage condensation"] = (
-        "hindlimb pre-cartilage condensation"
-    )
+    name: Literal["hindlimb pre-cartilage condensation"] = "hindlimb pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32638"] = "EMAPA_32638"
 
 
 class ForelimbPhalanxPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb phalanx pre-cartilage condensation"] = (
-        "forelimb phalanx pre-cartilage condensation"
-    )
+    name: Literal["forelimb phalanx pre-cartilage condensation"] = "forelimb phalanx pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32639"] = "EMAPA_32639"
 
 
 class ForelimbDigitCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit cartilage condensation"] = (
-        "forelimb digit cartilage condensation"
-    )
+    name: Literal["forelimb digit cartilage condensation"] = "forelimb digit cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32640"] = "EMAPA_32640"
 
@@ -34868,9 +33024,7 @@ class ForelimbDigitMesenchyme(_MouseAnatomyModel):
 
 class ForelimbDigitPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit pre-cartilage condensation"] = (
-        "forelimb digit pre-cartilage condensation"
-    )
+    name: Literal["forelimb digit pre-cartilage condensation"] = "forelimb digit pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32646"] = "EMAPA_32646"
 
@@ -34912,18 +33066,14 @@ class ForelimbInterdigitalRegion(_MouseAnatomyModel):
 
 class ForelimbInterdigitalRegionEpithelium(_MouseAnatomyModel):
 
-    name: Literal["forelimb interdigital region epithelium"] = (
-        "forelimb interdigital region epithelium"
-    )
+    name: Literal["forelimb interdigital region epithelium"] = "forelimb interdigital region epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32652"] = "EMAPA_32652"
 
 
 class ForelimbInterdigitalRegionMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["forelimb interdigital region mesenchyme"] = (
-        "forelimb interdigital region mesenchyme"
-    )
+    name: Literal["forelimb interdigital region mesenchyme"] = "forelimb interdigital region mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32653"] = "EMAPA_32653"
 
@@ -34958,9 +33108,7 @@ class FootCartilageCondensation(_MouseAnatomyModel):
 
 class ForelimbPhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["forelimb phalanx cartilage condensation"] = (
-        "forelimb phalanx cartilage condensation"
-    )
+    name: Literal["forelimb phalanx cartilage condensation"] = "forelimb phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32658"] = "EMAPA_32658"
 
@@ -35037,9 +33185,7 @@ class BrainDuraMater(_MouseAnatomyModel):
 
 class VertebralCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["vertebral cartilage condensation"] = (
-        "vertebral cartilage condensation"
-    )
+    name: Literal["vertebral cartilage condensation"] = "vertebral cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32669"] = "EMAPA_32669"
 
@@ -35053,9 +33199,7 @@ class AnnulusFibrosus(_MouseAnatomyModel):
 
 class VertebralPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["vertebral pre-cartilage condensation"] = (
-        "vertebral pre-cartilage condensation"
-    )
+    name: Literal["vertebral pre-cartilage condensation"] = "vertebral pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32671"] = "EMAPA_32671"
 
@@ -35279,9 +33423,7 @@ class CorticalSubplate(_MouseAnatomyModel):
 
 class CerebralCortexSubventricularZone(_MouseAnatomyModel):
 
-    name: Literal["cerebral cortex subventricular zone"] = (
-        "cerebral cortex subventricular zone"
-    )
+    name: Literal["cerebral cortex subventricular zone"] = "cerebral cortex subventricular zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32704"] = "EMAPA_32704"
 
@@ -35302,9 +33444,7 @@ class LimbPreCartilageCondensation(_MouseAnatomyModel):
 
 class CerebralCortexVentricularZone(_MouseAnatomyModel):
 
-    name: Literal["cerebral cortex ventricular zone"] = (
-        "cerebral cortex ventricular zone"
-    )
+    name: Literal["cerebral cortex ventricular zone"] = "cerebral cortex ventricular zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32707"] = "EMAPA_32707"
 
@@ -35339,9 +33479,7 @@ class CorticalPlate(_MouseAnatomyModel):
 
 class CerebralCortexIntermediateZone(_MouseAnatomyModel):
 
-    name: Literal["cerebral cortex intermediate zone"] = (
-        "cerebral cortex intermediate zone"
-    )
+    name: Literal["cerebral cortex intermediate zone"] = "cerebral cortex intermediate zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32712"] = "EMAPA_32712"
 
@@ -35397,9 +33535,7 @@ class DigitMesenchyme(_MouseAnatomyModel):
 
 class PhalanxPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["phalanx pre-cartilage condensation"] = (
-        "phalanx pre-cartilage condensation"
-    )
+    name: Literal["phalanx pre-cartilage condensation"] = "phalanx pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32720"] = "EMAPA_32720"
 
@@ -35497,9 +33633,7 @@ class ExtraembryonicBloodVessel(_MouseAnatomyModel):
 
 class MesenchymeDerivedFromNeuralCrest(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme derived from neural crest"] = (
-        "mesenchyme derived from neural crest"
-    )
+    name: Literal["mesenchyme derived from neural crest"] = "mesenchyme derived from neural crest"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32735"] = "EMAPA_32735"
 
@@ -35918,9 +34052,7 @@ class HairOuterRootSheath(_MouseAnatomyModel):
 
 class OlfactoryCortexSubventricularZone(_MouseAnatomyModel):
 
-    name: Literal["olfactory cortex subventricular zone"] = (
-        "olfactory cortex subventricular zone"
-    )
+    name: Literal["olfactory cortex subventricular zone"] = "olfactory cortex subventricular zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32794"] = "EMAPA_32794"
 
@@ -35955,9 +34087,7 @@ class TailNeuralTubeFloorPlate(_MouseAnatomyModel):
 
 class ChondrocraniumPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["chondrocranium pre-cartilage condensation"] = (
-        "chondrocranium pre-cartilage condensation"
-    )
+    name: Literal["chondrocranium pre-cartilage condensation"] = "chondrocranium pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32799"] = "EMAPA_32799"
 
@@ -35971,18 +34101,14 @@ class EarEpithelium(_MouseAnatomyModel):
 
 class PharyngoTympanicTubeEpithelium(_MouseAnatomyModel):
 
-    name: Literal["pharyngo-tympanic tube epithelium"] = (
-        "pharyngo-tympanic tube epithelium"
-    )
+    name: Literal["pharyngo-tympanic tube epithelium"] = "pharyngo-tympanic tube epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32801"] = "EMAPA_32801"
 
 
 class ChondrocraniumCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["chondrocranium cartilage condensation"] = (
-        "chondrocranium cartilage condensation"
-    )
+    name: Literal["chondrocranium cartilage condensation"] = "chondrocranium cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32802"] = "EMAPA_32802"
 
@@ -36059,9 +34185,7 @@ class ParasympatheticGanglion(_MouseAnatomyModel):
 
 class PeripheralNervousSystemGanglion(_MouseAnatomyModel):
 
-    name: Literal["peripheral nervous system ganglion"] = (
-        "peripheral nervous system ganglion"
-    )
+    name: Literal["peripheral nervous system ganglion"] = "peripheral nervous system ganglion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32814"] = "EMAPA_32814"
 
@@ -36243,9 +34367,7 @@ class TrunkMyotome(_MouseAnatomyModel):
 
 class MyelencephalonVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["myelencephalon ventricular layer"] = (
-        "myelencephalon ventricular layer"
-    )
+    name: Literal["myelencephalon ventricular layer"] = "myelencephalon ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32844"] = "EMAPA_32844"
 
@@ -36280,36 +34402,28 @@ class MedullaOblongataMantleLayer(_MouseAnatomyModel):
 
 class MetacarpusCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["metacarpus cartilage condensation"] = (
-        "metacarpus cartilage condensation"
-    )
+    name: Literal["metacarpus cartilage condensation"] = "metacarpus cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32849"] = "EMAPA_32849"
 
 
 class MetacarpusPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["metacarpus pre-cartilage condensation"] = (
-        "metacarpus pre-cartilage condensation"
-    )
+    name: Literal["metacarpus pre-cartilage condensation"] = "metacarpus pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32850"] = "EMAPA_32850"
 
 
 class MedullaOblongataVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata ventricular layer"] = (
-        "medulla oblongata ventricular layer"
-    )
+    name: Literal["medulla oblongata ventricular layer"] = "medulla oblongata ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32851"] = "EMAPA_32851"
 
 
 class MedullaOblongataMarginalLayer(_MouseAnatomyModel):
 
-    name: Literal["medulla oblongata marginal layer"] = (
-        "medulla oblongata marginal layer"
-    )
+    name: Literal["medulla oblongata marginal layer"] = "medulla oblongata marginal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32852"] = "EMAPA_32852"
 
@@ -36841,18 +34955,14 @@ class FutureForebrainLateralWall(_MouseAnatomyModel):
 
 class HindlimbDigitPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit pre-cartilage condensation"] = (
-        "hindlimb digit pre-cartilage condensation"
-    )
+    name: Literal["hindlimb digit pre-cartilage condensation"] = "hindlimb digit pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32938"] = "EMAPA_32938"
 
 
 class HindlimbDigitCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit cartilage condensation"] = (
-        "hindlimb digit cartilage condensation"
-    )
+    name: Literal["hindlimb digit cartilage condensation"] = "hindlimb digit cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32939"] = "EMAPA_32939"
 
@@ -36915,9 +35025,7 @@ class HindlimbDigitMesenchyme(_MouseAnatomyModel):
 
 class HindlimbPhalanxCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb phalanx cartilage condensation"] = (
-        "hindlimb phalanx cartilage condensation"
-    )
+    name: Literal["hindlimb phalanx cartilage condensation"] = "hindlimb phalanx cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32948"] = "EMAPA_32948"
 
@@ -36931,18 +35039,14 @@ class FootJoint(_MouseAnatomyModel):
 
 class HindlimbPhalanxPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["hindlimb phalanx pre-cartilage condensation"] = (
-        "hindlimb phalanx pre-cartilage condensation"
-    )
+    name: Literal["hindlimb phalanx pre-cartilage condensation"] = "hindlimb phalanx pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32950"] = "EMAPA_32950"
 
 
 class MetatarsusCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["metatarsus cartilage condensation"] = (
-        "metatarsus cartilage condensation"
-    )
+    name: Literal["metatarsus cartilage condensation"] = "metatarsus cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32951"] = "EMAPA_32951"
 
@@ -36963,27 +35067,21 @@ class DorsalPancreaticDuct(_MouseAnatomyModel):
 
 class HindlimbInterdigitalRegionMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["hindlimb interdigital region mesenchyme"] = (
-        "hindlimb interdigital region mesenchyme"
-    )
+    name: Literal["hindlimb interdigital region mesenchyme"] = "hindlimb interdigital region mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32955"] = "EMAPA_32955"
 
 
 class MetatarsusPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["metatarsus pre-cartilage condensation"] = (
-        "metatarsus pre-cartilage condensation"
-    )
+    name: Literal["metatarsus pre-cartilage condensation"] = "metatarsus pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32956"] = "EMAPA_32956"
 
 
 class HindlimbInterdigitalRegionEpithelium(_MouseAnatomyModel):
 
-    name: Literal["hindlimb interdigital region epithelium"] = (
-        "hindlimb interdigital region epithelium"
-    )
+    name: Literal["hindlimb interdigital region epithelium"] = "hindlimb interdigital region epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_32957"] = "EMAPA_32957"
 
@@ -37018,9 +35116,7 @@ class NerveOfClitoris(_MouseAnatomyModel):
 
 class NerveOfGenitalTubercleOfFemale(_MouseAnatomyModel):
 
-    name: Literal["nerve of genital tubercle of female"] = (
-        "nerve of genital tubercle of female"
-    )
+    name: Literal["nerve of genital tubercle of female"] = "nerve of genital tubercle of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35045"] = "EMAPA_35045"
 
@@ -37090,18 +35186,14 @@ class NerveOfEjaculatoryDuct(_MouseAnatomyModel):
 
 class NerveOfBulbourethralGlandOfMale(_MouseAnatomyModel):
 
-    name: Literal["nerve of bulbourethral gland of male"] = (
-        "nerve of bulbourethral gland of male"
-    )
+    name: Literal["nerve of bulbourethral gland of male"] = "nerve of bulbourethral gland of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35055"] = "EMAPA_35055"
 
 
 class NerveOfGenitalTubercleOfMale(_MouseAnatomyModel):
 
-    name: Literal["nerve of genital tubercle of male"] = (
-        "nerve of genital tubercle of male"
-    )
+    name: Literal["nerve of genital tubercle of male"] = "nerve of genital tubercle of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35056"] = "EMAPA_35056"
 
@@ -37187,18 +35279,14 @@ class AccessoryOlfactoryBulbExternalPlexiformLayer(_MouseAnatomyModel):
 
 class AccessoryOlfactoryBulbGlomerularLayer(_MouseAnatomyModel):
 
-    name: Literal["accessory olfactory bulb glomerular layer"] = (
-        "accessory olfactory bulb glomerular layer"
-    )
+    name: Literal["accessory olfactory bulb glomerular layer"] = "accessory olfactory bulb glomerular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35108"] = "EMAPA_35108"
 
 
 class AccessoryOlfactoryBulbGranuleCellLayer(_MouseAnatomyModel):
 
-    name: Literal["accessory olfactory bulb granule cell layer"] = (
-        "accessory olfactory bulb granule cell layer"
-    )
+    name: Literal["accessory olfactory bulb granule cell layer"] = "accessory olfactory bulb granule cell layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35109"] = "EMAPA_35109"
 
@@ -37214,9 +35302,7 @@ class AccessoryOlfactoryBulbInternalPlexiformLayer(_MouseAnatomyModel):
 
 class AccessoryOlfactoryBulbMitralCellLayer(_MouseAnatomyModel):
 
-    name: Literal["accessory olfactory bulb mitral cell layer"] = (
-        "accessory olfactory bulb mitral cell layer"
-    )
+    name: Literal["accessory olfactory bulb mitral cell layer"] = "accessory olfactory bulb mitral cell layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35111"] = "EMAPA_35111"
 
@@ -37314,9 +35400,7 @@ class AmygdalohippocampalArea(_MouseAnatomyModel):
 
 class AmygdalopiriformTransitionArea(_MouseAnatomyModel):
 
-    name: Literal["amygdalopiriform transition area"] = (
-        "amygdalopiriform transition area"
-    )
+    name: Literal["amygdalopiriform transition area"] = "amygdalopiriform transition area"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35125"] = "EMAPA_35125"
 
@@ -37337,18 +35421,14 @@ class AnteriorAmygdaloidArea(_MouseAnatomyModel):
 
 class AnteriorCorticalAmygdaloidNucleus(_MouseAnatomyModel):
 
-    name: Literal["anterior cortical amygdaloid nucleus"] = (
-        "anterior cortical amygdaloid nucleus"
-    )
+    name: Literal["anterior cortical amygdaloid nucleus"] = "anterior cortical amygdaloid nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35128"] = "EMAPA_35128"
 
 
 class AnteriorDorsalThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["anterior dorsal thalamic nucleus"] = (
-        "anterior dorsal thalamic nucleus"
-    )
+    name: Literal["anterior dorsal thalamic nucleus"] = "anterior dorsal thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35129"] = "EMAPA_35129"
 
@@ -37376,9 +35456,7 @@ class AnteriorThalamicGroup(_MouseAnatomyModel):
 
 class AnteriorVentralThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["anterior ventral thalamic nucleus"] = (
-        "anterior ventral thalamic nucleus"
-    )
+    name: Literal["anterior ventral thalamic nucleus"] = "anterior ventral thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35133"] = "EMAPA_35133"
 
@@ -37595,9 +35673,7 @@ class BasalForebrain(_MouseAnatomyModel):
 
 class BasalVentralMedialThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["basal ventral medial thalamic nucleus"] = (
-        "basal ventral medial thalamic nucleus"
-    )
+    name: Literal["basal ventral medial thalamic nucleus"] = "basal ventral medial thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35165"] = "EMAPA_35165"
 
@@ -37821,9 +35897,7 @@ class Capillary(_MouseAnatomyModel):
 
 class CardiovascularSystemEndothelium(_MouseAnatomyModel):
 
-    name: Literal["cardiovascular system endothelium"] = (
-        "cardiovascular system endothelium"
-    )
+    name: Literal["cardiovascular system endothelium"] = "cardiovascular system endothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35201"] = "EMAPA_35201"
 
@@ -37851,9 +35925,7 @@ class CentralAmygdaloidNucleus(_MouseAnatomyModel):
 
 class CentralLateralThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["central lateral thalamic nucleus"] = (
-        "central lateral thalamic nucleus"
-    )
+    name: Literal["central lateral thalamic nucleus"] = "central lateral thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35205"] = "EMAPA_35205"
 
@@ -37867,18 +35939,14 @@ class CentralMedialThalamicNucleus(_MouseAnatomyModel):
 
 class CentralNervousSystemRoofPlate(_MouseAnatomyModel):
 
-    name: Literal["central nervous system roof plate"] = (
-        "central nervous system roof plate"
-    )
+    name: Literal["central nervous system roof plate"] = "central nervous system roof plate"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35207"] = "EMAPA_35207"
 
 
 class CentralNervousSystemVascularElement(_MouseAnatomyModel):
 
-    name: Literal["central nervous system vascular element"] = (
-        "central nervous system vascular element"
-    )
+    name: Literal["central nervous system vascular element"] = "central nervous system vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35208"] = "EMAPA_35208"
 
@@ -37934,9 +36002,7 @@ class CerebellumAnteriorLobe(_MouseAnatomyModel):
 
 class CerebellumExternalGranuleCellLayer(_MouseAnatomyModel):
 
-    name: Literal["cerebellum external granule cell layer"] = (
-        "cerebellum external granule cell layer"
-    )
+    name: Literal["cerebellum external granule cell layer"] = "cerebellum external granule cell layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35216"] = "EMAPA_35216"
 
@@ -37957,9 +36023,7 @@ class CerebellarHemisphere(_MouseAnatomyModel):
 
 class CerebellumInternalGranuleCellLayer(_MouseAnatomyModel):
 
-    name: Literal["cerebellum internal granule cell layer"] = (
-        "cerebellum internal granule cell layer"
-    )
+    name: Literal["cerebellum internal granule cell layer"] = "cerebellum internal granule cell layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35219"] = "EMAPA_35219"
 
@@ -38078,18 +36142,14 @@ class CerebellumWhiteMatter(_MouseAnatomyModel):
 
 class CerebralCortexVascularElement(_MouseAnatomyModel):
 
-    name: Literal["cerebral cortex vascular element"] = (
-        "cerebral cortex vascular element"
-    )
+    name: Literal["cerebral cortex vascular element"] = "cerebral cortex vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35236"] = "EMAPA_35236"
 
 
 class CerebralHemisphereWhiteMatter(_MouseAnatomyModel):
 
-    name: Literal["cerebral hemisphere white matter"] = (
-        "cerebral hemisphere white matter"
-    )
+    name: Literal["cerebral hemisphere white matter"] = "cerebral hemisphere white matter"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35237"] = "EMAPA_35237"
 
@@ -38166,9 +36226,7 @@ class CochlearNucleus(_MouseAnatomyModel):
 
 class CoelomicEpitheliumOfReproductiveSystem(_MouseAnatomyModel):
 
-    name: Literal["coelomic epithelium of reproductive system"] = (
-        "coelomic epithelium of reproductive system"
-    )
+    name: Literal["coelomic epithelium of reproductive system"] = "coelomic epithelium of reproductive system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35249"] = "EMAPA_35249"
 
@@ -38329,9 +36387,7 @@ class DeepCerebellarNucleus(_MouseAnatomyModel):
 
 class DegeneratingParamesonephricDuctOfMale(_MouseAnatomyModel):
 
-    name: Literal["degenerating paramesonephric duct of male"] = (
-        "degenerating paramesonephric duct of male"
-    )
+    name: Literal["degenerating paramesonephric duct of male"] = "degenerating paramesonephric duct of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35273"] = "EMAPA_35273"
 
@@ -38352,9 +36408,7 @@ class DentalSac(_MouseAnatomyModel):
 
 class DentateGyrusGranuleCellLayer(_MouseAnatomyModel):
 
-    name: Literal["dentate gyrus granule cell layer"] = (
-        "dentate gyrus granule cell layer"
-    )
+    name: Literal["dentate gyrus granule cell layer"] = "dentate gyrus granule cell layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35276"] = "EMAPA_35276"
 
@@ -38445,18 +36499,14 @@ class DorsalCochlearNucleus(_MouseAnatomyModel):
 
 class DorsalLateralGeniculateNucleus(_MouseAnatomyModel):
 
-    name: Literal["dorsal lateral geniculate nucleus"] = (
-        "dorsal lateral geniculate nucleus"
-    )
+    name: Literal["dorsal lateral geniculate nucleus"] = "dorsal lateral geniculate nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35290"] = "EMAPA_35290"
 
 
 class DorsalMotorNucleusOfVagusNerve(_MouseAnatomyModel):
 
-    name: Literal["dorsal motor nucleus of vagus nerve"] = (
-        "dorsal motor nucleus of vagus nerve"
-    )
+    name: Literal["dorsal motor nucleus of vagus nerve"] = "dorsal motor nucleus of vagus nerve"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35291"] = "EMAPA_35291"
 
@@ -38498,9 +36548,7 @@ class MedialThalamicGroup(_MouseAnatomyModel):
 
 class DorsomedialHypothalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["dorsomedial hypothalamic nucleus"] = (
-        "dorsomedial hypothalamic nucleus"
-    )
+    name: Literal["dorsomedial hypothalamic nucleus"] = "dorsomedial hypothalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35297"] = "EMAPA_35297"
 
@@ -38556,9 +36604,7 @@ class EndometriumEpithelium(_MouseAnatomyModel):
 
 class EndometriumGlandularEpithelium(_MouseAnatomyModel):
 
-    name: Literal["endometrium glandular epithelium"] = (
-        "endometrium glandular epithelium"
-    )
+    name: Literal["endometrium glandular epithelium"] = "endometrium glandular epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35308"] = "EMAPA_35308"
 
@@ -38621,9 +36667,7 @@ class EpididymalFatPad(_MouseAnatomyModel):
 
 class EpitheliumOfCapillaryLoopRenalCorpuscle(_MouseAnatomyModel):
 
-    name: Literal["epithelium of capillary loop renal corpuscle"] = (
-        "epithelium of capillary loop renal corpuscle"
-    )
+    name: Literal["epithelium of capillary loop renal corpuscle"] = "epithelium of capillary loop renal corpuscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35317"] = "EMAPA_35317"
 
@@ -38639,18 +36683,14 @@ class EpitheliumOfDegeneratingParamesonephricDuctOfMale(_MouseAnatomyModel):
 
 class EpitheliumOfParamesonephricDuctOfFemale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of paramesonephric duct of female"] = (
-        "epithelium of paramesonephric duct of female"
-    )
+    name: Literal["epithelium of paramesonephric duct of female"] = "epithelium of paramesonephric duct of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35319"] = "EMAPA_35319"
 
 
 class EpitheliumOfParamesonephricDuctOfMale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of paramesonephric duct of male"] = (
-        "epithelium of paramesonephric duct of male"
-    )
+    name: Literal["epithelium of paramesonephric duct of male"] = "epithelium of paramesonephric duct of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35320"] = "EMAPA_35320"
 
@@ -38937,18 +36977,14 @@ class FutureHindbrainRoofPlate(_MouseAnatomyModel):
 
 class FutureHindbrainVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["future hindbrain ventricular layer"] = (
-        "future hindbrain ventricular layer"
-    )
+    name: Literal["future hindbrain ventricular layer"] = "future hindbrain ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35368"] = "EMAPA_35368"
 
 
 class FutureSpinalCordVascularElement(_MouseAnatomyModel):
 
-    name: Literal["future spinal cord vascular element"] = (
-        "future spinal cord vascular element"
-    )
+    name: Literal["future spinal cord vascular element"] = "future spinal cord vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35369"] = "EMAPA_35369"
 
@@ -39004,18 +37040,14 @@ class GeniculateThalamicGroup(_MouseAnatomyModel):
 
 class GenitalSwellingOfGenitalTubercle(_MouseAnatomyModel):
 
-    name: Literal["genital swelling of genital tubercle"] = (
-        "genital swelling of genital tubercle"
-    )
+    name: Literal["genital swelling of genital tubercle"] = "genital swelling of genital tubercle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35377"] = "EMAPA_35377"
 
 
 class GigantocellularReticularNucleus(_MouseAnatomyModel):
 
-    name: Literal["gigantocellular reticular nucleus"] = (
-        "gigantocellular reticular nucleus"
-    )
+    name: Literal["gigantocellular reticular nucleus"] = "gigantocellular reticular nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35378"] = "EMAPA_35378"
 
@@ -39197,9 +37229,7 @@ class HippocampusMolecularLayer(_MouseAnatomyModel):
 
 class HippocampusPyramidalCellLayer(_MouseAnatomyModel):
 
-    name: Literal["hippocampus pyramidal cell layer"] = (
-        "hippocampus pyramidal cell layer"
-    )
+    name: Literal["hippocampus pyramidal cell layer"] = "hippocampus pyramidal cell layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35409"] = "EMAPA_35409"
 
@@ -39276,18 +37306,14 @@ class HypothalamusMedialZone(_MouseAnatomyModel):
 
 class HypothalamusMedialZoneTuberalArea(_MouseAnatomyModel):
 
-    name: Literal["hypothalamus medial zone tuberal area"] = (
-        "hypothalamus medial zone tuberal area"
-    )
+    name: Literal["hypothalamus medial zone tuberal area"] = "hypothalamus medial zone tuberal area"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35420"] = "EMAPA_35420"
 
 
 class HypothalamusPeriventricularZone(_MouseAnatomyModel):
 
-    name: Literal["hypothalamus periventricular zone"] = (
-        "hypothalamus periventricular zone"
-    )
+    name: Literal["hypothalamus periventricular zone"] = "hypothalamus periventricular zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35421"] = "EMAPA_35421"
 
@@ -39322,18 +37348,14 @@ class RightLungBronchiole(_MouseAnatomyModel):
 
 class ImmatureLoopOfHenleAscendingLimb(_MouseAnatomyModel):
 
-    name: Literal["immature loop of Henle ascending limb"] = (
-        "immature loop of Henle ascending limb"
-    )
+    name: Literal["immature loop of Henle ascending limb"] = "immature loop of Henle ascending limb"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35426"] = "EMAPA_35426"
 
 
 class ImmatureLoopOfHenleDescendingLimb(_MouseAnatomyModel):
 
-    name: Literal["immature loop of Henle descending limb"] = (
-        "immature loop of Henle descending limb"
-    )
+    name: Literal["immature loop of Henle descending limb"] = "immature loop of Henle descending limb"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35427"] = "EMAPA_35427"
 
@@ -39536,9 +37558,7 @@ class MetanephrosEpithelium(_MouseAnatomyModel):
 
 class MetanephrosGlomerularEpithelium(_MouseAnatomyModel):
 
-    name: Literal["metanephros glomerular epithelium"] = (
-        "metanephros glomerular epithelium"
-    )
+    name: Literal["metanephros glomerular epithelium"] = "metanephros glomerular epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35458"] = "EMAPA_35458"
 
@@ -39552,9 +37572,7 @@ class LoopOfHenleOfRenalMedulla(_MouseAnatomyModel):
 
 class KidneyOuterMedullaPeritubularCapillary(_MouseAnatomyModel):
 
-    name: Literal["kidney outer medulla peritubular capillary"] = (
-        "kidney outer medulla peritubular capillary"
-    )
+    name: Literal["kidney outer medulla peritubular capillary"] = "kidney outer medulla peritubular capillary"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35461"] = "EMAPA_35461"
 
@@ -39582,9 +37600,7 @@ class LacrimalGlandBud(_MouseAnatomyModel):
 
 class LargeIntestineCryptOfLieberkuhn(_MouseAnatomyModel):
 
-    name: Literal["large intestine crypt of lieberkuhn"] = (
-        "large intestine crypt of lieberkuhn"
-    )
+    name: Literal["large intestine crypt of lieberkuhn"] = "large intestine crypt of lieberkuhn"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35465"] = "EMAPA_35465"
 
@@ -39703,9 +37719,7 @@ class LateralMammillaryNucleus(_MouseAnatomyModel):
 
 class LateralMedullaryReticularFormation(_MouseAnatomyModel):
 
-    name: Literal["lateral medullary reticular formation"] = (
-        "lateral medullary reticular formation"
-    )
+    name: Literal["lateral medullary reticular formation"] = "lateral medullary reticular formation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35482"] = "EMAPA_35482"
 
@@ -39754,9 +37768,7 @@ class LateralVentricleEpendyma(_MouseAnatomyModel):
 
 class LateralVentricleSubependymalLayer(_MouseAnatomyModel):
 
-    name: Literal["lateral ventricle subependymal layer"] = (
-        "lateral ventricle subependymal layer"
-    )
+    name: Literal["lateral ventricle subependymal layer"] = "lateral ventricle subependymal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35489"] = "EMAPA_35489"
 
@@ -39868,18 +37880,14 @@ class LongBoneEpiphysealPlate(_MouseAnatomyModel):
 
 class LongBoneEpiphysealPlateHypertrophicZone(_MouseAnatomyModel):
 
-    name: Literal["long bone epiphyseal plate hypertrophic zone"] = (
-        "long bone epiphyseal plate hypertrophic zone"
-    )
+    name: Literal["long bone epiphyseal plate hypertrophic zone"] = "long bone epiphyseal plate hypertrophic zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35506"] = "EMAPA_35506"
 
 
 class LongBoneEpiphysealPlateProliferativeZone(_MouseAnatomyModel):
 
-    name: Literal["long bone epiphyseal plate proliferative zone"] = (
-        "long bone epiphyseal plate proliferative zone"
-    )
+    name: Literal["long bone epiphyseal plate proliferative zone"] = "long bone epiphyseal plate proliferative zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35507"] = "EMAPA_35507"
 
@@ -39914,9 +37922,7 @@ class LoopOfHenleDescendingLimb(_MouseAnatomyModel):
 
 class LoopOfHenleDistalStraightTubule(_MouseAnatomyModel):
 
-    name: Literal["loop of Henle distal straight tubule"] = (
-        "loop of Henle distal straight tubule"
-    )
+    name: Literal["loop of Henle distal straight tubule"] = "loop of Henle distal straight tubule"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35512"] = "EMAPA_35512"
 
@@ -39930,9 +37936,7 @@ class LoopOfHenleThickLimb(_MouseAnatomyModel):
 
 class LoopOfHenleThinDescendingLimb(_MouseAnatomyModel):
 
-    name: Literal["loop of Henle thin descending limb"] = (
-        "loop of Henle thin descending limb"
-    )
+    name: Literal["loop of Henle thin descending limb"] = "loop of Henle thin descending limb"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35514"] = "EMAPA_35514"
 
@@ -39953,9 +37957,7 @@ class LowerJawEpithelium(_MouseAnatomyModel):
 
 class LowerJawIncisorDentalFollicle(_MouseAnatomyModel):
 
-    name: Literal["lower jaw incisor dental follicle"] = (
-        "lower jaw incisor dental follicle"
-    )
+    name: Literal["lower jaw incisor dental follicle"] = "lower jaw incisor dental follicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35517"] = "EMAPA_35517"
 
@@ -39976,9 +37978,7 @@ class LowerLegBone(_MouseAnatomyModel):
 
 class LowerRespiratoryTractSmoothMuscle(_MouseAnatomyModel):
 
-    name: Literal["lower respiratory tract smooth muscle"] = (
-        "lower respiratory tract smooth muscle"
-    )
+    name: Literal["lower respiratory tract smooth muscle"] = "lower respiratory tract smooth muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35520"] = "EMAPA_35520"
 
@@ -40246,18 +38246,14 @@ class MesenchymeOfDegeneratingParamesonephricDuctOfMale(_MouseAnatomyModel):
 
 class MesenchymeOfParamesonephricDuctOfFemale(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of paramesonephric duct of female"] = (
-        "mesenchyme of paramesonephric duct of female"
-    )
+    name: Literal["mesenchyme of paramesonephric duct of female"] = "mesenchyme of paramesonephric duct of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35559"] = "EMAPA_35559"
 
 
 class MesenchymeOfParamesonephricDuctOfMale(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of paramesonephric duct of male"] = (
-        "mesenchyme of paramesonephric duct of male"
-    )
+    name: Literal["mesenchyme of paramesonephric duct of male"] = "mesenchyme of paramesonephric duct of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35560"] = "EMAPA_35560"
 
@@ -40488,9 +38484,7 @@ class NucleusOfDiagonalBand(_MouseAnatomyModel):
 
 class NucleusOfLateralOlfactoryTract(_MouseAnatomyModel):
 
-    name: Literal["nucleus of lateral olfactory tract"] = (
-        "nucleus of lateral olfactory tract"
-    )
+    name: Literal["nucleus of lateral olfactory tract"] = "nucleus of lateral olfactory tract"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35599"] = "EMAPA_35599"
 
@@ -40504,9 +38498,7 @@ class NucleusOfTrapezoidBody(_MouseAnatomyModel):
 
 class NucleusRelatedToVisualCortex(_MouseAnatomyModel):
 
-    name: Literal["nucleus related to visual cortex"] = (
-        "nucleus related to visual cortex"
-    )
+    name: Literal["nucleus related to visual cortex"] = "nucleus related to visual cortex"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35601"] = "EMAPA_35601"
 
@@ -40541,54 +38533,42 @@ class OculomotorNucleus(_MouseAnatomyModel):
 
 class MainOlfactoryBulbExternalPlexiformLayer(_MouseAnatomyModel):
 
-    name: Literal["main olfactory bulb external plexiform layer"] = (
-        "main olfactory bulb external plexiform layer"
-    )
+    name: Literal["main olfactory bulb external plexiform layer"] = "main olfactory bulb external plexiform layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35607"] = "EMAPA_35607"
 
 
 class MainOlfactoryBulbGlomerularLayer(_MouseAnatomyModel):
 
-    name: Literal["main olfactory bulb glomerular layer"] = (
-        "main olfactory bulb glomerular layer"
-    )
+    name: Literal["main olfactory bulb glomerular layer"] = "main olfactory bulb glomerular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35608"] = "EMAPA_35608"
 
 
 class MainOlfactoryBulbGranuleCellLayer(_MouseAnatomyModel):
 
-    name: Literal["main olfactory bulb granule cell layer"] = (
-        "main olfactory bulb granule cell layer"
-    )
+    name: Literal["main olfactory bulb granule cell layer"] = "main olfactory bulb granule cell layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35609"] = "EMAPA_35609"
 
 
 class MainOlfactoryBulbInternalPlexiformLayer(_MouseAnatomyModel):
 
-    name: Literal["main olfactory bulb internal plexiform layer"] = (
-        "main olfactory bulb internal plexiform layer"
-    )
+    name: Literal["main olfactory bulb internal plexiform layer"] = "main olfactory bulb internal plexiform layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35610"] = "EMAPA_35610"
 
 
 class MainOlfactoryBulbMitralCellLayer(_MouseAnatomyModel):
 
-    name: Literal["main olfactory bulb mitral cell layer"] = (
-        "main olfactory bulb mitral cell layer"
-    )
+    name: Literal["main olfactory bulb mitral cell layer"] = "main olfactory bulb mitral cell layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35611"] = "EMAPA_35611"
 
 
 class MainOlfactoryBulbSubependymalZone(_MouseAnatomyModel):
 
-    name: Literal["main olfactory bulb subependymal zone"] = (
-        "main olfactory bulb subependymal zone"
-    )
+    name: Literal["main olfactory bulb subependymal zone"] = "main olfactory bulb subependymal zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35612"] = "EMAPA_35612"
 
@@ -40602,9 +38582,7 @@ class OlfactoryGland(_MouseAnatomyModel):
 
 class MainOlfactoryBulbOlfactoryNerveLayer(_MouseAnatomyModel):
 
-    name: Literal["main olfactory bulb olfactory nerve layer"] = (
-        "main olfactory bulb olfactory nerve layer"
-    )
+    name: Literal["main olfactory bulb olfactory nerve layer"] = "main olfactory bulb olfactory nerve layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35614"] = "EMAPA_35614"
 
@@ -40674,9 +38652,7 @@ class OutflowTractCardiacMuscle(_MouseAnatomyModel):
 
 class OutflowTractPulmonaryComponentDistalPart(_MouseAnatomyModel):
 
-    name: Literal["outflow tract pulmonary component distal part"] = (
-        "outflow tract pulmonary component distal part"
-    )
+    name: Literal["outflow tract pulmonary component distal part"] = "outflow tract pulmonary component distal part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35624"] = "EMAPA_35624"
 
@@ -40767,9 +38743,7 @@ class PalatalRugaeEpithelium(_MouseAnatomyModel):
 
 class HardPalatePalatalRugaeEpithelium(_MouseAnatomyModel):
 
-    name: Literal["hard palate palatal rugae epithelium"] = (
-        "hard palate palatal rugae epithelium"
-    )
+    name: Literal["hard palate palatal rugae epithelium"] = "hard palate palatal rugae epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35640"] = "EMAPA_35640"
 
@@ -40783,9 +38757,7 @@ class PalatalRugaeMesenchyme(_MouseAnatomyModel):
 
 class HardPalatePalatalRugaeMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["hard palate palatal rugae mesenchyme"] = (
-        "hard palate palatal rugae mesenchyme"
-    )
+    name: Literal["hard palate palatal rugae mesenchyme"] = "hard palate palatal rugae mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35642"] = "EMAPA_35642"
 
@@ -40932,18 +38904,14 @@ class ParathyroidGlandParenchyma(_MouseAnatomyModel):
 
 class ParaventricularHypothalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["paraventricular hypothalamic nucleus"] = (
-        "paraventricular hypothalamic nucleus"
-    )
+    name: Literal["paraventricular hypothalamic nucleus"] = "paraventricular hypothalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35665"] = "EMAPA_35665"
 
 
 class ParaventricularThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["paraventricular thalamic nucleus"] = (
-        "paraventricular thalamic nucleus"
-    )
+    name: Literal["paraventricular thalamic nucleus"] = "paraventricular thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35666"] = "EMAPA_35666"
 
@@ -41083,18 +39051,14 @@ class PhotoreceptorLayer(_MouseAnatomyModel):
 
 class PhotoreceptorLayerInnerSegment(_MouseAnatomyModel):
 
-    name: Literal["photoreceptor layer inner segment"] = (
-        "photoreceptor layer inner segment"
-    )
+    name: Literal["photoreceptor layer inner segment"] = "photoreceptor layer inner segment"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35687"] = "EMAPA_35687"
 
 
 class PhotoreceptorLayerOuterSegment(_MouseAnatomyModel):
 
-    name: Literal["photoreceptor layer outer segment"] = (
-        "photoreceptor layer outer segment"
-    )
+    name: Literal["photoreceptor layer outer segment"] = "photoreceptor layer outer segment"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35688"] = "EMAPA_35688"
 
@@ -41171,18 +39135,14 @@ class PosteriorThalamicNucleus(_MouseAnatomyModel):
 
 class PosterolateralCorticalAmygdaloidNucleus(_MouseAnatomyModel):
 
-    name: Literal["posterolateral cortical amygdaloid nucleus"] = (
-        "posterolateral cortical amygdaloid nucleus"
-    )
+    name: Literal["posterolateral cortical amygdaloid nucleus"] = "posterolateral cortical amygdaloid nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35699"] = "EMAPA_35699"
 
 
 class PosteromedialCorticalAmygdaloidNucleus(_MouseAnatomyModel):
 
-    name: Literal["posteromedial cortical amygdaloid nucleus"] = (
-        "posteromedial cortical amygdaloid nucleus"
-    )
+    name: Literal["posteromedial cortical amygdaloid nucleus"] = "posteromedial cortical amygdaloid nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35700"] = "EMAPA_35700"
 
@@ -41245,18 +39205,14 @@ class PrimaryVisualCortex(_MouseAnatomyModel):
 
 class ForelimbInterdigitalRegionSkin(_MouseAnatomyModel):
 
-    name: Literal["forelimb interdigital region skin"] = (
-        "forelimb interdigital region skin"
-    )
+    name: Literal["forelimb interdigital region skin"] = "forelimb interdigital region skin"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35709"] = "EMAPA_35709"
 
 
 class ProstateGlandDorsolateralLobe(_MouseAnatomyModel):
 
-    name: Literal["prostate gland dorsolateral lobe"] = (
-        "prostate gland dorsolateral lobe"
-    )
+    name: Literal["prostate gland dorsolateral lobe"] = "prostate gland dorsolateral lobe"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35710"] = "EMAPA_35710"
 
@@ -41291,9 +39247,7 @@ class ProstateStroma(_MouseAnatomyModel):
 
 class ForelimbInterdigitalRegionDermis(_MouseAnatomyModel):
 
-    name: Literal["forelimb interdigital region dermis"] = (
-        "forelimb interdigital region dermis"
-    )
+    name: Literal["forelimb interdigital region dermis"] = "forelimb interdigital region dermis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35715"] = "EMAPA_35715"
 
@@ -41391,9 +39345,7 @@ class RespiratoryBronchiole(_MouseAnatomyModel):
 
 class RespiratoryBronchioleEpithelium(_MouseAnatomyModel):
 
-    name: Literal["respiratory bronchiole epithelium"] = (
-        "respiratory bronchiole epithelium"
-    )
+    name: Literal["respiratory bronchiole epithelium"] = "respiratory bronchiole epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35730"] = "EMAPA_35730"
 
@@ -41407,9 +39359,7 @@ class RespiratorySystemBloodVessel(_MouseAnatomyModel):
 
 class RespiratorySystemBloodVesselEndothelium(_MouseAnatomyModel):
 
-    name: Literal["respiratory system blood vessel endothelium"] = (
-        "respiratory system blood vessel endothelium"
-    )
+    name: Literal["respiratory system blood vessel endothelium"] = "respiratory system blood vessel endothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35732"] = "EMAPA_35732"
 
@@ -41423,9 +39373,7 @@ class RespiratorySystemMuscle(_MouseAnatomyModel):
 
 class RespiratorySystemSmoothMuscle(_MouseAnatomyModel):
 
-    name: Literal["respiratory system smooth muscle"] = (
-        "respiratory system smooth muscle"
-    )
+    name: Literal["respiratory system smooth muscle"] = "respiratory system smooth muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35734"] = "EMAPA_35734"
 
@@ -41579,9 +39527,7 @@ class SecondaryVisualCortex(_MouseAnatomyModel):
 
 class SecretoryCircumventricularOrgan(_MouseAnatomyModel):
 
-    name: Literal["secretory circumventricular organ"] = (
-        "secretory circumventricular organ"
-    )
+    name: Literal["secretory circumventricular organ"] = "secretory circumventricular organ"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35759"] = "EMAPA_35759"
 
@@ -41707,9 +39653,7 @@ class SkinMuscle(_MouseAnatomyModel):
 
 class SmallIntestineCryptOfLieberkuhn(_MouseAnatomyModel):
 
-    name: Literal["small intestine crypt of lieberkuhn"] = (
-        "small intestine crypt of lieberkuhn"
-    )
+    name: Literal["small intestine crypt of lieberkuhn"] = "small intestine crypt of lieberkuhn"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35777"] = "EMAPA_35777"
 
@@ -41737,9 +39681,7 @@ class SmallIntestineMucosa(_MouseAnatomyModel):
 
 class SmallIntestineMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["small intestine muscularis mucosa"] = (
-        "small intestine muscularis mucosa"
-    )
+    name: Literal["small intestine muscularis mucosa"] = "small intestine muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35781"] = "EMAPA_35781"
 
@@ -42103,9 +40045,7 @@ class SubstantiaNigraParsLateralis(_MouseAnatomyModel):
 
 class SubstantiaNigraParsReticulata(_MouseAnatomyModel):
 
-    name: Literal["substantia nigra pars reticulata"] = (
-        "substantia nigra pars reticulata"
-    )
+    name: Literal["substantia nigra pars reticulata"] = "substantia nigra pars reticulata"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35838"] = "EMAPA_35838"
 
@@ -42203,9 +40143,7 @@ class TectorialMembrane(_MouseAnatomyModel):
 
 class TemporalCortexAssociationArea(_MouseAnatomyModel):
 
-    name: Literal["temporal cortex association area"] = (
-        "temporal cortex association area"
-    )
+    name: Literal["temporal cortex association area"] = "temporal cortex association area"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35852"] = "EMAPA_35852"
 
@@ -42387,9 +40325,7 @@ class TracheaLaminaPropria(_MouseAnatomyModel):
 
 class TracheaNonCartilageConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["trachea non-cartilage connective tissue"] = (
-        "trachea non-cartilage connective tissue"
-    )
+    name: Literal["trachea non-cartilage connective tissue"] = "trachea non-cartilage connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35878"] = "EMAPA_35878"
 
@@ -42410,9 +40346,7 @@ class TransverseColon(_MouseAnatomyModel):
 
 class TrigeminalVMesencephalicNucleus(_MouseAnatomyModel):
 
-    name: Literal["trigeminal V mesencephalic nucleus"] = (
-        "trigeminal V mesencephalic nucleus"
-    )
+    name: Literal["trigeminal V mesencephalic nucleus"] = "trigeminal V mesencephalic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35881"] = "EMAPA_35881"
 
@@ -42440,9 +40374,7 @@ class TrigeminalVSensoryNucleus(_MouseAnatomyModel):
 
 class TrigeminalVSpinalSensoryNucleus(_MouseAnatomyModel):
 
-    name: Literal["trigeminal V spinal sensory nucleus"] = (
-        "trigeminal V spinal sensory nucleus"
-    )
+    name: Literal["trigeminal V spinal sensory nucleus"] = "trigeminal V spinal sensory nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35885"] = "EMAPA_35885"
 
@@ -42498,9 +40430,7 @@ class UpperLegBone(_MouseAnatomyModel):
 
 class UpperRespiratoryTractEpithelium(_MouseAnatomyModel):
 
-    name: Literal["upper respiratory tract epithelium"] = (
-        "upper respiratory tract epithelium"
-    )
+    name: Literal["upper respiratory tract epithelium"] = "upper respiratory tract epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35894"] = "EMAPA_35894"
 
@@ -42598,9 +40528,7 @@ class VenousSystemEndothelium(_MouseAnatomyModel):
 
 class VentralLateralGeniculateNucleus(_MouseAnatomyModel):
 
-    name: Literal["ventral lateral geniculate nucleus"] = (
-        "ventral lateral geniculate nucleus"
-    )
+    name: Literal["ventral lateral geniculate nucleus"] = "ventral lateral geniculate nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35908"] = "EMAPA_35908"
 
@@ -42614,27 +40542,21 @@ class VentralNasalArtery(_MouseAnatomyModel):
 
 class VentralPosteriorLateralThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["ventral posterior lateral thalamic nucleus"] = (
-        "ventral posterior lateral thalamic nucleus"
-    )
+    name: Literal["ventral posterior lateral thalamic nucleus"] = "ventral posterior lateral thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35910"] = "EMAPA_35910"
 
 
 class VentralPosteriorMedialThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["ventral posterior medial thalamic nucleus"] = (
-        "ventral posterior medial thalamic nucleus"
-    )
+    name: Literal["ventral posterior medial thalamic nucleus"] = "ventral posterior medial thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35911"] = "EMAPA_35911"
 
 
 class VentralPosteriorThalamicGroup(_MouseAnatomyModel):
 
-    name: Literal["ventral posterior thalamic group"] = (
-        "ventral posterior thalamic group"
-    )
+    name: Literal["ventral posterior thalamic group"] = "ventral posterior thalamic group"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35912"] = "EMAPA_35912"
 
@@ -42662,9 +40584,7 @@ class Prethalamus(_MouseAnatomyModel):
 
 class VentromedialHypothalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["ventromedial hypothalamic nucleus"] = (
-        "ventromedial hypothalamic nucleus"
-    )
+    name: Literal["ventromedial hypothalamic nucleus"] = "ventromedial hypothalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35916"] = "EMAPA_35916"
 
@@ -42678,9 +40598,7 @@ class Venule(_MouseAnatomyModel):
 
 class VertebraCaudalArticularProcess(_MouseAnatomyModel):
 
-    name: Literal["vertebra caudal articular process"] = (
-        "vertebra caudal articular process"
-    )
+    name: Literal["vertebra caudal articular process"] = "vertebra caudal articular process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35918"] = "EMAPA_35918"
 
@@ -42799,36 +40717,28 @@ class CorneaEndothelium(_MouseAnatomyModel):
 
 class ForelimbInterdigitalRegionEpidermis(_MouseAnatomyModel):
 
-    name: Literal["forelimb interdigital region epidermis"] = (
-        "forelimb interdigital region epidermis"
-    )
+    name: Literal["forelimb interdigital region epidermis"] = "forelimb interdigital region epidermis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35936"] = "EMAPA_35936"
 
 
 class HindlimbInterdigitalRegionSkin(_MouseAnatomyModel):
 
-    name: Literal["hindlimb interdigital region skin"] = (
-        "hindlimb interdigital region skin"
-    )
+    name: Literal["hindlimb interdigital region skin"] = "hindlimb interdigital region skin"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35937"] = "EMAPA_35937"
 
 
 class HindlimbInterdigitalRegionDermis(_MouseAnatomyModel):
 
-    name: Literal["hindlimb interdigital region dermis"] = (
-        "hindlimb interdigital region dermis"
-    )
+    name: Literal["hindlimb interdigital region dermis"] = "hindlimb interdigital region dermis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35938"] = "EMAPA_35938"
 
 
 class HindlimbInterdigitalRegionEpidermis(_MouseAnatomyModel):
 
-    name: Literal["hindlimb interdigital region epidermis"] = (
-        "hindlimb interdigital region epidermis"
-    )
+    name: Literal["hindlimb interdigital region epidermis"] = "hindlimb interdigital region epidermis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35939"] = "EMAPA_35939"
 
@@ -42842,18 +40752,14 @@ class LimbInterdigitalRegionDermis(_MouseAnatomyModel):
 
 class LimbInterdigitalRegionEpidermis(_MouseAnatomyModel):
 
-    name: Literal["limb interdigital region epidermis"] = (
-        "limb interdigital region epidermis"
-    )
+    name: Literal["limb interdigital region epidermis"] = "limb interdigital region epidermis"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35941"] = "EMAPA_35941"
 
 
 class FutureForebrainVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["future forebrain ventricular layer"] = (
-        "future forebrain ventricular layer"
-    )
+    name: Literal["future forebrain ventricular layer"] = "future forebrain ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35942"] = "EMAPA_35942"
 
@@ -42874,18 +40780,14 @@ class Gum(_MouseAnatomyModel):
 
 class NerveOfFemaleReproductiveSystem(_MouseAnatomyModel):
 
-    name: Literal["nerve of female reproductive system"] = (
-        "nerve of female reproductive system"
-    )
+    name: Literal["nerve of female reproductive system"] = "nerve of female reproductive system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35946"] = "EMAPA_35946"
 
 
 class NerveOfMaleReproductiveSystem(_MouseAnatomyModel):
 
-    name: Literal["nerve of male reproductive system"] = (
-        "nerve of male reproductive system"
-    )
+    name: Literal["nerve of male reproductive system"] = "nerve of male reproductive system"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35947"] = "EMAPA_35947"
 
@@ -42906,9 +40808,7 @@ class Organ(_MouseAnatomyModel):
 
 class LiverAndBiliarySystemEpithelium(_MouseAnatomyModel):
 
-    name: Literal["liver and biliary system epithelium"] = (
-        "liver and biliary system epithelium"
-    )
+    name: Literal["liver and biliary system epithelium"] = "liver and biliary system epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35950"] = "EMAPA_35950"
 
@@ -42992,18 +40892,14 @@ class EmbryoMesenchyme(_MouseAnatomyModel):
 
 class FemaleReproductiveSystemEpithelium(_MouseAnatomyModel):
 
-    name: Literal["female reproductive system epithelium"] = (
-        "female reproductive system epithelium"
-    )
+    name: Literal["female reproductive system epithelium"] = "female reproductive system epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35962"] = "EMAPA_35962"
 
 
 class MaleReproductiveSystemEpithelium(_MouseAnatomyModel):
 
-    name: Literal["male reproductive system epithelium"] = (
-        "male reproductive system epithelium"
-    )
+    name: Literal["male reproductive system epithelium"] = "male reproductive system epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35963"] = "EMAPA_35963"
 
@@ -43073,45 +40969,35 @@ class EarMesenchyme(_MouseAnatomyModel):
 
 class CardiovascularSystemMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["cardiovascular system mesenchyme"] = (
-        "cardiovascular system mesenchyme"
-    )
+    name: Literal["cardiovascular system mesenchyme"] = "cardiovascular system mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35973"] = "EMAPA_35973"
 
 
 class FemaleReproductiveSystemMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["female reproductive system mesenchyme"] = (
-        "female reproductive system mesenchyme"
-    )
+    name: Literal["female reproductive system mesenchyme"] = "female reproductive system mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35974"] = "EMAPA_35974"
 
 
 class MaleReproductiveSystemMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["male reproductive system mesenchyme"] = (
-        "male reproductive system mesenchyme"
-    )
+    name: Literal["male reproductive system mesenchyme"] = "male reproductive system mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35975"] = "EMAPA_35975"
 
 
 class CartilagePrimordiumOfFutureSpinousProcess(_MouseAnatomyModel):
 
-    name: Literal["cartilage primordium of future spinous process"] = (
-        "cartilage primordium of future spinous process"
-    )
+    name: Literal["cartilage primordium of future spinous process"] = "cartilage primordium of future spinous process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35976"] = "EMAPA_35976"
 
 
 class RespiratorySystemConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["respiratory system connective tissue"] = (
-        "respiratory system connective tissue"
-    )
+    name: Literal["respiratory system connective tissue"] = "respiratory system connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35977"] = "EMAPA_35977"
 
@@ -43132,45 +41018,35 @@ class OssicleCartilageCondensation(_MouseAnatomyModel):
 
 class PectoralThoracicCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["pectoral-thoracic cartilage condensation"] = (
-        "pectoral-thoracic cartilage condensation"
-    )
+    name: Literal["pectoral-thoracic cartilage condensation"] = "pectoral-thoracic cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35980"] = "EMAPA_35980"
 
 
 class PelvicGirdleCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["pelvic girdle cartilage condensation"] = (
-        "pelvic girdle cartilage condensation"
-    )
+    name: Literal["pelvic girdle cartilage condensation"] = "pelvic girdle cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35981"] = "EMAPA_35981"
 
 
 class OssiclePreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["ossicle pre-cartilage condensation"] = (
-        "ossicle pre-cartilage condensation"
-    )
+    name: Literal["ossicle pre-cartilage condensation"] = "ossicle pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35982"] = "EMAPA_35982"
 
 
 class PectoralThoracicPreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["pectoral-thoracic pre-cartilage condensation"] = (
-        "pectoral-thoracic pre-cartilage condensation"
-    )
+    name: Literal["pectoral-thoracic pre-cartilage condensation"] = "pectoral-thoracic pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35983"] = "EMAPA_35983"
 
 
 class PelvicGirdlePreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["pelvic girdle pre-cartilage condensation"] = (
-        "pelvic girdle pre-cartilage condensation"
-    )
+    name: Literal["pelvic girdle pre-cartilage condensation"] = "pelvic girdle pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35984"] = "EMAPA_35984"
 
@@ -43240,18 +41116,14 @@ class VascularElement(_MouseAnatomyModel):
 
 class AlimentarySystemVascularElement(_MouseAnatomyModel):
 
-    name: Literal["alimentary system vascular element"] = (
-        "alimentary system vascular element"
-    )
+    name: Literal["alimentary system vascular element"] = "alimentary system vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35994"] = "EMAPA_35994"
 
 
 class RespiratorySystemVascularElement(_MouseAnatomyModel):
 
-    name: Literal["respiratory system vascular element"] = (
-        "respiratory system vascular element"
-    )
+    name: Literal["respiratory system vascular element"] = "respiratory system vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_35995"] = "EMAPA_35995"
 
@@ -43671,18 +41543,14 @@ class AtriumAuricularRegion(_MouseAnatomyModel):
 
 class AtriumAuricularRegionCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["atrium auricular region cardiac muscle"] = (
-        "atrium auricular region cardiac muscle"
-    )
+    name: Literal["atrium auricular region cardiac muscle"] = "atrium auricular region cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36056"] = "EMAPA_36056"
 
 
 class AtriumAuricularRegionEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["atrium auricular region endocardial lining"] = (
-        "atrium auricular region endocardial lining"
-    )
+    name: Literal["atrium auricular region endocardial lining"] = "atrium auricular region endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36057"] = "EMAPA_36057"
 
@@ -43696,9 +41564,7 @@ class AtriumLumen(_MouseAnatomyModel):
 
 class CommonAtrialChamberAuricularRegion(_MouseAnatomyModel):
 
-    name: Literal["common atrial chamber auricular region"] = (
-        "common atrial chamber auricular region"
-    )
+    name: Literal["common atrial chamber auricular region"] = "common atrial chamber auricular region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36059"] = "EMAPA_36059"
 
@@ -43772,36 +41638,28 @@ class PosteriorVisceralEndoderm(_MouseAnatomyModel):
 
 class CloacalEpitheliumOfCloacalMembrane(_MouseAnatomyModel):
 
-    name: Literal["cloacal epithelium of cloacal membrane"] = (
-        "cloacal epithelium of cloacal membrane"
-    )
+    name: Literal["cloacal epithelium of cloacal membrane"] = "cloacal epithelium of cloacal membrane"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36070"] = "EMAPA_36070"
 
 
 class SurfaceEctodermOfCloacalMembrane(_MouseAnatomyModel):
 
-    name: Literal["surface ectoderm of cloacal membrane"] = (
-        "surface ectoderm of cloacal membrane"
-    )
+    name: Literal["surface ectoderm of cloacal membrane"] = "surface ectoderm of cloacal membrane"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36071"] = "EMAPA_36071"
 
 
 class SuperficialCellOfBladderUrothelium(_MouseAnatomyModel):
 
-    name: Literal["superficial cell of bladder urothelium"] = (
-        "superficial cell of bladder urothelium"
-    )
+    name: Literal["superficial cell of bladder urothelium"] = "superficial cell of bladder urothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36072"] = "EMAPA_36072"
 
 
 class IntermediateCellLayerOfBladderUrothelium(_MouseAnatomyModel):
 
-    name: Literal["intermediate cell layer of bladder urothelium"] = (
-        "intermediate cell layer of bladder urothelium"
-    )
+    name: Literal["intermediate cell layer of bladder urothelium"] = "intermediate cell layer of bladder urothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36073"] = "EMAPA_36073"
 
@@ -43817,9 +41675,7 @@ class Krt5ExpressingBasalCellOfBladderUrothelium(_MouseAnatomyModel):
 
 class SuburothelialLaminaPropriaOfBladder(_MouseAnatomyModel):
 
-    name: Literal["suburothelial lamina propria of bladder"] = (
-        "suburothelial lamina propria of bladder"
-    )
+    name: Literal["suburothelial lamina propria of bladder"] = "suburothelial lamina propria of bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36075"] = "EMAPA_36075"
 
@@ -43854,54 +41710,44 @@ class VentralBladderNeck(_MouseAnatomyModel):
 
 class UreterJunctionOfBladderTrigone(_MouseAnatomyModel):
 
-    name: Literal["ureter junction of bladder trigone"] = (
-        "ureter junction of bladder trigone"
-    )
+    name: Literal["ureter junction of bladder trigone"] = "ureter junction of bladder trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36080"] = "EMAPA_36080"
 
 
 class UrethraJunctionOfBladderTrigone(_MouseAnatomyModel):
 
-    name: Literal["urethra junction of bladder trigone"] = (
-        "urethra junction of bladder trigone"
-    )
+    name: Literal["urethra junction of bladder trigone"] = "urethra junction of bladder trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36081"] = "EMAPA_36081"
 
 
 class UreteralSmoothMuscleOfTrigone(_MouseAnatomyModel):
 
-    name: Literal["ureteral smooth muscle of trigone"] = (
-        "ureteral smooth muscle of trigone"
-    )
+    name: Literal["ureteral smooth muscle of trigone"] = "ureteral smooth muscle of trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36082"] = "EMAPA_36082"
 
 
 class FundusJunctionOfVentralBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["fundus junction of ventral bladder neck"] = (
-        "fundus junction of ventral bladder neck"
-    )
+    name: Literal["fundus junction of ventral bladder neck"] = "fundus junction of ventral bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36083"] = "EMAPA_36083"
 
 
 class UrethraJunctionOfVentralBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["urethra junction of ventral bladder neck"] = (
-        "urethra junction of ventral bladder neck"
-    )
+    name: Literal["urethra junction of ventral bladder neck"] = "urethra junction of ventral bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36084"] = "EMAPA_36084"
 
 
 class UndifferentiatedEpithelialCellOfUrotheliumOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["undifferentiated epithelial cell of urothelium of primitive bladder"] = (
         "undifferentiated epithelial cell of urothelium of primitive bladder"
-    ] = "undifferentiated epithelial cell of urothelium of primitive bladder"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36085"] = "EMAPA_36085"
 
@@ -43917,63 +41763,53 @@ class IntermediateCellOfUrotheliumOfPrimitiveBladder(_MouseAnatomyModel):
 
 class P0CellOfUrotheliumOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal["P-0 cell of urothelium of primitive bladder"] = (
-        "P-0 cell of urothelium of primitive bladder"
-    )
+    name: Literal["P-0 cell of urothelium of primitive bladder"] = "P-0 cell of urothelium of primitive bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36087"] = "EMAPA_36087"
 
 
 class InnerMesenchymalLayerOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal["inner mesenchymal layer of primitive bladder"] = (
-        "inner mesenchymal layer of primitive bladder"
-    )
+    name: Literal["inner mesenchymal layer of primitive bladder"] = "inner mesenchymal layer of primitive bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36088"] = "EMAPA_36088"
 
 
 class OuterMesenchymalLayerOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal["outer mesenchymal layer of primitive bladder"] = (
-        "outer mesenchymal layer of primitive bladder"
-    )
+    name: Literal["outer mesenchymal layer of primitive bladder"] = "outer mesenchymal layer of primitive bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36089"] = "EMAPA_36089"
 
 
 class MuscleLayerOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal["muscle layer of primitive bladder"] = (
-        "muscle layer of primitive bladder"
-    )
+    name: Literal["muscle layer of primitive bladder"] = "muscle layer of primitive bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36090"] = "EMAPA_36090"
 
 
 class SmoothMuscleCellOfOuterMesenchymalLayerOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["smooth muscle cell of outer mesenchymal layer of primitive bladder"] = (
         "smooth muscle cell of outer mesenchymal layer of primitive bladder"
-    ] = "smooth muscle cell of outer mesenchymal layer of primitive bladder"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36091"] = "EMAPA_36091"
 
 
 class MesenchymalCellOfOuterMesenchymalLayerOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["mesenchymal cell of outer mesenchymal layer of primitive bladder"] = (
         "mesenchymal cell of outer mesenchymal layer of primitive bladder"
-    ] = "mesenchymal cell of outer mesenchymal layer of primitive bladder"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36092"] = "EMAPA_36092"
 
 
 class OuterLayerOfPrimitiveBladder(_MouseAnatomyModel):
 
-    name: Literal["outer layer of primitive bladder"] = (
-        "outer layer of primitive bladder"
-    )
+    name: Literal["outer layer of primitive bladder"] = "outer layer of primitive bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36093"] = "EMAPA_36093"
 
@@ -44001,24 +41837,20 @@ class PrimitiveBladderCaudalUrogenitalSinusTransitionZone(_MouseAnatomyModel):
     registry_identifier: Literal["EMAPA_36096"] = "EMAPA_36096"
 
 
-class EpitheliumOfPrimitiveBladderCaudalUrogenitalSinusTransitionZone(
-    _MouseAnatomyModel
-):
+class EpitheliumOfPrimitiveBladderCaudalUrogenitalSinusTransitionZone(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["epithelium of primitive bladder-caudal urogenital sinus transition zone"] = (
         "epithelium of primitive bladder-caudal urogenital sinus transition zone"
-    ] = "epithelium of primitive bladder-caudal urogenital sinus transition zone"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36097"] = "EMAPA_36097"
 
 
-class MesenchymeOfPrimitiveBladderCaudalUrogenitalSinusTransitionZone(
-    _MouseAnatomyModel
-):
+class MesenchymeOfPrimitiveBladderCaudalUrogenitalSinusTransitionZone(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["mesenchyme of primitive bladder-caudal urogenital sinus transition zone"] = (
         "mesenchyme of primitive bladder-caudal urogenital sinus transition zone"
-    ] = "mesenchyme of primitive bladder-caudal urogenital sinus transition zone"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36098"] = "EMAPA_36098"
 
@@ -44032,9 +41864,7 @@ class UrogenitalSinusRidge(_MouseAnatomyModel):
 
 class RestOfCaudalUrogenitalSinusEpithelium(_MouseAnatomyModel):
 
-    name: Literal["rest of caudal urogenital sinus epithelium"] = (
-        "rest of caudal urogenital sinus epithelium"
-    )
+    name: Literal["rest of caudal urogenital sinus epithelium"] = "rest of caudal urogenital sinus epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36100"] = "EMAPA_36100"
 
@@ -44048,9 +41878,7 @@ class CommonNephricDuct(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of pelvic urethra"] = (
-        "developing vasculature of pelvic urethra"
-    )
+    name: Literal["developing vasculature of pelvic urethra"] = "developing vasculature of pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36102"] = "EMAPA_36102"
 
@@ -44064,9 +41892,7 @@ class AdventitiaOfPelvicUrethra(_MouseAnatomyModel):
 
 class RestOfEpitheliumOfPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["rest of epithelium of pelvic urethra"] = (
-        "rest of epithelium of pelvic urethra"
-    )
+    name: Literal["rest of epithelium of pelvic urethra"] = "rest of epithelium of pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36104"] = "EMAPA_36104"
 
@@ -44091,18 +41917,14 @@ class IntermediateCellLayerOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
 class BasalCellLayerOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["basal cell layer of pelvic urethra of female"] = (
-        "basal cell layer of pelvic urethra of female"
-    )
+    name: Literal["basal cell layer of pelvic urethra of female"] = "basal cell layer of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36107"] = "EMAPA_36107"
 
 
 class UrogenitalSinusRidgeOfFemale(_MouseAnatomyModel):
 
-    name: Literal["urogenital sinus ridge of female"] = (
-        "urogenital sinus ridge of female"
-    )
+    name: Literal["urogenital sinus ridge of female"] = "urogenital sinus ridge of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36108"] = "EMAPA_36108"
 
@@ -44118,63 +41940,49 @@ class RestOfEpitheliumOfDorsalPelvicUrethraOfFemale(_MouseAnatomyModel):
 
 class LaminaPropriaOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of pelvic urethra of female"] = (
-        "lamina propria of pelvic urethra of female"
-    )
+    name: Literal["lamina propria of pelvic urethra of female"] = "lamina propria of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36110"] = "EMAPA_36110"
 
 
 class MuscularisMucosaOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["muscularis mucosa of pelvic urethra of female"] = (
-        "muscularis mucosa of pelvic urethra of female"
-    )
+    name: Literal["muscularis mucosa of pelvic urethra of female"] = "muscularis mucosa of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36111"] = "EMAPA_36111"
 
 
 class SubmucosaOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["submucosa of pelvic urethra of female"] = (
-        "submucosa of pelvic urethra of female"
-    )
+    name: Literal["submucosa of pelvic urethra of female"] = "submucosa of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36112"] = "EMAPA_36112"
 
 
 class AnteriorMesenchymalPadOfFemale(_MouseAnatomyModel):
 
-    name: Literal["anterior mesenchymal pad of female"] = (
-        "anterior mesenchymal pad of female"
-    )
+    name: Literal["anterior mesenchymal pad of female"] = "anterior mesenchymal pad of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36113"] = "EMAPA_36113"
 
 
 class DorsalMesenchymalPadOfFemale(_MouseAnatomyModel):
 
-    name: Literal["dorsal mesenchymal pad of female"] = (
-        "dorsal mesenchymal pad of female"
-    )
+    name: Literal["dorsal mesenchymal pad of female"] = "dorsal mesenchymal pad of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36114"] = "EMAPA_36114"
 
 
 class VentralMesenchymalPadOfFemale(_MouseAnatomyModel):
 
-    name: Literal["ventral mesenchymal pad of female"] = (
-        "ventral mesenchymal pad of female"
-    )
+    name: Literal["ventral mesenchymal pad of female"] = "ventral mesenchymal pad of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36115"] = "EMAPA_36115"
 
 
 class SmoothMuscleLayerOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["smooth muscle layer of pelvic urethra of female"] = (
-        "smooth muscle layer of pelvic urethra of female"
-    )
+    name: Literal["smooth muscle layer of pelvic urethra of female"] = "smooth muscle layer of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36116"] = "EMAPA_36116"
 
@@ -44188,9 +41996,7 @@ class RhabdosphincterOfFemale(_MouseAnatomyModel):
 
 class AdventitiaOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["adventitia of pelvic urethra of female"] = (
-        "adventitia of pelvic urethra of female"
-    )
+    name: Literal["adventitia of pelvic urethra of female"] = "adventitia of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36118"] = "EMAPA_36118"
 
@@ -44222,9 +42028,7 @@ class IntermediateCellLayerOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class BasalCellLayerOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["basal cell layer of pelvic urethra of male"] = (
-        "basal cell layer of pelvic urethra of male"
-    )
+    name: Literal["basal cell layer of pelvic urethra of male"] = "basal cell layer of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36122"] = "EMAPA_36122"
 
@@ -44247,36 +42051,28 @@ class RestOfEpitheliumOfDorsalPelvicUrethraOfMale(_MouseAnatomyModel):
 
 class LaminaPropriaOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of pelvic urethra of male"] = (
-        "lamina propria of pelvic urethra of male"
-    )
+    name: Literal["lamina propria of pelvic urethra of male"] = "lamina propria of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36125"] = "EMAPA_36125"
 
 
 class MuscularisMucosaOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["muscularis mucosa of pelvic urethra of male"] = (
-        "muscularis mucosa of pelvic urethra of male"
-    )
+    name: Literal["muscularis mucosa of pelvic urethra of male"] = "muscularis mucosa of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36126"] = "EMAPA_36126"
 
 
 class SubmucosaOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["submucosa of pelvic urethra of male"] = (
-        "submucosa of pelvic urethra of male"
-    )
+    name: Literal["submucosa of pelvic urethra of male"] = "submucosa of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36127"] = "EMAPA_36127"
 
 
 class AnteriorMesenchymalPadOfMale(_MouseAnatomyModel):
 
-    name: Literal["anterior mesenchymal pad of male"] = (
-        "anterior mesenchymal pad of male"
-    )
+    name: Literal["anterior mesenchymal pad of male"] = "anterior mesenchymal pad of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36128"] = "EMAPA_36128"
 
@@ -44297,36 +42093,28 @@ class VentralMesenchymalPadOfMale(_MouseAnatomyModel):
 
 class AdventitiaOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["adventitia of pelvic urethra of male"] = (
-        "adventitia of pelvic urethra of male"
-    )
+    name: Literal["adventitia of pelvic urethra of male"] = "adventitia of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36131"] = "EMAPA_36131"
 
 
 class VentralEpithelialBudOfFemale(_MouseAnatomyModel):
 
-    name: Literal["ventral epithelial bud of female"] = (
-        "ventral epithelial bud of female"
-    )
+    name: Literal["ventral epithelial bud of female"] = "ventral epithelial bud of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36132"] = "EMAPA_36132"
 
 
 class UrethralGlandOfPelvicUrethraOfFemale(_MouseAnatomyModel):
 
-    name: Literal["urethral gland of pelvic urethra of female"] = (
-        "urethral gland of pelvic urethra of female"
-    )
+    name: Literal["urethral gland of pelvic urethra of female"] = "urethral gland of pelvic urethra of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36133"] = "EMAPA_36133"
 
 
 class UrethralGlandOfClitoralUrethra(_MouseAnatomyModel):
 
-    name: Literal["urethral gland of clitoral urethra"] = (
-        "urethral gland of clitoral urethra"
-    )
+    name: Literal["urethral gland of clitoral urethra"] = "urethral gland of clitoral urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36134"] = "EMAPA_36134"
 
@@ -44340,9 +42128,7 @@ class VentralEpithelialBudOfMale(_MouseAnatomyModel):
 
 class EpitheliumOfDorsalProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["epithelium of dorsal prostatic urethra"] = (
-        "epithelium of dorsal prostatic urethra"
-    )
+    name: Literal["epithelium of dorsal prostatic urethra"] = "epithelium of dorsal prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36136"] = "EMAPA_36136"
 
@@ -44356,18 +42142,14 @@ class Verumontanum(_MouseAnatomyModel):
 
 class RestOfEpitheliumOfDorsalProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["rest of epithelium of dorsal prostatic urethra"] = (
-        "rest of epithelium of dorsal prostatic urethra"
-    )
+    name: Literal["rest of epithelium of dorsal prostatic urethra"] = "rest of epithelium of dorsal prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36138"] = "EMAPA_36138"
 
 
 class EpitheliumOfVentralProstaticUrethra(_MouseAnatomyModel):
 
-    name: Literal["epithelium of ventral prostatic urethra"] = (
-        "epithelium of ventral prostatic urethra"
-    )
+    name: Literal["epithelium of ventral prostatic urethra"] = "epithelium of ventral prostatic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36139"] = "EMAPA_36139"
 
@@ -44416,9 +42198,7 @@ class LateralProstateBud(_MouseAnatomyModel):
 
 class EpitheliumOfAnteriorProstateBud(_MouseAnatomyModel):
 
-    name: Literal["epithelium of anterior prostate bud"] = (
-        "epithelium of anterior prostate bud"
-    )
+    name: Literal["epithelium of anterior prostate bud"] = "epithelium of anterior prostate bud"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36146"] = "EMAPA_36146"
 
@@ -44434,9 +42214,7 @@ class PeriProstaticMesenchymeOfAnteriorProstateBud(_MouseAnatomyModel):
 
 class EpitheliumOfDorsalProstateBud(_MouseAnatomyModel):
 
-    name: Literal["epithelium of dorsal prostate bud"] = (
-        "epithelium of dorsal prostate bud"
-    )
+    name: Literal["epithelium of dorsal prostate bud"] = "epithelium of dorsal prostate bud"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36148"] = "EMAPA_36148"
 
@@ -44452,9 +42230,7 @@ class PeriProstaticMesenchymeOfDorsalProstateBud(_MouseAnatomyModel):
 
 class EpitheliumOfVentralProstateBud(_MouseAnatomyModel):
 
-    name: Literal["epithelium of ventral prostate bud"] = (
-        "epithelium of ventral prostate bud"
-    )
+    name: Literal["epithelium of ventral prostate bud"] = "epithelium of ventral prostate bud"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36150"] = "EMAPA_36150"
 
@@ -44470,9 +42246,7 @@ class PeriProstaticMesenchymeOfVentralProstateBud(_MouseAnatomyModel):
 
 class EpitheliumOfLateralProstateBud(_MouseAnatomyModel):
 
-    name: Literal["epithelium of lateral prostate bud"] = (
-        "epithelium of lateral prostate bud"
-    )
+    name: Literal["epithelium of lateral prostate bud"] = "epithelium of lateral prostate bud"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36152"] = "EMAPA_36152"
 
@@ -44803,27 +42577,21 @@ class FlexorCarpiUlnaris(_MouseAnatomyModel):
 
 class HumeralHeadOfFlexorDigitorumProfundus(_MouseAnatomyModel):
 
-    name: Literal["humeral head of flexor digitorum profundus"] = (
-        "humeral head of flexor digitorum profundus"
-    )
+    name: Literal["humeral head of flexor digitorum profundus"] = "humeral head of flexor digitorum profundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36199"] = "EMAPA_36199"
 
 
 class RadialHeadOfFlexorDigitorumProfundus(_MouseAnatomyModel):
 
-    name: Literal["radial head of flexor digitorum profundus"] = (
-        "radial head of flexor digitorum profundus"
-    )
+    name: Literal["radial head of flexor digitorum profundus"] = "radial head of flexor digitorum profundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36200"] = "EMAPA_36200"
 
 
 class UlnarHeadOfFlexorDigitorumProfundus(_MouseAnatomyModel):
 
-    name: Literal["ulnar head of flexor digitorum profundus"] = (
-        "ulnar head of flexor digitorum profundus"
-    )
+    name: Literal["ulnar head of flexor digitorum profundus"] = "ulnar head of flexor digitorum profundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36201"] = "EMAPA_36201"
 
@@ -44837,18 +42605,14 @@ class FlexorDigitorumSuperficialis(_MouseAnatomyModel):
 
 class FlexorDigitorumSuperficialis1(_MouseAnatomyModel):
 
-    name: Literal["flexor digitorum superficialis 1"] = (
-        "flexor digitorum superficialis 1"
-    )
+    name: Literal["flexor digitorum superficialis 1"] = "flexor digitorum superficialis 1"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36203"] = "EMAPA_36203"
 
 
 class FlexorDigitorumSuperficialis2(_MouseAnatomyModel):
 
-    name: Literal["flexor digitorum superficialis 2"] = (
-        "flexor digitorum superficialis 2"
-    )
+    name: Literal["flexor digitorum superficialis 2"] = "flexor digitorum superficialis 2"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36204"] = "EMAPA_36204"
 
@@ -44918,9 +42682,7 @@ class AdductorPollicis(_MouseAnatomyModel):
 
 class FlexorDigitiPrimiBrevisOfHand(_MouseAnatomyModel):
 
-    name: Literal["flexor digiti primi brevis of hand"] = (
-        "flexor digiti primi brevis of hand"
-    )
+    name: Literal["flexor digiti primi brevis of hand"] = "flexor digiti primi brevis of hand"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36214"] = "EMAPA_36214"
 
@@ -44976,9 +42738,7 @@ class AdductorMagnus(_MouseAnatomyModel):
 
 class AccessoryHeadOfBicepsFemoris(_MouseAnatomyModel):
 
-    name: Literal["accessory head of biceps femoris"] = (
-        "accessory head of biceps femoris"
-    )
+    name: Literal["accessory head of biceps femoris"] = "accessory head of biceps femoris"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36223"] = "EMAPA_36223"
 
@@ -44992,9 +42752,7 @@ class AnteriorHeadOfBicepsFemoris(_MouseAnatomyModel):
 
 class PosteriorHeadOfBicepsFemoris(_MouseAnatomyModel):
 
-    name: Literal["posterior head of biceps femoris"] = (
-        "posterior head of biceps femoris"
-    )
+    name: Literal["posterior head of biceps femoris"] = "posterior head of biceps femoris"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36225"] = "EMAPA_36225"
 
@@ -45225,9 +42983,7 @@ class ExtensorDigitorumBrevis(_MouseAnatomyModel):
 
 class FlexorDigitiPrimiBrevisOfFoot(_MouseAnatomyModel):
 
-    name: Literal["flexor digiti primi brevis of foot"] = (
-        "flexor digiti primi brevis of foot"
-    )
+    name: Literal["flexor digiti primi brevis of foot"] = "flexor digiti primi brevis of foot"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36259"] = "EMAPA_36259"
 
@@ -45353,36 +43109,28 @@ class SubmandibularGanglion(_MouseAnatomyModel):
 
 class RightLungAccessoryLobeVascularElement(_MouseAnatomyModel):
 
-    name: Literal["right lung accessory lobe vascular element"] = (
-        "right lung accessory lobe vascular element"
-    )
+    name: Literal["right lung accessory lobe vascular element"] = "right lung accessory lobe vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36277"] = "EMAPA_36277"
 
 
 class RightLungCaudalLobeVascularElement(_MouseAnatomyModel):
 
-    name: Literal["right lung caudal lobe vascular element"] = (
-        "right lung caudal lobe vascular element"
-    )
+    name: Literal["right lung caudal lobe vascular element"] = "right lung caudal lobe vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36278"] = "EMAPA_36278"
 
 
 class RightLungCranialLobeVascularElement(_MouseAnatomyModel):
 
-    name: Literal["right lung cranial lobe vascular element"] = (
-        "right lung cranial lobe vascular element"
-    )
+    name: Literal["right lung cranial lobe vascular element"] = "right lung cranial lobe vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36279"] = "EMAPA_36279"
 
 
 class RightLungMiddleLobeVascularElement(_MouseAnatomyModel):
 
-    name: Literal["right lung middle lobe vascular element"] = (
-        "right lung middle lobe vascular element"
-    )
+    name: Literal["right lung middle lobe vascular element"] = "right lung middle lobe vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36280"] = "EMAPA_36280"
 
@@ -45620,18 +43368,14 @@ class LymphaticVesselSmoothMuscle(_MouseAnatomyModel):
 
 class LymphaticVesselTunicaAdventitia(_MouseAnatomyModel):
 
-    name: Literal["lymphatic vessel tunica adventitia"] = (
-        "lymphatic vessel tunica adventitia"
-    )
+    name: Literal["lymphatic vessel tunica adventitia"] = "lymphatic vessel tunica adventitia"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36314"] = "EMAPA_36314"
 
 
 class SurfaceEctodermOfGenitalTubercle(_MouseAnatomyModel):
 
-    name: Literal["surface ectoderm of genital tubercle"] = (
-        "surface ectoderm of genital tubercle"
-    )
+    name: Literal["surface ectoderm of genital tubercle"] = "surface ectoderm of genital tubercle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36315"] = "EMAPA_36315"
 
@@ -45645,18 +43389,14 @@ class PalatineVasculature(_MouseAnatomyModel):
 
 class ReichertsCartilagePreCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Reichert's cartilage pre-cartilage condensation"] = (
-        "Reichert's cartilage pre-cartilage condensation"
-    )
+    name: Literal["Reichert's cartilage pre-cartilage condensation"] = "Reichert's cartilage pre-cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36317"] = "EMAPA_36317"
 
 
 class ReichertsCartilageCondensation(_MouseAnatomyModel):
 
-    name: Literal["Reichert's cartilage condensation"] = (
-        "Reichert's cartilage condensation"
-    )
+    name: Literal["Reichert's cartilage condensation"] = "Reichert's cartilage condensation"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36318"] = "EMAPA_36318"
 
@@ -45670,9 +43410,7 @@ class ReichertsCartilage(_MouseAnatomyModel):
 
 class StyloidProcessOfTemporalBone(_MouseAnatomyModel):
 
-    name: Literal["styloid process of temporal bone"] = (
-        "styloid process of temporal bone"
-    )
+    name: Literal["styloid process of temporal bone"] = "styloid process of temporal bone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36320"] = "EMAPA_36320"
 
@@ -45735,18 +43473,14 @@ class VertebralVenousPlexus(_MouseAnatomyModel):
 
 class ExternalVertebralVenousPlexus(_MouseAnatomyModel):
 
-    name: Literal["external vertebral venous plexus"] = (
-        "external vertebral venous plexus"
-    )
+    name: Literal["external vertebral venous plexus"] = "external vertebral venous plexus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36329"] = "EMAPA_36329"
 
 
 class InternalVertebralVenousPlexus(_MouseAnatomyModel):
 
-    name: Literal["internal vertebral venous plexus"] = (
-        "internal vertebral venous plexus"
-    )
+    name: Literal["internal vertebral venous plexus"] = "internal vertebral venous plexus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36330"] = "EMAPA_36330"
 
@@ -45767,27 +43501,21 @@ class BladderUrethraTransitionZone(_MouseAnatomyModel):
 
 class EpitheliumOfBladderUrethraTransitionZone(_MouseAnatomyModel):
 
-    name: Literal["epithelium of bladder-urethra transition zone"] = (
-        "epithelium of bladder-urethra transition zone"
-    )
+    name: Literal["epithelium of bladder-urethra transition zone"] = "epithelium of bladder-urethra transition zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36333"] = "EMAPA_36333"
 
 
 class MesenchymeOfBladderUrethraTransitionZone(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of bladder-urethra transition zone"] = (
-        "mesenchyme of bladder-urethra transition zone"
-    )
+    name: Literal["mesenchyme of bladder-urethra transition zone"] = "mesenchyme of bladder-urethra transition zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36334"] = "EMAPA_36334"
 
 
 class RemnantOfMesonephricTubuleOfMale(_MouseAnatomyModel):
 
-    name: Literal["remnant of mesonephric tubule of male"] = (
-        "remnant of mesonephric tubule of male"
-    )
+    name: Literal["remnant of mesonephric tubule of male"] = "remnant of mesonephric tubule of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36335"] = "EMAPA_36335"
 
@@ -45850,18 +43578,14 @@ class NerveOfUrotheliumOfBladder(_MouseAnatomyModel):
 
 class NerveOfLaminaPropriaOfBladder(_MouseAnatomyModel):
 
-    name: Literal["nerve of lamina propria of bladder"] = (
-        "nerve of lamina propria of bladder"
-    )
+    name: Literal["nerve of lamina propria of bladder"] = "nerve of lamina propria of bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36344"] = "EMAPA_36344"
 
 
 class NerveOfDetrusorMuscleOfBladder(_MouseAnatomyModel):
 
-    name: Literal["nerve of detrusor muscle of bladder"] = (
-        "nerve of detrusor muscle of bladder"
-    )
+    name: Literal["nerve of detrusor muscle of bladder"] = "nerve of detrusor muscle of bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36345"] = "EMAPA_36345"
 
@@ -45875,54 +43599,42 @@ class NerveOfOuterLayerOfBladder(_MouseAnatomyModel):
 
 class NerveOfUrotheliumOfBladderFundus(_MouseAnatomyModel):
 
-    name: Literal["nerve of urothelium of bladder fundus"] = (
-        "nerve of urothelium of bladder fundus"
-    )
+    name: Literal["nerve of urothelium of bladder fundus"] = "nerve of urothelium of bladder fundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36347"] = "EMAPA_36347"
 
 
 class NerveOfUrotheliumOfBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["nerve of urothelium of bladder neck"] = (
-        "nerve of urothelium of bladder neck"
-    )
+    name: Literal["nerve of urothelium of bladder neck"] = "nerve of urothelium of bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36348"] = "EMAPA_36348"
 
 
 class NerveOfUrotheliumOfBladderTrigone(_MouseAnatomyModel):
 
-    name: Literal["nerve of urothelium of bladder trigone"] = (
-        "nerve of urothelium of bladder trigone"
-    )
+    name: Literal["nerve of urothelium of bladder trigone"] = "nerve of urothelium of bladder trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36349"] = "EMAPA_36349"
 
 
 class NerveOfUrotheliumOfVentralBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["nerve of urothelium of ventral bladder neck"] = (
-        "nerve of urothelium of ventral bladder neck"
-    )
+    name: Literal["nerve of urothelium of ventral bladder neck"] = "nerve of urothelium of ventral bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36350"] = "EMAPA_36350"
 
 
 class NerveOfLaminaPropriaOfBladderFundus(_MouseAnatomyModel):
 
-    name: Literal["nerve of lamina propria of bladder fundus"] = (
-        "nerve of lamina propria of bladder fundus"
-    )
+    name: Literal["nerve of lamina propria of bladder fundus"] = "nerve of lamina propria of bladder fundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36351"] = "EMAPA_36351"
 
 
 class NerveOfLaminaPropriaOfBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["nerve of lamina propria of bladder neck"] = (
-        "nerve of lamina propria of bladder neck"
-    )
+    name: Literal["nerve of lamina propria of bladder neck"] = "nerve of lamina propria of bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36352"] = "EMAPA_36352"
 
@@ -45956,36 +43668,30 @@ class NerveOfSuburothelialLaminaPropriaOfBladderFundus(_MouseAnatomyModel):
 
 class NerveOfOuterLaminaPropriaOfBladderFundus(_MouseAnatomyModel):
 
-    name: Literal["nerve of outer lamina propria of bladder fundus"] = (
-        "nerve of outer lamina propria of bladder fundus"
-    )
+    name: Literal["nerve of outer lamina propria of bladder fundus"] = "nerve of outer lamina propria of bladder fundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36356"] = "EMAPA_36356"
 
 
 class NerveOfLaminaPropriaOfBladderTrigone(_MouseAnatomyModel):
 
-    name: Literal["nerve of lamina propria of bladder trigone"] = (
-        "nerve of lamina propria of bladder trigone"
-    )
+    name: Literal["nerve of lamina propria of bladder trigone"] = "nerve of lamina propria of bladder trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36357"] = "EMAPA_36357"
 
 
 class NerveOfLaminaPropriaOfVentralBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["nerve of lamina propria of ventral bladder neck"] = (
-        "nerve of lamina propria of ventral bladder neck"
-    )
+    name: Literal["nerve of lamina propria of ventral bladder neck"] = "nerve of lamina propria of ventral bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36358"] = "EMAPA_36358"
 
 
 class NerveOfBloodVesselOfSuburothelialLaminaPropriaOfBladderFundus(_MouseAnatomyModel):
 
-    name: Literal[
+    name: Literal["nerve of blood vessel of suburothelial lamina propria of bladder fundus"] = (
         "nerve of blood vessel of suburothelial lamina propria of bladder fundus"
-    ] = "nerve of blood vessel of suburothelial lamina propria of bladder fundus"
+    )
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36359"] = "EMAPA_36359"
 
@@ -46028,36 +43734,28 @@ class NerveOfNonvascularTissueOfDetrusorOfBladder(_MouseAnatomyModel):
 
 class NerveOfBloodVesselOfDetrusorOfBladder(_MouseAnatomyModel):
 
-    name: Literal["nerve of blood vessel of detrusor of bladder"] = (
-        "nerve of blood vessel of detrusor of bladder"
-    )
+    name: Literal["nerve of blood vessel of detrusor of bladder"] = "nerve of blood vessel of detrusor of bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36364"] = "EMAPA_36364"
 
 
 class NerveOfDetrusorMuscleOfBladderFundus(_MouseAnatomyModel):
 
-    name: Literal["nerve of detrusor muscle of bladder fundus"] = (
-        "nerve of detrusor muscle of bladder fundus"
-    )
+    name: Literal["nerve of detrusor muscle of bladder fundus"] = "nerve of detrusor muscle of bladder fundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36365"] = "EMAPA_36365"
 
 
 class NerveOfDetrusorMuscleOfBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["nerve of detrusor muscle of bladder neck"] = (
-        "nerve of detrusor muscle of bladder neck"
-    )
+    name: Literal["nerve of detrusor muscle of bladder neck"] = "nerve of detrusor muscle of bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36366"] = "EMAPA_36366"
 
 
 class NerveOfDetrusorMuscleOfBladderTrigone(_MouseAnatomyModel):
 
-    name: Literal["nerve of detrusor muscle of bladder trigone"] = (
-        "nerve of detrusor muscle of bladder trigone"
-    )
+    name: Literal["nerve of detrusor muscle of bladder trigone"] = "nerve of detrusor muscle of bladder trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36367"] = "EMAPA_36367"
 
@@ -46091,9 +43789,7 @@ class NerveOfBloodVesselOfDetrusorOfBladderNeck(_MouseAnatomyModel):
 
 class NerveOfBloodVesselOfDetrusorOfTrigone(_MouseAnatomyModel):
 
-    name: Literal["nerve of blood vessel of detrusor of trigone"] = (
-        "nerve of blood vessel of detrusor of trigone"
-    )
+    name: Literal["nerve of blood vessel of detrusor of trigone"] = "nerve of blood vessel of detrusor of trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36371"] = "EMAPA_36371"
 
@@ -46118,45 +43814,35 @@ class NerveOfNonvascularTissueOfOuterLayerOfBladder(_MouseAnatomyModel):
 
 class NerveOfBloodVesselOfOuterLayerOfBladder(_MouseAnatomyModel):
 
-    name: Literal["nerve of blood vessel of outer layer of bladder"] = (
-        "nerve of blood vessel of outer layer of bladder"
-    )
+    name: Literal["nerve of blood vessel of outer layer of bladder"] = "nerve of blood vessel of outer layer of bladder"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36374"] = "EMAPA_36374"
 
 
 class NerveOfSerosaOfBladderFundus(_MouseAnatomyModel):
 
-    name: Literal["nerve of serosa of bladder fundus"] = (
-        "nerve of serosa of bladder fundus"
-    )
+    name: Literal["nerve of serosa of bladder fundus"] = "nerve of serosa of bladder fundus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36375"] = "EMAPA_36375"
 
 
 class NerveOfAdventitiaOfBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["nerve of adventitia of bladder neck"] = (
-        "nerve of adventitia of bladder neck"
-    )
+    name: Literal["nerve of adventitia of bladder neck"] = "nerve of adventitia of bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36376"] = "EMAPA_36376"
 
 
 class NerveOfAdventitiaOfBladderTrigone(_MouseAnatomyModel):
 
-    name: Literal["nerve of adventitia of bladder trigone"] = (
-        "nerve of adventitia of bladder trigone"
-    )
+    name: Literal["nerve of adventitia of bladder trigone"] = "nerve of adventitia of bladder trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36377"] = "EMAPA_36377"
 
 
 class NerveOfAdventitiaOfVentralBladderNeck(_MouseAnatomyModel):
 
-    name: Literal["nerve of adventitia of ventral bladder neck"] = (
-        "nerve of adventitia of ventral bladder neck"
-    )
+    name: Literal["nerve of adventitia of ventral bladder neck"] = "nerve of adventitia of ventral bladder neck"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36378"] = "EMAPA_36378"
 
@@ -46181,9 +43867,7 @@ class NerveOfBloodVesselOfAdventitiaOfBladderNeck(_MouseAnatomyModel):
 
 class NerveOfBloodVesselOfAdventitiaOfTrigone(_MouseAnatomyModel):
 
-    name: Literal["nerve of blood vessel of adventitia of trigone"] = (
-        "nerve of blood vessel of adventitia of trigone"
-    )
+    name: Literal["nerve of blood vessel of adventitia of trigone"] = "nerve of blood vessel of adventitia of trigone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36381"] = "EMAPA_36381"
 
@@ -46304,9 +43988,7 @@ class GlandularRidge(_MouseAnatomyModel):
 
 class MaleUrogenitalMatingProtuberance(_MouseAnatomyModel):
 
-    name: Literal["male urogenital mating protuberance"] = (
-        "male urogenital mating protuberance"
-    )
+    name: Literal["male urogenital mating protuberance"] = "male urogenital mating protuberance"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36398"] = "EMAPA_36398"
 
@@ -46327,9 +44009,7 @@ class HyalineCartilageOfOsPenis(_MouseAnatomyModel):
 
 class MaleUrogenitalMatingProtuberanceCartilage(_MouseAnatomyModel):
 
-    name: Literal["male urogenital mating protuberance cartilage"] = (
-        "male urogenital mating protuberance cartilage"
-    )
+    name: Literal["male urogenital mating protuberance cartilage"] = "male urogenital mating protuberance cartilage"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36401"] = "EMAPA_36401"
 
@@ -46363,9 +44043,7 @@ class MaleUrogenitalMatingProtuberanceRidgeGroove(_MouseAnatomyModel):
 
 class MaleUrogenitalMatingProtuberanceSkin(_MouseAnatomyModel):
 
-    name: Literal["male urogenital mating protuberance skin"] = (
-        "male urogenital mating protuberance skin"
-    )
+    name: Literal["male urogenital mating protuberance skin"] = "male urogenital mating protuberance skin"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36405"] = "EMAPA_36405"
 
@@ -46414,9 +44092,7 @@ class LaminaPropriaOfScrotum(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfScrotalSwelling(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of scrotal swelling"] = (
-        "developing vasculature of scrotal swelling"
-    )
+    name: Literal["developing vasculature of scrotal swelling"] = "developing vasculature of scrotal swelling"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36413"] = "EMAPA_36413"
 
@@ -46430,36 +44106,28 @@ class SeptumOfScrotalFold(_MouseAnatomyModel):
 
 class DevelopingVasculatureOfScrotalFold(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of scrotal fold"] = (
-        "developing vasculature of scrotal fold"
-    )
+    name: Literal["developing vasculature of scrotal fold"] = "developing vasculature of scrotal fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36415"] = "EMAPA_36415"
 
 
 class DevelopingVasculatureOfLabialFold(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of labial fold"] = (
-        "developing vasculature of labial fold"
-    )
+    name: Literal["developing vasculature of labial fold"] = "developing vasculature of labial fold"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36416"] = "EMAPA_36416"
 
 
 class DevelopingVasculatureOfLabialSwelling(_MouseAnatomyModel):
 
-    name: Literal["developing vasculature of labial swelling"] = (
-        "developing vasculature of labial swelling"
-    )
+    name: Literal["developing vasculature of labial swelling"] = "developing vasculature of labial swelling"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36417"] = "EMAPA_36417"
 
 
 class LaminaPropriaOfSeminalVesicle(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of seminal vesicle"] = (
-        "lamina propria of seminal vesicle"
-    )
+    name: Literal["lamina propria of seminal vesicle"] = "lamina propria of seminal vesicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36418"] = "EMAPA_36418"
 
@@ -46473,9 +44141,7 @@ class AdventitiaOfEjaculatoryDuct(_MouseAnatomyModel):
 
 class LaminaPropriaOfDuctusDeferens(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of ductus deferens"] = (
-        "lamina propria of ductus deferens"
-    )
+    name: Literal["lamina propria of ductus deferens"] = "lamina propria of ductus deferens"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36420"] = "EMAPA_36420"
 
@@ -46496,18 +44162,14 @@ class MigratingNeuralCrest(_MouseAnatomyModel):
 
 class UrethralGlandOfPelvicUrethraOfMale(_MouseAnatomyModel):
 
-    name: Literal["urethral gland of pelvic urethra of male"] = (
-        "urethral gland of pelvic urethra of male"
-    )
+    name: Literal["urethral gland of pelvic urethra of male"] = "urethral gland of pelvic urethra of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36423"] = "EMAPA_36423"
 
 
 class UrethralGlandOfPenileUrethra(_MouseAnatomyModel):
 
-    name: Literal["urethral gland of penile urethra"] = (
-        "urethral gland of penile urethra"
-    )
+    name: Literal["urethral gland of penile urethra"] = "urethral gland of penile urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36424"] = "EMAPA_36424"
 
@@ -46521,18 +44183,14 @@ class MaleUrethralGlandBud(_MouseAnatomyModel):
 
 class AnteriorMaleUrethralGlandBud(_MouseAnatomyModel):
 
-    name: Literal["anterior male urethral gland bud"] = (
-        "anterior male urethral gland bud"
-    )
+    name: Literal["anterior male urethral gland bud"] = "anterior male urethral gland bud"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36426"] = "EMAPA_36426"
 
 
 class PosteriorMaleUrethralGlandBud(_MouseAnatomyModel):
 
-    name: Literal["posterior male urethral gland bud"] = (
-        "posterior male urethral gland bud"
-    )
+    name: Literal["posterior male urethral gland bud"] = "posterior male urethral gland bud"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36427"] = "EMAPA_36427"
 
@@ -46553,27 +44211,21 @@ class BulbourethralGlandOfFemale(_MouseAnatomyModel):
 
 class EpitheliumOfBulbourethralGlandOfFemale(_MouseAnatomyModel):
 
-    name: Literal["epithelium of bulbourethral gland of female"] = (
-        "epithelium of bulbourethral gland of female"
-    )
+    name: Literal["epithelium of bulbourethral gland of female"] = "epithelium of bulbourethral gland of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36430"] = "EMAPA_36430"
 
 
 class LaminaPropriaOfBulbourethralGlandOfFemale(_MouseAnatomyModel):
 
-    name: Literal["lamina propria of bulbourethral gland of female"] = (
-        "lamina propria of bulbourethral gland of female"
-    )
+    name: Literal["lamina propria of bulbourethral gland of female"] = "lamina propria of bulbourethral gland of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36431"] = "EMAPA_36431"
 
 
 class VasculatureOfBulbourethralGlandOfFemale(_MouseAnatomyModel):
 
-    name: Literal["vasculature of bulbourethral gland of female"] = (
-        "vasculature of bulbourethral gland of female"
-    )
+    name: Literal["vasculature of bulbourethral gland of female"] = "vasculature of bulbourethral gland of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36432"] = "EMAPA_36432"
 
@@ -46587,9 +44239,7 @@ class PhallicUrethraOfFemale(_MouseAnatomyModel):
 
 class UrethralMeatusOfPenileUrethra(_MouseAnatomyModel):
 
-    name: Literal["urethral meatus of penile urethra"] = (
-        "urethral meatus of penile urethra"
-    )
+    name: Literal["urethral meatus of penile urethra"] = "urethral meatus of penile urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36434"] = "EMAPA_36434"
 
@@ -46638,9 +44288,7 @@ class ToothBasementMembrane(_MouseAnatomyModel):
 
 class MesenchymeOfGlansOfFemaleGenitalTubercle(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of glans of female genital tubercle"] = (
-        "mesenchyme of glans of female genital tubercle"
-    )
+    name: Literal["mesenchyme of glans of female genital tubercle"] = "mesenchyme of glans of female genital tubercle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36441"] = "EMAPA_36441"
 
@@ -46656,9 +44304,7 @@ class UrethralPlateEpitheliumOfUrogenitalMembraneOfFemale(_MouseAnatomyModel):
 
 class SkinOfUrogenitalMembraneOfFemale(_MouseAnatomyModel):
 
-    name: Literal["skin of urogenital membrane of female"] = (
-        "skin of urogenital membrane of female"
-    )
+    name: Literal["skin of urogenital membrane of female"] = "skin of urogenital membrane of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36443"] = "EMAPA_36443"
 
@@ -46674,9 +44320,7 @@ class UrethralPlateEpitheliumOfUrogenitalMembraneOfMale(_MouseAnatomyModel):
 
 class SkinOfUrogenitalMembraneOfMale(_MouseAnatomyModel):
 
-    name: Literal["skin of urogenital membrane of male"] = (
-        "skin of urogenital membrane of male"
-    )
+    name: Literal["skin of urogenital membrane of male"] = "skin of urogenital membrane of male"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36445"] = "EMAPA_36445"
 
@@ -46704,9 +44348,7 @@ class Ca3PyramidalCellLayer(_MouseAnatomyModel):
 
 class ForebrainMidbrainBoundaryRegion(_MouseAnatomyModel):
 
-    name: Literal["forebrain-midbrain boundary region"] = (
-        "forebrain-midbrain boundary region"
-    )
+    name: Literal["forebrain-midbrain boundary region"] = "forebrain-midbrain boundary region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36449"] = "EMAPA_36449"
 
@@ -46720,36 +44362,28 @@ class SubcommissuralOrganPrimordium(_MouseAnatomyModel):
 
 class UrethralTubeEpitheliumOfClitoralUrethra(_MouseAnatomyModel):
 
-    name: Literal["urethral tube epithelium of clitoral urethra"] = (
-        "urethral tube epithelium of clitoral urethra"
-    )
+    name: Literal["urethral tube epithelium of clitoral urethra"] = "urethral tube epithelium of clitoral urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36451"] = "EMAPA_36451"
 
 
 class ProximalUrethralMeatusOfClitoralUrethra(_MouseAnatomyModel):
 
-    name: Literal["proximal urethral meatus of clitoral urethra"] = (
-        "proximal urethral meatus of clitoral urethra"
-    )
+    name: Literal["proximal urethral meatus of clitoral urethra"] = "proximal urethral meatus of clitoral urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36452"] = "EMAPA_36452"
 
 
 class UrethralMeatusOfClitoralUrethra(_MouseAnatomyModel):
 
-    name: Literal["urethral meatus of clitoral urethra"] = (
-        "urethral meatus of clitoral urethra"
-    )
+    name: Literal["urethral meatus of clitoral urethra"] = "urethral meatus of clitoral urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36453"] = "EMAPA_36453"
 
 
 class UrethralTubeEpitheliumOfPenileUrethra(_MouseAnatomyModel):
 
-    name: Literal["urethral tube epithelium of penile urethra"] = (
-        "urethral tube epithelium of penile urethra"
-    )
+    name: Literal["urethral tube epithelium of penile urethra"] = "urethral tube epithelium of penile urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36454"] = "EMAPA_36454"
 
@@ -46777,9 +44411,7 @@ class HindlimbNail(_MouseAnatomyModel):
 
 class MyometriumInnerCircularSmoothMuscleLayer(_MouseAnatomyModel):
 
-    name: Literal["myometrium inner circular smooth muscle layer"] = (
-        "myometrium inner circular smooth muscle layer"
-    )
+    name: Literal["myometrium inner circular smooth muscle layer"] = "myometrium inner circular smooth muscle layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36458"] = "EMAPA_36458"
 
@@ -46900,9 +44532,7 @@ class OvaryFollicleCell(_MouseAnatomyModel):
 
 class MesenchymeOfPreputialSwelling(_MouseAnatomyModel):
 
-    name: Literal["mesenchyme of preputial swelling"] = (
-        "mesenchyme of preputial swelling"
-    )
+    name: Literal["mesenchyme of preputial swelling"] = "mesenchyme of preputial swelling"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36475"] = "EMAPA_36475"
 
@@ -46986,9 +44616,7 @@ class BulbusCordisEndocardialTube(_MouseAnatomyModel):
 
 class BulbusCordisEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["bulbus cordis endocardial lining"] = (
-        "bulbus cordis endocardial lining"
-    )
+    name: Literal["bulbus cordis endocardial lining"] = "bulbus cordis endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36487"] = "EMAPA_36487"
 
@@ -47324,9 +44952,7 @@ class BileCanaliculus(_MouseAnatomyModel):
 
 class ExocrineGlandFluidOrSecretion(_MouseAnatomyModel):
 
-    name: Literal["exocrine gland fluid or secretion"] = (
-        "exocrine gland fluid or secretion"
-    )
+    name: Literal["exocrine gland fluid or secretion"] = "exocrine gland fluid or secretion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36535"] = "EMAPA_36535"
 
@@ -47347,9 +44973,7 @@ class Tear(_MouseAnatomyModel):
 
 class MammaryGlandFluidOrSecretion(_MouseAnatomyModel):
 
-    name: Literal["mammary gland fluid or secretion"] = (
-        "mammary gland fluid or secretion"
-    )
+    name: Literal["mammary gland fluid or secretion"] = "mammary gland fluid or secretion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36538"] = "EMAPA_36538"
 
@@ -47370,9 +44994,7 @@ class MammaryGlandMilk(_MouseAnatomyModel):
 
 class MaleReproductiveSystemFluidOrSecretion(_MouseAnatomyModel):
 
-    name: Literal["male reproductive system fluid or secretion"] = (
-        "male reproductive system fluid or secretion"
-    )
+    name: Literal["male reproductive system fluid or secretion"] = "male reproductive system fluid or secretion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36541"] = "EMAPA_36541"
 
@@ -47435,9 +45057,7 @@ class Perilymph(_MouseAnatomyModel):
 
 class RespiratorySystemFluidOrSecretion(_MouseAnatomyModel):
 
-    name: Literal["respiratory system fluid or secretion"] = (
-        "respiratory system fluid or secretion"
-    )
+    name: Literal["respiratory system fluid or secretion"] = "respiratory system fluid or secretion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36550"] = "EMAPA_36550"
 
@@ -47542,9 +45162,7 @@ class SublingualDuct(_MouseAnatomyModel):
 
 class SpinalCordIntermediolateralNucleus(_MouseAnatomyModel):
 
-    name: Literal["spinal cord intermediolateral nucleus"] = (
-        "spinal cord intermediolateral nucleus"
-    )
+    name: Literal["spinal cord intermediolateral nucleus"] = "spinal cord intermediolateral nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36565"] = "EMAPA_36565"
 
@@ -47600,9 +45218,7 @@ class MandibleCondylarProcess(_MouseAnatomyModel):
 
 class TrabeculaeCarneaeCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["trabeculae carneae cardiac muscle"] = (
-        "trabeculae carneae cardiac muscle"
-    )
+    name: Literal["trabeculae carneae cardiac muscle"] = "trabeculae carneae cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36573"] = "EMAPA_36573"
 
@@ -47695,9 +45311,7 @@ class AccessoryOlfactoryBulbAnlageMitralCellLayer(_MouseAnatomyModel):
 
 class MainOlfactoryBulbVentricularLayer(_MouseAnatomyModel):
 
-    name: Literal["main olfactory bulb ventricular layer"] = (
-        "main olfactory bulb ventricular layer"
-    )
+    name: Literal["main olfactory bulb ventricular layer"] = "main olfactory bulb ventricular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36586"] = "EMAPA_36586"
 
@@ -47741,9 +45355,7 @@ class AlimentarySystemMucosa(_MouseAnatomyModel):
 
 class AlimentarySystemLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["alimentary system lamina propria"] = (
-        "alimentary system lamina propria"
-    )
+    name: Literal["alimentary system lamina propria"] = "alimentary system lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36592"] = "EMAPA_36592"
 
@@ -47808,18 +45420,14 @@ class CorticospinalTract(_MouseAnatomyModel):
 
 class CerebellumPurkinjeCellCluster(_MouseAnatomyModel):
 
-    name: Literal["cerebellum Purkinje cell cluster"] = (
-        "cerebellum Purkinje cell cluster"
-    )
+    name: Literal["cerebellum Purkinje cell cluster"] = "cerebellum Purkinje cell cluster"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36601"] = "EMAPA_36601"
 
 
 class HypothalamusSubventricularZone(_MouseAnatomyModel):
 
-    name: Literal["hypothalamus subventricular zone"] = (
-        "hypothalamus subventricular zone"
-    )
+    name: Literal["hypothalamus subventricular zone"] = "hypothalamus subventricular zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36602"] = "EMAPA_36602"
 
@@ -48050,9 +45658,7 @@ class MammaryGlandLobule(_MouseAnatomyModel):
 
 class LeftLungRespiratoryBronchiole(_MouseAnatomyModel):
 
-    name: Literal["left lung respiratory bronchiole"] = (
-        "left lung respiratory bronchiole"
-    )
+    name: Literal["left lung respiratory bronchiole"] = "left lung respiratory bronchiole"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36635"] = "EMAPA_36635"
 
@@ -48066,9 +45672,7 @@ class LeftLungTerminalBronchiole(_MouseAnatomyModel):
 
 class RightLungRespiratoryBronchiole(_MouseAnatomyModel):
 
-    name: Literal["right lung respiratory bronchiole"] = (
-        "right lung respiratory bronchiole"
-    )
+    name: Literal["right lung respiratory bronchiole"] = "right lung respiratory bronchiole"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36637"] = "EMAPA_36637"
 
@@ -48180,18 +45784,14 @@ class LevatorPalpebraeSuperioris(_MouseAnatomyModel):
 
 class PrimordialGermCellOfExtraembryonicMesoderm(_MouseAnatomyModel):
 
-    name: Literal["primordial germ cell of extraembryonic mesoderm"] = (
-        "primordial germ cell of extraembryonic mesoderm"
-    )
+    name: Literal["primordial germ cell of extraembryonic mesoderm"] = "primordial germ cell of extraembryonic mesoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36653"] = "EMAPA_36653"
 
 
 class VentralLateralThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["ventral lateral thalamic nucleus"] = (
-        "ventral lateral thalamic nucleus"
-    )
+    name: Literal["ventral lateral thalamic nucleus"] = "ventral lateral thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36654"] = "EMAPA_36654"
 
@@ -48240,36 +45840,28 @@ class AnteriorEntopeduncularArea(_MouseAnatomyModel):
 
 class VomeronasalBranchOfOlfactoryINerve(_MouseAnatomyModel):
 
-    name: Literal["vomeronasal branch of olfactory I nerve"] = (
-        "vomeronasal branch of olfactory I nerve"
-    )
+    name: Literal["vomeronasal branch of olfactory I nerve"] = "vomeronasal branch of olfactory I nerve"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36661"] = "EMAPA_36661"
 
 
 class VomeronasalOrganSensoryEpithelium(_MouseAnatomyModel):
 
-    name: Literal["vomeronasal organ sensory epithelium"] = (
-        "vomeronasal organ sensory epithelium"
-    )
+    name: Literal["vomeronasal organ sensory epithelium"] = "vomeronasal organ sensory epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36662"] = "EMAPA_36662"
 
 
 class VomeronasalOrganNonSensoryEpithelium(_MouseAnatomyModel):
 
-    name: Literal["vomeronasal organ non-sensory epithelium"] = (
-        "vomeronasal organ non-sensory epithelium"
-    )
+    name: Literal["vomeronasal organ non-sensory epithelium"] = "vomeronasal organ non-sensory epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36663"] = "EMAPA_36663"
 
 
 class VomeronasalOrganVascularPumpAnlage(_MouseAnatomyModel):
 
-    name: Literal["vomeronasal organ vascular pump anlage"] = (
-        "vomeronasal organ vascular pump anlage"
-    )
+    name: Literal["vomeronasal organ vascular pump anlage"] = "vomeronasal organ vascular pump anlage"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36664"] = "EMAPA_36664"
 
@@ -48283,9 +45875,7 @@ class VomeronasalOrganVascularPump(_MouseAnatomyModel):
 
 class VomeronasalOrganGlandularTissue(_MouseAnatomyModel):
 
-    name: Literal["vomeronasal organ glandular tissue"] = (
-        "vomeronasal organ glandular tissue"
-    )
+    name: Literal["vomeronasal organ glandular tissue"] = "vomeronasal organ glandular tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36666"] = "EMAPA_36666"
 
@@ -48320,9 +45910,7 @@ class LowerUrinaryTract(_MouseAnatomyModel):
 
 class FollicleCellOfAntralFollicle(_MouseAnatomyModel):
 
-    name: Literal["follicle cell of antral follicle"] = (
-        "follicle cell of antral follicle"
-    )
+    name: Literal["follicle cell of antral follicle"] = "follicle cell of antral follicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36671"] = "EMAPA_36671"
 
@@ -48532,9 +46120,7 @@ class SynovialJoint(_MouseAnatomyModel):
 
 class PrimordialGermCellOfBaseOfAllantois(_MouseAnatomyModel):
 
-    name: Literal["primordial germ cell of base of allantois"] = (
-        "primordial germ cell of base of allantois"
-    )
+    name: Literal["primordial germ cell of base of allantois"] = "primordial germ cell of base of allantois"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36701"] = "EMAPA_36701"
 
@@ -48548,9 +46134,7 @@ class PrimitiveHindgut(_MouseAnatomyModel):
 
 class PrimordialGermCellOfDorsalMesentery(_MouseAnatomyModel):
 
-    name: Literal["primordial germ cell of dorsal mesentery"] = (
-        "primordial germ cell of dorsal mesentery"
-    )
+    name: Literal["primordial germ cell of dorsal mesentery"] = "primordial germ cell of dorsal mesentery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36703"] = "EMAPA_36703"
 
@@ -48585,9 +46169,7 @@ class HeartValvePrimordium(_MouseAnatomyModel):
 
 class AtrioventricularValvePrimordium(_MouseAnatomyModel):
 
-    name: Literal["atrioventricular valve primordium"] = (
-        "atrioventricular valve primordium"
-    )
+    name: Literal["atrioventricular valve primordium"] = "atrioventricular valve primordium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36708"] = "EMAPA_36708"
 
@@ -48601,9 +46183,7 @@ class SemilunarValvePrimordium(_MouseAnatomyModel):
 
 class OutflowTractEndocardialCushion(_MouseAnatomyModel):
 
-    name: Literal["outflow tract endocardial cushion"] = (
-        "outflow tract endocardial cushion"
-    )
+    name: Literal["outflow tract endocardial cushion"] = "outflow tract endocardial cushion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36710"] = "EMAPA_36710"
 
@@ -48645,18 +46225,14 @@ class MetencephalonMantleLayer(_MouseAnatomyModel):
 
 class TelencephalonSubventricularZone(_MouseAnatomyModel):
 
-    name: Literal["telencephalon subventricular zone"] = (
-        "telencephalon subventricular zone"
-    )
+    name: Literal["telencephalon subventricular zone"] = "telencephalon subventricular zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36716"] = "EMAPA_36716"
 
 
 class DiencephalonSubventricularZone(_MouseAnatomyModel):
 
-    name: Literal["diencephalon subventricular zone"] = (
-        "diencephalon subventricular zone"
-    )
+    name: Literal["diencephalon subventricular zone"] = "diencephalon subventricular zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36717"] = "EMAPA_36717"
 
@@ -48705,27 +46281,21 @@ class HeartPapillaryMuscle(_MouseAnatomyModel):
 
 class AtrioventricularCanalEndocardialLining(_MouseAnatomyModel):
 
-    name: Literal["atrioventricular canal endocardial lining"] = (
-        "atrioventricular canal endocardial lining"
-    )
+    name: Literal["atrioventricular canal endocardial lining"] = "atrioventricular canal endocardial lining"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36724"] = "EMAPA_36724"
 
 
 class SuperiorAtrioventricularEndocardialCushion(_MouseAnatomyModel):
 
-    name: Literal["superior atrioventricular endocardial cushion"] = (
-        "superior atrioventricular endocardial cushion"
-    )
+    name: Literal["superior atrioventricular endocardial cushion"] = "superior atrioventricular endocardial cushion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36725"] = "EMAPA_36725"
 
 
 class InferiorAtrioventricularEndocardialCushion(_MouseAnatomyModel):
 
-    name: Literal["inferior atrioventricular endocardial cushion"] = (
-        "inferior atrioventricular endocardial cushion"
-    )
+    name: Literal["inferior atrioventricular endocardial cushion"] = "inferior atrioventricular endocardial cushion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36726"] = "EMAPA_36726"
 
@@ -49054,27 +46624,21 @@ class RetrosplenialCortex(_MouseAnatomyModel):
 
 class AtrioventricularCanalCardiacMuscle(_MouseAnatomyModel):
 
-    name: Literal["atrioventricular canal cardiac muscle"] = (
-        "atrioventricular canal cardiac muscle"
-    )
+    name: Literal["atrioventricular canal cardiac muscle"] = "atrioventricular canal cardiac muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36773"] = "EMAPA_36773"
 
 
 class HypothalamusPeriventricularRegion(_MouseAnatomyModel):
 
-    name: Literal["hypothalamus periventricular region"] = (
-        "hypothalamus periventricular region"
-    )
+    name: Literal["hypothalamus periventricular region"] = "hypothalamus periventricular region"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36774"] = "EMAPA_36774"
 
 
 class HypothalamusSubparaventricularZone(_MouseAnatomyModel):
 
-    name: Literal["hypothalamus subparaventricular zone"] = (
-        "hypothalamus subparaventricular zone"
-    )
+    name: Literal["hypothalamus subparaventricular zone"] = "hypothalamus subparaventricular zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36775"] = "EMAPA_36775"
 
@@ -49417,9 +46981,7 @@ class LymphoidTissue(_MouseAnatomyModel):
 
 class BronchusAssociatedLymphoidTissue(_MouseAnatomyModel):
 
-    name: Literal["bronchus-associated lymphoid tissue"] = (
-        "bronchus-associated lymphoid tissue"
-    )
+    name: Literal["bronchus-associated lymphoid tissue"] = "bronchus-associated lymphoid tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36824"] = "EMAPA_36824"
 
@@ -49433,18 +46995,14 @@ class GutAssociatedLymphoidTissue(_MouseAnatomyModel):
 
 class MucosaAssociatedLymphoidTissue(_MouseAnatomyModel):
 
-    name: Literal["mucosa-associated lymphoid tissue"] = (
-        "mucosa-associated lymphoid tissue"
-    )
+    name: Literal["mucosa-associated lymphoid tissue"] = "mucosa-associated lymphoid tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36826"] = "EMAPA_36826"
 
 
 class NasalAssociatedLymphoidTissue(_MouseAnatomyModel):
 
-    name: Literal["nasal-associated lymphoid tissue"] = (
-        "nasal-associated lymphoid tissue"
-    )
+    name: Literal["nasal-associated lymphoid tissue"] = "nasal-associated lymphoid tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36827"] = "EMAPA_36827"
 
@@ -49465,9 +47023,7 @@ class Basicranium(_MouseAnatomyModel):
 
 class AlimentarySystemFluidOrSecretion(_MouseAnatomyModel):
 
-    name: Literal["alimentary system fluid or secretion"] = (
-        "alimentary system fluid or secretion"
-    )
+    name: Literal["alimentary system fluid or secretion"] = "alimentary system fluid or secretion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36830"] = "EMAPA_36830"
 
@@ -49530,18 +47086,14 @@ class BileDuctEpithelium(_MouseAnatomyModel):
 
 class ExtrahepaticBileDuctEpithelium(_MouseAnatomyModel):
 
-    name: Literal["extrahepatic bile duct epithelium"] = (
-        "extrahepatic bile duct epithelium"
-    )
+    name: Literal["extrahepatic bile duct epithelium"] = "extrahepatic bile duct epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36839"] = "EMAPA_36839"
 
 
 class IntrahepaticBileDuctEpithelium(_MouseAnatomyModel):
 
-    name: Literal["intrahepatic bile duct epithelium"] = (
-        "intrahepatic bile duct epithelium"
-    )
+    name: Literal["intrahepatic bile duct epithelium"] = "intrahepatic bile duct epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36840"] = "EMAPA_36840"
 
@@ -49625,9 +47177,7 @@ class Feces(_MouseAnatomyModel):
 
 class FemaleReproductiveSystemFluidOrSecretion(_MouseAnatomyModel):
 
-    name: Literal["female reproductive system fluid or secretion"] = (
-        "female reproductive system fluid or secretion"
-    )
+    name: Literal["female reproductive system fluid or secretion"] = "female reproductive system fluid or secretion"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36852"] = "EMAPA_36852"
 
@@ -49704,9 +47254,7 @@ class C1VertebraVentralTubercle(_MouseAnatomyModel):
 
 class CervixUteriSquamousEpithelium(_MouseAnatomyModel):
 
-    name: Literal["cervix uteri squamous epithelium"] = (
-        "cervix uteri squamous epithelium"
-    )
+    name: Literal["cervix uteri squamous epithelium"] = "cervix uteri squamous epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36863"] = "EMAPA_36863"
 
@@ -49720,9 +47268,7 @@ class ThoracicBodyWall(_MouseAnatomyModel):
 
 class CiliatedColumnarOviductEpithelium(_MouseAnatomyModel):
 
-    name: Literal["ciliated columnar oviduct epithelium"] = (
-        "ciliated columnar oviduct epithelium"
-    )
+    name: Literal["ciliated columnar oviduct epithelium"] = "ciliated columnar oviduct epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36865"] = "EMAPA_36865"
 
@@ -49743,9 +47289,7 @@ class CraniocervicalRegion(_MouseAnatomyModel):
 
 class CristaAmpullarisNeuroepithelium(_MouseAnatomyModel):
 
-    name: Literal["crista ampullaris neuroepithelium"] = (
-        "crista ampullaris neuroepithelium"
-    )
+    name: Literal["crista ampullaris neuroepithelium"] = "crista ampullaris neuroepithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36868"] = "EMAPA_36868"
 
@@ -49850,9 +47394,7 @@ class Fontanel(_MouseAnatomyModel):
 
 class GlomerularCapillaryEndothelium(_MouseAnatomyModel):
 
-    name: Literal["glomerular capillary endothelium"] = (
-        "glomerular capillary endothelium"
-    )
+    name: Literal["glomerular capillary endothelium"] = "glomerular capillary endothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36883"] = "EMAPA_36883"
 
@@ -49880,9 +47422,7 @@ class ElasticTissue(_MouseAnatomyModel):
 
 class CardiovascularSystemElasticTissue(_MouseAnatomyModel):
 
-    name: Literal["cardiovascular system elastic tissue"] = (
-        "cardiovascular system elastic tissue"
-    )
+    name: Literal["cardiovascular system elastic tissue"] = "cardiovascular system elastic tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36887"] = "EMAPA_36887"
 
@@ -49896,9 +47436,7 @@ class HeartElasticTissue(_MouseAnatomyModel):
 
 class RespiratorySystemElasticTissue(_MouseAnatomyModel):
 
-    name: Literal["respiratory system elastic tissue"] = (
-        "respiratory system elastic tissue"
-    )
+    name: Literal["respiratory system elastic tissue"] = "respiratory system elastic tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36889"] = "EMAPA_36889"
 
@@ -50129,36 +47667,28 @@ class RectusExtraocularMuscle(_MouseAnatomyModel):
 
 class InferiorRectusExtraocularMuscle(_MouseAnatomyModel):
 
-    name: Literal["inferior rectus extraocular muscle"] = (
-        "inferior rectus extraocular muscle"
-    )
+    name: Literal["inferior rectus extraocular muscle"] = "inferior rectus extraocular muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36922"] = "EMAPA_36922"
 
 
 class LateralRectusExtraocularMuscle(_MouseAnatomyModel):
 
-    name: Literal["lateral rectus extraocular muscle"] = (
-        "lateral rectus extraocular muscle"
-    )
+    name: Literal["lateral rectus extraocular muscle"] = "lateral rectus extraocular muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36923"] = "EMAPA_36923"
 
 
 class MedialRectusExtraocularMuscle(_MouseAnatomyModel):
 
-    name: Literal["medial rectus extraocular muscle"] = (
-        "medial rectus extraocular muscle"
-    )
+    name: Literal["medial rectus extraocular muscle"] = "medial rectus extraocular muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36924"] = "EMAPA_36924"
 
 
 class SuperiorRectusExtraocularMuscle(_MouseAnatomyModel):
 
-    name: Literal["superior rectus extraocular muscle"] = (
-        "superior rectus extraocular muscle"
-    )
+    name: Literal["superior rectus extraocular muscle"] = "superior rectus extraocular muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36925"] = "EMAPA_36925"
 
@@ -50172,18 +47702,14 @@ class ObliqueExtraocularMuscle(_MouseAnatomyModel):
 
 class InferiorObliqueExtraocularMuscle(_MouseAnatomyModel):
 
-    name: Literal["inferior oblique extraocular muscle"] = (
-        "inferior oblique extraocular muscle"
-    )
+    name: Literal["inferior oblique extraocular muscle"] = "inferior oblique extraocular muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36927"] = "EMAPA_36927"
 
 
 class SuperiorObliqueExtraocularMuscle(_MouseAnatomyModel):
 
-    name: Literal["superior oblique extraocular muscle"] = (
-        "superior oblique extraocular muscle"
-    )
+    name: Literal["superior oblique extraocular muscle"] = "superior oblique extraocular muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36928"] = "EMAPA_36928"
 
@@ -50239,9 +47765,7 @@ class MembranousUrethraOfMale(_MouseAnatomyModel):
 
 class MaleReproductiveGlandOrOrgan(_MouseAnatomyModel):
 
-    name: Literal["male reproductive gland or organ"] = (
-        "male reproductive gland or organ"
-    )
+    name: Literal["male reproductive gland or organ"] = "male reproductive gland or organ"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36936"] = "EMAPA_36936"
 
@@ -50451,9 +47975,7 @@ class PalpebralFissure(_MouseAnatomyModel):
 
 class HeartVentriclePapillaryMuscle(_MouseAnatomyModel):
 
-    name: Literal["heart ventricle papillary muscle"] = (
-        "heart ventricle papillary muscle"
-    )
+    name: Literal["heart ventricle papillary muscle"] = "heart ventricle papillary muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36966"] = "EMAPA_36966"
 
@@ -50628,9 +48150,7 @@ class SpinalCordLateralColumn(_MouseAnatomyModel):
 
 class SpinalCordLateralMotorColumn(_MouseAnatomyModel):
 
-    name: Literal["spinal cord lateral motor column"] = (
-        "spinal cord lateral motor column"
-    )
+    name: Literal["spinal cord lateral motor column"] = "spinal cord lateral motor column"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_36991"] = "EMAPA_36991"
 
@@ -50700,9 +48220,7 @@ class StapesBase(_MouseAnatomyModel):
 
 class StomachSmoothMuscleCircularLayer(_MouseAnatomyModel):
 
-    name: Literal["stomach smooth muscle circular layer"] = (
-        "stomach smooth muscle circular layer"
-    )
+    name: Literal["stomach smooth muscle circular layer"] = "stomach smooth muscle circular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37001"] = "EMAPA_37001"
 
@@ -50751,18 +48269,14 @@ class SulcusAmpullaris(_MouseAnatomyModel):
 
 class VestibularGanglionSuperiorPart(_MouseAnatomyModel):
 
-    name: Literal["vestibular ganglion superior part"] = (
-        "vestibular ganglion superior part"
-    )
+    name: Literal["vestibular ganglion superior part"] = "vestibular ganglion superior part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37008"] = "EMAPA_37008"
 
 
 class VestibularGanglionInferiorPart(_MouseAnatomyModel):
 
-    name: Literal["vestibular ganglion inferior part"] = (
-        "vestibular ganglion inferior part"
-    )
+    name: Literal["vestibular ganglion inferior part"] = "vestibular ganglion inferior part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37009"] = "EMAPA_37009"
 
@@ -50958,36 +48472,28 @@ class PancreasVasculature(_MouseAnatomyModel):
 
 class _4thVentricleChoroidPlexusEpithelium(_MouseAnatomyModel):
 
-    name: Literal["4th ventricle choroid plexus epithelium"] = (
-        "4th ventricle choroid plexus epithelium"
-    )
+    name: Literal["4th ventricle choroid plexus epithelium"] = "4th ventricle choroid plexus epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37038"] = "EMAPA_37038"
 
 
 class _4thVentricleChoroidPlexusStroma(_MouseAnatomyModel):
 
-    name: Literal["4th ventricle choroid plexus stroma"] = (
-        "4th ventricle choroid plexus stroma"
-    )
+    name: Literal["4th ventricle choroid plexus stroma"] = "4th ventricle choroid plexus stroma"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37039"] = "EMAPA_37039"
 
 
 class LateralVentricleChoroidPlexusEpithelium(_MouseAnatomyModel):
 
-    name: Literal["lateral ventricle choroid plexus epithelium"] = (
-        "lateral ventricle choroid plexus epithelium"
-    )
+    name: Literal["lateral ventricle choroid plexus epithelium"] = "lateral ventricle choroid plexus epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37040"] = "EMAPA_37040"
 
 
 class LateralVentricleChoroidPlexusStroma(_MouseAnatomyModel):
 
-    name: Literal["lateral ventricle choroid plexus stroma"] = (
-        "lateral ventricle choroid plexus stroma"
-    )
+    name: Literal["lateral ventricle choroid plexus stroma"] = "lateral ventricle choroid plexus stroma"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37041"] = "EMAPA_37041"
 
@@ -51085,18 +48591,14 @@ class UnsegmentedMesenchyme(_MouseAnatomyModel):
 
 class _3rdVentricleChoroidPlexusEpitheilum(_MouseAnatomyModel):
 
-    name: Literal["3rd ventricle choroid plexus epitheilum"] = (
-        "3rd ventricle choroid plexus epitheilum"
-    )
+    name: Literal["3rd ventricle choroid plexus epitheilum"] = "3rd ventricle choroid plexus epitheilum"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37055"] = "EMAPA_37055"
 
 
 class _3rdVentricleChoroidPlexusStroma(_MouseAnatomyModel):
 
-    name: Literal["3rd ventricle choroid plexus stroma"] = (
-        "3rd ventricle choroid plexus stroma"
-    )
+    name: Literal["3rd ventricle choroid plexus stroma"] = "3rd ventricle choroid plexus stroma"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37056"] = "EMAPA_37056"
 
@@ -51117,9 +48619,7 @@ class AbdominalSegmentBone(_MouseAnatomyModel):
 
 class AbdominalSegmentConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["abdominal segment connective tissue"] = (
-        "abdominal segment connective tissue"
-    )
+    name: Literal["abdominal segment connective tissue"] = "abdominal segment connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37059"] = "EMAPA_37059"
 
@@ -51196,9 +48696,7 @@ class AlveolarArtery(_MouseAnatomyModel):
 
 class AnteriorInferiorCerebellarArtery(_MouseAnatomyModel):
 
-    name: Literal["anterior inferior cerebellar artery"] = (
-        "anterior inferior cerebellar artery"
-    )
+    name: Literal["anterior inferior cerebellar artery"] = "anterior inferior cerebellar artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37070"] = "EMAPA_37070"
 
@@ -51303,9 +48801,7 @@ class IlioLumbarArtery(_MouseAnatomyModel):
 
 class InferiorPancreaticoDuodenalArtery(_MouseAnatomyModel):
 
-    name: Literal["inferior pancreatico-duodenal artery"] = (
-        "inferior pancreatico-duodenal artery"
-    )
+    name: Literal["inferior pancreatico-duodenal artery"] = "inferior pancreatico-duodenal artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37086"] = "EMAPA_37086"
 
@@ -51536,9 +49032,7 @@ class SuperiorTemporalArtery(_MouseAnatomyModel):
 
 class SuperiorExternalPudendalArtery(_MouseAnatomyModel):
 
-    name: Literal["superior external pudendal artery"] = (
-        "superior external pudendal artery"
-    )
+    name: Literal["superior external pudendal artery"] = "superior external pudendal artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37119"] = "EMAPA_37119"
 
@@ -51552,9 +49046,7 @@ class SuperiorGlutealArtery(_MouseAnatomyModel):
 
 class SuperiorPancreaticoDuodenalArtery(_MouseAnatomyModel):
 
-    name: Literal["superior pancreatico-duodenal artery"] = (
-        "superior pancreatico-duodenal artery"
-    )
+    name: Literal["superior pancreatico-duodenal artery"] = "superior pancreatico-duodenal artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37121"] = "EMAPA_37121"
 
@@ -52058,9 +49550,7 @@ class SuperiorIntercostalVein(_MouseAnatomyModel):
 
 class SuperiorPancreaticoDuodenalVein(_MouseAnatomyModel):
 
-    name: Literal["superior pancreatico-duodenal vein"] = (
-        "superior pancreatico-duodenal vein"
-    )
+    name: Literal["superior pancreatico-duodenal vein"] = "superior pancreatico-duodenal vein"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37194"] = "EMAPA_37194"
 
@@ -52165,9 +49655,7 @@ class CommonPlantarDigitalArtery(_MouseAnatomyModel):
 
 class ForelimbCommonDorsalDigitalArtery(_MouseAnatomyModel):
 
-    name: Literal["forelimb common dorsal digital artery"] = (
-        "forelimb common dorsal digital artery"
-    )
+    name: Literal["forelimb common dorsal digital artery"] = "forelimb common dorsal digital artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37209"] = "EMAPA_37209"
 
@@ -52181,18 +49669,14 @@ class ForelimbDigitalArtery(_MouseAnatomyModel):
 
 class ForelimbProperDorsalDigitalArtery(_MouseAnatomyModel):
 
-    name: Literal["forelimb proper dorsal digital artery"] = (
-        "forelimb proper dorsal digital artery"
-    )
+    name: Literal["forelimb proper dorsal digital artery"] = "forelimb proper dorsal digital artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37211"] = "EMAPA_37211"
 
 
 class HindlimbCommonDorsalDigitalArtery(_MouseAnatomyModel):
 
-    name: Literal["hindlimb common dorsal digital artery"] = (
-        "hindlimb common dorsal digital artery"
-    )
+    name: Literal["hindlimb common dorsal digital artery"] = "hindlimb common dorsal digital artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37212"] = "EMAPA_37212"
 
@@ -52206,9 +49690,7 @@ class HindlimbDigitalArtery(_MouseAnatomyModel):
 
 class HindlimbProperDorsalDigitalArtery(_MouseAnatomyModel):
 
-    name: Literal["hindlimb proper dorsal digital artery"] = (
-        "hindlimb proper dorsal digital artery"
-    )
+    name: Literal["hindlimb proper dorsal digital artery"] = "hindlimb proper dorsal digital artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37214"] = "EMAPA_37214"
 
@@ -52481,9 +49963,7 @@ class TrunkConnectiveTissue(_MouseAnatomyModel):
 
 class ThoracicSegmentConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["thoracic segment connective tissue"] = (
-        "thoracic segment connective tissue"
-    )
+    name: Literal["thoracic segment connective tissue"] = "thoracic segment connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37253"] = "EMAPA_37253"
 
@@ -52497,9 +49977,7 @@ class ChestConnectiveTissue(_MouseAnatomyModel):
 
 class ThoracicCavityConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["thoracic cavity connective tissue"] = (
-        "thoracic cavity connective tissue"
-    )
+    name: Literal["thoracic cavity connective tissue"] = "thoracic cavity connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37255"] = "EMAPA_37255"
 
@@ -52961,9 +50439,7 @@ class WristConnectiveTissue(_MouseAnatomyModel):
 
 class ForelimbDigitConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["forelimb digit connective tissue"] = (
-        "forelimb digit connective tissue"
-    )
+    name: Literal["forelimb digit connective tissue"] = "forelimb digit connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37321"] = "EMAPA_37321"
 
@@ -53026,9 +50502,7 @@ class FootConnectiveTissue(_MouseAnatomyModel):
 
 class HindlimbDigitConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["hindlimb digit connective tissue"] = (
-        "hindlimb digit connective tissue"
-    )
+    name: Literal["hindlimb digit connective tissue"] = "hindlimb digit connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37330"] = "EMAPA_37330"
 
@@ -53224,18 +50698,14 @@ class RightAdrenalGland(_MouseAnatomyModel):
 
 class LeftBranchOfAtrioventricularBundle(_MouseAnatomyModel):
 
-    name: Literal["left branch of atrioventricular bundle"] = (
-        "left branch of atrioventricular bundle"
-    )
+    name: Literal["left branch of atrioventricular bundle"] = "left branch of atrioventricular bundle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37358"] = "EMAPA_37358"
 
 
 class RightBranchOfAtrioventricularBundle(_MouseAnatomyModel):
 
-    name: Literal["right branch of atrioventricular bundle"] = (
-        "right branch of atrioventricular bundle"
-    )
+    name: Literal["right branch of atrioventricular bundle"] = "right branch of atrioventricular bundle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37359"] = "EMAPA_37359"
 
@@ -53550,9 +51020,7 @@ class ParamedianLobule(_MouseAnatomyModel):
 
 class AnteriorCommissureAnteriorPart(_MouseAnatomyModel):
 
-    name: Literal["anterior commissure anterior part"] = (
-        "anterior commissure anterior part"
-    )
+    name: Literal["anterior commissure anterior part"] = "anterior commissure anterior part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37404"] = "EMAPA_37404"
 
@@ -53573,18 +51041,14 @@ class PosteriorDigastricMuscle(_MouseAnatomyModel):
 
 class BedNucleusOfStriaTerminalisAnteriorPart(_MouseAnatomyModel):
 
-    name: Literal["bed nucleus of stria terminalis anterior part"] = (
-        "bed nucleus of stria terminalis anterior part"
-    )
+    name: Literal["bed nucleus of stria terminalis anterior part"] = "bed nucleus of stria terminalis anterior part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37407"] = "EMAPA_37407"
 
 
 class BedNucleusOfStriaTerminalisPosteriorPart(_MouseAnatomyModel):
 
-    name: Literal["bed nucleus of stria terminalis posterior part"] = (
-        "bed nucleus of stria terminalis posterior part"
-    )
+    name: Literal["bed nucleus of stria terminalis posterior part"] = "bed nucleus of stria terminalis posterior part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37408"] = "EMAPA_37408"
 
@@ -53598,9 +51062,7 @@ class AnteriorHypothalamicNucleus(_MouseAnatomyModel):
 
 class AnteriorCommissurePosteriorPart(_MouseAnatomyModel):
 
-    name: Literal["anterior commissure posterior part"] = (
-        "anterior commissure posterior part"
-    )
+    name: Literal["anterior commissure posterior part"] = "anterior commissure posterior part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37410"] = "EMAPA_37410"
 
@@ -53859,9 +51321,7 @@ class BrainCommissure(_MouseAnatomyModel):
 
 class BrainVentricleAndChoroidPlexus(_MouseAnatomyModel):
 
-    name: Literal["brain ventricle and choroid plexus"] = (
-        "brain ventricle and choroid plexus"
-    )
+    name: Literal["brain ventricle and choroid plexus"] = "brain ventricle and choroid plexus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37447"] = "EMAPA_37447"
 
@@ -54148,9 +51608,7 @@ class KidneyColumn(_MouseAnatomyModel):
 
 class KidneyCortexPeritubularCapillary(_MouseAnatomyModel):
 
-    name: Literal["kidney cortex peritubular capillary"] = (
-        "kidney cortex peritubular capillary"
-    )
+    name: Literal["kidney cortex peritubular capillary"] = "kidney cortex peritubular capillary"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37488"] = "EMAPA_37488"
 
@@ -54395,36 +51853,28 @@ class EpiglotticCartilage(_MouseAnatomyModel):
 
 class EsophagusSmoothMuscleCircularLayer(_MouseAnatomyModel):
 
-    name: Literal["esophagus smooth muscle circular layer"] = (
-        "esophagus smooth muscle circular layer"
-    )
+    name: Literal["esophagus smooth muscle circular layer"] = "esophagus smooth muscle circular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37523"] = "EMAPA_37523"
 
 
 class EsophagusSmoothMuscleLongitudinalLayer(_MouseAnatomyModel):
 
-    name: Literal["esophagus smooth muscle longitudinal layer"] = (
-        "esophagus smooth muscle longitudinal layer"
-    )
+    name: Literal["esophagus smooth muscle longitudinal layer"] = "esophagus smooth muscle longitudinal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37524"] = "EMAPA_37524"
 
 
 class ExternalAuditoryMeatusCartilaginousPart(_MouseAnatomyModel):
 
-    name: Literal["external auditory meatus cartilaginous part"] = (
-        "external auditory meatus cartilaginous part"
-    )
+    name: Literal["external auditory meatus cartilaginous part"] = "external auditory meatus cartilaginous part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37525"] = "EMAPA_37525"
 
 
 class ExternalAuditoryMeatusOsseusPart(_MouseAnatomyModel):
 
-    name: Literal["external auditory meatus osseus part"] = (
-        "external auditory meatus osseus part"
-    )
+    name: Literal["external auditory meatus osseus part"] = "external auditory meatus osseus part"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37526"] = "EMAPA_37526"
 
@@ -54473,18 +51923,14 @@ class EyelidConnectiveTissue(_MouseAnatomyModel):
 
 class EyelidSubcutaneousConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["eyelid subcutaneous connective tissue"] = (
-        "eyelid subcutaneous connective tissue"
-    )
+    name: Literal["eyelid subcutaneous connective tissue"] = "eyelid subcutaneous connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37533"] = "EMAPA_37533"
 
 
 class EyelidSubmuscularConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["eyelid submuscular connective tissue"] = (
-        "eyelid submuscular connective tissue"
-    )
+    name: Literal["eyelid submuscular connective tissue"] = "eyelid submuscular connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37534"] = "EMAPA_37534"
 
@@ -54575,27 +52021,21 @@ class ForebrainPiaMater(_MouseAnatomyModel):
 
 class LowerRespiratoryTractCartilage(_MouseAnatomyModel):
 
-    name: Literal["lower respiratory tract cartilage"] = (
-        "lower respiratory tract cartilage"
-    )
+    name: Literal["lower respiratory tract cartilage"] = "lower respiratory tract cartilage"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37547"] = "EMAPA_37547"
 
 
 class LowerRespiratoryTractConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["lower respiratory tract connective tissue"] = (
-        "lower respiratory tract connective tissue"
-    )
+    name: Literal["lower respiratory tract connective tissue"] = "lower respiratory tract connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37548"] = "EMAPA_37548"
 
 
 class LowerRespiratoryTractEpithelium(_MouseAnatomyModel):
 
-    name: Literal["lower respiratory tract epithelium"] = (
-        "lower respiratory tract epithelium"
-    )
+    name: Literal["lower respiratory tract epithelium"] = "lower respiratory tract epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37549"] = "EMAPA_37549"
 
@@ -54644,9 +52084,7 @@ class TrachealBifurcation(_MouseAnatomyModel):
 
 class LargeIntestineMuscularisMucosa(_MouseAnatomyModel):
 
-    name: Literal["large intestine muscularis mucosa"] = (
-        "large intestine muscularis mucosa"
-    )
+    name: Literal["large intestine muscularis mucosa"] = "large intestine muscularis mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37556"] = "EMAPA_37556"
 
@@ -54660,9 +52098,7 @@ class LargeIntestineSerosa(_MouseAnatomyModel):
 
 class LargeIntestineSmoothMuscleCircularLayer(_MouseAnatomyModel):
 
-    name: Literal["large intestine smooth muscle circular layer"] = (
-        "large intestine smooth muscle circular layer"
-    )
+    name: Literal["large intestine smooth muscle circular layer"] = "large intestine smooth muscle circular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37558"] = "EMAPA_37558"
 
@@ -54692,9 +52128,7 @@ class SmallIntestineSerosa(_MouseAnatomyModel):
 
 class SmallIntestineSmoothMuscleCircularLayer(_MouseAnatomyModel):
 
-    name: Literal["small intestine smooth muscle circular layer"] = (
-        "small intestine smooth muscle circular layer"
-    )
+    name: Literal["small intestine smooth muscle circular layer"] = "small intestine smooth muscle circular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37562"] = "EMAPA_37562"
 
@@ -54717,27 +52151,21 @@ class SmallIntestineSubmucosa(_MouseAnatomyModel):
 
 class RespiratorySystemArterialBloodVessel(_MouseAnatomyModel):
 
-    name: Literal["respiratory system arterial blood vessel"] = (
-        "respiratory system arterial blood vessel"
-    )
+    name: Literal["respiratory system arterial blood vessel"] = "respiratory system arterial blood vessel"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37565"] = "EMAPA_37565"
 
 
 class RespiratorySystemArterialEndothelium(_MouseAnatomyModel):
 
-    name: Literal["respiratory system arterial endothelium"] = (
-        "respiratory system arterial endothelium"
-    )
+    name: Literal["respiratory system arterial endothelium"] = "respiratory system arterial endothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37566"] = "EMAPA_37566"
 
 
 class RespiratorySystemArterialSmoothMuscle(_MouseAnatomyModel):
 
-    name: Literal["respiratory system arterial smooth muscle"] = (
-        "respiratory system arterial smooth muscle"
-    )
+    name: Literal["respiratory system arterial smooth muscle"] = "respiratory system arterial smooth muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37567"] = "EMAPA_37567"
 
@@ -54758,9 +52186,7 @@ class RespiratorySystemArtery(_MouseAnatomyModel):
 
 class RespiratorySystemBasementMembrane(_MouseAnatomyModel):
 
-    name: Literal["respiratory system basement membrane"] = (
-        "respiratory system basement membrane"
-    )
+    name: Literal["respiratory system basement membrane"] = "respiratory system basement membrane"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37570"] = "EMAPA_37570"
 
@@ -54774,18 +52200,14 @@ class RespiratorySystemBasalLamina(_MouseAnatomyModel):
 
 class RespiratorySystemReticularLamina(_MouseAnatomyModel):
 
-    name: Literal["respiratory system reticular lamina"] = (
-        "respiratory system reticular lamina"
-    )
+    name: Literal["respiratory system reticular lamina"] = "respiratory system reticular lamina"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37572"] = "EMAPA_37572"
 
 
 class RespiratorySystemBloodVesselSmoothMuscle(_MouseAnatomyModel):
 
-    name: Literal["respiratory system blood vessel smooth muscle"] = (
-        "respiratory system blood vessel smooth muscle"
-    )
+    name: Literal["respiratory system blood vessel smooth muscle"] = "respiratory system blood vessel smooth muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37573"] = "EMAPA_37573"
 
@@ -54799,18 +52221,14 @@ class RespiratorySystemCapillary(_MouseAnatomyModel):
 
 class RespiratorySystemCapillaryEndothelium(_MouseAnatomyModel):
 
-    name: Literal["respiratory system capillary endothelium"] = (
-        "respiratory system capillary endothelium"
-    )
+    name: Literal["respiratory system capillary endothelium"] = "respiratory system capillary endothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37575"] = "EMAPA_37575"
 
 
 class RespiratorySystemLaminaPropria(_MouseAnatomyModel):
 
-    name: Literal["respiratory system lamina propria"] = (
-        "respiratory system lamina propria"
-    )
+    name: Literal["respiratory system lamina propria"] = "respiratory system lamina propria"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37576"] = "EMAPA_37576"
 
@@ -54831,18 +52249,14 @@ class RespiratorySystemSubmucosa(_MouseAnatomyModel):
 
 class RespiratorySystemLymphaticVessel(_MouseAnatomyModel):
 
-    name: Literal["respiratory system lymphatic vessel"] = (
-        "respiratory system lymphatic vessel"
-    )
+    name: Literal["respiratory system lymphatic vessel"] = "respiratory system lymphatic vessel"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37580"] = "EMAPA_37580"
 
 
 class RespiratorySystemLymphaticVesselEndothelium(_MouseAnatomyModel):
 
-    name: Literal["respiratory system lymphatic vessel endothelium"] = (
-        "respiratory system lymphatic vessel endothelium"
-    )
+    name: Literal["respiratory system lymphatic vessel endothelium"] = "respiratory system lymphatic vessel endothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37581"] = "EMAPA_37581"
 
@@ -54858,36 +52272,28 @@ class RespiratorySystemLymphaticVesselSmoothMuscle(_MouseAnatomyModel):
 
 class RespiratorySystemSkeletalMuscle(_MouseAnatomyModel):
 
-    name: Literal["respiratory system skeletal muscle"] = (
-        "respiratory system skeletal muscle"
-    )
+    name: Literal["respiratory system skeletal muscle"] = "respiratory system skeletal muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37583"] = "EMAPA_37583"
 
 
 class RespiratorySystemVenousBloodVessel(_MouseAnatomyModel):
 
-    name: Literal["respiratory system venous blood vessel"] = (
-        "respiratory system venous blood vessel"
-    )
+    name: Literal["respiratory system venous blood vessel"] = "respiratory system venous blood vessel"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37584"] = "EMAPA_37584"
 
 
 class RespiratorySystemVenousEndothelium(_MouseAnatomyModel):
 
-    name: Literal["respiratory system venous endothelium"] = (
-        "respiratory system venous endothelium"
-    )
+    name: Literal["respiratory system venous endothelium"] = "respiratory system venous endothelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37585"] = "EMAPA_37585"
 
 
 class RespiratorySystemVenousSmoothMuscle(_MouseAnatomyModel):
 
-    name: Literal["respiratory system venous smooth muscle"] = (
-        "respiratory system venous smooth muscle"
-    )
+    name: Literal["respiratory system venous smooth muscle"] = "respiratory system venous smooth muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37586"] = "EMAPA_37586"
 
@@ -55069,18 +52475,14 @@ class InferiorOliveBetaSubnucleus(_MouseAnatomyModel):
 
 class InferiorOliveDorsalAccessoryNucleus(_MouseAnatomyModel):
 
-    name: Literal["inferior olive dorsal accessory nucleus"] = (
-        "inferior olive dorsal accessory nucleus"
-    )
+    name: Literal["inferior olive dorsal accessory nucleus"] = "inferior olive dorsal accessory nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37612"] = "EMAPA_37612"
 
 
 class InferiorOliveMedialAccessoryNucleus(_MouseAnatomyModel):
 
-    name: Literal["inferior olive medial accessory nucleus"] = (
-        "inferior olive medial accessory nucleus"
-    )
+    name: Literal["inferior olive medial accessory nucleus"] = "inferior olive medial accessory nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37613"] = "EMAPA_37613"
 
@@ -55094,18 +52496,14 @@ class InferiorOliveMedialNucleus(_MouseAnatomyModel):
 
 class InferiorOlivePrincipalNucleus(_MouseAnatomyModel):
 
-    name: Literal["inferior olive principal nucleus"] = (
-        "inferior olive principal nucleus"
-    )
+    name: Literal["inferior olive principal nucleus"] = "inferior olive principal nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37615"] = "EMAPA_37615"
 
 
 class InferiorPancreaticoDuodenalVein(_MouseAnatomyModel):
 
-    name: Literal["inferior pancreatico-duodenal vein"] = (
-        "inferior pancreatico-duodenal vein"
-    )
+    name: Literal["inferior pancreatico-duodenal vein"] = "inferior pancreatico-duodenal vein"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37616"] = "EMAPA_37616"
 
@@ -55245,18 +52643,14 @@ class SpinalCordDorsalNucleus(_MouseAnatomyModel):
 
 class LateralDorsalDigitalArteryForDigit5(_MouseAnatomyModel):
 
-    name: Literal["lateral dorsal digital artery for digit 5"] = (
-        "lateral dorsal digital artery for digit 5"
-    )
+    name: Literal["lateral dorsal digital artery for digit 5"] = "lateral dorsal digital artery for digit 5"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37636"] = "EMAPA_37636"
 
 
 class MedianDorsalDigitalArteryForDigit1(_MouseAnatomyModel):
 
-    name: Literal["median dorsal digital artery for digit 1"] = (
-        "median dorsal digital artery for digit 1"
-    )
+    name: Literal["median dorsal digital artery for digit 1"] = "median dorsal digital artery for digit 1"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37637"] = "EMAPA_37637"
 
@@ -55326,9 +52720,7 @@ class LiverPapillaryProcess(_MouseAnatomyModel):
 
 class LobarBronchusConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["lobar bronchus connective tissue"] = (
-        "lobar bronchus connective tissue"
-    )
+    name: Literal["lobar bronchus connective tissue"] = "lobar bronchus connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37647"] = "EMAPA_37647"
 
@@ -55398,9 +52790,7 @@ class PelvicSympatheticNerveTrunk(_MouseAnatomyModel):
 
 class ThoracicSympatheticNerveTrunk(_MouseAnatomyModel):
 
-    name: Literal["thoracic sympathetic nerve trunk"] = (
-        "thoracic sympathetic nerve trunk"
-    )
+    name: Literal["thoracic sympathetic nerve trunk"] = "thoracic sympathetic nerve trunk"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37657"] = "EMAPA_37657"
 
@@ -55491,9 +52881,7 @@ class MammaryGlandSmoothMuscle(_MouseAnatomyModel):
 
 class MedialFemoralCircumflexArtery(_MouseAnatomyModel):
 
-    name: Literal["medial femoral circumflex artery"] = (
-        "medial femoral circumflex artery"
-    )
+    name: Literal["medial femoral circumflex artery"] = "medial femoral circumflex artery"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37670"] = "EMAPA_37670"
 
@@ -56004,9 +53392,7 @@ class SupraopticCrest(_MouseAnatomyModel):
 
 class SkeletalMuscleConnectiveTissue(_MouseAnatomyModel):
 
-    name: Literal["skeletal muscle connective tissue"] = (
-        "skeletal muscle connective tissue"
-    )
+    name: Literal["skeletal muscle connective tissue"] = "skeletal muscle connective tissue"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37743"] = "EMAPA_37743"
 
@@ -56041,9 +53427,7 @@ class SpinalCordCentralGray(_MouseAnatomyModel):
 
 class SpinalCordDorsalCommissuralNucleus(_MouseAnatomyModel):
 
-    name: Literal["spinal cord dorsal commissural nucleus"] = (
-        "spinal cord dorsal commissural nucleus"
-    )
+    name: Literal["spinal cord dorsal commissural nucleus"] = "spinal cord dorsal commissural nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37748"] = "EMAPA_37748"
 
@@ -56057,9 +53441,7 @@ class SpinalCordReticularNucleus(_MouseAnatomyModel):
 
 class SpleenPeriarteriolarLymphaticSheath(_MouseAnatomyModel):
 
-    name: Literal["spleen periarteriolar lymphatic sheath"] = (
-        "spleen periarteriolar lymphatic sheath"
-    )
+    name: Literal["spleen periarteriolar lymphatic sheath"] = "spleen periarteriolar lymphatic sheath"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37750"] = "EMAPA_37750"
 
@@ -56220,9 +53602,7 @@ class TibiaMetaphysis(_MouseAnatomyModel):
 
 class TrigeminalVPrincipalSensoryNucleus(_MouseAnatomyModel):
 
-    name: Literal["trigeminal V principal sensory nucleus"] = (
-        "trigeminal V principal sensory nucleus"
-    )
+    name: Literal["trigeminal V principal sensory nucleus"] = "trigeminal V principal sensory nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37773"] = "EMAPA_37773"
 
@@ -56425,9 +53805,7 @@ class VaginalVenousPlexus(_MouseAnatomyModel):
 
 class VertebraCranialArticularProcess(_MouseAnatomyModel):
 
-    name: Literal["vertebra cranial articular process"] = (
-        "vertebra cranial articular process"
-    )
+    name: Literal["vertebra cranial articular process"] = "vertebra cranial articular process"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37802"] = "EMAPA_37802"
 
@@ -56518,18 +53896,14 @@ class CerebellomedullaryCistern(_MouseAnatomyModel):
 
 class LateralCerebellomedullaryCistern(_MouseAnatomyModel):
 
-    name: Literal["lateral cerebellomedullary cistern"] = (
-        "lateral cerebellomedullary cistern"
-    )
+    name: Literal["lateral cerebellomedullary cistern"] = "lateral cerebellomedullary cistern"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37815"] = "EMAPA_37815"
 
 
 class PosteriorCerebellomedullaryCistern(_MouseAnatomyModel):
 
-    name: Literal["posterior cerebellomedullary cistern"] = (
-        "posterior cerebellomedullary cistern"
-    )
+    name: Literal["posterior cerebellomedullary cistern"] = "posterior cerebellomedullary cistern"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37816"] = "EMAPA_37816"
 
@@ -56732,9 +54106,7 @@ class DorsalTelencephalicCommissure(_MouseAnatomyModel):
 
 class VentralTelencephalicCommissure(_MouseAnatomyModel):
 
-    name: Literal["ventral telencephalic commissure"] = (
-        "ventral telencephalic commissure"
-    )
+    name: Literal["ventral telencephalic commissure"] = "ventral telencephalic commissure"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37845"] = "EMAPA_37845"
 
@@ -56972,9 +54344,7 @@ class HairFollicleMatrixRegion(_MouseAnatomyModel):
 
 class HemotrichorialPlacentalMembrane(_MouseAnatomyModel):
 
-    name: Literal["hemotrichorial placental membrane"] = (
-        "hemotrichorial placental membrane"
-    )
+    name: Literal["hemotrichorial placental membrane"] = "hemotrichorial placental membrane"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37879"] = "EMAPA_37879"
 
@@ -57023,9 +54393,7 @@ class CollectingDuctEpithelium(_MouseAnatomyModel):
 
 class MetanephrosCorticomedullaryBoundary(_MouseAnatomyModel):
 
-    name: Literal["metanephros corticomedullary boundary"] = (
-        "metanephros corticomedullary boundary"
-    )
+    name: Literal["metanephros corticomedullary boundary"] = "metanephros corticomedullary boundary"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37886"] = "EMAPA_37886"
 
@@ -57095,9 +54463,7 @@ class LineOfSchwalbe(_MouseAnatomyModel):
 
 class LongBoneEpiphysealPlateOssificationZone(_MouseAnatomyModel):
 
-    name: Literal["long bone epiphyseal plate ossification zone"] = (
-        "long bone epiphyseal plate ossification zone"
-    )
+    name: Literal["long bone epiphyseal plate ossification zone"] = "long bone epiphyseal plate ossification zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37896"] = "EMAPA_37896"
 
@@ -57139,9 +54505,7 @@ class MammaryFatPad(_MouseAnatomyModel):
 
 class MammaryGlandLuminalEpithelium(_MouseAnatomyModel):
 
-    name: Literal["mammary gland luminal epithelium"] = (
-        "mammary gland luminal epithelium"
-    )
+    name: Literal["mammary gland luminal epithelium"] = "mammary gland luminal epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37902"] = "EMAPA_37902"
 
@@ -57155,9 +54519,7 @@ class MammaryGlandMyoepithelium(_MouseAnatomyModel):
 
 class MammillothalamicTractOfHypothalamus(_MouseAnatomyModel):
 
-    name: Literal["mammillothalamic tract of hypothalamus"] = (
-        "mammillothalamic tract of hypothalamus"
-    )
+    name: Literal["mammillothalamic tract of hypothalamus"] = "mammillothalamic tract of hypothalamus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37904"] = "EMAPA_37904"
 
@@ -57255,9 +54617,7 @@ class MainOlfactoryBulbLayer(_MouseAnatomyModel):
 
 class OlfactorySegmentOfNasalMucosa(_MouseAnatomyModel):
 
-    name: Literal["olfactory segment of nasal mucosa"] = (
-        "olfactory segment of nasal mucosa"
-    )
+    name: Literal["olfactory segment of nasal mucosa"] = "olfactory segment of nasal mucosa"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37918"] = "EMAPA_37918"
 
@@ -57572,9 +54932,7 @@ class SpleenBCellCorona(_MouseAnatomyModel):
 
 class SpleenFollicularDendriticCellNetwork(_MouseAnatomyModel):
 
-    name: Literal["spleen follicular dendritic cell network"] = (
-        "spleen follicular dendritic cell network"
-    )
+    name: Literal["spleen follicular dendritic cell network"] = "spleen follicular dendritic cell network"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37963"] = "EMAPA_37963"
 
@@ -57588,18 +54946,14 @@ class SpleenPerifollicularZone(_MouseAnatomyModel):
 
 class StomachSmoothMuscleInnerObliqueLayer(_MouseAnatomyModel):
 
-    name: Literal["stomach smooth muscle inner oblique layer"] = (
-        "stomach smooth muscle inner oblique layer"
-    )
+    name: Literal["stomach smooth muscle inner oblique layer"] = "stomach smooth muscle inner oblique layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37965"] = "EMAPA_37965"
 
 
 class StomachSmoothMuscleOuterLongitudinalLayer(_MouseAnatomyModel):
 
-    name: Literal["stomach smooth muscle outer longitudinal layer"] = (
-        "stomach smooth muscle outer longitudinal layer"
-    )
+    name: Literal["stomach smooth muscle outer longitudinal layer"] = "stomach smooth muscle outer longitudinal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37966"] = "EMAPA_37966"
 
@@ -57655,9 +55009,7 @@ class Throat(_MouseAnatomyModel):
 
 class ThymusCorticomedullaryBoundary(_MouseAnatomyModel):
 
-    name: Literal["thymus corticomedullary boundary"] = (
-        "thymus corticomedullary boundary"
-    )
+    name: Literal["thymus corticomedullary boundary"] = "thymus corticomedullary boundary"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_37974"] = "EMAPA_37974"
 
@@ -58035,9 +55387,7 @@ class LowerJawPrimordium(_MouseAnatomyModel):
 
 class LongBoneEpiphysealPlateRestingZone(_MouseAnatomyModel):
 
-    name: Literal["long bone epiphyseal plate resting zone"] = (
-        "long bone epiphyseal plate resting zone"
-    )
+    name: Literal["long bone epiphyseal plate resting zone"] = "long bone epiphyseal plate resting zone"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38028"] = "EMAPA_38028"
 
@@ -58079,9 +55429,7 @@ class AtlantoOccipitalJoint(_MouseAnatomyModel):
 
 class OpticChoroidPlusPigmentedRetinalEpithelium(_MouseAnatomyModel):
 
-    name: Literal["optic choroid plus pigmented retinal epithelium"] = (
-        "optic choroid plus pigmented retinal epithelium"
-    )
+    name: Literal["optic choroid plus pigmented retinal epithelium"] = "optic choroid plus pigmented retinal epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38035"] = "EMAPA_38035"
 
@@ -58102,9 +55450,7 @@ class MammaryGlandPrimordium(_MouseAnatomyModel):
 
 class MammaryGlandPrimordiumEpithelium(_MouseAnatomyModel):
 
-    name: Literal["mammary gland primordium epithelium"] = (
-        "mammary gland primordium epithelium"
-    )
+    name: Literal["mammary gland primordium epithelium"] = "mammary gland primordium epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38038"] = "EMAPA_38038"
 
@@ -58153,36 +55499,28 @@ class DistalInterphalangealJoint(_MouseAnatomyModel):
 
 class ForelimbProximalInterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb proximal interphalangeal joint"] = (
-        "forelimb proximal interphalangeal joint"
-    )
+    name: Literal["forelimb proximal interphalangeal joint"] = "forelimb proximal interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38045"] = "EMAPA_38045"
 
 
 class ForelimbDistalInterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["forelimb distal interphalangeal joint"] = (
-        "forelimb distal interphalangeal joint"
-    )
+    name: Literal["forelimb distal interphalangeal joint"] = "forelimb distal interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38046"] = "EMAPA_38046"
 
 
 class HindlimbProximalInterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb proximal interphalangeal joint"] = (
-        "hindlimb proximal interphalangeal joint"
-    )
+    name: Literal["hindlimb proximal interphalangeal joint"] = "hindlimb proximal interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38047"] = "EMAPA_38047"
 
 
 class HindlimbDistalInterphalangealJoint(_MouseAnatomyModel):
 
-    name: Literal["hindlimb distal interphalangeal joint"] = (
-        "hindlimb distal interphalangeal joint"
-    )
+    name: Literal["hindlimb distal interphalangeal joint"] = "hindlimb distal interphalangeal joint"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38048"] = "EMAPA_38048"
 
@@ -58315,18 +55653,14 @@ class PosteriorCruciateLigament(_MouseAnatomyModel):
 
 class IntestineSmoothMuscleCircularLayer(_MouseAnatomyModel):
 
-    name: Literal["intestine smooth muscle circular layer"] = (
-        "intestine smooth muscle circular layer"
-    )
+    name: Literal["intestine smooth muscle circular layer"] = "intestine smooth muscle circular layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38067"] = "EMAPA_38067"
 
 
 class IntestineSmoothMuscleLongitudinalLayer(_MouseAnatomyModel):
 
-    name: Literal["intestine smooth muscle longitudinal layer"] = (
-        "intestine smooth muscle longitudinal layer"
-    )
+    name: Literal["intestine smooth muscle longitudinal layer"] = "intestine smooth muscle longitudinal layer"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38068"] = "EMAPA_38068"
 
@@ -58361,9 +55695,7 @@ class OrbitalArea(_MouseAnatomyModel):
 
 class AnteriorMedialThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["anterior medial thalamic nucleus"] = (
-        "anterior medial thalamic nucleus"
-    )
+    name: Literal["anterior medial thalamic nucleus"] = "anterior medial thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38073"] = "EMAPA_38073"
 
@@ -58384,9 +55716,7 @@ class LateralDorsalThalamicNucleus(_MouseAnatomyModel):
 
 class LateralPosteriorThalamicNucleus(_MouseAnatomyModel):
 
-    name: Literal["lateral posterior thalamic nucleus"] = (
-        "lateral posterior thalamic nucleus"
-    )
+    name: Literal["lateral posterior thalamic nucleus"] = "lateral posterior thalamic nucleus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38076"] = "EMAPA_38076"
 
@@ -58435,9 +55765,7 @@ class StratumIntermedium(_MouseAnatomyModel):
 
 class HertwigsEpithelialRootSheath(_MouseAnatomyModel):
 
-    name: Literal["Hertwig's epithelial root sheath"] = (
-        "Hertwig's epithelial root sheath"
-    )
+    name: Literal["Hertwig's epithelial root sheath"] = "Hertwig's epithelial root sheath"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38083"] = "EMAPA_38083"
 
@@ -58549,9 +55877,7 @@ class LimbPrimordium(_MouseAnatomyModel):
 
 class SmallIntestineVascularElement(_MouseAnatomyModel):
 
-    name: Literal["small intestine vascular element"] = (
-        "small intestine vascular element"
-    )
+    name: Literal["small intestine vascular element"] = "small intestine vascular element"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38099"] = "EMAPA_38099"
 
@@ -58621,27 +55947,21 @@ class LateralNasalGlandMesenchyme(_MouseAnatomyModel):
 
 class MaxillarySinusGlandPrimordium(_MouseAnatomyModel):
 
-    name: Literal["maxillary sinus gland primordium"] = (
-        "maxillary sinus gland primordium"
-    )
+    name: Literal["maxillary sinus gland primordium"] = "maxillary sinus gland primordium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38109"] = "EMAPA_38109"
 
 
 class MaxillarySinusGlandPrimordiumEpithelium(_MouseAnatomyModel):
 
-    name: Literal["maxillary sinus gland primordium epithelium"] = (
-        "maxillary sinus gland primordium epithelium"
-    )
+    name: Literal["maxillary sinus gland primordium epithelium"] = "maxillary sinus gland primordium epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38110"] = "EMAPA_38110"
 
 
 class MaxillarySinusGlandPrimordiumMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["maxillary sinus gland primordium mesenchyme"] = (
-        "maxillary sinus gland primordium mesenchyme"
-    )
+    name: Literal["maxillary sinus gland primordium mesenchyme"] = "maxillary sinus gland primordium mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38111"] = "EMAPA_38111"
 
@@ -58655,18 +55975,14 @@ class MaxillarySinusGland(_MouseAnatomyModel):
 
 class MaxillarySinusGlandEpithelium(_MouseAnatomyModel):
 
-    name: Literal["maxillary sinus gland epithelium"] = (
-        "maxillary sinus gland epithelium"
-    )
+    name: Literal["maxillary sinus gland epithelium"] = "maxillary sinus gland epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38113"] = "EMAPA_38113"
 
 
 class MaxillarySinusGlandMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["maxillary sinus gland mesenchyme"] = (
-        "maxillary sinus gland mesenchyme"
-    )
+    name: Literal["maxillary sinus gland mesenchyme"] = "maxillary sinus gland mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38114"] = "EMAPA_38114"
 
@@ -58806,18 +56122,14 @@ class EmbryonicVisceralEndoderm(_MouseAnatomyModel):
 
 class EmbryonicPosteriorVisceralEndoderm(_MouseAnatomyModel):
 
-    name: Literal["embryonic posterior visceral endoderm"] = (
-        "embryonic posterior visceral endoderm"
-    )
+    name: Literal["embryonic posterior visceral endoderm"] = "embryonic posterior visceral endoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38134"] = "EMAPA_38134"
 
 
 class ExtraembryonicPosteriorVisceralEndoderm(_MouseAnatomyModel):
 
-    name: Literal["extraembryonic posterior visceral endoderm"] = (
-        "extraembryonic posterior visceral endoderm"
-    )
+    name: Literal["extraembryonic posterior visceral endoderm"] = "extraembryonic posterior visceral endoderm"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38135"] = "EMAPA_38135"
 
@@ -58882,36 +56194,28 @@ class NucleusOfLateralLemniscus(_MouseAnatomyModel):
 
 class DorsalNucleusOfLateralLemniscus(_MouseAnatomyModel):
 
-    name: Literal["dorsal nucleus of lateral lemniscus"] = (
-        "dorsal nucleus of lateral lemniscus"
-    )
+    name: Literal["dorsal nucleus of lateral lemniscus"] = "dorsal nucleus of lateral lemniscus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38144"] = "EMAPA_38144"
 
 
 class IntermediateNucleusOfLateralLemniscus(_MouseAnatomyModel):
 
-    name: Literal["intermediate nucleus of lateral lemniscus"] = (
-        "intermediate nucleus of lateral lemniscus"
-    )
+    name: Literal["intermediate nucleus of lateral lemniscus"] = "intermediate nucleus of lateral lemniscus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38145"] = "EMAPA_38145"
 
 
 class VentralNucleusOfLateralLemniscus(_MouseAnatomyModel):
 
-    name: Literal["ventral nucleus of lateral lemniscus"] = (
-        "ventral nucleus of lateral lemniscus"
-    )
+    name: Literal["ventral nucleus of lateral lemniscus"] = "ventral nucleus of lateral lemniscus"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38146"] = "EMAPA_38146"
 
 
 class GenitalTubercleSurfaceEpithelium(_MouseAnatomyModel):
 
-    name: Literal["genital tubercle surface epithelium"] = (
-        "genital tubercle surface epithelium"
-    )
+    name: Literal["genital tubercle surface epithelium"] = "genital tubercle surface epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38147"] = "EMAPA_38147"
 
@@ -58960,27 +56264,21 @@ class LowerUrogenitalTract(_MouseAnatomyModel):
 
 class LowerUrogenitalTractAdventitia(_MouseAnatomyModel):
 
-    name: Literal["lower urogenital tract adventitia"] = (
-        "lower urogenital tract adventitia"
-    )
+    name: Literal["lower urogenital tract adventitia"] = "lower urogenital tract adventitia"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38154"] = "EMAPA_38154"
 
 
 class LowerUrogenitalTractEpithelium(_MouseAnatomyModel):
 
-    name: Literal["lower urogenital tract epithelium"] = (
-        "lower urogenital tract epithelium"
-    )
+    name: Literal["lower urogenital tract epithelium"] = "lower urogenital tract epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38155"] = "EMAPA_38155"
 
 
 class LowerUrogenitalTractMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["lower urogenital tract mesenchyme"] = (
-        "lower urogenital tract mesenchyme"
-    )
+    name: Literal["lower urogenital tract mesenchyme"] = "lower urogenital tract mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38156"] = "EMAPA_38156"
 
@@ -59001,9 +56299,7 @@ class LowerUrogenitalTractNerve(_MouseAnatomyModel):
 
 class LowerUrogenitalTractVasculature(_MouseAnatomyModel):
 
-    name: Literal["lower urogenital tract vasculature"] = (
-        "lower urogenital tract vasculature"
-    )
+    name: Literal["lower urogenital tract vasculature"] = "lower urogenital tract vasculature"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38159"] = "EMAPA_38159"
 
@@ -59017,9 +56313,7 @@ class RostralMigratoryStream(_MouseAnatomyModel):
 
 class LowerUrogenitalTractOfFemale(_MouseAnatomyModel):
 
-    name: Literal["lower urogenital tract of female"] = (
-        "lower urogenital tract of female"
-    )
+    name: Literal["lower urogenital tract of female"] = "lower urogenital tract of female"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38161"] = "EMAPA_38161"
 
@@ -59033,54 +56327,42 @@ class LowerUrogenitalTractOfMale(_MouseAnatomyModel):
 
 class FemaleLowerUrogenitalTractEpithelium(_MouseAnatomyModel):
 
-    name: Literal["female lower urogenital tract epithelium"] = (
-        "female lower urogenital tract epithelium"
-    )
+    name: Literal["female lower urogenital tract epithelium"] = "female lower urogenital tract epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38163"] = "EMAPA_38163"
 
 
 class FemaleLowerUrogenitalTractMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["female lower urogenital tract mesenchyme"] = (
-        "female lower urogenital tract mesenchyme"
-    )
+    name: Literal["female lower urogenital tract mesenchyme"] = "female lower urogenital tract mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38164"] = "EMAPA_38164"
 
 
 class FemaleLowerUrogenitalTractMuscle(_MouseAnatomyModel):
 
-    name: Literal["female lower urogenital tract muscle"] = (
-        "female lower urogenital tract muscle"
-    )
+    name: Literal["female lower urogenital tract muscle"] = "female lower urogenital tract muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38165"] = "EMAPA_38165"
 
 
 class MaleLowerUrogenitalTractEpithelium(_MouseAnatomyModel):
 
-    name: Literal["male lower urogenital tract epithelium"] = (
-        "male lower urogenital tract epithelium"
-    )
+    name: Literal["male lower urogenital tract epithelium"] = "male lower urogenital tract epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38166"] = "EMAPA_38166"
 
 
 class MaleLowerUrogenitalTractMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["male lower urogenital tract mesenchyme"] = (
-        "male lower urogenital tract mesenchyme"
-    )
+    name: Literal["male lower urogenital tract mesenchyme"] = "male lower urogenital tract mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38167"] = "EMAPA_38167"
 
 
 class MaleLowerUrogenitalTractMuscle(_MouseAnatomyModel):
 
-    name: Literal["male lower urogenital tract muscle"] = (
-        "male lower urogenital tract muscle"
-    )
+    name: Literal["male lower urogenital tract muscle"] = "male lower urogenital tract muscle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38168"] = "EMAPA_38168"
 
@@ -59290,9 +56572,7 @@ class OocyteOfAntralFollicle(_MouseAnatomyModel):
 
 class FollicleCellOfPreantralFollicle(_MouseAnatomyModel):
 
-    name: Literal["follicle cell of preantral follicle"] = (
-        "follicle cell of preantral follicle"
-    )
+    name: Literal["follicle cell of preantral follicle"] = "follicle cell of preantral follicle"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38198"] = "EMAPA_38198"
 
@@ -59383,9 +56663,7 @@ class Fontanelle(_MouseAnatomyModel):
 
 class CoronalSutureFrontalOsteogenicFront(_MouseAnatomyModel):
 
-    name: Literal["coronal suture frontal osteogenic front"] = (
-        "coronal suture frontal osteogenic front"
-    )
+    name: Literal["coronal suture frontal osteogenic front"] = "coronal suture frontal osteogenic front"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38211"] = "EMAPA_38211"
 
@@ -59399,18 +56677,14 @@ class CoronalSutureMesenchyme(_MouseAnatomyModel):
 
 class CoronalSutureParietalOsteogenicFront(_MouseAnatomyModel):
 
-    name: Literal["coronal suture parietal osteogenic front"] = (
-        "coronal suture parietal osteogenic front"
-    )
+    name: Literal["coronal suture parietal osteogenic front"] = "coronal suture parietal osteogenic front"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38213"] = "EMAPA_38213"
 
 
 class FrontalSutureFrontalOsteogenicFront(_MouseAnatomyModel):
 
-    name: Literal["frontal suture frontal osteogenic front"] = (
-        "frontal suture frontal osteogenic front"
-    )
+    name: Literal["frontal suture frontal osteogenic front"] = "frontal suture frontal osteogenic front"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38214"] = "EMAPA_38214"
 
@@ -59424,9 +56698,7 @@ class FrontalSutureMesenchyme(_MouseAnatomyModel):
 
 class LambdoidSutureInterparietalOsteogenicFront(_MouseAnatomyModel):
 
-    name: Literal["lambdoid suture interparietal osteogenic front"] = (
-        "lambdoid suture interparietal osteogenic front"
-    )
+    name: Literal["lambdoid suture interparietal osteogenic front"] = "lambdoid suture interparietal osteogenic front"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38216"] = "EMAPA_38216"
 
@@ -59440,9 +56712,7 @@ class LambdoidSutureMesenchyme(_MouseAnatomyModel):
 
 class LambdoidSutureParietalOsteogenicFront(_MouseAnatomyModel):
 
-    name: Literal["lambdoid suture parietal osteogenic front"] = (
-        "lambdoid suture parietal osteogenic front"
-    )
+    name: Literal["lambdoid suture parietal osteogenic front"] = "lambdoid suture parietal osteogenic front"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38218"] = "EMAPA_38218"
 
@@ -59456,9 +56726,7 @@ class SagittalSutureMesenchyme(_MouseAnatomyModel):
 
 class SagittalSutureParietalOsteogenicFront(_MouseAnatomyModel):
 
-    name: Literal["sagittal suture parietal osteogenic front"] = (
-        "sagittal suture parietal osteogenic front"
-    )
+    name: Literal["sagittal suture parietal osteogenic front"] = "sagittal suture parietal osteogenic front"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38220"] = "EMAPA_38220"
 
@@ -59472,18 +56740,14 @@ class SalivaryGlandPrimordium(_MouseAnatomyModel):
 
 class SalivaryGlandPrimordiumEpithelium(_MouseAnatomyModel):
 
-    name: Literal["salivary gland primordium epithelium"] = (
-        "salivary gland primordium epithelium"
-    )
+    name: Literal["salivary gland primordium epithelium"] = "salivary gland primordium epithelium"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38222"] = "EMAPA_38222"
 
 
 class SalivaryGlandPrimordiumMesenchyme(_MouseAnatomyModel):
 
-    name: Literal["salivary gland primordium mesenchyme"] = (
-        "salivary gland primordium mesenchyme"
-    )
+    name: Literal["salivary gland primordium mesenchyme"] = "salivary gland primordium mesenchyme"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38223"] = "EMAPA_38223"
 
@@ -59581,9 +56845,7 @@ class CoronalSutureOsteogenicFront(_MouseAnatomyModel):
 
 class LambdoidSutureOsteogenicFront(_MouseAnatomyModel):
 
-    name: Literal["lambdoid suture osteogenic front"] = (
-        "lambdoid suture osteogenic front"
-    )
+    name: Literal["lambdoid suture osteogenic front"] = "lambdoid suture osteogenic front"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38237"] = "EMAPA_38237"
 
@@ -59604,27 +56866,21 @@ class CorticalAntihem(_MouseAnatomyModel):
 
 class BasalCellLayerOfPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["basal cell layer of pelvic urethra"] = (
-        "basal cell layer of pelvic urethra"
-    )
+    name: Literal["basal cell layer of pelvic urethra"] = "basal cell layer of pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38240"] = "EMAPA_38240"
 
 
 class IntermediateCellLayerOfPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["intermediate cell layer of pelvic urethra"] = (
-        "intermediate cell layer of pelvic urethra"
-    )
+    name: Literal["intermediate cell layer of pelvic urethra"] = "intermediate cell layer of pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38241"] = "EMAPA_38241"
 
 
 class SuperficialCellLayerOfPelvicUrethra(_MouseAnatomyModel):
 
-    name: Literal["superficial cell layer of pelvic urethra"] = (
-        "superficial cell layer of pelvic urethra"
-    )
+    name: Literal["superficial cell layer of pelvic urethra"] = "superficial cell layer of pelvic urethra"
     registry: Literal[_Registry.EMAPA] = _Registry.EMAPA
     registry_identifier: Literal["EMAPA_38242"] = "EMAPA_38242"
 
@@ -59734,20 +56990,14 @@ class _MouseAnatomyType:
     _1ST_BRANCHIAL_ARCH_ECTODERM = _1stBranchialArchEctoderm()
     _1ST_BRANCHIAL_ARCH_ENDODERM = _1stBranchialArchEndoderm()
     _1ST_BRANCHIAL_ARCH_MESENCHYME = _1stBranchialArchMesenchyme()
-    _1ST_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = (
-        _1stBranchialArchMesenchymeDerivedFromNeuralCrest()
-    )
-    _1ST_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = (
-        _1stBranchialArchMesenchymeDerivedFromHeadMesoderm()
-    )
+    _1ST_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = _1stBranchialArchMesenchymeDerivedFromNeuralCrest()
+    _1ST_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = _1stBranchialArchMesenchymeDerivedFromHeadMesoderm()
     PERICARDIAL_COMPONENT = PericardialComponent()
     PERICARDIAL_CAVITY = PericardialCavity()
     PERICARDIUM = Pericardium()
     PERICARDIO_PERITONEAL_COMPONENT = PericardioPeritonealComponent()
     PERICARDIO_PERITONEAL_COMPONENT_CAVITY = PericardioPeritonealComponentCavity()
-    PERICARDIO_PERITONEAL_COMPONENT_MESOTHELIUM = (
-        PericardioPeritonealComponentMesothelium()
-    )
+    PERICARDIO_PERITONEAL_COMPONENT_MESOTHELIUM = PericardioPeritonealComponentMesothelium()
     PERITONEAL_COMPONENT = PeritonealComponent()
     PERITONEAL_CAVITY = PeritonealCavity()
     PERITONEUM = Peritoneum()
@@ -59863,26 +57113,16 @@ class _MouseAnatomyType:
     _2ND_BRANCHIAL_ARCH_ECTODERM = _2ndBranchialArchEctoderm()
     _2ND_BRANCHIAL_ARCH_ENDODERM = _2ndBranchialArchEndoderm()
     _2ND_BRANCHIAL_ARCH_MESENCHYME = _2ndBranchialArchMesenchyme()
-    _2ND_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = (
-        _2ndBranchialArchMesenchymeDerivedFromHeadMesoderm()
-    )
-    _2ND_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = (
-        _2ndBranchialArchMesenchymeDerivedFromNeuralCrest()
-    )
+    _2ND_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = _2ndBranchialArchMesenchymeDerivedFromHeadMesoderm()
+    _2ND_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = _2ndBranchialArchMesenchymeDerivedFromNeuralCrest()
     PERICARDIO_PERITONEAL_CANAL = PericardioPeritonealCanal()
     PERICARDIO_PERITONEAL_CANAL_CAVITY = PericardioPeritonealCanalCavity()
     PERICARDIO_PERITONEAL_CANAL_MESOTHELIUM = PericardioPeritonealCanalMesothelium()
     FUTURE_MIDBRAIN_ROOF_PLATE = FutureMidbrainRoofPlate()
     FUTURE_HINDBRAIN_POSTERIOR_TO_RHOMBOMERE_5 = FutureHindbrainPosteriorToRhombomere5()
-    FUTURE_HINDBRAIN_POSTERIOR_TO_RHOMBOMERE_5_FLOOR_PLATE = (
-        FutureHindbrainPosteriorToRhombomere5FloorPlate()
-    )
-    FUTURE_HINDBRAIN_POSTERIOR_TO_RHOMBOMERE_5_NEURAL_FOLD = (
-        FutureHindbrainPosteriorToRhombomere5NeuralFold()
-    )
-    FUTURE_HINDBRAIN_POSTERIOR_TO_RHOMBOMERE_5_NEURAL_CREST = (
-        FutureHindbrainPosteriorToRhombomere5NeuralCrest()
-    )
+    FUTURE_HINDBRAIN_POSTERIOR_TO_RHOMBOMERE_5_FLOOR_PLATE = FutureHindbrainPosteriorToRhombomere5FloorPlate()
+    FUTURE_HINDBRAIN_POSTERIOR_TO_RHOMBOMERE_5_NEURAL_FOLD = FutureHindbrainPosteriorToRhombomere5NeuralFold()
+    FUTURE_HINDBRAIN_POSTERIOR_TO_RHOMBOMERE_5_NEURAL_CREST = FutureHindbrainPosteriorToRhombomere5NeuralCrest()
     RHOMBOMERE_1 = Rhombomere1()
     RHOMBOMERE_1_FLOOR_PLATE = Rhombomere1FloorPlate()
     RHOMBOMERE_1_NEURAL_FOLD = Rhombomere1NeuralFold()
@@ -59931,9 +57171,7 @@ class _MouseAnatomyType:
     BULBUS_CORDIS_CAUDAL_HALF_CARDIAC_MUSCLE = BulbusCordisCaudalHalfCardiacMuscle()
     BULBUS_CORDIS_ROSTRAL_HALF = BulbusCordisRostralHalf()
     BULBUS_CORDIS_ROSTRAL_HALF_CARDIAC_JELLY = BulbusCordisRostralHalfCardiacJelly()
-    BULBUS_CORDIS_ROSTRAL_HALF_ENDOCARDIAL_TUBE = (
-        BulbusCordisRostralHalfEndocardialTube()
-    )
+    BULBUS_CORDIS_ROSTRAL_HALF_ENDOCARDIAL_TUBE = BulbusCordisRostralHalfEndocardialTube()
     BULBUS_CORDIS_ROSTRAL_HALF_CARDIAC_MUSCLE = BulbusCordisRostralHalfCardiacMuscle()
     COMMON_ATRIAL_CHAMBER = CommonAtrialChamber()
     COMMON_ATRIAL_CHAMBER_CARDIAC_JELLY = CommonAtrialChamberCardiacJelly()
@@ -59974,15 +57212,9 @@ class _MouseAnatomyType:
     LEFT_VITELLINE_VEIN_EXTRAEMBRYONIC_PART = LeftVitellineVeinExtraembryonicPart()
     RIGHT_VITELLINE_VEIN_EXTRAEMBRYONIC_PART = RightVitellineVeinExtraembryonicPart()
     _1ST_BRANCHIAL_ARCH_MANDIBULAR_COMPONENT = _1stBranchialArchMandibularComponent()
-    _1ST_BRANCHIAL_ARCH_MANDIBULAR_COMPONENT_ECTODERM = (
-        _1stBranchialArchMandibularComponentEctoderm()
-    )
-    _1ST_BRANCHIAL_ARCH_MANDIBULAR_COMPONENT_ENDODERM = (
-        _1stBranchialArchMandibularComponentEndoderm()
-    )
-    _1ST_BRANCHIAL_ARCH_MANDIBULAR_COMPONENT_MESENCHYME = (
-        _1stBranchialArchMandibularComponentMesenchyme()
-    )
+    _1ST_BRANCHIAL_ARCH_MANDIBULAR_COMPONENT_ECTODERM = _1stBranchialArchMandibularComponentEctoderm()
+    _1ST_BRANCHIAL_ARCH_MANDIBULAR_COMPONENT_ENDODERM = _1stBranchialArchMandibularComponentEndoderm()
+    _1ST_BRANCHIAL_ARCH_MANDIBULAR_COMPONENT_MESENCHYME = _1stBranchialArchMandibularComponentMesenchyme()
     _1ST_BRANCHIAL_ARCH_MANDIBULAR_COMPONENT_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = (
         _1stBranchialArchMandibularComponentMesenchymeDerivedFromHeadMesoderm()
     )
@@ -59990,27 +57222,17 @@ class _MouseAnatomyType:
         _1stBranchialArchMandibularComponentMesenchymeDerivedFromNeuralCrest()
     )
     _1ST_BRANCHIAL_ARCH_MAXILLARY_COMPONENT = _1stBranchialArchMaxillaryComponent()
-    _1ST_BRANCHIAL_ARCH_MAXILLARY_COMPONENT_ECTODERM = (
-        _1stBranchialArchMaxillaryComponentEctoderm()
-    )
-    _1ST_BRANCHIAL_ARCH_MAXILLARY_COMPONENT_ENDODERM = (
-        _1stBranchialArchMaxillaryComponentEndoderm()
-    )
-    _1ST_BRANCHIAL_ARCH_MAXILLARY_COMPONENT_MESENCHYME = (
-        _1stBranchialArchMaxillaryComponentMesenchyme()
-    )
+    _1ST_BRANCHIAL_ARCH_MAXILLARY_COMPONENT_ECTODERM = _1stBranchialArchMaxillaryComponentEctoderm()
+    _1ST_BRANCHIAL_ARCH_MAXILLARY_COMPONENT_ENDODERM = _1stBranchialArchMaxillaryComponentEndoderm()
+    _1ST_BRANCHIAL_ARCH_MAXILLARY_COMPONENT_MESENCHYME = _1stBranchialArchMaxillaryComponentMesenchyme()
     _1ST_BRANCHIAL_ARCH_MAXILLARY_COMPONENT_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = (
         _1stBranchialArchMaxillaryComponentMesenchymeDerivedFromHeadMesoderm()
     )
     _1ST_BRANCHIAL_ARCH_MAXILLARY_COMPONENT_MESENCHYME_DERIVED_FROM_NEURAL_CREST = (
         _1stBranchialArchMaxillaryComponentMesenchymeDerivedFromNeuralCrest()
     )
-    _1ST_BRANCHIAL_ARCH_MAXILLARY_MANDIBULAR_GROOVE = (
-        _1stBranchialArchMaxillaryMandibularGroove()
-    )
-    _1ST_BRANCHIAL_ARCH_MAXILLARY_MANDIBULAR_GROOVE_ECTODERM = (
-        _1stBranchialArchMaxillaryMandibularGrooveEctoderm()
-    )
+    _1ST_BRANCHIAL_ARCH_MAXILLARY_MANDIBULAR_GROOVE = _1stBranchialArchMaxillaryMandibularGroove()
+    _1ST_BRANCHIAL_ARCH_MAXILLARY_MANDIBULAR_GROOVE_ECTODERM = _1stBranchialArchMaxillaryMandibularGrooveEctoderm()
     _2ND_BRANCHIAL_GROOVE = _2ndBranchialGroove()
     _2ND_BRANCHIAL_GROOVE_ECTODERM = _2ndBranchialGrooveEctoderm()
     _2ND_BRANCHIAL_MEMBRANE_ECTODERM = _2ndBranchialMembraneEctoderm()
@@ -60018,12 +57240,8 @@ class _MouseAnatomyType:
     _3RD_BRANCHIAL_ARCH_ECTODERM = _3rdBranchialArchEctoderm()
     _3RD_BRANCHIAL_ARCH_ENDODERM = _3rdBranchialArchEndoderm()
     _3RD_BRANCHIAL_ARCH_MESENCHYME = _3rdBranchialArchMesenchyme()
-    _3RD_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = (
-        _3rdBranchialArchMesenchymeDerivedFromHeadMesoderm()
-    )
-    _3RD_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = (
-        _3rdBranchialArchMesenchymeDerivedFromNeuralCrest()
-    )
+    _3RD_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = _3rdBranchialArchMesenchymeDerivedFromHeadMesoderm()
+    _3RD_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = _3rdBranchialArchMesenchymeDerivedFromNeuralCrest()
     LIMB = Limb()
     FORELIMB_BUD = ForelimbBud()
     FORELIMB_BUD_ECTODERM = ForelimbBudEctoderm()
@@ -60170,9 +57388,7 @@ class _MouseAnatomyType:
     _3RD_BRANCHIAL_POUCH_ENDODERM = _3rdBranchialPouchEndoderm()
     PARIETAL_PERICARDIUM = ParietalPericardium()
     VISCERAL_PERICARDIUM = VisceralPericardium()
-    PERICARDIO_PERITONEAL_CANAL_PARIETAL_MESOTHELIUM = (
-        PericardioPeritonealCanalParietalMesothelium()
-    )
+    PERICARDIO_PERITONEAL_CANAL_PARIETAL_MESOTHELIUM = PericardioPeritonealCanalParietalMesothelium()
     PERITONEUM_PARIETAL_MESOTHELIUM = PeritoneumParietalMesothelium()
     PERITONEUM_VISCERAL_MESOTHELIUM = PeritoneumVisceralMesothelium()
     HINDLIMB_RIDGE = HindlimbRidge()
@@ -60234,15 +57450,11 @@ class _MouseAnatomyType:
     CRANIAL_GANGLION = CranialGanglion()
     FACIO_ACOUSTIC_PREGANGLION_COMPLEX = FacioAcousticPreganglionComplex()
     GLOSSOPHARYNGEAL_PREGANGLION = GlossopharyngealPreganglion()
-    GLOSSOPHARYNGEAL_VAGUS_PREGANGLION_COMPLEX = (
-        GlossopharyngealVagusPreganglionComplex()
-    )
+    GLOSSOPHARYNGEAL_VAGUS_PREGANGLION_COMPLEX = GlossopharyngealVagusPreganglionComplex()
     TRIGEMINAL_PREGANGLION = TrigeminalPreganglion()
     VAGUS_PREGANGLION = VagusPreganglion()
     PERIPHERAL_NERVOUS_SYSTEM = PeripheralNervousSystem()
-    SPINAL_COMPONENT_OF_PERIPHERAL_NERVOUS_SYSTEM = (
-        SpinalComponentOfPeripheralNervousSystem()
-    )
+    SPINAL_COMPONENT_OF_PERIPHERAL_NERVOUS_SYSTEM = SpinalComponentOfPeripheralNervousSystem()
     SPINAL_GANGLION = SpinalGanglion()
     DORSAL_ROOT_GANGLION = DorsalRootGanglion()
     OTOCYST = Otocyst()
@@ -60267,12 +57479,8 @@ class _MouseAnatomyType:
     HEART_ATRIUM = HeartAtrium()
     COMMON_ATRIAL_CHAMBER_ENDOCARDIAL_LINING = CommonAtrialChamberEndocardialLining()
     BULBOVENTRICULAR_GROOVE = BulboventricularGroove()
-    BULBUS_CORDIS_CAUDAL_HALF_ENDOCARDIAL_LINING = (
-        BulbusCordisCaudalHalfEndocardialLining()
-    )
-    BULBUS_CORDIS_ROSTRAL_HALF_ENDOCARDIAL_LINING = (
-        BulbusCordisRostralHalfEndocardialLining()
-    )
+    BULBUS_CORDIS_CAUDAL_HALF_ENDOCARDIAL_LINING = BulbusCordisCaudalHalfEndocardialLining()
+    BULBUS_CORDIS_ROSTRAL_HALF_ENDOCARDIAL_LINING = BulbusCordisRostralHalfEndocardialLining()
     ENDOCARDIAL_CUSHION = EndocardialCushion()
     PRIMITIVE_VENTRICLE_ENDOCARDIAL_LINING = PrimitiveVentricleEndocardialLining()
     LEFT_VITELLINE_VEIN_EMBRYONIC_PART = LeftVitellineVeinEmbryonicPart()
@@ -60347,12 +57555,8 @@ class _MouseAnatomyType:
     _4TH_BRANCHIAL_ARCH_ECTODERM = _4thBranchialArchEctoderm()
     _4TH_BRANCHIAL_ARCH_ENDODERM = _4thBranchialArchEndoderm()
     _4TH_BRANCHIAL_ARCH_MESENCHYME = _4thBranchialArchMesenchyme()
-    _4TH_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = (
-        _4thBranchialArchMesenchymeDerivedFromHeadMesoderm()
-    )
-    _4TH_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = (
-        _4thBranchialArchMesenchymeDerivedFromNeuralCrest()
-    )
+    _4TH_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = _4thBranchialArchMesenchymeDerivedFromHeadMesoderm()
+    _4TH_BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = _4thBranchialArchMesenchymeDerivedFromNeuralCrest()
     PLEURAL_COMPONENT = PleuralComponent()
     PLEURAL_CAVITY = PleuralCavity()
     PLEURA = Pleura()
@@ -60391,28 +57595,16 @@ class _MouseAnatomyType:
     PRINCIPAL_ARTERY_TO_FORELIMB = PrincipalArteryToForelimb()
     PRINCIPAL_ARTERY_TO_HINDLIMB = PrincipalArteryToHindlimb()
     COMMON_ATRIAL_CHAMBER_LEFT_PART = CommonAtrialChamberLeftPart()
-    COMMON_ATRIAL_CHAMBER_LEFT_PART_CARDIAC_JELLY = (
-        CommonAtrialChamberLeftPartCardiacJelly()
-    )
-    COMMON_ATRIAL_CHAMBER_LEFT_PART_ENDOCARDIAL_LINING = (
-        CommonAtrialChamberLeftPartEndocardialLining()
-    )
+    COMMON_ATRIAL_CHAMBER_LEFT_PART_CARDIAC_JELLY = CommonAtrialChamberLeftPartCardiacJelly()
+    COMMON_ATRIAL_CHAMBER_LEFT_PART_ENDOCARDIAL_LINING = CommonAtrialChamberLeftPartEndocardialLining()
     LEFT_AURICULAR_REGION = LeftAuricularRegion()
     LEFT_AURICULAR_REGION_ENDOCARDIAL_LINING = LeftAuricularRegionEndocardialLining()
     LEFT_AURICULAR_REGION_CARDIAC_MUSCLE = LeftAuricularRegionCardiacMuscle()
-    COMMON_ATRIAL_CHAMBER_LEFT_PART_CARDIAC_MUSCLE = (
-        CommonAtrialChamberLeftPartCardiacMuscle()
-    )
+    COMMON_ATRIAL_CHAMBER_LEFT_PART_CARDIAC_MUSCLE = CommonAtrialChamberLeftPartCardiacMuscle()
     COMMON_ATRIAL_CHAMBER_RIGHT_PART = CommonAtrialChamberRightPart()
-    COMMON_ATRIAL_CHAMBER_RIGHT_PART_CARDIAC_JELLY = (
-        CommonAtrialChamberRightPartCardiacJelly()
-    )
-    COMMON_ATRIAL_CHAMBER_RIGHT_PART_ENDOCARDIAL_LINING = (
-        CommonAtrialChamberRightPartEndocardialLining()
-    )
-    COMMON_ATRIAL_CHAMBER_RIGHT_PART_CARDIAC_MUSCLE = (
-        CommonAtrialChamberRightPartCardiacMuscle()
-    )
+    COMMON_ATRIAL_CHAMBER_RIGHT_PART_CARDIAC_JELLY = CommonAtrialChamberRightPartCardiacJelly()
+    COMMON_ATRIAL_CHAMBER_RIGHT_PART_ENDOCARDIAL_LINING = CommonAtrialChamberRightPartEndocardialLining()
+    COMMON_ATRIAL_CHAMBER_RIGHT_PART_CARDIAC_MUSCLE = CommonAtrialChamberRightPartCardiacMuscle()
     RIGHT_AURICULAR_REGION = RightAuricularRegion()
     RIGHT_AURICULAR_REGION_ENDOCARDIAL_LINING = RightAuricularRegionEndocardialLining()
     RIGHT_AURICULAR_REGION_CARDIAC_MUSCLE = RightAuricularRegionCardiacMuscle()
@@ -60486,27 +57678,21 @@ class _MouseAnatomyType:
     DIENCEPHALON_GLAND = DiencephalonGland()
     INFUNDIBULAR_RECESS_OF_3RD_VENTRICLE = InfundibularRecessOf3rdVentricle()
     _3RD_VENTRICLE = _3rdVentricle()
-    DIENCEPHALIC_PART_OF_INTERVENTRICULAR_FORAMEN = (
-        DiencephalicPartOfInterventricularForamen()
-    )
+    DIENCEPHALIC_PART_OF_INTERVENTRICULAR_FORAMEN = DiencephalicPartOfInterventricularForamen()
     OPTIC_RECESS = OpticRecess()
     DIENCEPHALON_FLOOR_PLATE = DiencephalonFloorPlate()
     DIENCEPHALON_LAMINA_TERMINALIS = DiencephalonLaminaTerminalis()
     DIENCEPHALON_LATERAL_WALL = DiencephalonLateralWall()
     DIENCEPHALON_LATERAL_WALL_MANTLE_LAYER = DiencephalonLateralWallMantleLayer()
     DIENCEPHALON_LATERAL_WALL_MARGINAL_LAYER = DiencephalonLateralWallMarginalLayer()
-    DIENCEPHALON_LATERAL_WALL_VENTRICULAR_LAYER = (
-        DiencephalonLateralWallVentricularLayer()
-    )
+    DIENCEPHALON_LATERAL_WALL_VENTRICULAR_LAYER = DiencephalonLateralWallVentricularLayer()
     DIENCEPHALON_ROOF_PLATE = DiencephalonRoofPlate()
     TELENCEPHALON = Telencephalon()
     TELENCEPHALON_MANTLE_LAYER = TelencephalonMantleLayer()
     TELENCEPHALON_MARGINAL_LAYER = TelencephalonMarginalLayer()
     TELENCEPHALON_VENTRICULAR_LAYER = TelencephalonVentricularLayer()
     LATERAL_VENTRICLE = LateralVentricle()
-    TELENCEPHALIC_PART_OF_INTERVENTRICULAR_FORAMEN = (
-        TelencephalicPartOfInterventricularForamen()
-    )
+    TELENCEPHALIC_PART_OF_INTERVENTRICULAR_FORAMEN = TelencephalicPartOfInterventricularForamen()
     HINDBRAIN = Hindbrain()
     _4TH_VENTRICLE = _4thVentricle()
     RHOMBOMERE_1_MANTLE_LAYER = Rhombomere1MantleLayer()
@@ -60560,9 +57746,7 @@ class _MouseAnatomyType:
     OPHTHALMIC_ARTERY = OphthalmicArtery()
     PULMONARY_ARTERY = PulmonaryArtery()
     COMMON_ATRIAL_CHAMBER_RIGHT_PART_VALVE = CommonAtrialChamberRightPartValve()
-    COMMON_ATRIAL_CHAMBER_RIGHT_PART_VENOUS_VALVE = (
-        CommonAtrialChamberRightPartVenousValve()
-    )
+    COMMON_ATRIAL_CHAMBER_RIGHT_PART_VENOUS_VALVE = CommonAtrialChamberRightPartVenousValve()
     INTERATRIAL_SEPTUM = InteratrialSeptum()
     FORAMEN_PRIMUM = ForamenPrimum()
     SEPTUM_PRIMUM = SeptumPrimum()
@@ -60581,25 +57765,13 @@ class _MouseAnatomyType:
     VENTRAL_MESOGASTRIUM = VentralMesogastrium()
     STOMACH_VASCULAR_ELEMENT = StomachVascularElement()
     HINDGUT_DIVERTICULUM_POSTANAL_COMPONENT = HindgutDiverticulumPostanalComponent()
-    HINDGUT_DIVERTICULUM_POSTANAL_COMPONENT_MESENCHYME = (
-        HindgutDiverticulumPostanalComponentMesenchyme()
-    )
-    HINDGUT_DIVERTICULUM_POSTANAL_COMPONENT_EPITHELIUM = (
-        HindgutDiverticulumPostanalComponentEpithelium()
-    )
-    HINDGUT_DIVERTICULUM_POSTANAL_COMPONENT_VASCULAR_ELEMENT = (
-        HindgutDiverticulumPostanalComponentVascularElement()
-    )
+    HINDGUT_DIVERTICULUM_POSTANAL_COMPONENT_MESENCHYME = HindgutDiverticulumPostanalComponentMesenchyme()
+    HINDGUT_DIVERTICULUM_POSTANAL_COMPONENT_EPITHELIUM = HindgutDiverticulumPostanalComponentEpithelium()
+    HINDGUT_DIVERTICULUM_POSTANAL_COMPONENT_VASCULAR_ELEMENT = HindgutDiverticulumPostanalComponentVascularElement()
     HINDGUT_DIVERTICULUM_PREANAL_COMPONENT = HindgutDiverticulumPreanalComponent()
-    HINDGUT_DIVERTICULUM_PREANAL_COMPONENT_MESENCHYME = (
-        HindgutDiverticulumPreanalComponentMesenchyme()
-    )
-    HINDGUT_DIVERTICULUM_PREANAL_COMPONENT_EPITHELIUM = (
-        HindgutDiverticulumPreanalComponentEpithelium()
-    )
-    HINDGUT_DIVERTICULUM_PREANAL_COMPONENT_VASCULAR_ELEMENT = (
-        HindgutDiverticulumPreanalComponentVascularElement()
-    )
+    HINDGUT_DIVERTICULUM_PREANAL_COMPONENT_MESENCHYME = HindgutDiverticulumPreanalComponentMesenchyme()
+    HINDGUT_DIVERTICULUM_PREANAL_COMPONENT_EPITHELIUM = HindgutDiverticulumPreanalComponentEpithelium()
+    HINDGUT_DIVERTICULUM_PREANAL_COMPONENT_VASCULAR_ELEMENT = HindgutDiverticulumPreanalComponentVascularElement()
     MIDGUT_LOOP = MidgutLoop()
     MIDGUT_LOOP_MESENCHYME = MidgutLoopMesenchyme()
     MIDGUT_LOOP_EPITHELIUM = MidgutLoopEpithelium()
@@ -60634,29 +57806,21 @@ class _MouseAnatomyType:
     CEREBELLUM_PRIMORDIUM = CerebellumPrimordium()
     METENCEPHALON_ALAR_PLATE_MANTLE_LAYER = MetencephalonAlarPlateMantleLayer()
     METENCEPHALON_ALAR_PLATE_MARGINAL_LAYER = MetencephalonAlarPlateMarginalLayer()
-    METENCEPHALON_ALAR_PLATE_VENTRICULAR_LAYER = (
-        MetencephalonAlarPlateVentricularLayer()
-    )
+    METENCEPHALON_ALAR_PLATE_VENTRICULAR_LAYER = MetencephalonAlarPlateVentricularLayer()
     METENCEPHALON_BASAL_PLATE = MetencephalonBasalPlate()
     METENCEPHALON_BASAL_PLATE_MANTLE_LAYER = MetencephalonBasalPlateMantleLayer()
     METENCEPHALON_BASAL_PLATE_MARGINAL_LAYER = MetencephalonBasalPlateMarginalLayer()
-    METENCEPHALON_BASAL_PLATE_VENTRICULAR_LAYER = (
-        MetencephalonBasalPlateVentricularLayer()
-    )
+    METENCEPHALON_BASAL_PLATE_VENTRICULAR_LAYER = MetencephalonBasalPlateVentricularLayer()
     MYELENCEPHALON = Myelencephalon()
     MYELENCEPHALON_LATERAL_WALL = MyelencephalonLateralWall()
     MYELENCEPHALON_ALAR_PLATE = MyelencephalonAlarPlate()
     MYELENCEPHALON_ALAR_PLATE_MANTLE_LAYER = MyelencephalonAlarPlateMantleLayer()
     MYELENCEPHALON_ALAR_PLATE_MARGINAL_LAYER = MyelencephalonAlarPlateMarginalLayer()
-    MYELENCEPHALON_ALAR_PLATE_VENTRICULAR_LAYER = (
-        MyelencephalonAlarPlateVentricularLayer()
-    )
+    MYELENCEPHALON_ALAR_PLATE_VENTRICULAR_LAYER = MyelencephalonAlarPlateVentricularLayer()
     MYELENCEPHALON_BASAL_PLATE = MyelencephalonBasalPlate()
     MYELENCEPHALON_BASAL_PLATE_MANTLE_LAYER = MyelencephalonBasalPlateMantleLayer()
     MYELENCEPHALON_BASAL_PLATE_MARGINAL_LAYER = MyelencephalonBasalPlateMarginalLayer()
-    MYELENCEPHALON_BASAL_PLATE_VENTRICULAR_LAYER = (
-        MyelencephalonBasalPlateVentricularLayer()
-    )
+    MYELENCEPHALON_BASAL_PLATE_VENTRICULAR_LAYER = MyelencephalonBasalPlateVentricularLayer()
     NEURAL_TUBE_MANTLE_LAYER = NeuralTubeMantleLayer()
     NEURAL_TUBE_ALAR_COLUMNS = NeuralTubeAlarColumns()
     NEURAL_TUBE_BASAL_COLUMNS = NeuralTubeBasalColumns()
@@ -60713,9 +57877,7 @@ class _MouseAnatomyType:
     SKELETON = Skeleton()
     AXIAL_SKELETON = AxialSkeleton()
     AXIAL_SKELETON_CERVICAL_REGION = AxialSkeletonCervicalRegion()
-    CERVICAL_VERTEBRAL_PRE_CARTILAGE_CONDENSATION = (
-        CervicalVertebralPreCartilageCondensation()
-    )
+    CERVICAL_VERTEBRAL_PRE_CARTILAGE_CONDENSATION = CervicalVertebralPreCartilageCondensation()
     SOMITE_40 = Somite40()
     SOMITE_40_DERMOMYOTOME = Somite40Dermomyotome()
     SOMITE_40_MYOCOELE = Somite40Myocoele()
@@ -60771,9 +57933,7 @@ class _MouseAnatomyType:
     PARASYMPATHETIC_NERVOUS_SYSTEM = ParasympatheticNervousSystem()
     PARASYMPATHETIC_NERVE = ParasympatheticNerve()
     VAGAL_NERVE_TRUNK = VagalNerveTrunk()
-    VAGUS_NERVE_RIGHT_RECURRENT_LARYNGEAL_BRANCH = (
-        VagusNerveRightRecurrentLaryngealBranch()
-    )
+    VAGUS_NERVE_RIGHT_RECURRENT_LARYNGEAL_BRANCH = VagusNerveRightRecurrentLaryngealBranch()
     MEDIAN_NERVE = MedianNerve()
     RADIAL_NERVE = RadialNerve()
     ULNAR_NERVE = UlnarNerve()
@@ -60811,22 +57971,14 @@ class _MouseAnatomyType:
     VERTEBRAL_ARTERY = VertebralArtery()
     LEFT_ATRIUM = LeftAtrium()
     LEFT_ATRIUM_AURICULAR_REGION = LeftAtriumAuricularRegion()
-    LEFT_ATRIUM_AURICULAR_REGION_ENDOCARDIAL_LINING = (
-        LeftAtriumAuricularRegionEndocardialLining()
-    )
-    LEFT_ATRIUM_AURICULAR_REGION_CARDIAC_MUSCLE = (
-        LeftAtriumAuricularRegionCardiacMuscle()
-    )
+    LEFT_ATRIUM_AURICULAR_REGION_ENDOCARDIAL_LINING = LeftAtriumAuricularRegionEndocardialLining()
+    LEFT_ATRIUM_AURICULAR_REGION_CARDIAC_MUSCLE = LeftAtriumAuricularRegionCardiacMuscle()
     LEFT_ATRIUM_ENDOCARDIAL_LINING = LeftAtriumEndocardialLining()
     LEFT_ATRIUM_CARDIAC_MUSCLE = LeftAtriumCardiacMuscle()
     RIGHT_ATRIUM = RightAtrium()
     RIGHT_ATRIUM_AURICULAR_REGION = RightAtriumAuricularRegion()
-    RIGHT_ATRIUM_AURICULAR_REGION_ENDOCARDIAL_LINING = (
-        RightAtriumAuricularRegionEndocardialLining()
-    )
-    RIGHT_ATRIUM_AURICULAR_REGION_CARDIAC_MUSCLE = (
-        RightAtriumAuricularRegionCardiacMuscle()
-    )
+    RIGHT_ATRIUM_AURICULAR_REGION_ENDOCARDIAL_LINING = RightAtriumAuricularRegionEndocardialLining()
+    RIGHT_ATRIUM_AURICULAR_REGION_CARDIAC_MUSCLE = RightAtriumAuricularRegionCardiacMuscle()
     RIGHT_ATRIUM_ENDOCARDIAL_LINING = RightAtriumEndocardialLining()
     RIGHT_ATRIUM_CARDIAC_MUSCLE = RightAtriumCardiacMuscle()
     RIGHT_ATRIUM_VALVE = RightAtriumValve()
@@ -60836,9 +57988,7 @@ class _MouseAnatomyType:
     HEART_VENTRICLE = HeartVentricle()
     BULBAR_RIDGE = BulbarRidge()
     INTERVENTRICULAR_SEPTUM = InterventricularSeptum()
-    INTERVENTRICULAR_SEPTUM_ENDOCARDIAL_LINING = (
-        InterventricularSeptumEndocardialLining()
-    )
+    INTERVENTRICULAR_SEPTUM_ENDOCARDIAL_LINING = InterventricularSeptumEndocardialLining()
     INTERVENTRICULAR_SEPTUM_CARDIAC_MUSCLE = InterventricularSeptumCardiacMuscle()
     INTERVENTRICULAR_GROOVE = InterventricularGroove()
     HEART_LEFT_VENTRICLE = HeartLeftVentricle()
@@ -60858,9 +58008,7 @@ class _MouseAnatomyType:
     MANDIBULAR_PROCESS = MandibularProcess()
     MANDIBLE_PRIMORDIUM = MandiblePrimordium()
     MANDIBULAR_PROCESS_MESENCHYME = MandibularProcessMesenchyme()
-    MECKELS_CARTILAGE_PRE_CARTILAGE_CONDENSATION = (
-        MeckelsCartilagePreCartilageCondensation()
-    )
+    MECKELS_CARTILAGE_PRE_CARTILAGE_CONDENSATION = MeckelsCartilagePreCartilageCondensation()
     MAXILLARY_PROCESS = MaxillaryProcess()
     MAXILLA_PRIMORDIUM = MaxillaPrimordium()
     MAXILLARY_PROCESS_MESENCHYME = MaxillaryProcessMesenchyme()
@@ -60880,30 +58028,18 @@ class _MouseAnatomyType:
     GONAD = Gonad()
     COELOMIC_EPITHELIUM_OF_GONAD = CoelomicEpitheliumOfGonad()
     GONADAL_MESENCHYME = GonadalMesenchyme()
-    ARYTENOID_SWELLING_PRE_CARTILAGE_CONDENSATION = (
-        ArytenoidSwellingPreCartilageCondensation()
-    )
+    ARYTENOID_SWELLING_PRE_CARTILAGE_CONDENSATION = ArytenoidSwellingPreCartilageCondensation()
     LEFT_LUNG_RUDIMENT_LOBAR_BRONCHUS = LeftLungRudimentLobarBronchus()
-    LEFT_LUNG_RUDIMENT_LOBAR_BRONCHUS_MESENCHYME = (
-        LeftLungRudimentLobarBronchusMesenchyme()
-    )
-    LEFT_LUNG_RUDIMENT_LOBAR_BRONCHUS_EPITHELIUM = (
-        LeftLungRudimentLobarBronchusEpithelium()
-    )
-    LEFT_LUNG_RUDIMENT_LOBAR_BRONCHUS_VASCULAR_ELEMENT = (
-        LeftLungRudimentLobarBronchusVascularElement()
-    )
+    LEFT_LUNG_RUDIMENT_LOBAR_BRONCHUS_MESENCHYME = LeftLungRudimentLobarBronchusMesenchyme()
+    LEFT_LUNG_RUDIMENT_LOBAR_BRONCHUS_EPITHELIUM = LeftLungRudimentLobarBronchusEpithelium()
+    LEFT_LUNG_RUDIMENT_LOBAR_BRONCHUS_VASCULAR_ELEMENT = LeftLungRudimentLobarBronchusVascularElement()
     CERVICAL_VERTEBRAL_CARTILAGE_CONDENSATION = CervicalVertebralCartilageCondensation()
     AXIAL_SKELETON_LUMBAR_REGION = AxialSkeletonLumbarRegion()
-    LUMBAR_VERTEBRAL_PRE_CARTILAGE_CONDENSATION = (
-        LumbarVertebralPreCartilageCondensation()
-    )
+    LUMBAR_VERTEBRAL_PRE_CARTILAGE_CONDENSATION = LumbarVertebralPreCartilageCondensation()
     SCLEROTOME_CONDENSATION = SclerotomeCondensation()
     AXIAL_SKELETON_THORACIC_REGION = AxialSkeletonThoracicRegion()
     RIB_PRE_CARTILAGE_CONDENSATION = RibPreCartilageCondensation()
-    THORACIC_VERTEBRAL_PRE_CARTILAGE_CONDENSATION = (
-        ThoracicVertebralPreCartilageCondensation()
-    )
+    THORACIC_VERTEBRAL_PRE_CARTILAGE_CONDENSATION = ThoracicVertebralPreCartilageCondensation()
     SOMITE_46 = Somite46()
     SOMITE_46_DERMOMYOTOME = Somite46Dermomyotome()
     SOMITE_46_MYOCOELE = Somite46Myocoele()
@@ -60950,36 +58086,28 @@ class _MouseAnatomyType:
     FORELIMB_DIGIT_5_EPITHELIUM = ForelimbDigit5Epithelium()
     FORELIMB_DIGIT_5_MESENCHYME = ForelimbDigit5Mesenchyme()
     HAND_REST_OF_EPITHELIUM = HandRestOfEpithelium()
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_1_AND_2 = (
-        InterdigitalRegionBetweenForelimbDigits1And2()
-    )
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_1_AND_2 = InterdigitalRegionBetweenForelimbDigits1And2()
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_1_AND_2_EPITHELIUM = (
         InterdigitalRegionBetweenForelimbDigits1And2Epithelium()
     )
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_1_AND_2_MESENCHYME = (
         InterdigitalRegionBetweenForelimbDigits1And2Mesenchyme()
     )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_2_AND_3 = (
-        InterdigitalRegionBetweenForelimbDigits2And3()
-    )
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_2_AND_3 = InterdigitalRegionBetweenForelimbDigits2And3()
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_2_AND_3_EPITHELIUM = (
         InterdigitalRegionBetweenForelimbDigits2And3Epithelium()
     )
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_2_AND_3_MESENCHYME = (
         InterdigitalRegionBetweenForelimbDigits2And3Mesenchyme()
     )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_3_AND_4 = (
-        InterdigitalRegionBetweenForelimbDigits3And4()
-    )
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_3_AND_4 = InterdigitalRegionBetweenForelimbDigits3And4()
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_3_AND_4_EPITHELIUM = (
         InterdigitalRegionBetweenForelimbDigits3And4Epithelium()
     )
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_3_AND_4_MESENCHYME = (
         InterdigitalRegionBetweenForelimbDigits3And4Mesenchyme()
     )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_4_AND_5 = (
-        InterdigitalRegionBetweenForelimbDigits4And5()
-    )
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_4_AND_5 = InterdigitalRegionBetweenForelimbDigits4And5()
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_4_AND_5_EPITHELIUM = (
         InterdigitalRegionBetweenForelimbDigits4And5Epithelium()
     )
@@ -61005,36 +58133,28 @@ class _MouseAnatomyType:
     HINDLIMB_DIGIT_5_EPITHELIUM = HindlimbDigit5Epithelium()
     HINDLIMB_DIGIT_5_MESENCHYME = HindlimbDigit5Mesenchyme()
     FOOT_REST_OF_EPITHELIUM = FootRestOfEpithelium()
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_1_AND_2 = (
-        InterdigitalRegionBetweenHindlimbDigits1And2()
-    )
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_1_AND_2 = InterdigitalRegionBetweenHindlimbDigits1And2()
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_1_AND_2_EPITHELIUM = (
         InterdigitalRegionBetweenHindlimbDigits1And2Epithelium()
     )
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_1_AND_2_MESENCHYME = (
         InterdigitalRegionBetweenHindlimbDigits1And2Mesenchyme()
     )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_2_AND_3 = (
-        InterdigitalRegionBetweenHindlimbDigits2And3()
-    )
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_2_AND_3 = InterdigitalRegionBetweenHindlimbDigits2And3()
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_2_AND_3_EPITHELIUM = (
         InterdigitalRegionBetweenHindlimbDigits2And3Epithelium()
     )
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_2_AND_3_MESENCHYME = (
         InterdigitalRegionBetweenHindlimbDigits2And3Mesenchyme()
     )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_3_AND_4 = (
-        InterdigitalRegionBetweenHindlimbDigits3And4()
-    )
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_3_AND_4 = InterdigitalRegionBetweenHindlimbDigits3And4()
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_3_AND_4_EPITHELIUM = (
         InterdigitalRegionBetweenHindlimbDigits3And4Epithelium()
     )
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_3_AND_4_MESENCHYME = (
         InterdigitalRegionBetweenHindlimbDigits3And4Mesenchyme()
     )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_4_AND_5 = (
-        InterdigitalRegionBetweenHindlimbDigits4And5()
-    )
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_4_AND_5 = InterdigitalRegionBetweenHindlimbDigits4And5()
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_4_AND_5_EPITHELIUM = (
         InterdigitalRegionBetweenHindlimbDigits4And5Epithelium()
     )
@@ -61106,20 +58226,12 @@ class _MouseAnatomyType:
     MEDULLA_OBLONGATA_LATERAL_WALL = MedullaOblongataLateralWall()
     MEDULLA_OBLONGATA_ALAR_PLATE = MedullaOblongataAlarPlate()
     MEDULLA_OBLONGATA_ALAR_PLATE_MANTLE_LAYER = MedullaOblongataAlarPlateMantleLayer()
-    MEDULLA_OBLONGATA_ALAR_PLATE_MARGINAL_LAYER = (
-        MedullaOblongataAlarPlateMarginalLayer()
-    )
-    MEDULLA_OBLONGATA_ALAR_PLATE_VENTRICULAR_LAYER = (
-        MedullaOblongataAlarPlateVentricularLayer()
-    )
+    MEDULLA_OBLONGATA_ALAR_PLATE_MARGINAL_LAYER = MedullaOblongataAlarPlateMarginalLayer()
+    MEDULLA_OBLONGATA_ALAR_PLATE_VENTRICULAR_LAYER = MedullaOblongataAlarPlateVentricularLayer()
     MEDULLA_OBLONGATA_BASAL_PLATE = MedullaOblongataBasalPlate()
     MEDULLA_OBLONGATA_BASAL_PLATE_MANTLE_LAYER = MedullaOblongataBasalPlateMantleLayer()
-    MEDULLA_OBLONGATA_BASAL_PLATE_MARGINAL_LAYER = (
-        MedullaOblongataBasalPlateMarginalLayer()
-    )
-    MEDULLA_OBLONGATA_BASAL_PLATE_VENTRICULAR_LAYER = (
-        MedullaOblongataBasalPlateVentricularLayer()
-    )
+    MEDULLA_OBLONGATA_BASAL_PLATE_MARGINAL_LAYER = MedullaOblongataBasalPlateMarginalLayer()
+    MEDULLA_OBLONGATA_BASAL_PLATE_VENTRICULAR_LAYER = MedullaOblongataBasalPlateVentricularLayer()
     MEDULLA_OBLONGATA_SULCUS_LIMITANS = MedullaOblongataSulcusLimitans()
     MEDULLA_OBLONGATA_ROOF = MedullaOblongataRoof()
     PONS = Pons()
@@ -61127,9 +58239,7 @@ class _MouseAnatomyType:
     PONS_MARGINAL_LAYER = PonsMarginalLayer()
     PONS_VENTRICULAR_LAYER = PonsVentricularLayer()
     METENCEPHALON_SULCUS_LIMITANS = MetencephalonSulcusLimitans()
-    METENCEPHALON_PART_OF_4TH_VENTRICLE_CHOROID_PLEXUS = (
-        MetencephalonPartOf4thVentricleChoroidPlexus()
-    )
+    METENCEPHALON_PART_OF_4TH_VENTRICLE_CHOROID_PLEXUS = MetencephalonPartOf4thVentricleChoroidPlexus()
     FACIAL_GANGLION = FacialGanglion()
     VESTIBULO_COCHLEAR_GANGLION_COMPLEX = VestibuloCochlearGanglionComplex()
     VESTIBULO_COCHLEAR_GANGLION = VestibuloCochlearGanglion()
@@ -61179,9 +58289,7 @@ class _MouseAnatomyType:
     INTERSEGMENTAL_ARTERY = IntersegmentalArtery()
     SUBCLAVIAN_ARTERY = SubclavianArtery()
     ATRIOVENTRICULAR_ENDOCARDIAL_CUSHION = AtrioventricularEndocardialCushion()
-    OUTFLOW_TRACT_PULMONARY_COMPONENT_PROXIMAL_PART = (
-        OutflowTractPulmonaryComponentProximalPart()
-    )
+    OUTFLOW_TRACT_PULMONARY_COMPONENT_PROXIMAL_PART = OutflowTractPulmonaryComponentProximalPart()
     INTERNAL_JUGULAR_VEIN = InternalJugularVein()
     SUBCLAVIAN_VEIN = SubclavianVein()
     HYOID_CARTILAGE_CONDENSATION = HyoidCartilageCondensation()
@@ -61192,9 +58300,7 @@ class _MouseAnatomyType:
     STOMACH_PROVENTRICULAR_REGION = StomachProventricularRegion()
     STOMACH_PROVENTRICULAR_REGION_MESENCHYME = StomachProventricularRegionMesenchyme()
     STOMACH_PROVENTRICULAR_REGION_EPITHELIUM = StomachProventricularRegionEpithelium()
-    STOMACH_PROVENTRICULAR_REGION_VASCULAR_ELEMENT = (
-        StomachProventricularRegionVascularElement()
-    )
+    STOMACH_PROVENTRICULAR_REGION_VASCULAR_ELEMENT = StomachProventricularRegionVascularElement()
     STOMACH_PYLORIC_REGION = StomachPyloricRegion()
     STOMACH_PYLORIC_REGION_MESENCHYME = StomachPyloricRegionMesenchyme()
     STOMACH_PYLORIC_REGION_EPITHELIUM = StomachPyloricRegionEpithelium()
@@ -61235,9 +58341,7 @@ class _MouseAnatomyType:
     CERVICAL_VERTEBRA = CervicalVertebra()
     LUMBAR_VERTEBRAL_CARTILAGE_CONDENSATION = LumbarVertebralCartilageCondensation()
     AXIAL_SKELETON_SACRAL_REGION = AxialSkeletonSacralRegion()
-    SACRAL_VERTEBRAL_PRE_CARTILAGE_CONDENSATION = (
-        SacralVertebralPreCartilageCondensation()
-    )
+    SACRAL_VERTEBRAL_PRE_CARTILAGE_CONDENSATION = SacralVertebralPreCartilageCondensation()
     RIB_CARTILAGE_CONDENSATION = RibCartilageCondensation()
     THORACIC_VERTEBRAL_CARTILAGE_CONDENSATION = ThoracicVertebralCartilageCondensation()
     CRANIUM = Cranium()
@@ -61265,80 +58369,36 @@ class _MouseAnatomyType:
     DIAPHRAGM_CENTRAL_TENDON = DiaphragmCentralTendon()
     CRUS_OF_DIAPHRAGM = CrusOfDiaphragm()
     PLEURO_PERICARDIAL_CANAL = PleuroPericardialCanal()
-    PLEURO_PERICARDIAL_CANAL_MESOTHELIAL_LINING = (
-        PleuroPericardialCanalMesothelialLining()
-    )
+    PLEURO_PERICARDIAL_CANAL_MESOTHELIAL_LINING = PleuroPericardialCanalMesothelialLining()
     PLEURO_PERICARDIAL_FOLDS = PleuroPericardialFolds()
     PLEURO_PERITONEAL_CANAL = PleuroPeritonealCanal()
-    PLEURO_PERITONEAL_CANAL_MESOTHELIAL_LINING = (
-        PleuroPeritonealCanalMesothelialLining()
-    )
+    PLEURO_PERITONEAL_CANAL_MESOTHELIAL_LINING = PleuroPeritonealCanalMesothelialLining()
     PLEURO_PERITONEAL_MEMBRANE = PleuroPeritonealMembrane()
     ELBOW_JOINT_PRIMORDIUM = ElbowJointPrimordium()
     RADIUS_ULNA_CARTILAGE_CONDENSATION = RadiusUlnaCartilageCondensation()
     SHOULDER_JOINT_PRIMORDIUM = ShoulderJointPrimordium()
     HUMERUS_CARTILAGE_CONDENSATION = HumerusCartilageCondensation()
-    FORELIMB_DIGIT_1_METACARPUS_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit1MetacarpusPreCartilageCondensation()
-    )
-    FORELIMB_DIGIT_1_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit1PhalanxPreCartilageCondensation()
-    )
-    FORELIMB_DIGIT_2_METACARPUS_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit2MetacarpusPreCartilageCondensation()
-    )
-    FORELIMB_DIGIT_2_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit2PhalanxPreCartilageCondensation()
-    )
-    FORELIMB_DIGIT_3_METACARPUS_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit3MetacarpusPreCartilageCondensation()
-    )
-    FORELIMB_DIGIT_3_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit3PhalanxPreCartilageCondensation()
-    )
-    FORELIMB_DIGIT_4_METACARPUS_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit4MetacarpusPreCartilageCondensation()
-    )
-    FORELIMB_DIGIT_4_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit4PhalanxPreCartilageCondensation()
-    )
-    FORELIMB_DIGIT_5_METACARPUS_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit5MetacarpusPreCartilageCondensation()
-    )
-    FORELIMB_DIGIT_5_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbDigit5PhalanxPreCartilageCondensation()
-    )
+    FORELIMB_DIGIT_1_METACARPUS_PRE_CARTILAGE_CONDENSATION = ForelimbDigit1MetacarpusPreCartilageCondensation()
+    FORELIMB_DIGIT_1_PHALANX_PRE_CARTILAGE_CONDENSATION = ForelimbDigit1PhalanxPreCartilageCondensation()
+    FORELIMB_DIGIT_2_METACARPUS_PRE_CARTILAGE_CONDENSATION = ForelimbDigit2MetacarpusPreCartilageCondensation()
+    FORELIMB_DIGIT_2_PHALANX_PRE_CARTILAGE_CONDENSATION = ForelimbDigit2PhalanxPreCartilageCondensation()
+    FORELIMB_DIGIT_3_METACARPUS_PRE_CARTILAGE_CONDENSATION = ForelimbDigit3MetacarpusPreCartilageCondensation()
+    FORELIMB_DIGIT_3_PHALANX_PRE_CARTILAGE_CONDENSATION = ForelimbDigit3PhalanxPreCartilageCondensation()
+    FORELIMB_DIGIT_4_METACARPUS_PRE_CARTILAGE_CONDENSATION = ForelimbDigit4MetacarpusPreCartilageCondensation()
+    FORELIMB_DIGIT_4_PHALANX_PRE_CARTILAGE_CONDENSATION = ForelimbDigit4PhalanxPreCartilageCondensation()
+    FORELIMB_DIGIT_5_METACARPUS_PRE_CARTILAGE_CONDENSATION = ForelimbDigit5MetacarpusPreCartilageCondensation()
+    FORELIMB_DIGIT_5_PHALANX_PRE_CARTILAGE_CONDENSATION = ForelimbDigit5PhalanxPreCartilageCondensation()
     CARPUS_PRE_CARTILAGE_CONDENSATION = CarpusPreCartilageCondensation()
-    HINDLIMB_DIGIT_1_METATARSUS_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit1MetatarsusPreCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_1_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit1PhalanxPreCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_2_METATARSUS_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit2MetatarsusPreCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_2_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit2PhalanxPreCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_3_METATARSUS_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit3MetatarsusPreCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_3_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit3PhalanxPreCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_4_METATARSUS_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit4MetatarsusPreCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_4_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit4PhalanxPreCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_5_METATARSUS_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit5MetatarsusPreCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_5_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbDigit5PhalanxPreCartilageCondensation()
-    )
+    HINDLIMB_DIGIT_1_METATARSUS_PRE_CARTILAGE_CONDENSATION = HindlimbDigit1MetatarsusPreCartilageCondensation()
+    HINDLIMB_DIGIT_1_PHALANX_PRE_CARTILAGE_CONDENSATION = HindlimbDigit1PhalanxPreCartilageCondensation()
+    HINDLIMB_DIGIT_2_METATARSUS_PRE_CARTILAGE_CONDENSATION = HindlimbDigit2MetatarsusPreCartilageCondensation()
+    HINDLIMB_DIGIT_2_PHALANX_PRE_CARTILAGE_CONDENSATION = HindlimbDigit2PhalanxPreCartilageCondensation()
+    HINDLIMB_DIGIT_3_METATARSUS_PRE_CARTILAGE_CONDENSATION = HindlimbDigit3MetatarsusPreCartilageCondensation()
+    HINDLIMB_DIGIT_3_PHALANX_PRE_CARTILAGE_CONDENSATION = HindlimbDigit3PhalanxPreCartilageCondensation()
+    HINDLIMB_DIGIT_4_METATARSUS_PRE_CARTILAGE_CONDENSATION = HindlimbDigit4MetatarsusPreCartilageCondensation()
+    HINDLIMB_DIGIT_4_PHALANX_PRE_CARTILAGE_CONDENSATION = HindlimbDigit4PhalanxPreCartilageCondensation()
+    HINDLIMB_DIGIT_5_METATARSUS_PRE_CARTILAGE_CONDENSATION = HindlimbDigit5MetatarsusPreCartilageCondensation()
+    HINDLIMB_DIGIT_5_PHALANX_PRE_CARTILAGE_CONDENSATION = HindlimbDigit5PhalanxPreCartilageCondensation()
     FUTURE_TARSUS = FutureTarsus()
     CALCANEUM_PRE_CARTILAGE_CONDENSATION = CalcaneumPreCartilageCondensation()
     FUTURE_TARSUS_REST_OF_MESENCHYME = FutureTarsusRestOfMesenchyme()
@@ -61350,15 +58410,9 @@ class _MouseAnatomyType:
     VERTEBRAL_AXIS_MUSCULATURE = VertebralAxisMusculature()
     ANTERIOR_ABDOMINAL_WALL_MUSCULATURE = AnteriorAbdominalWallMusculature()
     ANTERIOR_ABDOMINAL_WALL_MUSCLE = AnteriorAbdominalWallMuscle()
-    ANTERIOR_ABDOMINAL_WALL_UNDIFFERENTIATED_PRE_MUSCLE_MASS = (
-        AnteriorAbdominalWallUndifferentiatedPreMuscleMass()
-    )
-    PECTORAL_GIRDLE_AND_THORACIC_BODY_WALL_MUSCULATURE = (
-        PectoralGirdleAndThoracicBodyWallMusculature()
-    )
-    PECTORAL_GIRDLE_AND_THORACIC_BODY_WALL_MUSCLE = (
-        PectoralGirdleAndThoracicBodyWallMuscle()
-    )
+    ANTERIOR_ABDOMINAL_WALL_UNDIFFERENTIATED_PRE_MUSCLE_MASS = AnteriorAbdominalWallUndifferentiatedPreMuscleMass()
+    PECTORAL_GIRDLE_AND_THORACIC_BODY_WALL_MUSCULATURE = PectoralGirdleAndThoracicBodyWallMusculature()
+    PECTORAL_GIRDLE_AND_THORACIC_BODY_WALL_MUSCLE = PectoralGirdleAndThoracicBodyWallMuscle()
     DELTOID_PRE_MUSCLE_MASS = DeltoidPreMuscleMass()
     SUBSCAPULARIS_PRE_MUSCLE_MASS = SubscapularisPreMuscleMass()
     SALIVARY_GLAND = SalivaryGland()
@@ -61412,12 +58466,8 @@ class _MouseAnatomyType:
     TRIGEMINAL_NERVE_MAXILLARY_DIVISION = TrigeminalNerveMaxillaryDivision()
     TRIGEMINAL_NERVE_OPHTHALMIC_DIVISION = TrigeminalNerveOphthalmicDivision()
     VESTIBULOCOCHLEAR_NERVE = VestibulocochlearNerve()
-    VESTIBULOCOCHLEAR_NERVE_COCHLEAR_COMPONENT = (
-        VestibulocochlearNerveCochlearComponent()
-    )
-    VESTIBULOCOCHLEAR_NERVE_VESTIBULAR_COMPONENT = (
-        VestibulocochlearNerveVestibularComponent()
-    )
+    VESTIBULOCOCHLEAR_NERVE_COCHLEAR_COMPONENT = VestibulocochlearNerveCochlearComponent()
+    VESTIBULOCOCHLEAR_NERVE_VESTIBULAR_COMPONENT = VestibulocochlearNerveVestibularComponent()
     SPINAL_CORD_MENINGES = SpinalCordMeninges()
     SPINAL_CORD_ARACHNOID_MATER = SpinalCordArachnoidMater()
     SPINAL_CORD_DURA_MATER = SpinalCordDuraMater()
@@ -61548,49 +58598,25 @@ class _MouseAnatomyType:
     LEFT_LUNG_HILUS = LeftLungHilus()
     RIGHT_LUNG_ACCESSORY_LOBE = RightLungAccessoryLobe()
     RIGHT_LUNG_ACCESSORY_LOBE_LOBAR_BRONCHUS = RightLungAccessoryLobeLobarBronchus()
-    RIGHT_LUNG_ACCESSORY_LOBE_LOBAR_BRONCHUS_MESENCHYME = (
-        RightLungAccessoryLobeLobarBronchusMesenchyme()
-    )
-    RIGHT_LUNG_ACCESSORY_LOBE_LOBAR_BRONCHUS_EPITHELIUM = (
-        RightLungAccessoryLobeLobarBronchusEpithelium()
-    )
-    RIGHT_LUNG_ACCESSORY_LOBE_LOBAR_BRONCHUS_VASCULAR_ELEMENT = (
-        RightLungAccessoryLobeLobarBronchusVascularElement()
-    )
+    RIGHT_LUNG_ACCESSORY_LOBE_LOBAR_BRONCHUS_MESENCHYME = RightLungAccessoryLobeLobarBronchusMesenchyme()
+    RIGHT_LUNG_ACCESSORY_LOBE_LOBAR_BRONCHUS_EPITHELIUM = RightLungAccessoryLobeLobarBronchusEpithelium()
+    RIGHT_LUNG_ACCESSORY_LOBE_LOBAR_BRONCHUS_VASCULAR_ELEMENT = RightLungAccessoryLobeLobarBronchusVascularElement()
     RIGHT_LUNG_CAUDAL_LOBE = RightLungCaudalLobe()
     RIGHT_LUNG_CAUDAL_LOBE_LOBAR_BRONCHUS = RightLungCaudalLobeLobarBronchus()
-    RIGHT_LUNG_CAUDAL_LOBE_LOBAR_BRONCHUS_MESENCHYME = (
-        RightLungCaudalLobeLobarBronchusMesenchyme()
-    )
-    RIGHT_LUNG_CAUDAL_LOBE_LOBAR_BRONCHUS_EPITHELIUM = (
-        RightLungCaudalLobeLobarBronchusEpithelium()
-    )
-    RIGHT_LUNG_CAUDAL_LOBE_LOBAR_BRONCHUS_VASCULAR_ELEMENT = (
-        RightLungCaudalLobeLobarBronchusVascularElement()
-    )
+    RIGHT_LUNG_CAUDAL_LOBE_LOBAR_BRONCHUS_MESENCHYME = RightLungCaudalLobeLobarBronchusMesenchyme()
+    RIGHT_LUNG_CAUDAL_LOBE_LOBAR_BRONCHUS_EPITHELIUM = RightLungCaudalLobeLobarBronchusEpithelium()
+    RIGHT_LUNG_CAUDAL_LOBE_LOBAR_BRONCHUS_VASCULAR_ELEMENT = RightLungCaudalLobeLobarBronchusVascularElement()
     RIGHT_LUNG_CRANIAL_LOBE = RightLungCranialLobe()
     RIGHT_LUNG_CRANIAL_LOBE_LOBAR_BRONCHUS = RightLungCranialLobeLobarBronchus()
-    RIGHT_LUNG_CRANIAL_LOBE_LOBAR_BRONCHUS_MESENCHYME = (
-        RightLungCranialLobeLobarBronchusMesenchyme()
-    )
-    RIGHT_LUNG_CRANIAL_LOBE_LOBAR_BRONCHUS_EPITHELIUM = (
-        RightLungCranialLobeLobarBronchusEpithelium()
-    )
-    RIGHT_LUNG_CRANIAL_LOBE_LOBAR_BRONCHUS_VASCULAR_ELEMENT = (
-        RightLungCranialLobeLobarBronchusVascularElement()
-    )
+    RIGHT_LUNG_CRANIAL_LOBE_LOBAR_BRONCHUS_MESENCHYME = RightLungCranialLobeLobarBronchusMesenchyme()
+    RIGHT_LUNG_CRANIAL_LOBE_LOBAR_BRONCHUS_EPITHELIUM = RightLungCranialLobeLobarBronchusEpithelium()
+    RIGHT_LUNG_CRANIAL_LOBE_LOBAR_BRONCHUS_VASCULAR_ELEMENT = RightLungCranialLobeLobarBronchusVascularElement()
     RIGHT_LUNG_HILUS = RightLungHilus()
     RIGHT_LUNG_MIDDLE_LOBE = RightLungMiddleLobe()
     RIGHT_LUNG_MIDDLE_LOBE_LOBAR_BRONCHUS = RightLungMiddleLobeLobarBronchus()
-    RIGHT_LUNG_MIDDLE_LOBE_LOBAR_BRONCHUS_MESENCHYME = (
-        RightLungMiddleLobeLobarBronchusMesenchyme()
-    )
-    RIGHT_LUNG_MIDDLE_LOBE_LOBAR_BRONCHUS_EPITHELIUM = (
-        RightLungMiddleLobeLobarBronchusEpithelium()
-    )
-    RIGHT_LUNG_MIDDLE_LOBE_LOBAR_BRONCHUS_VASCULAR_ELEMENT = (
-        RightLungMiddleLobeLobarBronchusVascularElement()
-    )
+    RIGHT_LUNG_MIDDLE_LOBE_LOBAR_BRONCHUS_MESENCHYME = RightLungMiddleLobeLobarBronchusMesenchyme()
+    RIGHT_LUNG_MIDDLE_LOBE_LOBAR_BRONCHUS_EPITHELIUM = RightLungMiddleLobeLobarBronchusEpithelium()
+    RIGHT_LUNG_MIDDLE_LOBE_LOBAR_BRONCHUS_VASCULAR_ELEMENT = RightLungMiddleLobeLobarBronchusVascularElement()
     LUMBAR_VERTEBRA = LumbarVertebra()
     NUCLEUS_PULPOSUS = NucleusPulposus()
     SACRAL_VERTEBRAL_CARTILAGE_CONDENSATION = SacralVertebralCartilageCondensation()
@@ -61648,84 +58674,48 @@ class _MouseAnatomyType:
     UPPER_ARM_SKIN = UpperArmSkin()
     UPPER_ARM_DERMIS = UpperArmDermis()
     UPPER_ARM_EPIDERMIS = UpperArmEpidermis()
-    FORELIMB_DIGIT_1_METACARPUS_CARTILAGE_CONDENSATION = (
-        ForelimbDigit1MetacarpusCartilageCondensation()
-    )
-    FORELIMB_DIGIT_1_PHALANX_CARTILAGE_CONDENSATION = (
-        ForelimbDigit1PhalanxCartilageCondensation()
-    )
+    FORELIMB_DIGIT_1_METACARPUS_CARTILAGE_CONDENSATION = ForelimbDigit1MetacarpusCartilageCondensation()
+    FORELIMB_DIGIT_1_PHALANX_CARTILAGE_CONDENSATION = ForelimbDigit1PhalanxCartilageCondensation()
     FORELIMB_DIGIT_1_SKIN = ForelimbDigit1Skin()
     FORELIMB_DIGIT_1_DERMIS = ForelimbDigit1Dermis()
     FORELIMB_DIGIT_1_EPIDERMIS = ForelimbDigit1Epidermis()
-    FORELIMB_DIGIT_2_METACARPUS_CARTILAGE_CONDENSATION = (
-        ForelimbDigit2MetacarpusCartilageCondensation()
-    )
-    FORELIMB_DIGIT_2_PHALANX_CARTILAGE_CONDENSATION = (
-        ForelimbDigit2PhalanxCartilageCondensation()
-    )
+    FORELIMB_DIGIT_2_METACARPUS_CARTILAGE_CONDENSATION = ForelimbDigit2MetacarpusCartilageCondensation()
+    FORELIMB_DIGIT_2_PHALANX_CARTILAGE_CONDENSATION = ForelimbDigit2PhalanxCartilageCondensation()
     FORELIMB_DIGIT_2_SKIN = ForelimbDigit2Skin()
     FORELIMB_DIGIT_2_DERMIS = ForelimbDigit2Dermis()
     FORELIMB_DIGIT_2_EPIDERMIS = ForelimbDigit2Epidermis()
-    FORELIMB_DIGIT_3_METACARPUS_CARTILAGE_CONDENSATION = (
-        ForelimbDigit3MetacarpusCartilageCondensation()
-    )
-    FORELIMB_DIGIT_3_PHALANX_CARTILAGE_CONDENSATION = (
-        ForelimbDigit3PhalanxCartilageCondensation()
-    )
+    FORELIMB_DIGIT_3_METACARPUS_CARTILAGE_CONDENSATION = ForelimbDigit3MetacarpusCartilageCondensation()
+    FORELIMB_DIGIT_3_PHALANX_CARTILAGE_CONDENSATION = ForelimbDigit3PhalanxCartilageCondensation()
     FORELIMB_DIGIT_3_SKIN = ForelimbDigit3Skin()
     FORELIMB_DIGIT_3_DERMIS = ForelimbDigit3Dermis()
     FORELIMB_DIGIT_3_EPIDERMIS = ForelimbDigit3Epidermis()
-    FORELIMB_DIGIT_4_METACARPUS_CARTILAGE_CONDENSATION = (
-        ForelimbDigit4MetacarpusCartilageCondensation()
-    )
-    FORELIMB_DIGIT_4_PHALANX_CARTILAGE_CONDENSATION = (
-        ForelimbDigit4PhalanxCartilageCondensation()
-    )
+    FORELIMB_DIGIT_4_METACARPUS_CARTILAGE_CONDENSATION = ForelimbDigit4MetacarpusCartilageCondensation()
+    FORELIMB_DIGIT_4_PHALANX_CARTILAGE_CONDENSATION = ForelimbDigit4PhalanxCartilageCondensation()
     FORELIMB_DIGIT_4_SKIN = ForelimbDigit4Skin()
     FORELIMB_DIGIT_4_DERMIS = ForelimbDigit4Dermis()
     FORELIMB_DIGIT_4_EPIDERMIS = ForelimbDigit4Epidermis()
-    FORELIMB_DIGIT_5_METACARPUS_CARTILAGE_CONDENSATION = (
-        ForelimbDigit5MetacarpusCartilageCondensation()
-    )
-    FORELIMB_DIGIT_5_PHALANX_CARTILAGE_CONDENSATION = (
-        ForelimbDigit5PhalanxCartilageCondensation()
-    )
+    FORELIMB_DIGIT_5_METACARPUS_CARTILAGE_CONDENSATION = ForelimbDigit5MetacarpusCartilageCondensation()
+    FORELIMB_DIGIT_5_PHALANX_CARTILAGE_CONDENSATION = ForelimbDigit5PhalanxCartilageCondensation()
     FORELIMB_DIGIT_5_SKIN = ForelimbDigit5Skin()
     FORELIMB_DIGIT_5_DERMIS = ForelimbDigit5Dermis()
     FORELIMB_DIGIT_5_EPIDERMIS = ForelimbDigit5Epidermis()
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_1_AND_2_SKIN = (
-        InterdigitalRegionBetweenForelimbDigits1And2Skin()
-    )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_1_AND_2_DERMIS = (
-        InterdigitalRegionBetweenForelimbDigits1And2Dermis()
-    )
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_1_AND_2_SKIN = InterdigitalRegionBetweenForelimbDigits1And2Skin()
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_1_AND_2_DERMIS = InterdigitalRegionBetweenForelimbDigits1And2Dermis()
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_1_AND_2_EPIDERMIS = (
         InterdigitalRegionBetweenForelimbDigits1And2Epidermis()
     )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_2_AND_3_SKIN = (
-        InterdigitalRegionBetweenForelimbDigits2And3Skin()
-    )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_2_AND_3_DERMIS = (
-        InterdigitalRegionBetweenForelimbDigits2And3Dermis()
-    )
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_2_AND_3_SKIN = InterdigitalRegionBetweenForelimbDigits2And3Skin()
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_2_AND_3_DERMIS = InterdigitalRegionBetweenForelimbDigits2And3Dermis()
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_2_AND_3_EPIDERMIS = (
         InterdigitalRegionBetweenForelimbDigits2And3Epidermis()
     )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_3_AND_4_SKIN = (
-        InterdigitalRegionBetweenForelimbDigits3And4Skin()
-    )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_3_AND_4_DERMIS = (
-        InterdigitalRegionBetweenForelimbDigits3And4Dermis()
-    )
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_3_AND_4_SKIN = InterdigitalRegionBetweenForelimbDigits3And4Skin()
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_3_AND_4_DERMIS = InterdigitalRegionBetweenForelimbDigits3And4Dermis()
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_3_AND_4_EPIDERMIS = (
         InterdigitalRegionBetweenForelimbDigits3And4Epidermis()
     )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_4_AND_5_SKIN = (
-        InterdigitalRegionBetweenForelimbDigits4And5Skin()
-    )
-    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_4_AND_5_DERMIS = (
-        InterdigitalRegionBetweenForelimbDigits4And5Dermis()
-    )
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_4_AND_5_SKIN = InterdigitalRegionBetweenForelimbDigits4And5Skin()
+    INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_4_AND_5_DERMIS = InterdigitalRegionBetweenForelimbDigits4And5Dermis()
     INTERDIGITAL_REGION_BETWEEN_FORELIMB_DIGITS_4_AND_5_EPIDERMIS = (
         InterdigitalRegionBetweenForelimbDigits4And5Epidermis()
     )
@@ -61733,84 +58723,48 @@ class _MouseAnatomyType:
     HAND_REST_OF_SKIN = HandRestOfSkin()
     HAND_REST_OF_SKIN_DERMIS = HandRestOfSkinDermis()
     HAND_REST_OF_SKIN_EPIDERMIS = HandRestOfSkinEpidermis()
-    HINDLIMB_DIGIT_1_METATARSUS_CARTILAGE_CONDENSATION = (
-        HindlimbDigit1MetatarsusCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_1_PHALANX_CARTILAGE_CONDENSATION = (
-        HindlimbDigit1PhalanxCartilageCondensation()
-    )
+    HINDLIMB_DIGIT_1_METATARSUS_CARTILAGE_CONDENSATION = HindlimbDigit1MetatarsusCartilageCondensation()
+    HINDLIMB_DIGIT_1_PHALANX_CARTILAGE_CONDENSATION = HindlimbDigit1PhalanxCartilageCondensation()
     HINDLIMB_DIGIT_1_SKIN = HindlimbDigit1Skin()
     HINDLIMB_DIGIT_1_DERMIS = HindlimbDigit1Dermis()
     HINDLIMB_DIGIT_1_EPIDERMIS = HindlimbDigit1Epidermis()
-    HINDLIMB_DIGIT_2_METATARSUS_CARTILAGE_CONDENSATION = (
-        HindlimbDigit2MetatarsusCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_2_PHALANX_CARTILAGE_CONDENSATION = (
-        HindlimbDigit2PhalanxCartilageCondensation()
-    )
+    HINDLIMB_DIGIT_2_METATARSUS_CARTILAGE_CONDENSATION = HindlimbDigit2MetatarsusCartilageCondensation()
+    HINDLIMB_DIGIT_2_PHALANX_CARTILAGE_CONDENSATION = HindlimbDigit2PhalanxCartilageCondensation()
     HINDLIMB_DIGIT_2_SKIN = HindlimbDigit2Skin()
     HINDLIMB_DIGIT_2_DERMIS = HindlimbDigit2Dermis()
     HINDLIMB_DIGIT_2_EPIDERMIS = HindlimbDigit2Epidermis()
-    HINDLIMB_DIGIT_3_METATARSUS_CARTILAGE_CONDENSATION = (
-        HindlimbDigit3MetatarsusCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_3_PHALANX_CARTILAGE_CONDENSATION = (
-        HindlimbDigit3PhalanxCartilageCondensation()
-    )
+    HINDLIMB_DIGIT_3_METATARSUS_CARTILAGE_CONDENSATION = HindlimbDigit3MetatarsusCartilageCondensation()
+    HINDLIMB_DIGIT_3_PHALANX_CARTILAGE_CONDENSATION = HindlimbDigit3PhalanxCartilageCondensation()
     HINDLIMB_DIGIT_3_SKIN = HindlimbDigit3Skin()
     HINDLIMB_DIGIT_3_DERMIS = HindlimbDigit3Dermis()
     HINDLIMB_DIGIT_3_EPIDERMIS = HindlimbDigit3Epidermis()
-    HINDLIMB_DIGIT_4_METATARSUS_CARTILAGE_CONDENSATION = (
-        HindlimbDigit4MetatarsusCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_4_PHALANX_CARTILAGE_CONDENSATION = (
-        HindlimbDigit4PhalanxCartilageCondensation()
-    )
+    HINDLIMB_DIGIT_4_METATARSUS_CARTILAGE_CONDENSATION = HindlimbDigit4MetatarsusCartilageCondensation()
+    HINDLIMB_DIGIT_4_PHALANX_CARTILAGE_CONDENSATION = HindlimbDigit4PhalanxCartilageCondensation()
     HINDLIMB_DIGIT_4_SKIN = HindlimbDigit4Skin()
     HINDLIMB_DIGIT_4_DERMIS = HindlimbDigit4Dermis()
     HINDLIMB_DIGIT_4_EPIDERMIS = HindlimbDigit4Epidermis()
-    HINDLIMB_DIGIT_5_METATARSUS_CARTILAGE_CONDENSATION = (
-        HindlimbDigit5MetatarsusCartilageCondensation()
-    )
-    HINDLIMB_DIGIT_5_PHALANX_CARTILAGE_CONDENSATION = (
-        HindlimbDigit5PhalanxCartilageCondensation()
-    )
+    HINDLIMB_DIGIT_5_METATARSUS_CARTILAGE_CONDENSATION = HindlimbDigit5MetatarsusCartilageCondensation()
+    HINDLIMB_DIGIT_5_PHALANX_CARTILAGE_CONDENSATION = HindlimbDigit5PhalanxCartilageCondensation()
     HINDLIMB_DIGIT_5_SKIN = HindlimbDigit5Skin()
     HINDLIMB_DIGIT_5_DERMIS = HindlimbDigit5Dermis()
     HINDLIMB_DIGIT_5_EPIDERMIS = HindlimbDigit5Epidermis()
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_1_AND_2_SKIN = (
-        InterdigitalRegionBetweenHindlimbDigits1And2Skin()
-    )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_1_AND_2_DERMIS = (
-        InterdigitalRegionBetweenHindlimbDigits1And2Dermis()
-    )
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_1_AND_2_SKIN = InterdigitalRegionBetweenHindlimbDigits1And2Skin()
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_1_AND_2_DERMIS = InterdigitalRegionBetweenHindlimbDigits1And2Dermis()
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_1_AND_2_EPIDERMIS = (
         InterdigitalRegionBetweenHindlimbDigits1And2Epidermis()
     )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_2_AND_3_SKIN = (
-        InterdigitalRegionBetweenHindlimbDigits2And3Skin()
-    )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_2_AND_3_DERMIS = (
-        InterdigitalRegionBetweenHindlimbDigits2And3Dermis()
-    )
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_2_AND_3_SKIN = InterdigitalRegionBetweenHindlimbDigits2And3Skin()
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_2_AND_3_DERMIS = InterdigitalRegionBetweenHindlimbDigits2And3Dermis()
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_2_AND_3_EPIDERMIS = (
         InterdigitalRegionBetweenHindlimbDigits2And3Epidermis()
     )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_3_AND_4_SKIN = (
-        InterdigitalRegionBetweenHindlimbDigits3And4Skin()
-    )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_3_AND_4_DERMIS = (
-        InterdigitalRegionBetweenHindlimbDigits3And4Dermis()
-    )
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_3_AND_4_SKIN = InterdigitalRegionBetweenHindlimbDigits3And4Skin()
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_3_AND_4_DERMIS = InterdigitalRegionBetweenHindlimbDigits3And4Dermis()
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_3_AND_4_EPIDERMIS = (
         InterdigitalRegionBetweenHindlimbDigits3And4Epidermis()
     )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_4_AND_5_SKIN = (
-        InterdigitalRegionBetweenHindlimbDigits4And5Skin()
-    )
-    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_4_AND_5_DERMIS = (
-        InterdigitalRegionBetweenHindlimbDigits4And5Dermis()
-    )
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_4_AND_5_SKIN = InterdigitalRegionBetweenHindlimbDigits4And5Skin()
+    INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_4_AND_5_DERMIS = InterdigitalRegionBetweenHindlimbDigits4And5Dermis()
     INTERDIGITAL_REGION_BETWEEN_HINDLIMB_DIGITS_4_AND_5_EPIDERMIS = (
         InterdigitalRegionBetweenHindlimbDigits4And5Epidermis()
     )
@@ -61921,9 +58875,7 @@ class _MouseAnatomyType:
     GASTRO_ESOPHAGEAL_JUNCTION = GastroEsophagealJunction()
     GASTRO_ESOPHAGEAL_JUNCTION_MESENCHYME = GastroEsophagealJunctionMesenchyme()
     GASTRO_ESOPHAGEAL_JUNCTION_EPITHELIUM = GastroEsophagealJunctionEpithelium()
-    GASTRO_ESOPHAGEAL_JUNCTION_VASCULAR_ELEMENT = (
-        GastroEsophagealJunctionVascularElement()
-    )
+    GASTRO_ESOPHAGEAL_JUNCTION_VASCULAR_ELEMENT = GastroEsophagealJunctionVascularElement()
     CIRCUMVALLATE_PAPILLAE = CircumvallatePapillae()
     FUNGIFORM_PAPILLAE = FungiformPapillae()
     INTERMOLAR_EMINENCE = IntermolarEminence()
@@ -61934,12 +58886,8 @@ class _MouseAnatomyType:
     PALATOGLOSSUS = Palatoglossus()
     STYLOGLOSSUS = Styloglossus()
     TONGUE_INTRINSIC_MUSCLE = TongueIntrinsicMuscle()
-    TONGUE_INTRINSIC_MUSCLE_TRANSVERSE_COMPONENT = (
-        TongueIntrinsicMuscleTransverseComponent()
-    )
-    TONGUE_INTRINSIC_MUSCLE_VERTICAL_COMPONENT = (
-        TongueIntrinsicMuscleVerticalComponent()
-    )
+    TONGUE_INTRINSIC_MUSCLE_TRANSVERSE_COMPONENT = TongueIntrinsicMuscleTransverseComponent()
+    TONGUE_INTRINSIC_MUSCLE_VERTICAL_COMPONENT = TongueIntrinsicMuscleVerticalComponent()
     STOMACH_FUNDUS_GLANDULAR_MUCOUS_MEMBRANE = StomachFundusGlandularMucousMembrane()
     GASTRO_SPLENIC_LIGAMENT = GastroSplenicLigament()
     LIENO_RENAL_LIGAMENT = LienoRenalLigament()
@@ -62043,12 +58991,8 @@ class _MouseAnatomyType:
     ANAL_CANAL_ROSTRAL_PART_LUMEN = AnalCanalRostralPartLumen()
     STOMACH_LUMEN = StomachLumen()
     HINDGUT_LUMEN = HindgutLumen()
-    HINDGUT_DIVERTICULUM_POSTANAL_COMPONENT_LUMEN = (
-        HindgutDiverticulumPostanalComponentLumen()
-    )
-    HINDGUT_DIVERTICULUM_PREANAL_COMPONENT_LUMEN = (
-        HindgutDiverticulumPreanalComponentLumen()
-    )
+    HINDGUT_DIVERTICULUM_POSTANAL_COMPONENT_LUMEN = HindgutDiverticulumPostanalComponentLumen()
+    HINDGUT_DIVERTICULUM_PREANAL_COMPONENT_LUMEN = HindgutDiverticulumPreanalComponentLumen()
     ORAL_REGION_CAVITY = OralRegionCavity()
     FOREGUT_LUMEN = ForegutLumen()
     ESOPHAGEAL_REGION_LUMEN = EsophagealRegionLumen()
@@ -62131,29 +59075,17 @@ class _MouseAnatomyType:
     FALX_CEREBRI = FalxCerebri()
     MEDULLARY_RAPHE = MedullaryRaphe()
     CEREBELLUM_INTRAVENTRICULAR_PORTION = CerebellumIntraventricularPortion()
-    CEREBELLUM_INTRAVENTRICULAR_PORTION_MANTLE_LAYER = (
-        CerebellumIntraventricularPortionMantleLayer()
-    )
-    CEREBELLUM_INTRAVENTRICULAR_PORTION_MARGINAL_LAYER = (
-        CerebellumIntraventricularPortionMarginalLayer()
-    )
-    CEREBELLUM_INTRAVENTRICULAR_PORTION_VENTRICULAR_LAYER = (
-        CerebellumIntraventricularPortionVentricularLayer()
-    )
+    CEREBELLUM_INTRAVENTRICULAR_PORTION_MANTLE_LAYER = CerebellumIntraventricularPortionMantleLayer()
+    CEREBELLUM_INTRAVENTRICULAR_PORTION_MARGINAL_LAYER = CerebellumIntraventricularPortionMarginalLayer()
+    CEREBELLUM_INTRAVENTRICULAR_PORTION_VENTRICULAR_LAYER = CerebellumIntraventricularPortionVentricularLayer()
     REST_OF_CEREBELLUM = RestOfCerebellum()
     REST_OF_CEREBELLUM_MANTLE_LAYER = RestOfCerebellumMantleLayer()
     REST_OF_CEREBELLUM_MARGINAL_LAYER = RestOfCerebellumMarginalLayer()
     REST_OF_CEREBELLUM_VENTRICULAR_LAYER = RestOfCerebellumVentricularLayer()
     METENCEPHALON_REST_OF_ALAR_PLATE = MetencephalonRestOfAlarPlate()
-    METENCEPHALON_REST_OF_ALAR_PLATE_MANTLE_LAYER = (
-        MetencephalonRestOfAlarPlateMantleLayer()
-    )
-    METENCEPHALON_REST_OF_ALAR_PLATE_MARGINAL_LAYER = (
-        MetencephalonRestOfAlarPlateMarginalLayer()
-    )
-    METENCEPHALON_REST_OF_ALAR_PLATE_VENTRICULAR_LAYER = (
-        MetencephalonRestOfAlarPlateVentricularLayer()
-    )
+    METENCEPHALON_REST_OF_ALAR_PLATE_MANTLE_LAYER = MetencephalonRestOfAlarPlateMantleLayer()
+    METENCEPHALON_REST_OF_ALAR_PLATE_MARGINAL_LAYER = MetencephalonRestOfAlarPlateMarginalLayer()
+    METENCEPHALON_REST_OF_ALAR_PLATE_VENTRICULAR_LAYER = MetencephalonRestOfAlarPlateVentricularLayer()
     DORSAL_GREY_HORN = DorsalGreyHorn()
     VENTRAL_GREY_HORN = VentralGreyHorn()
     INTERMEDIATE_GREY_HORN = IntermediateGreyHorn()
@@ -62306,30 +59238,16 @@ class _MouseAnatomyType:
     HAIR_FOLLICLE = HairFollicle()
     HAIR_ROOT_SHEATH = HairRootSheath()
     PINEAL_GLAND = PinealGland()
-    ANTERIOR_HORN_OF_LATERAL_VENTRICLE_CHOROID_PLEXUS = (
-        AnteriorHornOfLateralVentricleChoroidPlexus()
-    )
-    LATERAL_VENTRICLE_INFERIOR_HORN_CHOROID_PLEXUS = (
-        LateralVentricleInferiorHornChoroidPlexus()
-    )
-    POSTERIOR_HORN_OF_LATERAL_VENTRICLE_CHOROID_PLEXUS = (
-        PosteriorHornOfLateralVentricleChoroidPlexus()
-    )
-    SUPERIOR_HORN_OF_LATERAL_VENTRICLE_CHOROID_PLEXUS = (
-        SuperiorHornOfLateralVentricleChoroidPlexus()
-    )
+    ANTERIOR_HORN_OF_LATERAL_VENTRICLE_CHOROID_PLEXUS = AnteriorHornOfLateralVentricleChoroidPlexus()
+    LATERAL_VENTRICLE_INFERIOR_HORN_CHOROID_PLEXUS = LateralVentricleInferiorHornChoroidPlexus()
+    POSTERIOR_HORN_OF_LATERAL_VENTRICLE_CHOROID_PLEXUS = PosteriorHornOfLateralVentricleChoroidPlexus()
+    SUPERIOR_HORN_OF_LATERAL_VENTRICLE_CHOROID_PLEXUS = SuperiorHornOfLateralVentricleChoroidPlexus()
     HEAD_OF_LATERAL_VENTRICLE_CHOROID_PLEXUS = HeadOfLateralVentricleChoroidPlexus()
     TAIL_OF_LATERAL_VENTRICLE_CHOROID_PLEXUS = TailOfLateralVentricleChoroidPlexus()
     MEDULLA_OBLONGATA_REST_OF_BASAL_PLATE = MedullaOblongataRestOfBasalPlate()
-    MEDULLA_OBLONGATA_REST_OF_BASAL_PLATE_MANTLE_LAYER = (
-        MedullaOblongataRestOfBasalPlateMantleLayer()
-    )
-    MEDULLA_OBLONGATA_REST_OF_BASAL_PLATE_MARGINAL_LAYER = (
-        MedullaOblongataRestOfBasalPlateMarginalLayer()
-    )
-    MEDULLA_OBLONGATA_REST_OF_BASAL_PLATE_VENTRICULAR_LAYER = (
-        MedullaOblongataRestOfBasalPlateVentricularLayer()
-    )
+    MEDULLA_OBLONGATA_REST_OF_BASAL_PLATE_MANTLE_LAYER = MedullaOblongataRestOfBasalPlateMantleLayer()
+    MEDULLA_OBLONGATA_REST_OF_BASAL_PLATE_MARGINAL_LAYER = MedullaOblongataRestOfBasalPlateMarginalLayer()
+    MEDULLA_OBLONGATA_REST_OF_BASAL_PLATE_VENTRICULAR_LAYER = MedullaOblongataRestOfBasalPlateVentricularLayer()
     MEDULLARY_RAPHE_MANTLE_LAYER = MedullaryRapheMantleLayer()
     MEDULLARY_RAPHE_MARGINAL_LAYER = MedullaryRapheMarginalLayer()
     MEDULLARY_RAPHE_VENTRICULAR_LAYER = MedullaryRapheVentricularLayer()
@@ -62448,9 +59366,7 @@ class _MouseAnatomyType:
     TYMPANIC_MEMBRANE_ENDOTHELIUM = TympanicMembraneEndothelium()
     TYMPANIC_MEMBRANE_EPITHELIUM = TympanicMembraneEpithelium()
     CILIARY_BODY = CiliaryBody()
-    MEDULLA_OBLONGATA_PART_OF_4TH_VENTRICLE_CHOROID_PLEXUS = (
-        MedullaOblongataPartOf4thVentricleChoroidPlexus()
-    )
+    MEDULLA_OBLONGATA_PART_OF_4TH_VENTRICLE_CHOROID_PLEXUS = MedullaOblongataPartOf4thVentricleChoroidPlexus()
     OPTIC_CHOROID = OpticChoroid()
     DUODENUM_EPITHELIUM = DuodenumEpithelium()
     DUODENUM_LUMEN = DuodenumLumen()
@@ -62608,29 +59524,17 @@ class _MouseAnatomyType:
     MIDGUT_DERIVED_LARGE_INTESTINE = MidgutDerivedLargeIntestine()
     HINDGUT_DERIVED_LARGE_INTESTINE = HindgutDerivedLargeIntestine()
     MIDGUT_DERIVED_LARGE_INTESTINE_MESENCHYME = MidgutDerivedLargeIntestineMesenchyme()
-    HINDGUT_DERIVED_LARGE_INTESTINE_MESENCHYME = (
-        HindgutDerivedLargeIntestineMesenchyme()
-    )
+    HINDGUT_DERIVED_LARGE_INTESTINE_MESENCHYME = HindgutDerivedLargeIntestineMesenchyme()
     MIDGUT_DERIVED_LARGE_INTESTINE_EPITHELIUM = MidgutDerivedLargeIntestineEpithelium()
     MIDGUT_DERIVED_LARGE_INTESTINE_LUMEN = MidgutDerivedLargeIntestineLumen()
     MIDGUT_DERIVED_LARGE_INTESTINE_MESENTERY = MidgutDerivedLargeIntestineMesentery()
-    MIDGUT_DERIVED_LARGE_INTESTINE_DORSAL_MESENTERY = (
-        MidgutDerivedLargeIntestineDorsalMesentery()
-    )
-    MIDGUT_DERIVED_LARGE_INTESTINE_VASCULAR_ELEMENT = (
-        MidgutDerivedLargeIntestineVascularElement()
-    )
-    HINDGUT_DERIVED_LARGE_INTESTINE_EPITHELIUM = (
-        HindgutDerivedLargeIntestineEpithelium()
-    )
+    MIDGUT_DERIVED_LARGE_INTESTINE_DORSAL_MESENTERY = MidgutDerivedLargeIntestineDorsalMesentery()
+    MIDGUT_DERIVED_LARGE_INTESTINE_VASCULAR_ELEMENT = MidgutDerivedLargeIntestineVascularElement()
+    HINDGUT_DERIVED_LARGE_INTESTINE_EPITHELIUM = HindgutDerivedLargeIntestineEpithelium()
     HINDGUT_DERIVED_LARGE_INTESTINE_LUMEN = HindgutDerivedLargeIntestineLumen()
     HINDGUT_DERIVED_LARGE_INTESTINE_MESENTERY = HindgutDerivedLargeIntestineMesentery()
-    HINDGUT_DERIVED_LARGE_INTESTINE_DORSAL_MESENTERY = (
-        HindgutDerivedLargeIntestineDorsalMesentery()
-    )
-    HINDGUT_DERIVED_LARGE_INTESTINE_VASCULAR_ELEMENT = (
-        HindgutDerivedLargeIntestineVascularElement()
-    )
+    HINDGUT_DERIVED_LARGE_INTESTINE_DORSAL_MESENTERY = HindgutDerivedLargeIntestineDorsalMesentery()
+    HINDGUT_DERIVED_LARGE_INTESTINE_VASCULAR_ELEMENT = HindgutDerivedLargeIntestineVascularElement()
     TRANSVERSUS_THORACIS = TransversusThoracis()
     INFRAHYOID_MUSCLE = InfrahyoidMuscle()
     CRICOTHYROID = Cricothyroid()
@@ -62660,12 +59564,8 @@ class _MouseAnatomyType:
     SPLEEN_MEDULLARY_REGION = SpleenMedullaryRegion()
     THYMUS_MEDULLARY_CORE = ThymusMedullaryCore()
     THYMUS_THIN_FIBROUS_CAPSULE = ThymusThinFibrousCapsule()
-    THYROID_GLAND_LEFT_LOBE_COLLOID_FILLED_FOLLICLES = (
-        ThyroidGlandLeftLobeColloidFilledFollicles()
-    )
-    THYROID_GLAND_RIGHT_LOBE_COLLOID_FILLED_FOLLICLES = (
-        ThyroidGlandRightLobeColloidFilledFollicles()
-    )
+    THYROID_GLAND_LEFT_LOBE_COLLOID_FILLED_FOLLICLES = ThyroidGlandLeftLobeColloidFilledFollicles()
+    THYROID_GLAND_RIGHT_LOBE_COLLOID_FILLED_FOLLICLES = ThyroidGlandRightLobeColloidFilledFollicles()
     SUPERIOR_CEREBELLAR_ARTERY = SuperiorCerebellarArtery()
     THORACIC_DUCT = ThoracicDuct()
     GREAT_CEREBRAL_VEIN_OF_GALEN = GreatCerebralVeinOfGalen()
@@ -63039,9 +59939,7 @@ class _MouseAnatomyType:
     TL18_VERTEBRA = Tl18Vertebra()
     TL19_VERTEBRA = Tl19Vertebra()
     PLEURO_PERITONEAL_CANAL_MESOTHELIUM = PleuroPeritonealCanalMesothelium()
-    PLEURO_PERITONEAL_CANAL_PARIETAL_MESOTHELIUM = (
-        PleuroPeritonealCanalParietalMesothelium()
-    )
+    PLEURO_PERITONEAL_CANAL_PARIETAL_MESOTHELIUM = PleuroPeritonealCanalParietalMesothelium()
     PLEURO_PERITONEAL_CANAL_CAVITY = PleuroPeritonealCanalCavity()
     FUTURE_CENTRAL_TENDON = FutureCentralTendon()
     RATHKES_POUCH_WALL = RathkesPouchWall()
@@ -63061,29 +59959,19 @@ class _MouseAnatomyType:
     LONG_HEAD_OF_BICEPS_BRACHII = LongHeadOfBicepsBrachii()
     SHORT_HEAD_OF_BICEPS_BRACHII = ShortHeadOfBicepsBrachii()
     CARPAL_BONE = CarpalBone()
-    FORELIMB_DIGIT_1_METACARPAL_PHALANGEAL_JOINT = (
-        ForelimbDigit1MetacarpalPhalangealJoint()
-    )
+    FORELIMB_DIGIT_1_METACARPAL_PHALANGEAL_JOINT = ForelimbDigit1MetacarpalPhalangealJoint()
     FORELIMB_DIGIT_1_INTERPHALANGEAL_JOINT = ForelimbDigit1InterphalangealJoint()
     FORELIMB_DIGIT_1_EPIPHYSEAL_PLATE = ForelimbDigit1EpiphysealPlate()
-    FORELIMB_DIGIT_2_METACARPAL_PHALANGEAL_JOINT = (
-        ForelimbDigit2MetacarpalPhalangealJoint()
-    )
+    FORELIMB_DIGIT_2_METACARPAL_PHALANGEAL_JOINT = ForelimbDigit2MetacarpalPhalangealJoint()
     FORELIMB_DIGIT_2_INTERPHALANGEAL_JOINT = ForelimbDigit2InterphalangealJoint()
     FORELIMB_DIGIT_2_EPIPHYSEAL_PLATE = ForelimbDigit2EpiphysealPlate()
-    FORELIMB_DIGIT_3_METACARPAL_PHALANGEAL_JOINT = (
-        ForelimbDigit3MetacarpalPhalangealJoint()
-    )
+    FORELIMB_DIGIT_3_METACARPAL_PHALANGEAL_JOINT = ForelimbDigit3MetacarpalPhalangealJoint()
     FORELIMB_DIGIT_3_INTERPHALANGEAL_JOINT = ForelimbDigit3InterphalangealJoint()
     FORELIMB_DIGIT_3_EPIPHYSEAL_PLATE = ForelimbDigit3EpiphysealPlate()
-    FORELIMB_DIGIT_4_METACARPAL_PHALANGEAL_JOINT = (
-        ForelimbDigit4MetacarpalPhalangealJoint()
-    )
+    FORELIMB_DIGIT_4_METACARPAL_PHALANGEAL_JOINT = ForelimbDigit4MetacarpalPhalangealJoint()
     FORELIMB_DIGIT_4_INTERPHALANGEAL_JOINT = ForelimbDigit4InterphalangealJoint()
     FORELIMB_DIGIT_4_EPIPHYSEAL_PLATE = ForelimbDigit4EpiphysealPlate()
-    FORELIMB_DIGIT_5_METACARPAL_PHALANGEAL_JOINT = (
-        ForelimbDigit5MetacarpalPhalangealJoint()
-    )
+    FORELIMB_DIGIT_5_METACARPAL_PHALANGEAL_JOINT = ForelimbDigit5MetacarpalPhalangealJoint()
     FORELIMB_DIGIT_5_INTERPHALANGEAL_JOINT = ForelimbDigit5InterphalangealJoint()
     FORELIMB_DIGIT_5_EPIPHYSEAL_PLATE = ForelimbDigit5EpiphysealPlate()
     TARSAL_BONE = TarsalBone()
@@ -63109,9 +59997,7 @@ class _MouseAnatomyType:
     L1_NEURAL_ARCH_LAMINA = L1NeuralArchLamina()
     L1_NEURAL_ARCH_PEDICLE = L1NeuralArchPedicle()
     L1_NEURAL_ARCH_TRANSVERSE_PROCESS = L1NeuralArchTransverseProcess()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_L1_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureL1SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_L1_SPINOUS_PROCESS = CartilagePrimordiumOfFutureL1SpinousProcess()
     ZYGOMATIC_BONE = ZygomaticBone()
     OCCIPITAL_BONE = OccipitalBone()
     OCCIPITAL_BONE_SQUAMOUS_PART = OccipitalBoneSquamousPart()
@@ -63340,9 +60226,7 @@ class _MouseAnatomyType:
     TL8_VENTRAL_ROOT = Tl8VentralRoot()
     TL9_DORSAL_ROOT = Tl9DorsalRoot()
     TL9_VENTRAL_ROOT = Tl9VentralRoot()
-    VAGUS_NERVE_LEFT_RECURRENT_LARYNGEAL_BRANCH = (
-        VagusNerveLeftRecurrentLaryngealBranch()
-    )
+    VAGUS_NERVE_LEFT_RECURRENT_LARYNGEAL_BRANCH = VagusNerveLeftRecurrentLaryngealBranch()
     PINNA_MESENCHYME_CONDENSATION = PinnaMesenchymeCondensation()
     PINNA_REST_OF_MESENCHYME = PinnaRestOfMesenchyme()
     PINNA_CARTILAGE_CONDENSATION = PinnaCartilageCondensation()
@@ -63363,369 +60247,287 @@ class _MouseAnatomyType:
     L2_VERTEBRA_NEURAL_ARCH = L2VertebraNeuralArch()
     L2_NEURAL_ARCH_LAMINA = L2NeuralArchLamina()
     L2_NEURAL_ARCH_PEDICLE = L2NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_L2_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureL2SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_L2_SPINOUS_PROCESS = CartilagePrimordiumOfFutureL2SpinousProcess()
     L2_NEURAL_ARCH_TRANSVERSE_PROCESS = L2NeuralArchTransverseProcess()
     L3_VERTEBRA_CENTRUM = L3VertebraCentrum()
     L3_FUTURE_VERTEBRAL_CANAL = L3FutureVertebralCanal()
     L3_VERTEBRA_NEURAL_ARCH = L3VertebraNeuralArch()
     L3_NEURAL_ARCH_LAMINA = L3NeuralArchLamina()
     L3_NEURAL_ARCH_PEDICLE = L3NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_L3_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureL3SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_L3_SPINOUS_PROCESS = CartilagePrimordiumOfFutureL3SpinousProcess()
     L3_NEURAL_ARCH_TRANSVERSE_PROCESS = L3NeuralArchTransverseProcess()
     L4_VERTEBRA_CENTRUM = L4VertebraCentrum()
     L4_FUTURE_VERTEBRAL_CANAL = L4FutureVertebralCanal()
     L4_VERTEBRA_NEURAL_ARCH = L4VertebraNeuralArch()
     L4_NEURAL_ARCH_LAMINA = L4NeuralArchLamina()
     L4_NEURAL_ARCH_PEDICLE = L4NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_L4_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureL4SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_L4_SPINOUS_PROCESS = CartilagePrimordiumOfFutureL4SpinousProcess()
     L4_NEURAL_ARCH_TRANSVERSE_PROCESS = L4NeuralArchTransverseProcess()
     L5_VERTEBRA_CENTRUM = L5VertebraCentrum()
     L5_FUTURE_VERTEBRAL_CANAL = L5FutureVertebralCanal()
     L5_VERTEBRA_NEURAL_ARCH = L5VertebraNeuralArch()
     L5_NEURAL_ARCH_LAMINA = L5NeuralArchLamina()
     L5_NEURAL_ARCH_PEDICLE = L5NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_L5_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureL5SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_L5_SPINOUS_PROCESS = CartilagePrimordiumOfFutureL5SpinousProcess()
     L5_NEURAL_ARCH_TRANSVERSE_PROCESS = L5NeuralArchTransverseProcess()
     L6_VERTEBRA_CENTRUM = L6VertebraCentrum()
     L6_FUTURE_VERTEBRAL_CANAL = L6FutureVertebralCanal()
     L6_VERTEBRA_NEURAL_ARCH = L6VertebraNeuralArch()
     L6_NEURAL_ARCH_LAMINA = L6NeuralArchLamina()
     L6_NEURAL_ARCH_PEDICLE = L6NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_L6_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureL6SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_L6_SPINOUS_PROCESS = CartilagePrimordiumOfFutureL6SpinousProcess()
     L6_NEURAL_ARCH_TRANSVERSE_PROCESS = L6NeuralArchTransverseProcess()
     S1_VERTEBRA_CENTRUM = S1VertebraCentrum()
     S1_FUTURE_VERTEBRAL_CANAL = S1FutureVertebralCanal()
     S1_VERTEBRA_NEURAL_ARCH = S1VertebraNeuralArch()
     S1_NEURAL_ARCH_LAMINA = S1NeuralArchLamina()
     S1_NEURAL_ARCH_PEDICLE = S1NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_S1_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureS1SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_S1_SPINOUS_PROCESS = CartilagePrimordiumOfFutureS1SpinousProcess()
     S1_NEURAL_ARCH_TRANSVERSE_PROCESS = S1NeuralArchTransverseProcess()
     S2_VERTEBRA_CENTRUM = S2VertebraCentrum()
     S2_FUTURE_VERTEBRAL_CANAL = S2FutureVertebralCanal()
     S2_VERTEBRA_NEURAL_ARCH = S2VertebraNeuralArch()
     S2_NEURAL_ARCH_LAMINA = S2NeuralArchLamina()
     S2_NEURAL_ARCH_PEDICLE = S2NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_S2_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureS2SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_S2_SPINOUS_PROCESS = CartilagePrimordiumOfFutureS2SpinousProcess()
     S2_NEURAL_ARCH_TRANSVERSE_PROCESS = S2NeuralArchTransverseProcess()
     S3_VERTEBRA_CENTRUM = S3VertebraCentrum()
     S3_FUTURE_VERTEBRAL_CANAL = S3FutureVertebralCanal()
     S3_VERTEBRA_NEURAL_ARCH = S3VertebraNeuralArch()
     S3_NEURAL_ARCH_LAMINA = S3NeuralArchLamina()
     S3_NEURAL_ARCH_PEDICLE = S3NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_S3_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureS3SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_S3_SPINOUS_PROCESS = CartilagePrimordiumOfFutureS3SpinousProcess()
     S3_NEURAL_ARCH_TRANSVERSE_PROCESS = S3NeuralArchTransverseProcess()
     S4_VERTEBRA_CENTRUM = S4VertebraCentrum()
     S4_FUTURE_VERTEBRAL_CANAL = S4FutureVertebralCanal()
     S4_VERTEBRA_NEURAL_ARCH = S4VertebraNeuralArch()
     S4_NEURAL_ARCH_LAMINA = S4NeuralArchLamina()
     S4_NEURAL_ARCH_PEDICLE = S4NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_S4_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureS4SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_S4_SPINOUS_PROCESS = CartilagePrimordiumOfFutureS4SpinousProcess()
     S4_NEURAL_ARCH_TRANSVERSE_PROCESS = S4NeuralArchTransverseProcess()
     T1_VERTEBRA_CENTRUM = T1VertebraCentrum()
     T1_VERTEBRAL_CANAL = T1VertebralCanal()
     T1_VERTEBRA_NEURAL_ARCH = T1VertebraNeuralArch()
     T1_NEURAL_ARCH_LAMINA = T1NeuralArchLamina()
     T1_NEURAL_ARCH_PEDICLE = T1NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T1_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT1SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T1_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT1SpinousProcess()
     T1_NEURAL_ARCH_TRANSVERSE_PROCESS = T1NeuralArchTransverseProcess()
     T10_VERTEBRA_CENTRUM = T10VertebraCentrum()
     T10_VERTEBRAL_CANAL = T10VertebralCanal()
     T10_VERTEBRA_NEURAL_ARCH = T10VertebraNeuralArch()
     T10_NEURAL_ARCH_LAMINA = T10NeuralArchLamina()
     T10_NEURAL_ARCH_PEDICLE = T10NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T10_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT10SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T10_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT10SpinousProcess()
     T10_NEURAL_ARCH_TRANSVERSE_PROCESS = T10NeuralArchTransverseProcess()
     T11_VERTEBRA_CENTRUM = T11VertebraCentrum()
     T11_VERTEBRAL_CANAL = T11VertebralCanal()
     T11_VERTEBRA_NEURAL_ARCH = T11VertebraNeuralArch()
     T11_NEURAL_ARCH_LAMINA = T11NeuralArchLamina()
     T11_NEURAL_ARCH_PEDICLE = T11NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T11_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT11SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T11_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT11SpinousProcess()
     T11_NEURAL_ARCH_TRANSVERSE_PROCESS = T11NeuralArchTransverseProcess()
     T12_VERTEBRA_CENTRUM = T12VertebraCentrum()
     T12_VERTEBRAL_CANAL = T12VertebralCanal()
     T12_VERTEBRA_NEURAL_ARCH = T12VertebraNeuralArch()
     T12_NEURAL_ARCH_LAMINA = T12NeuralArchLamina()
     T12_NEURAL_ARCH_PEDICLE = T12NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T12_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT12SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T12_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT12SpinousProcess()
     T12_NEURAL_ARCH_TRANSVERSE_PROCESS = T12NeuralArchTransverseProcess()
     T13_VERTEBRA_CENTRUM = T13VertebraCentrum()
     T13_VERTEBRAL_CANAL = T13VertebralCanal()
     T13_VERTEBRA_NEURAL_ARCH = T13VertebraNeuralArch()
     T13_NEURAL_ARCH_LAMINA = T13NeuralArchLamina()
     T13_NEURAL_ARCH_PEDICLE = T13NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T13_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT13SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T13_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT13SpinousProcess()
     T13_NEURAL_ARCH_TRANSVERSE_PROCESS = T13NeuralArchTransverseProcess()
     T2_VERTEBRA_CENTRUM = T2VertebraCentrum()
     T2_VERTEBRAL_CANAL = T2VertebralCanal()
     T2_VERTEBRA_NEURAL_ARCH = T2VertebraNeuralArch()
     T2_NEURAL_ARCH_LAMINA = T2NeuralArchLamina()
     T2_NEURAL_ARCH_PEDICLE = T2NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T2_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT2SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T2_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT2SpinousProcess()
     T2_NEURAL_ARCH_TRANSVERSE_PROCESS = T2NeuralArchTransverseProcess()
     T3_VERTEBRA_CENTRUM = T3VertebraCentrum()
     T3_VERTEBRAL_CANAL = T3VertebralCanal()
     T3_VERTEBRA_NEURAL_ARCH = T3VertebraNeuralArch()
     T3_NEURAL_ARCH_LAMINA = T3NeuralArchLamina()
     T3_NEURAL_ARCH_PEDICLE = T3NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T3_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT3SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T3_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT3SpinousProcess()
     T3_NEURAL_ARCH_TRANSVERSE_PROCESS = T3NeuralArchTransverseProcess()
     T4_VERTEBRA_CENTRUM = T4VertebraCentrum()
     T4_VERTEBRAL_CANAL = T4VertebralCanal()
     T4_VERTEBRA_NEURAL_ARCH = T4VertebraNeuralArch()
     T4_NEURAL_ARCH_LAMINA = T4NeuralArchLamina()
     T4_NEURAL_ARCH_PEDICLE = T4NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T4_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT4SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T4_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT4SpinousProcess()
     T4_NEURAL_ARCH_TRANSVERSE_PROCESS = T4NeuralArchTransverseProcess()
     T5_VERTEBRA_CENTRUM = T5VertebraCentrum()
     T5_VERTEBRAL_CANAL = T5VertebralCanal()
     T5_VERTEBRA_NEURAL_ARCH = T5VertebraNeuralArch()
     T5_NEURAL_ARCH_LAMINA = T5NeuralArchLamina()
     T5_NEURAL_ARCH_PEDICLE = T5NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T5_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT5SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T5_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT5SpinousProcess()
     T5_NEURAL_ARCH_TRANSVERSE_PROCESS = T5NeuralArchTransverseProcess()
     T6_VERTEBRA_CENTRUM = T6VertebraCentrum()
     T6_VERTEBRAL_CANAL = T6VertebralCanal()
     T6_VERTEBRA_NEURAL_ARCH = T6VertebraNeuralArch()
     T6_NEURAL_ARCH_LAMINA = T6NeuralArchLamina()
     T6_NEURAL_ARCH_PEDICLE = T6NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T6_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT6SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T6_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT6SpinousProcess()
     T6_NEURAL_ARCH_TRANSVERSE_PROCESS = T6NeuralArchTransverseProcess()
     T7_VERTEBRA_CENTRUM = T7VertebraCentrum()
     T7_VERTEBRAL_CANAL = T7VertebralCanal()
     T7_VERTEBRA_NEURAL_ARCH = T7VertebraNeuralArch()
     T7_NEURAL_ARCH_LAMINA = T7NeuralArchLamina()
     T7_NEURAL_ARCH_PEDICLE = T7NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T7_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT7SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T7_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT7SpinousProcess()
     T7_NEURAL_ARCH_TRANSVERSE_PROCESS = T7NeuralArchTransverseProcess()
     T8_VERTEBRA_CENTRUM = T8VertebraCentrum()
     T8_VERTEBRAL_CANAL = T8VertebralCanal()
     T8_VERTEBRA_NEURAL_ARCH = T8VertebraNeuralArch()
     T8_NEURAL_ARCH_LAMINA = T8NeuralArchLamina()
     T8_NEURAL_ARCH_PEDICLE = T8NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T8_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT8SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T8_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT8SpinousProcess()
     T8_NEURAL_ARCH_TRANSVERSE_PROCESS = T8NeuralArchTransverseProcess()
     T9_VERTEBRA_CENTRUM = T9VertebraCentrum()
     T9_VERTEBRAL_CANAL = T9VertebralCanal()
     T9_VERTEBRA_NEURAL_ARCH = T9VertebraNeuralArch()
     T9_NEURAL_ARCH_LAMINA = T9NeuralArchLamina()
     T9_NEURAL_ARCH_PEDICLE = T9NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_T9_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureT9SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_T9_SPINOUS_PROCESS = CartilagePrimordiumOfFutureT9SpinousProcess()
     T9_NEURAL_ARCH_TRANSVERSE_PROCESS = T9NeuralArchTransverseProcess()
     TL1_VERTEBRA_CENTRUM = Tl1VertebraCentrum()
     TL1_VERTEBRAL_CANAL = Tl1VertebralCanal()
     TL1_VERTEBRA_NEURAL_ARCH = Tl1VertebraNeuralArch()
     TL1_NEURAL_ARCH_LAMINA = Tl1NeuralArchLamina()
     TL1_NEURAL_ARCH_PEDICLE = Tl1NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL1_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl1SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL1_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl1SpinousProcess()
     TL1_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl1NeuralArchTransverseProcess()
     TL10_VERTEBRA_CENTRUM = Tl10VertebraCentrum()
     TL10_VERTEBRAL_CANAL = Tl10VertebralCanal()
     TL10_VERTEBRA_NEURAL_ARCH = Tl10VertebraNeuralArch()
     TL10_NEURAL_ARCH_LAMINA = Tl10NeuralArchLamina()
     TL10_NEURAL_ARCH_PEDICLE = Tl10NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL10_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl10SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL10_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl10SpinousProcess()
     TL10_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl10NeuralArchTransverseProcess()
     TL11_VERTEBRA_CENTRUM = Tl11VertebraCentrum()
     TL11_VERTEBRAL_CANAL = Tl11VertebralCanal()
     TL11_VERTEBRA_NEURAL_ARCH = Tl11VertebraNeuralArch()
     TL11_NEURAL_ARCH_LAMINA = Tl11NeuralArchLamina()
     TL11_NEURAL_ARCH_PEDICLE = Tl11NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL11_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl11SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL11_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl11SpinousProcess()
     TL11_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl11NeuralArchTransverseProcess()
     TL12_VERTEBRA_CENTRUM = Tl12VertebraCentrum()
     TL12_VERTEBRAL_CANAL = Tl12VertebralCanal()
     TL12_VERTEBRA_NEURAL_ARCH = Tl12VertebraNeuralArch()
     TL12_NEURAL_ARCH_LAMINA = Tl12NeuralArchLamina()
     TL12_NEURAL_ARCH_PEDICLE = Tl12NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL12_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl12SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL12_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl12SpinousProcess()
     TL12_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl12NeuralArchTransverseProcess()
     TL13_VERTEBRA_CENTRUM = Tl13VertebraCentrum()
     TL13_VERTEBRAL_CANAL = Tl13VertebralCanal()
     TL13_VERTEBRA_NEURAL_ARCH = Tl13VertebraNeuralArch()
     TL13_NEURAL_ARCH_LAMINA = Tl13NeuralArchLamina()
     TL13_NEURAL_ARCH_PEDICLE = Tl13NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL13_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl13SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL13_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl13SpinousProcess()
     TL13_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl13NeuralArchTransverseProcess()
     TL14_VERTEBRA_CENTRUM = Tl14VertebraCentrum()
     TL14_VERTEBRAL_CANAL = Tl14VertebralCanal()
     TL14_VERTEBRA_NEURAL_ARCH = Tl14VertebraNeuralArch()
     TL14_NEURAL_ARCH_LAMINA = Tl14NeuralArchLamina()
     TL14_NEURAL_ARCH_PEDICLE = Tl14NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL14_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl14SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL14_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl14SpinousProcess()
     TL14_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl14NeuralArchTransverseProcess()
     TL15_VERTEBRA_CENTRUM = Tl15VertebraCentrum()
     TL15_VERTEBRAL_CANAL = Tl15VertebralCanal()
     TL15_VERTEBRA_NEURAL_ARCH = Tl15VertebraNeuralArch()
     TL15_NEURAL_ARCH_LAMINA = Tl15NeuralArchLamina()
     TL15_NEURAL_ARCH_PEDICLE = Tl15NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL15_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl15SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL15_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl15SpinousProcess()
     TL15_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl15NeuralArchTransverseProcess()
     TL16_VERTEBRA_CENTRUM = Tl16VertebraCentrum()
     TL16_VERTEBRAL_CANAL = Tl16VertebralCanal()
     TL16_VERTEBRA_NEURAL_ARCH = Tl16VertebraNeuralArch()
     TL16_NEURAL_ARCH_LAMINA = Tl16NeuralArchLamina()
     TL16_NEURAL_ARCH_PEDICLE = Tl16NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL16_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl16SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL16_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl16SpinousProcess()
     TL16_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl16NeuralArchTransverseProcess()
     TL17_VERTEBRA_CENTRUM = Tl17VertebraCentrum()
     TL17_VERTEBRAL_CANAL = Tl17VertebralCanal()
     TL17_VERTEBRA_NEURAL_ARCH = Tl17VertebraNeuralArch()
     TL17_NEURAL_ARCH_LAMINA = Tl17NeuralArchLamina()
     TL17_NEURAL_ARCH_PEDICLE = Tl17NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL17_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl17SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL17_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl17SpinousProcess()
     TL17_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl17NeuralArchTransverseProcess()
     TL18_VERTEBRA_CENTRUM = Tl18VertebraCentrum()
     TL18_VERTEBRAL_CANAL = Tl18VertebralCanal()
     TL18_VERTEBRA_NEURAL_ARCH = Tl18VertebraNeuralArch()
     TL18_NEURAL_ARCH_LAMINA = Tl18NeuralArchLamina()
     TL18_NEURAL_ARCH_PEDICLE = Tl18NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL18_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl18SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL18_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl18SpinousProcess()
     TL18_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl18NeuralArchTransverseProcess()
     TL19_VERTEBRA_CENTRUM = Tl19VertebraCentrum()
     TL19_VERTEBRAL_CANAL = Tl19VertebralCanal()
     TL19_VERTEBRA_NEURAL_ARCH = Tl19VertebraNeuralArch()
     TL19_NEURAL_ARCH_LAMINA = Tl19NeuralArchLamina()
     TL19_NEURAL_ARCH_PEDICLE = Tl19NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL19_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl19SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL19_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl19SpinousProcess()
     TL19_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl19NeuralArchTransverseProcess()
     TL2_VERTEBRA_CENTRUM = Tl2VertebraCentrum()
     TL2_VERTEBRAL_CANAL = Tl2VertebralCanal()
     TL2_VERTEBRA_NEURAL_ARCH = Tl2VertebraNeuralArch()
     TL2_NEURAL_ARCH_LAMINA = Tl2NeuralArchLamina()
     TL2_NEURAL_ARCH_PEDICLE = Tl2NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL2_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl2SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL2_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl2SpinousProcess()
     TL2_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl2NeuralArchTransverseProcess()
     TL3_VERTEBRA_CENTRUM = Tl3VertebraCentrum()
     TL3_VERTEBRAL_CANAL = Tl3VertebralCanal()
     TL3_VERTEBRA_NEURAL_ARCH = Tl3VertebraNeuralArch()
     TL3_NEURAL_ARCH_LAMINA = Tl3NeuralArchLamina()
     TL3_NEURAL_ARCH_PEDICLE = Tl3NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL3_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl3SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL3_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl3SpinousProcess()
     TL3_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl3NeuralArchTransverseProcess()
     TL4_VERTEBRA_CENTRUM = Tl4VertebraCentrum()
     TL4_VERTEBRAL_CANAL = Tl4VertebralCanal()
     TL4_VERTEBRA_NEURAL_ARCH = Tl4VertebraNeuralArch()
     TL4_NEURAL_ARCH_LAMINA = Tl4NeuralArchLamina()
     TL4_NEURAL_ARCH_PEDICLE = Tl4NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL4_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl4SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL4_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl4SpinousProcess()
     TL4_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl4NeuralArchTransverseProcess()
     TL5_VERTEBRA_CENTRUM = Tl5VertebraCentrum()
     TL5_VERTEBRAL_CANAL = Tl5VertebralCanal()
     TL5_VERTEBRA_NEURAL_ARCH = Tl5VertebraNeuralArch()
     TL5_NEURAL_ARCH_LAMINA = Tl5NeuralArchLamina()
     TL5_NEURAL_ARCH_PEDICLE = Tl5NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL5_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl5SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL5_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl5SpinousProcess()
     TL5_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl5NeuralArchTransverseProcess()
     TL6_VERTEBRA_CENTRUM = Tl6VertebraCentrum()
     TL6_VERTEBRAL_CANAL = Tl6VertebralCanal()
     TL6_VERTEBRA_NEURAL_ARCH = Tl6VertebraNeuralArch()
     TL6_NEURAL_ARCH_LAMINA = Tl6NeuralArchLamina()
     TL6_NEURAL_ARCH_PEDICLE = Tl6NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL6_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl6SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL6_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl6SpinousProcess()
     TL6_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl6NeuralArchTransverseProcess()
     TL7_VERTEBRA_CENTRUM = Tl7VertebraCentrum()
     TL7_VERTEBRAL_CANAL = Tl7VertebralCanal()
     TL7_VERTEBRA_NEURAL_ARCH = Tl7VertebraNeuralArch()
     TL7_NEURAL_ARCH_LAMINA = Tl7NeuralArchLamina()
     TL7_NEURAL_ARCH_PEDICLE = Tl7NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL7_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl7SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL7_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl7SpinousProcess()
     TL7_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl7NeuralArchTransverseProcess()
     TL8_VERTEBRA_CENTRUM = Tl8VertebraCentrum()
     TL8_VERTEBRAL_CANAL = Tl8VertebralCanal()
     TL8_VERTEBRA_NEURAL_ARCH = Tl8VertebraNeuralArch()
     TL8_NEURAL_ARCH_LAMINA = Tl8NeuralArchLamina()
     TL8_NEURAL_ARCH_PEDICLE = Tl8NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL8_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl8SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL8_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl8SpinousProcess()
     TL8_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl8NeuralArchTransverseProcess()
     TL9_VERTEBRA_CENTRUM = Tl9VertebraCentrum()
     TL9_VERTEBRAL_CANAL = Tl9VertebralCanal()
     TL9_VERTEBRA_NEURAL_ARCH = Tl9VertebraNeuralArch()
     TL9_NEURAL_ARCH_LAMINA = Tl9NeuralArchLamina()
     TL9_NEURAL_ARCH_PEDICLE = Tl9NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL9_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureTl9SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_TL9_SPINOUS_PROCESS = CartilagePrimordiumOfFutureTl9SpinousProcess()
     TL9_NEURAL_ARCH_TRANSVERSE_PROCESS = Tl9NeuralArchTransverseProcess()
     T10_RIB_COSTAL_CARTILAGE = T10RibCostalCartilage()
     T10_RIB_HEAD_CARTILAGE = T10RibHeadCartilage()
@@ -63768,45 +60570,35 @@ class _MouseAnatomyType:
     C3_VERTEBRA_NEURAL_ARCH = C3VertebraNeuralArch()
     C3_NEURAL_ARCH_LAMINA = C3NeuralArchLamina()
     C3_NEURAL_ARCH_PEDICLE = C3NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_C3_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureC3SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_C3_SPINOUS_PROCESS = CartilagePrimordiumOfFutureC3SpinousProcess()
     C3_NEURAL_ARCH_TRANSVERSE_PROCESS = C3NeuralArchTransverseProcess()
     C4_VERTEBRA_CENTRUM = C4VertebraCentrum()
     C4_VERTEBRAL_CANAL = C4VertebralCanal()
     C4_VERTEBRA_NEURAL_ARCH = C4VertebraNeuralArch()
     C4_NEURAL_ARCH_LAMINA = C4NeuralArchLamina()
     C4_NEURAL_ARCH_PEDICLE = C4NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_C4_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureC4SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_C4_SPINOUS_PROCESS = CartilagePrimordiumOfFutureC4SpinousProcess()
     C4_NEURAL_ARCH_TRANSVERSE_PROCESS = C4NeuralArchTransverseProcess()
     C5_VERTEBRA_CENTRUM = C5VertebraCentrum()
     C5_VERTEBRAL_CANAL = C5VertebralCanal()
     C5_VERTEBRA_NEURAL_ARCH = C5VertebraNeuralArch()
     C5_NEURAL_ARCH_LAMINA = C5NeuralArchLamina()
     C5_NEURAL_ARCH_PEDICLE = C5NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_C5_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureC5SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_C5_SPINOUS_PROCESS = CartilagePrimordiumOfFutureC5SpinousProcess()
     C5_NEURAL_ARCH_TRANSVERSE_PROCESS = C5NeuralArchTransverseProcess()
     C6_VERTEBRA_CENTRUM = C6VertebraCentrum()
     C6_VERTEBRAL_CANAL = C6VertebralCanal()
     C6_VERTEBRA_NEURAL_ARCH = C6VertebraNeuralArch()
     C6_NEURAL_ARCH_LAMINA = C6NeuralArchLamina()
     C6_NEURAL_ARCH_PEDICLE = C6NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_C6_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureC6SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_C6_SPINOUS_PROCESS = CartilagePrimordiumOfFutureC6SpinousProcess()
     C6_NEURAL_ARCH_TRANSVERSE_PROCESS = C6NeuralArchTransverseProcess()
     C7_VERTEBRA_CENTRUM = C7VertebraCentrum()
     C7_VERTEBRAL_CANAL = C7VertebralCanal()
     C7_VERTEBRA_NEURAL_ARCH = C7VertebraNeuralArch()
     C7_NEURAL_ARCH_LAMINA = C7NeuralArchLamina()
     C7_NEURAL_ARCH_PEDICLE = C7NeuralArchPedicle()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_C7_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureC7SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_C7_SPINOUS_PROCESS = CartilagePrimordiumOfFutureC7SpinousProcess()
     C7_NEURAL_ARCH_TRANSVERSE_PROCESS = C7NeuralArchTransverseProcess()
     MOUSE = Mouse()
     LEFT_ATRIUM_LUMEN = LeftAtriumLumen()
@@ -63817,56 +60609,36 @@ class _MouseAnatomyType:
     INTERSEGMENTAL_VEIN = IntersegmentalVein()
     MEDIAN_SACRAL_VEIN = MedianSacralVein()
     INFERIOR_VENA_CAVA_INTRAHEPATIC_PART = InferiorVenaCavaIntrahepaticPart()
-    COMMUNICATION_DUCTUS_VENOSUS_TO_PORTAL_VEIN = (
-        CommunicationDuctusVenosusToPortalVein()
-    )
+    COMMUNICATION_DUCTUS_VENOSUS_TO_PORTAL_VEIN = CommunicationDuctusVenosusToPortalVein()
     PHYSIOLOGICAL_UMBILICAL_HERNIA_MESENCHYME = PhysiologicalUmbilicalHerniaMesenchyme()
-    PHYSIOLOGICAL_UMBILICAL_HERNIA_MESOTHELIUM = (
-        PhysiologicalUmbilicalHerniaMesothelium()
-    )
+    PHYSIOLOGICAL_UMBILICAL_HERNIA_MESOTHELIUM = PhysiologicalUmbilicalHerniaMesothelium()
     UMBILICAL_CORD = UmbilicalCord()
     UMBILICAL_CORD_MESENCHYME = UmbilicalCordMesenchyme()
     VITELLINE_DUCT = VitellineDuct()
     VITELLINE_VEIN_VITELLINE_DUCT_PART = VitellineVeinVitellineDuctPart()
     CAVITY_OF_PHYSIOLOGICAL_UMBILICAL_HERNIA = CavityOfPhysiologicalUmbilicalHernia()
-    CAVITY_OF_PHYSIOLOGICAL_UMBILICAL_HERNIA_MESOTHELIUM = (
-        CavityOfPhysiologicalUmbilicalHerniaMesothelium()
-    )
+    CAVITY_OF_PHYSIOLOGICAL_UMBILICAL_HERNIA_MESOTHELIUM = CavityOfPhysiologicalUmbilicalHerniaMesothelium()
     PANCREAS_MESENCHYME = PancreasMesenchyme()
     HINDLIMB_DIGIT_1_INTERPHALANGEAL_JOINT = HindlimbDigit1InterphalangealJoint()
-    HINDLIMB_DIGIT_1_METATARSAL_PHALANGEAL_JOINT = (
-        HindlimbDigit1MetatarsalPhalangealJoint()
-    )
-    HINDLIMB_DIGIT_2_METATARSAL_PHALANGEAL_JOINT = (
-        HindlimbDigit2MetatarsalPhalangealJoint()
-    )
+    HINDLIMB_DIGIT_1_METATARSAL_PHALANGEAL_JOINT = HindlimbDigit1MetatarsalPhalangealJoint()
+    HINDLIMB_DIGIT_2_METATARSAL_PHALANGEAL_JOINT = HindlimbDigit2MetatarsalPhalangealJoint()
     HINDLIMB_DIGIT_2_INTERPHALANGEAL_JOINT = HindlimbDigit2InterphalangealJoint()
     HINDLIMB_DIGIT_3_INTERPHALANGEAL_JOINT = HindlimbDigit3InterphalangealJoint()
-    HINDLIMB_DIGIT_3_METATARSAL_PHALANGEAL_JOINT = (
-        HindlimbDigit3MetatarsalPhalangealJoint()
-    )
+    HINDLIMB_DIGIT_3_METATARSAL_PHALANGEAL_JOINT = HindlimbDigit3MetatarsalPhalangealJoint()
     HINDLIMB_DIGIT_4_INTERPHALANGEAL_JOINT = HindlimbDigit4InterphalangealJoint()
-    HINDLIMB_DIGIT_4_METATARSAL_PHALANGEAL_JOINT = (
-        HindlimbDigit4MetatarsalPhalangealJoint()
-    )
+    HINDLIMB_DIGIT_4_METATARSAL_PHALANGEAL_JOINT = HindlimbDigit4MetatarsalPhalangealJoint()
     HINDLIMB_DIGIT_5_INTERPHALANGEAL_JOINT = HindlimbDigit5InterphalangealJoint()
-    HINDLIMB_DIGIT_5_METATARSAL_PHALANGEAL_JOINT = (
-        HindlimbDigit5MetatarsalPhalangealJoint()
-    )
+    HINDLIMB_DIGIT_5_METATARSAL_PHALANGEAL_JOINT = HindlimbDigit5MetatarsalPhalangealJoint()
     C1_VERTEBRAL_CANAL = C1VertebralCanal()
     C1_VERTEBRA_NEURAL_ARCH = C1VertebraNeuralArch()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_C1_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureC1SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_C1_SPINOUS_PROCESS = CartilagePrimordiumOfFutureC1SpinousProcess()
     C1_NEURAL_ARCH_LAMINA = C1NeuralArchLamina()
     C1_NEURAL_ARCH_PEDICLE = C1NeuralArchPedicle()
     C2_VERTEBRA_CENTRUM = C2VertebraCentrum()
     ODONTOID_PROCESS = OdontoidProcess()
     C2_VERTEBRAL_CANAL = C2VertebralCanal()
     C2_VERTEBRA_NEURAL_ARCH = C2VertebraNeuralArch()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_C2_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureC2SpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_C2_SPINOUS_PROCESS = CartilagePrimordiumOfFutureC2SpinousProcess()
     C2_NEURAL_ARCH_LAMINA = C2NeuralArchLamina()
     C2_NEURAL_ARCH_PEDICLE = C2NeuralArchPedicle()
     C3_FORAMEN_TRANSVERSARIUM = C3ForamenTransversarium()
@@ -63972,9 +60744,7 @@ class _MouseAnatomyType:
     GASTRO_ESOPHAGEAL_JUNCTION_MUSCULARIS = GastroEsophagealJunctionMuscularis()
     GASTRO_ESOPHAGEAL_JUNCTION_SEROSA = GastroEsophagealJunctionSerosa()
     GASTRO_ESOPHAGEAL_JUNCTION_LAMINA_PROPRIA = GastroEsophagealJunctionLaminaPropria()
-    GASTRO_ESOPHAGEAL_JUNCTION_MUSCULARIS_MUCOSA = (
-        GastroEsophagealJunctionMuscularisMucosa()
-    )
+    GASTRO_ESOPHAGEAL_JUNCTION_MUSCULARIS_MUCOSA = GastroEsophagealJunctionMuscularisMucosa()
     PERINEAL_BODY_MUCOSA = PerinealBodyMucosa()
     PERINEAL_BODY_SUBMUCOSA = PerinealBodySubmucosa()
     PERINEAL_BODY_MUSCULARIS = PerinealBodyMuscularis()
@@ -64029,23 +60799,15 @@ class _MouseAnatomyType:
     STOMACH_GLANDULAR_REGION_MUSCULARIS = StomachGlandularRegionMuscularis()
     STOMACH_GLANDULAR_REGION_SEROSA = StomachGlandularRegionSerosa()
     STOMACH_GLANDULAR_REGION_LAMINA_PROPRIA = StomachGlandularRegionLaminaPropria()
-    STOMACH_GLANDULAR_REGION_MUSCULARIS_MUCOSA = (
-        StomachGlandularRegionMuscularisMucosa()
-    )
+    STOMACH_GLANDULAR_REGION_MUSCULARIS_MUCOSA = StomachGlandularRegionMuscularisMucosa()
     STOMACH_GLANDULAR_REGION_GASTRIC_GLAND = StomachGlandularRegionGastricGland()
     STOMACH_PROVENTRICULAR_REGION_MUCOSA = StomachProventricularRegionMucosa()
     STOMACH_PROVENTRICULAR_REGION_SUBMUCOSA = StomachProventricularRegionSubmucosa()
     STOMACH_PROVENTRICULAR_REGION_MUSCULARIS = StomachProventricularRegionMuscularis()
     STOMACH_PROVENTRICULAR_REGION_SEROSA = StomachProventricularRegionSerosa()
-    STOMACH_PROVENTRICULAR_REGION_LAMINA_PROPRIA = (
-        StomachProventricularRegionLaminaPropria()
-    )
-    STOMACH_PROVENTRICULAR_REGION_GASTRIC_GLAND = (
-        StomachProventricularRegionGastricGland()
-    )
-    STOMACH_PROVENTRICULAR_REGION_MUSCULARIS_MUCOSA = (
-        StomachProventricularRegionMuscularisMucosa()
-    )
+    STOMACH_PROVENTRICULAR_REGION_LAMINA_PROPRIA = StomachProventricularRegionLaminaPropria()
+    STOMACH_PROVENTRICULAR_REGION_GASTRIC_GLAND = StomachProventricularRegionGastricGland()
+    STOMACH_PROVENTRICULAR_REGION_MUSCULARIS_MUCOSA = StomachProventricularRegionMuscularisMucosa()
     STOMACH_PYLORIC_REGION_MUCOSA = StomachPyloricRegionMucosa()
     STOMACH_PYLORIC_REGION_SUBMUCOSA = StomachPyloricRegionSubmucosa()
     STOMACH_PYLORIC_REGION_SEROSA = StomachPyloricRegionSerosa()
@@ -64113,69 +60875,39 @@ class _MouseAnatomyType:
     VISCERAL_EPITHELIUM_OF_S_SHAPED_BODY = VisceralEpitheliumOfSShapedBody()
     PARIETAL_EPITHELIUM_OF_S_SHAPED_BODY = ParietalEpitheliumOfSShapedBody()
     CAPILLARY_LOOP_RENAL_CORPUSCLE = CapillaryLoopRenalCorpuscle()
-    VISCERAL_EPITHELIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = (
-        VisceralEpitheliumOfCapillaryLoopRenalCorpuscle()
-    )
-    PARIETAL_EPITHELIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = (
-        ParietalEpitheliumOfCapillaryLoopRenalCorpuscle()
-    )
-    ASSOCIATED_INTERSTITIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = (
-        AssociatedInterstitiumOfCapillaryLoopRenalCorpuscle()
-    )
-    PRESUMPTIVE_MESANGIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = (
-        PresumptiveMesangiumOfCapillaryLoopRenalCorpuscle()
-    )
-    PRESUMPTIVE_ENDOTHELIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = (
-        PresumptiveEndotheliumOfCapillaryLoopRenalCorpuscle()
-    )
+    VISCERAL_EPITHELIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = VisceralEpitheliumOfCapillaryLoopRenalCorpuscle()
+    PARIETAL_EPITHELIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = ParietalEpitheliumOfCapillaryLoopRenalCorpuscle()
+    ASSOCIATED_INTERSTITIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = AssociatedInterstitiumOfCapillaryLoopRenalCorpuscle()
+    PRESUMPTIVE_MESANGIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = PresumptiveMesangiumOfCapillaryLoopRenalCorpuscle()
+    PRESUMPTIVE_ENDOTHELIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = PresumptiveEndotheliumOfCapillaryLoopRenalCorpuscle()
     RENAL_TUBULE = RenalTubule()
     EARLY_PROXIMAL_TUBULE = EarlyProximalTubule()
     ANLAGE_OF_LOOP_OF_HENLE = AnlageOfLoopOfHenle()
     EARLY_DISTAL_TUBULE = EarlyDistalTubule()
-    RENAL_CONNECTING_TUBULE_OF_CAPILLARY_LOOP_NEPHRON = (
-        RenalConnectingTubuleOfCapillaryLoopNephron()
-    )
+    RENAL_CONNECTING_TUBULE_OF_CAPILLARY_LOOP_NEPHRON = RenalConnectingTubuleOfCapillaryLoopNephron()
     DEVELOPING_VASCULATURE_OF_METANEPHROS = DevelopingVasculatureOfMetanephros()
     LOWER_LIMB_OF_COMMA_SHAPED_BODY = LowerLimbOfCommaShapedBody()
     MATURING_RENAL_CORPUSCLE = MaturingRenalCorpuscle()
     MATURING_GLOMERULAR_TUFT = MaturingGlomerularTuft()
-    GLOMERULAR_CAPILLARY_SYSTEM_OF_MATURING_GLOMERULAR_TUFT = (
-        GlomerularCapillarySystemOfMaturingGlomerularTuft()
-    )
-    GLOMERULAR_MESANGIUM_OF_MATURING_GLOMERULAR_TUFT = (
-        GlomerularMesangiumOfMaturingGlomerularTuft()
-    )
-    VISCERAL_EPITHELIUM_OF_MATURING_RENAL_CORPUSCLE = (
-        VisceralEpitheliumOfMaturingRenalCorpuscle()
-    )
-    BOWMANS_CAPSULE_OF_MATURING_RENAL_CORPUSCLE = (
-        BowmansCapsuleOfMaturingRenalCorpuscle()
-    )
-    PARIETAL_EPITHELIUM_OF_MATURING_RENAL_CORPUSCLE = (
-        ParietalEpitheliumOfMaturingRenalCorpuscle()
-    )
+    GLOMERULAR_CAPILLARY_SYSTEM_OF_MATURING_GLOMERULAR_TUFT = GlomerularCapillarySystemOfMaturingGlomerularTuft()
+    GLOMERULAR_MESANGIUM_OF_MATURING_GLOMERULAR_TUFT = GlomerularMesangiumOfMaturingGlomerularTuft()
+    VISCERAL_EPITHELIUM_OF_MATURING_RENAL_CORPUSCLE = VisceralEpitheliumOfMaturingRenalCorpuscle()
+    BOWMANS_CAPSULE_OF_MATURING_RENAL_CORPUSCLE = BowmansCapsuleOfMaturingRenalCorpuscle()
+    PARIETAL_EPITHELIUM_OF_MATURING_RENAL_CORPUSCLE = ParietalEpitheliumOfMaturingRenalCorpuscle()
     URINARY_SPACE_OF_MATURING_RENAL_CORPUSCLE = UrinarySpaceOfMaturingRenalCorpuscle()
     JUXTAGLOMERULAR_ARTERIOLE = JuxtaglomerularArteriole()
     CORTICAL_EARLY_PROXIMAL_TUBULE = CorticalEarlyProximalTubule()
     CORTICAL_EARLY_DISTAL_TUBULE = CorticalEarlyDistalTubule()
     RENAL_CONNECTING_TUBULE = RenalConnectingTubule()
     DEVELOPING_VASCULATURE_OF_RENAL_CORTEX = DevelopingVasculatureOfRenalCortex()
-    DEVELOPING_ARTERIAL_VASCULATURE_OF_RENAL_CORTEX = (
-        DevelopingArterialVasculatureOfRenalCortex()
-    )
-    DEVELOPING_VENOUS_VASCULATURE_OF_RENAL_CORTEX = (
-        DevelopingVenousVasculatureOfRenalCortex()
-    )
+    DEVELOPING_ARTERIAL_VASCULATURE_OF_RENAL_CORTEX = DevelopingArterialVasculatureOfRenalCortex()
+    DEVELOPING_VENOUS_VASCULATURE_OF_RENAL_CORTEX = DevelopingVenousVasculatureOfRenalCortex()
     DEVELOPING_CAPILLARY_OF_RENAL_CORTEX = DevelopingCapillaryOfRenalCortex()
     IMMATURE_LOOP_OF_HENLE = ImmatureLoopOfHenle()
     MEDULLARY_COLLECTING_DUCT = MedullaryCollectingDuct()
     DEVELOPING_VASCULATURE_OF_RENAL_MEDULLA = DevelopingVasculatureOfRenalMedulla()
-    DEVELOPING_ARTERIAL_VASCULATURE_OF_RENAL_MEDULLA = (
-        DevelopingArterialVasculatureOfRenalMedulla()
-    )
-    DEVELOPING_VENOUS_VASCULATURE_OF_RENAL_MEDULLA = (
-        DevelopingVenousVasculatureOfRenalMedulla()
-    )
+    DEVELOPING_ARTERIAL_VASCULATURE_OF_RENAL_MEDULLA = DevelopingArterialVasculatureOfRenalMedulla()
+    DEVELOPING_VENOUS_VASCULATURE_OF_RENAL_MEDULLA = DevelopingVenousVasculatureOfRenalMedulla()
     DEVELOPING_CAPILLARY_OF_RENAL_MEDULLA = DevelopingCapillaryOfRenalMedulla()
     PELVIC_UROTHELIAL_LINING = PelvicUrothelialLining()
     PERIHILAR_INTERSTITIUM = PerihilarInterstitium()
@@ -64194,37 +60926,23 @@ class _MouseAnatomyType:
     ARCUATE_ARTERY = ArcuateArtery()
     INTERLOBULAR_VEIN = InterlobularVein()
     ARCUATE_VEIN = ArcuateVein()
-    AFFERENT_ARTERIOLE_OF_MATURING_RENAL_CORPUSCLE = (
-        AfferentArterioleOfMaturingRenalCorpuscle()
-    )
-    EFFERENT_ARTERIOLE_OF_MATURING_RENAL_CORPUSCLE = (
-        EfferentArterioleOfMaturingRenalCorpuscle()
-    )
+    AFFERENT_ARTERIOLE_OF_MATURING_RENAL_CORPUSCLE = AfferentArterioleOfMaturingRenalCorpuscle()
+    EFFERENT_ARTERIOLE_OF_MATURING_RENAL_CORPUSCLE = EfferentArterioleOfMaturingRenalCorpuscle()
     MATURE_RENAL_CORPUSCLE = MatureRenalCorpuscle()
     GLOMERULAR_TUFT = GlomerularTuft()
     GLOMERULAR_CAPILLARY_SYSTEM = GlomerularCapillarySystem()
     GLOMERULAR_MESANGIUM_OF_GLOMERULAR_TUFT = GlomerularMesangiumOfGlomerularTuft()
-    GLOMERULAR_BASEMENT_MEMBRANE_OF_MATURE_RENAL_CORPUSCLE = (
-        GlomerularBasementMembraneOfMatureRenalCorpuscle()
-    )
-    VISCERAL_EPITHELIUM_OF_MATURE_RENAL_CORPUSCLE = (
-        VisceralEpitheliumOfMatureRenalCorpuscle()
-    )
+    GLOMERULAR_BASEMENT_MEMBRANE_OF_MATURE_RENAL_CORPUSCLE = GlomerularBasementMembraneOfMatureRenalCorpuscle()
+    VISCERAL_EPITHELIUM_OF_MATURE_RENAL_CORPUSCLE = VisceralEpitheliumOfMatureRenalCorpuscle()
     BOWMANS_CAPSULE_OF_MATURE_RENAL_CORPUSCLE = BowmansCapsuleOfMatureRenalCorpuscle()
-    PARIETAL_EPITHELIUM_OF_MATURE_RENAL_CORPUSCLE = (
-        ParietalEpitheliumOfMatureRenalCorpuscle()
-    )
+    PARIETAL_EPITHELIUM_OF_MATURE_RENAL_CORPUSCLE = ParietalEpitheliumOfMatureRenalCorpuscle()
     URINARY_SPACE_OF_MATURE_RENAL_CORPUSCLE = UrinarySpaceOfMatureRenalCorpuscle()
-    AFFERENT_ARTERIOLE_OF_MATURE_RENAL_CORPUSCLE = (
-        AfferentArterioleOfMatureRenalCorpuscle()
-    )
+    AFFERENT_ARTERIOLE_OF_MATURE_RENAL_CORPUSCLE = AfferentArterioleOfMatureRenalCorpuscle()
     PART_OF_AFFERENT_ARTERIOLE_FORMING_THE_JUXTAGLOMERULAR_COMPLEX = (
         PartOfAfferentArterioleFormingTheJuxtaglomerularComplex()
     )
     REST_OF_AFFERENT_ARTERIOLE = RestOfAfferentArteriole()
-    EFFERENT_ARTERIOLE_OF_MATURE_RENAL_CORPUSCLE = (
-        EfferentArterioleOfMatureRenalCorpuscle()
-    )
+    EFFERENT_ARTERIOLE_OF_MATURE_RENAL_CORPUSCLE = EfferentArterioleOfMatureRenalCorpuscle()
     EXTRAGLOMERULAR_MESANGIUM = ExtraglomerularMesangium()
     RENAL_PROXIMAL_TUBULE = RenalProximalTubule()
     RENAL_PROXIMAL_CONVOLUTED_TUBULE = RenalProximalConvolutedTubule()
@@ -64240,9 +60958,7 @@ class _MouseAnatomyType:
     INNER_RENAL_MEDULLA = InnerRenalMedulla()
     LOOP_OF_HENLE_INNER_MEDULLARY_PORTION = LoopOfHenleInnerMedullaryPortion()
     THIN_DESCENDING_LIMB_OF_INNER_MEDULLA = ThinDescendingLimbOfInnerMedulla()
-    BEND_OF_LOOP_OF_HENLE_INNER_MEDULLARY_PORTION = (
-        BendOfLoopOfHenleInnerMedullaryPortion()
-    )
+    BEND_OF_LOOP_OF_HENLE_INNER_MEDULLARY_PORTION = BendOfLoopOfHenleInnerMedullaryPortion()
     THIN_ASCENDING_LIMB_OF_INNER_MEDULLA = ThinAscendingLimbOfInnerMedulla()
     INNER_MEDULLARY_INTERSTITIUM = InnerMedullaryInterstitium()
     INNER_MEDULLARY_COLLECTING_DUCT = InnerMedullaryCollectingDuct()
@@ -64252,18 +60968,14 @@ class _MouseAnatomyType:
     DISTAL_CONVOLUTED_TUBULE = DistalConvolutedTubule()
     DISTAL_STRAIGHT_TUBULE_OF_RENAL_CORTEX = DistalStraightTubuleOfRenalCortex()
     MACULA_DENSA = MaculaDensa()
-    POSTMACULA_SEGMENT_OF_DISTAL_STRAIGHT_TUBULE = (
-        PostmaculaSegmentOfDistalStraightTubule()
-    )
+    POSTMACULA_SEGMENT_OF_DISTAL_STRAIGHT_TUBULE = PostmaculaSegmentOfDistalStraightTubule()
     COLLECTING_DUCT = CollectingDuct()
     STAGE_IV_IMMATURE_NEPHRON = StageIvImmatureNephron()
     RENAL_VASCULATURE = RenalVasculature()
     MATURING_NEPHRON = MaturingNephron()
     MATURE_NEPHRON = MatureNephron()
     EARLY_TUBULE = EarlyTubule()
-    DEVELOPING_CAPILLARY_LOOP_STAGE_NEPHRON_GROUP = (
-        DevelopingCapillaryLoopStageNephronGroup()
-    )
+    DEVELOPING_CAPILLARY_LOOP_STAGE_NEPHRON_GROUP = DevelopingCapillaryLoopStageNephronGroup()
     RENAL_INTERSTITIUM = RenalInterstitium()
     LATE_TUBULE = LateTubule()
     MALE_ASSOCIATED_REPRODUCTIVE_STRUCTURE = MaleAssociatedReproductiveStructure()
@@ -64288,34 +61000,24 @@ class _MouseAnatomyType:
     SEROSA_OF_TRIGONE = SerosaOfTrigone()
     VASCULATURE_OF_BLADDER = VasculatureOfBladder()
     EPITHELIUM_OF_PELVIC_URETHRA_OF_MALE = EpitheliumOfPelvicUrethraOfMale()
-    MESENCHYMAL_LAYER_OF_PELVIC_URETHRA_OF_MALE = (
-        MesenchymalLayerOfPelvicUrethraOfMale()
-    )
+    MESENCHYMAL_LAYER_OF_PELVIC_URETHRA_OF_MALE = MesenchymalLayerOfPelvicUrethraOfMale()
     MUSCLE_LAYER_OF_PELVIC_URETHRA_OF_MALE = MuscleLayerOfPelvicUrethraOfMale()
     URETHRA_OF_FEMALE = UrethraOfFemale()
     PELVIC_URETHRA_OF_FEMALE = PelvicUrethraOfFemale()
     EPITHELIUM_OF_PELVIC_URETHRA_OF_FEMALE = EpitheliumOfPelvicUrethraOfFemale()
-    MESENCHYMAL_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = (
-        MesenchymalLayerOfPelvicUrethraOfFemale()
-    )
+    MESENCHYMAL_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = MesenchymalLayerOfPelvicUrethraOfFemale()
     MUSCLE_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = MuscleLayerOfPelvicUrethraOfFemale()
     INTERMEDIATE_CELL_LAYER_OF_URETER = IntermediateCellLayerOfUreter()
     BASAL_CELL_LAYER_OF_URETER = BasalCellLayerOfUreter()
     URETERAL_SMOOTH_MUSCLE_LAYER = UreteralSmoothMuscleLayer()
-    URETERAL_SMOOTH_MUSCLE_LAYER_SMOOTH_MUSCLE_COMPONENT = (
-        UreteralSmoothMuscleLayerSmoothMuscleComponent()
-    )
+    URETERAL_SMOOTH_MUSCLE_LAYER_SMOOTH_MUSCLE_COMPONENT = UreteralSmoothMuscleLayerSmoothMuscleComponent()
     ADVENTITIA_OF_BLADDER = AdventitiaOfBladder()
     ADVENTITIA_OF_FUNDUS = AdventitiaOfFundus()
     ADVENTITIA_OF_BLADDER_TRIGONE = AdventitiaOfBladderTrigone()
     LAMINA_PROPRIA_OF_URETER = LaminaPropriaOfUreter()
-    MESENCHYMAL_LAYER_OF_PHALLIC_URETHRA_OF_MALE = (
-        MesenchymalLayerOfPhallicUrethraOfMale()
-    )
+    MESENCHYMAL_LAYER_OF_PHALLIC_URETHRA_OF_MALE = MesenchymalLayerOfPhallicUrethraOfMale()
     MUSCLE_LAYER_OF_PHALLIC_URETHRA_OF_MALE = MuscleLayerOfPhallicUrethraOfMale()
-    PROXIMAL_STRAIGHT_TUBULE_OUTER_MEDULLARY_PORTION = (
-        ProximalStraightTubuleOuterMedullaryPortion()
-    )
+    PROXIMAL_STRAIGHT_TUBULE_OUTER_MEDULLARY_PORTION = ProximalStraightTubuleOuterMedullaryPortion()
     MESENCHYMAL_STROMA_OF_OVARY = MesenchymalStromaOfOvary()
     DEVELOPING_VASCULATURE_OF_OVARY = DevelopingVasculatureOfOvary()
     MESONEPHROS_OF_FEMALE = MesonephrosOfFemale()
@@ -64324,25 +61026,17 @@ class _MouseAnatomyType:
     NEPHRIC_DUCT_OF_FEMALE_MESONEPHRIC_PORTION = NephricDuctOfFemaleMesonephricPortion()
     RETE_OVARII_OF_MESONEPHROS = ReteOvariiOfMesonephros()
     COELOMIC_EPITHELIUM_OF_FEMALE_MESONEPHROS = CoelomicEpitheliumOfFemaleMesonephros()
-    PARAMESONEPHRIC_DUCT_OF_FEMALE_MESONEPHRIC_PORTION = (
-        ParamesonephricDuctOfFemaleMesonephricPortion()
-    )
+    PARAMESONEPHRIC_DUCT_OF_FEMALE_MESONEPHRIC_PORTION = ParamesonephricDuctOfFemaleMesonephricPortion()
     PARAMESONEPHRIC_DUCT_OF_FEMALE_REST_OF = ParamesonephricDuctOfFemaleRestOf()
     NEPHRIC_DUCT_OF_FEMALE_REST_OF = NephricDuctOfFemaleRestOf()
     EPITHELIUM_OF_NEPHRIC_DUCT_OF_FEMALE = EpitheliumOfNephricDuctOfFemale()
     MESENCHYME_OF_NEPHRIC_DUCT_OF_FEMALE = MesenchymeOfNephricDuctOfFemale()
-    EPITHELIUM_OF_REST_OF_PARAMESONEPHRIC_DUCT_OF_FEMALE = (
-        EpitheliumOfRestOfParamesonephricDuctOfFemale()
-    )
-    MESENCHYME_OF_REST_OF_PARAMESONEPHRIC_DUCT_OF_FEMALE = (
-        MesenchymeOfRestOfParamesonephricDuctOfFemale()
-    )
+    EPITHELIUM_OF_REST_OF_PARAMESONEPHRIC_DUCT_OF_FEMALE = EpitheliumOfRestOfParamesonephricDuctOfFemale()
+    MESENCHYME_OF_REST_OF_PARAMESONEPHRIC_DUCT_OF_FEMALE = MesenchymeOfRestOfParamesonephricDuctOfFemale()
     MEIOTIC_GERM_CELL_OF_OVARY = MeioticGermCellOfOvary()
     PREMEIOTIC_GERM_CELL_OF_OVARY = PremeioticGermCellOfOvary()
     DEGENERATING_MESONEPHRIC_TUBULE_OF_FEMALE = DegeneratingMesonephricTubuleOfFemale()
-    DEGENERATING_MESONEPHRIC_PORTION_OF_NEPHRIC_DUCT_OF_FEMALE = (
-        DegeneratingMesonephricPortionOfNephricDuctOfFemale()
-    )
+    DEGENERATING_MESONEPHRIC_PORTION_OF_NEPHRIC_DUCT_OF_FEMALE = DegeneratingMesonephricPortionOfNephricDuctOfFemale()
     CORTICAL_COMPONENT_OF_MESENCHYMAL_STROMA = CorticalComponentOfMesenchymalStroma()
     MEDULLARY_COMPONENT_OF_MESENCHYMAL_STROMA = MedullaryComponentOfMesenchymalStroma()
     UTERINE_HORN_EPITHELIUM = UterineHornEpithelium()
@@ -64365,9 +61059,7 @@ class _MouseAnatomyType:
     MESONEPHROS_OF_MALE = MesonephrosOfMale()
     MESONEPHRIC_MESENCHYME_OF_MALE = MesonephricMesenchymeOfMale()
     MESONEPHRIC_TUBULE_OF_MALE = MesonephricTubuleOfMale()
-    PARAMESONEPHRIC_DUCT_OF_MALE_MESONEPHRIC_PORTION = (
-        ParamesonephricDuctOfMaleMesonephricPortion()
-    )
+    PARAMESONEPHRIC_DUCT_OF_MALE_MESONEPHRIC_PORTION = ParamesonephricDuctOfMaleMesonephricPortion()
     DEGENERATING_MESONEPHRIC_PORTION_OF_MALE_PARAMESONEPHRIC_DUCT = (
         DegeneratingMesonephricPortionOfMaleParamesonephricDuct()
     )
@@ -64377,15 +61069,9 @@ class _MouseAnatomyType:
     MESENCHYME_OF_NEPHRIC_DUCT_OF_MALE = MesenchymeOfNephricDuctOfMale()
     EPITHELIUM_OF_NEPHRIC_DUCT_OF_MALE = EpitheliumOfNephricDuctOfMale()
     PARAMESONEPHRIC_DUCT_OF_MALE_REST_OF = ParamesonephricDuctOfMaleRestOf()
-    EPITHELIUM_OF_REST_OF_PARAMESONEPHRIC_DUCT_OF_MALE = (
-        EpitheliumOfRestOfParamesonephricDuctOfMale()
-    )
-    MESENCHYME_OF_REST_OF_PARAMESONEPHRIC_DUCT_OF_MALE = (
-        MesenchymeOfRestOfParamesonephricDuctOfMale()
-    )
-    DEGENERATING_REST_OF_PARAMESONEPHRIC_DUCT_OF_MALE = (
-        DegeneratingRestOfParamesonephricDuctOfMale()
-    )
+    EPITHELIUM_OF_REST_OF_PARAMESONEPHRIC_DUCT_OF_MALE = EpitheliumOfRestOfParamesonephricDuctOfMale()
+    MESENCHYME_OF_REST_OF_PARAMESONEPHRIC_DUCT_OF_MALE = MesenchymeOfRestOfParamesonephricDuctOfMale()
+    DEGENERATING_REST_OF_PARAMESONEPHRIC_DUCT_OF_MALE = DegeneratingRestOfParamesonephricDuctOfMale()
     EPITHELIUM_OF_DEGENERATING_REST_OF_PARAMESONEPHRIC_DUCT_OF_MALE = (
         EpitheliumOfDegeneratingRestOfParamesonephricDuctOfMale()
     )
@@ -64393,17 +61079,13 @@ class _MouseAnatomyType:
         MesenchymeOfDegeneratingRestOfParamesonephricDuctOfMale()
     )
     DISTAL_GENITAL_TUBERCLE_OF_MALE = DistalGenitalTubercleOfMale()
-    MESENCHYME_OF_DISTAL_GENITAL_TUBERCLE_OF_MALE = (
-        MesenchymeOfDistalGenitalTubercleOfMale()
-    )
+    MESENCHYME_OF_DISTAL_GENITAL_TUBERCLE_OF_MALE = MesenchymeOfDistalGenitalTubercleOfMale()
     SKIN_OF_DISTAL_GENITAL_TUBERCLE_OF_MALE = SkinOfDistalGenitalTubercleOfMale()
     PREPUTIAL_SWELLING_OF_MALE = PreputialSwellingOfMale()
     SKIN_OF_MALE_PREPUTIAL_SWELLING = SkinOfMalePreputialSwelling()
     MESENCHYME_OF_MALE_PREPUTIAL_SWELLING = MesenchymeOfMalePreputialSwelling()
     GLANS_OF_MALE_GENITAL_TUBERCLE = GlansOfMaleGenitalTubercle()
-    MESENCHYME_OF_GLANS_OF_MALE_GENITAL_TUBERCLE = (
-        MesenchymeOfGlansOfMaleGenitalTubercle()
-    )
+    MESENCHYME_OF_GLANS_OF_MALE_GENITAL_TUBERCLE = MesenchymeOfGlansOfMaleGenitalTubercle()
     SKIN_OF_GLANS_OF_MALE_GENITAL_TUBERCLE = SkinOfGlansOfMaleGenitalTubercle()
     MUSCLE_OF_DUCTUS_DEFERENS = MuscleOfDuctusDeferens()
     EPITHELIUM_OF_DUCTUS_DEFERENS = EpitheliumOfDuctusDeferens()
@@ -64417,12 +61099,8 @@ class _MouseAnatomyType:
     GENITAL_TUBERCLE_MESENCHYME_OF_FEMALE = GenitalTubercleMesenchymeOfFemale()
     GENITAL_TUBERCLE_SKIN_OF_FEMALE = GenitalTubercleSkinOfFemale()
     VASCULATURE_OF_OVARY = VasculatureOfOvary()
-    URETERAL_SMOOTH_MUSCLE_LAYER_INNER_LONGITUDINAL_MUSCLE = (
-        UreteralSmoothMuscleLayerInnerLongitudinalMuscle()
-    )
-    URETERAL_SMOOTH_MUSCLE_LAYER_OUTER_CIRCULAR_MUSCLE = (
-        UreteralSmoothMuscleLayerOuterCircularMuscle()
-    )
+    URETERAL_SMOOTH_MUSCLE_LAYER_INNER_LONGITUDINAL_MUSCLE = UreteralSmoothMuscleLayerInnerLongitudinalMuscle()
+    URETERAL_SMOOTH_MUSCLE_LAYER_OUTER_CIRCULAR_MUSCLE = UreteralSmoothMuscleLayerOuterCircularMuscle()
     MEDIAN_UMBILICAL_LIGAMENT = MedianUmbilicalLigament()
     BULBAR_PART_OF_URETHRA_OF_MALE = BulbarPartOfUrethraOfMale()
     MALE_URETHRAL_GLAND = MaleUrethralGland()
@@ -64432,22 +61110,12 @@ class _MouseAnatomyType:
     SEGMENT_2_OF_PROXIMAL_TUBULE = Segment2OfProximalTubule()
     PROXIMAL_STRAIGHT_TUBULE_CORTICAL_PORTION = ProximalStraightTubuleCorticalPortion()
     OUTER_STRIPE_OF_OUTER_MEDULLA = OuterStripeOfOuterMedulla()
-    LOOP_OF_HENLE_OF_OUTER_STRIPE_OF_OUTER_MEDULLA = (
-        LoopOfHenleOfOuterStripeOfOuterMedulla()
-    )
-    PROXIMAL_STRAIGHT_TUBULE_OF_OUTER_STRIPE_OF_OUTER_MEDULLA = (
-        ProximalStraightTubuleOfOuterStripeOfOuterMedulla()
-    )
-    DISTAL_STRAIGHT_TUBULE_OF_OUTER_STRIPE_OF_OUTER_MEDULLA = (
-        DistalStraightTubuleOfOuterStripeOfOuterMedulla()
-    )
+    LOOP_OF_HENLE_OF_OUTER_STRIPE_OF_OUTER_MEDULLA = LoopOfHenleOfOuterStripeOfOuterMedulla()
+    PROXIMAL_STRAIGHT_TUBULE_OF_OUTER_STRIPE_OF_OUTER_MEDULLA = ProximalStraightTubuleOfOuterStripeOfOuterMedulla()
+    DISTAL_STRAIGHT_TUBULE_OF_OUTER_STRIPE_OF_OUTER_MEDULLA = DistalStraightTubuleOfOuterStripeOfOuterMedulla()
     INNER_STRIPE_OF_OUTER_MEDULLA = InnerStripeOfOuterMedulla()
-    LOOP_OF_HENLE_OF_INNER_STRIPE_OF_OUTER_MEDULLA = (
-        LoopOfHenleOfInnerStripeOfOuterMedulla()
-    )
-    THIN_DESCENDING_LIMB_OF_INNER_STRIPE_OF_OUTER_MEDULLA = (
-        ThinDescendingLimbOfInnerStripeOfOuterMedulla()
-    )
+    LOOP_OF_HENLE_OF_INNER_STRIPE_OF_OUTER_MEDULLA = LoopOfHenleOfInnerStripeOfOuterMedulla()
+    THIN_DESCENDING_LIMB_OF_INNER_STRIPE_OF_OUTER_MEDULLA = ThinDescendingLimbOfInnerStripeOfOuterMedulla()
     PREMACULA_SEGMENT_OF_DISTAL_STRAIGHT_TUBULE_OF_INNER_STRIPE_OF_INNER_MEDULLA = (
         PremaculaSegmentOfDistalStraightTubuleOfInnerStripeOfInnerMedulla()
     )
@@ -64480,9 +61148,7 @@ class _MouseAnatomyType:
     SEROSA_OF_SEMINAL_VESICLE = SerosaOfSeminalVesicle()
     EPITHELIUM_OF_EJACULATORY_DUCT = EpitheliumOfEjaculatoryDuct()
     EPITHELIUM_OF_BULBOURETHRAL_GLAND_OF_MALE = EpitheliumOfBulbourethralGlandOfMale()
-    LAMINA_PROPRIA_OF_BULBOURETHRAL_GLAND_OF_MALE = (
-        LaminaPropriaOfBulbourethralGlandOfMale()
-    )
+    LAMINA_PROPRIA_OF_BULBOURETHRAL_GLAND_OF_MALE = LaminaPropriaOfBulbourethralGlandOfMale()
     ANTERIOR_PROSTATE_GLAND = AnteriorProstateGland()
     ANTERIOR_PROSTATIC_EPITHELIUM = AnteriorProstaticEpithelium()
     GLANDULAR_EPITHELIUM_OF_ANTERIOR_PROSTATE = GlandularEpitheliumOfAnteriorProstate()
@@ -64555,16 +61221,12 @@ class _MouseAnatomyType:
     SMOOTH_MUSCLE_LAYER_OF_RENAL_ARTERY = SmoothMuscleLayerOfRenalArtery()
     ENDOTHELIUM_OF_RENAL_VEIN = EndotheliumOfRenalVein()
     SMOOTH_MUSCLE_LAYER_OF_RENAL_VEIN = SmoothMuscleLayerOfRenalVein()
-    GLOMERULAR_MESANGIUM_OF_MATURING_RENAL_CORPUSCLE = (
-        GlomerularMesangiumOfMaturingRenalCorpuscle()
-    )
+    GLOMERULAR_MESANGIUM_OF_MATURING_RENAL_CORPUSCLE = GlomerularMesangiumOfMaturingRenalCorpuscle()
     RENAL_CORTICAL_CAPILLARY = RenalCorticalCapillary()
     RENAL_MEDULLARY_CAPILLARY = RenalMedullaryCapillary()
     MUSCLE_LAYER_OF_REST_OF_OVIDUCT = MuscleLayerOfRestOfOviduct()
     CIRCULAR_MUSCLE_LAYER_OF_REST_OF_OVIDUCT = CircularMuscleLayerOfRestOfOviduct()
-    LONGITUDINAL_MUSCLE_LAYER_OF_REST_OF_OVIDUCT = (
-        LongitudinalMuscleLayerOfRestOfOviduct()
-    )
+    LONGITUDINAL_MUSCLE_LAYER_OF_REST_OF_OVIDUCT = LongitudinalMuscleLayerOfRestOfOviduct()
     CIRCULAR_MUSCLE_OF_DUCTUS_DEFERENS = CircularMuscleOfDuctusDeferens()
     LONGITUDINAL_MUSCLE_OF_DUCTUS_DEFERENS = LongitudinalMuscleOfDuctusDeferens()
     CRANIAL_SUSPENSORY_LIGAMENT = CranialSuspensoryLigament()
@@ -64600,9 +61262,7 @@ class _MouseAnatomyType:
     EPITHELIUM_OF_PHALLIC_URETHRA_OF_FEMALE = EpitheliumOfPhallicUrethraOfFemale()
     PREPUTIAL_SWELLING_OF_FEMALE = PreputialSwellingOfFemale()
     DISTAL_GENITAL_TUBERCLE_OF_FEMALE = DistalGenitalTubercleOfFemale()
-    MESENCHYME_OF_DISTAL_GENITAL_TUBERCLE_OF_FEMALE = (
-        MesenchymeOfDistalGenitalTubercleOfFemale()
-    )
+    MESENCHYME_OF_DISTAL_GENITAL_TUBERCLE_OF_FEMALE = MesenchymeOfDistalGenitalTubercleOfFemale()
     SKIN_OF_DISTAL_GENITAL_TUBERCLE_OF_FEMALE = SkinOfDistalGenitalTubercleOfFemale()
     MESENCHYME_OF_FEMALE_PREPUTIAL_SWELLING = MesenchymeOfFemalePreputialSwelling()
     SKIN_OF_FEMALE_PREPUTIAL_SWELLING = SkinOfFemalePreputialSwelling()
@@ -64616,9 +61276,7 @@ class _MouseAnatomyType:
     CAUDAL_MESONEPHRIC_TUBULE_OF_MALE = CaudalMesonephricTubuleOfMale()
     CRANIAL_MESONEPHRIC_TUBULE_OF_FEMALE = CranialMesonephricTubuleOfFemale()
     MESONEPHRIC_GLOMERULUS_OF_FEMALE = MesonephricGlomerulusOfFemale()
-    REST_OF_CRANIAL_MESONEPHRIC_TUBULE_OF_FEMALE = (
-        RestOfCranialMesonephricTubuleOfFemale()
-    )
+    REST_OF_CRANIAL_MESONEPHRIC_TUBULE_OF_FEMALE = RestOfCranialMesonephricTubuleOfFemale()
     CAUDAL_MESONEPHRIC_TUBULE_OF_FEMALE = CaudalMesonephricTubuleOfFemale()
     CRANIAL_MESONEPHRIC_TUBULE = CranialMesonephricTubule()
     REST_OF_CRANIAL_MESONEPHRIC_TUBULE = RestOfCranialMesonephricTubule()
@@ -64698,14 +61356,10 @@ class _MouseAnatomyType:
     PHALLIC_URETHRA = PhallicUrethra()
     URETHRAL_PLATE_OF_PHALLIC_URETHRA = UrethralPlateOfPhallicUrethra()
     CLITORAL_URETHRA = ClitoralUrethra()
-    URETHRAL_PLATE_EPITHELIUM_OF_CLITORAL_URETHRA = (
-        UrethralPlateEpitheliumOfClitoralUrethra()
-    )
+    URETHRAL_PLATE_EPITHELIUM_OF_CLITORAL_URETHRA = UrethralPlateEpitheliumOfClitoralUrethra()
     URETHRAL_FOLD_OF_FEMALE = UrethralFoldOfFemale()
     EPITHELIUM_OF_CLITORAL_URETHRA = EpitheliumOfClitoralUrethra()
-    MESENCHYMAL_LAYER_OF_PHALLIC_URETHRA_OF_FEMALE = (
-        MesenchymalLayerOfPhallicUrethraOfFemale()
-    )
+    MESENCHYMAL_LAYER_OF_PHALLIC_URETHRA_OF_FEMALE = MesenchymalLayerOfPhallicUrethraOfFemale()
     MUSCLE_LAYER_OF_PHALLIC_URETHRA_OF_FEMALE = MuscleLayerOfPhallicUrethraOfFemale()
     PROSTATIC_URETHRA = ProstaticUrethra()
     PENILE_URETHRA = PenileUrethra()
@@ -64715,9 +61369,7 @@ class _MouseAnatomyType:
     EPITHELIUM_OF_PROSTATIC_URETHRA = EpitheliumOfProstaticUrethra()
     MESENCHYMAL_LAYER_OF_PROSTATIC_URETHRA = MesenchymalLayerOfProstaticUrethra()
     MUSCLE_LAYER_OF_PROSTATIC_URETHRA = MuscleLayerOfProstaticUrethra()
-    GLOMERULAR_BASEMENT_MEMBRANE_OF_MATURING_RENAL_CORPUSCLE = (
-        GlomerularBasementMembraneOfMaturingRenalCorpuscle()
-    )
+    GLOMERULAR_BASEMENT_MEMBRANE_OF_MATURING_RENAL_CORPUSCLE = GlomerularBasementMembraneOfMaturingRenalCorpuscle()
     MALE_EXTERNAL_GENITALIA = MaleExternalGenitalia()
     FEMALE_EXTERNAL_GENITALIA = FemaleExternalGenitalia()
     EPITHELIUM_OF_VAGINA = EpitheliumOfVagina()
@@ -64727,12 +61379,8 @@ class _MouseAnatomyType:
     BEND_OF_IMMATURE_LOOP_OF_HENLE = BendOfImmatureLoopOfHenle()
     OOCYTE = Oocyte()
     PRE_GRANULOSA_CELL = PreGranulosaCell()
-    REST_OF_CORTICAL_COMPONENT_OF_MESENCHYMAL_STROMA_OF_OVARY = (
-        RestOfCorticalComponentOfMesenchymalStromaOfOvary()
-    )
-    URETERIC_TREE_TERMINAL_BRANCH_EXCLUDING_TIP_ITSELF = (
-        UretericTreeTerminalBranchExcludingTipItself()
-    )
+    REST_OF_CORTICAL_COMPONENT_OF_MESENCHYMAL_STROMA_OF_OVARY = RestOfCorticalComponentOfMesenchymalStromaOfOvary()
+    URETERIC_TREE_TERMINAL_BRANCH_EXCLUDING_TIP_ITSELF = UretericTreeTerminalBranchExcludingTipItself()
     OVIGEROUS_CORD = OvigerousCord()
     DERMOMYOTOME = Dermomyotome()
     TRUNK_MYOCOELE = TrunkMyocoele()
@@ -64742,23 +61390,15 @@ class _MouseAnatomyType:
     TAIL_SCLEROTOME = TailSclerotome()
     SCLEROTOME = Sclerotome()
     SOMITE = Somite()
-    DEVELOPING_VASCULATURE_OF_CAUDA_EPIDIDYMIS = (
-        DevelopingVasculatureOfCaudaEpididymis()
-    )
-    DEVELOPING_VASCULATURE_OF_CORPUS_EPIDIDYMIS = (
-        DevelopingVasculatureOfCorpusEpididymis()
-    )
-    DEVELOPING_VASCULATURE_OF_CAPUT_EPIDIDYMIS = (
-        DevelopingVasculatureOfCaputEpididymis()
-    )
+    DEVELOPING_VASCULATURE_OF_CAUDA_EPIDIDYMIS = DevelopingVasculatureOfCaudaEpididymis()
+    DEVELOPING_VASCULATURE_OF_CORPUS_EPIDIDYMIS = DevelopingVasculatureOfCorpusEpididymis()
+    DEVELOPING_VASCULATURE_OF_CAPUT_EPIDIDYMIS = DevelopingVasculatureOfCaputEpididymis()
     DEVELOPING_VASCULATURE_OF_UTERINE_HORN = DevelopingVasculatureOfUterineHorn()
     DEVELOPING_VASCULATURE_OF_OVIDUCT = DevelopingVasculatureOfOviduct()
     VASCULATURE_OF_UPPER_VAGINA = VasculatureOfUpperVagina()
     VASCULATURE_OF_SINOVAGINAL_BULB = VasculatureOfSinovaginalBulb()
     DEVELOPING_VASCULATURE_OF_VAGINA = DevelopingVasculatureOfVagina()
-    DEVELOPING_VASCULATURE_SYSTEM_OF_EPIDIDYMIS = (
-        DevelopingVasculatureSystemOfEpididymis()
-    )
+    DEVELOPING_VASCULATURE_SYSTEM_OF_EPIDIDYMIS = DevelopingVasculatureSystemOfEpididymis()
     SURFACE_EPITHELIUM_OF_TESTIS = SurfaceEpitheliumOfTestis()
     FOLLICLE_CELL_OF_PRIMORDIAL_FOLLICLE = FollicleCellOfPrimordialFollicle()
     CREMASTER_MUSCLE = CremasterMuscle()
@@ -64770,9 +61410,7 @@ class _MouseAnatomyType:
     RESIDENT_MACROPHAGE = ResidentMacrophage()
     REST_OF_RENAL_INTERSTITIUM = RestOfRenalInterstitium()
     RENAL_FIBROBLASTS = RenalFibroblasts()
-    ANLAGE_OF_LOOP_OF_HENLE_OF_CORTICAL_RENAL_TUBULE = (
-        AnlageOfLoopOfHenleOfCorticalRenalTubule()
-    )
+    ANLAGE_OF_LOOP_OF_HENLE_OF_CORTICAL_RENAL_TUBULE = AnlageOfLoopOfHenleOfCorticalRenalTubule()
     RENAL_CORTICAL_FIBROBLASTS = RenalCorticalFibroblasts()
     RESIDENT_MACROPHAGE_OF_THE_CORTEX = ResidentMacrophageOfTheCortex()
     REST_OF_RENAL_CORTICAL_INTERSTITIUM = RestOfRenalCorticalInterstitium()
@@ -64784,13 +61422,9 @@ class _MouseAnatomyType:
     RENAL_MEDULLARY_LYMPHATICS = RenalMedullaryLymphatics()
     RENAL_MEDULLARY_NERVES = RenalMedullaryNerves()
     PERIHILAR_FIBROBLAST = PerihilarFibroblast()
-    RESIDENT_MACROPHAGE_OF_THE_PERIHILAR_INTERSTITIUM = (
-        ResidentMacrophageOfThePerihilarInterstitium()
-    )
+    RESIDENT_MACROPHAGE_OF_THE_PERIHILAR_INTERSTITIUM = ResidentMacrophageOfThePerihilarInterstitium()
     REST_OF_PERIHILAR_INTERSTITIUM = RestOfPerihilarInterstitium()
-    PREMACULA_SEGMENT_OF_DISTAL_STRAIGHT_TUBULE_OF_RENAL_CORTEX = (
-        PremaculaSegmentOfDistalStraightTubuleOfRenalCortex()
-    )
+    PREMACULA_SEGMENT_OF_DISTAL_STRAIGHT_TUBULE_OF_RENAL_CORTEX = PremaculaSegmentOfDistalStraightTubuleOfRenalCortex()
     OUTER_MEDULLARY_FIBROBLAST = OuterMedullaryFibroblast()
     RESIDENT_MACROPHAGE_OF_THE_OUTER_MEDULLA = ResidentMacrophageOfTheOuterMedulla()
     REST_OF_OUTER_MEDULLARY_INTERSTITIUM = RestOfOuterMedullaryInterstitium()
@@ -64816,122 +61450,64 @@ class _MouseAnatomyType:
     SPERMATID = Spermatid()
     SPERMATOZOON = Spermatozoon()
     MESENCHYME_OF_UROGENITAL_SINUS = MesenchymeOfUrogenitalSinus()
-    MESENCHYME_OF_PROXIMAL_GENITAL_TUBERCLE_OF_MALE = (
-        MesenchymeOfProximalGenitalTubercleOfMale()
-    )
+    MESENCHYME_OF_PROXIMAL_GENITAL_TUBERCLE_OF_MALE = MesenchymeOfProximalGenitalTubercleOfMale()
     SKIN_OF_PROXIMAL_GENITAL_TUBERCLE_OF_MALE = SkinOfProximalGenitalTubercleOfMale()
-    DEVELOPING_VASCULATURE_OF_FEMALE_GENITAL_TUBERCLE = (
-        DevelopingVasculatureOfFemaleGenitalTubercle()
-    )
+    DEVELOPING_VASCULATURE_OF_FEMALE_GENITAL_TUBERCLE = DevelopingVasculatureOfFemaleGenitalTubercle()
     PROXIMAL_GENITAL_TUBERCLE_OF_MALE = ProximalGenitalTubercleOfMale()
     PROXIMAL_URETHRAL_MEATUS_OF_MALE = ProximalUrethralMeatusOfMale()
     PROXIMAL_GENITAL_TUBERCLE_OF_FEMALE = ProximalGenitalTubercleOfFemale()
     URETHRAL_PLATE_EPITHELIUM_OF_MALE = UrethralPlateEpitheliumOfMale()
     URETHRAL_TUBE_EPITHELIUM_OF_MALE = UrethralTubeEpitheliumOfMale()
     EPITHELIUM_OF_UROGENITAL_SINUS = EpitheliumOfUrogenitalSinus()
-    DEVELOPING_VASCULATURE_OF_MALE_GENITAL_TUBERCLE = (
-        DevelopingVasculatureOfMaleGenitalTubercle()
-    )
-    EARLY_DISTAL_TUBULE_OF_CAPILLARY_LOOP_NEPHRON = (
-        EarlyDistalTubuleOfCapillaryLoopNephron()
-    )
+    DEVELOPING_VASCULATURE_OF_MALE_GENITAL_TUBERCLE = DevelopingVasculatureOfMaleGenitalTubercle()
+    EARLY_DISTAL_TUBULE_OF_CAPILLARY_LOOP_NEPHRON = EarlyDistalTubuleOfCapillaryLoopNephron()
     EARLY_DISTAL_TUBULE_OF_MATURING_NEPHRON = EarlyDistalTubuleOfMaturingNephron()
-    RENAL_CONNECTING_TUBULE_OF_MATURING_NEPHRON = (
-        RenalConnectingTubuleOfMaturingNephron()
-    )
+    RENAL_CONNECTING_TUBULE_OF_MATURING_NEPHRON = RenalConnectingTubuleOfMaturingNephron()
     RENAL_CONNECTING_TUBULE_OF_MATURE_NEPHRON = RenalConnectingTubuleOfMatureNephron()
     URETHRAL_PLATE_EPITHELIUM = UrethralPlateEpithelium()
     NERVE_OF_PELVIC_URETHRA = NerveOfPelvicUrethra()
     NERVE_OF_PHALLIC_URETHRA = NerveOfPhallicUrethra()
-    MESENCHYMAL_LAYER_OF_VENTRAL_PRIMITIVE_BLADDER = (
-        MesenchymalLayerOfVentralPrimitiveBladder()
-    )
+    MESENCHYMAL_LAYER_OF_VENTRAL_PRIMITIVE_BLADDER = MesenchymalLayerOfVentralPrimitiveBladder()
     NERVE_OF_BLADDER = NerveOfBladder()
     PELVIC_GANGLION = PelvicGanglion()
     NERVE_OF_UROGENITAL_SINUS = NerveOfUrogenitalSinus()
-    MESENCHYMAL_LAYER_OF_DORSAL_PRIMITIVE_BLADDER = (
-        MesenchymalLayerOfDorsalPrimitiveBladder()
-    )
+    MESENCHYMAL_LAYER_OF_DORSAL_PRIMITIVE_BLADDER = MesenchymalLayerOfDorsalPrimitiveBladder()
     URETHRAL_TUBE_EPITHELIUM_OF_FEMALE = UrethralTubeEpitheliumOfFemale()
     PROXIMAL_URETHRAL_MEATUS_OF_FEMALE = ProximalUrethralMeatusOfFemale()
-    DEVELOPING_VASCULATURE_OF_UROGENITAL_SINUS = (
-        DevelopingVasculatureOfUrogenitalSinus()
-    )
+    DEVELOPING_VASCULATURE_OF_UROGENITAL_SINUS = DevelopingVasculatureOfUrogenitalSinus()
     NERVES_OF_UROGENITAL_SINUS = NervesOfUrogenitalSinus()
-    MESENCHYME_OF_PROXIMAL_GENITAL_TUBERCLE_OF_FEMALE = (
-        MesenchymeOfProximalGenitalTubercleOfFemale()
-    )
-    SKIN_OF_PROXIMAL_GENITAL_TUBERCLE_OF_FEMALE = (
-        SkinOfProximalGenitalTubercleOfFemale()
-    )
+    MESENCHYME_OF_PROXIMAL_GENITAL_TUBERCLE_OF_FEMALE = MesenchymeOfProximalGenitalTubercleOfFemale()
+    SKIN_OF_PROXIMAL_GENITAL_TUBERCLE_OF_FEMALE = SkinOfProximalGenitalTubercleOfFemale()
     URETHRAL_PLATE_EPITHELIUM_OF_FEMALE = UrethralPlateEpitheliumOfFemale()
-    DEVELOPING_VASCULATURE_OF_MALE_MESONEPHROS = (
-        DevelopingVasculatureOfMaleMesonephros()
-    )
-    DEVELOPING_VASCULATURE_OF_FEMALE_MESONEPHROS = (
-        DevelopingVasculatureOfFemaleMesonephros()
-    )
-    DEVELOPING_VASCULATURE_OF_PRIMITIVE_BLADDER = (
-        DevelopingVasculatureOfPrimitiveBladder()
-    )
+    DEVELOPING_VASCULATURE_OF_MALE_MESONEPHROS = DevelopingVasculatureOfMaleMesonephros()
+    DEVELOPING_VASCULATURE_OF_FEMALE_MESONEPHROS = DevelopingVasculatureOfFemaleMesonephros()
+    DEVELOPING_VASCULATURE_OF_PRIMITIVE_BLADDER = DevelopingVasculatureOfPrimitiveBladder()
     RENAL_CONNECTING_SEGMENT_OF_RENAL_VESICLE = RenalConnectingSegmentOfRenalVesicle()
     EARLY_PROXIMAL_TUBULE_OF_MATURING_NEPHRON = EarlyProximalTubuleOfMaturingNephron()
-    EARLY_PROXIMAL_TUBULE_OF_CAPILLARY_LOOP_NEPHRON = (
-        EarlyProximalTubuleOfCapillaryLoopNephron()
-    )
-    RENAL_CONNECTING_SEGMENT_OF_COMMA_SHAPED_BODY = (
-        RenalConnectingSegmentOfCommaShapedBody()
-    )
+    EARLY_PROXIMAL_TUBULE_OF_CAPILLARY_LOOP_NEPHRON = EarlyProximalTubuleOfCapillaryLoopNephron()
+    RENAL_CONNECTING_SEGMENT_OF_COMMA_SHAPED_BODY = RenalConnectingSegmentOfCommaShapedBody()
     PROXIMAL_RENAL_VESICLE = ProximalRenalVesicle()
-    MESENCHYMAL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = (
-        MesenchymalLayerOfVentralPelvicUrethraOfMale()
-    )
-    MESENCHYMAL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = (
-        MesenchymalLayerOfDorsalPelvicUrethraOfMale()
-    )
-    MESENCHYMAL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = (
-        MesenchymalLayerOfVentralPelvicUrethraOfFemale()
-    )
-    MESENCHYMAL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        MesenchymalLayerOfDorsalPelvicUrethraOfFemale()
-    )
-    MUSCLE_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = (
-        MuscleLayerOfVentralPelvicUrethraOfMale()
-    )
-    MUSCLE_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = (
-        MuscleLayerOfDorsalPelvicUrethraOfMale()
-    )
-    MUSCLE_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = (
-        MuscleLayerOfVentralPelvicUrethraOfFemale()
-    )
-    MUSCLE_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        MuscleLayerOfDorsalPelvicUrethraOfFemale()
-    )
+    MESENCHYMAL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = MesenchymalLayerOfVentralPelvicUrethraOfMale()
+    MESENCHYMAL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = MesenchymalLayerOfDorsalPelvicUrethraOfMale()
+    MESENCHYMAL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = MesenchymalLayerOfVentralPelvicUrethraOfFemale()
+    MESENCHYMAL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = MesenchymalLayerOfDorsalPelvicUrethraOfFemale()
+    MUSCLE_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = MuscleLayerOfVentralPelvicUrethraOfMale()
+    MUSCLE_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = MuscleLayerOfDorsalPelvicUrethraOfMale()
+    MUSCLE_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = MuscleLayerOfVentralPelvicUrethraOfFemale()
+    MUSCLE_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = MuscleLayerOfDorsalPelvicUrethraOfFemale()
     NERVE_OF_PELVIC_URETHRA_OF_MALE = NerveOfPelvicUrethraOfMale()
-    CORTICAL_RENAL_TUBULE_OF_MATURE_NEPHRON_GROUP = (
-        CorticalRenalTubuleOfMatureNephronGroup()
-    )
+    CORTICAL_RENAL_TUBULE_OF_MATURE_NEPHRON_GROUP = CorticalRenalTubuleOfMatureNephronGroup()
     NERVE_OF_PELVIC_URETHRA_OF_FEMALE = NerveOfPelvicUrethraOfFemale()
     NERVE_OF_URETHRA = NerveOfUrethra()
-    CORTICAL_RENAL_TUBULE_OF_MATURING_NEPHRON_GROUP = (
-        CorticalRenalTubuleOfMaturingNephronGroup()
-    )
-    CORTICAL_RENAL_TUBULE_OF_CAPILLARY_LOOP_NEPHRON_GROUP = (
-        CorticalRenalTubuleOfCapillaryLoopNephronGroup()
-    )
-    MESENCHYMAL_LAYER_OF_VENTRAL_PELVIC_URETHRA = (
-        MesenchymalLayerOfVentralPelvicUrethra()
-    )
+    CORTICAL_RENAL_TUBULE_OF_MATURING_NEPHRON_GROUP = CorticalRenalTubuleOfMaturingNephronGroup()
+    CORTICAL_RENAL_TUBULE_OF_CAPILLARY_LOOP_NEPHRON_GROUP = CorticalRenalTubuleOfCapillaryLoopNephronGroup()
+    MESENCHYMAL_LAYER_OF_VENTRAL_PELVIC_URETHRA = MesenchymalLayerOfVentralPelvicUrethra()
     MESENCHYMAL_LAYER_OF_DORSAL_PELVIC_URETHRA = MesenchymalLayerOfDorsalPelvicUrethra()
     MUSCLE_LAYER_OF_VENTRAL_PELVIC_URETHRA = MuscleLayerOfVentralPelvicUrethra()
     MUSCLE_LAYER_OF_DORSAL_PELVIC_URETHRA = MuscleLayerOfDorsalPelvicUrethra()
-    DEVELOPING_VASCULATURE_OF_GENITOURINARY_SYSTEM = (
-        DevelopingVasculatureOfGenitourinarySystem()
-    )
+    DEVELOPING_VASCULATURE_OF_GENITOURINARY_SYSTEM = DevelopingVasculatureOfGenitourinarySystem()
     DEVELOPING_VASCULATURE_OF_URINARY_SYSTEM = DevelopingVasculatureOfUrinarySystem()
-    DEVELOPING_VASCULATURE_OF_REPRODUCTIVE_SYSTEM = (
-        DevelopingVasculatureOfReproductiveSystem()
-    )
+    DEVELOPING_VASCULATURE_OF_REPRODUCTIVE_SYSTEM = DevelopingVasculatureOfReproductiveSystem()
     DISTAL_RENAL_VESICLE = DistalRenalVesicle()
     TRUNK = Trunk()
     HEAD = Head()
@@ -64953,40 +61529,22 @@ class _MouseAnatomyType:
     SPONGIOTROPHOBLAST = Spongiotrophoblast()
     TROPHOBLAST_GIANT_CELL = TrophoblastGiantCell()
     LABYRINTHINE_ZONE = LabyrinthineZone()
-    EPITHELIUM_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = (
-        EpitheliumOfVentralPelvicUrethraOfMale()
-    )
+    EPITHELIUM_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = EpitheliumOfVentralPelvicUrethraOfMale()
     LAMINA_PROPRIA_OF_SINOVAGINAL_BULB = LaminaPropriaOfSinovaginalBulb()
-    BASAL_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = (
-        BasalCellLayerOfDorsalPelvicUrethraOfMale()
-    )
-    BASAL_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = (
-        BasalCellLayerOfVentralPelvicUrethraOfMale()
-    )
+    BASAL_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = BasalCellLayerOfDorsalPelvicUrethraOfMale()
+    BASAL_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = BasalCellLayerOfVentralPelvicUrethraOfMale()
     VASCULATURE_OF_PELVIC_URETHRA_OF_MALE = VasculatureOfPelvicUrethraOfMale()
-    SUPERFICIAL_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = (
-        SuperficialCellLayerOfDorsalPelvicUrethraOfMale()
-    )
-    EPITHELIUM_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        EpitheliumOfDorsalPelvicUrethraOfFemale()
-    )
+    SUPERFICIAL_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = SuperficialCellLayerOfDorsalPelvicUrethraOfMale()
+    EPITHELIUM_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = EpitheliumOfDorsalPelvicUrethraOfFemale()
     VASCULATURE_OF_PROSTATIC_URETHRA = VasculatureOfProstaticUrethra()
-    SUPERFICIAL_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        SuperficialCellLayerOfDorsalPelvicUrethraOfFemale()
-    )
-    BASAL_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        BasalCellLayerOfDorsalPelvicUrethraOfFemale()
-    )
-    SUPERFICIAL_CELL_LAYER_OF_PROSTATIC_URETHRA = (
-        SuperficialCellLayerOfProstaticUrethra()
-    )
+    SUPERFICIAL_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = SuperficialCellLayerOfDorsalPelvicUrethraOfFemale()
+    BASAL_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = BasalCellLayerOfDorsalPelvicUrethraOfFemale()
+    SUPERFICIAL_CELL_LAYER_OF_PROSTATIC_URETHRA = SuperficialCellLayerOfProstaticUrethra()
     RHABDOSPHINCTER_OF_MALE = RhabdosphincterOfMale()
     LAMINA_PROPRIA_OF_EJACULATORY_DUCT = LaminaPropriaOfEjaculatoryDuct()
     BASAL_CELL_LAYER_OF_PROSTATIC_URETHRA = BasalCellLayerOfProstaticUrethra()
     LAMINA_PROPRIA_OF_UPPER_VAGINA = LaminaPropriaOfUpperVagina()
-    SUPERFICIAL_CELL_LAYER_OF_BLADDER_UROTHELIUM = (
-        SuperficialCellLayerOfBladderUrothelium()
-    )
+    SUPERFICIAL_CELL_LAYER_OF_BLADDER_UROTHELIUM = SuperficialCellLayerOfBladderUrothelium()
     BASAL_CELL_LAYER_OF_BLADDER_UROTHELIUM = BasalCellLayerOfBladderUrothelium()
     SUBMUCOSA_OF_BLADDER = SubmucosaOfBladder()
     SUBMUCOSA_OF_NECK = SubmucosaOfNeck()
@@ -64995,86 +61553,42 @@ class _MouseAnatomyType:
     NERVE_OF_PROSTATIC_URETHRA = NerveOfProstaticUrethra()
     MESENCHYMAL_PAD_OF_PELVIC_URETHRA_OF_MALE = MesenchymalPadOfPelvicUrethraOfMale()
     PERI_PROSTATIC_MESENCHYME = PeriProstaticMesenchyme()
-    EPITHELIUM_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = (
-        EpitheliumOfVentralPelvicUrethraOfFemale()
-    )
+    EPITHELIUM_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = EpitheliumOfVentralPelvicUrethraOfFemale()
     VASCULATURE_OF_PELVIC_URETHRA_OF_FEMALE = VasculatureOfPelvicUrethraOfFemale()
-    SUPERFICIAL_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = (
-        SuperficialCellLayerOfVentralPelvicUrethraOfMale()
-    )
+    SUPERFICIAL_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = SuperficialCellLayerOfVentralPelvicUrethraOfMale()
     NERVE_OF_PROSTATE_GLAND = NerveOfProstateGland()
     PRESUMPTIVE_NEURAL_CREST_DERIVATIVE_OF_PELVIC_URETHRA_OF_MALE = (
         PresumptiveNeuralCrestDerivativeOfPelvicUrethraOfMale()
     )
-    MESENCHYMAL_PAD_OF_PELVIC_URETHRA_OF_FEMALE = (
-        MesenchymalPadOfPelvicUrethraOfFemale()
-    )
+    MESENCHYMAL_PAD_OF_PELVIC_URETHRA_OF_FEMALE = MesenchymalPadOfPelvicUrethraOfFemale()
     PRESUMPTIVE_NEURAL_CREST_DERIVATIVE_OF_PELVIC_URETHRA_OF_FEMALE = (
         PresumptiveNeuralCrestDerivativeOfPelvicUrethraOfFemale()
     )
     MUSCLE_OF_EJACULATORY_DUCT = MuscleOfEjaculatoryDuct()
-    SUPERFICIAL_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = (
-        SuperficialCellLayerOfVentralPelvicUrethraOfFemale()
-    )
-    BASAL_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = (
-        BasalCellLayerOfVentralPelvicUrethraOfFemale()
-    )
+    SUPERFICIAL_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = SuperficialCellLayerOfVentralPelvicUrethraOfFemale()
+    BASAL_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = BasalCellLayerOfVentralPelvicUrethraOfFemale()
     SUBMUCOSA_OF_DORSAL_PELVIC_URETHRA_OF_MALE = SubmucosaOfDorsalPelvicUrethraOfMale()
-    LAMINA_PROPRIA_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = (
-        LaminaPropriaOfVentralPelvicUrethraOfMale()
-    )
-    MUSCULARIS_MUCOSA_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        MuscularisMucosaOfDorsalPelvicUrethraOfFemale()
-    )
-    LAMINA_PROPRIA_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        LaminaPropriaOfDorsalPelvicUrethraOfFemale()
-    )
-    MUSCULARIS_MUCOSA_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = (
-        MuscularisMucosaOfVentralPelvicUrethraOfMale()
-    )
-    SUBMUCOSA_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = (
-        SubmucosaOfVentralPelvicUrethraOfMale()
-    )
-    INTERMEDIATE_CELL_LAYER_OF_PROSTATIC_URETHRA = (
-        IntermediateCellLayerOfProstaticUrethra()
-    )
-    EPITHELIUM_OF_DORSAL_PELVIC_URETHRA_OF_MALE = (
-        EpitheliumOfDorsalPelvicUrethraOfMale()
-    )
+    LAMINA_PROPRIA_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = LaminaPropriaOfVentralPelvicUrethraOfMale()
+    MUSCULARIS_MUCOSA_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = MuscularisMucosaOfDorsalPelvicUrethraOfFemale()
+    LAMINA_PROPRIA_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = LaminaPropriaOfDorsalPelvicUrethraOfFemale()
+    MUSCULARIS_MUCOSA_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = MuscularisMucosaOfVentralPelvicUrethraOfMale()
+    SUBMUCOSA_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = SubmucosaOfVentralPelvicUrethraOfMale()
+    INTERMEDIATE_CELL_LAYER_OF_PROSTATIC_URETHRA = IntermediateCellLayerOfProstaticUrethra()
+    EPITHELIUM_OF_DORSAL_PELVIC_URETHRA_OF_MALE = EpitheliumOfDorsalPelvicUrethraOfMale()
     SUBMUCOSA_OF_PROSTATIC_URETHRA = SubmucosaOfProstaticUrethra()
     MUSCULARIS_MUCOSA_OF_PROSTATIC_URETHRA = MuscularisMucosaOfProstaticUrethra()
     LAMINA_PROPRIA_OF_PROSTATIC_URETHRA = LaminaPropriaOfProstaticUrethra()
     SUBMUCOSA_OF_TRIGONE = SubmucosaOfTrigone()
-    INTERMEDIATE_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = (
-        IntermediateCellLayerOfVentralPelvicUrethraOfFemale()
-    )
-    INTERMEDIATE_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        IntermediateCellLayerOfDorsalPelvicUrethraOfFemale()
-    )
-    INTERMEDIATE_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = (
-        IntermediateCellLayerOfDorsalPelvicUrethraOfMale()
-    )
-    SUBMUCOSA_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = (
-        SubmucosaOfVentralPelvicUrethraOfFemale()
-    )
-    MUSCULARIS_MUCOSA_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = (
-        MuscularisMucosaOfVentralPelvicUrethraOfFemale()
-    )
-    LAMINA_PROPRIA_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = (
-        LaminaPropriaOfVentralPelvicUrethraOfFemale()
-    )
-    LAMINA_PROPRIA_OF_DORSAL_PELVIC_URETHRA_OF_MALE = (
-        LaminaPropriaOfDorsalPelvicUrethraOfMale()
-    )
-    MUSCULARIS_MUCOSA_OF_DORSAL_PELVIC_URETHRA_OF_MALE = (
-        MuscularisMucosaOfDorsalPelvicUrethraOfMale()
-    )
-    SUBMUCOSA_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        SubmucosaOfDorsalPelvicUrethraOfFemale()
-    )
-    INTERMEDIATE_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = (
-        IntermediateCellLayerOfVentralPelvicUrethraOfMale()
-    )
+    INTERMEDIATE_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = IntermediateCellLayerOfVentralPelvicUrethraOfFemale()
+    INTERMEDIATE_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = IntermediateCellLayerOfDorsalPelvicUrethraOfFemale()
+    INTERMEDIATE_CELL_LAYER_OF_DORSAL_PELVIC_URETHRA_OF_MALE = IntermediateCellLayerOfDorsalPelvicUrethraOfMale()
+    SUBMUCOSA_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = SubmucosaOfVentralPelvicUrethraOfFemale()
+    MUSCULARIS_MUCOSA_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = MuscularisMucosaOfVentralPelvicUrethraOfFemale()
+    LAMINA_PROPRIA_OF_VENTRAL_PELVIC_URETHRA_OF_FEMALE = LaminaPropriaOfVentralPelvicUrethraOfFemale()
+    LAMINA_PROPRIA_OF_DORSAL_PELVIC_URETHRA_OF_MALE = LaminaPropriaOfDorsalPelvicUrethraOfMale()
+    MUSCULARIS_MUCOSA_OF_DORSAL_PELVIC_URETHRA_OF_MALE = MuscularisMucosaOfDorsalPelvicUrethraOfMale()
+    SUBMUCOSA_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = SubmucosaOfDorsalPelvicUrethraOfFemale()
+    INTERMEDIATE_CELL_LAYER_OF_VENTRAL_PELVIC_URETHRA_OF_MALE = IntermediateCellLayerOfVentralPelvicUrethraOfMale()
     LIMB_INTERDIGITAL_REGION_MESENCHYME = LimbInterdigitalRegionMesenchyme()
     LIMB_INTERDIGITAL_REGION_SKIN = LimbInterdigitalRegionSkin()
     FORELIMB_EPITHELIUM = ForelimbEpithelium()
@@ -65105,9 +61619,7 @@ class _MouseAnatomyType:
     HINDLIMB_EPIDERMIS = HindlimbEpidermis()
     HINDLIMB_MESENCHYME = HindlimbMesenchyme()
     HINDLIMB_PRE_CARTILAGE_CONDENSATION = HindlimbPreCartilageCondensation()
-    FORELIMB_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        ForelimbPhalanxPreCartilageCondensation()
-    )
+    FORELIMB_PHALANX_PRE_CARTILAGE_CONDENSATION = ForelimbPhalanxPreCartilageCondensation()
     FORELIMB_DIGIT_CARTILAGE_CONDENSATION = ForelimbDigitCartilageCondensation()
     HAND_JOINT = HandJoint()
     FORELIMB_DIGIT = ForelimbDigit()
@@ -65217,16 +61729,12 @@ class _MouseAnatomyType:
     VENTRICLE_CARDIAC_MUSCLE = VentricleCardiacMuscle()
     BRANCHIAL_ARCH_MEMBRANE = BranchialArchMembrane()
     BRANCHIAL_GROOVE = BranchialGroove()
-    BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = (
-        BranchialArchMesenchymeDerivedFromHeadMesoderm()
-    )
+    BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_HEAD_MESODERM = BranchialArchMesenchymeDerivedFromHeadMesoderm()
     BRANCHIAL_POUCH = BranchialPouch()
     BRANCHIAL_ARCH_ECTODERM = BranchialArchEctoderm()
     BRANCHIAL_ARCH_ENDODERM = BranchialArchEndoderm()
     BRANCHIAL_ARCH_MESENCHYME = BranchialArchMesenchyme()
-    BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = (
-        BranchialArchMesenchymeDerivedFromNeuralCrest()
-    )
+    BRANCHIAL_ARCH_MESENCHYME_DERIVED_FROM_NEURAL_CREST = BranchialArchMesenchymeDerivedFromNeuralCrest()
     PARAXIAL_MESENCHYME = ParaxialMesenchyme()
     EYELID_EPITHELIUM = EyelidEpithelium()
     EYELID_MESENCHYME = EyelidMesenchyme()
@@ -65246,9 +61754,7 @@ class _MouseAnatomyType:
     TAIL_SURFACE_ECTODERM = TailSurfaceEctoderm()
     LINGUAL_SWELLING_MESENCHYME = LingualSwellingMesenchyme()
     LINGUAL_SWELLING_EPITHELIUM = LingualSwellingEpithelium()
-    FORELIMB_BUD_PRESUMPTIVE_APICAL_ECTODERMAL_RIDGE = (
-        ForelimbBudPresumptiveApicalEctodermalRidge()
-    )
+    FORELIMB_BUD_PRESUMPTIVE_APICAL_ECTODERMAL_RIDGE = ForelimbBudPresumptiveApicalEctodermalRidge()
     TONGUE_PAPILLAE = TonguePapillae()
     PRETECTUM = Pretectum()
     EPIDERMIS_BASAL_LAYER = EpidermisBasalLayer()
@@ -65407,9 +61913,7 @@ class _MouseAnatomyType:
     HINDLIMB_DIGIT_MESENCHYME = HindlimbDigitMesenchyme()
     HINDLIMB_PHALANX_CARTILAGE_CONDENSATION = HindlimbPhalanxCartilageCondensation()
     FOOT_JOINT = FootJoint()
-    HINDLIMB_PHALANX_PRE_CARTILAGE_CONDENSATION = (
-        HindlimbPhalanxPreCartilageCondensation()
-    )
+    HINDLIMB_PHALANX_PRE_CARTILAGE_CONDENSATION = HindlimbPhalanxPreCartilageCondensation()
     METATARSUS_CARTILAGE_CONDENSATION = MetatarsusCartilageCondensation()
     PANCREATIC_DUCT = PancreaticDuct()
     DORSAL_PANCREATIC_DUCT = DorsalPancreaticDuct()
@@ -65442,16 +61946,10 @@ class _MouseAnatomyType:
     ABDOMINAL_SEGMENT_OF_TRUNK = AbdominalSegmentOfTrunk()
     ABDUCENS_NUCLEUS = AbducensNucleus()
     ACCESSORY_OLFACTORY_BULB = AccessoryOlfactoryBulb()
-    ACCESSORY_OLFACTORY_BULB_EXTERNAL_PLEXIFORM_LAYER = (
-        AccessoryOlfactoryBulbExternalPlexiformLayer()
-    )
+    ACCESSORY_OLFACTORY_BULB_EXTERNAL_PLEXIFORM_LAYER = AccessoryOlfactoryBulbExternalPlexiformLayer()
     ACCESSORY_OLFACTORY_BULB_GLOMERULAR_LAYER = AccessoryOlfactoryBulbGlomerularLayer()
-    ACCESSORY_OLFACTORY_BULB_GRANULE_CELL_LAYER = (
-        AccessoryOlfactoryBulbGranuleCellLayer()
-    )
-    ACCESSORY_OLFACTORY_BULB_INTERNAL_PLEXIFORM_LAYER = (
-        AccessoryOlfactoryBulbInternalPlexiformLayer()
-    )
+    ACCESSORY_OLFACTORY_BULB_GRANULE_CELL_LAYER = AccessoryOlfactoryBulbGranuleCellLayer()
+    ACCESSORY_OLFACTORY_BULB_INTERNAL_PLEXIFORM_LAYER = AccessoryOlfactoryBulbInternalPlexiformLayer()
     ACCESSORY_OLFACTORY_BULB_MITRAL_CELL_LAYER = AccessoryOlfactoryBulbMitralCellLayer()
     ADIPOSE_TISSUE = AdiposeTissue()
     ADRENAL_CORTEX_ZONE = AdrenalCortexZone()
@@ -65584,9 +62082,7 @@ class _MouseAnatomyType:
     COAT_HAIR_FOLLICLE = CoatHairFollicle()
     COCHLEA_EPITHELIUM = CochleaEpithelium()
     COCHLEAR_NUCLEUS = CochlearNucleus()
-    COELOMIC_EPITHELIUM_OF_REPRODUCTIVE_SYSTEM = (
-        CoelomicEpitheliumOfReproductiveSystem()
-    )
+    COELOMIC_EPITHELIUM_OF_REPRODUCTIVE_SYSTEM = CoelomicEpitheliumOfReproductiveSystem()
     COMPACT_BONE = CompactBone()
     CONNECTIVE_TISSUE = ConnectiveTissue()
     CORONARY_VASCULAR_PLEXUS = CoronaryVascularPlexus()
@@ -65649,15 +62145,9 @@ class _MouseAnatomyType:
     EPIDERMIS_STRATUM_LUCIDUM = EpidermisStratumLucidum()
     EPIDERMIS_SUPRABASAL_LAYER = EpidermisSuprabasalLayer()
     EPIDIDYMAL_FAT_PAD = EpididymalFatPad()
-    EPITHELIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = (
-        EpitheliumOfCapillaryLoopRenalCorpuscle()
-    )
-    EPITHELIUM_OF_DEGENERATING_PARAMESONEPHRIC_DUCT_OF_MALE = (
-        EpitheliumOfDegeneratingParamesonephricDuctOfMale()
-    )
-    EPITHELIUM_OF_PARAMESONEPHRIC_DUCT_OF_FEMALE = (
-        EpitheliumOfParamesonephricDuctOfFemale()
-    )
+    EPITHELIUM_OF_CAPILLARY_LOOP_RENAL_CORPUSCLE = EpitheliumOfCapillaryLoopRenalCorpuscle()
+    EPITHELIUM_OF_DEGENERATING_PARAMESONEPHRIC_DUCT_OF_MALE = EpitheliumOfDegeneratingParamesonephricDuctOfMale()
+    EPITHELIUM_OF_PARAMESONEPHRIC_DUCT_OF_FEMALE = EpitheliumOfParamesonephricDuctOfFemale()
     EPITHELIUM_OF_PARAMESONEPHRIC_DUCT_OF_MALE = EpitheliumOfParamesonephricDuctOfMale()
     ESOPHAGUS_BASAL_EPITHELIUM = EsophagusBasalEpithelium()
     ESOPHAGUS_SEROSA = EsophagusSerosa()
@@ -65784,9 +62274,7 @@ class _MouseAnatomyType:
     METANEPHROS_EPITHELIUM = MetanephrosEpithelium()
     METANEPHROS_GLOMERULAR_EPITHELIUM = MetanephrosGlomerularEpithelium()
     LOOP_OF_HENLE_OF_RENAL_MEDULLA = LoopOfHenleOfRenalMedulla()
-    KIDNEY_OUTER_MEDULLA_PERITUBULAR_CAPILLARY = (
-        KidneyOuterMedullaPeritubularCapillary()
-    )
+    KIDNEY_OUTER_MEDULLA_PERITUBULAR_CAPILLARY = KidneyOuterMedullaPeritubularCapillary()
     LACRIMAL_APPARATUS = LacrimalApparatus()
     LACRIMAL_GLAND = LacrimalGland()
     LACRIMAL_GLAND_BUD = LacrimalGlandBud()
@@ -65830,12 +62318,8 @@ class _MouseAnatomyType:
     LONG_BONE = LongBone()
     LONG_BONE_DIAPHYSIS = LongBoneDiaphysis()
     LONG_BONE_EPIPHYSEAL_PLATE = LongBoneEpiphysealPlate()
-    LONG_BONE_EPIPHYSEAL_PLATE_HYPERTROPHIC_ZONE = (
-        LongBoneEpiphysealPlateHypertrophicZone()
-    )
-    LONG_BONE_EPIPHYSEAL_PLATE_PROLIFERATIVE_ZONE = (
-        LongBoneEpiphysealPlateProliferativeZone()
-    )
+    LONG_BONE_EPIPHYSEAL_PLATE_HYPERTROPHIC_ZONE = LongBoneEpiphysealPlateHypertrophicZone()
+    LONG_BONE_EPIPHYSEAL_PLATE_PROLIFERATIVE_ZONE = LongBoneEpiphysealPlateProliferativeZone()
     LONG_BONE_EPIPHYSIS = LongBoneEpiphysis()
     LONG_BONE_METAPHYSIS = LongBoneMetaphysis()
     LOOP_OF_HENLE_ASCENDING_LIMB = LoopOfHenleAscendingLimb()
@@ -65885,12 +62369,8 @@ class _MouseAnatomyType:
     MEDIASTINAL_LYMPH_NODE = MediastinalLymphNode()
     MEDULLARY_RETICULAR_FORMATION = MedullaryReticularFormation()
     MEDULLARY_TUBULE = MedullaryTubule()
-    MESENCHYME_OF_DEGENERATING_PARAMESONEPHRIC_DUCT_OF_MALE = (
-        MesenchymeOfDegeneratingParamesonephricDuctOfMale()
-    )
-    MESENCHYME_OF_PARAMESONEPHRIC_DUCT_OF_FEMALE = (
-        MesenchymeOfParamesonephricDuctOfFemale()
-    )
+    MESENCHYME_OF_DEGENERATING_PARAMESONEPHRIC_DUCT_OF_MALE = MesenchymeOfDegeneratingParamesonephricDuctOfMale()
+    MESENCHYME_OF_PARAMESONEPHRIC_DUCT_OF_FEMALE = MesenchymeOfParamesonephricDuctOfFemale()
     MESENCHYME_OF_PARAMESONEPHRIC_DUCT_OF_MALE = MesenchymeOfParamesonephricDuctOfMale()
     MESENTERIC_LYMPH_NODE = MesentericLymphNode()
     MESOMETRIUM = Mesometrium()
@@ -65931,14 +62411,10 @@ class _MouseAnatomyType:
     OBLIQUE_ABDOMINAL_MUSCLE = ObliqueAbdominalMuscle()
     OCCIPITAL_CORTEX = OccipitalCortex()
     OCULOMOTOR_NUCLEUS = OculomotorNucleus()
-    MAIN_OLFACTORY_BULB_EXTERNAL_PLEXIFORM_LAYER = (
-        MainOlfactoryBulbExternalPlexiformLayer()
-    )
+    MAIN_OLFACTORY_BULB_EXTERNAL_PLEXIFORM_LAYER = MainOlfactoryBulbExternalPlexiformLayer()
     MAIN_OLFACTORY_BULB_GLOMERULAR_LAYER = MainOlfactoryBulbGlomerularLayer()
     MAIN_OLFACTORY_BULB_GRANULE_CELL_LAYER = MainOlfactoryBulbGranuleCellLayer()
-    MAIN_OLFACTORY_BULB_INTERNAL_PLEXIFORM_LAYER = (
-        MainOlfactoryBulbInternalPlexiformLayer()
-    )
+    MAIN_OLFACTORY_BULB_INTERNAL_PLEXIFORM_LAYER = MainOlfactoryBulbInternalPlexiformLayer()
     MAIN_OLFACTORY_BULB_MITRAL_CELL_LAYER = MainOlfactoryBulbMitralCellLayer()
     MAIN_OLFACTORY_BULB_SUBEPENDYMAL_ZONE = MainOlfactoryBulbSubependymalZone()
     OLFACTORY_GLAND = OlfactoryGland()
@@ -65952,9 +62428,7 @@ class _MouseAnatomyType:
     OSSEUS_COCHLEAR_CANAL = OsseusCochlearCanal()
     OSSEUS_SPIRAL_LAMINA = OsseusSpiralLamina()
     OUTFLOW_TRACT_CARDIAC_MUSCLE = OutflowTractCardiacMuscle()
-    OUTFLOW_TRACT_PULMONARY_COMPONENT_DISTAL_PART = (
-        OutflowTractPulmonaryComponentDistalPart()
-    )
+    OUTFLOW_TRACT_PULMONARY_COMPONENT_DISTAL_PART = OutflowTractPulmonaryComponentDistalPart()
     OVARY_ANTRAL_FOLLICLE = OvaryAntralFollicle()
     OVARY_CAPSULE = OvaryCapsule()
     OVARY_FOLLICLE = OvaryFollicle()
@@ -66023,9 +62497,7 @@ class _MouseAnatomyType:
     POSTERIOR_SEPTAL_COMPLEX = PosteriorSeptalComplex()
     POSTERIOR_THALAMIC_GROUP = PosteriorThalamicGroup()
     POSTERIOR_THALAMIC_NUCLEUS = PosteriorThalamicNucleus()
-    POSTEROLATERAL_CORTICAL_AMYGDALOID_NUCLEUS = (
-        PosterolateralCorticalAmygdaloidNucleus()
-    )
+    POSTEROLATERAL_CORTICAL_AMYGDALOID_NUCLEUS = PosterolateralCorticalAmygdaloidNucleus()
     POSTEROMEDIAL_CORTICAL_AMYGDALOID_NUCLEUS = PosteromedialCorticalAmygdaloidNucleus()
     PREPUTIAL_GLAND = PreputialGland()
     PREPUTIAL_SWELLING = PreputialSwelling()
@@ -66057,9 +62529,7 @@ class _MouseAnatomyType:
     RESPIRATORY_BRONCHIOLE = RespiratoryBronchiole()
     RESPIRATORY_BRONCHIOLE_EPITHELIUM = RespiratoryBronchioleEpithelium()
     RESPIRATORY_SYSTEM_BLOOD_VESSEL = RespiratorySystemBloodVessel()
-    RESPIRATORY_SYSTEM_BLOOD_VESSEL_ENDOTHELIUM = (
-        RespiratorySystemBloodVesselEndothelium()
-    )
+    RESPIRATORY_SYSTEM_BLOOD_VESSEL_ENDOTHELIUM = RespiratorySystemBloodVesselEndothelium()
     RESPIRATORY_SYSTEM_MUSCLE = RespiratorySystemMuscle()
     RESPIRATORY_SYSTEM_SMOOTH_MUSCLE = RespiratorySystemSmoothMuscle()
     RETICULAR_MEMBRANE = ReticularMembrane()
@@ -66228,9 +62698,7 @@ class _MouseAnatomyType:
     VENOUS_SYSTEM_ENDOTHELIUM = VenousSystemEndothelium()
     VENTRAL_LATERAL_GENICULATE_NUCLEUS = VentralLateralGeniculateNucleus()
     VENTRAL_NASAL_ARTERY = VentralNasalArtery()
-    VENTRAL_POSTERIOR_LATERAL_THALAMIC_NUCLEUS = (
-        VentralPosteriorLateralThalamicNucleus()
-    )
+    VENTRAL_POSTERIOR_LATERAL_THALAMIC_NUCLEUS = VentralPosteriorLateralThalamicNucleus()
     VENTRAL_POSTERIOR_MEDIAL_THALAMIC_NUCLEUS = VentralPosteriorMedialThalamicNucleus()
     VENTRAL_POSTERIOR_THALAMIC_GROUP = VentralPosteriorThalamicGroup()
     VENTRAL_TEGMENTAL_AREA = VentralTegmentalArea()
@@ -66294,18 +62762,14 @@ class _MouseAnatomyType:
     CARDIOVASCULAR_SYSTEM_MESENCHYME = CardiovascularSystemMesenchyme()
     FEMALE_REPRODUCTIVE_SYSTEM_MESENCHYME = FemaleReproductiveSystemMesenchyme()
     MALE_REPRODUCTIVE_SYSTEM_MESENCHYME = MaleReproductiveSystemMesenchyme()
-    CARTILAGE_PRIMORDIUM_OF_FUTURE_SPINOUS_PROCESS = (
-        CartilagePrimordiumOfFutureSpinousProcess()
-    )
+    CARTILAGE_PRIMORDIUM_OF_FUTURE_SPINOUS_PROCESS = CartilagePrimordiumOfFutureSpinousProcess()
     RESPIRATORY_SYSTEM_CONNECTIVE_TISSUE = RespiratorySystemConnectiveTissue()
     SENSORY_ORGAN_CARTILAGE = SensoryOrganCartilage()
     OSSICLE_CARTILAGE_CONDENSATION = OssicleCartilageCondensation()
     PECTORAL_THORACIC_CARTILAGE_CONDENSATION = PectoralThoracicCartilageCondensation()
     PELVIC_GIRDLE_CARTILAGE_CONDENSATION = PelvicGirdleCartilageCondensation()
     OSSICLE_PRE_CARTILAGE_CONDENSATION = OssiclePreCartilageCondensation()
-    PECTORAL_THORACIC_PRE_CARTILAGE_CONDENSATION = (
-        PectoralThoracicPreCartilageCondensation()
-    )
+    PECTORAL_THORACIC_PRE_CARTILAGE_CONDENSATION = PectoralThoracicPreCartilageCondensation()
     PELVIC_GIRDLE_PRE_CARTILAGE_CONDENSATION = PelvicGirdlePreCartilageCondensation()
     ECTODERM = Ectoderm()
     ENDODERM = Endoderm()
@@ -66378,17 +62842,11 @@ class _MouseAnatomyType:
     LEG_MUSCLE = LegMuscle()
     ATRIUM_AURICULAR_REGION = AtriumAuricularRegion()
     ATRIUM_AURICULAR_REGION_CARDIAC_MUSCLE = AtriumAuricularRegionCardiacMuscle()
-    ATRIUM_AURICULAR_REGION_ENDOCARDIAL_LINING = (
-        AtriumAuricularRegionEndocardialLining()
-    )
+    ATRIUM_AURICULAR_REGION_ENDOCARDIAL_LINING = AtriumAuricularRegionEndocardialLining()
     ATRIUM_LUMEN = AtriumLumen()
     COMMON_ATRIAL_CHAMBER_AURICULAR_REGION = CommonAtrialChamberAuricularRegion()
-    COMMON_ATRIAL_CHAMBER_AURICULAR_REGION_CARDIAC_MUSCLE = (
-        CommonAtrialChamberAuricularRegionCardiacMuscle()
-    )
-    COMMON_ATRIAL_CHAMBER_AURICULAR_REGION_ENDOCARDIAL_LINING = (
-        CommonAtrialChamberAuricularRegionEndocardialLining()
-    )
+    COMMON_ATRIAL_CHAMBER_AURICULAR_REGION_CARDIAC_MUSCLE = CommonAtrialChamberAuricularRegionCardiacMuscle()
+    COMMON_ATRIAL_CHAMBER_AURICULAR_REGION_ENDOCARDIAL_LINING = CommonAtrialChamberAuricularRegionEndocardialLining()
     CRANIUM_BONE_PRIMORDIUM = CraniumBonePrimordium()
     _4_8_CELL_STAGE_CONCEPTUS = _48CellStageConceptus()
     CRANIAL_PREGANGLION = CranialPreganglion()
@@ -66399,12 +62857,8 @@ class _MouseAnatomyType:
     CLOACAL_EPITHELIUM_OF_CLOACAL_MEMBRANE = CloacalEpitheliumOfCloacalMembrane()
     SURFACE_ECTODERM_OF_CLOACAL_MEMBRANE = SurfaceEctodermOfCloacalMembrane()
     SUPERFICIAL_CELL_OF_BLADDER_UROTHELIUM = SuperficialCellOfBladderUrothelium()
-    INTERMEDIATE_CELL_LAYER_OF_BLADDER_UROTHELIUM = (
-        IntermediateCellLayerOfBladderUrothelium()
-    )
-    KRT5_EXPRESSING_BASAL_CELL_OF_BLADDER_UROTHELIUM = (
-        Krt5ExpressingBasalCellOfBladderUrothelium()
-    )
+    INTERMEDIATE_CELL_LAYER_OF_BLADDER_UROTHELIUM = IntermediateCellLayerOfBladderUrothelium()
+    KRT5_EXPRESSING_BASAL_CELL_OF_BLADDER_UROTHELIUM = Krt5ExpressingBasalCellOfBladderUrothelium()
     SUBUROTHELIAL_LAMINA_PROPRIA_OF_BLADDER = SuburothelialLaminaPropriaOfBladder()
     OUTER_LAMINA_PROPRIA_OF_BLADDER = OuterLaminaPropriaOfBladder()
     OUTER_LAYER_OF_BLADDER = OuterLayerOfBladder()
@@ -66418,16 +62872,10 @@ class _MouseAnatomyType:
     UNDIFFERENTIATED_EPITHELIAL_CELL_OF_UROTHELIUM_OF_PRIMITIVE_BLADDER = (
         UndifferentiatedEpithelialCellOfUrotheliumOfPrimitiveBladder()
     )
-    INTERMEDIATE_CELL_OF_UROTHELIUM_OF_PRIMITIVE_BLADDER = (
-        IntermediateCellOfUrotheliumOfPrimitiveBladder()
-    )
+    INTERMEDIATE_CELL_OF_UROTHELIUM_OF_PRIMITIVE_BLADDER = IntermediateCellOfUrotheliumOfPrimitiveBladder()
     P_0_CELL_OF_UROTHELIUM_OF_PRIMITIVE_BLADDER = P0CellOfUrotheliumOfPrimitiveBladder()
-    INNER_MESENCHYMAL_LAYER_OF_PRIMITIVE_BLADDER = (
-        InnerMesenchymalLayerOfPrimitiveBladder()
-    )
-    OUTER_MESENCHYMAL_LAYER_OF_PRIMITIVE_BLADDER = (
-        OuterMesenchymalLayerOfPrimitiveBladder()
-    )
+    INNER_MESENCHYMAL_LAYER_OF_PRIMITIVE_BLADDER = InnerMesenchymalLayerOfPrimitiveBladder()
+    OUTER_MESENCHYMAL_LAYER_OF_PRIMITIVE_BLADDER = OuterMesenchymalLayerOfPrimitiveBladder()
     MUSCLE_LAYER_OF_PRIMITIVE_BLADDER = MuscleLayerOfPrimitiveBladder()
     SMOOTH_MUSCLE_CELL_OF_OUTER_MESENCHYMAL_LAYER_OF_PRIMITIVE_BLADDER = (
         SmoothMuscleCellOfOuterMesenchymalLayerOfPrimitiveBladder()
@@ -66438,9 +62886,7 @@ class _MouseAnatomyType:
     OUTER_LAYER_OF_PRIMITIVE_BLADDER = OuterLayerOfPrimitiveBladder()
     SEROSA_OF_PRIMITIVE_BLADDER = SerosaOfPrimitiveBladder()
     ADVENTITIA_OF_PRIMITIVE_BLADDER = AdventitiaOfPrimitiveBladder()
-    PRIMITIVE_BLADDER_CAUDAL_UROGENITAL_SINUS_TRANSITION_ZONE = (
-        PrimitiveBladderCaudalUrogenitalSinusTransitionZone()
-    )
+    PRIMITIVE_BLADDER_CAUDAL_UROGENITAL_SINUS_TRANSITION_ZONE = PrimitiveBladderCaudalUrogenitalSinusTransitionZone()
     EPITHELIUM_OF_PRIMITIVE_BLADDER_CAUDAL_UROGENITAL_SINUS_TRANSITION_ZONE = (
         EpitheliumOfPrimitiveBladderCaudalUrogenitalSinusTransitionZone()
     )
@@ -66453,48 +62899,28 @@ class _MouseAnatomyType:
     DEVELOPING_VASCULATURE_OF_PELVIC_URETHRA = DevelopingVasculatureOfPelvicUrethra()
     ADVENTITIA_OF_PELVIC_URETHRA = AdventitiaOfPelvicUrethra()
     REST_OF_EPITHELIUM_OF_PELVIC_URETHRA = RestOfEpitheliumOfPelvicUrethra()
-    SUPERFICIAL_CELL_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = (
-        SuperficialCellLayerOfPelvicUrethraOfFemale()
-    )
-    INTERMEDIATE_CELL_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = (
-        IntermediateCellLayerOfPelvicUrethraOfFemale()
-    )
-    BASAL_CELL_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = (
-        BasalCellLayerOfPelvicUrethraOfFemale()
-    )
+    SUPERFICIAL_CELL_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = SuperficialCellLayerOfPelvicUrethraOfFemale()
+    INTERMEDIATE_CELL_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = IntermediateCellLayerOfPelvicUrethraOfFemale()
+    BASAL_CELL_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = BasalCellLayerOfPelvicUrethraOfFemale()
     UROGENITAL_SINUS_RIDGE_OF_FEMALE = UrogenitalSinusRidgeOfFemale()
-    REST_OF_EPITHELIUM_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = (
-        RestOfEpitheliumOfDorsalPelvicUrethraOfFemale()
-    )
+    REST_OF_EPITHELIUM_OF_DORSAL_PELVIC_URETHRA_OF_FEMALE = RestOfEpitheliumOfDorsalPelvicUrethraOfFemale()
     LAMINA_PROPRIA_OF_PELVIC_URETHRA_OF_FEMALE = LaminaPropriaOfPelvicUrethraOfFemale()
-    MUSCULARIS_MUCOSA_OF_PELVIC_URETHRA_OF_FEMALE = (
-        MuscularisMucosaOfPelvicUrethraOfFemale()
-    )
+    MUSCULARIS_MUCOSA_OF_PELVIC_URETHRA_OF_FEMALE = MuscularisMucosaOfPelvicUrethraOfFemale()
     SUBMUCOSA_OF_PELVIC_URETHRA_OF_FEMALE = SubmucosaOfPelvicUrethraOfFemale()
     ANTERIOR_MESENCHYMAL_PAD_OF_FEMALE = AnteriorMesenchymalPadOfFemale()
     DORSAL_MESENCHYMAL_PAD_OF_FEMALE = DorsalMesenchymalPadOfFemale()
     VENTRAL_MESENCHYMAL_PAD_OF_FEMALE = VentralMesenchymalPadOfFemale()
-    SMOOTH_MUSCLE_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = (
-        SmoothMuscleLayerOfPelvicUrethraOfFemale()
-    )
+    SMOOTH_MUSCLE_LAYER_OF_PELVIC_URETHRA_OF_FEMALE = SmoothMuscleLayerOfPelvicUrethraOfFemale()
     RHABDOSPHINCTER_OF_FEMALE = RhabdosphincterOfFemale()
     ADVENTITIA_OF_PELVIC_URETHRA_OF_FEMALE = AdventitiaOfPelvicUrethraOfFemale()
     EGG_CYLINDER = EggCylinder()
-    SUPERFICIAL_CELL_LAYER_OF_PELVIC_URETHRA_OF_MALE = (
-        SuperficialCellLayerOfPelvicUrethraOfMale()
-    )
-    INTERMEDIATE_CELL_LAYER_OF_PELVIC_URETHRA_OF_MALE = (
-        IntermediateCellLayerOfPelvicUrethraOfMale()
-    )
+    SUPERFICIAL_CELL_LAYER_OF_PELVIC_URETHRA_OF_MALE = SuperficialCellLayerOfPelvicUrethraOfMale()
+    INTERMEDIATE_CELL_LAYER_OF_PELVIC_URETHRA_OF_MALE = IntermediateCellLayerOfPelvicUrethraOfMale()
     BASAL_CELL_LAYER_OF_PELVIC_URETHRA_OF_MALE = BasalCellLayerOfPelvicUrethraOfMale()
     UROGENITAL_SINUS_RIDGE_OF_MALE = UrogenitalSinusRidgeOfMale()
-    REST_OF_EPITHELIUM_OF_DORSAL_PELVIC_URETHRA_OF_MALE = (
-        RestOfEpitheliumOfDorsalPelvicUrethraOfMale()
-    )
+    REST_OF_EPITHELIUM_OF_DORSAL_PELVIC_URETHRA_OF_MALE = RestOfEpitheliumOfDorsalPelvicUrethraOfMale()
     LAMINA_PROPRIA_OF_PELVIC_URETHRA_OF_MALE = LaminaPropriaOfPelvicUrethraOfMale()
-    MUSCULARIS_MUCOSA_OF_PELVIC_URETHRA_OF_MALE = (
-        MuscularisMucosaOfPelvicUrethraOfMale()
-    )
+    MUSCULARIS_MUCOSA_OF_PELVIC_URETHRA_OF_MALE = MuscularisMucosaOfPelvicUrethraOfMale()
     SUBMUCOSA_OF_PELVIC_URETHRA_OF_MALE = SubmucosaOfPelvicUrethraOfMale()
     ANTERIOR_MESENCHYMAL_PAD_OF_MALE = AnteriorMesenchymalPadOfMale()
     DORSAL_MESENCHYMAL_PAD_OF_MALE = DorsalMesenchymalPadOfMale()
@@ -66506,9 +62932,7 @@ class _MouseAnatomyType:
     VENTRAL_EPITHELIAL_BUD_OF_MALE = VentralEpithelialBudOfMale()
     EPITHELIUM_OF_DORSAL_PROSTATIC_URETHRA = EpitheliumOfDorsalProstaticUrethra()
     VERUMONTANUM = Verumontanum()
-    REST_OF_EPITHELIUM_OF_DORSAL_PROSTATIC_URETHRA = (
-        RestOfEpitheliumOfDorsalProstaticUrethra()
-    )
+    REST_OF_EPITHELIUM_OF_DORSAL_PROSTATIC_URETHRA = RestOfEpitheliumOfDorsalProstaticUrethra()
     EPITHELIUM_OF_VENTRAL_PROSTATIC_URETHRA = EpitheliumOfVentralProstaticUrethra()
     ADVENTITIA_OF_PROSTATIC_URETHRA = AdventitiaOfProstaticUrethra()
     PROSTATE_BUD = ProstateBud()
@@ -66517,21 +62941,13 @@ class _MouseAnatomyType:
     VENTRAL_PROSTATE_BUD = VentralProstateBud()
     LATERAL_PROSTATE_BUD = LateralProstateBud()
     EPITHELIUM_OF_ANTERIOR_PROSTATE_BUD = EpitheliumOfAnteriorProstateBud()
-    PERI_PROSTATIC_MESENCHYME_OF_ANTERIOR_PROSTATE_BUD = (
-        PeriProstaticMesenchymeOfAnteriorProstateBud()
-    )
+    PERI_PROSTATIC_MESENCHYME_OF_ANTERIOR_PROSTATE_BUD = PeriProstaticMesenchymeOfAnteriorProstateBud()
     EPITHELIUM_OF_DORSAL_PROSTATE_BUD = EpitheliumOfDorsalProstateBud()
-    PERI_PROSTATIC_MESENCHYME_OF_DORSAL_PROSTATE_BUD = (
-        PeriProstaticMesenchymeOfDorsalProstateBud()
-    )
+    PERI_PROSTATIC_MESENCHYME_OF_DORSAL_PROSTATE_BUD = PeriProstaticMesenchymeOfDorsalProstateBud()
     EPITHELIUM_OF_VENTRAL_PROSTATE_BUD = EpitheliumOfVentralProstateBud()
-    PERI_PROSTATIC_MESENCHYME_OF_VENTRAL_PROSTATE_BUD = (
-        PeriProstaticMesenchymeOfVentralProstateBud()
-    )
+    PERI_PROSTATIC_MESENCHYME_OF_VENTRAL_PROSTATE_BUD = PeriProstaticMesenchymeOfVentralProstateBud()
     EPITHELIUM_OF_LATERAL_PROSTATE_BUD = EpitheliumOfLateralProstateBud()
-    PERI_PROSTATIC_MESENCHYME_OF_LATERAL_PROSTATE_BUD = (
-        PeriProstaticMesenchymeOfLateralProstateBud()
-    )
+    PERI_PROSTATIC_MESENCHYME_OF_LATERAL_PROSTATE_BUD = PeriProstaticMesenchymeOfLateralProstateBud()
     SHOULDER_MUSCLE = ShoulderMuscle()
     TERES_MUSCLE = TeresMuscle()
     TERES_MINOR = TeresMinor()
@@ -66693,9 +63109,7 @@ class _MouseAnatomyType:
     LYMPHATIC_VESSEL_TUNICA_ADVENTITIA = LymphaticVesselTunicaAdventitia()
     SURFACE_ECTODERM_OF_GENITAL_TUBERCLE = SurfaceEctodermOfGenitalTubercle()
     PALATINE_VASCULATURE = PalatineVasculature()
-    REICHERTS_CARTILAGE_PRE_CARTILAGE_CONDENSATION = (
-        ReichertsCartilagePreCartilageCondensation()
-    )
+    REICHERTS_CARTILAGE_PRE_CARTILAGE_CONDENSATION = ReichertsCartilagePreCartilageCondensation()
     REICHERTS_CARTILAGE_CONDENSATION = ReichertsCartilageCondensation()
     REICHERTS_CARTILAGE = ReichertsCartilage()
     STYLOID_PROCESS_OF_TEMPORAL_BONE = StyloidProcessOfTemporalBone()
@@ -66711,12 +63125,8 @@ class _MouseAnatomyType:
     INTERNAL_VERTEBRAL_VENOUS_PLEXUS = InternalVertebralVenousPlexus()
     TAILGUT = Tailgut()
     BLADDER_URETHRA_TRANSITION_ZONE = BladderUrethraTransitionZone()
-    EPITHELIUM_OF_BLADDER_URETHRA_TRANSITION_ZONE = (
-        EpitheliumOfBladderUrethraTransitionZone()
-    )
-    MESENCHYME_OF_BLADDER_URETHRA_TRANSITION_ZONE = (
-        MesenchymeOfBladderUrethraTransitionZone()
-    )
+    EPITHELIUM_OF_BLADDER_URETHRA_TRANSITION_ZONE = EpitheliumOfBladderUrethraTransitionZone()
+    MESENCHYME_OF_BLADDER_URETHRA_TRANSITION_ZONE = MesenchymeOfBladderUrethraTransitionZone()
     REMNANT_OF_MESONEPHRIC_TUBULE_OF_MALE = RemnantOfMesonephricTubuleOfMale()
     FORELIMB_INTERPHALANGEAL_JOINT = ForelimbInterphalangealJoint()
     HINDLIMB_INTERPHALANGEAL_JOINT = HindlimbInterphalangealJoint()
@@ -66732,89 +63142,45 @@ class _MouseAnatomyType:
     NERVE_OF_UROTHELIUM_OF_BLADDER_FUNDUS = NerveOfUrotheliumOfBladderFundus()
     NERVE_OF_UROTHELIUM_OF_BLADDER_NECK = NerveOfUrotheliumOfBladderNeck()
     NERVE_OF_UROTHELIUM_OF_BLADDER_TRIGONE = NerveOfUrotheliumOfBladderTrigone()
-    NERVE_OF_UROTHELIUM_OF_VENTRAL_BLADDER_NECK = (
-        NerveOfUrotheliumOfVentralBladderNeck()
-    )
+    NERVE_OF_UROTHELIUM_OF_VENTRAL_BLADDER_NECK = NerveOfUrotheliumOfVentralBladderNeck()
     NERVE_OF_LAMINA_PROPRIA_OF_BLADDER_FUNDUS = NerveOfLaminaPropriaOfBladderFundus()
     NERVE_OF_LAMINA_PROPRIA_OF_BLADDER_NECK = NerveOfLaminaPropriaOfBladderNeck()
-    NERVE_OF_BLOOD_VESSEL_OF_LAMINA_PROPRIA_OF_BLADDER_FUNDUS = (
-        NerveOfBloodVesselOfLaminaPropriaOfBladderFundus()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_LAMINA_PROPRIA_OF_BLADDER_NECK = (
-        NerveOfBloodVesselOfLaminaPropriaOfBladderNeck()
-    )
-    NERVE_OF_SUBUROTHELIAL_LAMINA_PROPRIA_OF_BLADDER_FUNDUS = (
-        NerveOfSuburothelialLaminaPropriaOfBladderFundus()
-    )
-    NERVE_OF_OUTER_LAMINA_PROPRIA_OF_BLADDER_FUNDUS = (
-        NerveOfOuterLaminaPropriaOfBladderFundus()
-    )
+    NERVE_OF_BLOOD_VESSEL_OF_LAMINA_PROPRIA_OF_BLADDER_FUNDUS = NerveOfBloodVesselOfLaminaPropriaOfBladderFundus()
+    NERVE_OF_BLOOD_VESSEL_OF_LAMINA_PROPRIA_OF_BLADDER_NECK = NerveOfBloodVesselOfLaminaPropriaOfBladderNeck()
+    NERVE_OF_SUBUROTHELIAL_LAMINA_PROPRIA_OF_BLADDER_FUNDUS = NerveOfSuburothelialLaminaPropriaOfBladderFundus()
+    NERVE_OF_OUTER_LAMINA_PROPRIA_OF_BLADDER_FUNDUS = NerveOfOuterLaminaPropriaOfBladderFundus()
     NERVE_OF_LAMINA_PROPRIA_OF_BLADDER_TRIGONE = NerveOfLaminaPropriaOfBladderTrigone()
-    NERVE_OF_LAMINA_PROPRIA_OF_VENTRAL_BLADDER_NECK = (
-        NerveOfLaminaPropriaOfVentralBladderNeck()
-    )
+    NERVE_OF_LAMINA_PROPRIA_OF_VENTRAL_BLADDER_NECK = NerveOfLaminaPropriaOfVentralBladderNeck()
     NERVE_OF_BLOOD_VESSEL_OF_SUBUROTHELIAL_LAMINA_PROPRIA_OF_BLADDER_FUNDUS = (
         NerveOfBloodVesselOfSuburothelialLaminaPropriaOfBladderFundus()
     )
     NERVE_OF_BLOOD_VESSEL_OF_OUTER_LAMINA_PROPRIA_OF_BLADDER_FUNDUS = (
         NerveOfBloodVesselOfOuterLaminaPropriaOfBladderFundus()
     )
-    NERVE_OF_BLOOD_VESSEL_OF_LAMINA_PROPRIA_OF_TRIGONE = (
-        NerveOfBloodVesselOfLaminaPropriaOfTrigone()
-    )
+    NERVE_OF_BLOOD_VESSEL_OF_LAMINA_PROPRIA_OF_TRIGONE = NerveOfBloodVesselOfLaminaPropriaOfTrigone()
     NERVE_OF_BLOOD_VESSEL_OF_LAMINA_PROPRIA_OF_VENTRAL_BLADDER_NECK = (
         NerveOfBloodVesselOfLaminaPropriaOfVentralBladderNeck()
     )
-    NERVE_OF_NONVASCULAR_TISSUE_OF_DETRUSOR_OF_BLADDER = (
-        NerveOfNonvascularTissueOfDetrusorOfBladder()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_BLADDER = (
-        NerveOfBloodVesselOfDetrusorOfBladder()
-    )
+    NERVE_OF_NONVASCULAR_TISSUE_OF_DETRUSOR_OF_BLADDER = NerveOfNonvascularTissueOfDetrusorOfBladder()
+    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_BLADDER = NerveOfBloodVesselOfDetrusorOfBladder()
     NERVE_OF_DETRUSOR_MUSCLE_OF_BLADDER_FUNDUS = NerveOfDetrusorMuscleOfBladderFundus()
     NERVE_OF_DETRUSOR_MUSCLE_OF_BLADDER_NECK = NerveOfDetrusorMuscleOfBladderNeck()
-    NERVE_OF_DETRUSOR_MUSCLE_OF_BLADDER_TRIGONE = (
-        NerveOfDetrusorMuscleOfBladderTrigone()
-    )
-    NERVE_OF_DETRUSOR_MUSCLE_OF_VENTRAL_BLADDER_NECK = (
-        NerveOfDetrusorMuscleOfVentralBladderNeck()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_BLADDER_FUNDUS = (
-        NerveOfBloodVesselOfDetrusorOfBladderFundus()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_BLADDER_NECK = (
-        NerveOfBloodVesselOfDetrusorOfBladderNeck()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_TRIGONE = (
-        NerveOfBloodVesselOfDetrusorOfTrigone()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_VENTRAL_BLADDER_NECK = (
-        NerveOfBloodVesselOfDetrusorOfVentralBladderNeck()
-    )
-    NERVE_OF_NONVASCULAR_TISSUE_OF_OUTER_LAYER_OF_BLADDER = (
-        NerveOfNonvascularTissueOfOuterLayerOfBladder()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_OUTER_LAYER_OF_BLADDER = (
-        NerveOfBloodVesselOfOuterLayerOfBladder()
-    )
+    NERVE_OF_DETRUSOR_MUSCLE_OF_BLADDER_TRIGONE = NerveOfDetrusorMuscleOfBladderTrigone()
+    NERVE_OF_DETRUSOR_MUSCLE_OF_VENTRAL_BLADDER_NECK = NerveOfDetrusorMuscleOfVentralBladderNeck()
+    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_BLADDER_FUNDUS = NerveOfBloodVesselOfDetrusorOfBladderFundus()
+    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_BLADDER_NECK = NerveOfBloodVesselOfDetrusorOfBladderNeck()
+    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_TRIGONE = NerveOfBloodVesselOfDetrusorOfTrigone()
+    NERVE_OF_BLOOD_VESSEL_OF_DETRUSOR_OF_VENTRAL_BLADDER_NECK = NerveOfBloodVesselOfDetrusorOfVentralBladderNeck()
+    NERVE_OF_NONVASCULAR_TISSUE_OF_OUTER_LAYER_OF_BLADDER = NerveOfNonvascularTissueOfOuterLayerOfBladder()
+    NERVE_OF_BLOOD_VESSEL_OF_OUTER_LAYER_OF_BLADDER = NerveOfBloodVesselOfOuterLayerOfBladder()
     NERVE_OF_SEROSA_OF_BLADDER_FUNDUS = NerveOfSerosaOfBladderFundus()
     NERVE_OF_ADVENTITIA_OF_BLADDER_NECK = NerveOfAdventitiaOfBladderNeck()
     NERVE_OF_ADVENTITIA_OF_BLADDER_TRIGONE = NerveOfAdventitiaOfBladderTrigone()
-    NERVE_OF_ADVENTITIA_OF_VENTRAL_BLADDER_NECK = (
-        NerveOfAdventitiaOfVentralBladderNeck()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_SEROSA_OF_BLADDER_FUNDUS = (
-        NerveOfBloodVesselOfSerosaOfBladderFundus()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_ADVENTITIA_OF_BLADDER_NECK = (
-        NerveOfBloodVesselOfAdventitiaOfBladderNeck()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_ADVENTITIA_OF_TRIGONE = (
-        NerveOfBloodVesselOfAdventitiaOfTrigone()
-    )
-    NERVE_OF_BLOOD_VESSEL_OF_ADVENTITIA_OF_VENTRAL_BLADDER_NECK = (
-        NerveOfBloodVesselOfAdventitiaOfVentralBladderNeck()
-    )
+    NERVE_OF_ADVENTITIA_OF_VENTRAL_BLADDER_NECK = NerveOfAdventitiaOfVentralBladderNeck()
+    NERVE_OF_BLOOD_VESSEL_OF_SEROSA_OF_BLADDER_FUNDUS = NerveOfBloodVesselOfSerosaOfBladderFundus()
+    NERVE_OF_BLOOD_VESSEL_OF_ADVENTITIA_OF_BLADDER_NECK = NerveOfBloodVesselOfAdventitiaOfBladderNeck()
+    NERVE_OF_BLOOD_VESSEL_OF_ADVENTITIA_OF_TRIGONE = NerveOfBloodVesselOfAdventitiaOfTrigone()
+    NERVE_OF_BLOOD_VESSEL_OF_ADVENTITIA_OF_VENTRAL_BLADDER_NECK = NerveOfBloodVesselOfAdventitiaOfVentralBladderNeck()
     DUODENUM_MESENCHYME = DuodenumMesenchyme()
     GENITAL_TUBERCLE_MESENCHYME = GenitalTubercleMesenchyme()
     SMALL_INTESTINE_MESENCHYME = SmallIntestineMesenchyme()
@@ -66833,18 +63199,10 @@ class _MouseAnatomyType:
     MALE_UROGENITAL_MATING_PROTUBERANCE = MaleUrogenitalMatingProtuberance()
     BONE_OF_OS_PENIS = BoneOfOsPenis()
     HYALINE_CARTILAGE_OF_OS_PENIS = HyalineCartilageOfOsPenis()
-    MALE_UROGENITAL_MATING_PROTUBERANCE_CARTILAGE = (
-        MaleUrogenitalMatingProtuberanceCartilage()
-    )
-    MALE_UROGENITAL_MATING_PROTUBERANCE_CORPUS_CAVERNOSUM = (
-        MaleUrogenitalMatingProtuberanceCorpusCavernosum()
-    )
-    MALE_UROGENITAL_MATING_PROTUBERANCE_SURFACE_EPITHELIUM = (
-        MaleUrogenitalMatingProtuberanceSurfaceEpithelium()
-    )
-    MALE_UROGENITAL_MATING_PROTUBERANCE_RIDGE_GROOVE = (
-        MaleUrogenitalMatingProtuberanceRidgeGroove()
-    )
+    MALE_UROGENITAL_MATING_PROTUBERANCE_CARTILAGE = MaleUrogenitalMatingProtuberanceCartilage()
+    MALE_UROGENITAL_MATING_PROTUBERANCE_CORPUS_CAVERNOSUM = MaleUrogenitalMatingProtuberanceCorpusCavernosum()
+    MALE_UROGENITAL_MATING_PROTUBERANCE_SURFACE_EPITHELIUM = MaleUrogenitalMatingProtuberanceSurfaceEpithelium()
+    MALE_UROGENITAL_MATING_PROTUBERANCE_RIDGE_GROOVE = MaleUrogenitalMatingProtuberanceRidgeGroove()
     MALE_UROGENITAL_MATING_PROTUBERANCE_SKIN = MaleUrogenitalMatingProtuberanceSkin()
     CORPUS_CAVERNOSUM_GLANDIS = CorpusCavernosumGlandis()
     CORPUS_CAVERNOSUM_URETHRA = CorpusCavernosumUrethra()
@@ -66852,9 +63210,7 @@ class _MouseAnatomyType:
     FEMALE_PREPUCE_LAMINA_PROPRIA = FemalePrepuceLaminaPropria()
     SCROTUM_SKIN = ScrotumSkin()
     LAMINA_PROPRIA_OF_SCROTUM = LaminaPropriaOfScrotum()
-    DEVELOPING_VASCULATURE_OF_SCROTAL_SWELLING = (
-        DevelopingVasculatureOfScrotalSwelling()
-    )
+    DEVELOPING_VASCULATURE_OF_SCROTAL_SWELLING = DevelopingVasculatureOfScrotalSwelling()
     SEPTUM_OF_SCROTAL_FOLD = SeptumOfScrotalFold()
     DEVELOPING_VASCULATURE_OF_SCROTAL_FOLD = DevelopingVasculatureOfScrotalFold()
     DEVELOPING_VASCULATURE_OF_LABIAL_FOLD = DevelopingVasculatureOfLabialFold()
@@ -66871,15 +63227,9 @@ class _MouseAnatomyType:
     POSTERIOR_MALE_URETHRAL_GLAND_BUD = PosteriorMaleUrethralGlandBud()
     FEMALE_ACCESSORY_GLAND = FemaleAccessoryGland()
     BULBOURETHRAL_GLAND_OF_FEMALE = BulbourethralGlandOfFemale()
-    EPITHELIUM_OF_BULBOURETHRAL_GLAND_OF_FEMALE = (
-        EpitheliumOfBulbourethralGlandOfFemale()
-    )
-    LAMINA_PROPRIA_OF_BULBOURETHRAL_GLAND_OF_FEMALE = (
-        LaminaPropriaOfBulbourethralGlandOfFemale()
-    )
-    VASCULATURE_OF_BULBOURETHRAL_GLAND_OF_FEMALE = (
-        VasculatureOfBulbourethralGlandOfFemale()
-    )
+    EPITHELIUM_OF_BULBOURETHRAL_GLAND_OF_FEMALE = EpitheliumOfBulbourethralGlandOfFemale()
+    LAMINA_PROPRIA_OF_BULBOURETHRAL_GLAND_OF_FEMALE = LaminaPropriaOfBulbourethralGlandOfFemale()
+    VASCULATURE_OF_BULBOURETHRAL_GLAND_OF_FEMALE = VasculatureOfBulbourethralGlandOfFemale()
     PHALLIC_URETHRA_OF_FEMALE = PhallicUrethraOfFemale()
     URETHRAL_MEATUS_OF_PENILE_URETHRA = UrethralMeatusOfPenileUrethra()
     UROGENITAL_MEMBRANE_OF_FEMALE = UrogenitalMembraneOfFemale()
@@ -66888,39 +63238,25 @@ class _MouseAnatomyType:
     HEART_MESENCHYME = HeartMesenchyme()
     PREDENTIN = Predentin()
     TOOTH_BASEMENT_MEMBRANE = ToothBasementMembrane()
-    MESENCHYME_OF_GLANS_OF_FEMALE_GENITAL_TUBERCLE = (
-        MesenchymeOfGlansOfFemaleGenitalTubercle()
-    )
-    URETHRAL_PLATE_EPITHELIUM_OF_UROGENITAL_MEMBRANE_OF_FEMALE = (
-        UrethralPlateEpitheliumOfUrogenitalMembraneOfFemale()
-    )
+    MESENCHYME_OF_GLANS_OF_FEMALE_GENITAL_TUBERCLE = MesenchymeOfGlansOfFemaleGenitalTubercle()
+    URETHRAL_PLATE_EPITHELIUM_OF_UROGENITAL_MEMBRANE_OF_FEMALE = UrethralPlateEpitheliumOfUrogenitalMembraneOfFemale()
     SKIN_OF_UROGENITAL_MEMBRANE_OF_FEMALE = SkinOfUrogenitalMembraneOfFemale()
-    URETHRAL_PLATE_EPITHELIUM_OF_UROGENITAL_MEMBRANE_OF_MALE = (
-        UrethralPlateEpitheliumOfUrogenitalMembraneOfMale()
-    )
+    URETHRAL_PLATE_EPITHELIUM_OF_UROGENITAL_MEMBRANE_OF_MALE = UrethralPlateEpitheliumOfUrogenitalMembraneOfMale()
     SKIN_OF_UROGENITAL_MEMBRANE_OF_MALE = SkinOfUrogenitalMembraneOfMale()
     VISUAL_CORTEX = VisualCortex()
     PRELIMBIC_AREA = PrelimbicArea()
     CA3_PYRAMIDAL_CELL_LAYER = Ca3PyramidalCellLayer()
     FOREBRAIN_MIDBRAIN_BOUNDARY_REGION = ForebrainMidbrainBoundaryRegion()
     SUBCOMMISSURAL_ORGAN_PRIMORDIUM = SubcommissuralOrganPrimordium()
-    URETHRAL_TUBE_EPITHELIUM_OF_CLITORAL_URETHRA = (
-        UrethralTubeEpitheliumOfClitoralUrethra()
-    )
-    PROXIMAL_URETHRAL_MEATUS_OF_CLITORAL_URETHRA = (
-        ProximalUrethralMeatusOfClitoralUrethra()
-    )
+    URETHRAL_TUBE_EPITHELIUM_OF_CLITORAL_URETHRA = UrethralTubeEpitheliumOfClitoralUrethra()
+    PROXIMAL_URETHRAL_MEATUS_OF_CLITORAL_URETHRA = ProximalUrethralMeatusOfClitoralUrethra()
     URETHRAL_MEATUS_OF_CLITORAL_URETHRA = UrethralMeatusOfClitoralUrethra()
     URETHRAL_TUBE_EPITHELIUM_OF_PENILE_URETHRA = UrethralTubeEpitheliumOfPenileUrethra()
     GLAND_OF_VAGINAL_EPITHELIUM = GlandOfVaginalEpithelium()
     REST_OF_EPITHELIUM_OF_VAGINA = RestOfEpitheliumOfVagina()
     HINDLIMB_NAIL = HindlimbNail()
-    MYOMETRIUM_INNER_CIRCULAR_SMOOTH_MUSCLE_LAYER = (
-        MyometriumInnerCircularSmoothMuscleLayer()
-    )
-    MYOMETRIUM_OUTER_LONGITUDINAL_SMOOTH_MUSCLE_LAYER = (
-        MyometriumOuterLongitudinalSmoothMuscleLayer()
-    )
+    MYOMETRIUM_INNER_CIRCULAR_SMOOTH_MUSCLE_LAYER = MyometriumInnerCircularSmoothMuscleLayer()
+    MYOMETRIUM_OUTER_LONGITUDINAL_SMOOTH_MUSCLE_LAYER = MyometriumOuterLongitudinalSmoothMuscleLayer()
     GREAT_VESSEL_OF_HEART = GreatVesselOfHeart()
     AORTIC_SAC = AorticSac()
     OUTFLOW_TRACT_DISTAL_PART = OutflowTractDistalPart()
@@ -67002,9 +63338,7 @@ class _MouseAnatomyType:
     MAMMARY_GLAND_FLUID_OR_SECRETION = MammaryGlandFluidOrSecretion()
     COLOSTROM = Colostrom()
     MAMMARY_GLAND_MILK = MammaryGlandMilk()
-    MALE_REPRODUCTIVE_SYSTEM_FLUID_OR_SECRETION = (
-        MaleReproductiveSystemFluidOrSecretion()
-    )
+    MALE_REPRODUCTIVE_SYSTEM_FLUID_OR_SECRETION = MaleReproductiveSystemFluidOrSecretion()
     SEMEN = Semen()
     SEMINAL_FLUID = SeminalFluid()
     BULBOURETHRAL_GLAND_SECRETION = BulbourethralGlandSecretion()
@@ -67048,13 +63382,9 @@ class _MouseAnatomyType:
     PILOSEBACEOUS_GLAND = PilosebaceousGland()
     TRUNK_BONE = TrunkBone()
     ACCESSORY_OLFACTORY_BULB_ANLAGE = AccessoryOlfactoryBulbAnlage()
-    ACCESSORY_OLFACTORY_BULB_ANLAGE_MITRAL_CELL_LAYER = (
-        AccessoryOlfactoryBulbAnlageMitralCellLayer()
-    )
+    ACCESSORY_OLFACTORY_BULB_ANLAGE_MITRAL_CELL_LAYER = AccessoryOlfactoryBulbAnlageMitralCellLayer()
     MAIN_OLFACTORY_BULB_VENTRICULAR_LAYER = MainOlfactoryBulbVentricularLayer()
-    MAIN_OLFACTORY_BULB_PROSPECTIVE_GLOMERULAR_LAYER = (
-        MainOlfactoryBulbProspectiveGlomerularLayer()
-    )
+    MAIN_OLFACTORY_BULB_PROSPECTIVE_GLOMERULAR_LAYER = MainOlfactoryBulbProspectiveGlomerularLayer()
     VERTEBRAL_BODY = VertebralBody()
     LEFT_KIDNEY = LeftKidney()
     RIGHT_KIDNEY = RightKidney()
@@ -67066,9 +63396,7 @@ class _MouseAnatomyType:
     SENSORY_GANGLION = SensoryGanglion()
     BARORECEPTOR = Baroreceptor()
     LIMB_BLOOD_VESSEL = LimbBloodVessel()
-    MAIN_OLFACTORY_BULB_PROSPECTIVE_GRANULE_CELL_LAYER = (
-        MainOlfactoryBulbProspectiveGranuleCellLayer()
-    )
+    MAIN_OLFACTORY_BULB_PROSPECTIVE_GRANULE_CELL_LAYER = MainOlfactoryBulbProspectiveGranuleCellLayer()
     CORTICOSPINAL_TRACT = CorticospinalTract()
     CEREBELLUM_PURKINJE_CELL_CLUSTER = CerebellumPurkinjeCellCluster()
     HYPOTHALAMUS_SUBVENTRICULAR_ZONE = HypothalamusSubventricularZone()
@@ -67122,9 +63450,7 @@ class _MouseAnatomyType:
     SPLEEN_MARGINAL_ZONE = SpleenMarginalZone()
     EYELID_MUSCLE = EyelidMuscle()
     LEVATOR_PALPEBRAE_SUPERIORIS = LevatorPalpebraeSuperioris()
-    PRIMORDIAL_GERM_CELL_OF_EXTRAEMBRYONIC_MESODERM = (
-        PrimordialGermCellOfExtraembryonicMesoderm()
-    )
+    PRIMORDIAL_GERM_CELL_OF_EXTRAEMBRYONIC_MESODERM = PrimordialGermCellOfExtraembryonicMesoderm()
     VENTRAL_LATERAL_THALAMIC_NUCLEUS = VentralLateralThalamicNucleus()
     PREOPTIC_AREA = PreopticArea()
     LATERAL_PREOPTIC_NUCLEUS = LateralPreopticNucleus()
@@ -67196,12 +63522,8 @@ class _MouseAnatomyType:
     COMPACT_MYOCARDIUM = CompactMyocardium()
     HEART_PAPILLARY_MUSCLE = HeartPapillaryMuscle()
     ATRIOVENTRICULAR_CANAL_ENDOCARDIAL_LINING = AtrioventricularCanalEndocardialLining()
-    SUPERIOR_ATRIOVENTRICULAR_ENDOCARDIAL_CUSHION = (
-        SuperiorAtrioventricularEndocardialCushion()
-    )
-    INFERIOR_ATRIOVENTRICULAR_ENDOCARDIAL_CUSHION = (
-        InferiorAtrioventricularEndocardialCushion()
-    )
+    SUPERIOR_ATRIOVENTRICULAR_ENDOCARDIAL_CUSHION = SuperiorAtrioventricularEndocardialCushion()
+    INFERIOR_ATRIOVENTRICULAR_ENDOCARDIAL_CUSHION = InferiorAtrioventricularEndocardialCushion()
     HEART_ENDOTHELIUM = HeartEndothelium()
     OUTFLOW_TRACT_ENDOTHELIUM = OutflowTractEndothelium()
     VASCULATURE = Vasculature()
@@ -67327,9 +63649,7 @@ class _MouseAnatomyType:
     CEREBROSPINAL_FLUID = CerebrospinalFluid()
     CERUMEN = Cerumen()
     FECES = Feces()
-    FEMALE_REPRODUCTIVE_SYSTEM_FLUID_OR_SECRETION = (
-        FemaleReproductiveSystemFluidOrSecretion()
-    )
+    FEMALE_REPRODUCTIVE_SYSTEM_FLUID_OR_SECRETION = FemaleReproductiveSystemFluidOrSecretion()
     OVARY_FOLLICLE_FLUID = OvaryFollicleFluid()
     LYMPH = Lymph()
     OCULAR_REFRACTIVE_MEDIA = OcularRefractiveMedia()
@@ -67516,9 +63836,7 @@ class _MouseAnatomyType:
     PANCREAS_VASCULATURE = PancreasVasculature()
     _4TH_VENTRICLE_CHOROID_PLEXUS_EPITHELIUM = _4thVentricleChoroidPlexusEpithelium()
     _4TH_VENTRICLE_CHOROID_PLEXUS_STROMA = _4thVentricleChoroidPlexusStroma()
-    LATERAL_VENTRICLE_CHOROID_PLEXUS_EPITHELIUM = (
-        LateralVentricleChoroidPlexusEpithelium()
-    )
+    LATERAL_VENTRICLE_CHOROID_PLEXUS_EPITHELIUM = LateralVentricleChoroidPlexusEpithelium()
     LATERAL_VENTRICLE_CHOROID_PLEXUS_STROMA = LateralVentricleChoroidPlexusStroma()
     ABDOMEN_BLOOD_VESSEL = AbdomenBloodVessel()
     ABDOMEN_CONNECTIVE_TISSUE = AbdomenConnectiveTissue()
@@ -67883,12 +64201,8 @@ class _MouseAnatomyType:
     ANTERIOR_COMMISSURE_ANTERIOR_PART = AnteriorCommissureAnteriorPart()
     ANTERIOR_DIGASTRIC_MUSCLE = AnteriorDigastricMuscle()
     POSTERIOR_DIGASTRIC_MUSCLE = PosteriorDigastricMuscle()
-    BED_NUCLEUS_OF_STRIA_TERMINALIS_ANTERIOR_PART = (
-        BedNucleusOfStriaTerminalisAnteriorPart()
-    )
-    BED_NUCLEUS_OF_STRIA_TERMINALIS_POSTERIOR_PART = (
-        BedNucleusOfStriaTerminalisPosteriorPart()
-    )
+    BED_NUCLEUS_OF_STRIA_TERMINALIS_ANTERIOR_PART = BedNucleusOfStriaTerminalisAnteriorPart()
+    BED_NUCLEUS_OF_STRIA_TERMINALIS_POSTERIOR_PART = BedNucleusOfStriaTerminalisPosteriorPart()
     ANTERIOR_HYPOTHALAMIC_NUCLEUS = AnteriorHypothalamicNucleus()
     ANTERIOR_COMMISSURE_POSTERIOR_PART = AnteriorCommissurePosteriorPart()
     ANTERIOR_SEMICIRCULAR_DUCT = AnteriorSemicircularDuct()
@@ -68004,12 +64318,8 @@ class _MouseAnatomyType:
     DORSAL_VENOUS_ARCH = DorsalVenousArch()
     EPIGLOTTIC_CARTILAGE = EpiglotticCartilage()
     ESOPHAGUS_SMOOTH_MUSCLE_CIRCULAR_LAYER = EsophagusSmoothMuscleCircularLayer()
-    ESOPHAGUS_SMOOTH_MUSCLE_LONGITUDINAL_LAYER = (
-        EsophagusSmoothMuscleLongitudinalLayer()
-    )
-    EXTERNAL_AUDITORY_MEATUS_CARTILAGINOUS_PART = (
-        ExternalAuditoryMeatusCartilaginousPart()
-    )
+    ESOPHAGUS_SMOOTH_MUSCLE_LONGITUDINAL_LAYER = EsophagusSmoothMuscleLongitudinalLayer()
+    EXTERNAL_AUDITORY_MEATUS_CARTILAGINOUS_PART = ExternalAuditoryMeatusCartilaginousPart()
     EXTERNAL_AUDITORY_MEATUS_OSSEUS_PART = ExternalAuditoryMeatusOsseusPart()
     EXTRINSIC_AURICULAR_MUSCLE = ExtrinsicAuricularMuscle()
     INTRINSIC_AURICULAR_MUSCLE = IntrinsicAuricularMuscle()
@@ -68042,20 +64352,12 @@ class _MouseAnatomyType:
     TRACHEAL_BIFURCATION = TrachealBifurcation()
     LARGE_INTESTINE_MUSCULARIS_MUCOSA = LargeIntestineMuscularisMucosa()
     LARGE_INTESTINE_SEROSA = LargeIntestineSerosa()
-    LARGE_INTESTINE_SMOOTH_MUSCLE_CIRCULAR_LAYER = (
-        LargeIntestineSmoothMuscleCircularLayer()
-    )
-    LARGE_INTESTINE_SMOOTH_MUSCLE_LONGITUDINAL_LAYER = (
-        LargeIntestineSmoothMuscleLongitudinalLayer()
-    )
+    LARGE_INTESTINE_SMOOTH_MUSCLE_CIRCULAR_LAYER = LargeIntestineSmoothMuscleCircularLayer()
+    LARGE_INTESTINE_SMOOTH_MUSCLE_LONGITUDINAL_LAYER = LargeIntestineSmoothMuscleLongitudinalLayer()
     LARGE_INTESTINE_SUBMUCOSA = LargeIntestineSubmucosa()
     SMALL_INTESTINE_SEROSA = SmallIntestineSerosa()
-    SMALL_INTESTINE_SMOOTH_MUSCLE_CIRCULAR_LAYER = (
-        SmallIntestineSmoothMuscleCircularLayer()
-    )
-    SMALL_INTESTINE_SMOOTH_MUSCLE_LONGITUDINAL_LAYER = (
-        SmallIntestineSmoothMuscleLongitudinalLayer()
-    )
+    SMALL_INTESTINE_SMOOTH_MUSCLE_CIRCULAR_LAYER = SmallIntestineSmoothMuscleCircularLayer()
+    SMALL_INTESTINE_SMOOTH_MUSCLE_LONGITUDINAL_LAYER = SmallIntestineSmoothMuscleLongitudinalLayer()
     SMALL_INTESTINE_SUBMUCOSA = SmallIntestineSubmucosa()
     RESPIRATORY_SYSTEM_ARTERIAL_BLOOD_VESSEL = RespiratorySystemArterialBloodVessel()
     RESPIRATORY_SYSTEM_ARTERIAL_ENDOTHELIUM = RespiratorySystemArterialEndothelium()
@@ -68065,21 +64367,15 @@ class _MouseAnatomyType:
     RESPIRATORY_SYSTEM_BASEMENT_MEMBRANE = RespiratorySystemBasementMembrane()
     RESPIRATORY_SYSTEM_BASAL_LAMINA = RespiratorySystemBasalLamina()
     RESPIRATORY_SYSTEM_RETICULAR_LAMINA = RespiratorySystemReticularLamina()
-    RESPIRATORY_SYSTEM_BLOOD_VESSEL_SMOOTH_MUSCLE = (
-        RespiratorySystemBloodVesselSmoothMuscle()
-    )
+    RESPIRATORY_SYSTEM_BLOOD_VESSEL_SMOOTH_MUSCLE = RespiratorySystemBloodVesselSmoothMuscle()
     RESPIRATORY_SYSTEM_CAPILLARY = RespiratorySystemCapillary()
     RESPIRATORY_SYSTEM_CAPILLARY_ENDOTHELIUM = RespiratorySystemCapillaryEndothelium()
     RESPIRATORY_SYSTEM_LAMINA_PROPRIA = RespiratorySystemLaminaPropria()
     RESPIRATORY_SYSTEM_MUCOSA = RespiratorySystemMucosa()
     RESPIRATORY_SYSTEM_SUBMUCOSA = RespiratorySystemSubmucosa()
     RESPIRATORY_SYSTEM_LYMPHATIC_VESSEL = RespiratorySystemLymphaticVessel()
-    RESPIRATORY_SYSTEM_LYMPHATIC_VESSEL_ENDOTHELIUM = (
-        RespiratorySystemLymphaticVesselEndothelium()
-    )
-    RESPIRATORY_SYSTEM_LYMPHATIC_VESSEL_SMOOTH_MUSCLE = (
-        RespiratorySystemLymphaticVesselSmoothMuscle()
-    )
+    RESPIRATORY_SYSTEM_LYMPHATIC_VESSEL_ENDOTHELIUM = RespiratorySystemLymphaticVesselEndothelium()
+    RESPIRATORY_SYSTEM_LYMPHATIC_VESSEL_SMOOTH_MUSCLE = RespiratorySystemLymphaticVesselSmoothMuscle()
     RESPIRATORY_SYSTEM_SKELETAL_MUSCLE = RespiratorySystemSkeletalMuscle()
     RESPIRATORY_SYSTEM_VENOUS_BLOOD_VESSEL = RespiratorySystemVenousBloodVessel()
     RESPIRATORY_SYSTEM_VENOUS_ENDOTHELIUM = RespiratorySystemVenousEndothelium()
@@ -68393,9 +64689,7 @@ class _MouseAnatomyType:
     LATERAL_MALLEOLUS_OF_FIBULA = LateralMalleolusOfFibula()
     LATERAL_NASAL_GLAND = LateralNasalGland()
     LINE_OF_SCHWALBE = LineOfSchwalbe()
-    LONG_BONE_EPIPHYSEAL_PLATE_OSSIFICATION_ZONE = (
-        LongBoneEpiphysealPlateOssificationZone()
-    )
+    LONG_BONE_EPIPHYSEAL_PLATE_OSSIFICATION_ZONE = LongBoneEpiphysealPlateOssificationZone()
     LYMPH_NODE_MEDULLARY_CORD = LymphNodeMedullaryCord()
     LYMPH_NODE_MEDULLARY_SINUS = LymphNodeMedullarySinus()
     MAJOR_SUBLINGUAL_DUCT = MajorSublingualDuct()
@@ -68465,9 +64759,7 @@ class _MouseAnatomyType:
     SPLEEN_FOLLICULAR_DENDRITIC_CELL_NETWORK = SpleenFollicularDendriticCellNetwork()
     SPLEEN_PERIFOLLICULAR_ZONE = SpleenPerifollicularZone()
     STOMACH_SMOOTH_MUSCLE_INNER_OBLIQUE_LAYER = StomachSmoothMuscleInnerObliqueLayer()
-    STOMACH_SMOOTH_MUSCLE_OUTER_LONGITUDINAL_LAYER = (
-        StomachSmoothMuscleOuterLongitudinalLayer()
-    )
+    STOMACH_SMOOTH_MUSCLE_OUTER_LONGITUDINAL_LAYER = StomachSmoothMuscleOuterLongitudinalLayer()
     SUBARCUATE_FOSSA = SubarcuateFossa()
     SUBENDOCARDIUM = Subendocardium()
     SUBGLOTTIC_REGION = SubglotticRegion()
@@ -68535,9 +64827,7 @@ class _MouseAnatomyType:
     BASEMENT_MEMBRANE_OF_EPITHELIUM = BasementMembraneOfEpithelium()
     UTERUS_EPITHELIUM = UterusEpithelium()
     ATLANTO_OCCIPITAL_JOINT = AtlantoOccipitalJoint()
-    OPTIC_CHOROID_PLUS_PIGMENTED_RETINAL_EPITHELIUM = (
-        OpticChoroidPlusPigmentedRetinalEpithelium()
-    )
+    OPTIC_CHOROID_PLUS_PIGMENTED_RETINAL_EPITHELIUM = OpticChoroidPlusPigmentedRetinalEpithelium()
     LYMPH_SAC = LymphSac()
     MAMMARY_GLAND_PRIMORDIUM = MammaryGlandPrimordium()
     MAMMARY_GLAND_PRIMORDIUM_EPITHELIUM = MammaryGlandPrimordiumEpithelium()
@@ -68570,9 +64860,7 @@ class _MouseAnatomyType:
     ANTERIOR_CRUCIATE_LIGAMENT = AnteriorCruciateLigament()
     POSTERIOR_CRUCIATE_LIGAMENT = PosteriorCruciateLigament()
     INTESTINE_SMOOTH_MUSCLE_CIRCULAR_LAYER = IntestineSmoothMuscleCircularLayer()
-    INTESTINE_SMOOTH_MUSCLE_LONGITUDINAL_LAYER = (
-        IntestineSmoothMuscleLongitudinalLayer()
-    )
+    INTESTINE_SMOOTH_MUSCLE_LONGITUDINAL_LAYER = IntestineSmoothMuscleLongitudinalLayer()
     SECONDARY_MOTOR_CORTEX = SecondaryMotorCortex()
     ECTORHINAL_AREA = EctorhinalArea()
     INFRALIMBIC_AREA = InfralimbicArea()
@@ -68614,12 +64902,8 @@ class _MouseAnatomyType:
     LATERAL_NASAL_GLAND_EPITHELIUM = LateralNasalGlandEpithelium()
     LATERAL_NASAL_GLAND_MESENCHYME = LateralNasalGlandMesenchyme()
     MAXILLARY_SINUS_GLAND_PRIMORDIUM = MaxillarySinusGlandPrimordium()
-    MAXILLARY_SINUS_GLAND_PRIMORDIUM_EPITHELIUM = (
-        MaxillarySinusGlandPrimordiumEpithelium()
-    )
-    MAXILLARY_SINUS_GLAND_PRIMORDIUM_MESENCHYME = (
-        MaxillarySinusGlandPrimordiumMesenchyme()
-    )
+    MAXILLARY_SINUS_GLAND_PRIMORDIUM_EPITHELIUM = MaxillarySinusGlandPrimordiumEpithelium()
+    MAXILLARY_SINUS_GLAND_PRIMORDIUM_MESENCHYME = MaxillarySinusGlandPrimordiumMesenchyme()
     MAXILLARY_SINUS_GLAND = MaxillarySinusGland()
     MAXILLARY_SINUS_GLAND_EPITHELIUM = MaxillarySinusGlandEpithelium()
     MAXILLARY_SINUS_GLAND_MESENCHYME = MaxillarySinusGlandMesenchyme()
@@ -68643,12 +64927,8 @@ class _MouseAnatomyType:
     MANDIBULAR_FOSSA = MandibularFossa()
     EMBRYONIC_VISCERAL_ENDODERM = EmbryonicVisceralEndoderm()
     EMBRYONIC_POSTERIOR_VISCERAL_ENDODERM = EmbryonicPosteriorVisceralEndoderm()
-    EXTRAEMBRYONIC_POSTERIOR_VISCERAL_ENDODERM = (
-        ExtraembryonicPosteriorVisceralEndoderm()
-    )
-    ALLANTOIS_ASSOCIATED_POSTERIOR_VISCERAL_ENDODERM = (
-        AllantoisAssociatedPosteriorVisceralEndoderm()
-    )
+    EXTRAEMBRYONIC_POSTERIOR_VISCERAL_ENDODERM = ExtraembryonicPosteriorVisceralEndoderm()
+    ALLANTOIS_ASSOCIATED_POSTERIOR_VISCERAL_ENDODERM = AllantoisAssociatedPosteriorVisceralEndoderm()
     ALLANTOIC_CORE_DOMAIN = AllantoicCoreDomain()
     EXTRAEMBRYONIC_PRIMITIVE_STREAK = ExtraembryonicPrimitiveStreak()
     LENS_PRIMORDIUM = LensPrimordium()
@@ -68728,9 +65008,7 @@ class _MouseAnatomyType:
     CORONAL_SUTURE_PARIETAL_OSTEOGENIC_FRONT = CoronalSutureParietalOsteogenicFront()
     FRONTAL_SUTURE_FRONTAL_OSTEOGENIC_FRONT = FrontalSutureFrontalOsteogenicFront()
     FRONTAL_SUTURE_MESENCHYME = FrontalSutureMesenchyme()
-    LAMBDOID_SUTURE_INTERPARIETAL_OSTEOGENIC_FRONT = (
-        LambdoidSutureInterparietalOsteogenicFront()
-    )
+    LAMBDOID_SUTURE_INTERPARIETAL_OSTEOGENIC_FRONT = LambdoidSutureInterparietalOsteogenicFront()
     LAMBDOID_SUTURE_MESENCHYME = LambdoidSutureMesenchyme()
     LAMBDOID_SUTURE_PARIETAL_OSTEOGENIC_FRONT = LambdoidSutureParietalOsteogenicFront()
     SAGITTAL_SUTURE_MESENCHYME = SagittalSutureMesenchyme()
