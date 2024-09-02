@@ -24,11 +24,16 @@ _ST = List[Tuple[str, Optional[Callable[..., str]]]]
 _SST = Union[_S, _ST]
 
 
+class ForwardClassReference(NamedTuple):
+    module_name: str
+    class_name: str
+
+
 class MappableReferenceField(Generic[TMapTo]):
 
     def __init__(
         self,
-        typeof: Type[TMapTo],
+        typeof: Type[TMapTo] | ForwardClassReference,  # Allow for types to be passed as string references
         pattern: str,
         field_name: str,
         parsed_source_keys_handlers: Optional[_SST] = None,
@@ -69,7 +74,7 @@ class MappableReferenceField(Generic[TMapTo]):
         return [key for key, _ in self._parsed_source_keys_handlers]
 
     @property
-    def typeof(self) -> Type[TMapTo]:
+    def typeof(self) -> Union[Type[TMapTo], ForwardClassReference]:
         return self._typeof
 
     @property
@@ -226,13 +231,25 @@ class ModelGenerator:
         self._validate()
 
     @classmethod
-    def _solve_import(cls, type_of: Type) -> str:
-        module_name = type_of.__module__
+    def _solve_import(cls, typeof: Type | ForwardClassReference) -> str:
+
+        module_name: str
+        class_name: str
+
+        if isinstance(typeof, ForwardClassReference):
+            module_name = typeof.module_name
+            class_name = typeof.class_name
+        elif isinstance(typeof, type):
+            module_name = typeof.__module__
+            class_name = typeof.__name__
+        else:
+            raise ValueError("typeof must be a type or ModuleReference")
+
         if module_name == "builtins":
             return ""
         if module_name == "__main__":
             module_name = "aind_data_schema_models.generators"
-        class_name = type_of.__name__
+
         return cls._Templates.generic_import_statement.format(module_name=module_name, class_name=class_name)
 
     def generate(self, validate_code: bool = True) -> str:
