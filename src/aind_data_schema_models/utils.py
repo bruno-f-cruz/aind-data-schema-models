@@ -129,8 +129,12 @@ def create_literal_class(
     setattr(
         cls,
         "ONE_OF",
-        Annotated[Union[getattr(cls, "ALL")], Field(discriminator=discriminator), *(validators if validators else [])],
-    )  # noqa: F821
+        Annotated[
+            Union[getattr(cls, "ALL")],  # noqa: F821
+            Field(discriminator=discriminator),
+            *(validators if validators else []),
+        ],
+    )
 
     # add the model instances as class variables
     for m in all_models:
