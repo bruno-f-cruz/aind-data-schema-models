@@ -6,7 +6,6 @@ from pydantic import Field
 from typing_extensions import Annotated
 
 from aind_data_schema_models._generated.registries import _Registry as Registry
-from aind_data_schema_models._generated.registries import _RegistryModel as RegistryModel
 
 
 def map_registry(abbreviation: str, record: dict):
