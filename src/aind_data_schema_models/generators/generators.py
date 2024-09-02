@@ -323,7 +323,7 @@ class ModelGenerator:
     def parse(self) -> ParsedSourceCollection:
         return self._parser()
 
-    def _generate_literal_model(
+    def _generate_literal_model(  # noqa: C901
         self, parsed_source: ParsedSource, class_name: Optional[str] = None, require_all_fields_mapped: bool = False
     ) -> Tuple[dict[str, str], str]:
         _class_name_hints = self._literal_class_name_hints.copy()
