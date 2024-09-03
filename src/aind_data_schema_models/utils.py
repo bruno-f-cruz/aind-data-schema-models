@@ -15,6 +15,7 @@ def create_literal_model(
     base_model: Type[BaseModel],
     field_handlers: Optional[dict] = None,
     class_module: Optional[str] = None,
+    shared_fields: Optional[dict] = None,
 ) -> Type[BaseModel]:
     """
     Make a dynamic pydantic literal model
@@ -43,6 +44,10 @@ def create_literal_model(
             field_type = base_model.__annotations__[k]
             if v is not None:
                 v = field_type(v)
+            fields[k] = (Literal[v], Field(v))
+
+    if shared_fields is not None:
+        for k, v in shared_fields.items():
             fields[k] = (Literal[v], Field(v))
 
     class_str = obj.get("abbreviation") or obj.get("name")
@@ -88,6 +93,7 @@ def create_literal_class(
     base_model: Type[BaseModel] = BaseModel,
     discriminator: str = "name",
     field_handlers: Optional[dict] = None,
+    shared_fields: Optional[dict] = None,
 ):
     """
     Make a dynamic pydantic literal class
@@ -118,6 +124,7 @@ def create_literal_class(
             base_model=base_model,
             field_handlers=field_handlers,
             class_module=class_module,
+            shared_fields=shared_fields
         )
         for obj in objects
     )
