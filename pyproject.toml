@@ -30,7 +30,8 @@ dev = [
     'interrogate',
     'isort',
     'Sphinx',
-    'furo'
+    'furo',
+    'aind-data-access-api[docdb]'
 ]
 
 [tool.setuptools.packages.find]
