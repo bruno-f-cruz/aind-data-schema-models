@@ -38,4 +38,4 @@ jobs:
           python -m pip install -e .
       - name: Publish models to docdb
         run: |
-          python ./src/aind_data_schema_models/scripts/write_to_docdb.py
+          python ./scripts/write_to_docdb.py
