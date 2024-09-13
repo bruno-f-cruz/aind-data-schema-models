@@ -112,6 +112,18 @@ class VoltageUnit(str, Enum):
     V = "Volts"
 
 
+class MemoryUnit(str, Enum):
+    """Computer memory units"""
+
+    B = "Byte"
+    KB = "Kilobyte"
+    MB = "Megabyte"
+    GB = "Gigabyte"
+    TB = "Terabyte"
+    PB = "Petabyte"
+    EB = "Exabyte"
+
+
 class UnitlessUnit(str, Enum):
     """Unitless options"""
 
@@ -133,3 +145,4 @@ FrequencyValue = create_unit_with_value("FrequencyValue", Decimal, FrequencyUnit
 AngleValue = create_unit_with_value("AngleValue", Decimal, AngleUnit, AngleUnit.DEG)
 TimeValue = create_unit_with_value("TimeValue", Decimal, TimeUnit, TimeUnit.S)
 PowerValue = create_unit_with_value("PowerValue", Decimal, PowerUnit, PowerUnit.MW)
+MemoryValue = create_unit_with_value("MemoryValue", Decimal, MemoryUnit, MemoryUnit.GB)
