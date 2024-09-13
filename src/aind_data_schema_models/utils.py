@@ -124,7 +124,7 @@ def create_literal_class(
             base_model=base_model,
             field_handlers=field_handlers,
             class_module=class_module,
-            shared_fields=shared_fields
+            shared_fields=shared_fields,
         )
         for obj in objects
     )

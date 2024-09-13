@@ -14,7 +14,7 @@ class MouseAnatomyModel(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     name: str = Field(..., title="Structure name")
-    registry: Annotated[RegistryModel, Field(default=Registry.from_abbreviation('EMAPA'))]
+    registry: Annotated[RegistryModel, Field(default=Registry.from_abbreviation("EMAPA"))]
     registry_identifier: str = Field(title="Structure EMAPA ID")
 
 
