@@ -11,7 +11,7 @@ class BaseName(BaseModel):
     model_config = ConfigDict(extra="forbid", use_enum_values=True)
 
     name: str = Field(..., title="Name")
-    abbreviation: Optional[str] = Field(None, title="Abbreviation")
+    abbreviation: Optional[str] = Field(default=None, title="Abbreviation")
 
 
 class PIDName(BaseName):
@@ -20,5 +20,5 @@ class PIDName(BaseName):
     the registry for that PID, and abbreviation for that registry
     """
 
-    registry: Optional[BaseName] = Field(None, title="Registry")
-    registry_identifier: Optional[str] = Field(None, title="Registry identifier")
+    registry: Optional[BaseName] = Field(default=None, title="Registry")
+    registry_identifier: Optional[str] = Field(default=None, title="Registry identifier")

@@ -15,7 +15,7 @@ class MouseAnatomyModel(BaseModel):
 
     name: str = Field(..., title="Structure name")
     registry: Annotated[RegistryModel, Field(default=Registry.from_abbreviation("EMAPA"))]
-    registry_identifier: str = Field(title="Structure EMAPA ID")
+    registry_identifier: str = Field(..., title="Structure EMAPA ID")
 
 
 mouse_objects = read_csv(str(files("aind_data_schema_models.models").joinpath("mouse_dev_anat_ontology.csv")))

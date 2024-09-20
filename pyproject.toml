@@ -31,6 +31,7 @@ dev = [
     'isort',
     'Sphinx',
     'furo',
+    'aind-flake8-extensions',
     'aind-data-access-api[docdb]'
 ]
 
