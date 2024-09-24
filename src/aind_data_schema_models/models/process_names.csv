@@ -32,5 +32,6 @@ Spike sorting
 Video motion correction
 Video plane decrosstalk
 Video ROI classification
+Video ROI cross session matching
 Video ROI segmentation
 Video ROI timeseries extraction
