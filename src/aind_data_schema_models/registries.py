@@ -31,7 +31,7 @@ Registry.abbreviation_map = {m().abbreviation: m() for m in Registry.ALL}
 Registry.from_abbreviation = lambda x: Registry.abbreviation_map.get(x)
 
 
-def map_registry(abbreviation: str, record: dict):
+def map_registry(abbreviation: str, record: dict, *args):
     """replace the "registry" key of a dictionary with a RegistryModel object"""
     registry = Registry.from_abbreviation(abbreviation)
     if registry:

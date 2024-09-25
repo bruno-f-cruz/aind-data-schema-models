@@ -1,0 +1,15 @@
+name,modality_abbreviation,subject,data_description,procedures,session,rig,processing,acquisition,instrument,quality_control
+behavior,behavior,1,1,1,1,1,0,-1,-1,0
+behavior-videos,behavior-videos,1,1,1,1,1,0,-1,-1,0
+confocal,confocal,1,1,1,-1,-1,1,1,1,0
+EMG,EMG,1,1,1,1,1,0,-1,-1,0
+ecephys,ecephys,1,1,1,1,1,0,-1,-1,0
+fib,fib,1,1,1,1,1,0,-1,-1,0
+fMOST,fMOST,1,1,1,-1,-1,1,1,1,0
+icephys,icephys,1,1,1,1,1,0,-1,-1,0
+ISI,ISI,1,1,1,1,1,0,-1,-1,0
+MRI,MRI,1,1,1,1,1,0,-1,-1,0
+merfish,merfish,1,1,1,-1,-1,1,1,1,0
+pophys,pophys,1,1,1,1,1,0,-1,-1,0
+slap,slap,1,1,1,1,1,0,-1,-1,0
+SPIM,SPIM,1,1,1,-1,-1,1,1,1,0
