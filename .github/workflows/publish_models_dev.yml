@@ -35,7 +35,7 @@ jobs:
           aws-region: ${{ env.AWS_DEFAULT_REGION }}
       - name: Install dependencies
         run: | 
-          python -m pip install -e .
+          python -m pip install -e .[build]
       - name: Publish models to docdb
         run: | 
           python ./scripts/write_to_docdb.py
