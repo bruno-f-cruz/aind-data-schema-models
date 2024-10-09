@@ -1,42 +1,48 @@
 from __future__ import annotations
 
-import ast
-import datetime
 import os
-import re
+from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable, Dict, Generic, List, NamedTuple, Optional, Self, Tuple, Type, TypeVar, Union
+from typing import Any, Callable, Dict, Generic, List, Optional, Self, Type, TypeVar, Union
 
 import black
 import isort
 from pydantic import BaseModel
 
-from aind_data_schema_models.utils import create_model_class_name as create_enum_key_from_class_name
+from . import helpers
+from .helpers import TemplateHelper
 
 TModel = TypeVar("TModel", bound=BaseModel)
-TMapTo = TypeVar("TMapTo", bound=Any)
+TMapTo = TypeVar("TMapTo", bound=Union[Any])
 AllowedSources = Union[os.PathLike[str], str]
 ParsedSource = Dict[str, str]
-ParsedSourceCollection = List[ParsedSource]
-
-_S = List[str]
-_ST = List[Tuple[str, Optional[Callable[..., str]]]]
-_SST = Union[_S, _ST]
 
 
-class ForwardClassReference(NamedTuple):
+@dataclass
+class ForwardClassReference:
+    """A record to store a forward reference to a class."""
+
     module_name: str
     class_name: str
 
 
+@dataclass
+class ParsedSourceKeyHandler:
+    """Represents an object that can handle/transform a parsed field reference"""
+
+    field: str
+    function_handle: Optional[Callable[..., str]] = None
+
+
 class MappableReferenceField(Generic[TMapTo]):
+    """Represents a reference that can be mapped to a class"""
 
     def __init__(
         self,
         typeof: Type[TMapTo] | ForwardClassReference,  # Allow for types to be passed as string references
         pattern: str,
         field_name: str,
-        parsed_source_keys_handlers: Optional[_SST] = None,
+        parsed_source_keys_handlers: Optional[Union[List[str], List[ParsedSourceKeyHandler]]] = None,
     ) -> None:
         self._typeof = typeof
         self._pattern = pattern
@@ -44,25 +50,31 @@ class MappableReferenceField(Generic[TMapTo]):
         self._field_name = field_name
 
     @staticmethod
-    def _normalize_parsed_source_keys(value: Optional[_SST]) -> _ST:
-        _normalized: _ST = []
-        if value is None:
+    def _normalize_parsed_source_keys(
+        handlers: Optional[Union[List[str], List[ParsedSourceKeyHandler]]]
+    ) -> List[ParsedSourceKeyHandler]:
+        """Ensures that all handlers are converted to a uniform type
+
+
+        Args:
+            handler (Optional[Union[List[str], List[ParsedSourceKeyHandler]]]): The optional array with all handlers to be used. If left None, an empty list will be returned.
+        Raises:
+            ValueError: An ValueError exception will be thrown if the input type is not valid.
+
+        Returns:
+            List[ParsedSourceKeyHandler]: Returns a list where all entries are ParsedSourceKeyHandler types.
+        """
+        _normalized: List[ParsedSourceKeyHandler] = []
+        if handlers is None:
             return _normalized
-        for item in value:
-            if isinstance(item, str):
-                _normalized.append((item, None))
+        for handle in handlers:
+            if isinstance(handle, str):
+                _normalized.append(ParsedSourceKeyHandler(handle))
                 break
-            elif isinstance(item, tuple):
-                if len(item) != 2:
-                    raise ValueError(f"Tuple must have 2 elements: {item}")
-                if not isinstance(item[0], str):
-                    raise ValueError(f"First element must be a string: {item}")
-                if not callable(item[1]):
-                    raise ValueError(f"Second element must be callable: {item}")
-                else:
-                    _normalized.append(item)
+            elif isinstance(handle, ParsedSourceKeyHandler):
+                _normalized.append(handle)
             else:
-                raise ValueError(f"Invalid type: {type(item)}")
+                raise ValueError(f"Invalid type: {type(handle)}")
         return _normalized
 
     @property
@@ -71,7 +83,7 @@ class MappableReferenceField(Generic[TMapTo]):
 
     @property
     def parsed_source_keys(self) -> List[str]:
-        return [key for key, _ in self._parsed_source_keys_handlers]
+        return [value.field for value in self._parsed_source_keys_handlers]
 
     @property
     def typeof(self) -> Union[Type[TMapTo], ForwardClassReference]:
@@ -86,17 +98,20 @@ class MappableReferenceField(Generic[TMapTo]):
             if key not in parsed_source:
                 raise KeyError(f"Key not found in source data: {key}")
         _args: List[str] = []
-        for key, handler in self._parsed_source_keys_handlers:
-            _args.append(handler(parsed_source[key]) if handler is not None else parsed_source[key])
+        for value in self._parsed_source_keys_handlers:
+            _args.append(
+                value.function_handle(parsed_source[key]) if value.function_handle is not None else parsed_source[key]
+            )
         return self._pattern.format(*_args)
 
     def has_mappable_field(self, obj: Any) -> bool:
         return hasattr(obj, self.field_name)
 
 
-class _WrappedModelGenerator(NamedTuple):
+@dataclass
+class _WrappedModelGenerator:
     model_generator: ModelGenerator
-    target_path: Optional[os.PathLike[str]]
+    target_path: Optional[os.PathLike[str]] = None
 
 
 class GeneratorContext:
@@ -143,96 +158,71 @@ class GeneratorContext:
         self._self = None
 
 
+@dataclass
+class LiteralModelBlueprint:
+    class_name: str
+    sanitized_class_name: str = field(init=False)
+    code_builder: str = ""
+
+    def __post_init__(self):
+        self.sanitized_class_name = helpers.sanitize_class_name(self.class_name)
+
+
 class ModelGenerator:
 
-    class _Templates:
-
-        import_statements = """
-        from pydantic import Field, RootModel
-        from typing import Union, Annotated, Literal
-        """
-
-        generic_import_statement = """
-        from {module_name} import {class_name}\n"""
-
-        sub_class_header = """
-        class {class_name}({parent_name}):
-
-        """
-
-        class_header = """
-        class {model_name}:
-
-        """
-
-        field = """\t{field_name}: Literal[{param}] = {param}
-        """
-
-        class_tail = """
-        \tALL = tuple({parent_name}.__subclasses__())
-        """
-
-        model_one_of = """
-        \tclass ONE_OF(RootModel):
-        \t\troot: Annotated[Union[tuple({parent_name}.__subclasses__())], Field(discriminator="{discriminator}")]
-        """
-
-        model_abbreviation_map = """
-        \tabbreviation_map = {m().abbreviation: m() for m in ALL}
-
-        \t@classmethod
-        \tdef from_abbreviation(cls, abbreviation: str):
-        \t    return cls.abbreviation_map.get(abbreviation, None)
-        """
-
-        model_enum_entry = """\t{key} = {instance}()
-        """
-
-        generated_header = """
-        # generated by aind-data-schema-models:
-        #   filename:  {filename_source}
-        #   timestamp: {datetime}
-
-        """
-
-    _SPECIAL_CHARACTERS = r"!@#$%^&*()+=<>?,./;:'\"[]{}|\\`~"
-    _TRANSLATION_TABLE = str.maketrans("", "", _SPECIAL_CHARACTERS)
+    _BUILDER = TemplateHelper()
+    _DEFAULT_LITERAL_CLASS_NAME_HINTS = ["abbreviation", "name"]
 
     def __init__(
         self,
-        enum_like_class_name: str,
-        parent_model_type: Type[TModel],
+        class_name: str,
+        seed_model_type: Type[TModel],
         data_source_identifier: AllowedSources,
-        parser: Callable[..., ParsedSourceCollection],
+        parser: Callable[..., List[ParsedSource]],
         discriminator: str = "name",
-        literal_class_name_hints: Optional[list[str]] = ["abbreviation", "name"],
-        additional_preamble: Optional[str] = None,
+        literal_class_name_hints: Optional[list[str]] = None,
+        preamble: Optional[str] = None,
         additional_imports: Optional[list[Type]] = None,
         render_abbreviation_map: bool = True,
         mappable_references: Optional[List[MappableReferenceField]] = None,
+        default_module_name: str = "aind_data_schema_models.generators",
         **kwargs,
     ) -> None:
 
-        self._enum_like_class_name = enum_like_class_name
-        self._parent_model_type = parent_model_type
+        self._enum_like_class_name = class_name
+        self._seed_model_type = seed_model_type
         self._data_source_identifier = data_source_identifier
         self._discriminator = discriminator
         self._render_abbreviation_map = render_abbreviation_map
         self._parser = parser
-        self._literal_class_name_hints = literal_class_name_hints.copy() if literal_class_name_hints is not None else []
+        self._literal_class_name_hints = literal_class_name_hints or self._DEFAULT_LITERAL_CLASS_NAME_HINTS
         self._additional_imports = additional_imports
-        self._additional_preamble = additional_preamble
+        self._additional_preamble = preamble
         self._mappable_references = mappable_references
+        self._default_module_name = default_module_name
 
-        self._parsed_source: ParsedSourceCollection = self.parse()
-        self._hint: Optional[str] = None
-        self._created_literal_classes: dict[str, str] = {}
+        self._parsed_source: List[ParsedSource] = self.parse()
+        self._literal_model_blueprints: List[LiteralModelBlueprint]
 
         self._validate()
 
-    @classmethod
-    def _solve_import(cls, typeof: Type | ForwardClassReference) -> str:
+    @staticmethod
+    def solve_import(
+        builder: TemplateHelper, typeof: Type | ForwardClassReference, default_module_name: Optional[str] = None
+    ) -> str:
+        """Attempts tp solve a type import to be generated
 
+        Args:
+            builder (TemplateHelper): Builder class that generates the literal code
+            typeof (Type | ForwardClassReference): Type or reference to a type to be imported
+            default_module_name (Optional[str], optional): The default module name to be used if the module name returns as __main__. Defaults to None but will raise a ValueError if __main__ is returned and no default is provided.
+
+        Raises:
+            ValueError
+
+        Returns:
+            str: A string with a literal string representing code to import the type
+        """
         module_name: str
         class_name: str
 
@@ -248,31 +238,57 @@ class ModelGenerator:
         if module_name == "builtins":
             return ""
         if module_name == "__main__":
-            module_name = "aind_data_schema_models.generators"
+            if default_module_name is None:
+                raise ValueError("Module name is '__main__' but not default value was provided to override")
+            module_name = default_module_name
 
-        return cls._Templates.generic_import_statement.format(module_name=module_name, class_name=class_name)
+        return builder.import_statement(module_name=module_name, class_name=class_name)
 
     def generate(self, validate_code: bool = True) -> str:
+        """Generates and optionally validates code from the ModelGenerator
+
+        Args:
+            validate_code (bool, optional): Optionally validate code. Defaults to True.
+
+        Raises:
+            error: If the code fails the validation check
+
+        Returns:
+            str: Literal code with a fully generated file
+        """
         string_builder = "\n"
 
         for sub in self._parsed_source:
-            _class_name, _sub_string = self._generate_literal_model(sub)
-            string_builder += _sub_string + "\n"
-            self._created_literal_classes.update(_class_name)
+            class_blueprint = self.generate_literal_model(
+                builder=self._BUILDER,
+                parsed_source=sub,
+                seed_model_type=self._seed_model_type,
+                mappable_references=self._mappable_references,
+                class_name_hints=self._literal_class_name_hints,
+            )
+            string_builder += class_blueprint.code_builder + "\n"
+            self._literal_model_blueprints.append(class_blueprint)
 
-        string_builder += self._generate_enum_like_class(render_abbreviation_map=self._render_abbreviation_map)
+        string_builder += self.generate_enum_like_class(
+            builder=self._BUILDER,
+            class_name=self._enum_like_class_name,
+            discriminator=self._discriminator,
+            seed_model_type=self._seed_model_type,
+            literal_model_blueprints=self._literal_model_blueprints,
+            render_abbreviation_map=self._render_abbreviation_map,
+        )
 
         generated_code = "".join(
             [
-                self._Templates.generated_header.format(
-                    filename_source=self._normalize_model_source_provenance(self._data_source_identifier),
-                    datetime=datetime.datetime.now(),
-                ),
-                self._Templates.import_statements.format(),
+                self._BUILDER.file_header(helpers.normalize_model_source_provenance(self._data_source_identifier)),
+                self._BUILDER.import_statements(),
                 self._generate_mappable_references(),
-                self._solve_import(self._parent_model_type),
+                self.solve_import(self._BUILDER, self._seed_model_type, default_module_name=self._default_module_name),
                 "".join(
-                    [self._solve_import(import_module) for import_module in self._additional_imports]
+                    [
+                        self.solve_import(self._BUILDER, import_module, default_module_name=self._default_module_name)
+                        for import_module in self._additional_imports
+                    ]
                     if self._additional_imports
                     else []
                 ),
@@ -281,11 +297,11 @@ class ModelGenerator:
             ]
         )
 
-        generated_code = self.unindent(generated_code)
-        generated_code = self._replace_tabs_with_spaces(generated_code)
+        generated_code = helpers.unindent(generated_code)
+        generated_code = helpers.replace_tabs_with_spaces(generated_code)
 
         if validate_code:
-            is_valid, error = self._is_valid_code(generated_code)
+            is_valid, error = helpers.is_valid_code(generated_code)
             if not is_valid:
                 raise error if error else ValueError("Generated code is not valid")
 
@@ -298,20 +314,25 @@ class ModelGenerator:
     def _generate_mappable_references(self) -> str:
         string_builder = ""
         if self._mappable_references is not None:
-            _refs = set([mappable.typeof for mappable in self._mappable_references])
-            for r in _refs:
-                string_builder += self._solve_import(r)
+            refs = set([mappable.typeof for mappable in self._mappable_references])
+            for ref in refs:
+                string_builder += self.solve_import(self._BUILDER, ref, default_module_name=self._default_module_name)
         return string_builder
 
     def write(self, output_path: Union[os.PathLike, str], validate_code: bool = True):
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(self.generate(validate_code=validate_code))
 
-    def _validate(self):
-        if not issubclass(self._parent_model_type, BaseModel):
-            raise ValueError("model_type must be a subclass of pydantic.BaseModel")
-        if not self.is_pascal_case(self._enum_like_class_name):
+    @staticmethod
+    def _validate_class_name(class_name: str) -> None:
+        if not helpers.is_pascal_case(class_name):
             raise ValueError("model_name must be in PascalCase")
+
+    def _validate(self):
+        if not issubclass(self._seed_model_type, BaseModel):
+            raise ValueError("model_type must be a subclass of pydantic.BaseModel")
+
+        self._validate_class_name(self._enum_like_class_name)
 
         if self._mappable_references is not None:
             fields_name = [mappable.field_name for mappable in self._mappable_references]
@@ -320,27 +341,56 @@ class ModelGenerator:
                     f"field_name must be unique across all MappableReferenceField objects. Entries: {fields_name}"
                 )
 
-    def parse(self) -> ParsedSourceCollection:
+    def parse(self) -> List[ParsedSource]:
         return self._parser()
 
-    def _generate_literal_model(  # noqa: C901
-        self, parsed_source: ParsedSource, class_name: Optional[str] = None, require_all_fields_mapped: bool = False
-    ) -> Tuple[dict[str, str], str]:
-        _class_name_hints = self._literal_class_name_hints.copy()
+    @classmethod
+    def generate_literal_model(  # noqa: C901
+        cls,
+        builder: TemplateHelper,
+        parsed_source: ParsedSource,
+        seed_model_type: Type[TModel],
+        mappable_references: Optional[List[MappableReferenceField]] = None,
+        class_name: Optional[str] = None,
+        class_name_hints: Optional[List[str]] = None,
+        require_all_fields_mapped: bool = False,
+    ) -> LiteralModelBlueprint:
+        """Generates code for a model (LiteralModelBlueprint) with literal fields from a ParsedSource object.
 
+        Args:
+            builder (TemplateHelper): An interface that generates literal code
+            parsed_source (ParsedSource): A source of data that a has already been parsed to a Dict[str, str]
+            seed_model_type (Type[TModel]): The seed model that all literal classes will inherit from.
+            mappable_references (Optional[List[MappableReferenceField]], optional): Optional mappable references to be used during generation.
+            class_name (Optional[str], optional): The name to give to the literal class. If None is provided it will attempt to find it using the class_name_hints.
+            require_all_fields_mapped (bool, optional): If True, a ValueError will be raised if a field of the seed model is not found in the source data or in the MappableReferenceField object.
+
+        Raises:
+            ValueError
+
+        Returns:
+            LiteralModelBlueprint: A blueprint with information with the generated literal class
+        """
+
+        if class_name_hints is None:
+            _class_name_hints = []
+        else:
+            _class_name_hints = class_name_hints.copy()
+
+        _hint: Optional[str] = None
         # Solve for the class name
         while class_name is None and len(_class_name_hints) > 0:
-            self._hint = _class_name_hints.pop(0)
-            class_name = parsed_source.get(self._hint, None)
+            _hint = _class_name_hints.pop(0)
+            class_name = parsed_source.get(_hint, None)
         if class_name is None:
-            self._hint = None
+            _hint = None
             raise ValueError("No class name provided and hint was found in the source data")
-        sanitized_class_name = self._sanitize_class_name(class_name)
+        class_blueprint = LiteralModelBlueprint(class_name)
 
-        # Get all fields that exist in the parent pydantic model
+        # Get all fields that exist in the seed pydantic model
         parent_model_fields = {
             field_name: field_info.annotation.__name__
-            for field_name, field_info in self._parent_model_type.model_fields.items()
+            for field_name, field_info in seed_model_type.model_fields.items()
             if field_info.annotation is not None  # This should be safe as all types should be annotated by pydantic
         }
 
@@ -349,23 +399,22 @@ class ModelGenerator:
         # or in on the the MappableReferenceField objects
         if require_all_fields_mapped:
             for field_name in parent_model_fields.keys():
-                if field_name in parsed_source.keys():
-                    break
-                if self._mappable_references is not None:
-                    mappable_fields = [mappable.parsed_source_keys for mappable in self._mappable_references]
+                if mappable_references is not None:
+                    mappable_fields = [mappable.parsed_source_keys for mappable in mappable_references]
                     if field_name not in mappable_fields:
-                        raise ValueError(f"Field {field_name} not found in source data")
+                        raise ValueError(f"Field {field_name} not found in mappable fields")
+                if field_name not in parsed_source.keys():
+                    raise ValueError(f"Field {field_name} not found in source data")
 
-                # Check if the parent class has the mappable field
-                _mappable_references = self._mappable_references if self._mappable_references is not None else []
+                # Check if the seed class has the mappable field
+                _mappable_references = mappable_references if mappable_references is not None else []
                 for mappable in _mappable_references:
-                    if not mappable.has_mappable_field(self._parent_model_type):
-                        raise ValueError(f"Field {mappable.field_name} not found in parent")
+                    if not mappable.has_mappable_field(seed_model_type):
+                        raise ValueError(f"Mappable field {mappable.field_name} not found in seed model")
 
         # Generate the class header
-        string_builder = ""
-        string_builder += self._Templates.sub_class_header.format(
-            class_name=sanitized_class_name, parent_name=self._parent_model_type.__name__
+        class_blueprint.code_builder += builder.class_header(
+            class_name=class_blueprint.sanitized_class_name, parent_name=seed_model_type.__name__
         )
 
         # Populate the value-based fields
@@ -373,10 +422,10 @@ class ModelGenerator:
             _generated = False
 
             # 1) Mappable fields take priority over keys in csv
-            _this_mappable = self._try_get_mappable_reference_field(field_name)
+            _this_mappable = cls._try_get_mappable_reference_field(field_name, mappable_references)
             if _this_mappable is not None and not _generated:
                 param = _this_mappable(parsed_source)
-                param = self.unindent(param)
+                param = helpers.unindent(param)
                 _generated = True
 
             # 2) if 1) fails, we try to get the value from the source data
@@ -391,103 +440,56 @@ class ModelGenerator:
                 raise ValueError(f"Field {field_name} could not be generated")
 
             if _generated:
-                string_builder += self._Templates.field.format(field_name=field_name, param=param)
+                class_blueprint.code_builder += builder.literal_field(name=field_name, value=param)
 
-        return ({class_name: sanitized_class_name}, string_builder)
+        return class_blueprint
 
-    def _try_get_mappable_reference_field(self, field: str) -> Optional[MappableReferenceField]:
-        if self._mappable_references is None:
+    @staticmethod
+    def _try_get_mappable_reference_field(
+        field_name: str, mappable_references: Optional[List[MappableReferenceField]]
+    ) -> Optional[MappableReferenceField]:
+        if mappable_references is None:
             return None
-        for mappable in self._mappable_references:
-            if mappable.field_name == field:
+        for mappable in mappable_references:
+            if mappable.field_name == field_name:
                 return mappable
         return None
 
-    def _generate_enum_like_class(self, render_abbreviation_map: bool = True) -> str:
-        string_builder = ""
-        string_builder += self._Templates.class_header.format(model_name=self._enum_like_class_name)
+    @staticmethod
+    def generate_enum_like_class(
+        builder: TemplateHelper,
+        class_name: str,
+        discriminator: str,
+        seed_model_type: type[TModel] | str,
+        literal_model_blueprints: List[LiteralModelBlueprint],
+        render_abbreviation_map: bool = True,
+    ) -> str:
+        """Generates code for a enum-like class that includes instances of literal class models.
 
-        for class_name, sanitized_class_name in self._created_literal_classes.items():
-            string_builder += self._Templates.model_enum_entry.format(
-                key=self._create_enum_key_from_class_name(class_name), instance=sanitized_class_name
+        Args:
+            builder (TemplateHelper): A class that generates literal code
+            class_name (str): The name of the class to be generated. It is assumed that it has been previously validated.
+            discriminator (str): The field used as discriminator on the union of all literal model types
+            seed_model_type (type[TModel] | str): The seed model type, or name, that is common to all literal models.
+            literal_model_blueprints (List[LiteralModelBlueprint]): The blueprints for all generated literal models that will be used as values of the enum-like syntax of the generated class.
+            render_abbreviation_map (bool, optional): Optionally renders the abbreviation map method as part of the class. Defaults to True.
+
+        Returns:
+            str: A string with the generated code for the enum-like class.
+        """
+        seed_model_name = seed_model_type if isinstance(seed_model_type, str) else seed_model_type.__name__
+        string_builder = ""
+        string_builder += builder.class_header(class_name=class_name)
+
+        for class_blueprint in literal_model_blueprints:
+            string_builder += builder.model_enum_entry(
+                key=helpers.create_enum_key_from_class_name(class_blueprint.class_name),
+                value=class_blueprint.sanitized_class_name,
             )
 
-        string_builder += self._Templates.class_tail.format(parent_name=self._parent_model_type.__name__)
-        string_builder += self._Templates.model_one_of.format(
-            parent_name=self._parent_model_type.__name__, discriminator=self._discriminator
-        )
+        string_builder += builder.type_all_from_subclasses(parent_name=seed_model_name)
+        string_builder += builder.type_one_of(parent_name=seed_model_name, discriminator=discriminator)
         if render_abbreviation_map:
-            string_builder += self._Templates.model_abbreviation_map
+            string_builder += builder.abbreviation_map()
 
         return string_builder
-
-    @classmethod
-    def _normalize_model_source_provenance(cls, model_source: AllowedSources) -> str:
-        try:
-            return str(model_source)
-        except TypeError as e:
-            raise TypeError("model_source must be a string or os.PathLike[str]") from e
-
-    @staticmethod
-    def is_pascal_case(value: str) -> bool:
-        if value.isidentifier():
-            return value[1].isupper() if value[0] == "_" else value[0].isupper()
-        else:
-            return False
-
-    @staticmethod
-    def to_pascal_case(value: str) -> str:
-        """Converts a string to PascalCase by splitting the word on "_", "-", and " " and capitalizing each sub-word"""
-        suffix = value[0] if value[0] == "_" else ""  # Honor the first underscore
-        return suffix + "".join([word.capitalize() for word in re.split(r"[_\- ]", value)])
-
-    @classmethod
-    def _sanitize_class_name(cls, class_name: str) -> str:
-        # If the class name starts with a digit, we prefix it with an underscore
-        class_name = class_name.translate(cls._TRANSLATION_TABLE)
-        if class_name[0].isdigit():
-            class_name = "_" + class_name
-
-        return cls.to_pascal_case(class_name)
-
-    @staticmethod
-    def _create_enum_key_from_class_name(value: str) -> str:
-        suffix = "_" if (value[0] == "_" or value[0].isdigit()) else ""
-        return suffix + create_enum_key_from_class_name(value)
-
-    @staticmethod
-    def _is_valid_code(literal_code: str) -> Tuple[bool, Optional[SyntaxError]]:
-        try:
-            ast.parse(literal_code)
-            return (True, None)
-        except SyntaxError as e:
-            return (False, e)
-
-    @staticmethod
-    def unindent(text: str) -> str:
-        first_line = text.split("\n")[0]
-        while first_line.strip() == "":
-            text = text[1:]
-            first_line = text.split("\n")[0]
-        indent = len(first_line) - len(first_line.lstrip())
-        return "\n".join([line[indent:] for line in text.split("\n")])
-
-    @staticmethod
-    def indent_line(text: str, level: int = 0) -> str:
-        if level == 0:
-            return text
-        if level < 0:
-            raise ValueError("Level must be greater than 0")
-        return "\t" * level + text
-
-    @classmethod
-    def indent_block(cls, text: str, level: int = 0) -> str:
-        return "".join([cls.indent_line(line, level) for line in text.split("\n")])
-
-    @staticmethod
-    def count_indent_level(text: str) -> int:
-        return len(text) - len(text.lstrip("\t"))
-
-    @staticmethod
-    def _replace_tabs_with_spaces(text: str) -> str:
-        return text.replace("\t", 4 * " ")
