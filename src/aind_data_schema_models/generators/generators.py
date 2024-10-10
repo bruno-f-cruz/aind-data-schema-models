@@ -18,7 +18,7 @@ AllowedSources = Union[os.PathLike[str], str]
 ParsedSource = Dict[str, str]
 
 
-@dataclass
+@dataclass(eq=True, frozen=True)
 class ForwardClassReference:
     """A record to store a forward reference to a class."""
 
@@ -115,11 +115,58 @@ class _WrappedModelGenerator:
 
 
 class GeneratorContext:
+    """
+    A singleton class that manages multiple model generators, allowing for their centralized management 
+    and code generation. This context ensures that only one instance exists throughout the application, 
+    which can be used to add, remove, and generate code from multiple model generators.
+
+    Attributes:
+        _self (GeneratorContext): A private class-level attribute that holds the singleton instance.
+        _initialized (bool): A flag indicating whether the instance has been initialized.
+        _generators (List[_WrappedModelGenerator]): A list of wrapped model generators managed by this context.
+        code_validators (List[CodeValidator]): A list of validators to check the generated code.
+        code_formatters (List[CodeFormatter]): A list of formatters to apply to the generated code.
+
+    Methods:
+        __new__(cls) -> Self: Controls the creation of the singleton instance of the class.
+        __init__(code_validators: Optional[List[CodeValidator]] = None, 
+                 code_formatters: Optional[List[CodeFormatter]] = None) -> None:
+            Initializes the generator context, creating an empty list of generators and accepting optional
+            code validators and formatters.
+
+        generators() -> List[ModelGenerator]: 
+            Returns a list of model generators contained in this context.
+
+        add_generator(generator: ModelGenerator, 
+                      file_name: Optional[os.PathLike[str]] = None): 
+            Adds a new model generator to the context, optionally associating it with a file name.
+
+        remove_generator(generator: ModelGenerator): 
+            Removes a model generator from the context.
+
+        generate_all() -> List[str]: 
+            Generates code for all model generators managed by this context and returns a list of the generated code.
+
+        write_all(output_folder: os.PathLike = Path("."), 
+                  create_dir: bool = True): 
+            Writes the generated code from all model generators to specified files in the output folder.
+
+        __enter__() -> Self: 
+            Supports the context manager protocol, returning the current instance.
+
+        __exit__(self, exc_type, exc_value, traceback) -> None: 
+            Cleans up the context when exiting, resetting internal state.
+
+    Raises:
+        ValueError: If any issues arise during generator management or code generation.
+    """
+
     _self = None
+    _initialized = False
 
     def __new__(cls, *args, **kwargs) -> Self:
         if cls._self is None:
-            cls._self = super().__new__(cls, *args, **kwargs)
+            cls._self = super().__new__(cls)
         return cls._self
 
     def __init__(
@@ -127,9 +174,11 @@ class GeneratorContext:
         code_validators: Optional[List[CodeValidator]] = None,
         code_formatters: Optional[List[CodeFormatter]] = None,
     ) -> None:
-        self._generators: List[_WrappedModelGenerator] = []
-        self.code_validators = code_validators or []
-        self.code_formatters = code_formatters or []
+        if not self._initialized:  # Check if the instance has been initialized
+            self._generators: List[_WrappedModelGenerator] = []
+            self.code_validators = code_validators or []
+            self.code_formatters = code_formatters or []
+            self._initialized = True
 
     @property
     def generators(self) -> List[ModelGenerator]:
@@ -171,10 +220,26 @@ class GeneratorContext:
     def __exit__(self, exc_type, exc_value, traceback) -> None:
         self._generators = []
         self._self = None
+        self._initialized = False
 
 
 @dataclass
 class LiteralModelBlueprint:
+    """
+    Represents a blueprint for generating a literal model class. This blueprint holds the class name, 
+    a sanitized version of the class name, and a string that accumulates the generated code for the model.
+
+    Attributes:
+        class_name (str): The original name of the literal model class.
+        sanitized_class_name (str): A sanitized version of the class name, which is automatically 
+            generated during initialization to ensure it conforms to valid class name conventions.
+        code_builder (str): A string that accumulates the code generated for the literal model class. 
+            This can be used to store the code for fields, methods, and other class definitions.
+
+    Methods:
+        __post_init__(): Automatically sanitizes the class name after initialization.
+    """
+
     class_name: str
     sanitized_class_name: str = field(init=False)
     code_builder: str = ""
@@ -184,6 +249,54 @@ class LiteralModelBlueprint:
 
 
 class ModelGenerator:
+
+    """
+    A class responsible for generating Python code that defines models based on a parsed data source, 
+    typically using Pydantic's BaseModel. The generated models include literal fields, enum-like classes, 
+    and optional validation or formatting steps.
+
+    Args:
+        class_name (str): The name of the enum-like class to be generated.
+        seed_model_type (Type[TModel]): The seed model class that all literal classes will inherit from.
+        data_source_identifier (AllowedSources): The identifier of the source of the data used for code generation.
+        parser (Callable[..., List[ParsedSource]]): A callable function that parses the source data and returns a list of `ParsedSource` objects.
+        discriminator (str, optional): The field used to differentiate between literal models in the enum-like class. Defaults to "name".
+        literal_class_name_hints (Optional[list[str]], optional): A list of field names to hint at the class name from the source data. Defaults to `["abbreviation", "name"]`.
+        preamble (Optional[str], optional): A string of additional code to include at the top of the generated file. Defaults to None.
+        additional_imports (Optional[list[Type]], optional): A list of additional types to be imported in the generated code. Defaults to None.
+        render_abbreviation_map (bool, optional): Whether to include a method that renders an abbreviation map in the enum-like class. Defaults to True.
+        mappable_references (Optional[List[MappableReferenceField]], optional): A list of mappable reference fields to be used when generating the models. Defaults to None.
+        default_module_name (str, optional): The default module name used when solving imports for types defined in the main script. Defaults to "aind_data_schema_models.generators".
+        **kwargs: Additional keyword arguments passed to the model generator.
+
+    Attributes:
+        enum_like_class_name (str): The name of the generated enum-like class.
+        _seed_model_type (Type[TModel]): The seed model class from which literal classes inherit.
+        _data_source_identifier (AllowedSources): The identifier of the source of data used for code generation.
+        _discriminator (str): The field used to distinguish between literal model types.
+        _render_abbreviation_map (bool): Whether to generate the abbreviation map method in the enum-like class.
+        _parser (Callable[..., List[ParsedSource]]): A function that parses the data source into a list of ParsedSource objects.
+        _literal_class_name_hints (list[str]): A list of hints to help infer class names from the source data.
+        _additional_imports (list[Type], optional): Additional types that need to be imported into the generated code.
+        _additional_preamble (str, optional): Additional code to include in the preamble of the generated file.
+        _mappable_references (List[MappableReferenceField], optional): Reference fields that map the source data to the generated models.
+        _default_module_name (str): The default module name used for solving imports when '__main__' is returned as the module name.
+        _parsed_source (List[ParsedSource]): The parsed source data used to generate the literal models.
+        _literal_model_blueprints (List[LiteralModelBlueprint]): A list of blueprints for the generated literal models.
+
+    Methods:
+        solve_import(builder, typeof, default_module_name): Resolves the import statement for a given type or reference.
+        generate(code_validators, code_formatters): Generates code for the models, applying validators and formatters if provided.
+        write(output_path, code_validators, code_formatters): Writes the generated code to a specified file.
+        generate_literal_model(cls, builder, parsed_source, seed_model_type, mappable_references, class_name, class_name_hints, require_all_fields_mapped): 
+            Generates a literal model blueprint based on parsed data.
+        generate_enum_like_class(builder, class_name, discriminator, seed_model_type, literal_model_blueprints, render_abbreviation_map): 
+            Generates an enum-like class based on the literal models.
+        parse(): Parses the data source using the provided parser function.
+        _generate_mappable_references(): Generates import statements for the mappable references.
+        _validate(): Validates the model class name, seed model type, and mappable references.
+        _validate_class_name(class_name): Ensures the provided class name is in PascalCase.
+    """
 
     _BUILDER = TemplateHelper()
     _DEFAULT_LITERAL_CLASS_NAME_HINTS = ["abbreviation", "name"]
@@ -225,18 +338,19 @@ class ModelGenerator:
     def solve_import(
         builder: TemplateHelper, typeof: Type | ForwardClassReference, default_module_name: Optional[str] = None
     ) -> str:
-        """Attempts tp solve a type import to be generated
+        """Attempts to resolve the import statement for a given type or reference.
 
         Args:
-            builder (TemplateHelper): Builder class that generates the literal code
-            typeof (Type | ForwardClassReference): Type or reference to a type to be imported
-            default_module_name (Optional[str], optional): The default module name to be used if the module name returns as __main__. Defaults to None but will raise a ValueError if __main__ is returned and no default is provided.
+            builder (TemplateHelper): An interface responsible for generating literal code.
+            typeof (Type | ForwardClassReference): The type or forward reference to a type that needs to be imported.
+            default_module_name (Optional[str], optional): The default module name to use if the module is resolved as '__main__'. 
+                If '__main__' is returned and no default module name is provided, a ValueError is raised. Defaults to None.
 
         Raises:
-            ValueError
+            ValueError: If the module name is '__main__' and no default module name is provided.
 
         Returns:
-            str: A string with a literal string representing code to import the type
+            str: A string representing the code required to import the type.
         """
         module_name: str
         class_name: str
@@ -264,16 +378,19 @@ class ModelGenerator:
         code_validators: Optional[List[CodeValidator]] = None,
         code_formatters: Optional[List[CodeFormatter]] = None,
     ) -> str:
-        """Generates and optionally validates code from the ModelGenerator
+        """Generates code and optionally applies validators and formatters.
 
         Args:
-            validate_code (bool, optional): Optionally validate code. Defaults to True.
+            code_validators (Optional[List[CodeValidator]], optional): A list of code validators to run. 
+                Defaults to None.
+            code_formatters (Optional[List[CodeFormatter]], optional): A list of code formatters to apply. 
+                Defaults to None.
 
         Raises:
-            error: If the code fails the validation check
+            error: If the code fails the validation check.
 
         Returns:
-            str: Literal code with a fully generated file
+            str: The generated code, formatted and validated.
         """
         string_builder = "\n"
 
@@ -381,21 +498,30 @@ class ModelGenerator:
         class_name_hints: Optional[List[str]] = None,
         require_all_fields_mapped: bool = False,
     ) -> LiteralModelBlueprint:
-        """Generates code for a model (LiteralModelBlueprint) with literal fields from a ParsedSource object.
+        """Generates a LiteralModelBlueprint with literal fields from a ParsedSource object.
 
-        Args:
-            builder (TemplateHelper): An interface that generates literal code
-            parsed_source (ParsedSource): A source of data that a has already been parsed to a Dict[str, str]
-            seed_model_type (Type[TModel]): The seed model that all literal classes will inherit from.
-            mappable_references (Optional[List[MappableReferenceField]], optional): Optional mappable references to be used during generation.
-            class_name (Optional[str], optional): The name to give to the literal class. If None is provided it will attempt to find it using the class_name_hints.
-            require_all_fields_mapped (bool, optional): If True, a ValueError will be raised if a field of the seed model is not found in the source data or in the MappableReferenceField object.
+            Args:
+                builder (TemplateHelper): An interface to generate literal code.
+                parsed_source (ParsedSource): A parsed source object containing data, typically represented
+                    as a dictionary of field names to field values.
+                seed_model_type (Type[TModel]): The seed model type from which all generated literal classes
+                    will inherit.
+                mappable_references (Optional[List[MappableReferenceField]], optional): A list of optional
+                    mappable reference fields used during the generation process. Defaults to None.
+                class_name (Optional[str], optional): The name to assign to the literal class. If None,
+                    a name will be inferred using class_name_hints. Defaults to None.
+                class_name_hints (Optional[List[str]], optional): Hints for inferring the class name if
+                    class_name is not provided. Defaults to None.
+                require_all_fields_mapped (bool, optional): If True, raises a ValueError if any seed model
+                    fields are not mapped in the parsed source or mappable references. Defaults to False.
 
-        Raises:
-            ValueError
+            Raises:
+                ValueError: If require_all_fields_mapped is True and not all fields from the seed model are
+                    mapped.
 
-        Returns:
-            LiteralModelBlueprint: A blueprint with information with the generated literal class
+            Returns:
+                LiteralModelBlueprint: A blueprint containing the generated literal class and relevant
+                    metadata.
         """
 
         if class_name_hints is None:
@@ -491,19 +617,22 @@ class ModelGenerator:
         literal_model_blueprints: List[LiteralModelBlueprint],
         render_abbreviation_map: bool = True,
     ) -> str:
-        """Generates code for a enum-like class that includes instances of literal class models.
+        """Generates code for an enum-like class containing instances of literal model classes.
 
-        Args:
-            builder (TemplateHelper): A class that generates literal code
-            class_name (str): The name of the class to be generated. It is assumed that it has been previously validated.
-            discriminator (str): The field used as discriminator on the union of all literal model types
-            seed_model_type (type[TModel] | str): The seed model type, or name, that is common to all literal models.
-            literal_model_blueprints (List[LiteralModelBlueprint]): The blueprints for all generated literal models that will be used as values of the enum-like syntax of the generated class.
-            render_abbreviation_map (bool, optional): Optionally renders the abbreviation map method as part of the class. Defaults to True.
+            Args:
+                builder (TemplateHelper): An interface responsible for generating literal code.
+                class_name (str): The name of the class to be generated. Assumed to have been validated previously.
+                discriminator (str): The field used as the discriminator in the union of all literal model types.
+                seed_model_type (type[TModel] | str): The common seed model type (or its name) that all literal models inherit from.
+                literal_model_blueprints (List[LiteralModelBlueprint]): The blueprints for all literal models to be included as 
+                    values in the enum-like class.
+                render_abbreviation_map (bool, optional): If True, renders the abbreviation map method as part of the class. 
+                    Defaults to True.
 
-        Returns:
-            str: A string with the generated code for the enum-like class.
+            Returns:
+                str: The generated code for the enum-like class as a string.
         """
+
         seed_model_name = seed_model_type if isinstance(seed_model_type, str) else seed_model_type.__name__
         string_builder = ""
         string_builder += builder.indent(builder.class_header(class_name=class_name), 0)
