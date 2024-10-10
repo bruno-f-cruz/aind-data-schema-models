@@ -1,8 +1,9 @@
+import argparse
 import csv
 import os
 from pathlib import Path
 from typing import Dict, List, Optional
-import argparse
+
 from aind_pydantic_codegen.formatters import BlackFormatter, ISortFormatter
 from aind_pydantic_codegen.generators import (
     ForwardClassReference,
