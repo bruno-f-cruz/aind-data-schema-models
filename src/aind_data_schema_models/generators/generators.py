@@ -5,12 +5,12 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Callable, Dict, Generic, List, Optional, Self, Type, TypeVar, Union
 
-import black
-import isort
 from pydantic import BaseModel
 
 from . import helpers
 from .helpers import TemplateHelper
+from .formatters import CodeFormatter
+from .validators import CodeValidator
 
 TModel = TypeVar("TModel", bound=BaseModel)
 TMapTo = TypeVar("TMapTo", bound=Union[Any])
@@ -117,13 +117,19 @@ class _WrappedModelGenerator:
 class GeneratorContext:
     _self = None
 
-    def __new__(cls) -> Self:
+    def __new__(cls, *args, **kwargs) -> Self:
         if cls._self is None:
-            cls._self = super().__new__(cls)
+            cls._self = super().__new__(cls, *args, **kwargs)
         return cls._self
 
-    def __init__(self) -> None:
+    def __init__(
+        self,
+        code_validators: Optional[List[CodeValidator]] = None,
+        code_formatters: Optional[List[CodeFormatter]] = None,
+    ) -> None:
         self._generators: List[_WrappedModelGenerator] = []
+        self.code_validators = code_validators or []
+        self.code_formatters = code_formatters or []
 
     @property
     def generators(self) -> List[ModelGenerator]:
@@ -135,10 +141,15 @@ class GeneratorContext:
     def remove_generator(self, generator: ModelGenerator):
         self._generators = [g for g in self._generators if g.model_generator != generator]
 
-    def generate_all(self, validate_code: bool = True) -> List[str]:
-        return [generator.model_generator.generate(validate_code=validate_code) for generator in self._generators]
+    def generate_all(self) -> List[str]:
+        return [
+            generator.model_generator.generate(
+                code_validators=self.code_validators, code_formatters=self.code_formatters
+            )
+            for generator in self._generators
+        ]
 
-    def write_all(self, output_folder: os.PathLike = Path("."), validate_code: bool = True, create_dir: bool = True):
+    def write_all(self, output_folder: os.PathLike = Path("."), create_dir: bool = True):
         if create_dir:
             os.makedirs(output_folder, exist_ok=True)
 
@@ -146,9 +157,13 @@ class GeneratorContext:
             target_path = (
                 generator.target_path
                 if generator.target_path
-                else generator.model_generator._enum_like_class_name.lower() + ".py"
+                else generator.model_generator.enum_like_class_name.lower() + ".py"
             )
-            generator.model_generator.write(Path(output_folder) / str(target_path), validate_code=validate_code)
+            generator.model_generator.write(
+                Path(output_folder) / str(target_path),
+                code_validators=self.code_validators,
+                code_formatters=self.code_formatters,
+            )
 
     def __enter__(self) -> Self:
         return self
@@ -189,7 +204,7 @@ class ModelGenerator:
         **kwargs,
     ) -> None:
 
-        self._enum_like_class_name = class_name
+        self.enum_like_class_name = class_name
         self._seed_model_type = seed_model_type
         self._data_source_identifier = data_source_identifier
         self._discriminator = discriminator
@@ -202,7 +217,7 @@ class ModelGenerator:
         self._default_module_name = default_module_name
 
         self._parsed_source: List[ParsedSource] = self.parse()
-        self._literal_model_blueprints: List[LiteralModelBlueprint]
+        self._literal_model_blueprints: List[LiteralModelBlueprint] = []
 
         self._validate()
 
@@ -244,7 +259,11 @@ class ModelGenerator:
 
         return builder.import_statement(module_name=module_name, class_name=class_name)
 
-    def generate(self, validate_code: bool = True) -> str:
+    def generate(
+        self,
+        code_validators: Optional[List[CodeValidator]] = None,
+        code_formatters: Optional[List[CodeFormatter]] = None,
+    ) -> str:
         """Generates and optionally validates code from the ModelGenerator
 
         Args:
@@ -266,12 +285,13 @@ class ModelGenerator:
                 mappable_references=self._mappable_references,
                 class_name_hints=self._literal_class_name_hints,
             )
-            string_builder += class_blueprint.code_builder + "\n"
             self._literal_model_blueprints.append(class_blueprint)
+
+        string_builder += "\n\n".join([bp.code_builder for bp in self._literal_model_blueprints])
 
         string_builder += self.generate_enum_like_class(
             builder=self._BUILDER,
-            class_name=self._enum_like_class_name,
+            class_name=self.enum_like_class_name,
             discriminator=self._discriminator,
             seed_model_type=self._seed_model_type,
             literal_model_blueprints=self._literal_model_blueprints,
@@ -300,14 +320,15 @@ class ModelGenerator:
         generated_code = helpers.unindent(generated_code)
         generated_code = helpers.replace_tabs_with_spaces(generated_code)
 
-        if validate_code:
-            is_valid, error = helpers.is_valid_code(generated_code)
-            if not is_valid:
-                raise error if error else ValueError("Generated code is not valid")
+        if code_validators is not None:
+            for validator in code_validators:
+                is_valid, error = validator.validate(generated_code)
+                if not is_valid:
+                    raise error if error else ValueError("Generated code is not valid")
 
-        # TODO This could benefit from reading the pyproject.toml file
-        generated_code = black.format_str(generated_code, mode=black.FileMode())
-        generated_code = isort.code(generated_code)
+        if code_formatters is not None:
+            for formatter in code_formatters:
+                generated_code = formatter.format(generated_code)
 
         return generated_code
 
@@ -319,9 +340,14 @@ class ModelGenerator:
                 string_builder += self.solve_import(self._BUILDER, ref, default_module_name=self._default_module_name)
         return string_builder
 
-    def write(self, output_path: Union[os.PathLike, str], validate_code: bool = True):
+    def write(
+        self,
+        output_path: Union[os.PathLike, str],
+        code_validators: Optional[List[CodeValidator]] = None,
+        code_formatters: Optional[List[CodeFormatter]] = None,
+    ):
         with open(output_path, "w", encoding="utf-8") as f:
-            f.write(self.generate(validate_code=validate_code))
+            f.write(self.generate(code_validators=code_validators, code_formatters=code_formatters))
 
     @staticmethod
     def _validate_class_name(class_name: str) -> None:
@@ -332,7 +358,7 @@ class ModelGenerator:
         if not issubclass(self._seed_model_type, BaseModel):
             raise ValueError("model_type must be a subclass of pydantic.BaseModel")
 
-        self._validate_class_name(self._enum_like_class_name)
+        self._validate_class_name(self.enum_like_class_name)
 
         if self._mappable_references is not None:
             fields_name = [mappable.field_name for mappable in self._mappable_references]
@@ -413,8 +439,9 @@ class ModelGenerator:
                         raise ValueError(f"Mappable field {mappable.field_name} not found in seed model")
 
         # Generate the class header
-        class_blueprint.code_builder += builder.class_header(
-            class_name=class_blueprint.sanitized_class_name, parent_name=seed_model_type.__name__
+        class_blueprint.code_builder += builder.indent(
+            builder.class_header(class_name=class_blueprint.sanitized_class_name, parent_name=seed_model_type.__name__),
+            0,
         )
 
         # Populate the value-based fields
@@ -440,7 +467,7 @@ class ModelGenerator:
                 raise ValueError(f"Field {field_name} could not be generated")
 
             if _generated:
-                class_blueprint.code_builder += builder.literal_field(name=field_name, value=param)
+                class_blueprint.code_builder += builder.indent(builder.literal_field(name=field_name, value=param), 1)
 
         return class_blueprint
 
@@ -479,17 +506,22 @@ class ModelGenerator:
         """
         seed_model_name = seed_model_type if isinstance(seed_model_type, str) else seed_model_type.__name__
         string_builder = ""
-        string_builder += builder.class_header(class_name=class_name)
+        string_builder += builder.indent(builder.class_header(class_name=class_name), 0)
 
         for class_blueprint in literal_model_blueprints:
-            string_builder += builder.model_enum_entry(
-                key=helpers.create_enum_key_from_class_name(class_blueprint.class_name),
-                value=class_blueprint.sanitized_class_name,
+            string_builder += builder.indent(
+                builder.model_enum_entry(
+                    key=helpers.create_enum_key_from_class_name(class_blueprint.class_name),
+                    value=class_blueprint.sanitized_class_name,
+                ),
+                1,
             )
 
-        string_builder += builder.type_all_from_subclasses(parent_name=seed_model_name)
-        string_builder += builder.type_one_of(parent_name=seed_model_name, discriminator=discriminator)
+        string_builder += builder.indent(builder.type_all_from_subclasses(parent_name=seed_model_name), 1)
+        string_builder += builder.indent(
+            builder.type_one_of(parent_name=seed_model_name, discriminator=discriminator), 1
+        )
         if render_abbreviation_map:
-            string_builder += builder.abbreviation_map()
+            string_builder += builder.indent(builder.abbreviation_map(), 1)
 
         return string_builder
