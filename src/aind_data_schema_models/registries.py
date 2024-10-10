@@ -9,7 +9,7 @@ from aind_data_schema_models._generated.registries import _Registry as Registry
 from aind_data_schema_models._generated.registries import _RegistryModel as RegistryModel  # noqa: F401
 
 
-def map_registry(abbreviation: str, record: dict):
+def map_registry(abbreviation: str, record: dict, *args):
     """replace the "registry" key of a dictionary with a RegistryModel object"""
     registry = Registry.from_abbreviation(abbreviation)
     if registry:
