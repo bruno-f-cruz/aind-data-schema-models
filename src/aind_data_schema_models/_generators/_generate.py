@@ -1,64 +1,90 @@
+import csv
+import os
 from pathlib import Path
-
-from aind_data_schema_models.generators._base import (
-    _HarpDeviceTypeModel,
-    _ModalityModel,
-    _PlatformModel,
-    _SpeciesModel,
-    _MouseAnatomyModel,
-    _RegistryModel,
-)
-from aind_data_schema_models.generators.generators import (
+from typing import Dict, List, Optional
+import argparse
+from aind_pydantic_codegen.formatters import BlackFormatter, ISortFormatter
+from aind_pydantic_codegen.generators import (
+    ForwardClassReference,
     GeneratorContext,
     MappableReferenceField,
     ModelGenerator,
-    ForwardClassReference,
 )
-from aind_data_schema_models.generators.parsers import csv_parser, get_who_am_i_list
+from aind_pydantic_codegen.validators import AstValidator
+
+from aind_data_schema_models._generators._base import (
+    _HarpDeviceTypeModel,
+    _ModalityModel,
+    _MouseAnatomyModel,
+    _PlatformModel,
+    _RegistryModel,
+    _SpeciesModel,
+)
+
+
+def csv_parser(value: os.PathLike, fieldnames: Optional[List[str]] = None) -> List[Dict[str, str]]:
+    with open(value, "r", encoding="utf-8") as f:
+        return list(csv.DictReader(f, fieldnames=fieldnames))
+
 
 if __name__ == "__main__":
 
-    root = Path(__file__).parent / r"src/aind_data_schema_models/models"
-    target_folder = Path(r".\src\aind_data_schema_models\_generated")
+    parser = argparse.ArgumentParser(description="Generate models from CSV files.")
+    parser.add_argument(
+        "--root",
+        type=str,
+        required=False,
+        default="./src/aind_data_schema_models/models",
+        help="The root directory where the CSV files are located.",
+    )
+    parser.add_argument(
+        "--target_folder",
+        type=str,
+        required=False,
+        default="./src/aind_data_schema_models/_generated",
+        help="The target directory where the generated models will be saved.",
+    )
+    args = parser.parse_args()
+
+    root = Path(args.root)
+    target_folder = Path(args.target_folder)
 
     platforms = ModelGenerator(
-        enum_like_class_name="_Platform",
-        parent_model_type=_PlatformModel,
+        class_name="_Platform",
+        seed_model_type=_PlatformModel,
         discriminator="name",
         data_source_identifier="platforms.csv",
         parser=lambda: csv_parser(root / "platforms.csv"),
     )
 
     modalities = ModelGenerator(
-        enum_like_class_name="_Modality",
-        parent_model_type=_ModalityModel,
+        class_name="_Modality",
+        seed_model_type=_ModalityModel,
         discriminator="name",
         data_source_identifier="modalities.csv",
         parser=lambda: csv_parser(root / "modalities.csv"),
     )
 
     harp_device_types = ModelGenerator(
-        enum_like_class_name="_HarpDeviceType",
-        parent_model_type=_HarpDeviceTypeModel,
+        class_name="_HarpDeviceType",
+        seed_model_type=_HarpDeviceTypeModel,
         discriminator="name",
         data_source_identifier="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml",  # noqa: E501
-        parser=lambda: get_who_am_i_list(
-            url="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml"  # noqa: E501
-        ),
+        parser=lambda: csv_parser(root / "harp_types.csv"),
         render_abbreviation_map=False,
     )
 
     registry = ModelGenerator(
-        enum_like_class_name="_Registry",
-        parent_model_type=_RegistryModel,
+        class_name="_Registry",
+        seed_model_type=_RegistryModel,
         discriminator="name",
         data_source_identifier="registries.csv",
         parser=lambda: csv_parser(root / "registries.csv"),
     )
 
     species = ModelGenerator(
-        enum_like_class_name="_Species",
-        parent_model_type=_SpeciesModel,
+        class_name="_Species",
+        seed_model_type=_SpeciesModel,
         discriminator="name",
         data_source_identifier="species.csv",
         parser=lambda: csv_parser(root / "species.csv"),
@@ -82,8 +108,8 @@ if __name__ == "__main__":
     )
 
     mouse_anatomy = ModelGenerator(
-        enum_like_class_name="_MouseAnatomyType",
-        parent_model_type=_MouseAnatomyModel,
+        class_name="_MouseAnatomyType",
+        seed_model_type=_MouseAnatomyModel,
         discriminator="registry_identifier",
         data_source_identifier="mouse_dev_anat_ontology.csv",
         parser=lambda: csv_parser(root / "mouse_dev_anat_ontology.csv"),
@@ -106,7 +132,9 @@ if __name__ == "__main__":
         render_abbreviation_map=False,
     )
 
-    with GeneratorContext() as ctx:
+    with GeneratorContext(
+        code_validators=[AstValidator()], code_formatters=[BlackFormatter(), ISortFormatter()]
+    ) as ctx:
         ctx.add_generator(registry, "registries.py")
         ctx.add_generator(harp_device_types, "harp_types.py")
         ctx.add_generator(platforms, "platforms.py")
