@@ -38,6 +38,10 @@ build = [
     'aind-data-access-api[docdb]'
 ]
 
+codegen = [
+    'aind-pydantic-codegen[formatters]@git+https://github.com/AllenNeuralDynamics/aind-pydantic-codegen@0.1.0-rc1',
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
