@@ -70,7 +70,7 @@ if __name__ == "__main__":
         class_name="_HarpDeviceType",
         seed_model_type=_HarpDeviceTypeModel,
         discriminator="name",
-        data_source_identifier="https://raw.githubusercontent.com/harp-tech/protocol/97ded281bd1d0d7537f90ebf545d74cf8ba8805e/whoami.yml",  # noqa: E501
+        data_source_identifier="harp_types.csv",
         parser=lambda: csv_parser(root / "harp_types.csv"),
         render_abbreviation_map=False,
     )
