@@ -23,7 +23,6 @@ def is_pascal_case(value: str) -> bool:
 
 
 def to_pascal_case(value: str) -> str:
-    """Converts a string to PascalCase by splitting the word on "_", "-", and " " and capitalizing each sub-word"""
     suffix = value[0] if value[0] == "_" else ""  # Honor the first underscore
     return suffix + "".join([word.capitalize() for word in re.split(r"[_\- ]", value)])
 
@@ -40,14 +39,6 @@ def sanitize_class_name(class_name: str) -> str:
 def create_enum_key_from_class_name(value: str) -> str:
     suffix = "_" if (value[0] == "_" or value[0].isdigit()) else ""
     return suffix + re.compile(r"[\W_]+").sub("_", value).upper()
-
-
-def is_valid_code(literal_code: str) -> Tuple[bool, Optional[SyntaxError]]:
-    try:
-        ast.parse(literal_code)
-        return (True, None)
-    except SyntaxError as e:
-        return (False, e)
 
 
 def unindent(text: str) -> str:
@@ -68,7 +59,8 @@ def indent_line(text: str, level: int = 0) -> str:
 
 
 def indent_block(text: str, level: int = 0) -> str:
-    return "".join([indent_line(line, level) for line in text.split("\n")])
+    indented = "".join([indent_line(line, level) + "\n" for line in text.split("\n")])
+    return indented[: -(level + 1)]  # Remove the last newline and added tabs and to honor input formatting
 
 
 def count_indent_level(text: str) -> int:
@@ -81,21 +73,18 @@ def replace_tabs_with_spaces(text: str) -> str:
 
 class TemplateHelper:
 
+    def indent(self, text: str, level: int = 0) -> str:
+        return indent_block(text, level)
+
     @staticmethod
     def import_statements() -> str:
-        return """
-    from pydantic import Field, RootModel
-    from typing import Union, Annotated, Literal
-    """
+        return "from pydantic import Field, RootModel\nfrom typing import Union, Annotated, Literal\n"
 
     @staticmethod
     def import_statement(module_name: str, class_name: Union[str, List[str]]):
         if isinstance(class_name, list):
             class_name = ", ".join([cls for cls in class_name])
-        return """
-    from {module_name} import {class_name}\n""".format(
-            module_name=module_name, class_name=class_name
-        )
+        return "from {module_name} import {class_name}\n".format(module_name=module_name, class_name=class_name)
 
     @classmethod
     def class_header(cls, class_name: str, parent_name: Optional[Union[str, List[str]]] = None):
@@ -106,70 +95,45 @@ class TemplateHelper:
                 return cls._orfan_class_header(class_name)
             else:
                 parent_name = ", ".join([cls for cls in class_name])
-        return """
-    class {class_name}({parent_name}):\n\n""".format(
-            class_name=class_name, parent_name=parent_name
-        )
+        return "\n\nclass {class_name}({parent_name}):\n\n".format(class_name=class_name, parent_name=parent_name)
 
     @staticmethod
     def _orfan_class_header(class_name: str):
-        return """
-    class {class_name}:
-
-    """.format(
-            class_name=class_name
-        )
+        return "\n\nclass {class_name}:\n\n".format(class_name=class_name)
 
     @staticmethod
     def literal_field(name: str, value: str):
-        return """\t{field_name}: Literal[{value}] = {value}
-    """.format(
-            field_name=name, value=value
-        )
+        return "{field_name}: Literal[{value}] = {value}\n".format(field_name=name, value=value)
 
     @staticmethod
     def type_all_from_subclasses(parent_name: str):
-        return """
-    \tALL = tuple({parent_name}.__subclasses__())
-    """.format(
-            parent_name=parent_name
-        )
+        return "\nALL = tuple({parent_name}.__subclasses__())\n".format(parent_name=parent_name)
 
     @staticmethod
     def type_one_of(parent_name: str, discriminator: str):
-        return """
-    \tclass ONE_OF(RootModel):
-    \t\troot: Annotated[Union[tuple({parent_name}.__subclasses__())], Field(discriminator="{discriminator}")]
-    """.format(
+        return '\n\nclass ONE_OF(RootModel):\n\troot: Annotated[Union[tuple({parent_name}.__subclasses__())], Field(discriminator="{discriminator}")]\n'.format(
             parent_name=parent_name, discriminator=discriminator
         )
 
     @staticmethod
     def abbreviation_map():
-        return """
-    \tabbreviation_map = {m().abbreviation: m() for m in ALL}
-
-    \t@classmethod
-    \tdef from_abbreviation(cls, abbreviation: str):
-    \t    return cls.abbreviation_map.get(abbreviation, None)
-    """
+        _s = "\n"
+        _s += "abbreviation_map = {m().abbreviation: m() for m in ALL}\n\n"
+        _s += "@classmethod\n"
+        _s += "def from_abbreviation(cls, abbreviation: str):\n"
+        _s += "\treturn cls.abbreviation_map.get(abbreviation, None)\n"
+        return _s
 
     @staticmethod
     def model_enum_entry(key: str, value: str):
-        return """\t{key} = {instance}()
-    """.format(
-            key=key, instance=value
-        )
+        return "{key} = {instance}()\n".format(key=key, instance=value)
 
     @staticmethod
     def file_header(source_filename: Union[str, os.PathLike], dt: Optional[datetime.datetime] = None):
         if dt is None:
             dt = datetime.datetime.now(datetime.timezone.utc)
-        return """
-    # generated by aind-data-schema-models:
-    #   filename:  {source_filename}
-    #   timestamp: {dt}
-
-    """.format(
-            source_filename=source_filename, dt=dt
-        )
+        _s = ""
+        _s += "# generated by aind-data-schema-models:\n"
+        _s += "# \tfilename:  {source_filename}\n".format(source_filename=source_filename)
+        _s += "# \ttimestamp: {dt}\n\n".format(dt=dt)
+        return _s
